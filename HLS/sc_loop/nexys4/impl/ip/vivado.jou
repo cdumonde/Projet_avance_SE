@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Wed Oct 25 18:21:19 2017
-# Process ID: 13189
+# Start of session at: Fri Nov 10 10:36:47 2017
+# Process ID: 9608
 # Current directory: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/HLS/sc_loop/nexys4/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/HLS/sc_loop/nexys4/impl/ip/vivado.log

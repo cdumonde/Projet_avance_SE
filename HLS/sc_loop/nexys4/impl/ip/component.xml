@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>hls</spirit:library>
   <spirit:name>Conversion</spirit:name>
-  <spirit:version>1.0</spirit:version>
+  <spirit:version>1.2</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>e</spirit:name>
@@ -318,7 +318,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
       <spirit:file>
         <spirit:name>hdl/vhdl/Conversion.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e8de8152</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_0c4e2495</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -351,7 +351,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/Conversion_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/Conversion_v1_2.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_bdef2832</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -370,7 +370,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Conversion_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Conversion_v1_2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
@@ -403,8 +403,8 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
       </xilinx:taxonomies>
       <xilinx:displayName>Conversion</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2017-10-25T16:21:29Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2017-11-10T09:36:58Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.3</xilinx:xilinxVersion>

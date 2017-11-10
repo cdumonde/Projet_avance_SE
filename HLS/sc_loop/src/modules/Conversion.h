@@ -13,20 +13,14 @@ SC_MODULE(Conversion)
 public:
 	sc_in      <bool> clk;
 	sc_in      <bool> reset;
-	sc_fifo_in <char> e;
-    sc_fifo_out<char> s;
+	sc_fifo_in <unsigned char> e;
+    sc_fifo_out<unsigned char> s;
 
     SC_CTOR(Conversion)
     {
     	SC_CTHREAD(do_conversion, clk.pos());
     	reset_signal_is(reset, true);
     }
-
-
-//    SC_CTOR(Conversion)
-//	{
-//		SC_THREAD(do_conversion);
-//	}
 
     void do_conversion();
 };

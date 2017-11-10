@@ -17,26 +17,30 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache /tmp/.Xil_cedric/Vivado-2940-cdumonde/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.cache/wt [current_project]
-set_property parent.project_path /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.xpr [current_project]
+set_property webtalk.parent_dir /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.cache/wt [current_project]
+set_property parent.project_path /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_repo_paths /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/HLS/sc_loop/nexys4/impl/ip [current_project]
-set_property ip_output_repo /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.cache/ip [current_project]
+set_property ip_output_repo /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/src/UART_fifoed_send_V1.vhd
-  /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/src/uart_recv.vhd
-  /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.srcs/sources_1/imports/src/uart.vhd
+  /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/src/UART_fifoed_send_V1.vhd
+  /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/src/uart_recv.vhd
+  /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.srcs/sources_1/imports/src/uart.vhd
 }
-read_ip -quiet /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.srcs/sources_1/ip/Conversion_0/Conversion_0.xci
-set_property used_in_implementation false [get_files -all /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.srcs/sources_1/ip/Conversion_0/constraints/Conversion_ooc.xdc]
+read_ip -quiet /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.srcs/sources_1/ip/Conversion_0/Conversion_0.xci
+set_property used_in_implementation false [get_files -all /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.srcs/sources_1/ip/Conversion_0/constraints/Conversion_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -46,8 +50,8 @@ set_property used_in_implementation false [get_files -all /home/cedric/Documents
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/xdc/Nexys4_Master.xdc
-set_property used_in_implementation false [get_files /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/xdc/Nexys4_Master.xdc]
+read_xdc /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/xdc/Nexys4_Master.xdc
+set_property used_in_implementation false [get_files /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/xdc/Nexys4_Master.xdc]
 
 
 synth_design -top turbo_uart -part xc7a100tcsg324-1

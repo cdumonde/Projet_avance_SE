@@ -97,11 +97,11 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 16:22:56 UTC 2017</spirit:value>
+            <spirit:value>Fri Nov 10 09:39:34 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:584deba9</spirit:value>
+            <spirit:value>7:899416fe</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -116,11 +116,11 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 16:23:24 UTC 2017</spirit:value>
+            <spirit:value>Fri Nov 10 09:40:09 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:584deba9</spirit:value>
+            <spirit:value>7:899416fe</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -135,11 +135,11 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 16:23:24 UTC 2017</spirit:value>
+            <spirit:value>Fri Nov 10 09:40:09 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:584deba9</spirit:value>
+            <spirit:value>7:899416fe</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -153,11 +153,11 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 16:24:31 UTC 2017</spirit:value>
+            <spirit:value>Fri Nov 10 09:41:16 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:584deba9</spirit:value>
+            <spirit:value>7:899416fe</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -407,7 +407,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>Conversion</xilinx:displayName>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.3</xilinx:xilinxVersion>

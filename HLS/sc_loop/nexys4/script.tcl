@@ -20,4 +20,4 @@ set_clock_uncertainty 2
 csim_design -compiler gcc
 csynth_design
 cosim_design
-export_design -rtl vhdl -format ip_catalog -version "1.0.1"
+export_design -rtl vhdl -format ip_catalog -version "1.2.2"

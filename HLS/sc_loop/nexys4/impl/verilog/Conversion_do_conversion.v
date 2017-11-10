@@ -18,8 +18,7 @@ module Conversion_do_conversion (
         s_write
 );
 
-parameter    ap_ST_fsm_state2 = 3'd2;
-parameter    ap_ST_fsm_state3 = 3'd4;
+parameter    ap_ST_fsm_state2 = 2'd2;
 
 input   ap_clk;
 input   ap_rst;
@@ -34,16 +33,16 @@ reg e_read;
 reg s_write;
 
 reg    e_blk_n;
-(* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state2;
 reg    s_blk_n;
-wire    ap_CS_fsm_state3;
-reg   [7:0] tmp_reg_73;
-reg   [2:0] ap_NS_fsm;
+reg    ap_block_state2;
+wire   [6:0] tmp_fu_73_p4;
+reg   [1:0] ap_NS_fsm;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 3'd2;
+#0 ap_CS_fsm = 2'd2;
 end
 
 always @ (posedge ap_clk) begin
@@ -51,12 +50,6 @@ always @ (posedge ap_clk) begin
         ap_CS_fsm <= ap_ST_fsm_state2;
     end else begin
         ap_CS_fsm <= ap_NS_fsm;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state2) & (e_empty_n == 1'b1))) begin
-        tmp_reg_73 <= e_dout;
     end
 end
 
@@ -69,7 +62,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state2) & (e_empty_n == 1'b1))) begin
+    if ((~((1'b0 == e_empty_n) | (1'b0 == s_full_n)) & (1'b1 == ap_CS_fsm_state2))) begin
         e_read = 1'b1;
     end else begin
         e_read = 1'b0;
@@ -77,7 +70,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
         s_blk_n = s_full_n;
     end else begin
         s_blk_n = 1'b1;
@@ -85,7 +78,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (s_full_n == 1'b1))) begin
+    if ((~((1'b0 == e_empty_n) | (1'b0 == s_full_n)) & (1'b1 == ap_CS_fsm_state2))) begin
         s_write = 1'b1;
     end else begin
         s_write = 1'b0;
@@ -95,18 +88,7 @@ end
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state2 : begin
-            if (((1'b1 == ap_CS_fsm_state2) & (e_empty_n == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state3;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end
-        end
-        ap_ST_fsm_state3 : begin
-            if (((1'b1 == ap_CS_fsm_state3) & (s_full_n == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state3;
-            end
+            ap_NS_fsm = ap_ST_fsm_state2;
         end
         default : begin
             ap_NS_fsm = 'bx;
@@ -116,8 +98,12 @@ end
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
-assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
+always @ (*) begin
+    ap_block_state2 = ((1'b0 == e_empty_n) | (1'b0 == s_full_n));
+end
 
-assign s_din = (tmp_reg_73 + 8'd1);
+assign s_din = {{tmp_fu_73_p4}, {1'd0}};
+
+assign tmp_fu_73_p4 = {{e_dout[7:1]}};
 
 endmodule //Conversion_do_conversion

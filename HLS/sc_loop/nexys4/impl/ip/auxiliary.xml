@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Conversion" xd:componentRef="Conversion" xd:initiationInterval="5" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Conversion" xd:componentRef="Conversion" xd:initiationInterval="4" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
   <xd:arg xd:name="e" xd:originalName="e" xd:direction="in" xd:interfaceRef="e" xd:busTypeRef="acc_fifo"/>
-  <xd:arg xd:name="s" xd:originalName="s" xd:direction="out" xd:interfaceRef="s" xd:busTypeRef="acc_fifo" xd:firstOut="2"/>
-  <xd:latencyEstimates xd:best-case="0" xd:worst-case="4" xd:average-case="2"/>
-  <xd:resourceEstimates xd:LUT="48" xd:FF="11" xd:BRAM="0" xd:DSP="0"/>
+  <xd:arg xd:name="s" xd:originalName="s" xd:direction="out" xd:interfaceRef="s" xd:busTypeRef="acc_fifo" xd:firstOut="1"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="3" xd:average-case="2"/>
+  <xd:resourceEstimates xd:LUT="35" xd:FF="2" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

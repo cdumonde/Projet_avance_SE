@@ -60,23 +60,27 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
+  set_param synth.incrementalSynthesisCache /tmp/.Xil_cedric/Vivado-2940-cdumonde/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.cache/wt [current_project]
-  set_property parent.project_path /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.xpr [current_project]
+  set_property webtalk.parent_dir /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.cache/wt [current_project]
+  set_property parent.project_path /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.xpr [current_project]
   set_property ip_repo_paths /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/HLS/sc_loop/nexys4/impl/ip [current_project]
-  set_property ip_output_repo /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.cache/ip [current_project]
+  set_property ip_output_repo /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.runs/synth_1/turbo_uart.dcp
-  read_ip -quiet /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.srcs/sources_1/ip/Conversion_0/Conversion_0.xci
-  read_xdc /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/xdc/Nexys4_Master.xdc
+  add_files -quiet /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.runs/synth_1/turbo_uart.dcp
+  read_ip -quiet /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.srcs/sources_1/ip/Conversion_0/Conversion_0.xci
+  read_xdc /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/xdc/Nexys4_Master.xdc
   link_design -top turbo_uart -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

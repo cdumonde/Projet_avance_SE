@@ -1,6 +1,69 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Nov 10 10:39:34 2017
+| Host         : cdumonde running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Conversion_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Conversion_0 (xilinx.com:hls:Conversion:1.2) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Nov 10 10:25:03 2017
+| Host         : cdumonde running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Conversion_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Conversion_0 (xilinx.com:hls:Conversion:1.2) from (Rev. 1711101009) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Nov 10 10:11:05 2017
+| Host         : cdumonde running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Conversion_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Conversion_0 from xilinx.com:hls:Conversion:1.0 (Rev. 1) to xilinx.com:hls:Conversion:1.2 (Rev. 1711101009)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
 | Date         : Wed Oct 25 18:22:56 2017
 | Host         : cdumonde running 64-bit Ubuntu 14.04.5 LTS
 | Command      : upgrade_ip

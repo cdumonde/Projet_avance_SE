@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:hls:Conversion:1.0
--- IP Revision: 1
+-- IP VLNV: xilinx.com:hls:Conversion:1.2
+-- IP Revision: 2
 
 -- The following code must appear in the VHDL architecture header.
 

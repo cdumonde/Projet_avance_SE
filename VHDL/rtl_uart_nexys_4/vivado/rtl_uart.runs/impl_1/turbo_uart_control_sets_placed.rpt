@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date         : Wed Oct 25 18:26:57 2017
+| Date         : Fri Nov 10 10:58:27 2017
 | Host         : cdumonde running 64-bit Ubuntu 14.04.5 LTS
 | Command      : report_control_sets -file turbo_uart_control_sets_placed.rpt
 | Design       : turbo_uart
@@ -34,9 +34,9 @@ Table of Contents
 | No           | No                    | No                     |               5 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              26 |           16 |
-| Yes          | No                    | No                     |              16 |            4 |
+| Yes          | No                    | No                     |              14 |            4 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              72 |           22 |
+| Yes          | Yes                   | No                     |              88 |           26 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 

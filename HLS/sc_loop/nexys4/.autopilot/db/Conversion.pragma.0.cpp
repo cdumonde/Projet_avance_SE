@@ -29317,8 +29317,8 @@ struct Conversion : ::sc_core::sc_module
 public:
  sc_in <bool> clk;
  sc_in <bool> reset;
- sc_fifo_in <char> e;
-    sc_fifo_out<char> s;
+ sc_fifo_in <unsigned char> e;
+    sc_fifo_out<unsigned char> s;
 
     typedef Conversion SC_CURRENT_USER_MODULE; Conversion( ::sc_core::sc_module_name )
     {
@@ -29326,19 +29326,13 @@ public:
      watching(reset.delayed() == true);
     }
 
-
-
-
-
-
-
     void do_conversion();
 };
 #10 "sc_loop/src/modules/Conversion.cpp" 2
 
 void Conversion::do_conversion(){
- int d = 0;
- int filter_data = 0;
+ unsigned char d = 0;
+ unsigned char filter_data = 0;
 
  while( true ){
   d = e.read();
@@ -29346,6 +29340,7 @@ void Conversion::do_conversion(){
 
 
 
-  s.write( d+1 );
+  unsigned char x = d & 0xFE;
+  s.write( x );
  }
 }

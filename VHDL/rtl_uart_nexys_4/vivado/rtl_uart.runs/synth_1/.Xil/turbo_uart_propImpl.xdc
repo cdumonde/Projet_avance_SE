@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/xdc/Nexys4_Master.xdc rfile:../../../../xdc/Nexys4_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/xdc/Nexys4_Master.xdc rfile:../../../../xdc/Nexys4_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports CLK]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]

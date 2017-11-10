@@ -35,29 +35,29 @@ struct Conversion_do_conversion : public sc_module {
     sc_trace_file* mVcdFile;
 
     sc_signal< sc_logic > e_blk_n;
-    sc_signal< sc_lv<3> > ap_CS_fsm;
+    sc_signal< sc_lv<2> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state2;
     sc_signal< sc_logic > s_blk_n;
-    sc_signal< sc_logic > ap_CS_fsm_state3;
-    sc_signal< sc_lv<8> > tmp_reg_73;
-    sc_signal< sc_lv<3> > ap_NS_fsm;
+    sc_signal< bool > ap_block_state2;
+    sc_signal< sc_lv<7> > tmp_fu_73_p4;
+    sc_signal< sc_lv<2> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
-    static const sc_lv<3> ap_ST_fsm_state2;
-    static const sc_lv<3> ap_ST_fsm_state3;
+    static const sc_lv<2> ap_ST_fsm_state2;
     static const sc_lv<32> ap_const_lv32_1;
-    static const sc_lv<32> ap_const_lv32_2;
-    static const sc_lv<8> ap_const_lv8_1;
+    static const sc_lv<32> ap_const_lv32_7;
+    static const sc_lv<1> ap_const_lv1_0;
     static const bool ap_const_boolean_1;
     // Thread declarations
     void thread_ap_clk_no_reset_();
     void thread_ap_CS_fsm_state2();
-    void thread_ap_CS_fsm_state3();
+    void thread_ap_block_state2();
     void thread_e_blk_n();
     void thread_e_read();
     void thread_s_blk_n();
     void thread_s_din();
     void thread_s_write();
+    void thread_tmp_fu_73_p4();
     void thread_ap_NS_fsm();
 };
 

@@ -93,8 +93,8 @@ BEGIN
      fifo_afull => OPEN,
      fifo_full  => OPEN,
          tx     => RsTx,
-        dat     => data_from_uart,
-     dat_en     => data_from_uart_en);
+        dat     => data_to_uart,
+     dat_en     => data_to_uart_en);
 
     conv : Conversion_0
     PORT MAP (
@@ -104,7 +104,7 @@ BEGIN
         e_empty_n => data_from_uart_en,
         e_read    => open,
         s_din     => data_to_uart,
-        s_full_n  => '0',
+        s_full_n  => '1',
         s_write   => data_to_uart_en
     );
 end Behavioral;

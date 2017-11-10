@@ -9,8 +9,8 @@
 #include "Conversion.h"
 
 void Conversion::do_conversion(){
-	int d = 0;
-	int filter_data = 0;
+	unsigned char d = 0;
+	unsigned char filter_data = 0;
 
 	while( true ){
 		d = e.read();
@@ -18,6 +18,7 @@ void Conversion::do_conversion(){
 		//filter_data += d - (filter_data >> 3) ;
 
 		//s.write( filter_data >> 3 );
-		s.write( d+1 );
+		unsigned char x = d & 0xFE;
+		s.write( x );
 	}
 }

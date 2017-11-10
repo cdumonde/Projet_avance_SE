@@ -2,11 +2,11 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Wed Oct 25 18:25:40 2017
-# Process ID: 13722
-# Current directory: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.runs/impl_1
+# Start of session at: Fri Nov 10 10:57:19 2017
+# Process ID: 13405
+# Current directory: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.runs/impl_1
 # Command line: vivado -log turbo_uart.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source turbo_uart.tcl -notrace
-# Log file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.runs/impl_1/turbo_uart.vdi
-# Journal file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.runs/impl_1/vivado.jou
+# Log file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.runs/impl_1/turbo_uart.vdi
+# Journal file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/VHDL/rtl_uart_nexys_4/vivado/rtl_uart.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source turbo_uart.tcl -notrace

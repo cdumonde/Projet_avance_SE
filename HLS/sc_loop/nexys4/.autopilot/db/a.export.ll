@@ -16,10 +16,12 @@ target triple = "x86_64-unknown-linux-gnu"
 @p_str4 = private unnamed_addr constant [8 x i8] c"ap_fifo\00", align 1
 @p_str3 = private unnamed_addr constant [6 x i8] c"reset\00", align 1
 @p_str2 = private unnamed_addr constant [4 x i8] c"clk\00", align 1
-@p_str13 = private unnamed_addr constant [7 x i8] c"\22char\22\00", align 1
+@p_str13 = private unnamed_addr constant [16 x i8] c"\22unsigned char\22\00", align 1
 @p_str10 = private unnamed_addr constant [2 x i8] c"s\00", align 1
 @p_str1 = private unnamed_addr constant [7 x i8] c"\22bool\22\00", align 1
 @p_str = private unnamed_addr constant [11 x i8] c"Conversion\00", align 1
+
+declare i8 @llvm.part.select.i8(i8, i32, i32) nounwind readnone
 
 declare void @llvm.dbg.value(metadata, i64, metadata) nounwind readnone
 
@@ -95,6 +97,22 @@ entry:
   ret i8 %empty
 }
 
+define weak i7 @_ssdm_op_PartSelect.i7.i8.i32.i32(i8, i32, i32) nounwind readnone {
+entry:
+  %empty = call i8 @llvm.part.select.i8(i8 %0, i32 %1, i32 %2)
+  %empty_5 = trunc i8 %empty to i7
+  ret i7 %empty_5
+}
+
+define weak i8 @_ssdm_op_BitConcatenate.i8.i7.i1(i7, i1) nounwind readnone {
+entry:
+  %empty = zext i7 %0 to i8
+  %empty_6 = zext i1 %1 to i8
+  %empty_7 = shl i8 %empty, 1
+  %empty_8 = or i8 %empty_7, %empty_6
+  ret i8 %empty_8
+}
+
 declare i8 @_autotb_FifoWrite_i8(i8*, i8)
 
 declare i8 @_autotb_FifoRead_i8(i8*)
@@ -111,17 +129,18 @@ define void @"Conversion::do_conversion"(i1* %clk, i1* %reset, i8* %e, i8* %s) {
   call void (...)* @_ssdm_op_SpecInterface(i8* %e, [8 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i8* %s, [8 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5) nounwind
   call void (...)* @_ssdm_op_SpecProcessDef([11 x i8]* @p_str, i32 2, [14 x i8]* @p_str6) nounwind
-  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str7)
+  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str7)
   call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str5) nounwind
   %p_ssdm_reset_v = call i32 (...)* @_ssdm_op_SpecStateBegin(i32 0, i32 0, i32 1) nounwind
   %empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind
-  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str7, i32 %tmp_2)
+  %empty_9 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str7, i32 %tmp_1)
   br label %1
 
 ; <label>:1                                       ; preds = %1, %0
-  %tmp = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %e)
-  %tmp_1 = add i8 %tmp, 1
-  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %s, i8 %tmp_1)
+  %tmp_3 = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %e)
+  %tmp = call i7 @_ssdm_op_PartSelect.i7.i8.i32.i32(i8 %tmp_3, i32 1, i32 7)
+  %x = call i8 @_ssdm_op_BitConcatenate.i8.i7.i1(i7 %tmp, i1 false)
+  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %s, i8 %x)
   br label %1
 }
 
@@ -149,9 +168,9 @@ define weak void @"Conversion::Conversion"(i1* %clk, i1* %reset, i8* %e, i8* %s)
   call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 0, [7 x i8]* @p_str1, [4 x i8]* @p_str2, i32 0, i32 0, i1* %clk) nounwind
   call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 0, [7 x i8]* @p_str1, [6 x i8]* @p_str3, i32 0, i32 0, i1* %reset) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i8* %e, [8 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5) nounwind
-  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 4, [7 x i8]* @p_str13, [2 x i8]* @p_str9, i32 0, i32 0, i8* %e) nounwind
+  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 4, [16 x i8]* @p_str13, [2 x i8]* @p_str9, i32 0, i32 0, i8* %e) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i8* %s, [8 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5) nounwind
-  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 5, [7 x i8]* @p_str13, [2 x i8]* @p_str10, i32 0, i32 0, i8* %s) nounwind
+  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 5, [16 x i8]* @p_str13, [2 x i8]* @p_str10, i32 0, i32 0, i8* %s) nounwind
   ret void
 }
 
@@ -169,7 +188,7 @@ define weak void @"Conversion::Conversion"(i1* %clk, i1* %reset, i8* %e, i8* %s)
 !7 = metadata !{null, metadata !8, metadata !9, metadata !10, metadata !11, metadata !12, metadata !6}
 !8 = metadata !{metadata !"kernel_arg_addr_space", i32 0}
 !9 = metadata !{metadata !"kernel_arg_access_qual", metadata !"none"}
-!10 = metadata !{metadata !"kernel_arg_type", metadata !"const char &"}
+!10 = metadata !{metadata !"kernel_arg_type", metadata !"const uchar &"}
 !11 = metadata !{metadata !"kernel_arg_type_qual", metadata !""}
 !12 = metadata !{metadata !"kernel_arg_name", metadata !"v"}
 !13 = metadata !{null, metadata !8, metadata !9, metadata !10, metadata !11, metadata !14, metadata !6}
@@ -177,11 +196,11 @@ define weak void @"Conversion::Conversion"(i1* %clk, i1* %reset, i8* %e, i8* %s)
 !15 = metadata !{null, metadata !16, metadata !17, metadata !18, metadata !19, metadata !20, metadata !6}
 !16 = metadata !{metadata !"kernel_arg_addr_space", i32 0, i32 0}
 !17 = metadata !{metadata !"kernel_arg_access_qual", metadata !"none", metadata !"none"}
-!18 = metadata !{metadata !"kernel_arg_type", metadata !"volatile char &", metadata !"const char &"}
+!18 = metadata !{metadata !"kernel_arg_type", metadata !"volatile uchar &", metadata !"const uchar &"}
 !19 = metadata !{metadata !"kernel_arg_type_qual", metadata !"", metadata !""}
 !20 = metadata !{metadata !"kernel_arg_name", metadata !"P", metadata !"val"}
 !21 = metadata !{null, metadata !8, metadata !9, metadata !22, metadata !11, metadata !23, metadata !6}
-!22 = metadata !{metadata !"kernel_arg_type", metadata !"volatile char &"}
+!22 = metadata !{metadata !"kernel_arg_type", metadata !"volatile uchar &"}
 !23 = metadata !{metadata !"kernel_arg_name", metadata !"P"}
 !24 = metadata !{null, metadata !25, metadata !9, metadata !26, metadata !27, metadata !28, metadata !6}
 !25 = metadata !{metadata !"kernel_arg_addr_space", i32 1}
@@ -215,8 +234,8 @@ define weak void @"Conversion::Conversion"(i1* %clk, i1* %reset, i8* %e, i8* %s)
 !53 = metadata !{metadata !54}
 !54 = metadata !{i32 0, i32 7, metadata !55}
 !55 = metadata !{metadata !56}
-!56 = metadata !{metadata !"Conversion.e.m_if.Val", metadata !38, metadata !"char", i32 0, i32 7}
+!56 = metadata !{metadata !"Conversion.e.m_if.Val", metadata !38, metadata !"unsigned char", i32 0, i32 7}
 !57 = metadata !{metadata !58}
 !58 = metadata !{i32 0, i32 7, metadata !59}
 !59 = metadata !{metadata !60}
-!60 = metadata !{metadata !"Conversion.s.m_if.Val", metadata !38, metadata !"char", i32 0, i32 7}
+!60 = metadata !{metadata !"Conversion.s.m_if.Val", metadata !38, metadata !"unsigned char", i32 0, i32 7}

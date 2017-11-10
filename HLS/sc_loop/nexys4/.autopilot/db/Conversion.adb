@@ -522,7 +522,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>4</mMinLatency>
+        <mMinLatency>3</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -705,11 +705,11 @@
             <item_version>0</item_version>
             <item class_id="40" tracking_level="0" version="0">
               <first>FF</first>
-              <second>11</second>
+              <second>2</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>48</second>
+              <second>35</second>
             </item>
           </second>
         </item>

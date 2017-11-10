@@ -21,7 +21,7 @@ lappend portList $port1
 set portName2 "e"
 set isMeta2 0
 set portInterface2 [list "sc_fifo_in"]
-set portData2 [list "char"]
+set portData2 [list "unsigned char"]
 set isClock2 0
 set isReset2 0
 set portAttribute2 [list $isClock2 $isReset2]
@@ -30,7 +30,7 @@ lappend portList $port2
 set portName3 "s"
 set isMeta3 0
 set portInterface3 [list "sc_fifo_out"]
-set portData3 [list "char"]
+set portData3 [list "unsigned char"]
 set isClock3 0
 set isReset3 0
 set portAttribute3 [list $isClock3 $isReset3]

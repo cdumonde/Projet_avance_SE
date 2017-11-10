@@ -288,7 +288,7 @@
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="8">
 <![CDATA[
-:6  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 4, [7 x i8]* @p_str13, [2 x i8]* @p_str9, i32 0, i32 0, i8* %e) nounwind
+:6  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 4, [16 x i8]* @p_str13, [2 x i8]* @p_str9, i32 0, i32 0, i8* %e) nounwind
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -320,7 +320,7 @@
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="8">
 <![CDATA[
-:8  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 5, [7 x i8]* @p_str13, [2 x i8]* @p_str10, i32 0, i32 0, i8* %s) nounwind
+:8  call void (...)* @_ssdm_op_SpecPort([11 x i8]* @p_str, i32 5, [16 x i8]* @p_str13, [2 x i8]* @p_str10, i32 0, i32 0, i8* %s) nounwind
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>

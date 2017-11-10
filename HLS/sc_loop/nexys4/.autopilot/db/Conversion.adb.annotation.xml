@@ -1,4 +1,5 @@
 <annotationInfo>
-<item  id="22" filename="sc_loop/src/modules/Conversion.cpp" linenumber="21" name="tmp_1" contextFuncName="do_conversion" moduleName="Conversion::do_conversion" rtlName="s_din" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/HLS"></item>
+<item  id="22" filename="sc_loop/src/modules/Conversion.cpp" linenumber="16" name="tmp" contextFuncName="do_conversion" moduleName="Conversion::do_conversion" rtlName="tmp_fu_73_p4" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/HLS"></item>
+<item  id="23" filename="sc_loop/src/modules/Conversion.cpp" linenumber="21" name="x" contextFuncName="do_conversion" moduleName="Conversion::do_conversion" rtlName="s_din" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/HLS"></item>
 <item  id="29" filename="sc_loop/src/modules/Conversion.h" linenumber="21" name="" contextFuncName="Conversion" moduleName="Conversion" rtlName="grp_Conversion_do_conversion_fu_56" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/HLS"></item>
 </annotationInfo>

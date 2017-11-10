@@ -32378,8 +32378,8 @@ static bool __ssdm_thread_M_do_conversion;;
   public:
   sc_in <bool> clk;
   sc_in <bool> reset;
-  sc_fifo_in <char> e;
-  sc_fifo_out<char> s;
+  sc_fifo_in <unsigned char> e;
+  sc_fifo_out<unsigned char> s;
   Conversion(::sc_core::sc_module_name )
  {
     _ssdm_op_SpecTopModule("Conversion", "Conversion"); _ssdm_InlineAll(1); _ssdm_InlineSelf(2);;
@@ -32389,9 +32389,9 @@ static bool __ssdm_thread_M_do_conversion;;
     _ssdm_op_SpecPort("Conversion", _ssdm_sc_in, "\"bool\"", "clk", 0, 0, &clk);
     _ssdm_op_SpecPort("Conversion", _ssdm_sc_in, "\"bool\"", "reset", 0, 0, &reset);
     _ssdm_op_SpecInterface(&e, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-    _ssdm_op_SpecPort("Conversion", _ssdm_sc_fifo_in, "\"char\"", "e", 0, 0, &e);
+    _ssdm_op_SpecPort("Conversion", _ssdm_sc_fifo_in, "\"unsigned char\"", "e", 0, 0, &e);
     _ssdm_op_SpecInterface(&s, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-    _ssdm_op_SpecPort("Conversion", _ssdm_sc_fifo_out, "\"char\"", "s", 0, 0, &s);
+    _ssdm_op_SpecPort("Conversion", _ssdm_sc_fifo_out, "\"unsigned char\"", "s", 0, 0, &s);
 _ssdm_op_SpecExt("member_name", "clk", &clk);;
 _ssdm_op_SpecExt("member_name", "reset", &reset);;
 _ssdm_op_SpecExt("member_name", "e", &e);;
@@ -32415,9 +32415,9 @@ _ssdm_op_SpecExt("member_name", "e", &e);;
 _ssdm_op_SpecExt("member_name", "s", &s);;
                                           ;
 # 12 "sc_loop/src/modules/Conversion.cpp"
-int d = 0;
+unsigned char d = 0;
 # 13 "sc_loop/src/modules/Conversion.cpp"
-int filter_data = 0; _ssdm_op_SpecStateEnd(_ssdm_reset_v); _ssdm_RegionEnd("__ssdm_reset__"); while (true)
+unsigned char filter_data = 0; _ssdm_op_SpecStateEnd(_ssdm_reset_v); _ssdm_RegionEnd("__ssdm_reset__"); while (true)
 # 15 "sc_loop/src/modules/Conversion.cpp"
 {
   d = e.read();
@@ -32425,7 +32425,8 @@ int filter_data = 0; _ssdm_op_SpecStateEnd(_ssdm_reset_v); _ssdm_RegionEnd("__ss
 
 
 
-  s.write( d+1 );
+  unsigned char x = d & 0xFE;
+  s.write( x );
  }; }
 
 

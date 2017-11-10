@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date             : Wed Oct 25 18:27:24 2017
+| Date             : Fri Nov 10 10:58:59 2017
 | Host             : cdumonde running 64-bit Ubuntu 14.04.5 LTS
 | Command          : report_power -file turbo_uart_power_routed.rpt -pb turbo_uart_power_summary_routed.pb -rpx turbo_uart_power_routed.rpx
 | Design           : turbo_uart
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.105        |
+| Total On-Chip Power (W)  | 0.111        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.008        |
+| Dynamic (W)              | 0.014        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.002 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |      843 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      235 |     63400 |            0.37 |
-|   CARRY4                 |    <0.001 |       10 |     15850 |            0.06 |
-|   Register               |    <0.001 |      119 |    126800 |            0.09 |
+| Slice Logic              |    <0.001 |      863 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      236 |     63400 |            0.37 |
+|   CARRY4                 |    <0.001 |       14 |     15850 |            0.09 |
+|   Register               |    <0.001 |      133 |    126800 |            0.10 |
 |   F7/F8 Muxes            |    <0.001 |       56 |     63400 |            0.09 |
 |   LUT as Distributed RAM |    <0.001 |      384 |     19000 |            2.02 |
-|   Others                 |     0.000 |        6 |       --- |             --- |
-| Signals                  |    <0.001 |      513 |       --- |             --- |
-| I/O                      |     0.006 |       22 |       210 |           10.48 |
+|   Others                 |     0.000 |        7 |       --- |             --- |
+| Signals                  |    <0.001 |      531 |       --- |             --- |
+| I/O                      |     0.011 |       22 |       210 |           10.48 |
 | Static Power             |     0.097 |          |           |                 |
-| Total                    |     0.105 |          |           |                 |
+| Total                    |     0.111 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,8 +74,8 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
-| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
+| Vccaux    |       1.800 |     0.019 |       0.000 |      0.018 |
+| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -142,7 +142,9 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| turbo_uart                 |     0.008 |
+| turbo_uart                 |     0.014 |
+|   conv                     |     0.000 |
+|     U0                     |     0.000 |
 |   rcv                      |    <0.001 |
 |   snd                      |     0.002 |
 |     FIFO_reg_0_63_0_2      |    <0.001 |

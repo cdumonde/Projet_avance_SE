@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Conversion'" level="0">
-<item name = "Date">Wed Oct 25 18:21:03 2017
+<item name = "Date">Fri Nov 10 10:35:52 2017
 </item>
 <item name = "Version">2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)</item>
 <item name = "Project">sc_loop</item>
@@ -15,21 +15,21 @@
 <section name = "" level="1">
 <item name = "Target clock period (ns)">10.00</item>
 <item name = "Clock uncertainty (ns)">2.00</item>
-<item name = "Estimated clock period (ns)">6.02</item>
+<item name = "Estimated clock period (ns)">7.82</item>
 </section>
 </item>
 <item name = "Latency (clock cycles)">
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">0, 4, 1, 5, none</column>
+<column name="">0, 3, 1, 4, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_Conversion_do_conversion_fu_56">Conversion_do_conversion, 3, 3, 3, 3, none</column>
+<column name="grp_Conversion_do_conversion_fu_56">Conversion_do_conversion, 2, 2, 2, 2, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -48,7 +48,7 @@
 <column name="DSP">-, -, -, -</column>
 <column name="Expression">-, -, -, -</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">-, -, 11, 48</column>
+<column name="Instance">-, -, 2, 35</column>
 <column name="Memory">-, -, -, -</column>
 <column name="Multiplexer">-, -, -, -</column>
 <column name="Register">-, -, -, -</column>
@@ -60,7 +60,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="grp_Conversion_do_conversion_fu_56">Conversion_do_conversion, 0, 0, 11, 48</column>
+<column name="grp_Conversion_do_conversion_fu_56">Conversion_do_conversion, 0, 0, 2, 35</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">

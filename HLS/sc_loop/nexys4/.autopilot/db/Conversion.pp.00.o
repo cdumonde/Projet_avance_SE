@@ -84,34 +84,33 @@ _ZN10Conversion13do_conversionEv:       # @_ZN10Conversion13do_conversionEv
 	subq	$32, %rsp
 	movq	%rdi, -8(%rbp)
 	movq	-8(%rbp), %rdi
-	movl	$0, -12(%rbp)
-	movl	$0, -16(%rbp)
-	movq	%rdi, -32(%rbp)         # 8-byte Spill
+	movb	$0, -9(%rbp)
+	movb	$0, -10(%rbp)
+	movq	%rdi, -24(%rbp)         # 8-byte Spill
 .LBB3_1:                                # =>This Inner Loop Header: Depth=1
-	movq	-32(%rbp), %rax         # 8-byte Reload
+	movq	-24(%rbp), %rax         # 8-byte Reload
 	addq	$528, %rax              # imm = 0x210
 	movq	%rax, %rdi
-	callq	_ZN7sc_core10sc_fifo_inIcE4readEv
-	leaq	-17(%rbp), %rsi
-	movsbl	%al, %ecx
-	movl	%ecx, -12(%rbp)
-	movq	-32(%rbp), %rdi         # 8-byte Reload
-	addq	$656, %rdi              # imm = 0x290
-	movl	-12(%rbp), %ecx
-	addl	$1, %ecx
+	callq	_ZN7sc_core10sc_fifo_inIhE4readEv
+	leaq	-11(%rbp), %rsi
+	movb	%al, -9(%rbp)
+	movzbl	-9(%rbp), %ecx
+	andl	$254, %ecx
 	movb	%cl, %al
-	movb	%al, -17(%rbp)
-	callq	_ZN7sc_core11sc_fifo_outIcE5writeERKc
+	movb	%al, -11(%rbp)
+	movq	-24(%rbp), %rdi         # 8-byte Reload
+	addq	$656, %rdi              # imm = 0x290
+	callq	_ZN7sc_core11sc_fifo_outIhE5writeERKh
 	jmp	.LBB3_1
 .Ltmp18:
 	.size	_ZN10Conversion13do_conversionEv, .Ltmp18-_ZN10Conversion13do_conversionEv
 	.cfi_endproc
 
-	.section	.text._ZN7sc_core10sc_fifo_inIcE4readEv,"axG",@progbits,_ZN7sc_core10sc_fifo_inIcE4readEv,comdat
-	.weak	_ZN7sc_core10sc_fifo_inIcE4readEv
+	.section	.text._ZN7sc_core10sc_fifo_inIhE4readEv,"axG",@progbits,_ZN7sc_core10sc_fifo_inIhE4readEv,comdat
+	.weak	_ZN7sc_core10sc_fifo_inIhE4readEv
 	.align	16, 0x90
-	.type	_ZN7sc_core10sc_fifo_inIcE4readEv,@function
-_ZN7sc_core10sc_fifo_inIcE4readEv:      # @_ZN7sc_core10sc_fifo_inIcE4readEv
+	.type	_ZN7sc_core10sc_fifo_inIhE4readEv,@function
+_ZN7sc_core10sc_fifo_inIhE4readEv:      # @_ZN7sc_core10sc_fifo_inIhE4readEv
 	.cfi_startproc
 # BB#0:
 	pushq	%rbp
@@ -125,24 +124,24 @@ _ZN7sc_core10sc_fifo_inIcE4readEv:      # @_ZN7sc_core10sc_fifo_inIcE4readEv
 	subq	$16, %rsp
 	movq	%rdi, -8(%rbp)
 	movq	-8(%rbp), %rdi
-	callq	_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv
+	callq	_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv
 	movq	%rax, %rdi
 	addq	$8, %rdi
 	movq	8(%rax), %rax
 	callq	*40(%rax)
-	movsbl	%al, %eax
+	movzbl	%al, %eax
 	addq	$16, %rsp
 	popq	%rbp
 	ret
 .Ltmp24:
-	.size	_ZN7sc_core10sc_fifo_inIcE4readEv, .Ltmp24-_ZN7sc_core10sc_fifo_inIcE4readEv
+	.size	_ZN7sc_core10sc_fifo_inIhE4readEv, .Ltmp24-_ZN7sc_core10sc_fifo_inIhE4readEv
 	.cfi_endproc
 
-	.section	.text._ZN7sc_core11sc_fifo_outIcE5writeERKc,"axG",@progbits,_ZN7sc_core11sc_fifo_outIcE5writeERKc,comdat
-	.weak	_ZN7sc_core11sc_fifo_outIcE5writeERKc
+	.section	.text._ZN7sc_core11sc_fifo_outIhE5writeERKh,"axG",@progbits,_ZN7sc_core11sc_fifo_outIhE5writeERKh,comdat
+	.weak	_ZN7sc_core11sc_fifo_outIhE5writeERKh
 	.align	16, 0x90
-	.type	_ZN7sc_core11sc_fifo_outIcE5writeERKc,@function
-_ZN7sc_core11sc_fifo_outIcE5writeERKc:  # @_ZN7sc_core11sc_fifo_outIcE5writeERKc
+	.type	_ZN7sc_core11sc_fifo_outIhE5writeERKh,@function
+_ZN7sc_core11sc_fifo_outIhE5writeERKh:  # @_ZN7sc_core11sc_fifo_outIhE5writeERKh
 	.cfi_startproc
 # BB#0:
 	pushq	%rbp
@@ -158,7 +157,7 @@ _ZN7sc_core11sc_fifo_outIcE5writeERKc:  # @_ZN7sc_core11sc_fifo_outIcE5writeERKc
 	movq	%rsi, -16(%rbp)
 	movq	-8(%rbp), %rsi
 	movq	%rsi, %rdi
-	callq	_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv
+	callq	_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv
 	movq	%rax, %rsi
 	addq	$8, %rsi
 	movq	8(%rax), %rax
@@ -172,7 +171,7 @@ _ZN7sc_core11sc_fifo_outIcE5writeERKc:  # @_ZN7sc_core11sc_fifo_outIcE5writeERKc
 	popq	%rbp
 	ret
 .Ltmp30:
-	.size	_ZN7sc_core11sc_fifo_outIcE5writeERKc, .Ltmp30-_ZN7sc_core11sc_fifo_outIcE5writeERKc
+	.size	_ZN7sc_core11sc_fifo_outIhE5writeERKh, .Ltmp30-_ZN7sc_core11sc_fifo_outIhE5writeERKh
 	.cfi_endproc
 
 	.section	.text._ZN7sc_core18sc_process_monitorD1Ev,"axG",@progbits,_ZN7sc_core18sc_process_monitorD1Ev,comdat
@@ -273,11 +272,11 @@ GCC_except_table7:
 	.byte	0                       #   On action: cleanup
 	.align	4
 
-	.section	.text._ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv,"axG",@progbits,_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv,comdat
-	.weak	_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv
+	.section	.text._ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv,"axG",@progbits,_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv,comdat
+	.weak	_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv
 	.align	16, 0x90
-	.type	_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv,@function
-_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv: # @_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv
+	.type	_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv,@function
+_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv: # @_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv
 	.cfi_startproc
 # BB#0:
 	pushq	%rbp
@@ -307,14 +306,14 @@ _ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv: # @_ZN7sc_core9sc_port_bINS_
 	popq	%rbp
 	ret
 .Ltmp51:
-	.size	_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv, .Ltmp51-_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIcEEEptEv
+	.size	_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv, .Ltmp51-_ZN7sc_core9sc_port_bINS_14sc_fifo_out_ifIhEEEptEv
 	.cfi_endproc
 
-	.section	.text._ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv,"axG",@progbits,_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv,comdat
-	.weak	_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv
+	.section	.text._ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv,"axG",@progbits,_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv,comdat
+	.weak	_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv
 	.align	16, 0x90
-	.type	_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv,@function
-_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv: # @_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv
+	.type	_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv,@function
+_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv: # @_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv
 	.cfi_startproc
 # BB#0:
 	pushq	%rbp
@@ -344,7 +343,7 @@ _ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv: # @_ZN7sc_core9sc_port_bINS_1
 	popq	%rbp
 	ret
 .Ltmp57:
-	.size	_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv, .Ltmp57-_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIcEEEptEv
+	.size	_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv, .Ltmp57-_ZN7sc_core9sc_port_bINS_13sc_fifo_in_ifIhEEEptEv
 	.cfi_endproc
 
 	.section	.text._ZN7sc_core18sc_process_monitorD2Ev,"axG",@progbits,_ZN7sc_core18sc_process_monitorD2Ev,comdat
