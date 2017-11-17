@@ -1,5 +1,6 @@
 #ifndef FILTRE1_H
 #define FILTRE1_H
+
 #define	 SC_INCLUDE_FX
 #include "systemc.h"
 
@@ -18,16 +19,11 @@ private:
 	sc_int<16> 	x0;
 	sc_int<16> 	x1;
 public:
-	sc_in 	< sc_int<16> >	e;
-	//sc_in 	< sc_int<16> >	e2;
-	//sc_in 	< sc_int<16> >	e3;
-	sc_out 	< sc_int<16> >	s;
-	sc_in 	< bool >		clk;
-	//sc_in 	< bool >		e_valid;
-	//sc_in 	< bool >		s_valid;
+	sc_fifo_in 		< sc_int<16> >	e;
+	sc_fifo_out 	< sc_int<16> >	s;
 
 	SC_CTOR(filtre1){
-		SC_CTHREAD( do_filtre, clk.pos() );
+		SC_THREAD( do_filtre );
 	}
 
 	void do_filtre();

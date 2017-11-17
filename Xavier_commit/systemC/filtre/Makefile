@@ -6,6 +6,7 @@ SRC=./src/main.cpp 					\
 	./src/modules/filtre1.cpp		\
 	./src/modules/carre.cpp			\
 	./src/modules/racine.cpp		\
+	./src/modules/sc_store.cpp		\
 	./src/analyseur/analyseur.cpp 	\
 	./src/gene/gene.cpp 		
 

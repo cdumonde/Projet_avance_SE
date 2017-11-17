@@ -3,7 +3,7 @@
 #include "./modules/filtre1.h"
 #include "./modules/carre.h"
 #include "./modules/racine.h"
-#include "./modules/filtre1.h"
+#include "./modules/sc_store.h"
 
 #include <iostream>
 
@@ -16,27 +16,33 @@ int main( int argc, char * argv[]){
 	gene		gen("data_in");
 	filtre1		f1("filtrage1");
 	filtre1		f2("filtrage2");
+	sc_store	store1("gene-filtre1");
+	store1.setFilename("output_gene_filtre1.txt");
 
-	cout << "Creation du signal d'horloge..." << endl;
-	sc_clock clock1( "clk", 10, SC_MS);
+	//cout << "Creation du signal d'horloge..." << endl;
+	//sc_clock clock1( "clk", 10, SC_MS);
 
 	cout << "Creation des signaux d'interconnexion..." << endl;
-	sc_signal 	< sc_int<16> >	sig1;//("fifo1", 10);
-	sc_signal  	< sc_int<16> >	sig2;//("fifo2", 10);
-	sc_signal  	< sc_int<16> >	sig3;
-	sc_signal  	< sc_int<16> >	sig4;
-	sc_signal  	< sc_int<16> >	sig5;
+	sc_fifo		< sc_int<16> >	sig1("fifo1", 1600);
+	sc_fifo		< sc_int<16> >	sig2("fifo2", 1600);
+	sc_fifo  	< sc_int<16> >	sig3("fifo3", 1600);
+	sc_fifo  	< sc_int<16> >	sig4("fifo4", 1600);
+	sc_fifo  	< sc_int<16> >	sig5("fifo5", 1600);
+	sc_fifo  	< sc_int<16> >	sig6("fifo6", 1600);
 
 	cout << "Mapping des composants..." << endl;
 
-	f1.clk(clock1);
+	/*f1.clk(clock1);
 	f2.clk(clock1);
 	ana.clk(clock1);
 	car.clk(clock1);
-	rac.clk(clock1);
+	rac.clk(clock1);*/
 
 	gen.s(sig1);
-	f1.e(sig1);
+	store1.e(sig1);
+
+	store1.s(sig6);
+	f1.e(sig6);
 	//gene.s2(sig2);
 	//filtre1.e2(sig2);
 	//gene.s3(sig3);
@@ -56,7 +62,7 @@ int main( int argc, char * argv[]){
 	ana.e(sig5);
 
 	cout << "Lancement de la simulation du circuit..." << endl;
-	sc_start(103, SC_MS);
+	sc_start( 1, SC_MS );
 
 	return 0;
 	

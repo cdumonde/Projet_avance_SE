@@ -24,7 +24,6 @@ void filtre1::do_filtre(){
 	//bool 		init = 1;
 
 	while( true ){
-		wait();
 		//s_valide.write( 0 );
 
 		x0 = e.read();
