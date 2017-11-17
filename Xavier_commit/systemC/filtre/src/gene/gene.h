@@ -1,19 +1,29 @@
-#ifndef GENE_H
-#define GENE_H
+#ifndef __GENE_H__
+#define __GENE_H__
 
-#define SC_INCLUDE_FX
 #include "systemc.h"
+#include <iostream>
+#include <fstream>
 
-SC_MODULE( gene ){
-	sc_fifo_out 	< sc_int<16> >	s;
-	//sc_out 	< sc_int<16> >	s2;
-	//sc_out 	< sc_int<16> >	s3;
+SC_MODULE(gene)
+{
 
-	void do_gene();
+private:
 
-	SC_CTOR( gene ){
-		SC_THREAD( do_gene );
-	}
+    std::string filename;
+
+public:
+
+    sc_fifo_out<float> value;
+
+    SC_CTOR(gene)
+    {
+        SC_THREAD(FileLoad);
+    }
+
+    void FileLoad();
+    void set_Filename( std::string _filename );
+
 };
 
 #endif

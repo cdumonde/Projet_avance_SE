@@ -2,10 +2,10 @@
 
 void analyseur::do_analyseur(){
 
-	sc_int<16> y;
+	float y;
 
 	while( true ){
 		y = e.read();
-		cout << y << endl;
+		//cout << y << endl;
 	}
 }

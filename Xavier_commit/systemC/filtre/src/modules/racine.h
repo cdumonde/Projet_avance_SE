@@ -7,10 +7,10 @@
 
 SC_MODULE( racine ){
 private:
-	sc_int<16> x;
+	float x;
 public:
-	sc_fifo_in 		< sc_int<16> >	e;
-	sc_fifo_out 	< sc_int<16> >	s;
+	sc_fifo_in 		< float >	e;
+	sc_fifo_out 	< float >	s;
 	//sc_in 	< bool >		clk;
 	//sc_in 	< bool >		e_valid;
 	//sc_in 	< bool >		s_valid;
@@ -20,7 +20,7 @@ public:
 	}
 
 	void do_racine();
-	//sc_int<16> FiltreIIR( bool init, sc_int<16> x1, sc_int<16> x0 );//sc_int<16> y1
+	//float FiltreIIR( bool init, float x1, float x0 );//float y1
 };
 
 #endif

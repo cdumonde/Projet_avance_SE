@@ -1,8 +1,8 @@
 #include "filtre1.h"
 
-sc_int<16> FiltreIIR( sc_int<16> y1, sc_int<16> x1, sc_int<16> x0 ){//sc_int<16> y1,
+float FiltreIIR( float y1, float x1, float x0 ){//float y1,
 
-	sc_int<16> y;
+	float y;
 
 	// if( init ){
 	// 	y = yi*b1 + x0*a0 + x1*a1;

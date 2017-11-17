@@ -5,7 +5,7 @@
 #include "systemc.h"
 
 SC_MODULE( analyseur ){
-	sc_fifo_in 		< sc_int<16> > 	e;
+	sc_fifo_in 		< float > 	e;
 	//sc_in 	< bool > 		clk;
 
 	void do_analyseur();

@@ -8,11 +8,11 @@
 
 SC_MODULE( sc_store ){
 private:
-	sc_int<16> x;
+	float x;
 	std::string filename;
 public:
-	sc_fifo_in 		< sc_int<16> >	e;
-	sc_fifo_out 	< sc_int<16> >	s;
+	sc_fifo_in 		< float >	e;
+	sc_fifo_out 	< float >	s;
 
 	SC_CTOR( sc_store ){
 		SC_THREAD( do_sc_store );
