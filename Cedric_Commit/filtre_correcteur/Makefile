@@ -3,7 +3,9 @@ CFLAGS=-O2 -Wall -I/usr/local/systemC/include
 LDFLAGS=-L/usr/local/systemC/lib-linux64 -lsystemc -lpthread -static
 EXEC=main
 SRC=./src/main.cpp 					\
-	./src/reader/reader.cpp
+	./src/reader/reader.cpp			\
+	./src/writer/writer.cpp			\
+	./src/passeHaut/passeHaut.cpp
 
 
 OBJ=$(SRC:.cpp=.o)
