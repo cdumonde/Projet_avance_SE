@@ -1,10 +1,10 @@
-#ifndef PASSEBAS_H
-#define PASSEBAS_H
+#ifndef PASSEHAUT_H
+#define PASSEHAUT_H
 
 #include <iostream>
 #include "systemc.h"
 
-SC_MODULE( PasseBas ){
+SC_MODULE( PasseHaut ){
 private:
 	const float a0 = 0.9709023;
 	const float a1 = 0.9709023;
@@ -14,7 +14,7 @@ public:
     sc_fifo_in<float> data_in;
     sc_fifo_out<float> data_out;
     
-	SC_CTOR(PasseBas){
+	SC_CTOR(PasseHaut){
 		SC_THREAD(filter);
 	}
 
