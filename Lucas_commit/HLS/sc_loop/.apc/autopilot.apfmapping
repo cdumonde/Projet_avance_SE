@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Conversion.h" path="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop/src/modules/Conversion.h"/>
+    <originFiles name="Conversion.cpp" path="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop/src/modules/Conversion.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop/src/main.cpp"/>
+    <originFiles name="Terminal.h" path="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop/src/analyseur/Terminal.h"/>
+    <originFiles name="Terminal.cpp" path="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop/src/analyseur/Terminal.cpp"/>
+    <originFiles name="Gene.h" path="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop/src/gene/Gene.h"/>
+    <originFiles name="Gene.cpp" path="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop/src/gene/Gene.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

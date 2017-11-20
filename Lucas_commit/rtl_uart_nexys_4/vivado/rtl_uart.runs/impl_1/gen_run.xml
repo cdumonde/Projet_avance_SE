@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1510310217">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="turbo_uart.drc"/>
+  <File Type="BG-BGN" Name="turbo_uart.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="turbo_uart.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="turbo_uart.ltx"/>
+  <File Type="BITSTR-MMI" Name="turbo_uart.mmi"/>
+  <File Type="BITSTR-BMM" Name="turbo_uart_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="turbo_uart.nky"/>
+  <File Type="BITSTR-RBT" Name="turbo_uart.rbt"/>
+  <File Type="BITSTR-MSK" Name="turbo_uart.msk"/>
+  <File Type="BG-BIN" Name="turbo_uart.bin"/>
+  <File Type="BG-BIT" Name="turbo_uart.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="turbo_uart_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="turbo_uart_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="turbo_uart_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="turbo_uart_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="turbo_uart_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="turbo_uart_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="turbo_uart_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="turbo_uart_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="turbo_uart_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="turbo_uart_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="turbo_uart_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="turbo_uart_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="turbo_uart_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="turbo_uart_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="turbo_uart_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="turbo_uart_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="turbo_uart_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="turbo_uart_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="turbo_uart_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="turbo_uart_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="turbo_uart_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="turbo_uart_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="turbo_uart_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="turbo_uart_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="turbo_uart_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="turbo_uart_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="turbo_uart_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="turbo_uart_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="turbo_uart_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="turbo_uart_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="turbo_uart_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="turbo_uart_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="turbo_uart_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="turbo_uart_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="turbo_uart_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="turbo_uart_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="turbo_uart_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="turbo_uart.vdi"/>
+  <File Type="PWROPT-TIMING" Name="turbo_uart_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="turbo_uart_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="turbo_uart_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="turbo_uart.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="turbo_uart_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="turbo_uart_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="turbo_uart_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="turbo_uart_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="turbo_uart_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="turbo_uart_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="turbo_uart_placed.dcp"/>
+  <File Type="PA-TCL" Name="turbo_uart.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../src/UART_fifoed_send_V1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uart_recv.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/uart.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/uart.vhd"/>
+        <Attr Name="ImportTime" Val="1505046697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/turbo_uart.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="turbo_uart"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../xdc/Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Conversion_0"/>
+</GenRun>

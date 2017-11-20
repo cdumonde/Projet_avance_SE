@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Oct 25 17:17:16 2017
+# Process ID: 7065
+# Current directory: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE
+# Command line: vivado
+# Log file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/vivado.log
+# Journal file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/hls_turbo_simd/hls_turbo_simd/nexys_4/impl/ip'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/hls_turbo_simd/hls_turbo_simd/nexys_4_200MHz/impl/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/hls_turbo_simd/hls_turbo_simd/nexys_4/impl/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/hls_turbo_simd/hls_turbo_simd/nexys_4_200MHz/impl/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 6036.938 ; gain = 103.750 ; free physical = 2241 ; free virtual = 9880
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.3
+  **** Build date : Oct  4 2017-20:06:41
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 25 17:27:56 2017...

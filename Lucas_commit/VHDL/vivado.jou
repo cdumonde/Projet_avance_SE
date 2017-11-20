@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Oct 25 17:17:16 2017
+# Process ID: 7065
+# Current directory: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE
+# Command line: vivado
+# Log file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/vivado.log
+# Journal file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
