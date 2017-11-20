@@ -6,6 +6,5 @@ void analyseur::do_analyseur(){
 
 	while( true ){
 		y = e.read();
-		//cout << y << endl;
 	}
 }

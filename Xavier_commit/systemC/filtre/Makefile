@@ -4,6 +4,8 @@ LDFLAGS=-L/user/local/systemc-2.3.2/lib-macosx64 -lsystemc -lpthread
 EXEC=main
 SRC=./src/main.cpp 					\
 	./src/modules/filtre1.cpp		\
+	./src/modules/doubleur.cpp		\
+	./src/modules/comparateur.cpp	\
 	./src/modules/carre.cpp			\
 	./src/modules/racine.cpp		\
 	./src/modules/sc_store.cpp		\

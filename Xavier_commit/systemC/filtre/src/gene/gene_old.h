@@ -6,8 +6,6 @@
 
 SC_MODULE( gene ){
 	sc_fifo_out 	< sc_int<16> >	s;
-	//sc_out 	< sc_int<16> >	s2;
-	//sc_out 	< sc_int<16> >	s3;
 
 	void do_gene();
 

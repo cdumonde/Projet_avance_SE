@@ -6,7 +6,6 @@
 
 SC_MODULE( analyseur ){
 	sc_fifo_in 		< float > 	e;
-	//sc_in 	< bool > 		clk;
 
 	void do_analyseur();
 
