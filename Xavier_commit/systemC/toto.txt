@@ -1,1 +1,125 @@
 toto
+
+----------------------------------------------------------------------------------
+-- Xavier Marino
+-- 
+-- Create Date: 15.06.2017 12:13:52
+-- Module Name: tb_top_level - Behavioral
+-- Project Name: Morphological image processing
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+use std.textio.all;
+use ieee.std_logic_textio.all;
+
+entity tb_top_level_erode_dilate is
+end tb_top_level_erode_dilate;
+
+architecture Behavioral of tb_top_level_erode_dilate is
+
+    signal  sclk            : std_logic;
+    signal  sreset          : std_logic;
+    signal  senable         : std_logic;
+	signal	serode_dilate	: std_logic;
+    signal  sdata_out       : std_logic_vector (7 downto 0);
+    signal  sw_en           : std_logic;
+
+    component top_level_erode_dilate is
+        Port
+        (   
+            clk             : in  std_logic;
+            reset           : in  std_logic;
+            enable          : in  std_logic;
+            erode_dilate    : in  std_logic;
+            data_out        : out std_logic_vector (7 downto 0);
+            w_en            : out std_logic
+        );
+    end component;
+
+begin
+
+	Morphological_proc : top_level_erode_dilate
+		Port map
+		(
+            clk             => sclk,
+            reset           => sreset,
+            enable          => senable,
+			erode_dilate	=> serode_dilate,
+			data_out        => sdata_out,
+			w_en            => sw_en
+		);
+
+    clock : process
+        begin
+            sclk <= '0';
+            wait for 5 ns;
+            sclk <= '1';
+            wait for 5 ns;
+    end process;
+
+    main : process
+        begin
+            sreset          <= '1';
+            senable         <= '0';
+            serode_dilate   <= '1';
+
+            wait for 56 ns;
+
+            sreset          <= '0';
+
+            wait for 15 ns;
+
+            senable         <= '1';
+
+            wait for 10 ns;
+
+            senable         <= '0';
+
+            wait for 90 ms; -- 250 us;
+
+            serode_dilate   <= '0';
+
+            wait for 54 ns;
+
+            senable         <= '1';
+
+            wait for 10 ns;
+
+            senable         <= '0';
+            
+            wait;
+    end process;
+
+    process
+      file     LogFile    : TEXT open WRITE_MODE is "output.txt";
+      variable LineBuffer : LINE;
+    begin
+--      write(LineBuffer,  (     STRING'("========================================")));
+--      write(LineBuffer,  (CR & STRING'("TESTBENCH REPORT")));
+--      write(LineBuffer,  (CR & STRING'("========================================")));
+--      writeline(LogFile, LineBuffer);
+    
+      wait until rising_edge(sclk);
+      for i in 1 to 381 loop
+      for j in 1 to 512 loop
+        wait until rising_edge(sclk);
+        wait until sw_en = '1';
+        write(LineBuffer,  (STRING'("A(")));
+        write(LineBuffer,  (STRING'(integer'image(i))));
+        write(LineBuffer,  (STRING'(", ")));
+        write(LineBuffer,  (STRING'(integer'image(j))));
+        write(LineBuffer,  (STRING'(") = ")));
+        write(LineBuffer,  (STRING'(integer'image(to_integer(unsigned(sdata_out))))));
+        write(LineBuffer,  (STRING'(";")));
+          
+          --write(LineBuffer, "Time " & "Time" & "  Value 0x" & "toto");
+        writeline(LogFile, LineBuffer);
+      end loop;
+      end loop;
+    end process;
+
+end Behavioral;
