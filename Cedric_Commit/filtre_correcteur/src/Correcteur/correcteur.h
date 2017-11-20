@@ -1,3 +1,6 @@
+#ifndef CORRECTEUR_H
+#define CORRECTEUR_H
+
 #include <iostream>
 #include "systemc.h"
 
@@ -14,3 +17,5 @@ public:
 
 	void control();
 };
+
+#endif 

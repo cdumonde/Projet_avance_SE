@@ -6,7 +6,7 @@
 
 SC_MODULE(GainPur){
 private:
-    const float cst = 10.0;
+    const float cst = 6.0;
 public:
     sc_fifo_in<float> data_in;
     sc_fifo_out<float> data_out;
