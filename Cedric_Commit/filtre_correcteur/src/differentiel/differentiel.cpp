@@ -2,6 +2,8 @@
 
 void Differential::substract() {
     while(true) {
-        data_out.write(data_in.read() - cst);
+        float in = data_in.read();
+        //cout << in << endl;
+        data_out.write(in - cst);
     }
 }

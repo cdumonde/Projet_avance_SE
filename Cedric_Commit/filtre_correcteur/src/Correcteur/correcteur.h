@@ -3,12 +3,12 @@
 
 SC_MODULE(Controller){
 private:
-    const float gain = 10000.0;
+    const float gain = 1.0f;
 public:
     sc_fifo_in<float> data_in;
     sc_fifo_out<float> data_out;
     
-	SC_CTOR(){
+	SC_CTOR(Controller){
 		SC_THREAD(control);
 	}
 

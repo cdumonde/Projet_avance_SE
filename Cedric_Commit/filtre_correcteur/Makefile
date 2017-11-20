@@ -9,7 +9,7 @@ SRC=./src/main.cpp 						\
 	./src/passeBas/passeBas.cpp			\
 	./src/gainPur/gainPur.cpp			\
 	./src/differentiel/differentiel.cpp	\
-	./src/Correcteur/Correcteur.cpp		\
+	./src/Correcteur/correcteur.cpp		\
 	./src/comparateur/comparateur.cpp	
 
 OBJ=$(SRC:.cpp=.o)
