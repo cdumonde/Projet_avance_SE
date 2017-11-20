@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Oct 25 18:24:32 2017
+# Process ID: 13572
+# Current directory: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.runs/synth_1
+# Command line: vivado -log turbo_uart.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source turbo_uart.tcl
+# Log file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.runs/synth_1/turbo_uart.vds
+# Journal file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/rtl_uart_nexys_4/vivado/rtl_uart.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source turbo_uart.tcl -notrace

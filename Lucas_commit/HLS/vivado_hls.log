@@ -1,0 +1,21 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2017.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'lucas' on host 'lucas-PC' (Linux_x86_64 version 4.4.0-98-generic) on Fri Nov 10 10:53:02 CET 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS'
+INFO: [HLS 200-10] Opening project '/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop'.
+INFO: [HLS 200-10] Opening solution '/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS/sc_loop/nexys4'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a100tcsg324-1'
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 10:53:17 2017...

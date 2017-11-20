@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Oct 25 17:16:08 2017
+# Process ID: 6973
+# Current directory: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE
+# Command line: vivado
+# Log file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/vivado.log
+# Journal file: /home/cedric/Documents/Cours_2A/Toto/Projet_avance_SE/vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 25 17:16:29 2017...

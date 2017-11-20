@@ -1,0 +1,29 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Wed Oct 25 18:22:56 2017
+| Host         : cdumonde running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Conversion_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Conversion_0 (xilinx.com:hls:Conversion:1.0) from (Rev. 1710251753) to (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Conversion_0'. These changes may impact your design.
+
+
+-Upgraded port 'e_dout' width 8 differs from original width 32
+
+-Upgraded port 's_din' width 8 differs from original width 32
+
+

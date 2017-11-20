@@ -1,0 +1,4 @@
+<annotationInfo>
+<item  id="22" filename="sc_loop/src/modules/Conversion.cpp" linenumber="21" name="tmp_1" contextFuncName="do_conversion" moduleName="Conversion::do_conversion" rtlName="s_din" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS"></item>
+<item  id="29" filename="sc_loop/src/modules/Conversion.h" linenumber="21" name="" contextFuncName="Conversion" moduleName="Conversion" rtlName="grp_Conversion_do_conversion_fu_56" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/lucas/Documents/Projet_avance_SE/Lucas_commit/HLS"></item>
+</annotationInfo>
