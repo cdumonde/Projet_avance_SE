@@ -40,13 +40,13 @@ int main( int argc, char * argv[]){
 	f2.setConstant( a2, a2, b2 );
 	printf("a02 = %f a12 = %f b1 = %f\n", a2, a2, b2);
 
-	store1.setFilename("store1.txt");
-	store2.setFilename("store2.txt");
-	store3.setFilename("store3.txt");
-	store4.setFilename("store4.txt");
-	store5.setFilename("store5.txt");
-	store6.setFilename("store6.txt");
-	gen.set_Filename("data_in.txt");
+	store1.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store1.txt");
+	store2.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store2.txt");
+	store3.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store3.txt");
+	store4.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store4.txt");
+	store5.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store5.txt");
+	store6.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store6.txt");
+	gen.set_Filename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/data_in.txt");
 
 	//cout << "Creation du signal d'horloge..." << endl;
 	//sc_clock clock1( "clk", 10, SC_MS);

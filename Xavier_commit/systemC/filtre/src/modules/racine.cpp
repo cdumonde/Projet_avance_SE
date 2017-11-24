@@ -5,6 +5,6 @@ void racine::do_racine(){
 	while( true ){
 		x = abs(e.read());
 		x = sqrt(x);
-	 	s.write( x );
+	 	s.write( 4*x );
 	}
 }
