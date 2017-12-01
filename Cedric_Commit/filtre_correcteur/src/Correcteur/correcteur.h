@@ -6,7 +6,7 @@
 
 SC_MODULE(Controller){
 private:
-    const float gain = 1.0f;
+    const float gain = 0.000001f;
 public:
     sc_fifo_in<float> data_in;
     sc_fifo_out<float> data_out;

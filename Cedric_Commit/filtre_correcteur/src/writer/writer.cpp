@@ -1,17 +1,12 @@
 #include "writer.h"
 
-void Writer::setFileName( string _filename ){
-	filename = _filename;
+Writer::Writer(string fileName) {
+	m_fileName = fileName + ".txt";
+	out = new ofstream(m_fileName);
 }
-
-void Writer::store(){
-
-	std::ofstream outfile (filename);
-
-	while(true) {
-		float tmp = data_in.read();
-		outfile << tmp << endl;
-		data_out.write(tmp);
-	}
-	outfile.close();
+Writer::~Writer() {
+	out->close();
+}
+void  Writer::store(float y) {
+	*out << y << endl;
 }
