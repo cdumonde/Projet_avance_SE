@@ -11,8 +11,15 @@ float FiltreIIR( float y1, float x1, float x0, float a0, float a1, float b ){
 	float y;
 
 	y = a0*x0 + a1*x1 + b*y1 ;
+
 	return y;
 }
+#define a01  63.0/64
+#define a11  -63.0/64
+
+#define	b1	-31.0/32
+#define a2	1.0/4096
+#define	b2	2047.0/2048
 
 void filtre1::do_filtre(){
 

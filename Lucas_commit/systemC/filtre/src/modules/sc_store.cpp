@@ -6,7 +6,7 @@ void sc_store::setFilename( std::string filename_ ){
 
 void sc_store::do_sc_store( ){
 
-	std::ofstream outfile( filename.c_str() ); // tranformer une string en chaine de charactere parce que C11
+	std::ofstream outfile ( filename.c_str() );
 
 	while( true ){
 		x = e.read();

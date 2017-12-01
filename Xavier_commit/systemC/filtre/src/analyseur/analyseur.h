@@ -3,6 +3,7 @@
 
 #define SC_INCLUDE_FX
 #include "systemc.h"
+#define SIM 100
 
 SC_MODULE( analyseur ){
 	sc_fifo_in 		< float > 	e;

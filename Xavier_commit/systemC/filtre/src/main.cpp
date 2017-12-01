@@ -11,10 +11,9 @@
 
 #define a01  63.0/64
 #define a11  -63.0/64
-#define	b1	-31.0/32
-#define a2	1.0/4096
+#define	b1	31.0/32
+#define a2	1.0/524288
 #define	b2	2047.0/2048
-
 
 int main( int argc, char * argv[]){
 
@@ -107,7 +106,7 @@ int main( int argc, char * argv[]){
 	ana.e(sig_store6);
 
 	cout << "Lancement de la simulation du circuit..." << endl;
-	sc_start( 10000, SC_MS );
+	sc_start( SIM, SC_SEC );
 
 	return 0;
 	

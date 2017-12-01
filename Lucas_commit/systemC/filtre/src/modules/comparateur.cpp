@@ -3,11 +3,8 @@
 void comparateur::do_comp(void){
 
   while(1){
-    in1 = e1.read();
-    seuil = e2.read();
-
-//    cout << "seuil : " << seuil << endl;
-//    cout << "in    : " << in1   << endl;
+    in1     = abs(e1.read());
+    seuil   = e2.read();
 
     if( seuil <= in1 ){
         result = 1;

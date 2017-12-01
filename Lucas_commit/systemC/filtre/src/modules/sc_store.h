@@ -4,7 +4,7 @@
 #define	 SC_INCLUDE_FX
 #include "systemc.h"
 #include <iostream>
-#include <fstream>
+#include <fstream>  
 
 SC_MODULE( sc_store ){
 private:
