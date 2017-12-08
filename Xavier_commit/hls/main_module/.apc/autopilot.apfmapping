@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="carre.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\carre.cpp"/>
+    <originFiles name="carre.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\carre.h"/>
+    <originFiles name="comparateur.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\comparateur.cpp"/>
+    <originFiles name="comparateur.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\comparateur.h"/>
+    <originFiles name="constant.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\constant.h"/>
+    <originFiles name="doubleur.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\doubleur.cpp"/>
+    <originFiles name="doubleur.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\doubleur.h"/>
+    <originFiles name="filtre1.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\filtre1.cpp"/>
+    <originFiles name="filtre1.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\filtre1.h"/>
+    <originFiles name="filtre2.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\filtre2.cpp"/>
+    <originFiles name="filtre2.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\filtre2.h"/>
+    <originFiles name="racine.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\racine.cpp"/>
+    <originFiles name="racine.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\racine.h"/>
+    <originFiles name="top_level.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\top_level.cpp"/>
+    <originFiles name="top_level.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3\pr310\git\Xavier_commit\hls\src\modules\top_level.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

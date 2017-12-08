@@ -35,13 +35,13 @@ int main( int argc, char * argv[]){
 	f2.setConstant( a2, a2, b2 );
 	printf("a02 = %f a12 = %f b1 = %f\n", a2, a2, b2);
 
-	store1.setFilename("/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store1.txt");//, "/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store1_2.txt");
-	store2.setFilename("/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store2.txt");//, "/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store2_2.txt");
-	store3.setFilename("/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store3.txt");//, "/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store3_2.txt");
-	store4.setFilename("/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store4.txt");//, "/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store4_2.txt");
-	store5.setFilename("/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store5.txt");//, "/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store5_2.txt");
-	store6.setFilename("/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store6.txt");//, "/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/store6_2.txt");
-	gen.set_Filename("/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/data_in.txt");
+	store1.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store1.txt");//, "/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store1_2.txt");
+	store2.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store2.txt");//, "/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store2_2.txt");
+	store3.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store3.txt");//, "/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store3_2.txt");
+	store4.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store4.txt");//, "/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store4_2.txt");
+	store5.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store5.txt");//, "/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store5_2.txt");
+	store6.setFilename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store6.txt");//, "/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/store6_2.txt");
+	gen.set_Filename("/Users/Xavier/Documents/Mes\ Documents/Cours_nsave/Enseirb-E3/pr310/data_in.txt");
 
 	//cout << "Creation du signal d'horloge..." << endl;
 	//sc_clock clock1( "clk", 10, SC_MS);

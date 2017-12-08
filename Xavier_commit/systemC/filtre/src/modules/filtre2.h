@@ -1,13 +1,13 @@
-#ifndef FILTRE1_H
-#define FILTRE1_H
+#ifndef FILTRE2_H
+#define FILTRE2_H
 
 #define	 SC_INCLUDE_FX
 #include "systemc.h"
 #include "constant.h"
 
-float Filtre1IIR( float y1, float x1, float x0, float a0, float a1, float b );
+float Filtre2IIR( float y1, float x1, float x0, float a0, float a1, float b );
 
-SC_MODULE( filtre1 ){
+SC_MODULE( filtre2 ){
 private:
 	float	a0;
 	float	a1;
@@ -19,7 +19,7 @@ public:
 	sc_fifo_in 		< float >	e;
 	sc_fifo_out 	< float >	s;
 
-	SC_CTOR(filtre1){
+	SC_CTOR(filtre2){
 		SC_THREAD( do_filtre );
 	}
 
