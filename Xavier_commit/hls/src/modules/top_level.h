@@ -9,7 +9,6 @@
 #include "filtre2.h"
 #include "carre.h"
 #include "racine.h"
-#include "sc_store.h"
 #include "constant.h"
 
 #include <iostream>
@@ -23,47 +22,53 @@ public:
     sc_fifo_in 	< float > 	e;
     sc_fifo_out	< float > 	s;
 
-	SC_CTOR(Encoder):
-		doubleur	("dédoubleur"	),
-		comparateur	("comparaison"	),
-		filtre1		("filtrage1"	),
-		carre		("carre"		),
-		filtre2		("filtrage2"	),
-		racine		("racine"		),
+	SC_CTOR(top_level):
+		doub 		("dedoubleur"	),
+		comp 		("comparaison"	),
+		f1 			("filtrage1"	),
+		car  		("carre"		),
+		f2    		("filtrage2"	),
+		rac 		("racine"		),
+
 		sig1		("fifo1", 8192	),
 		sig2		("fifo2", 8192	),
 		sig3		("fifo3", 8192	),
 		sig4		("fifo4", 8192	),
-		sig5		("fifo5", 8192	),
-		sig6		("fifo6", 8192	),
 		doub1		("doub1", 8192	),
 		doub2		("doub2", 8192	)
 	{
-		doubleur.clk(clk); 		doubleur.reset(reset);
-		comparateur.clk(clk);  	comparateur.reset(reset);
-		dct.clk(clk); dct.reset(reset);
-		qtz.clk(clk); qtz.reset(reset);
-		zig.clk(clk); zig.reset(reset);
+		doub.clk(clk); 		doub.reset(reset);
+		comp.clk(clk);  	comp.reset(reset);
+		f1.clk(clk);        f1.reset(reset);
+		car.clk(clk); 		car.reset(reset);
+		f2.clk(clk); 		f2.reset(reset);
+		comp.clk(clk); 		comp.reset(reset);
 
-		yuv.e(e);
-		yuv.s(s2); /* => */ ser.e(s2);
-		ser.s(s3); /* => */ dct.e(s3);
-		dct.s(s4); /* => */ qtz.e(s4);
-		qtz.s(s5); /* => */ zig.e(s5);
-		zig.s(s);
+		f1.e(e);
+		f1.s(sig1);			doub.e(sig1);
+		doub.s1(doub1);		comp.e1(doub1);
+		doub.s2(doub2);		car.e(doub2);
+		car.s(sig2);		f2.e(sig2);
+		f2.s(sig3);			rac.e(sig3);
+		rac.s(sig4);		comp.e2(sig4);
+		comp.s(s);
 	}
 
 private:
-    RGB2YUV    yuv;
-    Serializer ser;
-    DCT2d      dct;
-    Quantizer  qtz;
-	ZigZag     zig;
 
-	sc_fifo<int>  s2;
-	sc_fifo<int>  s3;
-	sc_fifo<int>  s4;
-	sc_fifo<int>  s5;
+	doubleur	doub;
+	comparateur	comp;
+	filtre1		f1;
+	carre		car;
+	filtre2		f2;
+	racine		rac;
+
+	sc_fifo		< float >	sig1;
+	sc_fifo		< float >	sig2;
+	sc_fifo  	< float >	sig3;
+	sc_fifo  	< float >	sig4;
+	sc_fifo		< float >	doub1;
+	sc_fifo		< float >	doub2;
 };
 
 #endif

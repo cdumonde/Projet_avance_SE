@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [BIND 205-201] The memory core 'RAM' has insufficient ports, for array 'filtre1_mem' in function 'filtre1::do_filtre'" projectName="main_module" solutionName="solution1" date="2017-12-12T18:03:37.039+0100"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/carre.cpp:9:2) in function 'carre::do_carre' is an infinite loop." projectName="main_module" solutionName="solution1" date="2017-12-12T18:03:23.857+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/comparateur.cpp:15:3) in function 'comparateur::do_comp' is an infinite loop." projectName="main_module" solutionName="solution1" date="2017-12-12T18:03:21.595+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/doubleur.cpp:10:3) in function 'doubleur::do_split' is an infinite loop." projectName="main_module" solutionName="solution1" date="2017-12-12T18:03:21.580+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/filtre1.cpp:30:17) in function 'filtre1::do_filtre' is an infinite loop." projectName="main_module" solutionName="solution1" date="2017-12-12T18:03:21.564+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/filtre2.cpp:30:17) in function 'filtre2::do_filtre' is an infinite loop." projectName="main_module" solutionName="solution1" date="2017-12-12T18:03:21.548+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/racine.cpp:9:2) in function 'racine::do_racine' is an infinite loop." projectName="main_module" solutionName="solution1" date="2017-12-12T18:03:21.517+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

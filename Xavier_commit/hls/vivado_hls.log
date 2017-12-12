@@ -1,0 +1,266 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Xavier' on host 'xaviermarinb4d2' (Windows NT_amd64 version 6.1) on Tue Dec 12 17:55:58 +0100 2017
+INFO: [HLS 200-10] In directory 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls'
+INFO: [HLS 200-10] Opening project 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module'.
+INFO: [HLS 200-10] Adding design file 'src/modules/carre.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/carre.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/comparateur.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/comparateur.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/constant.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/doubleur.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/doubleur.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/filtre1.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/filtre1.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/filtre2.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/filtre2.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/racine.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/racine.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/top_level.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/modules/top_level.h' to the project
+INFO: [HLS 200-10] Opening solution 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a100tcsg324-1'
+INFO: [HLS 200-10] Analyzing design file 'src/modules/top_level.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/modules/racine.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/modules/filtre2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/modules/filtre1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/modules/doubleur.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/modules/comparateur.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/modules/carre.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:14 ; elapsed = 00:07:13 . Memory (MB): peak = 104.262 ; gain = 48.660
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:14 ; elapsed = 00:07:16 . Memory (MB): peak = 104.262 ; gain = 48.660
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust' into 'ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+INFO: [XFORM 203-603] Inlining function '__hls_fptosi_float_i32' into 'comparateur::do_comp' (src/modules/comparateur.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'generic_cast_IEEE754<int, float>' into 'comparateur::do_comp' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/comparateur.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'comparateur::do_comp' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/comparateur.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'fp_struct<float>::mantissa' into 'comparateur::do_comp' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:282->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/comparateur.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'fp_struct<float>::expv' into 'comparateur::do_comp' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/comparateur.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'fp_struct<float>::expv' into 'comparateur::do_comp' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:299->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/comparateur.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'fp_struct<float>::__signbit' into 'comparateur::do_comp' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/comparateur.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'Filtre1IIR' into 'filtre1::do_filtre' (src/modules/filtre1.cpp:34).
+INFO: [XFORM 203-603] Inlining function 'Filtre2IIR' into 'filtre2::do_filtre' (src/modules/filtre2.cpp:34).
+INFO: [XFORM 203-603] Inlining function '__hls_fptosi_float_i32' into 'racine::do_racine' (src/modules/racine.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'generic_cast_IEEE754<int, float>' into 'racine::do_racine' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'racine::do_racine' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'fp_struct<float>::mantissa' into 'racine::do_racine' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:282->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'fp_struct<float>::expv' into 'racine::do_racine' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'fp_struct<float>::expv' into 'racine::do_racine' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:299->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6).
+INFO: [XFORM 203-603] Inlining function 'fp_struct<float>::__signbit' into 'racine::do_racine' (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:15 ; elapsed = 00:07:21 . Memory (MB): peak = 353.977 ; gain = 298.375
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:16 ; elapsed = 00:07:22 . Memory (MB): peak = 353.977 ; gain = 298.375
+INFO: [XFORM 203-501] Unrolling loop with tag "__ssdm_reset__"(src/modules/filtre2.cpp:21) in function 'filtre2::do_filtre' completely.
+INFO: [XFORM 203-501] Unrolling loop with tag "__ssdm_reset__"(src/modules/filtre1.cpp:21) in function 'filtre1::do_filtre' completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:07:27 . Memory (MB): peak = 353.977 ; gain = 298.375
+WARNING: [XFORM 203-561] 'Loop-1' (src/modules/racine.cpp:9:2) in function 'racine::do_racine' is an infinite loop.
+WARNING: [XFORM 203-561] 'Loop-1' (src/modules/filtre2.cpp:30:17) in function 'filtre2::do_filtre' is an infinite loop.
+WARNING: [XFORM 203-561] 'Loop-1' (src/modules/filtre1.cpp:30:17) in function 'filtre1::do_filtre' is an infinite loop.
+WARNING: [XFORM 203-561] 'Loop-1' (src/modules/doubleur.cpp:10:3) in function 'doubleur::do_split' is an infinite loop.
+WARNING: [XFORM 203-561] 'Loop-1' (src/modules/comparateur.cpp:15:3) in function 'comparateur::do_comp' is an infinite loop.
+WARNING: [XFORM 203-561] 'Loop-1' (src/modules/carre.cpp:9:2) in function 'carre::do_carre' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:07:30 . Memory (MB): peak = 416.898 ; gain = 361.297
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [SCA 200-201] Elaborating SystemC module 'carre'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Found the clock port of process 'carre::do_carre': 'clk'.
+INFO: [SCA 200-201] Found the reset port of process 'carre::do_carre': 'reset'.
+INFO: [SCA 200-201] Elaborating SystemC module 'comparateur'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Found the clock port of process 'comparateur::do_comp': 'clk'.
+INFO: [SCA 200-201] Found the reset port of process 'comparateur::do_comp': 'reset'.
+INFO: [SCA 200-201] Elaborating SystemC module 'doubleur'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Found the clock port of process 'doubleur::do_split': 'clk'.
+INFO: [SCA 200-201] Found the reset port of process 'doubleur::do_split': 'reset'.
+INFO: [SCA 200-201] Elaborating SystemC module 'filtre1'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Found the clock port of process 'filtre1::do_filtre': 'clk'.
+INFO: [SCA 200-201] Found the reset port of process 'filtre1::do_filtre': 'reset'.
+INFO: [SCA 200-201] Elaborating SystemC module 'filtre2'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Found the clock port of process 'filtre2::do_filtre': 'clk'.
+INFO: [SCA 200-201] Found the reset port of process 'filtre2::do_filtre': 'reset'.
+INFO: [SCA 200-201] Elaborating SystemC module 'racine'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Found the clock port of process 'racine::do_racine': 'clk'.
+INFO: [SCA 200-201] Found the reset port of process 'racine::do_racine': 'reset'.
+INFO: [SCA 200-201] Elaborating SystemC module 'top_level'.
+INFO: [SCA 200-201] Analyzing the module hierarchy:
+INFO: [SCA 200-201] Contains sub-module: 'doubleur'
+INFO: [SCA 200-201] Contains sub-module: 'comparateur'
+INFO: [SCA 200-201] Contains sub-module: 'filtre1'
+INFO: [SCA 200-201] Contains sub-module: 'carre'
+INFO: [SCA 200-201] Contains sub-module: 'filtre2'
+INFO: [SCA 200-201] Contains sub-module: 'racine'
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [HLS 200-10] Synthesizing SystemC module [ carre ]
+INFO: [HLS 200-10] Found SystemC process: 'carre_do_carre' 
+INFO: [HLS 200-10] Synthesizing 'carre_do_carre' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'carre_do_carre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 450.218 seconds; current allocated memory: 364.344 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.345 seconds; current allocated memory: 364.462 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'carre_do_carre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'carre_fmul_32ns_32ns_32_4_max_dsp_1' to 'carre_fmul_32ns_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'carre_fmul_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'carre_do_carre'.
+INFO: [HLS 200-111]  Elapsed time: 0.355 seconds; current allocated memory: 364.636 MB.
+INFO: [HLS 200-10] Synthesizing 'carre' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'carre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.723 seconds; current allocated memory: 364.855 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 364.944 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'carre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'carre/clk' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'carre/reset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'carre/e' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'carre/s' to 'ap_fifo'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'carre'.
+INFO: [HLS 200-111]  Elapsed time: 0.364 seconds; current allocated memory: 365.005 MB.
+INFO: [HLS 200-10] Synthesizing SystemC module [ comparateur ]
+INFO: [HLS 200-10] Found SystemC process: 'comparateur_do_comp' 
+INFO: [HLS 200-10] Synthesizing 'comparateur_do_comp' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'comparateur_do_comp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.866 seconds; current allocated memory: 365.253 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.803 seconds; current allocated memory: 365.538 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'comparateur_do_comp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'comparateur_sitofp_32ns_32_6_1' to 'comparateur_sitofcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'comparateur_fcmp_32ns_32ns_1_1_1' to 'comparateur_fcmp_dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'comparateur_fcmp_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'comparateur_sitofcud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'comparateur_do_comp'.
+INFO: [HLS 200-111]  Elapsed time: 0.884 seconds; current allocated memory: 365.985 MB.
+INFO: [HLS 200-10] Synthesizing 'comparateur' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'comparateur' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.494 seconds; current allocated memory: 366.221 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.401 seconds; current allocated memory: 366.334 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'comparateur' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'comparateur/clk' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'comparateur/reset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'comparateur/e1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'comparateur/e2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'comparateur/s' to 'ap_fifo'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'comparateur'.
+INFO: [HLS 200-111]  Elapsed time: 0.482 seconds; current allocated memory: 366.461 MB.
+INFO: [HLS 200-10] Synthesizing SystemC module [ doubleur ]
+INFO: [HLS 200-10] Found SystemC process: 'doubleur_do_split' 
+INFO: [HLS 200-10] Synthesizing 'doubleur_do_split' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'doubleur_do_split' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.942 seconds; current allocated memory: 366.553 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.383 seconds; current allocated memory: 366.636 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'doubleur_do_split' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'doubleur_do_split'.
+INFO: [HLS 200-111]  Elapsed time: 0.339 seconds; current allocated memory: 366.711 MB.
+INFO: [HLS 200-10] Synthesizing 'doubleur' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'doubleur' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.809 seconds; current allocated memory: 366.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.403 seconds; current allocated memory: 366.916 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'doubleur' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'doubleur/clk' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doubleur/reset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doubleur/e' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doubleur/s1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doubleur/s2' to 'ap_fifo'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'doubleur'.
+INFO: [HLS 200-111]  Elapsed time: 0.465 seconds; current allocated memory: 366.991 MB.
+INFO: [HLS 200-10] Synthesizing SystemC module [ filtre1 ]
+INFO: [HLS 200-10] Found SystemC process: 'filtre1_do_filtre' 
+INFO: [HLS 200-10] Synthesizing 'filtre1_do_filtre' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filtre1_do_filtre' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.024 seconds; current allocated memory: 367.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+ERROR: [BIND 205-201] The memory core 'RAM' has insufficient ports, for array 'filtre1_mem' in function 'filtre1::do_filtre'
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.028 seconds; current allocated memory: 367.580 MB.
+Synthesis failed.
+    while executing
+"source Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/solution1/csynth.tcl"
+    invoked from within
+"hls::main Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
+INFO: [HLS 200-112] Total elapsed time: 462.876 seconds; peak allocated memory: 367.580 MB.

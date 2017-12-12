@@ -1,16 +1,16 @@
 #include "filtre1.h"
 
-void filtre1::setConstant( float a0_, float a1_, float b_ ){
-	a0 = a0_;
-	a1 = a1_;
-	b  = b_;
-}
+// void filtre1::setConstant( float a0_, float a1_, float b_ ){
+// 	a0 = a0_;
+// 	a1 = a1_;
+// 	b  = b_;
+// }
 
-float Filtre1IIR( float y1, float x1, float x0, float a0, float a1, float b ){
+float Filtre1IIR( float y1, float x1, float x0){//, float a0, float a1, float b ){
 
 	float y;
 
-	y = a0*x0 - a1*x1 + b*y1 ;
+	y = a01*x0 - a11*x1 + b1*y1 ;
 
 	return y;
 }
@@ -23,7 +23,6 @@ void filtre1::do_filtre(){
 		mem[OFFSET_IIR_x + i] = xi;
 		mem[OFFSET_IIR_y + i] = yi;
 
-
 	}
 
 	while( true ){
@@ -32,12 +31,10 @@ void filtre1::do_filtre(){
 
 			x0 = e.read();
 
-			y0 = Filtre1IIR( mem[OFFSET_IIR_y + i], mem[OFFSET_IIR_x + i], x0, a0, a1, b );
+			y0 = Filtre1IIR( mem[OFFSET_IIR_y + i], mem[OFFSET_IIR_x + i], x0);//, a0, a1, b );
 
 			mem[OFFSET_IIR_x + i] = x0;
-			//printf("channel = %d; x0 = %f\n", i, x0);
 			mem[OFFSET_IIR_y + i] = y0;
-			//printf("channel = %d; y0 = %f\n", i, y0);
 
 			s.write( y0 );
 
