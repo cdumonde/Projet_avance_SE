@@ -5,7 +5,7 @@ void GainPur::amplify() {
     float y = 0;
     while(true) {
         x = data_in.read();
-        y = x * cst;
+        y = x * CONST_GP;
         data_out.write(y);
     }
 }

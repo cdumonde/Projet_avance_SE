@@ -6,11 +6,10 @@
 template<int N>
 SC_MODULE( PasseHaut ){
 private:
-	const size_t mod = N;
-	float x1[N] = {0.0f};
-    float y1[N] = {0.0f};
-	int cpt = 0;
 	void filter() {
+		float x1[N] = {0.0f};
+		float y1[N] = {0.0f};
+		int cpt = 0;
 		float x0 = 0.0f;
 		float y0 = 0.0f;
 		while(true) {
@@ -19,14 +18,19 @@ private:
 			data_out.write(y0);
 			x1[cpt] = x0;
 			y1[cpt] = y0;
-			cpt = (cpt + 1) % mod;
+			cpt = (cpt + 1) % N;
     	}
 	}	
 public:
     sc_fifo_in<float> data_in;
     sc_fifo_out<float> data_out;
+
+	sc_in<bool> clk;
+	sc_in<bool> reset;
+
 	SC_CTOR(PasseHaut){
-		SC_THREAD(filter);
+		SC_CTHREAD(filter, clk.pos());
+		reset_signal_is(reset, true);
 	}
 };
 
