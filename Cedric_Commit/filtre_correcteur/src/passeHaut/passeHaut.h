@@ -1,7 +1,6 @@
 #ifndef PASSEHAUT_H
 #define PASSEHAUT_H
 
-#include <iostream>
 #include "systemc.h"
 
 template<int N>
