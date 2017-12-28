@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vivado HLS Report for 'filtre1'
+================================================================
+* Date:           Thu Dec 21 14:59:20 2017
+
+* Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
+* Project:        main_module
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a100tcsg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.61|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|   48|    1|   49|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / (filtre1_ssdm_thre)
+2 --> 
+
+* FSM state operations: 
+
+ <State 1> : 0.00ns
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %filtre1_y0), !map !765"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %filtre1_x0), !map !769"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2 x float]* %filtre1_mem_x), !map !773"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2 x float]* %filtre1_mem_y), !map !777"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !781"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !785"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !789"
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !793"
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str112, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112) nounwind" [src/modules/filtre1.h:23]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str112, i32 4, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, float* %e) nounwind" [src/modules/filtre1.h:23]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [src/modules/filtre1.h:23]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str1, i32 5, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, float* %s) nounwind" [src/modules/filtre1.h:23]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @p_str89, [8 x i8]* @p_str89) nounwind" [src/modules/filtre1.h:24]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%filtre1_ssdm_thre = load i1* @filtre1_ssdm_thread_M_do_filtre, align 1" [src/modules/filtre1.h:25]
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "br i1 %filtre1_ssdm_thre, label %1, label %2" [src/modules/filtre1.h:25]
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([8 x i8]* @p_str89, i32 2, [10 x i8]* @p_str695) nounwind" [src/modules/filtre1.h:25]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([10 x i8]* @p_str695, [4 x i8]* @p_str291, i1* %clk, i32 1) nounwind" [src/modules/filtre1.h:26]
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([10 x i8]* @p_str695, [6 x i8]* @p_str392, i1* %reset, i32 3) nounwind" [src/modules/filtre1.h:27]
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str89, i32 0, [7 x i8]* @p_str190, [4 x i8]* @p_str291, i32 0, i32 0, i1* %clk) nounwind" [src/modules/filtre1.h:28]
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str89, i32 0, [7 x i8]* @p_str190, [6 x i8]* @p_str392, i32 0, i32 0, i1* %reset) nounwind" [src/modules/filtre1.h:29]
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str493, i32 0, i32 0, [1 x i8]* @p_str594, i32 0, i32 0, [1 x i8]* @p_str594, [1 x i8]* @p_str594, [1 x i8]* @p_str594, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str594, [1 x i8]* @p_str594) nounwind" [src/modules/filtre1.h:30]
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str89, i32 4, [8 x i8]* @p_str17105, [2 x i8]* @p_str998, i32 0, i32 0, float* %e) nounwind" [src/modules/filtre1.h:31]
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str493, i32 0, i32 0, [1 x i8]* @p_str594, i32 0, i32 0, [1 x i8]* @p_str594, [1 x i8]* @p_str594, [1 x i8]* @p_str594, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str594, [1 x i8]* @p_str594) nounwind" [src/modules/filtre1.h:32]
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str89, i32 5, [8 x i8]* @p_str17105, [2 x i8]* @p_str1099, i32 0, i32 0, float* %s) nounwind" [src/modules/filtre1.h:33]
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "ret void" [src/modules/filtre1.h:29]
+ST_1 : Operation 28 [2/2] (0.00ns)   --->   "call void @"filtre1::do_filtre"(float* %filtre1_y0, float* %filtre1_x0, [2 x float]* %filtre1_mem_x, [2 x float]* %filtre1_mem_y, i1* %clk, i1* %reset, float* %e, float* %s)" [src/modules/filtre1.h:25]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 2> : 0.00ns
+ST_2 : Operation 29 [1/2] (0.00ns)   --->   "call void @"filtre1::do_filtre"(float* %filtre1_y0, float* %filtre1_x0, [2 x float]* %filtre1_mem_x, [2 x float]* %filtre1_mem_y, i1* %clk, i1* %reset, float* %e, float* %s)" [src/modules/filtre1.h:25]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "unreachable"
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2017.3
+Project:             main_module
+Solution:            solution1
+Device target:       xc7a100tcsg324-1
+Report date:         Thu Dec 21 15:06:32 +0100 2017
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:           3209
+FF:            3334
+DSP:             31
+BRAM:           104
+SRL:             50
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    8.449
+Timing met

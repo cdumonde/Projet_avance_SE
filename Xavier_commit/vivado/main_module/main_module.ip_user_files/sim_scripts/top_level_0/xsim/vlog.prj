@@ -1,0 +1,34 @@
+verilog xil_defaultlib  \
+"../../../ipstatic/hdl/verilog/carre.v" \
+"../../../ipstatic/hdl/verilog/carre_do_carre.v" \
+"../../../ipstatic/hdl/verilog/carre_fmul_32ns_3bkb.v" \
+"../../../ipstatic/hdl/verilog/comparateur.v" \
+"../../../ipstatic/hdl/verilog/comparateur_do_comp.v" \
+"../../../ipstatic/hdl/verilog/comparateur_fcmp_dEe.v" \
+"../../../ipstatic/hdl/verilog/comparateur_sitofcud.v" \
+"../../../ipstatic/hdl/verilog/doubleur.v" \
+"../../../ipstatic/hdl/verilog/doubleur_do_split.v" \
+"../../../ipstatic/hdl/verilog/fifo_w32_d8192_A.v" \
+"../../../ipstatic/hdl/verilog/filtre1.v" \
+"../../../ipstatic/hdl/verilog/filtre1_dadddsub_g8j.v" \
+"../../../ipstatic/hdl/verilog/filtre1_dmul_64nshbi.v" \
+"../../../ipstatic/hdl/verilog/filtre1_do_filtre.v" \
+"../../../ipstatic/hdl/verilog/filtre1_filtre1_mibs.v" \
+"../../../ipstatic/hdl/verilog/filtre1_fpext_32nfYi.v" \
+"../../../ipstatic/hdl/verilog/filtre1_fptrunc_6eOg.v" \
+"../../../ipstatic/hdl/verilog/filtre2.v" \
+"../../../ipstatic/hdl/verilog/filtre2_dadd_64nskbM.v" \
+"../../../ipstatic/hdl/verilog/filtre2_do_filtre.v" \
+"../../../ipstatic/hdl/verilog/filtre2_filtre2_mlbW.v" \
+"../../../ipstatic/hdl/verilog/racine.v" \
+"../../../ipstatic/hdl/verilog/racine_do_racine.v" \
+"../../../ipstatic/hdl/verilog/racine_fsqrt_32nsncg.v" \
+"../../../ipstatic/hdl/verilog/top_level.v" \
+"../../../ipstatic/hdl/verilog/UartModIn.v" \
+"../../../ipstatic/hdl/verilog/UartModIn_do_recv.v" \
+"../../../ipstatic/hdl/verilog/UartModOut.v" \
+"../../../ipstatic/hdl/verilog/UartModOut_do_send.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Dec 21 15:38:14 2017
+# Process ID: 348
+# Current directory: Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.runs/top_level_0_synth_1
+# Command line: vivado.exe -log top_level_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_0.tcl
+# Log file: Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.runs/top_level_0_synth_1/top_level_0.vds
+# Journal file: Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.runs/top_level_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_level_0.tcl -notrace
+Command: synth_design -top top_level_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 292 
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:336]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:347]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:356]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:365]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:376]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:385]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:394]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:405]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:416]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:425]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:434]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:445]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:454]
+ERROR: [Synth 8-2715] syntax error near end [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:463]
+ERROR: [Synth 8-1852] concurrent assignment to a non-net filtre1_mem_x_d0 is not permitted [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:668]
+ERROR: [Synth 8-1852] concurrent assignment to a non-net filtre1_mem_y_d0 is not permitted [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:674]
+ERROR: [Synth 8-1852] concurrent assignment to a non-net filtre1_x0 is not permitted [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:676]
+ERROR: [Synth 8-1852] concurrent assignment to a non-net filtre1_y0 is not permitted [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:678]
+ERROR: [Synth 8-1852] concurrent assignment to a non-net s_din is not permitted [y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v:682]
+Failed to read verilog 'y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/main_module/main_module.srcs/sources_1/ip/top_level_0/hdl/verilog/filtre1_do_filtre.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 0 Critical Warnings and 20 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 21 15:38:29 2017...

@@ -14,7 +14,8 @@ private:
 	//float	b;
 	float 	y0;
 	float 	x0;
-	float   mem[ NB_CHANNEL * NB_VALUE ];
+	float   mem_x[ NB_CHANNEL ];
+	float   mem_y[ NB_CHANNEL ];
 public:
     sc_in 			< bool > 	clk;
     sc_in 			< bool > 	reset;

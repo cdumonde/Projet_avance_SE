@@ -1,0 +1,4 @@
+@I [SIM-2] Generating simulation wrapper in SystemC ...
+@I [SIM-47] Using Modelsim for RTL simulation.
+@E [SIM-104] Cannot find Mentor Graphics ModelSim. Make sure it is accessible through the PATH variable.
+@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***

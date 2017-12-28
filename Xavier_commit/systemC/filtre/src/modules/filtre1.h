@@ -5,16 +5,14 @@
 #include "systemc.h"
 #include "constant.h"
 
-float Filtre1IIR( float y1, float x1, float x0, float a0, float a1, float b );
+float Filtre1IIR( float y1, float x1, float x0);//, float a0, float a1, float b );
 
 SC_MODULE( filtre1 ){
 private:
-	float	a0;
-	float	a1;
-	float	b;
 	float 	y0;
 	float 	x0;
-	float   mem[ NB_CHANNEL * NB_VALUE ];
+	float   mem_x[ NB_CHANNEL ];
+	float   mem_y[ NB_CHANNEL ];
 public:
 	sc_fifo_in 		< float >	e;
 	sc_fifo_out 	< float >	s;
@@ -24,7 +22,7 @@ public:
 	}
 
 	void do_filtre();
-	void setConstant( float a0_, float a1_, float b_ );
+//	void setConstant( float a0_, float a1_, float b_ );
 };
 
 #endif

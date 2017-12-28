@@ -20,8 +20,8 @@ void filtre1::do_filtre(){
 	//Initialisation de xn-1 et yn-1
 	for( int i = 0; i < NB_CHANNEL; i++ ){
 
-		mem[OFFSET_IIR_x + i] = xi;
-		mem[OFFSET_IIR_y + i] = yi;
+		mem_x[i] = xi;
+		mem_y[i] = yi;
 
 	}
 
@@ -31,10 +31,10 @@ void filtre1::do_filtre(){
 
 			x0 = e.read();
 
-			y0 = Filtre1IIR( mem[OFFSET_IIR_y + i], mem[OFFSET_IIR_x + i], x0);//, a0, a1, b );
+			y0 = Filtre1IIR( mem_y[i], mem_x[i], x0);//, a0, a1, b );
 
-			mem[OFFSET_IIR_x + i] = x0;
-			mem[OFFSET_IIR_y + i] = y0;
+			mem_x[i] = x0;
+			mem_y[i] = y0;
 
 			s.write( y0 );
 

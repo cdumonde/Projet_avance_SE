@@ -1,0 +1,16 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Fri Nov 24 14:25:21 2017
+| Host         : DESKTOP-RAH54SO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'carre_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of carre_1 from xilinx.com:hls:carre:1.0 (Rev. 1711241216) to xilinx.com:hls:carre:1.1 (Rev. 1711241424)
+

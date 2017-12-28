@@ -9,7 +9,6 @@ void gene::set_Filename(std::string _filename)
 
 void gene::FileLoad()
 {
-
     string value_line;
     ifstream myFlux(filename.c_str());
     if(myFlux)
@@ -18,7 +17,7 @@ void gene::FileLoad()
             getline(myFlux, value_line);
             for( int i = 0; i < NB_CHANNEL; i++ )
                 value.write(stof(value_line));
-            wait( 25, SC_US );
+            wait( T_SAMPLE, SC_US );
         }
     }
     else

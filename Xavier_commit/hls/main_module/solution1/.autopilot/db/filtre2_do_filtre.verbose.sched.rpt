@@ -1,0 +1,405 @@
+
+
+================================================================
+== Vivado HLS Report for 'filtre2_do_filtre'
+================================================================
+* Date:           Thu Dec 21 14:59:22 2017
+
+* Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
+* Project:        main_module
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a100tcsg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.61|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   47|   47|   47|   47|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1     |   46|   46|        46|          -|          -|  inf |    no    |
+        | + Loop 1.1  |   44|   44|        22|          -|          -|     2|    no    |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 0
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 24
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / (!exitcond)
+	2  / (exitcond)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	3  / true
+
+* FSM state operations: 
+
+ <State 1> : 2.15ns
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %filtre2_y0), !map !765"
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %filtre2_x0), !map !769"
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2 x float]* %filtre2_mem_x), !map !773"
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2 x float]* %filtre2_mem_y), !map !777"
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !781"
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !785"
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !789"
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !793"
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str113, i32 0, [7 x i8]* @p_str1114, [4 x i8]* @p_str2115, i32 0, i32 0, i1* %clk) nounwind" [src/modules/filtre2.cpp:19]
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str113, i32 0, [7 x i8]* @p_str1114, [6 x i8]* @p_str3116, i32 0, i32 0, i1* %reset) nounwind" [src/modules/filtre2.cpp:20]
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str4117, i32 0, i32 0, [1 x i8]* @p_str5118, i32 0, i32 0, [1 x i8]* @p_str5118, [1 x i8]* @p_str5118, [1 x i8]* @p_str5118, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5118, [1 x i8]* @p_str5118) nounwind" [src/modules/filtre2.cpp:21]
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str4117, i32 0, i32 0, [1 x i8]* @p_str5118, i32 0, i32 0, [1 x i8]* @p_str5118, [1 x i8]* @p_str5118, [1 x i8]* @p_str5118, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5118, [1 x i8]* @p_str5118) nounwind" [src/modules/filtre2.cpp:22]
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([8 x i8]* @p_str113, i32 2, [10 x i8]* @p_str6119) nounwind" [src/modules/filtre2.cpp:23]
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str7120)" [src/modules/filtre2.cpp:23]
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str5118) nounwind" [src/modules/filtre2.cpp:23]
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%p_ssdm_reset_v = call i32 (...)* @_ssdm_op_SpecStateBegin(i32 0, i32 0, i32 1) nounwind" [src/modules/filtre2.cpp:23]
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%filtre2_mem_x_addr = getelementptr [2 x float]* %filtre2_mem_x, i64 0, i64 0" [src/modules/filtre2.cpp:23]
+ST_1 : Operation 42 [1/1] (2.15ns)   --->   "store float 0.000000e+00, float* %filtre2_mem_x_addr, align 4" [src/modules/filtre2.cpp:23]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%filtre2_mem_y_addr = getelementptr [2 x float]* %filtre2_mem_y, i64 0, i64 0" [src/modules/filtre2.cpp:24]
+ST_1 : Operation 44 [1/1] (2.15ns)   --->   "store float 0.000000e+00, float* %filtre2_mem_y_addr, align 4" [src/modules/filtre2.cpp:24]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%filtre2_mem_x_addr_2 = getelementptr [2 x float]* %filtre2_mem_x, i64 0, i64 1" [src/modules/filtre2.cpp:23]
+ST_1 : Operation 46 [1/1] (2.15ns)   --->   "store float 0.000000e+00, float* %filtre2_mem_x_addr_2, align 4" [src/modules/filtre2.cpp:23]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%filtre2_mem_y_addr_2 = getelementptr [2 x float]* %filtre2_mem_y, i64 0, i64 1" [src/modules/filtre2.cpp:24]
+ST_1 : Operation 48 [1/1] (2.15ns)   --->   "store float 0.000000e+00, float* %filtre2_mem_y_addr_2, align 4" [src/modules/filtre2.cpp:24]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind" [src/modules/filtre2.cpp:26]
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str7120, i32 %tmp)" [src/modules/filtre2.cpp:26]
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "br label %.loopexit" [src/modules/filtre2.cpp:26]
+
+ <State 2> : 1.66ns
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%loop_begin = call i32 (...)* @_ssdm_op_SpecLoopBegin() nounwind"
+ST_2 : Operation 53 [1/1] (1.66ns)   --->   "br label %1" [src/modules/filtre2.cpp:30]
+
+ <State 3> : 3.91ns
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%i1 = phi i2 [ 0, %.loopexit ], [ %i, %2 ]"
+ST_3 : Operation 55 [1/1] (0.93ns)   --->   "%exitcond = icmp eq i2 %i1, -2" [src/modules/filtre2.cpp:30]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"
+ST_3 : Operation 57 [1/1] (1.58ns)   --->   "%i = add i2 %i1, 1" [src/modules/filtre2.cpp:30]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.58> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.loopexit.loopexit, label %2" [src/modules/filtre2.cpp:30]
+ST_3 : Operation 59 [1/1] (3.90ns)   --->   "%val = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %e)" [src/modules/filtre2.cpp:32]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_s = zext i2 %i1 to i64" [src/modules/filtre2.cpp:34]
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%filtre2_mem_y_addr_1 = getelementptr [2 x float]* %filtre2_mem_y, i64 0, i64 %tmp_s" [src/modules/filtre2.cpp:34]
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%filtre2_mem_x_addr_1 = getelementptr [2 x float]* %filtre2_mem_x, i64 0, i64 %tmp_s" [src/modules/filtre2.cpp:34]
+ST_3 : Operation 63 [2/2] (2.15ns)   --->   "%filtre2_mem_x_load = load float* %filtre2_mem_x_addr_1, align 4" [src/modules/filtre2.cpp:34]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "br label %.loopexit"
+
+ <State 4> : 7.27ns
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %filtre2_x0, float %val)" [src/modules/filtre2.cpp:32]
+ST_4 : Operation 66 [1/2] (2.15ns)   --->   "%filtre2_mem_x_load = load float* %filtre2_mem_x_addr_1, align 4" [src/modules/filtre2.cpp:34]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+ST_4 : Operation 67 [1/1] (5.12ns)   --->   "%tmp_3 = fpext float %val to double" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 106 'Float2Double' <Latency = 0> <II = 1> <Delay = 5.12> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_4 : Operation 68 [1/1] (5.12ns)   --->   "%tmp_5 = fpext float %filtre2_mem_x_load to double" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 106 'Float2Double' <Latency = 0> <II = 1> <Delay = 5.12> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_4 : Operation 69 [1/1] (2.15ns)   --->   "store float %val, float* %filtre2_mem_x_addr_1, align 4" [src/modules/filtre2.cpp:36]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+
+ <State 5> : 7.79ns
+ST_5 : Operation 70 [6/6] (7.79ns)   --->   "%tmp_4 = fmul double %tmp_3, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 71 [6/6] (7.79ns)   --->   "%tmp_6 = fmul double %tmp_5, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 6> : 7.79ns
+ST_6 : Operation 72 [5/6] (7.79ns)   --->   "%tmp_4 = fmul double %tmp_3, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 73 [5/6] (7.79ns)   --->   "%tmp_6 = fmul double %tmp_5, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 7> : 7.79ns
+ST_7 : Operation 74 [4/6] (7.79ns)   --->   "%tmp_4 = fmul double %tmp_3, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 75 [4/6] (7.79ns)   --->   "%tmp_6 = fmul double %tmp_5, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 8> : 7.79ns
+ST_8 : Operation 76 [3/6] (7.79ns)   --->   "%tmp_4 = fmul double %tmp_3, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 77 [3/6] (7.79ns)   --->   "%tmp_6 = fmul double %tmp_5, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 9> : 7.79ns
+ST_9 : Operation 78 [2/2] (2.15ns)   --->   "%filtre2_mem_y_load = load float* %filtre2_mem_y_addr_1, align 4" [src/modules/filtre2.cpp:34]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+ST_9 : Operation 79 [2/6] (7.79ns)   --->   "%tmp_4 = fmul double %tmp_3, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 80 [2/6] (7.79ns)   --->   "%tmp_6 = fmul double %tmp_5, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 10> : 7.79ns
+ST_10 : Operation 81 [1/2] (2.15ns)   --->   "%filtre2_mem_y_load = load float* %filtre2_mem_y_addr_1, align 4" [src/modules/filtre2.cpp:34]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+ST_10 : Operation 82 [1/6] (7.79ns)   --->   "%tmp_4 = fmul double %tmp_3, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 83 [1/6] (7.79ns)   --->   "%tmp_6 = fmul double %tmp_5, 0x3EC0000000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 84 [1/1] (5.12ns)   --->   "%tmp_8 = fpext float %filtre2_mem_y_load to double" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 106 'Float2Double' <Latency = 0> <II = 1> <Delay = 5.12> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+
+ <State 11> : 8.39ns
+ST_11 : Operation 85 [6/6] (8.39ns)   --->   "%tmp_7 = fadd double %tmp_4, %tmp_6" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 86 [6/6] (7.79ns)   --->   "%tmp_9 = fmul double %tmp_8, 0x3FEFFC0000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 12> : 8.39ns
+ST_12 : Operation 87 [5/6] (8.39ns)   --->   "%tmp_7 = fadd double %tmp_4, %tmp_6" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 88 [5/6] (7.79ns)   --->   "%tmp_9 = fmul double %tmp_8, 0x3FEFFC0000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 13> : 8.39ns
+ST_13 : Operation 89 [4/6] (8.39ns)   --->   "%tmp_7 = fadd double %tmp_4, %tmp_6" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 90 [4/6] (7.79ns)   --->   "%tmp_9 = fmul double %tmp_8, 0x3FEFFC0000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 14> : 8.39ns
+ST_14 : Operation 91 [3/6] (8.39ns)   --->   "%tmp_7 = fadd double %tmp_4, %tmp_6" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 92 [3/6] (7.79ns)   --->   "%tmp_9 = fmul double %tmp_8, 0x3FEFFC0000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 15> : 8.39ns
+ST_15 : Operation 93 [2/6] (8.39ns)   --->   "%tmp_7 = fadd double %tmp_4, %tmp_6" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 94 [2/6] (7.79ns)   --->   "%tmp_9 = fmul double %tmp_8, 0x3FEFFC0000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 16> : 8.39ns
+ST_16 : Operation 95 [1/6] (8.39ns)   --->   "%tmp_7 = fadd double %tmp_4, %tmp_6" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 96 [1/6] (7.79ns)   --->   "%tmp_9 = fmul double %tmp_8, 0x3FEFFC0000000000" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 108 'DMul' <Latency = 5> <II = 1> <Delay = 7.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 17> : 8.39ns
+ST_17 : Operation 97 [6/6] (8.39ns)   --->   "%tmp_1 = fadd double %tmp_7, %tmp_9" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 18> : 8.39ns
+ST_18 : Operation 98 [5/6] (8.39ns)   --->   "%tmp_1 = fadd double %tmp_7, %tmp_9" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 19> : 8.39ns
+ST_19 : Operation 99 [4/6] (8.39ns)   --->   "%tmp_1 = fadd double %tmp_7, %tmp_9" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 20> : 8.39ns
+ST_20 : Operation 100 [3/6] (8.39ns)   --->   "%tmp_1 = fadd double %tmp_7, %tmp_9" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 21> : 8.39ns
+ST_21 : Operation 101 [2/6] (8.39ns)   --->   "%tmp_1 = fadd double %tmp_7, %tmp_9" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 22> : 8.39ns
+ST_22 : Operation 102 [1/6] (8.39ns)   --->   "%tmp_1 = fadd double %tmp_7, %tmp_9" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 107 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.39> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 23> : 8.61ns
+ST_23 : Operation 103 [1/1] (6.45ns)   --->   "%y = fptrunc double %tmp_1 to float" [src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34]   --->   Core 115 'Double2Float' <Latency = 0> <II = 1> <Delay = 6.45> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_23 : Operation 104 [1/1] (2.15ns)   --->   "store float %y, float* %filtre2_mem_y_addr_1, align 4" [src/modules/filtre2.cpp:37]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 2> <RAM>
+
+ <State 24> : 3.91ns
+ST_24 : Operation 105 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %filtre2_y0, float %y)" [src/modules/filtre2.cpp:34]
+ST_24 : Operation 106 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* %s, float %y)" [src/modules/filtre2.cpp:39]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_24 : Operation 107 [1/1] (0.00ns)   --->   "br label %1" [src/modules/filtre2.cpp:30]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.15ns
+The critical path consists of the following:
+	'getelementptr' operation ('filtre2_mem_x_addr', src/modules/filtre2.cpp:23) [25]  (0 ns)
+	'store' operation (src/modules/filtre2.cpp:23) of constant 0 on array 'filtre2_mem_x' [26]  (2.15 ns)
+
+ <State 2>: 1.66ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', src/modules/filtre2.cpp:30) [40]  (1.66 ns)
+
+ <State 3>: 3.91ns
+The critical path consists of the following:
+	fifo read on port 'e' (src/modules/filtre2.cpp:32) [46]  (3.91 ns)
+
+ <State 4>: 7.27ns
+The critical path consists of the following:
+	'load' operation ('x1', src/modules/filtre2.cpp:34) on array 'filtre2_mem_x' [52]  (2.15 ns)
+	'fpext' operation ('tmp_5', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [55]  (5.12 ns)
+
+ <State 5>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_4', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [54]  (7.79 ns)
+
+ <State 6>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_4', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [54]  (7.79 ns)
+
+ <State 7>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_4', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [54]  (7.79 ns)
+
+ <State 8>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_4', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [54]  (7.79 ns)
+
+ <State 9>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_4', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [54]  (7.79 ns)
+
+ <State 10>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_4', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [54]  (7.79 ns)
+
+ <State 11>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_7', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [57]  (8.39 ns)
+
+ <State 12>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_7', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [57]  (8.39 ns)
+
+ <State 13>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_7', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [57]  (8.39 ns)
+
+ <State 14>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_7', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [57]  (8.39 ns)
+
+ <State 15>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_7', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [57]  (8.39 ns)
+
+ <State 16>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_7', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [57]  (8.39 ns)
+
+ <State 17>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_1', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [60]  (8.39 ns)
+
+ <State 18>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_1', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [60]  (8.39 ns)
+
+ <State 19>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_1', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [60]  (8.39 ns)
+
+ <State 20>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_1', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [60]  (8.39 ns)
+
+ <State 21>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_1', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [60]  (8.39 ns)
+
+ <State 22>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_1', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [60]  (8.39 ns)
+
+ <State 23>: 8.61ns
+The critical path consists of the following:
+	'fptrunc' operation ('y', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34) [61]  (6.46 ns)
+	'store' operation (src/modules/filtre2.cpp:37) of variable 'y', src/modules/filtre2.cpp:13->src/modules/filtre2.cpp:34 on array 'filtre2_mem_y' [64]  (2.15 ns)
+
+ <State 24>: 3.91ns
+The critical path consists of the following:
+	fifo write on port 's' (src/modules/filtre2.cpp:39) [65]  (3.91 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../ipstatic/hdl/ip/top_level_ap_dadd_4_full_dsp_64.vhd" \
+"../../../ipstatic/hdl/ip/top_level_ap_dadddsub_4_full_dsp_64.vhd" \
+"../../../ipstatic/hdl/ip/top_level_ap_dmul_4_max_dsp_64.vhd" \
+"../../../ipstatic/hdl/ip/top_level_ap_fcmp_0_no_dsp_32.vhd" \
+"../../../ipstatic/hdl/ip/top_level_ap_fmul_2_max_dsp_32.vhd" \
+"../../../ipstatic/hdl/ip/top_level_ap_fpext_0_no_dsp_32.vhd" \
+"../../../ipstatic/hdl/ip/top_level_ap_fptrunc_0_no_dsp_64.vhd" \
+"../../../ipstatic/hdl/ip/top_level_ap_fsqrt_10_no_dsp_32.vhd" \
+"../../../ipstatic/hdl/ip/top_level_ap_sitofp_4_no_dsp_32.vhd" \
+"../../../../main_module.srcs/sources_1/ip/top_level_0/sim/top_level_0.vhd" \
+
+nosort

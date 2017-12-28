@@ -29,107 +29,172 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/.apc/.src</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/.apc/.tb</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/solution1/.tcls</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/.tcls</location>
+		</link>
+		<link>
+			<name>source/UartModIn.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/UartModIn.cpp</location>
+		</link>
+		<link>
+			<name>source/UartModIn.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/UartModIn.h</location>
+		</link>
+		<link>
+			<name>source/UartModOut.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/UartModOut.cpp</location>
+		</link>
+		<link>
+			<name>source/UartModOut.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/UartModOut.h</location>
 		</link>
 		<link>
 			<name>source/carre.cpp</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/carre.cpp</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/carre.cpp</location>
 		</link>
 		<link>
 			<name>source/carre.h</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/carre.h</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/carre.h</location>
 		</link>
 		<link>
 			<name>source/comparateur.cpp</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/comparateur.cpp</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/comparateur.cpp</location>
 		</link>
 		<link>
 			<name>source/comparateur.h</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/comparateur.h</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/comparateur.h</location>
 		</link>
 		<link>
 			<name>source/constant.h</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/constant.h</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/constant.h</location>
 		</link>
 		<link>
 			<name>source/doubleur.cpp</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/doubleur.cpp</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/doubleur.cpp</location>
 		</link>
 		<link>
 			<name>source/doubleur.h</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/doubleur.h</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/doubleur.h</location>
 		</link>
 		<link>
 			<name>source/filtre1.cpp</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/filtre1.cpp</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/filtre1.cpp</location>
 		</link>
 		<link>
 			<name>source/filtre1.h</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/filtre1.h</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/filtre1.h</location>
 		</link>
 		<link>
 			<name>source/filtre2.cpp</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/filtre2.cpp</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/filtre2.cpp</location>
 		</link>
 		<link>
 			<name>source/filtre2.h</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/filtre2.h</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/filtre2.h</location>
 		</link>
 		<link>
 			<name>source/racine.cpp</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/racine.cpp</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/racine.cpp</location>
 		</link>
 		<link>
 			<name>source/racine.h</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/racine.h</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/racine.h</location>
 		</link>
 		<link>
 			<name>source/top_level.cpp</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/top_level.cpp</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/top_level.cpp</location>
 		</link>
 		<link>
 			<name>source/top_level.h</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/src/modules/top_level.h</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/top_level.h</location>
+		</link>
+		<link>
+			<name>testbench/analyseur.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/analyseur/analyseur.cpp</location>
+		</link>
+		<link>
+			<name>testbench/analyseur.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/analyseur/analyseur.h</location>
+		</link>
+		<link>
+			<name>testbench/carre_soft.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/gene/carre_soft.cpp</location>
+		</link>
+		<link>
+			<name>testbench/carre_soft.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/gene/carre_soft.h</location>
+		</link>
+		<link>
+			<name>testbench/gene.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/gene/gene.cpp</location>
+		</link>
+		<link>
+			<name>testbench/gene.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/gene/gene.h</location>
+		</link>
+		<link>
+			<name>testbench/sc_store.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/analyseur/sc_store.cpp</location>
+		</link>
+		<link>
+			<name>testbench/sc_store.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/analyseur/sc_store.h</location>
+		</link>
+		<link>
+			<name>testbench/tb_carre.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/tb/tb_carre.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/solution1/solution1.directive</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/solution1/directives.tcl</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3/pr310/git/Xavier_commit/hls/main_module/solution1/script.tcl</location>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

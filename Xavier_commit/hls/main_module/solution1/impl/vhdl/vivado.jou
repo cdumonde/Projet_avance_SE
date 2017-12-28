@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Dec 21 15:02:50 2017
+# Process ID: 2076
+# Current directory: Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/impl/vhdl
+# Command line: vivado.exe -notrace -mode batch -source run_vivadosyn.tcl
+# Log file: Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/impl/vhdl/vivado.log
+# Journal file: Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/impl/vhdl\vivado.jou
+#-----------------------------------------------------------
+source run_vivadosyn.tcl -notrace

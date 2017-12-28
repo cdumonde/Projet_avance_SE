@@ -1,4 +1,34 @@
-<project xmlns="com.autoesl.autopilot.project" top="top_level" name="main_module" projectType="SystemC">
+<project xmlns="com.autoesl.autopilot.project" name="main_module" top="top_level" projectType="SystemC">
+    <files>
+        <file name="src/modules/UartModIn.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/UartModIn.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/UartModOut.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/UartModOut.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/carre.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/carre.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/comparateur.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/comparateur.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/constant.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/doubleur.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/doubleur.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/filtre1.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/filtre1.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/filtre2.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/filtre2.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/racine.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/racine.h" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/top_level.cpp" sc="1" tb="false" cflags=""/>
+        <file name="src/modules/top_level.h" sc="1" tb="false" cflags=""/>
+        <file name="../../src/analyseur/analyseur.cpp" sc="1" tb="1" cflags=""/>
+        <file name="../../src/analyseur/analyseur.h" sc="1" tb="1" cflags=""/>
+        <file name="../../src/gene/carre_soft.cpp" sc="1" tb="1" cflags=""/>
+        <file name="../../src/gene/carre_soft.h" sc="1" tb="1" cflags=""/>
+        <file name="../../src/gene/gene.cpp" sc="1" tb="1" cflags=""/>
+        <file name="../../src/gene/gene.h" sc="1" tb="1" cflags=""/>
+        <file name="../../src/analyseur/sc_store.cpp" sc="1" tb="1" cflags=""/>
+        <file name="../../src/analyseur/sc_store.h" sc="1" tb="1" cflags=""/>
+        <file name="../../src/tb/tb_carre.cpp" sc="1" tb="1" cflags=""/>
+    </files>
     <includePaths/>
     <libraryPaths/>
     <Simulation>
@@ -7,22 +37,5 @@
     <solutions xmlns="">
         <solution name="solution1" status="active"/>
     </solutions>
-    <files xmlns="">
-        <file name="src/modules/top_level.h" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/top_level.cpp" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/racine.h" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/racine.cpp" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/filtre2.h" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/filtre2.cpp" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/filtre1.h" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/filtre1.cpp" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/doubleur.h" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/doubleur.cpp" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/constant.h" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/comparateur.h" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/comparateur.cpp" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/carre.h" sc="1" tb="false" cflags=""/>
-        <file name="src/modules/carre.cpp" sc="1" tb="false" cflags=""/>
-    </files>
 </project>
 

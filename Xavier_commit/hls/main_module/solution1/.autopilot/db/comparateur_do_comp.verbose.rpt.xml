@@ -1,0 +1,157 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'comparateur_do_comp'" level="0">
+<item name = "Date">Thu Dec 21 14:59:10 2017
+</item>
+<item name = "Version">2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)</item>
+<item name = "Project">main_module</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a100tcsg324-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.07, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">12, 12, 12, 12, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">11, 11, 11, -, -, inf, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 673</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, 0, 405, 443</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 80</column>
+<column name="Register">-, -, 176, -</column>
+<specialColumn name="Available">270, 240, 126800, 63400</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="comparateur_fcmp_dEe_U17">comparateur_fcmp_dEe, 0, 0, 66, 70</column>
+<column name="comparateur_sitofcud_U16">comparateur_sitofcud, 0, 0, 339, 373</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="sh_assign_fu_194_p2">+, 0, 0, 16, 8, 9</column>
+<column name="neg_cast_fu_300_p2">-, 0, 0, 38, 1, 31</column>
+<column name="result_V_2_fu_283_p2">-, 0, 0, 39, 1, 32</column>
+<column name="tmp_1_fu_208_p2">-, 0, 0, 15, 7, 8</column>
+<column name="tmp_11_fu_390_p2">and, 0, 0, 8, 1, 1</column>
+<column name="tmp_13_fu_396_p2">and, 0, 0, 8, 1, 1</column>
+<column name="abscond_fu_306_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="notlhs3_fu_370_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="notlhs_fu_358_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="notrhs4_fu_376_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="notrhs_fu_364_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="r_V_fu_238_p2">lshr, 0, 0, 73, 25, 25</column>
+<column name="ap_block_state2">or, 0, 0, 8, 1, 1</column>
+<column name="tmp_10_fu_386_p2">or, 0, 0, 8, 1, 1</column>
+<column name="tmp_9_fu_382_p2">or, 0, 0, 8, 1, 1</column>
+<column name="abs_fu_312_p3">select, 0, 0, 31, 1, 31</column>
+<column name="p_Val2_6_fu_272_p3">select, 0, 0, 31, 1, 31</column>
+<column name="result_V_5_fu_289_p3">select, 0, 0, 32, 1, 32</column>
+<column name="sh_assign_2_fu_218_p3">select, 0, 0, 9, 1, 9</column>
+<column name="tmp_5_fu_401_p3">select, 0, 0, 30, 1, 30</column>
+<column name="r_V_2_fu_244_p2">shl, 0, 0, 243, 79, 79</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">53, 12, 1, 12</column>
+<column name="e1_blk_n">9, 2, 1, 2</column>
+<column name="e2_blk_n">9, 2, 1, 2</column>
+<column name="s_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="abs_reg_433">31, 0, 31, 0</column>
+<column name="ap_CS_fsm">12, 0, 12, 0</column>
+<column name="notlhs3_reg_460">1, 0, 1, 0</column>
+<column name="notlhs_reg_450">1, 0, 1, 0</column>
+<column name="notrhs4_reg_465">1, 0, 1, 0</column>
+<column name="notrhs_reg_455">1, 0, 1, 0</column>
+<column name="p_Result_s_reg_423">1, 0, 1, 0</column>
+<column name="p_Val2_6_reg_428">31, 0, 31, 0</column>
+<column name="tmp_12_reg_470">1, 0, 1, 0</column>
+<column name="tmp_4_reg_443">32, 0, 32, 0</column>
+<column name="val_1_reg_416">32, 0, 32, 0</column>
+<column name="val_reg_411">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, comparateur::do_comp, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, comparateur::do_comp, return value</column>
+<column name="comparateur_in1">out, 32, ap_vld, comparateur_in1, pointer</column>
+<column name="comparateur_in1_ap_vld">out, 1, ap_vld, comparateur_in1, pointer</column>
+<column name="comparateur_seuil">out, 32, ap_vld, comparateur_seuil, pointer</column>
+<column name="comparateur_seuil_ap_vld">out, 1, ap_vld, comparateur_seuil, pointer</column>
+<column name="comparateur_result">out, 32, ap_vld, comparateur_result, pointer</column>
+<column name="comparateur_result_ap_vld">out, 1, ap_vld, comparateur_result, pointer</column>
+<column name="e1_dout">in, 32, ap_fifo, e1, pointer</column>
+<column name="e1_empty_n">in, 1, ap_fifo, e1, pointer</column>
+<column name="e1_read">out, 1, ap_fifo, e1, pointer</column>
+<column name="e2_dout">in, 32, ap_fifo, e2, pointer</column>
+<column name="e2_empty_n">in, 1, ap_fifo, e2, pointer</column>
+<column name="e2_read">out, 1, ap_fifo, e2, pointer</column>
+<column name="s_din">out, 32, ap_fifo, s, pointer</column>
+<column name="s_full_n">in, 1, ap_fifo, s, pointer</column>
+<column name="s_write">out, 1, ap_fifo, s, pointer</column>
+</table>
+</item>
+</section>
+</profile>

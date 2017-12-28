@@ -1,0 +1,537 @@
+
+*** Running vivado
+    with args -log uart_wrapper_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_wrapper_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source uart_wrapper_0.tcl -notrace
+Command: synth_design -top uart_wrapper_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7544 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 347.582 ; gain = 93.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uart_wrapper_0' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/synth/uart_wrapper_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'uart_wrapper' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/uart_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'carre' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre.v:12]
+INFO: [Synth 8-638] synthesizing module 'carre_do_carre' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre_do_carre.v:10]
+	Parameter ap_ST_fsm_state2 bound to: 7'b0000010 
+	Parameter ap_ST_fsm_state3 bound to: 7'b0000100 
+	Parameter ap_ST_fsm_state4 bound to: 7'b0001000 
+	Parameter ap_ST_fsm_state5 bound to: 7'b0010000 
+	Parameter ap_ST_fsm_state6 bound to: 7'b0100000 
+	Parameter ap_ST_fsm_state7 bound to: 7'b1000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre_do_carre.v:41]
+INFO: [Synth 8-638] synthesizing module 'carre_fmul_32ns_3bkb' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre_fmul_32ns_3bkb.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_wrapper_ap_fmul_2_max_dsp_32' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/ip/uart_wrapper_ap_fmul_2_max_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_5' declared at 'd:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_5' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/ip/uart_wrapper_ap_fmul_2_max_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'uart_wrapper_ap_fmul_2_max_dsp_32' (16#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/ip/uart_wrapper_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'carre_fmul_32ns_3bkb' (17#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre_fmul_32ns_3bkb.v:11]
+INFO: [Synth 8-256] done synthesizing module 'carre_do_carre' (18#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre_do_carre.v:10]
+INFO: [Synth 8-256] done synthesizing module 'carre' (19#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre.v:12]
+INFO: [Synth 8-638] synthesizing module 'uart_wrapper_do_action2' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/uart_wrapper_do_action2.v:10]
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_state4 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state5 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/uart_wrapper_do_action2.v:40]
+INFO: [Synth 8-256] done synthesizing module 'uart_wrapper_do_action2' (20#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/uart_wrapper_do_action2.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_wrapper_do_action1' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/uart_wrapper_do_action1.v:10]
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_state4 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state5 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/uart_wrapper_do_action1.v:39]
+INFO: [Synth 8-256] done synthesizing module 'uart_wrapper_do_action1' (21#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/uart_wrapper_do_action1.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d192_A' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/fifo_w32_d192_A.v:11]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 192 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d192_A' (22#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/fifo_w32_d192_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'uart_wrapper' (23#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/uart_wrapper.v:12]
+INFO: [Synth 8-256] done synthesizing module 'uart_wrapper_0' (24#1) [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/synth/uart_wrapper_0.v:57]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized41 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized41 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized41 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized41 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized41 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized39 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized39 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized39 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized39 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized39 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design dsp48e1_wrapper__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design flt_round_dsp_opt_full has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized37 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized37 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized37 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized37 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized37 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_eq_im has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design special_detect has unconnected port A[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port CLK
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 436.758 ; gain = 182.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 436.758 ; gain = 182.715
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/constraints/uart_wrapper_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/constraints/uart_wrapper_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Documents/ENSEIRB-MATMECA/PR310_Projet_local/full_chain/full_chain.runs/uart_wrapper_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Documents/ENSEIRB-MATMECA/PR310_Projet_local/full_chain/full_chain.runs/uart_wrapper_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 647.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 647.746 ; gain = 393.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 647.746 ; gain = 393.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Documents/ENSEIRB-MATMECA/PR310_Projet_local/full_chain/full_chain.runs/uart_wrapper_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 647.746 ; gain = 393.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/fifo_w32_d192_A.v:93]
+WARNING: [Synth 8-6014] Unused sequential element usedw_reg was removed.  [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/fifo_w32_d192_A.v:92]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 647.746 ; gain = 393.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/uart_wrapper_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/uart_wrapper_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/uart_wrapper_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/uart_wrapper_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/din1_buf1_reg[31:0]' into 'grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/din0_buf1_reg[31:0]' [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre_fmul_32ns_3bkb.v:57]
+WARNING: [Synth 8-6014] Unused sequential element grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/din1_buf1_reg was removed.  [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/carre_fmul_32ns_3bkb.v:57]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_I_1_fifo_U/usedw_reg was removed.  [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/fifo_w32_d192_A.v:92]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_O_1_fifo_U/usedw_reg was removed.  [d:/Documents/ENSEIRB-MATMECA/PR310_Projet/Projet_avance_SE/Pierre_commit/HLS/sc_loop/uart_wrapper_0/hdl/verilog/fifo_w32_d192_A.v:92]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_5_viv.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/ce_r_reg) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (FIFO_I_1_fifo_U/q_tmp_reg[31]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (FIFO_I_1_fifo_U/dout_buf_reg[31]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/val_reg_71_reg[31]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/din0_buf1_reg[31]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/ap_CS_fsm_reg[0]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[31]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[30]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[29]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[28]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[27]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[26]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[25]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[24]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[23]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[22]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[21]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[20]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[19]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[18]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[17]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[16]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[15]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[14]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[13]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[12]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[11]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[10]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[9]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[8]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[7]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[6]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[5]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[4]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[3]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[2]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[1]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_carre_fu_94/grp_carre_do_carre_fu_58/carre_fmul_32ns_3bkb_U1/dout_r_reg[0]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_uart_wrapper_do_action2_fu_110/ap_CS_fsm_reg[0]) is unused and will be removed from module uart_wrapper.
+WARNING: [Synth 8-3332] Sequential element (grp_uart_wrapper_do_action1_fu_136/ap_CS_fsm_reg[0]) is unused and will be removed from module uart_wrapper.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 647.746 ; gain = 393.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 727.438 ; gain = 473.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 737.582 ; gain = 483.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/FIFO_I_1_fifo_U/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/FIFO_O_1_fifo_U/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 747.723 ; gain = 493.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 747.723 ; gain = 493.680
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 747.723 ; gain = 493.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 747.723 ; gain = 493.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 747.723 ; gain = 493.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 747.723 ; gain = 493.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 747.723 ; gain = 493.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |     4|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     1|
+|5     |LUT1      |     6|
+|6     |LUT2      |    26|
+|7     |LUT3      |    84|
+|8     |LUT4      |    35|
+|9     |LUT5      |    22|
+|10    |LUT6      |    69|
+|11    |MUXCY     |    16|
+|12    |RAMB18E1  |     2|
+|13    |XORCY     |     7|
+|14    |FDRE      |   384|
+|15    |FDSE      |     3|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 747.723 ; gain = 493.680
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 747.723 ; gain = 282.691
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 747.723 ; gain = 493.680
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 747.723 ; gain = 502.070
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/ENSEIRB-MATMECA/PR310_Projet_local/full_chain/full_chain.runs/uart_wrapper_0_synth_1/uart_wrapper_0.dcp' has been generated.

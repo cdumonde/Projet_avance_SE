@@ -13,10 +13,7 @@
 #define xi 			 	0
 #define yi 			 	0
 #define NB_CHANNEL	 	2
-#define NB_VALUE	 	2
-#define OFFSET_IIR_x 	0 * NB_CHANNEL
-#define OFFSET_IIR_y 	1 * NB_CHANNEL
-#define G_FACTOR		87//25.5
+#define G_FACTOR		87
 #define SIM				1000
 
 #endif

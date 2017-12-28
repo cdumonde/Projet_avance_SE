@@ -1,12 +1,12 @@
 clear 
 
-load '/Users/Xavier/Documents/Mes Documents/Cours_nsave/Enseirb-E3/pr310/store2.txt'
-load '/Users/Xavier/Documents/Mes Documents/Cours_nsave/Enseirb-E3/pr310/store5.txt'
-load '/Users/Xavier/Documents/Mes Documents/Cours_nsave/Enseirb-E3/pr310/store6.txt'
-load '/Users/Xavier/Documents/Mes Documents/Cours_nsave/Enseirb-E3/pr310/data_out_light.txt'
+load '/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/store2.txt'
+load '/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/store5.txt'
+load '/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/store6.txt'
+load '/Users/Xavier/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/data_out_light.txt'
 
 C = 2;
-%N = 400000;
+%N = 4000000;
 N = 22361048;
 t = 1:N;
 
@@ -17,30 +17,30 @@ t = 1:N;
     end
  end
 
- for i = 1:C:(C*N)
-     store6_1(fix(i/C)+1, 1) = store6(i);
-     store6_2(fix(i/C)+1, 1) = store6(i+1);
-     store5_1(fix(i/C)+1, 1) = store5(i);
-     store5_2(fix(i/C)+1, 1) = store5(i+1);
-     store2_1(fix(i/C)+1, 1) = store2(i);
-     store2_2(fix(i/C)+1, 1) = store2(i+1);
+% for i = 1:C:(C*N)
+%     store6_1(fix(i/C)+1, 1) = store6(i);
+%     store6_2(fix(i/C)+1, 1) = store6(i+1);
+%     store5_1(fix(i/C)+1, 1) = store5(i);
+%     store5_2(fix(i/C)+1, 1) = store5(i+1);
+%     store2_1(fix(i/C)+1, 1) = store2(i);
+%     store2_2(fix(i/C)+1, 1) = store2(i+1);
 %     store6_3(fix(i/C)+1) = store6(i);
 %     store6_4(fix(i/C)+1) = store6(i+1);
 %     store5_3(fix(i/C)+1) = store5(i);
 %     store5_4(fix(i/C)+1) = store5(i+1);
 %     store2_3(fix(i/C)+1) = store2(i);
 %     store2_4(fix(i/C)+1) = store2(i+1);
- end
+% end
 
-store6_1 = store6_1*0.1;
-store6_2 = store6_2*0.1;
+store6 = store6*0.1;
+%store6_2 = store6_2*0.1;
 %store2 = abs(store2);
 %store6_2 = store6_2*0.1;
 %store6_3 = store6_3*0.1;
 %store6_4 = store6_4*0.1;
 for i = 1:6000
-    store6_1(i) = 0;
-    store6_2(i) = 0;
+    store6(i) = 0;
+%    store6_2(i) = 0;
     results(i) = 0;
 %    store6_2(i) = 0;
 %     store6_3(i) = 0;
@@ -50,23 +50,23 @@ end
 
 for i = 1:N
     j = i+1;
-    if store6_1(i) == 0.1
-        while(store6_1(j) == 0.1)
-            store6_1(j) = 0;
+    if store6(i) == 0.1
+        while(store6(j) == 0.1)
+            store6(j) = 0;
             j = j + 1;
         end
     end
 end
 
-for i = 1:N
-    j = i+1;
-    if store6_2(i) == 0.1
-        while(store6_2(j) == 0.1)
-            store6_2(j) = 0;
-            j = j + 1;
-        end
-    end
-end
+% for i = 1:N
+%     j = i+1;
+%     if store6_2(i) == 0.1
+%         while(store6_2(j) == 0.1)
+%             store6_2(j) = 0;
+%             j = j + 1;
+%         end
+%     end
+% end
 % 
 % for i = 1:N
 %     j = i+1;
@@ -87,7 +87,7 @@ end
 %     end
 % end
 
-sum_store6 = sum(store6_1)/0.1;
+sum_store6 = sum(store6)/0.1;
 sum_results = sum(results)/0.1;
 
 %end
@@ -96,7 +96,7 @@ sum_results = sum(results)/0.1;
 %    store(i-300000, 1) = store2(i, 1);
 %end
 
-subplot (2, 1, 1), plot(t, store2_1, t, store5_1, t, store6_1);
-subplot (2, 1, 2), plot(t, store2_2, t, store5_2, t, store6_2);
+subplot (2, 1, 1), plot(t, store2, t, store5, t, store6);
+subplot (2, 1, 2), plot(t, store2, t, store5, t, results);
 %subplot (4, 1, 3), plot(t, store2_3, t, store5_3, t, store6_3);
 %subplot (4, 1, 4), plot(t, store2_4, t, store5_4, t, store6_4);
