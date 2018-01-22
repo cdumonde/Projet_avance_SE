@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 9
+set id 1
 set name carre_fmul_32ns_3bkb
 set corename simcore_fmul
 set op fmul
@@ -83,7 +83,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
+    id 3 \
     name carre_x \
     type other \
     dir O \
@@ -98,7 +98,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 12 \
+    id 4 \
     name e \
     type fifo \
     dir I \
@@ -113,7 +113,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 13 \
+    id 5 \
     name s \
     type fifo \
     dir O \

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'comparateur_do_comp'" level="0">
-<item name = "Date">Thu Dec 21 14:59:10 2017
+<item name = "Date">Wed Jan 17 14:57:49 2018
 </item>
 <item name = "Version">2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)</item>
 <item name = "Project">main_module</item>
@@ -62,8 +62,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="comparateur_fcmp_dEe_U17">comparateur_fcmp_dEe, 0, 0, 66, 70</column>
-<column name="comparateur_sitofcud_U16">comparateur_sitofcud, 0, 0, 339, 373</column>
+<column name="comparateur_fcmp_dEe_U9">comparateur_fcmp_dEe, 0, 0, 66, 70</column>
+<column name="comparateur_sitofcud_U8">comparateur_sitofcud, 0, 0, 339, 373</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
@@ -83,9 +83,9 @@
 <column name="sh_assign_fu_194_p2">+, 0, 0, 16, 8, 9</column>
 <column name="neg_cast_fu_300_p2">-, 0, 0, 38, 1, 31</column>
 <column name="result_V_2_fu_283_p2">-, 0, 0, 39, 1, 32</column>
-<column name="tmp_1_fu_208_p2">-, 0, 0, 15, 7, 8</column>
-<column name="tmp_11_fu_390_p2">and, 0, 0, 8, 1, 1</column>
-<column name="tmp_13_fu_396_p2">and, 0, 0, 8, 1, 1</column>
+<column name="tmp_6_fu_208_p2">-, 0, 0, 15, 7, 8</column>
+<column name="tmp_13_fu_390_p2">and, 0, 0, 8, 1, 1</column>
+<column name="tmp_15_fu_396_p2">and, 0, 0, 8, 1, 1</column>
 <column name="abscond_fu_306_p2">icmp, 0, 0, 18, 32, 1</column>
 <column name="notlhs3_fu_370_p2">icmp, 0, 0, 11, 8, 2</column>
 <column name="notlhs_fu_358_p2">icmp, 0, 0, 11, 8, 2</column>
@@ -93,13 +93,13 @@
 <column name="notrhs_fu_364_p2">icmp, 0, 0, 18, 23, 1</column>
 <column name="r_V_fu_238_p2">lshr, 0, 0, 73, 25, 25</column>
 <column name="ap_block_state2">or, 0, 0, 8, 1, 1</column>
-<column name="tmp_10_fu_386_p2">or, 0, 0, 8, 1, 1</column>
-<column name="tmp_9_fu_382_p2">or, 0, 0, 8, 1, 1</column>
+<column name="tmp_11_fu_382_p2">or, 0, 0, 8, 1, 1</column>
+<column name="tmp_12_fu_386_p2">or, 0, 0, 8, 1, 1</column>
 <column name="abs_fu_312_p3">select, 0, 0, 31, 1, 31</column>
 <column name="p_Val2_6_fu_272_p3">select, 0, 0, 31, 1, 31</column>
 <column name="result_V_5_fu_289_p3">select, 0, 0, 32, 1, 32</column>
 <column name="sh_assign_2_fu_218_p3">select, 0, 0, 9, 1, 9</column>
-<column name="tmp_5_fu_401_p3">select, 0, 0, 30, 1, 30</column>
+<column name="tmp_10_fu_401_p3">select, 0, 0, 30, 1, 30</column>
 <column name="r_V_2_fu_244_p2">shl, 0, 0, 243, 79, 79</column>
 </table>
 </item>
@@ -121,8 +121,8 @@
 <column name="notrhs_reg_455">1, 0, 1, 0</column>
 <column name="p_Result_s_reg_423">1, 0, 1, 0</column>
 <column name="p_Val2_6_reg_428">31, 0, 31, 0</column>
-<column name="tmp_12_reg_470">1, 0, 1, 0</column>
-<column name="tmp_4_reg_443">32, 0, 32, 0</column>
+<column name="tmp_14_reg_470">1, 0, 1, 0</column>
+<column name="tmp_9_reg_443">32, 0, 32, 0</column>
 <column name="val_1_reg_416">32, 0, 32, 0</column>
 <column name="val_reg_411">32, 0, 32, 0</column>
 </table>

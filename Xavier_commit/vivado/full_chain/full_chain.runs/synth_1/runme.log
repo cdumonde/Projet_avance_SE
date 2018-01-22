@@ -14,15 +14,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1532 
+INFO: Helper process launched with PID 2284 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 356.629 ; gain = 92.852
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 356.176 ; gain = 92.840
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'turbo_uart' [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/turbo_uart.vhd:16]
 INFO: [Synth 8-638] synthesizing module 'UART_recv' [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/uart_recv.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'UART_recv' (1#1) [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/uart_recv.vhd:35]
-INFO: [Synth 8-3491] module 'top_level_0' declared at 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/.Xil/Vivado-828-XAVIERMARINB4D2/realtime/top_level_0_stub.vhdl:5' bound to instance 'wrapper' of component 'top_level_0' [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/turbo_uart.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'top_level_0' [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/.Xil/Vivado-828-XAVIERMARINB4D2/realtime/top_level_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'uart_wrapper_0' declared at 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/.Xil/Vivado-2584-XAVIERMARINB4D2/realtime/uart_wrapper_0_stub.vhdl:5' bound to instance 'wrapper' of component 'uart_wrapper_0' [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/turbo_uart.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'uart_wrapper_0' [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/.Xil/Vivado-2584-XAVIERMARINB4D2/realtime/uart_wrapper_0_stub.vhdl:19]
 INFO: [Synth 8-638] synthesizing module 'UART_fifoed_send' [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/UART_fifoed_send_V1.vhd:33]
 	Parameter fifo_size bound to: 2048 - type: integer 
 	Parameter fifo_almost bound to: 508 - type: integer 
@@ -31,7 +31,7 @@ INFO: [Synth 8-638] synthesizing module 'UART_fifoed_send' [Y:/Documents/MesDocu
 INFO: [Synth 8-256] done synthesizing module 'UART_fifoed_send' (2#1) [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/UART_fifoed_send_V1.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'turbo_uart' (3#1) [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/turbo_uart.vhd:16]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 397.711 ; gain = 133.934
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 397.254 ; gain = 133.918
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -41,41 +41,43 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 397.711 ; gain = 133.934
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 397.254 ; gain = 133.918
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/.Xil/Vivado-828-XAVIERMARINB4D2/dcp3/top_level_0_in_context.xdc] for cell 'wrapper'
-Finished Parsing XDC File [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/.Xil/Vivado-828-XAVIERMARINB4D2/dcp3/top_level_0_in_context.xdc] for cell 'wrapper'
+Parsing XDC File [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/.Xil/Vivado-2584-XAVIERMARINB4D2/dcp3/uart_wrapper_0_in_context.xdc] for cell 'wrapper'
+Finished Parsing XDC File [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/.Xil/Vivado-2584-XAVIERMARINB4D2/dcp3/uart_wrapper_0_in_context.xdc] for cell 'wrapper'
 Parsing XDC File [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/constrs_1/new/Nexys4_Master.xdc]
 Finished Parsing XDC File [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/constrs_1/new/Nexys4_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/constrs_1/new/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/turbo_uart_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/turbo_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 723.598 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 724.773 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for wrapper. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_recv'
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
@@ -103,7 +105,7 @@ WARNING: [Synth 8-6014] Unused sequential element output_data_reg was removed.  
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_recv'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -232,7 +234,7 @@ INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[8]' (FDRE) to 'snd
 INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[7]' (FDRE) to 'snd/read_index_reg[7]'
 INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[6]' (FDRE) to 'snd/read_index_reg[6]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -259,13 +261,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -291,7 +293,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -315,7 +317,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -328,7 +330,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -340,59 +342,59 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------+----------+
-|      |BlackBox name |Instances |
-+------+--------------+----------+
-|1     |top_level_0   |         1|
-+------+--------------+----------+
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |uart_wrapper_0 |         1|
++------+---------------+----------+
 
 Report Cell Usage: 
-+------+-------------------+------+
-|      |Cell               |Count |
-+------+-------------------+------+
-|1     |top_level_0_bbox_0 |     1|
-|2     |BUFG               |     1|
-|3     |CARRY4             |    14|
-|4     |LUT1               |    18|
-|5     |LUT2               |    18|
-|6     |LUT3               |    16|
-|7     |LUT4               |    32|
-|8     |LUT5               |    44|
-|9     |LUT6               |   141|
-|10    |MUXF7              |    42|
-|11    |MUXF8              |    14|
-|12    |RAM64M             |    64|
-|13    |RAM64X1D           |    64|
-|14    |FDRE               |   123|
-|15    |FDSE               |    12|
-|16    |IBUF               |     5|
-|17    |OBUF               |    17|
-+------+-------------------+------+
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |uart_wrapper_0_bbox_0 |     1|
+|2     |BUFG                  |     1|
+|3     |CARRY4                |    14|
+|4     |LUT1                  |    18|
+|5     |LUT2                  |    18|
+|6     |LUT3                  |    16|
+|7     |LUT4                  |    32|
+|8     |LUT5                  |    44|
+|9     |LUT6                  |   141|
+|10    |MUXF7                 |    42|
+|11    |MUXF8                 |    14|
+|12    |RAM64M                |    64|
+|13    |RAM64X1D              |    64|
+|14    |FDRE                  |   123|
+|15    |FDSE                  |    12|
+|16    |IBUF                  |     5|
+|17    |OBUF                  |    17|
++------+----------------------+------+
 
 Report Instance Areas: 
 +------+---------+-----------------+------+
@@ -403,11 +405,11 @@ Report Instance Areas:
 |3     |  snd    |UART_fifoed_send |   443|
 +------+---------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 723.598 ; gain = 459.820
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 724.773 ; gain = 461.438
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 723.598 ; gain = 133.934
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 723.598 ; gain = 459.820
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 724.773 ; gain = 133.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 724.773 ; gain = 461.438
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 203 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -421,8 +423,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 43 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 723.598 ; gain = 468.902
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 724.773 ; gain = 469.270
 INFO: [Common 17-1381] The checkpoint 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/synth_1/turbo_uart.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file turbo_uart_utilization_synth.rpt -pb turbo_uart_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 723.598 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 21 16:40:54 2017...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.057 . Memory (MB): peak = 724.773 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 18 15:04:29 2018...

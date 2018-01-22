@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Thu Dec 21 16:42:26 2017
+| Date         : Thu Jan 18 15:05:58 2018
 | Host         : XAVIERMARINB4D2 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -file turbo_uart_control_sets_placed.rpt
 | Design       : turbo_uart
@@ -21,7 +21,7 @@ Table of Contents
 +-------------------------------+-------+
 |             Status            | Count |
 +-------------------------------+-------+
-| Number of unique control sets |    68 |
+| Number of unique control sets |    59 |
 +-------------------------------+-------+
 
 
@@ -31,12 +31,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             169 |           48 |
+| No           | No                    | No                     |              50 |           14 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             107 |           48 |
-| Yes          | No                    | No                     |             172 |           67 |
+| No           | Yes                   | No                     |              84 |           36 |
+| Yes          | No                    | No                     |             126 |           29 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             481 |          168 |
+| Yes          | Yes                   | No                     |             254 |           62 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 

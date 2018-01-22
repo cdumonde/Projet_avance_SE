@@ -38,14 +38,14 @@ struct doubleur : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    doubleur_do_split* grp_doubleur_do_split_fu_70;
-    sc_signal< sc_lv<32> > grp_doubleur_do_split_fu_70_doubleur_to_split;
-    sc_signal< sc_logic > grp_doubleur_do_split_fu_70_doubleur_to_split_ap_vld;
-    sc_signal< sc_logic > grp_doubleur_do_split_fu_70_e_read;
-    sc_signal< sc_lv<32> > grp_doubleur_do_split_fu_70_s1_din;
-    sc_signal< sc_logic > grp_doubleur_do_split_fu_70_s1_write;
-    sc_signal< sc_lv<32> > grp_doubleur_do_split_fu_70_s2_din;
-    sc_signal< sc_logic > grp_doubleur_do_split_fu_70_s2_write;
+    doubleur_do_split* grp_doubleur_do_split_fu_62;
+    sc_signal< sc_lv<32> > grp_doubleur_do_split_fu_62_doubleur_to_split;
+    sc_signal< sc_logic > grp_doubleur_do_split_fu_62_doubleur_to_split_ap_vld;
+    sc_signal< sc_logic > grp_doubleur_do_split_fu_62_e_read;
+    sc_signal< sc_lv<32> > grp_doubleur_do_split_fu_62_s1_din;
+    sc_signal< sc_logic > grp_doubleur_do_split_fu_62_s1_write;
+    sc_signal< sc_lv<32> > grp_doubleur_do_split_fu_62_s2_din;
+    sc_signal< sc_logic > grp_doubleur_do_split_fu_62_s2_write;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const bool ap_const_boolean_1;

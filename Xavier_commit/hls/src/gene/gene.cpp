@@ -18,7 +18,6 @@ void gene::FileLoad()
         while(!myFlux.eof()){
             getline(myFlux, value_line);
             value.write( atof(value_line.c_str()) );
-            value.write( atof(value_line.c_str()) );
             wait( 25, SC_US );
         }
     }

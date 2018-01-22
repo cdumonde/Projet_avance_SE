@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'comparateur'
 ================================================================
-* Date:           Thu Dec 21 14:59:11 2017
+* Date:           Wed Jan 17 14:57:50 2018
 
 * Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
 * Project:        main_module
@@ -77,34 +77,34 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1> : 0.00ns
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %comparateur_in1), !map !765"
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %comparateur_seuil), !map !769"
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %comparateur_result), !map !773"
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !777"
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !781"
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e1), !map !785"
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e2), !map !789"
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !793"
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e1, [8 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str112, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112) nounwind" [src/modules/comparateur.h:20]
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str112, i32 4, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, float* %e1) nounwind" [src/modules/comparateur.h:20]
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e2, [8 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str112, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112) nounwind" [src/modules/comparateur.h:20]
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str112, i32 4, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, float* %e2) nounwind" [src/modules/comparateur.h:20]
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [src/modules/comparateur.h:20]
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str1, i32 5, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, float* %s) nounwind" [src/modules/comparateur.h:20]
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @p_str50, [12 x i8]* @p_str50) nounwind" [src/modules/comparateur.h:21]
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %comparateur_in1), !map !1933"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %comparateur_seuil), !map !1937"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %comparateur_result), !map !1941"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !1945"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !1949"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e1), !map !1953"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e2), !map !1957"
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !1961"
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e1, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/comparateur.h:20]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 4, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %e1) nounwind" [src/modules/comparateur.h:20]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e2, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/comparateur.h:20]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 4, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %e2) nounwind" [src/modules/comparateur.h:20]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/comparateur.h:20]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 5, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %s) nounwind" [src/modules/comparateur.h:20]
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @p_str67, [12 x i8]* @p_str67) nounwind" [src/modules/comparateur.h:21]
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%comparateur_ssdm_s = load i1* @comparateur_ssdm_thread_M_do_comp, align 1" [src/modules/comparateur.h:22]
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %comparateur_ssdm_s, label %1, label %2" [src/modules/comparateur.h:22]
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([12 x i8]* @p_str50, i32 2, [8 x i8]* @p_str656) nounwind" [src/modules/comparateur.h:22]
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([8 x i8]* @p_str656, [4 x i8]* @p_str252, i1* %clk, i32 1) nounwind" [src/modules/comparateur.h:23]
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([8 x i8]* @p_str656, [6 x i8]* @p_str353, i1* %reset, i32 3) nounwind" [src/modules/comparateur.h:24]
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str50, i32 0, [7 x i8]* @p_str151, [4 x i8]* @p_str252, i32 0, i32 0, i1* %clk) nounwind" [src/modules/comparateur.h:25]
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str50, i32 0, [7 x i8]* @p_str151, [6 x i8]* @p_str353, i32 0, i32 0, i1* %reset) nounwind" [src/modules/comparateur.h:26]
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e1, [8 x i8]* @p_str454, i32 0, i32 0, [1 x i8]* @p_str555, i32 0, i32 0, [1 x i8]* @p_str555, [1 x i8]* @p_str555, [1 x i8]* @p_str555, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str555, [1 x i8]* @p_str555) nounwind" [src/modules/comparateur.h:27]
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str50, i32 4, [8 x i8]* @p_str17, [3 x i8]* @p_str959, i32 0, i32 0, float* %e1) nounwind" [src/modules/comparateur.h:28]
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e2, [8 x i8]* @p_str454, i32 0, i32 0, [1 x i8]* @p_str555, i32 0, i32 0, [1 x i8]* @p_str555, [1 x i8]* @p_str555, [1 x i8]* @p_str555, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str555, [1 x i8]* @p_str555) nounwind" [src/modules/comparateur.h:29]
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str50, i32 4, [8 x i8]* @p_str17, [3 x i8]* @p_str1060, i32 0, i32 0, float* %e2) nounwind" [src/modules/comparateur.h:30]
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str454, i32 0, i32 0, [1 x i8]* @p_str555, i32 0, i32 0, [1 x i8]* @p_str555, [1 x i8]* @p_str555, [1 x i8]* @p_str555, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str555, [1 x i8]* @p_str555) nounwind" [src/modules/comparateur.h:31]
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str50, i32 5, [8 x i8]* @p_str17, [2 x i8]* @p_str1161, i32 0, i32 0, float* %s) nounwind" [src/modules/comparateur.h:32]
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([12 x i8]* @p_str67, i32 2, [8 x i8]* @p_str68) nounwind" [src/modules/comparateur.h:22]
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([8 x i8]* @p_str68, [4 x i8]* @p_str14, i1* %clk, i32 1) nounwind" [src/modules/comparateur.h:23]
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([8 x i8]* @p_str68, [6 x i8]* @p_str15, i1* %reset, i32 3) nounwind" [src/modules/comparateur.h:24]
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str67, i32 0, [7 x i8]* @p_str17, [4 x i8]* @p_str14, i32 0, i32 0, i1* %clk) nounwind" [src/modules/comparateur.h:25]
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str67, i32 0, [7 x i8]* @p_str17, [6 x i8]* @p_str15, i32 0, i32 0, i1* %reset) nounwind" [src/modules/comparateur.h:26]
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e1, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/comparateur.h:27]
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str67, i32 4, [8 x i8]* @p_str41, [3 x i8]* @p_str69, i32 0, i32 0, float* %e1) nounwind" [src/modules/comparateur.h:28]
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e2, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/comparateur.h:29]
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str67, i32 4, [8 x i8]* @p_str41, [3 x i8]* @p_str70, i32 0, i32 0, float* %e2) nounwind" [src/modules/comparateur.h:30]
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/comparateur.h:31]
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([12 x i8]* @p_str67, i32 5, [8 x i8]* @p_str41, [2 x i8]* @p_str22, i32 0, i32 0, float* %s) nounwind" [src/modules/comparateur.h:32]
 ST_1 : Operation 31 [1/1] (0.00ns)   --->   "ret void" [src/modules/comparateur.h:27]
 ST_1 : Operation 32 [2/2] (0.00ns)   --->   "call void @"comparateur::do_comp"(float* %comparateur_in1, float* %comparateur_seuil, float* %comparateur_result, i1* %clk, i1* %reset, float* %e1, float* %e2, float* %s)" [src/modules/comparateur.h:22]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 

@@ -188,7 +188,7 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>tmp_6</name>
+              <name>tmp_11</name>
               <fileName>src/modules/carre.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>7</lineNumber>
@@ -212,7 +212,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>tmp</originalName>
-              <rtlName>carre_fmul_32ns_3bkb_U9</rtlName>
+              <rtlName>carre_fmul_32ns_3bkb_U1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -846,7 +846,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="35" tracking_level="0" version="0">
-          <first>carre_fmul_32ns_3bkb_U9 (carre_fmul_32ns_3bkb)</first>
+          <first>carre_fmul_32ns_3bkb_U1 (carre_fmul_32ns_3bkb)</first>
           <second class_id="36" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -973,7 +973,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_6_reg_86</first>
+          <first>tmp_11_reg_86</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1015,7 +1015,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>carre_fmul_32ns_3bkb_U9</first>
+          <first>carre_fmul_32ns_3bkb_U1</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -1026,7 +1026,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="39" tracking_level="0" version="0">
-          <first>carre_fmul_32ns_3bkb_U9 (carre_fmul_32ns_3bkb)</first>
+          <first>carre_fmul_32ns_3bkb_U1 (carre_fmul_32ns_3bkb)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1254,7 +1254,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>tmp_6_reg_86</first>
+        <first>tmp_11_reg_86</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -77,40 +77,40 @@ reg   [30:0] abs_reg_315;
 wire    ap_CS_fsm_state4;
 wire    ap_CS_fsm_state5;
 wire   [31:0] grp_fu_119_p1;
-reg   [31:0] tmp_s_reg_325;
+reg   [31:0] tmp_6_reg_325;
 wire    ap_CS_fsm_state10;
 wire   [31:0] grp_fu_122_p2;
-reg   [31:0] tmp_1_reg_330;
+reg   [31:0] tmp_7_reg_330;
 wire    ap_CS_fsm_state22;
 wire   [31:0] grp_fu_114_p2;
-reg   [31:0] tmp_2_reg_336;
+reg   [31:0] tmp_8_reg_336;
 wire    ap_CS_fsm_state26;
 wire    ap_CS_fsm_state23;
 wire   [31:0] grp_fu_119_p0;
 wire    ap_CS_fsm_state11;
 wire   [31:0] p_Val2_s_fu_127_p1;
 wire   [22:0] loc_V_1_fu_148_p1;
-wire   [24:0] tmp_4_fu_152_p4;
+wire   [24:0] tmp_1_fu_152_p4;
 wire   [7:0] loc_V_fu_138_p4;
-wire   [8:0] tmp_5_cast1_fu_166_p1;
+wire   [8:0] tmp_2_cast1_fu_166_p1;
 wire   [8:0] sh_assign_fu_170_p2;
-wire   [7:0] tmp_7_fu_184_p2;
+wire   [7:0] tmp_3_fu_184_p2;
 wire   [0:0] isNeg_fu_176_p3;
-wire  signed [8:0] tmp_7_cast_fu_190_p1;
+wire  signed [8:0] tmp_3_cast_fu_190_p1;
 wire   [8:0] sh_assign_1_fu_194_p3;
 wire  signed [31:0] sh_assign_1_cast_fu_202_p1;
 wire  signed [24:0] sh_assign_1_cast_cas_fu_206_p1;
-wire   [78:0] tmp_4_cast2_fu_162_p1;
-wire   [78:0] tmp_9_fu_210_p1;
+wire   [78:0] tmp_1_cast2_fu_162_p1;
+wire   [78:0] tmp_4_fu_210_p1;
 wire   [24:0] r_V_fu_214_p2;
-wire   [0:0] tmp_12_fu_226_p3;
+wire   [0:0] tmp_15_fu_226_p3;
 wire   [78:0] r_V_1_fu_220_p2;
-wire   [30:0] tmp_6_fu_234_p1;
-wire   [30:0] tmp_5_fu_238_p4;
+wire   [30:0] tmp_s_fu_234_p1;
+wire   [30:0] tmp_2_fu_238_p4;
 wire   [31:0] result_V_fu_256_p1;
 wire   [31:0] result_V_1_fu_259_p2;
 wire   [31:0] result_V_3_fu_265_p3;
-wire   [30:0] tmp_13_fu_272_p1;
+wire   [30:0] tmp_16_fu_272_p1;
 wire   [0:0] abscond_fu_282_p2;
 wire   [30:0] neg_cast_fu_276_p2;
 reg   [26:0] ap_NS_fsm;
@@ -126,10 +126,10 @@ carre_fmul_32ns_3bkb #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-carre_fmul_32ns_3bkb_U71(
+carre_fmul_32ns_3bkb_U63(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(tmp_1_reg_330),
+    .din0(tmp_7_reg_330),
     .din1(32'd1118699520),
     .ce(1'b1),
     .dout(grp_fu_114_p2)
@@ -140,7 +140,7 @@ comparateur_sitofcud #(
     .NUM_STAGE( 6 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-comparateur_sitofcud_U72(
+comparateur_sitofcud_U64(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_119_p0),
@@ -154,11 +154,11 @@ racine_fsqrt_32nsncg #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-racine_fsqrt_32nsncg_U73(
+racine_fsqrt_32nsncg_U65(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd0),
-    .din1(tmp_s_reg_325),
+    .din1(tmp_6_reg_325),
     .ce(1'b1),
     .dout(grp_fu_122_p2)
 );
@@ -185,20 +185,20 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state10)) begin
+        tmp_6_reg_325 <= grp_fu_119_p1;
+    end
+end
+
+always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state22)) begin
-        tmp_1_reg_330 <= grp_fu_122_p2;
+        tmp_7_reg_330 <= grp_fu_122_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state26)) begin
-        tmp_2_reg_336 <= grp_fu_114_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
-        tmp_s_reg_325 <= grp_fu_119_p1;
+        tmp_8_reg_336 <= grp_fu_114_p2;
     end
 end
 
@@ -342,7 +342,7 @@ always @ (*) begin
     endcase
 end
 
-assign abs_fu_288_p3 = ((abscond_fu_282_p2[0:0] === 1'b1) ? tmp_13_fu_272_p1 : neg_cast_fu_276_p2);
+assign abs_fu_288_p3 = ((abscond_fu_282_p2[0:0] === 1'b1) ? tmp_16_fu_272_p1 : neg_cast_fu_276_p2);
 
 assign abscond_fu_282_p2 = (($signed(result_V_3_fu_265_p3) > $signed(32'd0)) ? 1'b1 : 1'b0);
 
@@ -374,17 +374,17 @@ assign loc_V_1_fu_148_p1 = p_Val2_s_fu_127_p1[22:0];
 
 assign loc_V_fu_138_p4 = {{p_Val2_s_fu_127_p1[30:23]}};
 
-assign neg_cast_fu_276_p2 = (31'd0 - tmp_13_fu_272_p1);
+assign neg_cast_fu_276_p2 = (31'd0 - tmp_16_fu_272_p1);
 
-assign p_Val2_2_fu_248_p3 = ((isNeg_fu_176_p3[0:0] === 1'b1) ? tmp_6_fu_234_p1 : tmp_5_fu_238_p4);
+assign p_Val2_2_fu_248_p3 = ((isNeg_fu_176_p3[0:0] === 1'b1) ? tmp_s_fu_234_p1 : tmp_2_fu_238_p4);
 
 assign p_Val2_s_fu_127_p1 = val_reg_300;
 
-assign r_V_1_fu_220_p2 = tmp_4_cast2_fu_162_p1 << tmp_9_fu_210_p1;
+assign r_V_1_fu_220_p2 = tmp_1_cast2_fu_162_p1 << tmp_4_fu_210_p1;
 
-assign r_V_fu_214_p2 = tmp_4_fu_152_p4 >> sh_assign_1_cast_cas_fu_206_p1;
+assign r_V_fu_214_p2 = tmp_1_fu_152_p4 >> sh_assign_1_cast_cas_fu_206_p1;
 
-assign racine_x = tmp_1_reg_330;
+assign racine_x = tmp_7_reg_330;
 
 assign result_V_1_fu_259_p2 = (32'd0 - result_V_fu_256_p1);
 
@@ -392,34 +392,34 @@ assign result_V_3_fu_265_p3 = ((p_Result_s_reg_305[0:0] === 1'b1) ? result_V_1_f
 
 assign result_V_fu_256_p1 = p_Val2_2_reg_310;
 
-assign s_din = tmp_2_reg_336;
+assign s_din = tmp_8_reg_336;
 
 assign sh_assign_1_cast_cas_fu_206_p1 = $signed(sh_assign_1_fu_194_p3);
 
 assign sh_assign_1_cast_fu_202_p1 = $signed(sh_assign_1_fu_194_p3);
 
-assign sh_assign_1_fu_194_p3 = ((isNeg_fu_176_p3[0:0] === 1'b1) ? tmp_7_cast_fu_190_p1 : sh_assign_fu_170_p2);
+assign sh_assign_1_fu_194_p3 = ((isNeg_fu_176_p3[0:0] === 1'b1) ? tmp_3_cast_fu_190_p1 : sh_assign_fu_170_p2);
 
-assign sh_assign_fu_170_p2 = ($signed(9'd385) + $signed(tmp_5_cast1_fu_166_p1));
+assign sh_assign_fu_170_p2 = ($signed(9'd385) + $signed(tmp_2_cast1_fu_166_p1));
 
-assign tmp_12_fu_226_p3 = r_V_fu_214_p2[32'd24];
+assign tmp_15_fu_226_p3 = r_V_fu_214_p2[32'd24];
 
-assign tmp_13_fu_272_p1 = result_V_3_fu_265_p3[30:0];
+assign tmp_16_fu_272_p1 = result_V_3_fu_265_p3[30:0];
 
-assign tmp_4_cast2_fu_162_p1 = tmp_4_fu_152_p4;
+assign tmp_1_cast2_fu_162_p1 = tmp_1_fu_152_p4;
 
-assign tmp_4_fu_152_p4 = {{{{1'd1}, {loc_V_1_fu_148_p1}}}, {1'd0}};
+assign tmp_1_fu_152_p4 = {{{{1'd1}, {loc_V_1_fu_148_p1}}}, {1'd0}};
 
-assign tmp_5_cast1_fu_166_p1 = loc_V_fu_138_p4;
+assign tmp_2_cast1_fu_166_p1 = loc_V_fu_138_p4;
 
-assign tmp_5_fu_238_p4 = {{r_V_1_fu_220_p2[54:24]}};
+assign tmp_2_fu_238_p4 = {{r_V_1_fu_220_p2[54:24]}};
 
-assign tmp_6_fu_234_p1 = tmp_12_fu_226_p3;
+assign tmp_3_cast_fu_190_p1 = $signed(tmp_3_fu_184_p2);
 
-assign tmp_7_cast_fu_190_p1 = $signed(tmp_7_fu_184_p2);
+assign tmp_3_fu_184_p2 = (8'd127 - loc_V_fu_138_p4);
 
-assign tmp_7_fu_184_p2 = (8'd127 - loc_V_fu_138_p4);
+assign tmp_4_fu_210_p1 = $unsigned(sh_assign_1_cast_fu_202_p1);
 
-assign tmp_9_fu_210_p1 = $unsigned(sh_assign_1_cast_fu_202_p1);
+assign tmp_s_fu_234_p1 = tmp_15_fu_226_p3;
 
 endmodule //racine_do_racine

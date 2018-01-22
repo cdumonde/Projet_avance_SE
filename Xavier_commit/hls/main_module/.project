@@ -117,6 +117,16 @@
 			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/filtre2.h</location>
 		</link>
 		<link>
+			<name>source/oled_process.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/oled_process.cpp</location>
+		</link>
+		<link>
+			<name>source/oled_process.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/oled_process.h</location>
+		</link>
+		<link>
 			<name>source/racine.cpp</name>
 			<type>1</type>
 			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/racine.cpp</location>
@@ -135,6 +145,26 @@
 			<name>source/top_level.h</name>
 			<type>1</type>
 			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/top_level.h</location>
+		</link>
+		<link>
+			<name>source/uart_wrapper.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/uart_wrapper.cpp</location>
+		</link>
+		<link>
+			<name>source/uart_wrapper.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/uart_wrapper.h</location>
+		</link>
+		<link>
+			<name>source/uart_wrapper_oled.cpp</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/uart_wrapper_oled.cpp</location>
+		</link>
+		<link>
+			<name>source/uart_wrapper_oled.h</name>
+			<type>1</type>
+			<location>Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/src/modules/uart_wrapper_oled.h</location>
 		</link>
 		<link>
 			<name>testbench/analyseur.cpp</name>

@@ -56,21 +56,21 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "racine_x", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_66", "Port" : "racine_x"}]},
+					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_58", "Port" : "racine_x"}]},
 			{"Name" : "clk", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_66", "Port" : "clk"}]},
+					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_58", "Port" : "clk"}]},
 			{"Name" : "reset", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_66", "Port" : "reset"}]},
+					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_58", "Port" : "reset"}]},
 			{"Name" : "e", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_66", "Port" : "e"}]},
+					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_58", "Port" : "e"}]},
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_66", "Port" : "s"}]},
+					{"ID" : "1", "SubInstance" : "grp_racine_do_racine_fu_58", "Port" : "s"}]},
 			{"Name" : "racine_ssdm_thread_M_do_racine", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_racine_do_racine_fu_66", "Parent" : "0", "Child" : ["2", "3", "4"],
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_racine_do_racine_fu_58", "Parent" : "0", "Child" : ["2", "3", "4"],
 		"CDFG" : "racine_do_racine",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"FunctionPipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -88,9 +88,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "s_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_racine_do_racine_fu_66.carre_fmul_32ns_3bkb_U71", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_racine_do_racine_fu_66.comparateur_sitofcud_U72", "Parent" : "1"},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_racine_do_racine_fu_66.racine_fsqrt_32nsncg_U73", "Parent" : "1"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_racine_do_racine_fu_58.carre_fmul_32ns_3bkb_U63", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_racine_do_racine_fu_58.comparateur_sitofcud_U64", "Parent" : "1"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_racine_do_racine_fu_58.racine_fsqrt_32nsncg_U65", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {

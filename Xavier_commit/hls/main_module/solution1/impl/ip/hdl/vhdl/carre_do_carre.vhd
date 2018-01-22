@@ -50,7 +50,7 @@ architecture behav of carre_do_carre is
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
     signal val_reg_80 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_76_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_6_reg_86 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_11_reg_86 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
     signal ap_CS_fsm_state3 : STD_LOGIC;
@@ -76,7 +76,7 @@ architecture behav of carre_do_carre is
 
 
 begin
-    carre_fmul_32ns_3bkb_U9 : component carre_fmul_32ns_3bkb
+    carre_fmul_32ns_3bkb_U1 : component carre_fmul_32ns_3bkb
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -110,7 +110,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then
-                tmp_6_reg_86 <= grp_fu_76_p2;
+                tmp_11_reg_86 <= grp_fu_76_p2;
             end if;
         end if;
     end process;
@@ -154,7 +154,7 @@ begin
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
     ap_CS_fsm_state6 <= ap_CS_fsm(5);
     ap_CS_fsm_state7 <= ap_CS_fsm(6);
-    carre_x <= tmp_6_reg_86;
+    carre_x <= tmp_11_reg_86;
 
     carre_x_ap_vld_assign_proc : process(s_full_n, ap_CS_fsm_state7)
     begin
@@ -195,7 +195,7 @@ begin
         end if; 
     end process;
 
-    s_din <= tmp_6_reg_86;
+    s_din <= tmp_11_reg_86;
 
     s_write_assign_proc : process(s_full_n, ap_CS_fsm_state7)
     begin

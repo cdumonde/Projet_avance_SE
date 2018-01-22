@@ -30,11 +30,11 @@ architecture behav of carre is
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_boolean_1 : BOOLEAN := true;
 
-    signal grp_carre_do_carre_fu_66_carre_x : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_carre_do_carre_fu_66_carre_x_ap_vld : STD_LOGIC;
-    signal grp_carre_do_carre_fu_66_e_read : STD_LOGIC;
-    signal grp_carre_do_carre_fu_66_s_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_carre_do_carre_fu_66_s_write : STD_LOGIC;
+    signal grp_carre_do_carre_fu_58_carre_x : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_carre_do_carre_fu_58_carre_x_ap_vld : STD_LOGIC;
+    signal grp_carre_do_carre_fu_58_e_read : STD_LOGIC;
+    signal grp_carre_do_carre_fu_58_s_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_carre_do_carre_fu_58_s_write : STD_LOGIC;
 
     component carre_do_carre IS
     port (
@@ -53,23 +53,23 @@ architecture behav of carre is
 
 
 begin
-    grp_carre_do_carre_fu_66 : component carre_do_carre
+    grp_carre_do_carre_fu_58 : component carre_do_carre
     port map (
         ap_clk => clk,
         ap_rst => reset,
-        carre_x => grp_carre_do_carre_fu_66_carre_x,
-        carre_x_ap_vld => grp_carre_do_carre_fu_66_carre_x_ap_vld,
+        carre_x => grp_carre_do_carre_fu_58_carre_x,
+        carre_x_ap_vld => grp_carre_do_carre_fu_58_carre_x_ap_vld,
         e_dout => e_dout,
         e_empty_n => e_empty_n,
-        e_read => grp_carre_do_carre_fu_66_e_read,
-        s_din => grp_carre_do_carre_fu_66_s_din,
+        e_read => grp_carre_do_carre_fu_58_e_read,
+        s_din => grp_carre_do_carre_fu_58_s_din,
         s_full_n => s_full_n,
-        s_write => grp_carre_do_carre_fu_66_s_write);
+        s_write => grp_carre_do_carre_fu_58_s_write);
 
 
 
 
-    e_read <= grp_carre_do_carre_fu_66_e_read;
-    s_din <= grp_carre_do_carre_fu_66_s_din;
-    s_write <= grp_carre_do_carre_fu_66_s_write;
+    e_read <= grp_carre_do_carre_fu_58_e_read;
+    s_din <= grp_carre_do_carre_fu_58_s_din;
+    s_write <= grp_carre_do_carre_fu_58_s_write;
 end behav;

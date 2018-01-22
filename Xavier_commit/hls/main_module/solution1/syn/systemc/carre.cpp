@@ -17,27 +17,27 @@ const sc_logic carre::ap_const_logic_0 = sc_dt::Log_0;
 const bool carre::ap_const_boolean_1 = true;
 
 carre::carre(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    grp_carre_do_carre_fu_66 = new carre_do_carre("grp_carre_do_carre_fu_66");
-    grp_carre_do_carre_fu_66->ap_clk(clk);
-    grp_carre_do_carre_fu_66->ap_rst(reset);
-    grp_carre_do_carre_fu_66->carre_x(grp_carre_do_carre_fu_66_carre_x);
-    grp_carre_do_carre_fu_66->carre_x_ap_vld(grp_carre_do_carre_fu_66_carre_x_ap_vld);
-    grp_carre_do_carre_fu_66->e_dout(e_dout);
-    grp_carre_do_carre_fu_66->e_empty_n(e_empty_n);
-    grp_carre_do_carre_fu_66->e_read(grp_carre_do_carre_fu_66_e_read);
-    grp_carre_do_carre_fu_66->s_din(grp_carre_do_carre_fu_66_s_din);
-    grp_carre_do_carre_fu_66->s_full_n(s_full_n);
-    grp_carre_do_carre_fu_66->s_write(grp_carre_do_carre_fu_66_s_write);
+    grp_carre_do_carre_fu_58 = new carre_do_carre("grp_carre_do_carre_fu_58");
+    grp_carre_do_carre_fu_58->ap_clk(clk);
+    grp_carre_do_carre_fu_58->ap_rst(reset);
+    grp_carre_do_carre_fu_58->carre_x(grp_carre_do_carre_fu_58_carre_x);
+    grp_carre_do_carre_fu_58->carre_x_ap_vld(grp_carre_do_carre_fu_58_carre_x_ap_vld);
+    grp_carre_do_carre_fu_58->e_dout(e_dout);
+    grp_carre_do_carre_fu_58->e_empty_n(e_empty_n);
+    grp_carre_do_carre_fu_58->e_read(grp_carre_do_carre_fu_58_e_read);
+    grp_carre_do_carre_fu_58->s_din(grp_carre_do_carre_fu_58_s_din);
+    grp_carre_do_carre_fu_58->s_full_n(s_full_n);
+    grp_carre_do_carre_fu_58->s_write(grp_carre_do_carre_fu_58_s_write);
 
     SC_METHOD(thread_e_read);
-    sensitive << ( grp_carre_do_carre_fu_66_e_read );
+    sensitive << ( grp_carre_do_carre_fu_58_e_read );
 
     SC_METHOD(thread_s_din);
-    sensitive << ( grp_carre_do_carre_fu_66_s_din );
-    sensitive << ( grp_carre_do_carre_fu_66_s_write );
+    sensitive << ( grp_carre_do_carre_fu_58_s_din );
+    sensitive << ( grp_carre_do_carre_fu_58_s_write );
 
     SC_METHOD(thread_s_write);
-    sensitive << ( grp_carre_do_carre_fu_66_s_write );
+    sensitive << ( grp_carre_do_carre_fu_58_s_write );
 
     static int apTFileNum = 0;
     stringstream apTFilenSS;
@@ -57,11 +57,11 @@ carre::carre(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, s_write, "(port)s_write");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, grp_carre_do_carre_fu_66_carre_x, "grp_carre_do_carre_fu_66_carre_x");
-    sc_trace(mVcdFile, grp_carre_do_carre_fu_66_carre_x_ap_vld, "grp_carre_do_carre_fu_66_carre_x_ap_vld");
-    sc_trace(mVcdFile, grp_carre_do_carre_fu_66_e_read, "grp_carre_do_carre_fu_66_e_read");
-    sc_trace(mVcdFile, grp_carre_do_carre_fu_66_s_din, "grp_carre_do_carre_fu_66_s_din");
-    sc_trace(mVcdFile, grp_carre_do_carre_fu_66_s_write, "grp_carre_do_carre_fu_66_s_write");
+    sc_trace(mVcdFile, grp_carre_do_carre_fu_58_carre_x, "grp_carre_do_carre_fu_58_carre_x");
+    sc_trace(mVcdFile, grp_carre_do_carre_fu_58_carre_x_ap_vld, "grp_carre_do_carre_fu_58_carre_x_ap_vld");
+    sc_trace(mVcdFile, grp_carre_do_carre_fu_58_e_read, "grp_carre_do_carre_fu_58_e_read");
+    sc_trace(mVcdFile, grp_carre_do_carre_fu_58_s_din, "grp_carre_do_carre_fu_58_s_din");
+    sc_trace(mVcdFile, grp_carre_do_carre_fu_58_s_write, "grp_carre_do_carre_fu_58_s_write");
 #endif
 
     }
@@ -71,19 +71,19 @@ carre::~carre() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete grp_carre_do_carre_fu_66;
+    delete grp_carre_do_carre_fu_58;
 }
 
 void carre::thread_e_read() {
-    e_read = grp_carre_do_carre_fu_66_e_read.read();
+    e_read = grp_carre_do_carre_fu_58_e_read.read();
 }
 
 void carre::thread_s_din() {
-    s_din = grp_carre_do_carre_fu_66_s_din.read();
+    s_din = grp_carre_do_carre_fu_58_s_din.read();
 }
 
 void carre::thread_s_write() {
-    s_write = grp_carre_do_carre_fu_66_s_write.read();
+    s_write = grp_carre_do_carre_fu_58_s_write.read();
 }
 
 }

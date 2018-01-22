@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'racine_do_racine'" level="0">
-<item name = "Date">Thu Dec 21 14:59:28 2017
+<item name = "Date">Wed Jan 17 14:58:10 2018
 </item>
 <item name = "Version">2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)</item>
 <item name = "Project">main_module</item>
@@ -62,9 +62,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="carre_fmul_32ns_3bkb_U71">carre_fmul_32ns_3bkb, 0, 3, 143, 140</column>
-<column name="comparateur_sitofcud_U72">comparateur_sitofcud, 0, 0, 339, 373</column>
-<column name="racine_fsqrt_32nsncg_U73">racine_fsqrt_32nsncg, 0, 0, 406, 518</column>
+<column name="carre_fmul_32ns_3bkb_U63">carre_fmul_32ns_3bkb, 0, 3, 143, 140</column>
+<column name="comparateur_sitofcud_U64">comparateur_sitofcud, 0, 0, 339, 373</column>
+<column name="racine_fsqrt_32nsncg_U65">racine_fsqrt_32nsncg, 0, 0, 406, 518</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
@@ -84,7 +84,7 @@
 <column name="sh_assign_fu_170_p2">+, 0, 0, 16, 8, 9</column>
 <column name="neg_cast_fu_276_p2">-, 0, 0, 38, 1, 31</column>
 <column name="result_V_1_fu_259_p2">-, 0, 0, 39, 1, 32</column>
-<column name="tmp_7_fu_184_p2">-, 0, 0, 15, 7, 8</column>
+<column name="tmp_3_fu_184_p2">-, 0, 0, 15, 7, 8</column>
 <column name="abscond_fu_282_p2">icmp, 0, 0, 18, 32, 1</column>
 <column name="r_V_fu_214_p2">lshr, 0, 0, 73, 25, 25</column>
 <column name="abs_fu_288_p3">select, 0, 0, 31, 1, 31</column>
@@ -107,9 +107,9 @@
 <column name="ap_CS_fsm">27, 0, 27, 0</column>
 <column name="p_Result_s_reg_305">1, 0, 1, 0</column>
 <column name="p_Val2_2_reg_310">31, 0, 31, 0</column>
-<column name="tmp_1_reg_330">32, 0, 32, 0</column>
-<column name="tmp_2_reg_336">32, 0, 32, 0</column>
-<column name="tmp_s_reg_325">32, 0, 32, 0</column>
+<column name="tmp_6_reg_325">32, 0, 32, 0</column>
+<column name="tmp_7_reg_330">32, 0, 32, 0</column>
+<column name="tmp_8_reg_336">32, 0, 32, 0</column>
 <column name="val_reg_300">32, 0, 32, 0</column>
 </table>
 </item>

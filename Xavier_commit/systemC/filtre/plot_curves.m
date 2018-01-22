@@ -87,8 +87,8 @@ end
 %     end
 % end
 
-sum_store6 = sum(store6)/0.1;
-sum_results = sum(results)/0.1;
+nb_simu = sum(store6)/0.1;
+nb_bornat = sum(results)/0.1;
 
 %end
 %store = ones(N);

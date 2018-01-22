@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'carre'" level="0">
-<item name = "Date">Thu Dec 21 14:59:07 2017
+<item name = "Date">Wed Jan 17 14:57:46 2018
 </item>
 <item name = "Version">2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)</item>
 <item name = "Project">main_module</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_carre_do_carre_fu_66">carre_do_carre, 7, 7, 7, 7, none</column>
+<column name="grp_carre_do_carre_fu_58">carre_do_carre, 7, 7, 7, 7, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="grp_carre_do_carre_fu_66">carre_do_carre, 0, 3, 214, 196</column>
+<column name="grp_carre_do_carre_fu_58">carre_do_carre, 0, 3, 214, 196</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">

@@ -26855,8 +26855,8 @@ private:
 #pragma empty_line
  float y0;
  float x0;
- float mem_x[ 2 ];
- float mem_y[ 2 ];
+ float mem_x[ 1 ];
+ float mem_y[ 1 ];
 public:
     sc_in < bool > clk;
     sc_in < bool > reset;
@@ -26892,7 +26892,7 @@ float Filtre2IIR( float y1, float x1, float x0){
 void filtre2::do_filtre(){
 #pragma empty_line
 #pragma empty_line
- for( int i = 0; i < 2; i++ ){
+ for( int i = 0; i < 1; i++ ){
 #pragma empty_line
   mem_x[i] = 0;
   mem_y[i] = 0;
@@ -26901,7 +26901,7 @@ void filtre2::do_filtre(){
 #pragma empty_line
  while( true ){
 #pragma empty_line
-  for( int i = 0; i < 2; i++ ){
+  for( int i = 0; i < 1; i++ ){
 #pragma empty_line
    x0 = e.read();
 #pragma empty_line

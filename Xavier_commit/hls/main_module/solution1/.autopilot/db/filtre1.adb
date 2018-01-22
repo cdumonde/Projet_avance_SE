@@ -282,7 +282,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_filtre1_do_filtre_fu_72</rtlName>
+              <rtlName>grp_filtre1_do_filtre_fu_64</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -515,13 +515,13 @@
           <sink_obj>37</sink_obj>
         </item>
         <item class_id_reference="20" object_id="_27">
-          <id>229</id>
+          <id>225</id>
           <edge_type>2</edge_type>
           <source_obj>25</source_obj>
           <sink_obj>39</sink_obj>
         </item>
         <item class_id_reference="20" object_id="_28">
-          <id>230</id>
+          <id>226</id>
           <edge_type>2</edge_type>
           <source_obj>25</source_obj>
           <sink_obj>36</sink_obj>
@@ -550,7 +550,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>48</mMinLatency>
+        <mMinLatency>24</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -747,7 +747,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>grp_filtre1_do_filtre_fu_72 (filtre1_do_filtre)</first>
+          <first>grp_filtre1_do_filtre_fu_64 (filtre1_do_filtre)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -757,11 +757,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1885</second>
+              <second>1942</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1768</second>
+              <second>1716</second>
             </item>
           </second>
         </item>
@@ -784,7 +784,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Words)</first>
-              <second>2</second>
+              <second>1</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -796,19 +796,19 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>64</second>
+              <second>32</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>0</second>
             </item>
             <item>
               <first>FF</first>
-              <second>0</second>
+              <second>64</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>0</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -819,7 +819,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Words)</first>
-              <second>2</second>
+              <second>1</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -831,19 +831,19 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>64</second>
+              <second>32</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>0</second>
             </item>
             <item>
               <first>FF</first>
-              <second>0</second>
+              <second>64</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>0</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -860,7 +860,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_filtre1_do_filtre_fu_72</first>
+          <first>grp_filtre1_do_filtre_fu_64</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -871,7 +871,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>grp_filtre1_do_filtre_fu_72 (filtre1_do_filtre)</first>
+          <first>grp_filtre1_do_filtre_fu_64 (filtre1_do_filtre)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -903,7 +903,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>21</item>
+            <item>16</item>
           </second>
         </item>
       </dp_memory_map>
@@ -980,7 +980,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item class_id="51" tracking_level="0" version="0">
-        <first>72</first>
+        <first>64</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -989,7 +989,7 @@
         </second>
       </item>
       <item>
-        <first>92</first>
+        <first>84</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1005,7 +1005,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>grp_filtre1_do_filtre_fu_72</first>
+        <first>grp_filtre1_do_filtre_fu_64</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -1018,7 +1018,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>filtre1_ssdm_thre_load_fu_92</first>
+        <first>filtre1_ssdm_thre_load_fu_84</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -10,7 +10,7 @@
 
 module comparateur_sitofcud
 #(parameter
-    ID         = 16,
+    ID         = 8,
     NUM_STAGE  = 6,
     din0_WIDTH = 32,
     dout_WIDTH = 32
@@ -33,7 +33,7 @@ reg                   ce_r;
 wire [dout_WIDTH-1:0] dout_i;
 reg  [dout_WIDTH-1:0] dout_r;
 //------------------------Instantiation------------------
-top_level_ap_sitofp_4_no_dsp_32 top_level_ap_sitofp_4_no_dsp_32_u (
+uart_wrapper_ap_sitofp_4_no_dsp_32 uart_wrapper_ap_sitofp_4_no_dsp_32_u (
     .aclk                 ( aclk ),
     .aclken               ( aclken ),
     .s_axis_a_tvalid      ( a_tvalid ),

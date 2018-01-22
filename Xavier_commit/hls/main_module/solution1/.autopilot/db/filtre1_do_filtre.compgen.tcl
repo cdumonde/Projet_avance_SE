@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 36
+set id 28
 set name filtre1_fptrunc_6eOg
 set corename simcore_fptrunc
 set op fptrunc
@@ -64,7 +64,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 37
+set id 29
 set name filtre1_fpext_32nfYi
 set corename simcore_fpext
 set op fpext
@@ -128,7 +128,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 39
+set id 31
 set name filtre1_dadddsub_g8j
 set corename simcore_dadddsub
 set op dadddsub
@@ -201,7 +201,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 40
+set id 32
 set name filtre1_dmul_64nshbi
 set corename simcore_dmul
 set op dmul
@@ -285,14 +285,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 48 \
+    id 40 \
     name filtre1_mem_x \
     reset_level 1 \
     sync_rst true \
-    dir IO \
+    dir O \
     corename filtre1_mem_x \
     op interface \
-    ports { filtre1_mem_x_address0 { O 1 vector } filtre1_mem_x_ce0 { O 1 bit } filtre1_mem_x_we0 { O 1 bit } filtre1_mem_x_d0 { O 32 vector } filtre1_mem_x_q0 { I 32 vector } filtre1_mem_x_address1 { O 1 vector } filtre1_mem_x_ce1 { O 1 bit } filtre1_mem_x_we1 { O 1 bit } filtre1_mem_x_d1 { O 32 vector } } \
+    ports { filtre1_mem_x_address0 { O 1 vector } filtre1_mem_x_ce0 { O 1 bit } filtre1_mem_x_we0 { O 1 bit } filtre1_mem_x_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'filtre1_mem_x'"
@@ -304,14 +304,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 49 \
+    id 41 \
     name filtre1_mem_y \
     reset_level 1 \
     sync_rst true \
-    dir IO \
+    dir O \
     corename filtre1_mem_y \
     op interface \
-    ports { filtre1_mem_y_address0 { O 1 vector } filtre1_mem_y_ce0 { O 1 bit } filtre1_mem_y_we0 { O 1 bit } filtre1_mem_y_d0 { O 32 vector } filtre1_mem_y_q0 { I 32 vector } filtre1_mem_y_address1 { O 1 vector } filtre1_mem_y_ce1 { O 1 bit } filtre1_mem_y_we1 { O 1 bit } filtre1_mem_y_d1 { O 32 vector } } \
+    ports { filtre1_mem_y_address0 { O 1 vector } filtre1_mem_y_ce0 { O 1 bit } filtre1_mem_y_we0 { O 1 bit } filtre1_mem_y_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'filtre1_mem_y'"
@@ -322,7 +322,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 46 \
+    id 38 \
     name filtre1_y0 \
     type other \
     dir O \
@@ -337,7 +337,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 47 \
+    id 39 \
     name filtre1_x0 \
     type other \
     dir O \
@@ -352,7 +352,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 50 \
+    id 42 \
     name e \
     type fifo \
     dir I \
@@ -367,7 +367,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 51 \
+    id 43 \
     name s \
     type fifo \
     dir O \

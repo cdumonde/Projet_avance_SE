@@ -1,0 +1,1181 @@
+	.def	 __cxx_global_var_init;
+	.scl	3;
+	.type	32;
+	.endef
+	.text
+	.align	16, 0x90
+__cxx_global_var_init:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp2:
+	.cfi_def_cfa_offset 16
+.Ltmp3:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp4:
+	.cfi_def_cfa_register %rbp
+	subq	$48, %rsp
+	movl	$_ZStL8__ioinit, %ecx
+	callq	_ZNSt8ios_base4InitC1Ev
+	movl	$__dtor__ZStL8__ioinit, %ecx
+	callq	atexit
+	movl	%eax, -4(%rbp)
+	addq	$48, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.def	 __dtor__ZStL8__ioinit;
+	.scl	3;
+	.type	32;
+	.endef
+	.align	16, 0x90
+__dtor__ZStL8__ioinit:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp7:
+	.cfi_def_cfa_offset 16
+.Ltmp8:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp9:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movl	$_ZStL8__ioinit, %ecx
+	callq	_ZNSt8ios_base4InitD1Ev
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi,"xr"
+	.linkonce discard
+	.globl	_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi
+	.align	16, 0x90
+_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi:
+Lllvm$workaround$fake$stub$_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi:
+	.cfi_startproc
+	subq	$24, %rsp
+.Ltmp11:
+	.cfi_def_cfa_offset 32
+	movq	%rcx, 16(%rsp)
+	movq	%rdx, 8(%rsp)
+	movl	%r8d, 4(%rsp)
+	addq	$24, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 __cxx_global_var_init1;
+	.scl	3;
+	.type	32;
+	.endef
+	.text
+	.align	16, 0x90
+__cxx_global_var_init1:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp14:
+	.cfi_def_cfa_offset 16
+.Ltmp15:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp16:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movl	$_ZN7sc_coreL17api_version_checkE, %ecx
+	callq	_ZN7sc_core20sc_api_version_2_3_0C1Ev
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxval_observer9constructERKNS_8sc_fxvalE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxval_observer9constructERKNS_8sc_fxvalE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxval_observer9constructERKNS_8sc_fxvalE
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxval_observer9constructERKNS_8sc_fxvalE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxval_observer9constructERKNS_8sc_fxvalE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp18:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxval_fast_observer9constructERKNS_13sc_fxval_fastE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxval_fast_observer9constructERKNS_13sc_fxval_fastE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxval_fast_observer9constructERKNS_13sc_fxval_fastE
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxval_fast_observer9constructERKNS_13sc_fxval_fastE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxval_fast_observer9constructERKNS_13sc_fxval_fastE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp20:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxnum_observer9constructERKNS_8sc_fxnumE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxnum_observer9constructERKNS_8sc_fxnumE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxnum_observer9constructERKNS_8sc_fxnumE
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxnum_observer9constructERKNS_8sc_fxnumE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxnum_observer9constructERKNS_8sc_fxnumE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp22:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxnum_fast_observer9constructERKNS_13sc_fxnum_fastE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxnum_fast_observer9constructERKNS_13sc_fxnum_fastE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxnum_fast_observer9constructERKNS_13sc_fxnum_fastE
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxnum_fast_observer9constructERKNS_13sc_fxnum_fastE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxnum_fast_observer9constructERKNS_13sc_fxnum_fastE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp24:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxval_observerD1Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxval_observerD1Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxval_observerD1Ev
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxval_observerD1Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxval_observerD1Ev:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp27:
+	.cfi_def_cfa_offset 16
+.Ltmp28:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp29:
+	.cfi_def_cfa_register %rbp
+	subq	$48, %rsp
+	movq	%rcx, -8(%rbp)
+	callq	_ZN5sc_dt17sc_fxval_observerD2Ev
+	addq	$48, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxval_observerD0Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxval_observerD0Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxval_observerD0Ev
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxval_observerD0Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxval_observerD0Ev:
+	.cfi_startproc
+	.cfi_personality 0, __gxx_personality_v0
+.Leh_func_begin9:
+	.cfi_lsda 0, .Lexception9
+	pushq	%rbp
+.Ltmp35:
+	.cfi_def_cfa_offset 16
+.Ltmp36:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp37:
+	.cfi_def_cfa_register %rbp
+	subq	$64, %rsp
+	movq	%rcx, -8(%rbp)
+	movq	%rcx, %rax
+.Ltmp30:
+	movq	%rax, -32(%rbp)
+	callq	_ZN5sc_dt17sc_fxval_observerD1Ev
+.Ltmp31:
+	jmp	.LBB9_1
+.LBB9_1:
+	movq	-32(%rbp), %rcx
+	callq	_ZdlPv
+	addq	$64, %rsp
+	popq	%rbp
+	ret
+.LBB9_2:
+.Ltmp32:
+	movl	%edx, %ecx
+	movq	%rax, -16(%rbp)
+	movl	%ecx, -20(%rbp)
+	movq	-32(%rbp), %rax
+	movq	%rax, %rcx
+	callq	_ZdlPv
+	movq	-16(%rbp), %rcx
+	callq	_Unwind_Resume
+	.cfi_endproc
+.Leh_func_end9:
+	.section	.gcc_except_table,"r"
+	.align	4
+GCC_except_table9:
+.Lexception9:
+	.byte	255
+	.byte	0
+	.asciz	 "\234"
+	.byte	3
+	.byte	26
+.Lset0 = .Ltmp30-.Leh_func_begin9
+	.long	.Lset0
+.Lset1 = .Ltmp31-.Ltmp30
+	.long	.Lset1
+.Lset2 = .Ltmp32-.Leh_func_begin9
+	.long	.Lset2
+	.byte	0
+.Lset3 = .Ltmp31-.Leh_func_begin9
+	.long	.Lset3
+.Lset4 = .Leh_func_end9-.Ltmp31
+	.long	.Lset4
+	.long	0
+	.byte	0
+	.align	4
+
+	.def	 _ZN5sc_dt17sc_fxval_observer8destructERKNS_8sc_fxvalE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxval_observer8destructERKNS_8sc_fxvalE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxval_observer8destructERKNS_8sc_fxvalE
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxval_observer8destructERKNS_8sc_fxvalE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxval_observer8destructERKNS_8sc_fxvalE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp39:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxval_observer4readERKNS_8sc_fxvalE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxval_observer4readERKNS_8sc_fxvalE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxval_observer4readERKNS_8sc_fxvalE
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxval_observer4readERKNS_8sc_fxvalE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxval_observer4readERKNS_8sc_fxvalE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp41:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxval_observer5writeERKNS_8sc_fxvalE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxval_observer5writeERKNS_8sc_fxvalE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxval_observer5writeERKNS_8sc_fxvalE
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxval_observer5writeERKNS_8sc_fxvalE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxval_observer5writeERKNS_8sc_fxvalE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp43:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxval_fast_observerD1Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxval_fast_observerD1Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxval_fast_observerD1Ev
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxval_fast_observerD1Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxval_fast_observerD1Ev:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp46:
+	.cfi_def_cfa_offset 16
+.Ltmp47:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp48:
+	.cfi_def_cfa_register %rbp
+	subq	$48, %rsp
+	movq	%rcx, -8(%rbp)
+	callq	_ZN5sc_dt22sc_fxval_fast_observerD2Ev
+	addq	$48, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxval_fast_observerD0Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxval_fast_observerD0Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxval_fast_observerD0Ev
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxval_fast_observerD0Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxval_fast_observerD0Ev:
+	.cfi_startproc
+	.cfi_personality 0, __gxx_personality_v0
+.Leh_func_begin14:
+	.cfi_lsda 0, .Lexception14
+	pushq	%rbp
+.Ltmp54:
+	.cfi_def_cfa_offset 16
+.Ltmp55:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp56:
+	.cfi_def_cfa_register %rbp
+	subq	$64, %rsp
+	movq	%rcx, -8(%rbp)
+	movq	%rcx, %rax
+.Ltmp49:
+	movq	%rax, -32(%rbp)
+	callq	_ZN5sc_dt22sc_fxval_fast_observerD1Ev
+.Ltmp50:
+	jmp	.LBB14_1
+.LBB14_1:
+	movq	-32(%rbp), %rcx
+	callq	_ZdlPv
+	addq	$64, %rsp
+	popq	%rbp
+	ret
+.LBB14_2:
+.Ltmp51:
+	movl	%edx, %ecx
+	movq	%rax, -16(%rbp)
+	movl	%ecx, -20(%rbp)
+	movq	-32(%rbp), %rax
+	movq	%rax, %rcx
+	callq	_ZdlPv
+	movq	-16(%rbp), %rcx
+	callq	_Unwind_Resume
+	.cfi_endproc
+.Leh_func_end14:
+	.section	.gcc_except_table,"r"
+	.align	4
+GCC_except_table14:
+.Lexception14:
+	.byte	255
+	.byte	0
+	.asciz	 "\234"
+	.byte	3
+	.byte	26
+.Lset5 = .Ltmp49-.Leh_func_begin14
+	.long	.Lset5
+.Lset6 = .Ltmp50-.Ltmp49
+	.long	.Lset6
+.Lset7 = .Ltmp51-.Leh_func_begin14
+	.long	.Lset7
+	.byte	0
+.Lset8 = .Ltmp50-.Leh_func_begin14
+	.long	.Lset8
+.Lset9 = .Leh_func_end14-.Ltmp50
+	.long	.Lset9
+	.long	0
+	.byte	0
+	.align	4
+
+	.def	 _ZN5sc_dt22sc_fxval_fast_observer8destructERKNS_13sc_fxval_fastE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxval_fast_observer8destructERKNS_13sc_fxval_fastE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxval_fast_observer8destructERKNS_13sc_fxval_fastE
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxval_fast_observer8destructERKNS_13sc_fxval_fastE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxval_fast_observer8destructERKNS_13sc_fxval_fastE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp58:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxval_fast_observer4readERKNS_13sc_fxval_fastE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxval_fast_observer4readERKNS_13sc_fxval_fastE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxval_fast_observer4readERKNS_13sc_fxval_fastE
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxval_fast_observer4readERKNS_13sc_fxval_fastE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxval_fast_observer4readERKNS_13sc_fxval_fastE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp60:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxval_fast_observer5writeERKNS_13sc_fxval_fastE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxval_fast_observer5writeERKNS_13sc_fxval_fastE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxval_fast_observer5writeERKNS_13sc_fxval_fastE
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxval_fast_observer5writeERKNS_13sc_fxval_fastE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxval_fast_observer5writeERKNS_13sc_fxval_fastE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp62:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxnum_observerD1Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxnum_observerD1Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxnum_observerD1Ev
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxnum_observerD1Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxnum_observerD1Ev:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp65:
+	.cfi_def_cfa_offset 16
+.Ltmp66:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp67:
+	.cfi_def_cfa_register %rbp
+	subq	$48, %rsp
+	movq	%rcx, -8(%rbp)
+	callq	_ZN5sc_dt17sc_fxnum_observerD2Ev
+	addq	$48, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxnum_observerD0Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxnum_observerD0Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxnum_observerD0Ev
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxnum_observerD0Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxnum_observerD0Ev:
+	.cfi_startproc
+	.cfi_personality 0, __gxx_personality_v0
+.Leh_func_begin19:
+	.cfi_lsda 0, .Lexception19
+	pushq	%rbp
+.Ltmp73:
+	.cfi_def_cfa_offset 16
+.Ltmp74:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp75:
+	.cfi_def_cfa_register %rbp
+	subq	$64, %rsp
+	movq	%rcx, -8(%rbp)
+	movq	%rcx, %rax
+.Ltmp68:
+	movq	%rax, -32(%rbp)
+	callq	_ZN5sc_dt17sc_fxnum_observerD1Ev
+.Ltmp69:
+	jmp	.LBB19_1
+.LBB19_1:
+	movq	-32(%rbp), %rcx
+	callq	_ZdlPv
+	addq	$64, %rsp
+	popq	%rbp
+	ret
+.LBB19_2:
+.Ltmp70:
+	movl	%edx, %ecx
+	movq	%rax, -16(%rbp)
+	movl	%ecx, -20(%rbp)
+	movq	-32(%rbp), %rax
+	movq	%rax, %rcx
+	callq	_ZdlPv
+	movq	-16(%rbp), %rcx
+	callq	_Unwind_Resume
+	.cfi_endproc
+.Leh_func_end19:
+	.section	.gcc_except_table,"r"
+	.align	4
+GCC_except_table19:
+.Lexception19:
+	.byte	255
+	.byte	0
+	.asciz	 "\234"
+	.byte	3
+	.byte	26
+.Lset10 = .Ltmp68-.Leh_func_begin19
+	.long	.Lset10
+.Lset11 = .Ltmp69-.Ltmp68
+	.long	.Lset11
+.Lset12 = .Ltmp70-.Leh_func_begin19
+	.long	.Lset12
+	.byte	0
+.Lset13 = .Ltmp69-.Leh_func_begin19
+	.long	.Lset13
+.Lset14 = .Leh_func_end19-.Ltmp69
+	.long	.Lset14
+	.long	0
+	.byte	0
+	.align	4
+
+	.def	 _ZN5sc_dt17sc_fxnum_observer8destructERKNS_8sc_fxnumE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxnum_observer8destructERKNS_8sc_fxnumE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxnum_observer8destructERKNS_8sc_fxnumE
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxnum_observer8destructERKNS_8sc_fxnumE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxnum_observer8destructERKNS_8sc_fxnumE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp77:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxnum_observer4readERKNS_8sc_fxnumE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxnum_observer4readERKNS_8sc_fxnumE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxnum_observer4readERKNS_8sc_fxnumE
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxnum_observer4readERKNS_8sc_fxnumE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxnum_observer4readERKNS_8sc_fxnumE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp79:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxnum_observer5writeERKNS_8sc_fxnumE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxnum_observer5writeERKNS_8sc_fxnumE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxnum_observer5writeERKNS_8sc_fxnumE
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxnum_observer5writeERKNS_8sc_fxnumE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxnum_observer5writeERKNS_8sc_fxnumE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp81:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxnum_fast_observerD1Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxnum_fast_observerD1Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxnum_fast_observerD1Ev
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxnum_fast_observerD1Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxnum_fast_observerD1Ev:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp84:
+	.cfi_def_cfa_offset 16
+.Ltmp85:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp86:
+	.cfi_def_cfa_register %rbp
+	subq	$48, %rsp
+	movq	%rcx, -8(%rbp)
+	callq	_ZN5sc_dt22sc_fxnum_fast_observerD2Ev
+	addq	$48, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxnum_fast_observerD0Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxnum_fast_observerD0Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxnum_fast_observerD0Ev
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxnum_fast_observerD0Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxnum_fast_observerD0Ev:
+	.cfi_startproc
+	.cfi_personality 0, __gxx_personality_v0
+.Leh_func_begin24:
+	.cfi_lsda 0, .Lexception24
+	pushq	%rbp
+.Ltmp92:
+	.cfi_def_cfa_offset 16
+.Ltmp93:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp94:
+	.cfi_def_cfa_register %rbp
+	subq	$64, %rsp
+	movq	%rcx, -8(%rbp)
+	movq	%rcx, %rax
+.Ltmp87:
+	movq	%rax, -32(%rbp)
+	callq	_ZN5sc_dt22sc_fxnum_fast_observerD1Ev
+.Ltmp88:
+	jmp	.LBB24_1
+.LBB24_1:
+	movq	-32(%rbp), %rcx
+	callq	_ZdlPv
+	addq	$64, %rsp
+	popq	%rbp
+	ret
+.LBB24_2:
+.Ltmp89:
+	movl	%edx, %ecx
+	movq	%rax, -16(%rbp)
+	movl	%ecx, -20(%rbp)
+	movq	-32(%rbp), %rax
+	movq	%rax, %rcx
+	callq	_ZdlPv
+	movq	-16(%rbp), %rcx
+	callq	_Unwind_Resume
+	.cfi_endproc
+.Leh_func_end24:
+	.section	.gcc_except_table,"r"
+	.align	4
+GCC_except_table24:
+.Lexception24:
+	.byte	255
+	.byte	0
+	.asciz	 "\234"
+	.byte	3
+	.byte	26
+.Lset15 = .Ltmp87-.Leh_func_begin24
+	.long	.Lset15
+.Lset16 = .Ltmp88-.Ltmp87
+	.long	.Lset16
+.Lset17 = .Ltmp89-.Leh_func_begin24
+	.long	.Lset17
+	.byte	0
+.Lset18 = .Ltmp88-.Leh_func_begin24
+	.long	.Lset18
+.Lset19 = .Leh_func_end24-.Ltmp88
+	.long	.Lset19
+	.long	0
+	.byte	0
+	.align	4
+
+	.def	 _ZN5sc_dt22sc_fxnum_fast_observer8destructERKNS_13sc_fxnum_fastE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxnum_fast_observer8destructERKNS_13sc_fxnum_fastE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxnum_fast_observer8destructERKNS_13sc_fxnum_fastE
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxnum_fast_observer8destructERKNS_13sc_fxnum_fastE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxnum_fast_observer8destructERKNS_13sc_fxnum_fastE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp96:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxnum_fast_observer4readERKNS_13sc_fxnum_fastE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxnum_fast_observer4readERKNS_13sc_fxnum_fastE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxnum_fast_observer4readERKNS_13sc_fxnum_fastE
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxnum_fast_observer4readERKNS_13sc_fxnum_fastE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxnum_fast_observer4readERKNS_13sc_fxnum_fastE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp98:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxnum_fast_observer5writeERKNS_13sc_fxnum_fastE;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxnum_fast_observer5writeERKNS_13sc_fxnum_fastE,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxnum_fast_observer5writeERKNS_13sc_fxnum_fastE
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxnum_fast_observer5writeERKNS_13sc_fxnum_fastE:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxnum_fast_observer5writeERKNS_13sc_fxnum_fastE:
+	.cfi_startproc
+	subq	$16, %rsp
+.Ltmp100:
+	.cfi_def_cfa_offset 24
+	movq	%rcx, 8(%rsp)
+	movq	%rdx, (%rsp)
+	addq	$16, %rsp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN7sc_core18sc_process_monitorD1Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN7sc_core18sc_process_monitorD1Ev,"xr"
+	.linkonce discard
+	.globl	_ZN7sc_core18sc_process_monitorD1Ev
+	.align	16, 0x90
+_ZN7sc_core18sc_process_monitorD1Ev:
+Lllvm$workaround$fake$stub$_ZN7sc_core18sc_process_monitorD1Ev:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp103:
+	.cfi_def_cfa_offset 16
+.Ltmp104:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp105:
+	.cfi_def_cfa_register %rbp
+	subq	$48, %rsp
+	movq	%rcx, -8(%rbp)
+	callq	_ZN7sc_core18sc_process_monitorD2Ev
+	addq	$48, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.def	 _ZN7sc_core18sc_process_monitorD0Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN7sc_core18sc_process_monitorD0Ev,"xr"
+	.linkonce discard
+	.globl	_ZN7sc_core18sc_process_monitorD0Ev
+	.align	16, 0x90
+_ZN7sc_core18sc_process_monitorD0Ev:
+Lllvm$workaround$fake$stub$_ZN7sc_core18sc_process_monitorD0Ev:
+	.cfi_startproc
+	.cfi_personality 0, __gxx_personality_v0
+.Leh_func_begin29:
+	.cfi_lsda 0, .Lexception29
+	pushq	%rbp
+.Ltmp111:
+	.cfi_def_cfa_offset 16
+.Ltmp112:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp113:
+	.cfi_def_cfa_register %rbp
+	subq	$64, %rsp
+	movq	%rcx, -8(%rbp)
+	movq	%rcx, %rax
+.Ltmp106:
+	movq	%rax, -32(%rbp)
+	callq	_ZN7sc_core18sc_process_monitorD1Ev
+.Ltmp107:
+	jmp	.LBB29_1
+.LBB29_1:
+	movq	-32(%rbp), %rcx
+	callq	_ZdlPv
+	addq	$64, %rsp
+	popq	%rbp
+	ret
+.LBB29_2:
+.Ltmp108:
+	movl	%edx, %ecx
+	movq	%rax, -16(%rbp)
+	movl	%ecx, -20(%rbp)
+	movq	-32(%rbp), %rax
+	movq	%rax, %rcx
+	callq	_ZdlPv
+	movq	-16(%rbp), %rcx
+	callq	_Unwind_Resume
+	.cfi_endproc
+.Leh_func_end29:
+	.section	.gcc_except_table,"r"
+	.align	4
+GCC_except_table29:
+.Lexception29:
+	.byte	255
+	.byte	0
+	.asciz	 "\234"
+	.byte	3
+	.byte	26
+.Lset20 = .Ltmp106-.Leh_func_begin29
+	.long	.Lset20
+.Lset21 = .Ltmp107-.Ltmp106
+	.long	.Lset21
+.Lset22 = .Ltmp108-.Leh_func_begin29
+	.long	.Lset22
+	.byte	0
+.Lset23 = .Ltmp107-.Leh_func_begin29
+	.long	.Lset23
+.Lset24 = .Leh_func_end29-.Ltmp107
+	.long	.Lset24
+	.long	0
+	.byte	0
+	.align	4
+
+	.def	 _ZN7sc_core18sc_process_monitorD2Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN7sc_core18sc_process_monitorD2Ev,"xr"
+	.linkonce discard
+	.globl	_ZN7sc_core18sc_process_monitorD2Ev
+	.align	16, 0x90
+_ZN7sc_core18sc_process_monitorD2Ev:
+Lllvm$workaround$fake$stub$_ZN7sc_core18sc_process_monitorD2Ev:
+	.cfi_startproc
+	pushq	%rax
+.Ltmp115:
+	.cfi_def_cfa_offset 16
+	movq	%rcx, (%rsp)
+	popq	%rax
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxnum_fast_observerD2Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxnum_fast_observerD2Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxnum_fast_observerD2Ev
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxnum_fast_observerD2Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxnum_fast_observerD2Ev:
+	.cfi_startproc
+	pushq	%rax
+.Ltmp117:
+	.cfi_def_cfa_offset 16
+	movq	%rcx, (%rsp)
+	popq	%rax
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxnum_observerD2Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxnum_observerD2Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxnum_observerD2Ev
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxnum_observerD2Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxnum_observerD2Ev:
+	.cfi_startproc
+	pushq	%rax
+.Ltmp119:
+	.cfi_def_cfa_offset 16
+	movq	%rcx, (%rsp)
+	popq	%rax
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt22sc_fxval_fast_observerD2Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt22sc_fxval_fast_observerD2Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt22sc_fxval_fast_observerD2Ev
+	.align	16, 0x90
+_ZN5sc_dt22sc_fxval_fast_observerD2Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt22sc_fxval_fast_observerD2Ev:
+	.cfi_startproc
+	pushq	%rax
+.Ltmp121:
+	.cfi_def_cfa_offset 16
+	movq	%rcx, (%rsp)
+	popq	%rax
+	ret
+	.cfi_endproc
+
+	.def	 _ZN5sc_dt17sc_fxval_observerD2Ev;
+	.scl	2;
+	.type	32;
+	.endef
+	.section	.text$ZN5sc_dt17sc_fxval_observerD2Ev,"xr"
+	.linkonce discard
+	.globl	_ZN5sc_dt17sc_fxval_observerD2Ev
+	.align	16, 0x90
+_ZN5sc_dt17sc_fxval_observerD2Ev:
+Lllvm$workaround$fake$stub$_ZN5sc_dt17sc_fxval_observerD2Ev:
+	.cfi_startproc
+	pushq	%rax
+.Ltmp123:
+	.cfi_def_cfa_offset 16
+	movq	%rcx, (%rsp)
+	popq	%rax
+	ret
+	.cfi_endproc
+
+	.def	 _GLOBAL__I_a;
+	.scl	3;
+	.type	32;
+	.endef
+	.text
+	.align	16, 0x90
+_GLOBAL__I_a:
+	.cfi_startproc
+	pushq	%rbp
+.Ltmp126:
+	.cfi_def_cfa_offset 16
+.Ltmp127:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp128:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	callq	__cxx_global_var_init
+	callq	__cxx_global_var_init1
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+	.cfi_endproc
+
+	.lcomm	_ZStL8__ioinit,1
+	.data
+_ZN7sc_coreL26PHASH_DEFAULT_REORDER_FLAGE:
+	.byte	1
+
+	.lcomm	_ZN7sc_coreL17api_version_checkE,1
+	.section	.rdata$ZTVN5sc_dt17sc_fxval_observerE,"r"
+	.linkonce discard
+	.globl	_ZTVN5sc_dt17sc_fxval_observerE
+	.align	16
+_ZTVN5sc_dt17sc_fxval_observerE:
+	.quad	0
+	.quad	_ZTIN5sc_dt17sc_fxval_observerE
+	.quad	_ZN5sc_dt17sc_fxval_observerD1Ev
+	.quad	_ZN5sc_dt17sc_fxval_observerD0Ev
+	.quad	_ZN5sc_dt17sc_fxval_observer9constructERKNS_8sc_fxvalE
+	.quad	_ZN5sc_dt17sc_fxval_observer8destructERKNS_8sc_fxvalE
+	.quad	_ZN5sc_dt17sc_fxval_observer4readERKNS_8sc_fxvalE
+	.quad	_ZN5sc_dt17sc_fxval_observer5writeERKNS_8sc_fxvalE
+
+	.section	.rdata$ZTSN5sc_dt17sc_fxval_observerE,"r"
+	.linkonce discard
+	.globl	_ZTSN5sc_dt17sc_fxval_observerE
+	.align	16
+_ZTSN5sc_dt17sc_fxval_observerE:
+	.asciz	 "N5sc_dt17sc_fxval_observerE"
+
+	.section	.rdata$ZTIN5sc_dt17sc_fxval_observerE,"r"
+	.linkonce discard
+	.globl	_ZTIN5sc_dt17sc_fxval_observerE
+	.align	8
+_ZTIN5sc_dt17sc_fxval_observerE:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTSN5sc_dt17sc_fxval_observerE
+
+	.section	.rdata$ZTVN5sc_dt22sc_fxval_fast_observerE,"r"
+	.linkonce discard
+	.globl	_ZTVN5sc_dt22sc_fxval_fast_observerE
+	.align	16
+_ZTVN5sc_dt22sc_fxval_fast_observerE:
+	.quad	0
+	.quad	_ZTIN5sc_dt22sc_fxval_fast_observerE
+	.quad	_ZN5sc_dt22sc_fxval_fast_observerD1Ev
+	.quad	_ZN5sc_dt22sc_fxval_fast_observerD0Ev
+	.quad	_ZN5sc_dt22sc_fxval_fast_observer9constructERKNS_13sc_fxval_fastE
+	.quad	_ZN5sc_dt22sc_fxval_fast_observer8destructERKNS_13sc_fxval_fastE
+	.quad	_ZN5sc_dt22sc_fxval_fast_observer4readERKNS_13sc_fxval_fastE
+	.quad	_ZN5sc_dt22sc_fxval_fast_observer5writeERKNS_13sc_fxval_fastE
+
+	.section	.rdata$ZTSN5sc_dt22sc_fxval_fast_observerE,"r"
+	.linkonce discard
+	.globl	_ZTSN5sc_dt22sc_fxval_fast_observerE
+	.align	16
+_ZTSN5sc_dt22sc_fxval_fast_observerE:
+	.asciz	 "N5sc_dt22sc_fxval_fast_observerE"
+
+	.section	.rdata$ZTIN5sc_dt22sc_fxval_fast_observerE,"r"
+	.linkonce discard
+	.globl	_ZTIN5sc_dt22sc_fxval_fast_observerE
+	.align	8
+_ZTIN5sc_dt22sc_fxval_fast_observerE:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTSN5sc_dt22sc_fxval_fast_observerE
+
+	.section	.rdata$ZTVN5sc_dt17sc_fxnum_observerE,"r"
+	.linkonce discard
+	.globl	_ZTVN5sc_dt17sc_fxnum_observerE
+	.align	16
+_ZTVN5sc_dt17sc_fxnum_observerE:
+	.quad	0
+	.quad	_ZTIN5sc_dt17sc_fxnum_observerE
+	.quad	_ZN5sc_dt17sc_fxnum_observerD1Ev
+	.quad	_ZN5sc_dt17sc_fxnum_observerD0Ev
+	.quad	_ZN5sc_dt17sc_fxnum_observer9constructERKNS_8sc_fxnumE
+	.quad	_ZN5sc_dt17sc_fxnum_observer8destructERKNS_8sc_fxnumE
+	.quad	_ZN5sc_dt17sc_fxnum_observer4readERKNS_8sc_fxnumE
+	.quad	_ZN5sc_dt17sc_fxnum_observer5writeERKNS_8sc_fxnumE
+
+	.section	.rdata$ZTSN5sc_dt17sc_fxnum_observerE,"r"
+	.linkonce discard
+	.globl	_ZTSN5sc_dt17sc_fxnum_observerE
+	.align	16
+_ZTSN5sc_dt17sc_fxnum_observerE:
+	.asciz	 "N5sc_dt17sc_fxnum_observerE"
+
+	.section	.rdata$ZTIN5sc_dt17sc_fxnum_observerE,"r"
+	.linkonce discard
+	.globl	_ZTIN5sc_dt17sc_fxnum_observerE
+	.align	8
+_ZTIN5sc_dt17sc_fxnum_observerE:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTSN5sc_dt17sc_fxnum_observerE
+
+	.section	.rdata$ZTVN5sc_dt22sc_fxnum_fast_observerE,"r"
+	.linkonce discard
+	.globl	_ZTVN5sc_dt22sc_fxnum_fast_observerE
+	.align	16
+_ZTVN5sc_dt22sc_fxnum_fast_observerE:
+	.quad	0
+	.quad	_ZTIN5sc_dt22sc_fxnum_fast_observerE
+	.quad	_ZN5sc_dt22sc_fxnum_fast_observerD1Ev
+	.quad	_ZN5sc_dt22sc_fxnum_fast_observerD0Ev
+	.quad	_ZN5sc_dt22sc_fxnum_fast_observer9constructERKNS_13sc_fxnum_fastE
+	.quad	_ZN5sc_dt22sc_fxnum_fast_observer8destructERKNS_13sc_fxnum_fastE
+	.quad	_ZN5sc_dt22sc_fxnum_fast_observer4readERKNS_13sc_fxnum_fastE
+	.quad	_ZN5sc_dt22sc_fxnum_fast_observer5writeERKNS_13sc_fxnum_fastE
+
+	.section	.rdata$ZTSN5sc_dt22sc_fxnum_fast_observerE,"r"
+	.linkonce discard
+	.globl	_ZTSN5sc_dt22sc_fxnum_fast_observerE
+	.align	16
+_ZTSN5sc_dt22sc_fxnum_fast_observerE:
+	.asciz	 "N5sc_dt22sc_fxnum_fast_observerE"
+
+	.section	.rdata$ZTIN5sc_dt22sc_fxnum_fast_observerE,"r"
+	.linkonce discard
+	.globl	_ZTIN5sc_dt22sc_fxnum_fast_observerE
+	.align	8
+_ZTIN5sc_dt22sc_fxnum_fast_observerE:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTSN5sc_dt22sc_fxnum_fast_observerE
+
+	.section	.rdata$ZTVN7sc_core18sc_process_monitorE,"r"
+	.linkonce discard
+	.globl	_ZTVN7sc_core18sc_process_monitorE
+	.align	16
+_ZTVN7sc_core18sc_process_monitorE:
+	.quad	0
+	.quad	_ZTIN7sc_core18sc_process_monitorE
+	.quad	_ZN7sc_core18sc_process_monitorD1Ev
+	.quad	_ZN7sc_core18sc_process_monitorD0Ev
+	.quad	_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi
+
+	.section	.rdata$ZTSN7sc_core18sc_process_monitorE,"r"
+	.linkonce discard
+	.globl	_ZTSN7sc_core18sc_process_monitorE
+	.align	16
+_ZTSN7sc_core18sc_process_monitorE:
+	.asciz	 "N7sc_core18sc_process_monitorE"
+
+	.section	.rdata$ZTIN7sc_core18sc_process_monitorE,"r"
+	.linkonce discard
+	.globl	_ZTIN7sc_core18sc_process_monitorE
+	.align	8
+_ZTIN7sc_core18sc_process_monitorE:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTSN7sc_core18sc_process_monitorE
+
+	.section	.ctors,"w"
+	.align	8
+	.quad	_GLOBAL__I_a
+

@@ -56,21 +56,21 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "carre_x", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_66", "Port" : "carre_x"}]},
+					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_58", "Port" : "carre_x"}]},
 			{"Name" : "clk", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_66", "Port" : "clk"}]},
+					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_58", "Port" : "clk"}]},
 			{"Name" : "reset", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_66", "Port" : "reset"}]},
+					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_58", "Port" : "reset"}]},
 			{"Name" : "e", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_66", "Port" : "e"}]},
+					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_58", "Port" : "e"}]},
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_66", "Port" : "s"}]},
+					{"ID" : "1", "SubInstance" : "grp_carre_do_carre_fu_58", "Port" : "s"}]},
 			{"Name" : "carre_ssdm_thread_M_do_carre", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_carre_do_carre_fu_66", "Parent" : "0", "Child" : ["2"],
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_carre_do_carre_fu_58", "Parent" : "0", "Child" : ["2"],
 		"CDFG" : "carre_do_carre",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"FunctionPipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -88,7 +88,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "s_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_carre_do_carre_fu_66.carre_fmul_32ns_3bkb_U9", "Parent" : "1"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_carre_do_carre_fu_58.carre_fmul_32ns_3bkb_U1", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {

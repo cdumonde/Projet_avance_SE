@@ -49,7 +49,7 @@ reg    s_blk_n;
 wire    ap_CS_fsm_state7;
 reg   [31:0] val_reg_80;
 wire   [31:0] grp_fu_76_p2;
-reg   [31:0] tmp_6_reg_86;
+reg   [31:0] tmp_11_reg_86;
 wire    ap_CS_fsm_state6;
 wire    ap_CS_fsm_state3;
 reg   [6:0] ap_NS_fsm;
@@ -65,7 +65,7 @@ carre_fmul_32ns_3bkb #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-carre_fmul_32ns_3bkb_U9(
+carre_fmul_32ns_3bkb_U1(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(val_reg_80),
@@ -84,7 +84,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        tmp_6_reg_86 <= grp_fu_76_p2;
+        tmp_11_reg_86 <= grp_fu_76_p2;
     end
 end
 
@@ -176,8 +176,8 @@ assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
 
 assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
-assign carre_x = tmp_6_reg_86;
+assign carre_x = tmp_11_reg_86;
 
-assign s_din = tmp_6_reg_86;
+assign s_din = tmp_11_reg_86;
 
 endmodule //carre_do_carre

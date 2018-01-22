@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Messages>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/UartModIn.cpp&apos; ... " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/UartModOut.cpp&apos; ... " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/carre.cpp&apos; ... " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/comparateur.cpp&apos; ... " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/doubleur.cpp&apos; ... " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/filtre1.cpp&apos; ... " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/filtre2.cpp&apos; ... " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/racine.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/uart_wrapper_oled.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/uart_wrapper.cpp&apos; ... " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/top_level.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/racine.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/oled_process.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/filtre2.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/filtre1.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/doubleur.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/comparateur.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/carre.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/UartModOut.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/UartModIn.cpp&apos; ... " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:16 ; elapsed = 00:09:27 . Memory (MB): peak = 104.797 ; gain = 49.254" tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Linking Time (s): cpu = 00:00:16 ; elapsed = 00:09:40 . Memory (MB): peak = 104.797 ; gain = 49.254" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:23 ; elapsed = 00:13:09 . Memory (MB): peak = 106.020 ; gain = 50.441" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Linking Time (s): cpu = 00:00:23 ; elapsed = 00:13:23 . Memory (MB): peak = 106.020 ; gain = 50.441" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre2.cpp:21) in function &apos;filtre2::do_filtre()&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre2.cpp:30) in function &apos;filtre2::do_filtre()&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre1.cpp:21) in function &apos;filtre1::do_filtre()&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre1.cpp:30) in function &apos;filtre1::do_filtre()&apos; completely." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&lt;&lt;&apos; into &apos;generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;&apos; (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::overflow_adjust&apos; into &apos;ap_fixed_base&lt;1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_fixed_base&lt;79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&apos; ()." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;__hls_fptosi_float_i32&apos; into &apos;comparateur::do_comp&apos; (src/modules/comparateur.cpp:6)." tag=""/>
@@ -31,32 +38,23 @@
 	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;fp_struct&lt;float&gt;::expv&apos; into &apos;racine::do_racine&apos; (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285-&gt;r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367-&gt;r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49-&gt;src/modules/racine.cpp:6)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;fp_struct&lt;float&gt;::expv&apos; into &apos;racine::do_racine&apos; (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:299-&gt;r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367-&gt;r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49-&gt;src/modules/racine.cpp:6)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;fp_struct&lt;float&gt;::__signbit&apos; into &apos;racine::do_racine&apos; (r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317-&gt;r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367-&gt;r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49-&gt;src/modules/racine.cpp:6)." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:00:19 ; elapsed = 00:09:49 . Memory (MB): peak = 273.602 ; gain = 218.059" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:00:26 ; elapsed = 00:13:31 . Memory (MB): peak = 414.512 ; gain = 358.934" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:00:20 ; elapsed = 00:09:51 . Memory (MB): peak = 273.602 ; gain = 218.059" tag=""/>
-	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre2.cpp:21) in function &apos;filtre2::do_filtre&apos; completely." tag=""/>
-	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre1.cpp:21) in function &apos;filtre1::do_filtre&apos; completely." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:00:24 ; elapsed = 00:09:58 . Memory (MB): peak = 310.121 ; gain = 254.578" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:00:28 ; elapsed = 00:13:34 . Memory (MB): peak = 414.512 ; gain = 358.934" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:00:35 ; elapsed = 00:13:43 . Memory (MB): peak = 414.512 ; gain = 358.934" tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/uart_wrapper.h:74:3) in function &apos;uart_wrapper::do_action2&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/uart_wrapper.h:60:3) in function &apos;uart_wrapper::do_action1&apos; is an infinite loop." tag=""/>
 	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/racine.cpp:9:2) in function &apos;racine::do_racine&apos; is an infinite loop." tag=""/>
-	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/filtre2.cpp:30:17) in function &apos;filtre2::do_filtre&apos; is an infinite loop." tag=""/>
-	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/filtre1.cpp:30:17) in function &apos;filtre1::do_filtre&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/oled_process.cpp:10:17) in function &apos;oled_process::do_oled_process&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/filtre2.cpp:43:2) in function &apos;filtre2::do_filtre&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/filtre1.cpp:43:2) in function &apos;filtre1::do_filtre&apos; is an infinite loop." tag=""/>
 	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/doubleur.cpp:10:3) in function &apos;doubleur::do_split&apos; is an infinite loop." tag=""/>
 	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/comparateur.cpp:15:3) in function &apos;comparateur::do_comp&apos; is an infinite loop." tag=""/>
 	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/carre.cpp:9:2) in function &apos;carre::do_carre&apos; is an infinite loop." tag=""/>
 	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/UartModOut.cpp:15:2) in function &apos;UartModOut::do_send&apos; is an infinite loop." tag=""/>
 	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/UartModIn.cpp:15:2) in function &apos;UartModIn::do_recv&apos; is an infinite loop." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:00:27 ; elapsed = 00:10:01 . Memory (MB): peak = 479.980 ; gain = 424.438" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:00:38 ; elapsed = 00:13:48 . Memory (MB): peak = 587.164 ; gain = 531.586" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;UartModIn&apos;." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="299" content="Found the clock port of process &apos;UartModIn::do_recv&apos;: &apos;clk&apos;." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;UartModIn::do_recv&apos;: &apos;rst&apos;." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;UartModOut&apos;." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="299" content="Found the clock port of process &apos;UartModOut::do_send&apos;: &apos;clk&apos;." tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;UartModOut::do_send&apos;: &apos;rst&apos;." tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;carre&apos;." tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
@@ -89,8 +87,6 @@
 	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;racine::do_racine&apos;: &apos;reset&apos;." tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;top_level&apos;." tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="485" content="Analyzing the module hierarchy:" tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="315" content="Contains sub-module: &apos;UartModIn&apos;" tag=""/>
-	<Message prefix="[SCA 200-201]" severity="info" keynum="315" content="Contains sub-module: &apos;UartModOut&apos;" tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="315" content="Contains sub-module: &apos;doubleur&apos;" tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="315" content="Contains sub-module: &apos;comparateur&apos;" tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="315" content="Contains sub-module: &apos;filtre1&apos;" tag=""/>
@@ -99,90 +95,15 @@
 	<Message prefix="[SCA 200-201]" severity="info" keynum="315" content="Contains sub-module: &apos;racine&apos;" tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
 	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ UartModIn ]" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;UartModIn_do_recv&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;UartModIn_do_recv&apos; ..." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;UartModIn_do_recv&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 602.857 seconds; current allocated memory: 425.314 MB." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.456 seconds; current allocated memory: 425.430 MB." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;UartModIn_do_recv&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;UartModIn_do_recv&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.482 seconds; current allocated memory: 425.588 MB." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;UartModIn&apos; ..." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;UartModIn&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.882 seconds; current allocated memory: 425.810 MB." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.347 seconds; current allocated memory: 425.897 MB." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;UartModIn&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;UartModIn/e&apos; to &apos;ap_fifo&apos;." tag=""/>
-	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;UartModIn/s&apos; to &apos;ap_fifo&apos;." tag=""/>
-	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;UartModIn/clk&apos; to &apos;ap_none&apos;." tag=""/>
-	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;UartModIn/rst&apos; to &apos;ap_none&apos;." tag=""/>
-	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;UartModIn&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.405 seconds; current allocated memory: 425.956 MB." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ UartModOut ]" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;UartModOut_do_send&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;UartModOut_do_send&apos; ..." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;UartModOut_do_send&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.862 seconds; current allocated memory: 426.062 MB." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.353 seconds; current allocated memory: 426.160 MB." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;UartModOut_do_send&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;UartModOut_do_send&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.394 seconds; current allocated memory: 426.287 MB." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;UartModOut&apos; ..." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;UartModOut&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.807 seconds; current allocated memory: 426.370 MB." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.355 seconds; current allocated memory: 426.457 MB." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;UartModOut&apos; " tag=""/>
-	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;UartModOut/e&apos; to &apos;ap_fifo&apos;." tag=""/>
-	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;UartModOut/s&apos; to &apos;ap_fifo&apos;." tag=""/>
-	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;UartModOut/clk&apos; to &apos;ap_none&apos;." tag=""/>
-	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;UartModOut/rst&apos; to &apos;ap_none&apos;." tag=""/>
-	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;UartModOut&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.363 seconds; current allocated memory: 426.516 MB." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;uart_wrapper&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="485" content="Analyzing the module hierarchy:" tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="315" content="Contains sub-module: &apos;top_level&apos;" tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="299" content="Found the clock port of process &apos;uart_wrapper::do_action1&apos;: &apos;clk&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;uart_wrapper::do_action1&apos;: &apos;reset&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="299" content="Found the clock port of process &apos;uart_wrapper::do_action2&apos;: &apos;clk&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;uart_wrapper::do_action2&apos;: &apos;reset&apos;." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ carre ]" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;carre_do_carre&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;carre_do_carre&apos; ..." tag=""/>
@@ -191,33 +112,33 @@
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.868 seconds; current allocated memory: 426.642 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 829.42 seconds; current allocated memory: 526.119 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.367 seconds; current allocated memory: 426.727 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.503 seconds; current allocated memory: 526.238 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;carre_do_carre&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;carre_fmul_32ns_32ns_32_4_max_dsp_1&apos; to &apos;carre_fmul_32ns_3bkb&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;carre_fmul_32ns_3bkb&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;carre_do_carre&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.365 seconds; current allocated memory: 426.866 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.541 seconds; current allocated memory: 526.411 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;carre&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;carre&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.711 seconds; current allocated memory: 427.002 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.894 seconds; current allocated memory: 526.600 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.35 seconds; current allocated memory: 427.094 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.38 seconds; current allocated memory: 526.690 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;carre&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -226,7 +147,7 @@
 	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;carre/e&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;carre/s&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;carre&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.377 seconds; current allocated memory: 427.156 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.41 seconds; current allocated memory: 526.752 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ comparateur ]" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;comparateur_do_comp&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;comparateur_do_comp&apos; ..." tag=""/>
@@ -235,13 +156,13 @@
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.888 seconds; current allocated memory: 427.420 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1 seconds; current allocated memory: 527.054 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.805 seconds; current allocated memory: 427.721 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.968 seconds; current allocated memory: 527.335 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;comparateur_do_comp&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -250,20 +171,20 @@
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;comparateur_fcmp_dEe&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;comparateur_sitofcud&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;comparateur_do_comp&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.869 seconds; current allocated memory: 428.163 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.981 seconds; current allocated memory: 527.779 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;comparateur&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;comparateur&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.476 seconds; current allocated memory: 428.411 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.614 seconds; current allocated memory: 527.999 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.458 seconds; current allocated memory: 428.527 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.491 seconds; current allocated memory: 528.112 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;comparateur&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -273,7 +194,7 @@
 	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;comparateur/e2&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;comparateur/s&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;comparateur&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.523 seconds; current allocated memory: 428.653 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.528 seconds; current allocated memory: 528.239 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ doubleur ]" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;doubleur_do_split&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;doubleur_do_split&apos; ..." tag=""/>
@@ -282,31 +203,31 @@
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.891 seconds; current allocated memory: 428.745 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.005 seconds; current allocated memory: 528.331 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.348 seconds; current allocated memory: 428.828 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.378 seconds; current allocated memory: 528.414 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;doubleur_do_split&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;doubleur_do_split&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.377 seconds; current allocated memory: 428.903 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.371 seconds; current allocated memory: 528.489 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;doubleur&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;doubleur&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.801 seconds; current allocated memory: 428.999 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.845 seconds; current allocated memory: 528.586 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.429 seconds; current allocated memory: 429.109 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.425 seconds; current allocated memory: 528.694 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;doubleur&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -316,7 +237,7 @@
 	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;doubleur/s1&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;doubleur/s2&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;doubleur&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.458 seconds; current allocated memory: 429.185 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.46 seconds; current allocated memory: 528.770 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ filtre1 ]" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;filtre1_do_filtre&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;filtre1_do_filtre&apos; ..." tag=""/>
@@ -325,13 +246,13 @@
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.913 seconds; current allocated memory: 429.577 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.284 seconds; current allocated memory: 529.169 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.91 seconds; current allocated memory: 429.857 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.297 seconds; current allocated memory: 529.383 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;filtre1_do_filtre&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -344,20 +265,20 @@
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;filtre1_fpext_32nfYi&apos;: 2 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;filtre1_fptrunc_6eOg&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;filtre1_do_filtre&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.951 seconds; current allocated memory: 430.259 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.962 seconds; current allocated memory: 529.751 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;filtre1&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;filtre1&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.537 seconds; current allocated memory: 430.453 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 2.239 seconds; current allocated memory: 529.927 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.398 seconds; current allocated memory: 430.554 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.668 seconds; current allocated memory: 530.024 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;filtre1&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -368,7 +289,7 @@
 	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;filtre1_filtre1_mem_x&apos; to &apos;filtre1_filtre1_mibs&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;filtre1_filtre1_mem_y&apos; to &apos;filtre1_filtre1_mjbC&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;filtre1&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.473 seconds; current allocated memory: 430.736 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.571 seconds; current allocated memory: 530.160 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ filtre2 ]" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;filtre2_do_filtre&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;filtre2_do_filtre&apos; ..." tag=""/>
@@ -377,13 +298,13 @@
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.899 seconds; current allocated memory: 430.998 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.955 seconds; current allocated memory: 530.377 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.85 seconds; current allocated memory: 431.209 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.797 seconds; current allocated memory: 530.561 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;filtre2_do_filtre&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -393,20 +314,20 @@
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;filtre1_fptrunc_6eOg&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;filtre2_dadd_64nskbM&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;filtre2_do_filtre&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.977 seconds; current allocated memory: 431.601 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.906 seconds; current allocated memory: 530.903 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;filtre2&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;filtre2&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.499 seconds; current allocated memory: 431.716 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.588 seconds; current allocated memory: 531.013 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.396 seconds; current allocated memory: 431.815 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.511 seconds; current allocated memory: 531.110 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;filtre2&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -417,7 +338,7 @@
 	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;filtre2_filtre2_mem_x&apos; to &apos;filtre2_filtre2_mlbW&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;filtre2_filtre2_mem_y&apos; to &apos;filtre2_filtre2_mmb6&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;filtre2&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.473 seconds; current allocated memory: 431.996 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.504 seconds; current allocated memory: 531.245 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ racine ]" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;racine_do_racine&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;racine_do_racine&apos; ..." tag=""/>
@@ -426,13 +347,13 @@
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.839 seconds; current allocated memory: 432.278 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.038 seconds; current allocated memory: 531.531 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.297 seconds; current allocated memory: 432.515 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.442 seconds; current allocated memory: 531.769 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;racine_do_racine&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -441,20 +362,20 @@
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;comparateur_sitofcud&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;racine_fsqrt_32nsncg&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;racine_do_racine&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.384 seconds; current allocated memory: 432.952 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.554 seconds; current allocated memory: 532.205 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;racine&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;racine&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.556 seconds; current allocated memory: 433.139 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.856 seconds; current allocated memory: 532.379 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.184 seconds; current allocated memory: 433.231 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.295 seconds; current allocated memory: 532.469 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;racine&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -463,7 +384,7 @@
 	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;racine/e&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;racine/s&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;racine&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.355 seconds; current allocated memory: 433.294 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.334 seconds; current allocated memory: 532.531 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ top_level ]" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;top_level&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
@@ -471,13 +392,13 @@
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.526 seconds; current allocated memory: 433.504 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.509 seconds; current allocated memory: 532.680 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.418 seconds; current allocated memory: 433.991 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.562 seconds; current allocated memory: 533.048 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;top_level&apos; " tag=""/>
 	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
@@ -491,22 +412,83 @@
 	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="232" content="Reset signal &quot;reset&quot; was already created" tag=""/>
 	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="232" content="Reset signal &quot;reset&quot; was already created" tag=""/>
 	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="232" content="Reset signal &quot;reset&quot; was already created" tag=""/>
-	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="232" content="Reset signal &quot;reset&quot; was already created" tag=""/>
-	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="232" content="Reset signal &quot;reset&quot; was already created" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;top_level&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.825 seconds; current allocated memory: 434.528 MB." tag=""/>
-	<Message prefix="[RTMG 210-278]" severity="info" keynum="RTMG_278_1790" content="Implementing memory &apos;filtre1_filtre1_mibs_ram (RAM)&apos; using block RAMs." tag=""/>
-	<Message prefix="[RTMG 210-278]" severity="info" keynum="RTMG_278_1790" content="Implementing memory &apos;filtre2_filtre2_mlbW_ram (RAM)&apos; using block RAMs." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.936 seconds; current allocated memory: 533.501 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ uart_wrapper ]" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;uart_wrapper_do_action1&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;uart_wrapper_do_action1&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;uart_wrapper_do_action1&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.12 seconds; current allocated memory: 533.712 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.468 seconds; current allocated memory: 533.995 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;uart_wrapper_do_action1&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;uart_wrapper_do_action1&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.502 seconds; current allocated memory: 534.127 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;uart_wrapper_do_action2&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;uart_wrapper_do_action2&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;uart_wrapper_do_action2&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.819 seconds; current allocated memory: 534.304 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.49 seconds; current allocated memory: 534.596 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;uart_wrapper_do_action2&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;uart_wrapper_do_action2&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.473 seconds; current allocated memory: 534.733 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;uart_wrapper&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;uart_wrapper&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.761 seconds; current allocated memory: 535.040 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.62 seconds; current allocated memory: 535.583 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;uart_wrapper&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper/clk&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper/reset&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper/e&apos; to &apos;ap_fifo&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper/s&apos; to &apos;ap_fifo&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="232" content="Reset signal &quot;reset&quot; was already created" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;uart_wrapper&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.907 seconds; current allocated memory: 536.111 MB." tag=""/>
+	<Message prefix="[RTMG 210-278]" severity="info" keynum="RTMG_278_1790" content="Implementing memory &apos;filtre1_filtre1_mibs_ram (RAM)&apos; using distributed RAMs." tag=""/>
+	<Message prefix="[RTMG 210-278]" severity="info" keynum="RTMG_278_1790" content="Implementing memory &apos;filtre2_filtre2_mlbW_ram (RAM)&apos; using distributed RAMs." tag=""/>
 	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d8192_A&apos; using Block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d8192_A&apos; using Block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d8192_A&apos; using Block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d8192_A&apos; using Block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d8192_A&apos; using Block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d8192_A&apos; using Block RAMs." tag=""/>
-	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d8192_A&apos; using Block RAMs." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:00:51 ; elapsed = 00:10:38 . Memory (MB): peak = 499.715 ; gain = 444.172" tag=""/>
-	<Message prefix="[SYSC 207-301]" severity="info" keynum="SYSC_301_1065" content="Generating SystemC RTL for top_level." tag=""/>
-	<Message prefix="[VHDL 208-304]" severity="info" keynum="VHDL_304_1066" content="Generating VHDL RTL for top_level." tag=""/>
-	<Message prefix="[VLOG 209-307]" severity="info" keynum="VLOG_307_1067" content="Generating Verilog RTL for top_level." tag=""/>
-	<Message prefix="[HLS 200-112]" severity="info" keynum="472" content="Total elapsed time: 638.55 seconds; peak allocated memory: 434.528 MB." tag=""/>
+	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d192_A&apos; using Block RAMs." tag=""/>
+	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d192_A&apos; using Block RAMs." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:01:08 ; elapsed = 00:14:32 . Memory (MB): peak = 604.844 ; gain = 549.266" tag=""/>
+	<Message prefix="[SYSC 207-301]" severity="info" keynum="SYSC_301_1065" content="Generating SystemC RTL for uart_wrapper." tag=""/>
+	<Message prefix="[VHDL 208-304]" severity="info" keynum="VHDL_304_1066" content="Generating VHDL RTL for uart_wrapper." tag=""/>
+	<Message prefix="[VLOG 209-307]" severity="info" keynum="VLOG_307_1067" content="Generating Verilog RTL for uart_wrapper." tag=""/>
+	<Message prefix="[HLS 200-112]" severity="info" keynum="472" content="Total elapsed time: 872.012 seconds; peak allocated memory: 536.111 MB." tag=""/>
 </Messages>

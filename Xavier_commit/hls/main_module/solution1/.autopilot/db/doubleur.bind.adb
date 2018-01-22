@@ -529,13 +529,13 @@
 				<sink_obj>37</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_26">
-				<id>274</id>
+				<id>270</id>
 				<edge_type>2</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>39</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_27">
-				<id>275</id>
+				<id>271</id>
 				<edge_type>2</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>36</sink_obj>
@@ -839,7 +839,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="45" tracking_level="0" version="0">
-			<first>70</first>
+			<first>62</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -848,7 +848,7 @@
 			</second>
 		</item>
 		<item>
-			<first>86</first>
+			<first>78</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -864,7 +864,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>grp_doubleur_do_split_fu_70</first>
+			<first>grp_doubleur_do_split_fu_62</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -877,7 +877,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>doubleur_ssdm_thr_load_fu_86</first>
+			<first>doubleur_ssdm_thr_load_fu_78</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

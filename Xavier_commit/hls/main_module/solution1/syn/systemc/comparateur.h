@@ -38,17 +38,17 @@ struct comparateur : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    comparateur_do_comp* grp_comparateur_do_comp_fu_74;
-    sc_signal< sc_lv<32> > grp_comparateur_do_comp_fu_74_comparateur_in1;
-    sc_signal< sc_logic > grp_comparateur_do_comp_fu_74_comparateur_in1_ap_vld;
-    sc_signal< sc_lv<32> > grp_comparateur_do_comp_fu_74_comparateur_seuil;
-    sc_signal< sc_logic > grp_comparateur_do_comp_fu_74_comparateur_seuil_ap_vld;
-    sc_signal< sc_lv<32> > grp_comparateur_do_comp_fu_74_comparateur_result;
-    sc_signal< sc_logic > grp_comparateur_do_comp_fu_74_comparateur_result_ap_vld;
-    sc_signal< sc_logic > grp_comparateur_do_comp_fu_74_e1_read;
-    sc_signal< sc_logic > grp_comparateur_do_comp_fu_74_e2_read;
-    sc_signal< sc_lv<32> > grp_comparateur_do_comp_fu_74_s_din;
-    sc_signal< sc_logic > grp_comparateur_do_comp_fu_74_s_write;
+    comparateur_do_comp* grp_comparateur_do_comp_fu_66;
+    sc_signal< sc_lv<32> > grp_comparateur_do_comp_fu_66_comparateur_in1;
+    sc_signal< sc_logic > grp_comparateur_do_comp_fu_66_comparateur_in1_ap_vld;
+    sc_signal< sc_lv<32> > grp_comparateur_do_comp_fu_66_comparateur_seuil;
+    sc_signal< sc_logic > grp_comparateur_do_comp_fu_66_comparateur_seuil_ap_vld;
+    sc_signal< sc_lv<32> > grp_comparateur_do_comp_fu_66_comparateur_result;
+    sc_signal< sc_logic > grp_comparateur_do_comp_fu_66_comparateur_result_ap_vld;
+    sc_signal< sc_logic > grp_comparateur_do_comp_fu_66_e1_read;
+    sc_signal< sc_logic > grp_comparateur_do_comp_fu_66_e2_read;
+    sc_signal< sc_lv<32> > grp_comparateur_do_comp_fu_66_s_din;
+    sc_signal< sc_logic > grp_comparateur_do_comp_fu_66_s_write;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const bool ap_const_boolean_1;

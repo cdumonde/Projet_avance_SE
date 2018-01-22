@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="test_module" solutionName="solution1" date="2018-01-19T19:32:52.479+0100"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="test_module" solutionName="solution1" date="2018-01-19T19:32:52.453+0100"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Reset signal &quot;reset&quot; was already created" projectName="test_module" solutionName="solution1" date="2018-01-19T19:02:02.672+0100" type="Warning"/>
+        <logs message="WARNING: [SCA 200-202] Port 's' has no reset." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:55.378+0100" type="Warning"/>
+        <logs message="WARNING: [SCA 200-202] Port 'en' has no reset." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:55.354+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/carre.cpp:9:2) in function 'carre::do_carre' is an infinite loop." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:55.331+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/filtre1.cpp:43:2) in function 'filtre1::do_filtre' is an infinite loop." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:53.454+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/filtre2.cpp:43:2) in function 'filtre2::do_filtre' is an infinite loop." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:53.433+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/oled_process.cpp:10:17) in function 'oled_process::do_oled_process' is an infinite loop." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:53.240+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/uart_wrapper.h:60:3) in function 'uart_wrapper::do_action1' is an infinite loop." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:53.224+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/uart_wrapper.h:74:3) in function 'uart_wrapper::do_action2' is an infinite loop." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:53.209+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/uart_wrapper_oled.h:65:3) in function 'uart_wrapper_oled::do_action1' is an infinite loop." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:53.124+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (src/modules/uart_wrapper_oled.h:79:3) in function 'uart_wrapper_oled::do_action2' is an infinite loop." projectName="test_module" solutionName="solution1" date="2018-01-19T19:01:53.036+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'uart_wrapper_oled_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="test_module" solutionName="solution1" date="2018-01-19T19:02:50.000+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'uart_wrapper_oled_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="test_module" solutionName="solution1" date="2018-01-19T19:02:46.743+0100" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

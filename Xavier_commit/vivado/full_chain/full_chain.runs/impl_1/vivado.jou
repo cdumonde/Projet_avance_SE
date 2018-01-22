@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Dec 21 16:43:41 2017
-# Process ID: 2004
+# Start of session at: Thu Jan 18 15:04:36 2018
+# Process ID: 2384
 # Current directory: Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/impl_1
 # Command line: vivado.exe -log turbo_uart.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source turbo_uart.tcl -notrace
 # Log file: Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.runs/impl_1/turbo_uart.vdi

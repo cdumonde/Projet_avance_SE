@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>hls</spirit:library>
-  <spirit:name>top_level</spirit:name>
+  <spirit:name>uart_wrapper</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -91,7 +91,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:displayName>Verilog Synthesis</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>verilog</spirit:language>
-        <spirit:modelName>top_level</spirit:modelName>
+        <spirit:modelName>uart_wrapper</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogsynthesis_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -104,7 +104,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:displayName>Verilog Simulation</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>verilog</spirit:language>
-        <spirit:modelName>top_level</spirit:modelName>
+        <spirit:modelName>uart_wrapper</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogbehavioralsimulation_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -117,7 +117,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:displayName>VHDL Synthesis</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
-        <spirit:modelName>top_level</spirit:modelName>
+        <spirit:modelName>uart_wrapper</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesis_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -130,7 +130,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:displayName>VHDL Simulation</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
-        <spirit:modelName>top_level</spirit:modelName>
+        <spirit:modelName>uart_wrapper</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -290,43 +290,43 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dadd_4_full_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dadd_4_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dadddsub_4_full_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dadddsub_4_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dmul_4_max_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dmul_4_max_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fcmp_0_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fcmp_0_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fmul_2_max_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fmul_2_max_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fpext_0_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fpext_0_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fptrunc_0_no_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fptrunc_0_no_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fsqrt_10_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fsqrt_10_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_sitofp_4_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_sitofp_4_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>constraints/top_level_ooc.xdc</spirit:name>
+        <spirit:name>constraints/uart_wrapper_ooc.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
@@ -364,6 +364,10 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/doubleur_do_split.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/fifo_w32_d192_A.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -431,19 +435,15 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/UartModIn.v</spirit:name>
+        <spirit:name>hdl/verilog/uart_wrapper.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/UartModIn_do_recv.v</spirit:name>
+        <spirit:name>hdl/verilog/uart_wrapper_do_action1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/UartModOut.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/UartModOut_do_send.v</spirit:name>
+        <spirit:name>hdl/verilog/uart_wrapper_do_action2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -505,6 +505,11 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/fifo_w32_d192_A.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/fifo_w32_d8192_A.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
@@ -585,67 +590,62 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/UartModIn.v</spirit:name>
+        <spirit:name>hdl/verilog/uart_wrapper.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/UartModIn_do_recv.v</spirit:name>
+        <spirit:name>hdl/verilog/uart_wrapper_do_action1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/UartModOut.v</spirit:name>
+        <spirit:name>hdl/verilog/uart_wrapper_do_action2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/UartModOut_do_send.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dadd_4_full_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dadd_4_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dadddsub_4_full_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dadddsub_4_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dmul_4_max_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dmul_4_max_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fcmp_0_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fcmp_0_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fmul_2_max_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fmul_2_max_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fpext_0_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fpext_0_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fptrunc_0_no_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fptrunc_0_no_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fsqrt_10_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fsqrt_10_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_sitofp_4_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_sitofp_4_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -663,43 +663,43 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dadd_4_full_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dadd_4_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dadddsub_4_full_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dadddsub_4_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dmul_4_max_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dmul_4_max_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fcmp_0_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fcmp_0_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fmul_2_max_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fmul_2_max_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fpext_0_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fpext_0_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fptrunc_0_no_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fptrunc_0_no_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fsqrt_10_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fsqrt_10_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_sitofp_4_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_sitofp_4_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>constraints/top_level_ooc.xdc</spirit:name>
+        <spirit:name>constraints/uart_wrapper_ooc.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
@@ -737,6 +737,10 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/doubleur_do_split.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/fifo_w32_d192_A.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -800,25 +804,21 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/UartModIn.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/UartModIn_do_recv.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/UartModOut.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/UartModOut_do_send.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/top_level.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_86d55986</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/uart_wrapper_do_action1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/uart_wrapper_do_action2.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/uart_wrapper.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f6ab5779</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -879,6 +879,11 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/fifo_w32_d192_A.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/fifo_w32_d8192_A.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
@@ -954,72 +959,67 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/UartModIn.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/UartModIn_do_recv.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/UartModOut.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/UartModOut_do_send.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/top_level.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dadd_4_full_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/uart_wrapper_do_action1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dadddsub_4_full_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/uart_wrapper_do_action2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_dmul_4_max_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/uart_wrapper.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fcmp_0_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dadd_4_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fmul_2_max_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dadddsub_4_full_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fpext_0_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_dmul_4_max_dsp_64.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fptrunc_0_no_dsp_64.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fcmp_0_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_fsqrt_10_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fmul_2_max_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/top_level_ap_sitofp_4_no_dsp_32.vhd</spirit:name>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fpext_0_no_dsp_32.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fptrunc_0_no_dsp_64.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/ip/uart_wrapper_ap_fsqrt_10_no_dsp_32.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/ip/uart_wrapper_ap_sitofp_4_no_dsp_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1051,7 +1051,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/top_level_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/uart_wrapper_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_1b589c1a</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -1070,7 +1070,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">top_level_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">uart_wrapper_v1_0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
@@ -1086,7 +1086,7 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">1</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -1101,10 +1101,10 @@ _type immediate dependency {} format long minimum {} maximum {}} value 1} bitoff
       <xilinx:taxonomies>
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>Top_level</xilinx:displayName>
+      <xilinx:displayName>Uart_wrapper</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1712211501</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2017-12-21T14:02:45Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1801171500</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2018-01-17T14:01:31Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.3</xilinx:xilinxVersion>

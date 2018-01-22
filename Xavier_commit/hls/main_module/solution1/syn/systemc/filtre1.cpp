@@ -20,68 +20,48 @@ filtre1::filtre1(sc_module_name name) : sc_module(name), mVcdFile(0) {
     filtre1_mem_x_U = new filtre1_filtre1_mibs("filtre1_mem_x_U");
     filtre1_mem_x_U->clk(ap_clk);
     filtre1_mem_x_U->reset(ap_rst);
-    filtre1_mem_x_U->address0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address0);
-    filtre1_mem_x_U->ce0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce0);
-    filtre1_mem_x_U->we0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we0);
-    filtre1_mem_x_U->d0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d0);
-    filtre1_mem_x_U->q0(filtre1_mem_x_q0);
-    filtre1_mem_x_U->address1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address1);
-    filtre1_mem_x_U->ce1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce1);
-    filtre1_mem_x_U->we1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we1);
-    filtre1_mem_x_U->d1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d1);
+    filtre1_mem_x_U->address0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_address0);
+    filtre1_mem_x_U->ce0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_ce0);
+    filtre1_mem_x_U->we0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_we0);
+    filtre1_mem_x_U->d0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_d0);
     filtre1_mem_y_U = new filtre1_filtre1_mibs("filtre1_mem_y_U");
     filtre1_mem_y_U->clk(ap_clk);
     filtre1_mem_y_U->reset(ap_rst);
-    filtre1_mem_y_U->address0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address0);
-    filtre1_mem_y_U->ce0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce0);
-    filtre1_mem_y_U->we0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we0);
-    filtre1_mem_y_U->d0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d0);
-    filtre1_mem_y_U->q0(filtre1_mem_y_q0);
-    filtre1_mem_y_U->address1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address1);
-    filtre1_mem_y_U->ce1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce1);
-    filtre1_mem_y_U->we1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we1);
-    filtre1_mem_y_U->d1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d1);
-    grp_filtre1_do_filtre_fu_72 = new filtre1_do_filtre("grp_filtre1_do_filtre_fu_72");
-    grp_filtre1_do_filtre_fu_72->ap_clk(clk);
-    grp_filtre1_do_filtre_fu_72->ap_rst(reset);
-    grp_filtre1_do_filtre_fu_72->filtre1_y0(grp_filtre1_do_filtre_fu_72_filtre1_y0);
-    grp_filtre1_do_filtre_fu_72->filtre1_y0_ap_vld(grp_filtre1_do_filtre_fu_72_filtre1_y0_ap_vld);
-    grp_filtre1_do_filtre_fu_72->filtre1_x0(grp_filtre1_do_filtre_fu_72_filtre1_x0);
-    grp_filtre1_do_filtre_fu_72->filtre1_x0_ap_vld(grp_filtre1_do_filtre_fu_72_filtre1_x0_ap_vld);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_address0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_ce0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_we0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_d0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_q0(filtre1_mem_x_q0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_address1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address1);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_ce1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce1);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_we1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we1);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_x_d1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d1);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_address0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_ce0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_we0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_d0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_q0(filtre1_mem_y_q0);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_address1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address1);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_ce1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce1);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_we1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we1);
-    grp_filtre1_do_filtre_fu_72->filtre1_mem_y_d1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d1);
-    grp_filtre1_do_filtre_fu_72->e_dout(e_dout);
-    grp_filtre1_do_filtre_fu_72->e_empty_n(e_empty_n);
-    grp_filtre1_do_filtre_fu_72->e_read(grp_filtre1_do_filtre_fu_72_e_read);
-    grp_filtre1_do_filtre_fu_72->s_din(grp_filtre1_do_filtre_fu_72_s_din);
-    grp_filtre1_do_filtre_fu_72->s_full_n(s_full_n);
-    grp_filtre1_do_filtre_fu_72->s_write(grp_filtre1_do_filtre_fu_72_s_write);
+    filtre1_mem_y_U->address0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_address0);
+    filtre1_mem_y_U->ce0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_ce0);
+    filtre1_mem_y_U->we0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_we0);
+    filtre1_mem_y_U->d0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_d0);
+    grp_filtre1_do_filtre_fu_64 = new filtre1_do_filtre("grp_filtre1_do_filtre_fu_64");
+    grp_filtre1_do_filtre_fu_64->ap_clk(clk);
+    grp_filtre1_do_filtre_fu_64->ap_rst(reset);
+    grp_filtre1_do_filtre_fu_64->filtre1_y0(grp_filtre1_do_filtre_fu_64_filtre1_y0);
+    grp_filtre1_do_filtre_fu_64->filtre1_y0_ap_vld(grp_filtre1_do_filtre_fu_64_filtre1_y0_ap_vld);
+    grp_filtre1_do_filtre_fu_64->filtre1_x0(grp_filtre1_do_filtre_fu_64_filtre1_x0);
+    grp_filtre1_do_filtre_fu_64->filtre1_x0_ap_vld(grp_filtre1_do_filtre_fu_64_filtre1_x0_ap_vld);
+    grp_filtre1_do_filtre_fu_64->filtre1_mem_x_address0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_address0);
+    grp_filtre1_do_filtre_fu_64->filtre1_mem_x_ce0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_ce0);
+    grp_filtre1_do_filtre_fu_64->filtre1_mem_x_we0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_we0);
+    grp_filtre1_do_filtre_fu_64->filtre1_mem_x_d0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_d0);
+    grp_filtre1_do_filtre_fu_64->filtre1_mem_y_address0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_address0);
+    grp_filtre1_do_filtre_fu_64->filtre1_mem_y_ce0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_ce0);
+    grp_filtre1_do_filtre_fu_64->filtre1_mem_y_we0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_we0);
+    grp_filtre1_do_filtre_fu_64->filtre1_mem_y_d0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_d0);
+    grp_filtre1_do_filtre_fu_64->e_dout(e_dout);
+    grp_filtre1_do_filtre_fu_64->e_empty_n(e_empty_n);
+    grp_filtre1_do_filtre_fu_64->e_read(grp_filtre1_do_filtre_fu_64_e_read);
+    grp_filtre1_do_filtre_fu_64->s_din(grp_filtre1_do_filtre_fu_64_s_din);
+    grp_filtre1_do_filtre_fu_64->s_full_n(s_full_n);
+    grp_filtre1_do_filtre_fu_64->s_write(grp_filtre1_do_filtre_fu_64_s_write);
 
     SC_METHOD(thread_e_read);
-    sensitive << ( grp_filtre1_do_filtre_fu_72_e_read );
+    sensitive << ( grp_filtre1_do_filtre_fu_64_e_read );
 
     SC_METHOD(thread_s_din);
-    sensitive << ( grp_filtre1_do_filtre_fu_72_s_din );
-    sensitive << ( grp_filtre1_do_filtre_fu_72_s_write );
+    sensitive << ( grp_filtre1_do_filtre_fu_64_s_din );
+    sensitive << ( grp_filtre1_do_filtre_fu_64_s_write );
 
     SC_METHOD(thread_s_write);
-    sensitive << ( grp_filtre1_do_filtre_fu_72_s_write );
+    sensitive << ( grp_filtre1_do_filtre_fu_64_s_write );
 
     static int apTFileNum = 0;
     stringstream apTFilenSS;
@@ -103,31 +83,21 @@ filtre1::filtre1(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, s_write, "(port)s_write");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, filtre1_mem_x_q0, "filtre1_mem_x_q0");
-    sc_trace(mVcdFile, filtre1_mem_y_q0, "filtre1_mem_y_q0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_y0, "grp_filtre1_do_filtre_fu_72_filtre1_y0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_y0_ap_vld, "grp_filtre1_do_filtre_fu_72_filtre1_y0_ap_vld");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_x0, "grp_filtre1_do_filtre_fu_72_filtre1_x0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_x0_ap_vld, "grp_filtre1_do_filtre_fu_72_filtre1_x0_ap_vld");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address0, "grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce0, "grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we0, "grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d0, "grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address1, "grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address1");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce1, "grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce1");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we1, "grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we1");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d1, "grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d1");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address0, "grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce0, "grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we0, "grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d0, "grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d0");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address1, "grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address1");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce1, "grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce1");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we1, "grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we1");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d1, "grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d1");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_e_read, "grp_filtre1_do_filtre_fu_72_e_read");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_s_din, "grp_filtre1_do_filtre_fu_72_s_din");
-    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_72_s_write, "grp_filtre1_do_filtre_fu_72_s_write");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_y0, "grp_filtre1_do_filtre_fu_64_filtre1_y0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_y0_ap_vld, "grp_filtre1_do_filtre_fu_64_filtre1_y0_ap_vld");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_x0, "grp_filtre1_do_filtre_fu_64_filtre1_x0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_x0_ap_vld, "grp_filtre1_do_filtre_fu_64_filtre1_x0_ap_vld");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_mem_x_address0, "grp_filtre1_do_filtre_fu_64_filtre1_mem_x_address0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_mem_x_ce0, "grp_filtre1_do_filtre_fu_64_filtre1_mem_x_ce0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_mem_x_we0, "grp_filtre1_do_filtre_fu_64_filtre1_mem_x_we0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_mem_x_d0, "grp_filtre1_do_filtre_fu_64_filtre1_mem_x_d0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_mem_y_address0, "grp_filtre1_do_filtre_fu_64_filtre1_mem_y_address0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_mem_y_ce0, "grp_filtre1_do_filtre_fu_64_filtre1_mem_y_ce0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_mem_y_we0, "grp_filtre1_do_filtre_fu_64_filtre1_mem_y_we0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_filtre1_mem_y_d0, "grp_filtre1_do_filtre_fu_64_filtre1_mem_y_d0");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_e_read, "grp_filtre1_do_filtre_fu_64_e_read");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_s_din, "grp_filtre1_do_filtre_fu_64_s_din");
+    sc_trace(mVcdFile, grp_filtre1_do_filtre_fu_64_s_write, "grp_filtre1_do_filtre_fu_64_s_write");
 #endif
 
     }
@@ -139,19 +109,19 @@ filtre1::~filtre1() {
 
     delete filtre1_mem_x_U;
     delete filtre1_mem_y_U;
-    delete grp_filtre1_do_filtre_fu_72;
+    delete grp_filtre1_do_filtre_fu_64;
 }
 
 void filtre1::thread_e_read() {
-    e_read = grp_filtre1_do_filtre_fu_72_e_read.read();
+    e_read = grp_filtre1_do_filtre_fu_64_e_read.read();
 }
 
 void filtre1::thread_s_din() {
-    s_din = grp_filtre1_do_filtre_fu_72_s_din.read();
+    s_din = grp_filtre1_do_filtre_fu_64_s_din.read();
 }
 
 void filtre1::thread_s_write() {
-    s_write = grp_filtre1_do_filtre_fu_72_s_write.read();
+    s_write = grp_filtre1_do_filtre_fu_64_s_write.read();
 }
 
 }

@@ -10,7 +10,7 @@
 
 module filtre1_fpext_32nfYi
 #(parameter
-    ID         = 37,
+    ID         = 29,
     NUM_STAGE  = 1,
     din0_WIDTH = 32,
     dout_WIDTH = 64
@@ -24,7 +24,7 @@ wire [31:0] a_tdata;
 wire        r_tvalid;
 wire [63:0] r_tdata;
 //------------------------Instantiation------------------
-top_level_ap_fpext_0_no_dsp_32 top_level_ap_fpext_0_no_dsp_32_u (
+uart_wrapper_ap_fpext_0_no_dsp_32 uart_wrapper_ap_fpext_0_no_dsp_32_u (
     .s_axis_a_tvalid      ( a_tvalid ),
     .s_axis_a_tdata       ( a_tdata ),
     .m_axis_result_tvalid ( r_tvalid ),

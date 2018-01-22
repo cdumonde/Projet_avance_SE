@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="filtre1,hls_ip_2017_3,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100tcsg324-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.608000,HLS_SYN_LAT=24,HLS_SYN_TPT=none,HLS_SYN_MEM=4,HLS_SYN_DSP=25,HLS_SYN_FF=1885,HLS_SYN_LUT=1768}" *)
+(* CORE_GENERATION_INFO="filtre1,hls_ip_2017_3,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100tcsg324-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.608000,HLS_SYN_LAT=12,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=25,HLS_SYN_FF=2070,HLS_SYN_LUT=1718}" *)
 
 module filtre1 (
         ap_clk,
@@ -34,105 +34,75 @@ output  [31:0] s_din;
 input   s_full_n;
 output   s_write;
 
-wire   [31:0] filtre1_mem_x_q0;
-wire   [31:0] filtre1_mem_y_q0;
-wire   [31:0] grp_filtre1_do_filtre_fu_72_filtre1_y0;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_y0_ap_vld;
-wire   [31:0] grp_filtre1_do_filtre_fu_72_filtre1_x0;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_x0_ap_vld;
-wire   [0:0] grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address0;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce0;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we0;
-wire   [31:0] grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d0;
-wire   [0:0] grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address1;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce1;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we1;
-wire   [31:0] grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d1;
-wire   [0:0] grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address0;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce0;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we0;
-wire   [31:0] grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d0;
-wire   [0:0] grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address1;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce1;
-wire    grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we1;
-wire   [31:0] grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d1;
-wire    grp_filtre1_do_filtre_fu_72_e_read;
-wire   [31:0] grp_filtre1_do_filtre_fu_72_s_din;
-wire    grp_filtre1_do_filtre_fu_72_s_write;
+wire   [31:0] grp_filtre1_do_filtre_fu_64_filtre1_y0;
+wire    grp_filtre1_do_filtre_fu_64_filtre1_y0_ap_vld;
+wire   [31:0] grp_filtre1_do_filtre_fu_64_filtre1_x0;
+wire    grp_filtre1_do_filtre_fu_64_filtre1_x0_ap_vld;
+wire   [0:0] grp_filtre1_do_filtre_fu_64_filtre1_mem_x_address0;
+wire    grp_filtre1_do_filtre_fu_64_filtre1_mem_x_ce0;
+wire    grp_filtre1_do_filtre_fu_64_filtre1_mem_x_we0;
+wire   [31:0] grp_filtre1_do_filtre_fu_64_filtre1_mem_x_d0;
+wire   [0:0] grp_filtre1_do_filtre_fu_64_filtre1_mem_y_address0;
+wire    grp_filtre1_do_filtre_fu_64_filtre1_mem_y_ce0;
+wire    grp_filtre1_do_filtre_fu_64_filtre1_mem_y_we0;
+wire   [31:0] grp_filtre1_do_filtre_fu_64_filtre1_mem_y_d0;
+wire    grp_filtre1_do_filtre_fu_64_e_read;
+wire   [31:0] grp_filtre1_do_filtre_fu_64_s_din;
+wire    grp_filtre1_do_filtre_fu_64_s_write;
 
 filtre1_filtre1_mibs #(
     .DataWidth( 32 ),
-    .AddressRange( 2 ),
+    .AddressRange( 1 ),
     .AddressWidth( 1 ))
 filtre1_mem_x_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address0),
-    .ce0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce0),
-    .we0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we0),
-    .d0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d0),
-    .q0(filtre1_mem_x_q0),
-    .address1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address1),
-    .ce1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce1),
-    .we1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we1),
-    .d1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d1)
+    .address0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_address0),
+    .ce0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_ce0),
+    .we0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_we0),
+    .d0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_d0)
 );
 
 filtre1_filtre1_mibs #(
     .DataWidth( 32 ),
-    .AddressRange( 2 ),
+    .AddressRange( 1 ),
     .AddressWidth( 1 ))
 filtre1_mem_y_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address0),
-    .ce0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce0),
-    .we0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we0),
-    .d0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d0),
-    .q0(filtre1_mem_y_q0),
-    .address1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address1),
-    .ce1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce1),
-    .we1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we1),
-    .d1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d1)
+    .address0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_address0),
+    .ce0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_ce0),
+    .we0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_we0),
+    .d0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_d0)
 );
 
-filtre1_do_filtre grp_filtre1_do_filtre_fu_72(
+filtre1_do_filtre grp_filtre1_do_filtre_fu_64(
     .ap_clk(clk),
     .ap_rst(reset),
-    .filtre1_y0(grp_filtre1_do_filtre_fu_72_filtre1_y0),
-    .filtre1_y0_ap_vld(grp_filtre1_do_filtre_fu_72_filtre1_y0_ap_vld),
-    .filtre1_x0(grp_filtre1_do_filtre_fu_72_filtre1_x0),
-    .filtre1_x0_ap_vld(grp_filtre1_do_filtre_fu_72_filtre1_x0_ap_vld),
-    .filtre1_mem_x_address0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address0),
-    .filtre1_mem_x_ce0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce0),
-    .filtre1_mem_x_we0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we0),
-    .filtre1_mem_x_d0(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d0),
-    .filtre1_mem_x_q0(filtre1_mem_x_q0),
-    .filtre1_mem_x_address1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_address1),
-    .filtre1_mem_x_ce1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_ce1),
-    .filtre1_mem_x_we1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_we1),
-    .filtre1_mem_x_d1(grp_filtre1_do_filtre_fu_72_filtre1_mem_x_d1),
-    .filtre1_mem_y_address0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address0),
-    .filtre1_mem_y_ce0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce0),
-    .filtre1_mem_y_we0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we0),
-    .filtre1_mem_y_d0(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d0),
-    .filtre1_mem_y_q0(filtre1_mem_y_q0),
-    .filtre1_mem_y_address1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_address1),
-    .filtre1_mem_y_ce1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_ce1),
-    .filtre1_mem_y_we1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_we1),
-    .filtre1_mem_y_d1(grp_filtre1_do_filtre_fu_72_filtre1_mem_y_d1),
+    .filtre1_y0(grp_filtre1_do_filtre_fu_64_filtre1_y0),
+    .filtre1_y0_ap_vld(grp_filtre1_do_filtre_fu_64_filtre1_y0_ap_vld),
+    .filtre1_x0(grp_filtre1_do_filtre_fu_64_filtre1_x0),
+    .filtre1_x0_ap_vld(grp_filtre1_do_filtre_fu_64_filtre1_x0_ap_vld),
+    .filtre1_mem_x_address0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_address0),
+    .filtre1_mem_x_ce0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_ce0),
+    .filtre1_mem_x_we0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_we0),
+    .filtre1_mem_x_d0(grp_filtre1_do_filtre_fu_64_filtre1_mem_x_d0),
+    .filtre1_mem_y_address0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_address0),
+    .filtre1_mem_y_ce0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_ce0),
+    .filtre1_mem_y_we0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_we0),
+    .filtre1_mem_y_d0(grp_filtre1_do_filtre_fu_64_filtre1_mem_y_d0),
     .e_dout(e_dout),
     .e_empty_n(e_empty_n),
-    .e_read(grp_filtre1_do_filtre_fu_72_e_read),
-    .s_din(grp_filtre1_do_filtre_fu_72_s_din),
+    .e_read(grp_filtre1_do_filtre_fu_64_e_read),
+    .s_din(grp_filtre1_do_filtre_fu_64_s_din),
     .s_full_n(s_full_n),
-    .s_write(grp_filtre1_do_filtre_fu_72_s_write)
+    .s_write(grp_filtre1_do_filtre_fu_64_s_write)
 );
 
-assign e_read = grp_filtre1_do_filtre_fu_72_e_read;
+assign e_read = grp_filtre1_do_filtre_fu_64_e_read;
 
-assign s_din = grp_filtre1_do_filtre_fu_72_s_din;
+assign s_din = grp_filtre1_do_filtre_fu_64_s_din;
 
-assign s_write = grp_filtre1_do_filtre_fu_72_s_write;
+assign s_write = grp_filtre1_do_filtre_fu_64_s_write;
 
 endmodule //filtre1

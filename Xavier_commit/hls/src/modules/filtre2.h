@@ -9,9 +9,6 @@ float Filtre2IIR( float y1, float x1, float x0);//, float a0, float a1, float b 
 
 SC_MODULE( filtre2 ){
 private:
-	//float	a0;
-	//float	a1;
-	//float	b;
 	float 	y0;
 	float 	x0;
 	float   mem_x[ NB_CHANNEL ];
@@ -29,7 +26,6 @@ public:
 	}
 
 	void do_filtre();
-	//void setConstant( float a0_, float a1_, float b_ );
 };
 
 #endif

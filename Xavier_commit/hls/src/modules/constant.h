@@ -12,8 +12,12 @@
 #define	b2				2047.0/2048
 #define xi 			 	0
 #define yi 			 	0
-#define NB_CHANNEL	 	2
+#define NB_CHANNEL	 	1
+#define NB_VALUE	 	2
 #define G_FACTOR		87
-#define SIM				1000
+#define NB_SAMPLE		22361048
+#define NB_SAMPLE_SIM	4000
+#define	T_SAMPLE		25
+#define T_SIM			T_SAMPLE*NB_SAMPLE_SIM
 
 #endif

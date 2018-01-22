@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'doubleur'
 ================================================================
-* Date:           Thu Dec 21 14:59:16 2017
+* Date:           Wed Jan 17 14:57:55 2018
 
 * Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
 * Project:        main_module
@@ -38,7 +38,7 @@
         |                             |                   |  Latency  |  Interval | Pipeline|
         |           Instance          |       Module      | min | max | min | max |   Type  |
         +-----------------------------+-------------------+-----+-----+-----+-----+---------+
-        |grp_doubleur_do_split_fu_70  |doubleur_do_split  |    2|    2|    2|    2|   none  |
+        |grp_doubleur_do_split_fu_62  |doubleur_do_split  |    2|    2|    2|    2|   none  |
         +-----------------------------+-------------------+-----+-----+-----+-----+---------+
 
         * Loop: 
@@ -73,7 +73,7 @@
     +-----------------------------+-------------------+---------+-------+---+----+
     |           Instance          |       Module      | BRAM_18K| DSP48E| FF| LUT|
     +-----------------------------+-------------------+---------+-------+---+----+
-    |grp_doubleur_do_split_fu_70  |doubleur_do_split  |        0|      0|  2|  44|
+    |grp_doubleur_do_split_fu_62  |doubleur_do_split  |        0|      0|  2|  44|
     +-----------------------------+-------------------+---------+-------+---+----+
     |Total                        |                   |        0|      0|  2|  44|
     +-----------------------------+-------------------+---------+-------+---+----+
@@ -156,32 +156,32 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1> : 0.00ns
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %doubleur_to_split), !map !765"
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !769"
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !773"
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !777"
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s1), !map !781"
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s2), !map !785"
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str112, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str112, i32 4, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, float* %e) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str1, i32 5, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, float* %s1) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str1, i32 5, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, float* %s2) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @p_str70, [9 x i8]* @p_str70) nounwind" [src/modules/doubleur.h:18]
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %doubleur_to_split), !map !1933"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !1937"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !1941"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !1945"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s1), !map !1949"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s2), !map !1953"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 4, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %e) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 5, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %s1) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 5, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %s2) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @p_str62, [9 x i8]* @p_str62) nounwind" [src/modules/doubleur.h:18]
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%doubleur_ssdm_thr = load i1* @doubleur_ssdm_thread_M_do_split, align 1" [src/modules/doubleur.h:19]
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "br i1 %doubleur_ssdm_thr, label %1, label %2" [src/modules/doubleur.h:19]
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([9 x i8]* @p_str70, i32 2, [9 x i8]* @p_str676) nounwind" [src/modules/doubleur.h:19]
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([9 x i8]* @p_str676, [4 x i8]* @p_str272, i1* %clk, i32 1) nounwind" [src/modules/doubleur.h:20]
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([9 x i8]* @p_str676, [6 x i8]* @p_str373, i1* %reset, i32 3) nounwind" [src/modules/doubleur.h:21]
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 0, [7 x i8]* @p_str171, [4 x i8]* @p_str272, i32 0, i32 0, i1* %clk) nounwind" [src/modules/doubleur.h:22]
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 0, [7 x i8]* @p_str171, [6 x i8]* @p_str373, i32 0, i32 0, i1* %reset) nounwind" [src/modules/doubleur.h:23]
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.h:24]
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 4, [8 x i8]* @p_str15, [2 x i8]* @p_str979, i32 0, i32 0, float* %e) nounwind" [src/modules/doubleur.h:25]
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.h:26]
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 5, [8 x i8]* @p_str15, [3 x i8]* @p_str1080, i32 0, i32 0, float* %s1) nounwind" [src/modules/doubleur.h:27]
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.h:28]
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 5, [8 x i8]* @p_str15, [3 x i8]* @p_str1181, i32 0, i32 0, float* %s2) nounwind" [src/modules/doubleur.h:29]
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([9 x i8]* @p_str62, i32 2, [9 x i8]* @p_str63) nounwind" [src/modules/doubleur.h:19]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([9 x i8]* @p_str63, [4 x i8]* @p_str14, i1* %clk, i32 1) nounwind" [src/modules/doubleur.h:20]
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([9 x i8]* @p_str63, [6 x i8]* @p_str15, i1* %reset, i32 3) nounwind" [src/modules/doubleur.h:21]
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 0, [7 x i8]* @p_str17, [4 x i8]* @p_str14, i32 0, i32 0, i1* %clk) nounwind" [src/modules/doubleur.h:22]
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 0, [7 x i8]* @p_str17, [6 x i8]* @p_str15, i32 0, i32 0, i1* %reset) nounwind" [src/modules/doubleur.h:23]
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:24]
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 4, [8 x i8]* @p_str41, [2 x i8]* @p_str21, i32 0, i32 0, float* %e) nounwind" [src/modules/doubleur.h:25]
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:26]
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 5, [8 x i8]* @p_str41, [3 x i8]* @p_str64, i32 0, i32 0, float* %s1) nounwind" [src/modules/doubleur.h:27]
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:28]
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 5, [8 x i8]* @p_str41, [3 x i8]* @p_str65, i32 0, i32 0, float* %s2) nounwind" [src/modules/doubleur.h:29]
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "ret void" [src/modules/doubleur.h:22]
 ST_1 : Operation 30 [2/2] (0.00ns)   --->   "call void @"doubleur::do_split"(float* %doubleur_to_split, i1* %clk, i1* %reset, float* %e, float* %s1, float* %s2)" [src/modules/doubleur.h:19]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
@@ -334,7 +334,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str11"/></StgValue>
+<StgValue><ssdm name="p_str18"/></StgValue>
 </bind>
 </comp>
 
@@ -352,7 +352,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str112"/></StgValue>
+<StgValue><ssdm name="p_str19"/></StgValue>
 </bind>
 </comp>
 
@@ -379,7 +379,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -388,7 +388,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
 </bind>
 </comp>
 
@@ -397,7 +397,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="p_str62"/></StgValue>
 </bind>
 </comp>
 
@@ -406,7 +406,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecProcessDecl"/></StgValue>
 </bind>
 </comp>
 
@@ -415,7 +415,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str70"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -424,7 +424,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecProcessDecl"/></StgValue>
+<StgValue><ssdm name="p_str63"/></StgValue>
 </bind>
 </comp>
 
@@ -433,7 +433,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecSensitive"/></StgValue>
 </bind>
 </comp>
 
@@ -442,7 +442,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str676"/></StgValue>
+<StgValue><ssdm name="p_str14"/></StgValue>
 </bind>
 </comp>
 
@@ -451,7 +451,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecSensitive"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -460,7 +460,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str272"/></StgValue>
+<StgValue><ssdm name="p_str15"/></StgValue>
 </bind>
 </comp>
 
@@ -478,7 +478,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str373"/></StgValue>
+<StgValue><ssdm name="p_str17"/></StgValue>
 </bind>
 </comp>
 
@@ -487,7 +487,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="p_str41"/></StgValue>
 </bind>
 </comp>
 
@@ -496,7 +496,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str171"/></StgValue>
+<StgValue><ssdm name="p_str21"/></StgValue>
 </bind>
 </comp>
 
@@ -505,7 +505,7 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str474"/></StgValue>
+<StgValue><ssdm name="p_str64"/></StgValue>
 </bind>
 </comp>
 
@@ -514,65 +514,29 @@ StgValue_32       (unreachable    ) [ 000]
 <pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str575"/></StgValue>
+<StgValue><ssdm name="p_str65"/></StgValue>
 </bind>
 </comp>
 
 <comp id="60" class="1001" name="const_60">
 <pin_list>
-<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str15"/></StgValue>
-</bind>
-</comp>
-
-<comp id="62" class="1001" name="const_62">
-<pin_list>
-<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str979"/></StgValue>
-</bind>
-</comp>
-
-<comp id="64" class="1001" name="const_64">
-<pin_list>
-<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str1080"/></StgValue>
-</bind>
-</comp>
-
-<comp id="66" class="1001" name="const_66">
-<pin_list>
-<pin id="67" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str1181"/></StgValue>
-</bind>
-</comp>
-
-<comp id="68" class="1001" name="const_68">
-<pin_list>
-<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="doubleur::do_split"/></StgValue>
 </bind>
 </comp>
 
-<comp id="70" class="1004" name="grp_doubleur_do_split_fu_70">
+<comp id="62" class="1004" name="grp_doubleur_do_split_fu_62">
 <pin_list>
-<pin id="71" dir="0" index="0" bw="0" slack="0"/>
-<pin id="72" dir="0" index="1" bw="32" slack="0"/>
-<pin id="73" dir="0" index="2" bw="1" slack="0"/>
-<pin id="74" dir="0" index="3" bw="1" slack="0"/>
-<pin id="75" dir="0" index="4" bw="32" slack="0"/>
-<pin id="76" dir="0" index="5" bw="32" slack="0"/>
-<pin id="77" dir="0" index="6" bw="32" slack="0"/>
-<pin id="78" dir="1" index="7" bw="0" slack="2147483647"/>
+<pin id="63" dir="0" index="0" bw="0" slack="0"/>
+<pin id="64" dir="0" index="1" bw="32" slack="0"/>
+<pin id="65" dir="0" index="2" bw="1" slack="0"/>
+<pin id="66" dir="0" index="3" bw="1" slack="0"/>
+<pin id="67" dir="0" index="4" bw="32" slack="0"/>
+<pin id="68" dir="0" index="5" bw="32" slack="0"/>
+<pin id="69" dir="0" index="6" bw="32" slack="0"/>
+<pin id="70" dir="1" index="7" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -580,10 +544,10 @@ StgValue_32       (unreachable    ) [ 000]
 </bind>
 </comp>
 
-<comp id="86" class="1004" name="doubleur_ssdm_thr_load_fu_86">
+<comp id="78" class="1004" name="doubleur_ssdm_thr_load_fu_78">
 <pin_list>
-<pin id="87" dir="0" index="0" bw="1" slack="0"/>
-<pin id="88" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="79" dir="0" index="0" bw="1" slack="0"/>
+<pin id="80" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -594,21 +558,21 @@ StgValue_32       (unreachable    ) [ 000]
 </comp_list>
 
 <net_list>
-<net id="79"><net_src comp="68" pin="0"/><net_sink comp="70" pin=0"/></net>
+<net id="71"><net_src comp="60" pin="0"/><net_sink comp="62" pin=0"/></net>
 
-<net id="80"><net_src comp="0" pin="0"/><net_sink comp="70" pin=1"/></net>
+<net id="72"><net_src comp="0" pin="0"/><net_sink comp="62" pin=1"/></net>
 
-<net id="81"><net_src comp="2" pin="0"/><net_sink comp="70" pin=2"/></net>
+<net id="73"><net_src comp="2" pin="0"/><net_sink comp="62" pin=2"/></net>
 
-<net id="82"><net_src comp="4" pin="0"/><net_sink comp="70" pin=3"/></net>
+<net id="74"><net_src comp="4" pin="0"/><net_sink comp="62" pin=3"/></net>
 
-<net id="83"><net_src comp="6" pin="0"/><net_sink comp="70" pin=4"/></net>
+<net id="75"><net_src comp="6" pin="0"/><net_sink comp="62" pin=4"/></net>
 
-<net id="84"><net_src comp="8" pin="0"/><net_sink comp="70" pin=5"/></net>
+<net id="76"><net_src comp="8" pin="0"/><net_sink comp="62" pin=5"/></net>
 
-<net id="85"><net_src comp="10" pin="0"/><net_sink comp="70" pin=6"/></net>
+<net id="77"><net_src comp="10" pin="0"/><net_sink comp="62" pin=6"/></net>
 
-<net id="89"><net_src comp="12" pin="0"/><net_sink comp="86" pin=0"/></net>
+<net id="81"><net_src comp="12" pin="0"/><net_sink comp="78" pin=0"/></net>
 
 </net_list>
 
@@ -637,7 +601,7 @@ StgValue_32       (unreachable    ) [ 000]
 |----------|-----------------------------|
 | Operation|       Functional Unit       |
 |----------|-----------------------------|
-|   call   | grp_doubleur_do_split_fu_70 |
+|   call   | grp_doubleur_do_split_fu_62 |
 |----------|-----------------------------|
 |   Total  |                             |
 |----------|-----------------------------|

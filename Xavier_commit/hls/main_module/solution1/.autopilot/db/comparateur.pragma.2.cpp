@@ -29993,4 +29993,4 @@ _ssdm_op_SpecExt("member_name", "result", &result);;
 
 
 
-comparateur ssdm_ins_comparateur_3_0("ssdm_dut");
+comparateur ssdm_ins_comparateur_8_0("ssdm_dut");

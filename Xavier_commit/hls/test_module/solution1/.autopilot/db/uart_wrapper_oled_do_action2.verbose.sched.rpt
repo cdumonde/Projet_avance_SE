@@ -1,0 +1,190 @@
+
+
+================================================================
+== Vivado HLS Report for 'uart_wrapper_oled_do_action2'
+================================================================
+* Date:           Fri Jan 19 19:02:01 2018
+
+* Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
+* Project:        test_module
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a100tcsg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.82|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    5|    5|    5|    5|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    4|    4|         4|          -|          -|  inf |    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 0
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	2  / true
+
+* FSM state operations: 
+
+ <State 1> : 0.00ns
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %uart_wrapper_oled_oled_e_m_if_Val, [8 x i8]* @p_str12, i32 0, i32 0, [1 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13, [1 x i8]* @p_str13, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13)"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %uart_wrapper_oled_oled_s_f_m_if_Val, [8 x i8]* @p_str12, i32 0, i32 0, [1 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13, [1 x i8]* @p_str13, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13)"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %FIFO_O_1, [8 x i8]* @p_str12, i32 0, i32 0, [1 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13, [1 x i8]* @p_str13, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13)"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %FIFO_I_1, [8 x i8]* @p_str12, i32 0, i32 0, [1 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13, [1 x i8]* @p_str13, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13)"
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !217"
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !221"
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %e), !map !225"
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %s), !map !229"
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %en), !map !233"
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %s_i), !map !237"
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %uart_wrapper_oled_oled_sum), !map !241"
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %uart_wrapper_oled_oled_save), !map !245"
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %uart_wrapper_oled_oled_clk_m_if_Val), !map !249"
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %uart_wrapper_oled_oled_reset_m_if_Val), !map !253"
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %uart_wrapper_oled_oled_en_m_if_Val), !map !257"
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %uart_wrapper_oled_oled_s_m_if_Val_V), !map !261"
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %uart_wrapper_oled_oled_e_m_if_Val), !map !265"
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %uart_wrapper_oled_oled_s_f_m_if_Val), !map !269"
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %FIFO_I_1), !map !273"
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %FIFO_O_1), !map !277"
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([18 x i8]* @p_str6, i32 0, [7 x i8]* @p_str11, [4 x i8]* @p_str8, i32 0, i32 0, i1* %clk) nounwind" [src/modules/uart_wrapper_oled.h:68]
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([18 x i8]* @p_str6, i32 0, [7 x i8]* @p_str11, [6 x i8]* @p_str9, i32 0, i32 0, i1* %reset) nounwind" [src/modules/uart_wrapper_oled.h:69]
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %e, [8 x i8]* @p_str12, i32 0, i32 0, [1 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13, [1 x i8]* @p_str13, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13) nounwind" [src/modules/uart_wrapper_oled.h:70]
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %s, [8 x i8]* @p_str12, i32 0, i32 0, [1 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13, [1 x i8]* @p_str13, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str13, [1 x i8]* @p_str13) nounwind" [src/modules/uart_wrapper_oled.h:71]
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([18 x i8]* @p_str6, i32 1, [7 x i8]* @p_str11, [3 x i8]* @p_str17, i32 0, i32 0, i1* %en) nounwind" [src/modules/uart_wrapper_oled.h:72]
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([18 x i8]* @p_str6, i32 1, [12 x i8]* @p_str18, [4 x i8]* @p_str19, i32 0, i32 0, i6* %s_i) nounwind" [src/modules/uart_wrapper_oled.h:73]
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([18 x i8]* @p_str6, i32 2, [11 x i8]* @p_str10) nounwind" [src/modules/uart_wrapper_oled.h:74]
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str24)" [src/modules/uart_wrapper_oled.h:74]
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str13) nounwind" [src/modules/uart_wrapper_oled.h:74]
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%p_ssdm_reset_v = call i32 (...)* @_ssdm_op_SpecStateBegin(i32 0, i32 0, i32 1) nounwind" [src/modules/uart_wrapper_oled.h:74]
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind" [src/modules/uart_wrapper_oled.h:84]
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str24, i32 %tmp_8)" [src/modules/uart_wrapper_oled.h:84]
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "br label %1" [src/modules/uart_wrapper_oled.h:84]
+
+ <State 2> : 7.82ns
+ST_2 : Operation 39 [1/1] (3.90ns)   --->   "%val = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %FIFO_O_1)" [src/modules/uart_wrapper_oled.h:73]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 0> <FIFO>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%buffer = bitcast float %val to i32" [src/modules/uart_wrapper_oled.h:73]
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%tmp_1 = trunc i32 %buffer to i8" [src/modules/uart_wrapper_oled.h:75]
+ST_2 : Operation 42 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %s, i8 %tmp_1)" [src/modules/uart_wrapper_oled.h:75]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 0> <FIFO>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %buffer, i32 8, i32 15)" [src/modules/uart_wrapper_oled.h:76]
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%tmp_5 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %buffer, i32 16, i32 23)" [src/modules/uart_wrapper_oled.h:77]
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%tmp_7 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %buffer, i32 24, i32 31)" [src/modules/uart_wrapper_oled.h:78]
+
+ <State 3> : 3.91ns
+ST_3 : Operation 46 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %s, i8 %tmp_3)" [src/modules/uart_wrapper_oled.h:76]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 0> <FIFO>
+
+ <State 4> : 3.91ns
+ST_4 : Operation 47 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %s, i8 %tmp_5)" [src/modules/uart_wrapper_oled.h:77]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 0> <FIFO>
+
+ <State 5> : 3.91ns
+ST_5 : Operation 48 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %s, i8 %tmp_7)" [src/modules/uart_wrapper_oled.h:78]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 0> <FIFO>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "br label %1" [src/modules/uart_wrapper_oled.h:79]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 7.82ns
+The critical path consists of the following:
+	fifo read on port 'FIFO_O_1' (src/modules/uart_wrapper_oled.h:73) [51]  (3.91 ns)
+	fifo write on port 's' (src/modules/uart_wrapper_oled.h:75) [54]  (3.91 ns)
+
+ <State 3>: 3.91ns
+The critical path consists of the following:
+	fifo write on port 's' (src/modules/uart_wrapper_oled.h:76) [56]  (3.91 ns)
+
+ <State 4>: 3.91ns
+The critical path consists of the following:
+	fifo write on port 's' (src/modules/uart_wrapper_oled.h:77) [58]  (3.91 ns)
+
+ <State 5>: 3.91ns
+The critical path consists of the following:
+	fifo write on port 's' (src/modules/uart_wrapper_oled.h:78) [60]  (3.91 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

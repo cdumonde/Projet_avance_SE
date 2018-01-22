@@ -1,7 +1,3 @@
-UartModIn_do_recv
-UartModIn
-UartModOut_do_send
-UartModOut
 carre_fmul_32ns_3bkb
 carre_do_carre
 carre
@@ -31,5 +27,9 @@ fifo_w32_d8192_A
 fifo_w32_d8192_A
 fifo_w32_d8192_A
 fifo_w32_d8192_A
-fifo_w32_d8192_A
 top_level
+uart_wrapper_do_action1
+uart_wrapper_do_action2
+fifo_w32_d192_A
+fifo_w32_d192_A
+uart_wrapper

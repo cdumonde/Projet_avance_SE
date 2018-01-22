@@ -6,7 +6,7 @@
 <Project Version="7" Minor="32" Path="Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/impl/ip/tmp.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="315d042da207431eb2f883b0ca41f6db"/>
+    <Option Name="Id" Val="5110d8c70c664e04ad3521257d2ee4b7"/>
     <Option Name="Part" Val="xc7vx485tffg1157-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -55,63 +55,63 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_dadd_4_full_dsp_64/top_level_ap_dadd_4_full_dsp_64.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_dadd_4_full_dsp_64/uart_wrapper_ap_dadd_4_full_dsp_64.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_dadddsub_4_full_dsp_64/top_level_ap_dadddsub_4_full_dsp_64.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_dadddsub_4_full_dsp_64/uart_wrapper_ap_dadddsub_4_full_dsp_64.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_dmul_4_max_dsp_64/top_level_ap_dmul_4_max_dsp_64.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_dmul_4_max_dsp_64/uart_wrapper_ap_dmul_4_max_dsp_64.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_fcmp_0_no_dsp_32/top_level_ap_fcmp_0_no_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_fcmp_0_no_dsp_32/uart_wrapper_ap_fcmp_0_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_fmul_2_max_dsp_32/top_level_ap_fmul_2_max_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_fmul_2_max_dsp_32/uart_wrapper_ap_fmul_2_max_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_fpext_0_no_dsp_32/top_level_ap_fpext_0_no_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_fpext_0_no_dsp_32/uart_wrapper_ap_fpext_0_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_fptrunc_0_no_dsp_64/top_level_ap_fptrunc_0_no_dsp_64.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_fptrunc_0_no_dsp_64/uart_wrapper_ap_fptrunc_0_no_dsp_64.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_fsqrt_10_no_dsp_32/top_level_ap_fsqrt_10_no_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_fsqrt_10_no_dsp_32/uart_wrapper_ap_fsqrt_10_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/top_level_ap_sitofp_4_no_dsp_32/top_level_ap_sitofp_4_no_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/uart_wrapper_ap_sitofp_4_no_dsp_32/uart_wrapper_ap_sitofp_4_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

@@ -18,20 +18,10 @@ module filtre2_do_filtre (
         filtre2_mem_x_ce0,
         filtre2_mem_x_we0,
         filtre2_mem_x_d0,
-        filtre2_mem_x_q0,
-        filtre2_mem_x_address1,
-        filtre2_mem_x_ce1,
-        filtre2_mem_x_we1,
-        filtre2_mem_x_d1,
         filtre2_mem_y_address0,
         filtre2_mem_y_ce0,
         filtre2_mem_y_we0,
         filtre2_mem_y_d0,
-        filtre2_mem_y_q0,
-        filtre2_mem_y_address1,
-        filtre2_mem_y_ce1,
-        filtre2_mem_y_we1,
-        filtre2_mem_y_d1,
         e_dout,
         e_empty_n,
         e_read,
@@ -40,29 +30,28 @@ module filtre2_do_filtre (
         s_write
 );
 
-parameter    ap_ST_fsm_state2 = 24'd2;
-parameter    ap_ST_fsm_state3 = 24'd4;
-parameter    ap_ST_fsm_state4 = 24'd8;
-parameter    ap_ST_fsm_state5 = 24'd16;
-parameter    ap_ST_fsm_state6 = 24'd32;
-parameter    ap_ST_fsm_state7 = 24'd64;
-parameter    ap_ST_fsm_state8 = 24'd128;
-parameter    ap_ST_fsm_state9 = 24'd256;
-parameter    ap_ST_fsm_state10 = 24'd512;
-parameter    ap_ST_fsm_state11 = 24'd1024;
-parameter    ap_ST_fsm_state12 = 24'd2048;
-parameter    ap_ST_fsm_state13 = 24'd4096;
-parameter    ap_ST_fsm_state14 = 24'd8192;
-parameter    ap_ST_fsm_state15 = 24'd16384;
-parameter    ap_ST_fsm_state16 = 24'd32768;
-parameter    ap_ST_fsm_state17 = 24'd65536;
-parameter    ap_ST_fsm_state18 = 24'd131072;
-parameter    ap_ST_fsm_state19 = 24'd262144;
-parameter    ap_ST_fsm_state20 = 24'd524288;
-parameter    ap_ST_fsm_state21 = 24'd1048576;
-parameter    ap_ST_fsm_state22 = 24'd2097152;
-parameter    ap_ST_fsm_state23 = 24'd4194304;
-parameter    ap_ST_fsm_state24 = 24'd8388608;
+parameter    ap_ST_fsm_state2 = 23'd2;
+parameter    ap_ST_fsm_state3 = 23'd4;
+parameter    ap_ST_fsm_state4 = 23'd8;
+parameter    ap_ST_fsm_state5 = 23'd16;
+parameter    ap_ST_fsm_state6 = 23'd32;
+parameter    ap_ST_fsm_state7 = 23'd64;
+parameter    ap_ST_fsm_state8 = 23'd128;
+parameter    ap_ST_fsm_state9 = 23'd256;
+parameter    ap_ST_fsm_state10 = 23'd512;
+parameter    ap_ST_fsm_state11 = 23'd1024;
+parameter    ap_ST_fsm_state12 = 23'd2048;
+parameter    ap_ST_fsm_state13 = 23'd4096;
+parameter    ap_ST_fsm_state14 = 23'd8192;
+parameter    ap_ST_fsm_state15 = 23'd16384;
+parameter    ap_ST_fsm_state16 = 23'd32768;
+parameter    ap_ST_fsm_state17 = 23'd65536;
+parameter    ap_ST_fsm_state18 = 23'd131072;
+parameter    ap_ST_fsm_state19 = 23'd262144;
+parameter    ap_ST_fsm_state20 = 23'd524288;
+parameter    ap_ST_fsm_state21 = 23'd1048576;
+parameter    ap_ST_fsm_state22 = 23'd2097152;
+parameter    ap_ST_fsm_state23 = 23'd4194304;
 
 input   ap_clk;
 input   ap_rst;
@@ -74,20 +63,10 @@ output  [0:0] filtre2_mem_x_address0;
 output   filtre2_mem_x_ce0;
 output   filtre2_mem_x_we0;
 output  [31:0] filtre2_mem_x_d0;
-input  [31:0] filtre2_mem_x_q0;
-output  [0:0] filtre2_mem_x_address1;
-output   filtre2_mem_x_ce1;
-output   filtre2_mem_x_we1;
-output  [31:0] filtre2_mem_x_d1;
 output  [0:0] filtre2_mem_y_address0;
 output   filtre2_mem_y_ce0;
 output   filtre2_mem_y_we0;
 output  [31:0] filtre2_mem_y_d0;
-input  [31:0] filtre2_mem_y_q0;
-output  [0:0] filtre2_mem_y_address1;
-output   filtre2_mem_y_ce1;
-output   filtre2_mem_y_we1;
-output  [31:0] filtre2_mem_y_d1;
 input  [31:0] e_dout;
 input   e_empty_n;
 output   e_read;
@@ -100,69 +79,57 @@ reg filtre2_x0_ap_vld;
 reg[0:0] filtre2_mem_x_address0;
 reg filtre2_mem_x_ce0;
 reg filtre2_mem_x_we0;
-reg[0:0] filtre2_mem_x_address1;
-reg filtre2_mem_x_ce1;
-reg filtre2_mem_x_we1;
-reg[31:0] filtre2_mem_x_d1;
+reg[31:0] filtre2_mem_x_d0;
 reg[0:0] filtre2_mem_y_address0;
 reg filtre2_mem_y_ce0;
 reg filtre2_mem_y_we0;
-reg[0:0] filtre2_mem_y_address1;
-reg filtre2_mem_y_ce1;
-reg filtre2_mem_y_we1;
-reg[31:0] filtre2_mem_y_d1;
+reg[31:0] filtre2_mem_y_d0;
 reg e_read;
 reg s_write;
 
 reg    e_blk_n;
-(* fsm_encoding = "none" *) reg   [23:0] ap_CS_fsm;
-wire    ap_CS_fsm_state3;
-wire   [0:0] exitcond_fu_235_p2;
-reg    s_blk_n;
-wire    ap_CS_fsm_state24;
-wire   [63:0] grp_fu_195_p1;
-reg   [63:0] reg_218;
-wire    ap_CS_fsm_state4;
-wire    ap_CS_fsm_state10;
-wire   [63:0] grp_fu_207_p2;
-reg   [63:0] reg_223;
-wire    ap_CS_fsm_state16;
-wire   [63:0] grp_fu_203_p2;
-reg   [63:0] reg_229;
-wire    ap_CS_fsm_state22;
-wire   [1:0] i_fu_241_p2;
-reg   [1:0] i_reg_256;
-reg    ap_block_state3;
-reg   [31:0] val_reg_261;
-reg   [0:0] filtre2_mem_y_addr_1_reg_268;
-reg   [0:0] filtre2_mem_x_addr_1_reg_274;
-wire   [63:0] tmp_5_fu_198_p1;
-reg   [63:0] tmp_5_reg_280;
-wire   [63:0] grp_fu_212_p2;
-reg   [63:0] tmp_6_reg_285;
-wire   [31:0] y_fu_191_p1;
-reg   [31:0] y_reg_290;
-wire    ap_CS_fsm_state23;
-reg   [1:0] i1_reg_180;
+(* fsm_encoding = "none" *) reg   [22:0] ap_CS_fsm;
 wire    ap_CS_fsm_state2;
-wire   [0:0] filtre2_mem_x_addr_gep_fu_111_p3;
-wire   [0:0] filtre2_mem_y_addr_gep_fu_125_p3;
-wire   [0:0] filtre2_mem_x_addr_2_gep_fu_139_p3;
-wire   [0:0] filtre2_mem_y_addr_2_gep_fu_152_p3;
-wire   [63:0] tmp_s_fu_247_p1;
+reg    s_blk_n;
+wire    ap_CS_fsm_state23;
+wire   [63:0] grp_fu_152_p1;
+reg   [63:0] reg_175;
+wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state9;
-reg   [31:0] grp_fu_195_p0;
-reg   [63:0] grp_fu_203_p0;
-reg   [63:0] grp_fu_203_p1;
-wire    ap_CS_fsm_state11;
-wire    ap_CS_fsm_state17;
-reg   [63:0] grp_fu_207_p1;
-wire    ap_CS_fsm_state5;
-reg   [23:0] ap_NS_fsm;
+wire   [63:0] grp_fu_164_p2;
+reg   [63:0] reg_180;
+wire    ap_CS_fsm_state15;
+wire   [63:0] grp_fu_160_p2;
+reg   [63:0] reg_186;
+wire    ap_CS_fsm_state21;
+wire   [0:0] filtre2_mem_x_addr_gep_fu_97_p3;
+reg   [0:0] filtre2_mem_x_addr_reg_192;
+wire   [0:0] filtre2_mem_y_addr_gep_fu_111_p3;
+reg   [0:0] filtre2_mem_y_addr_reg_197;
+reg   [31:0] val_reg_202;
+wire   [63:0] tmp_2_fu_155_p1;
+reg   [63:0] tmp_2_reg_209;
+wire   [63:0] grp_fu_169_p2;
+reg   [63:0] tmp_3_reg_214;
+wire   [31:0] y_fu_148_p1;
+reg   [31:0] y_reg_219;
+wire    ap_CS_fsm_state22;
+reg   [31:0] x1_assign_reg_126;
+reg   [31:0] y1_assign_reg_137;
+reg   [31:0] grp_fu_152_p0;
+reg   [63:0] grp_fu_160_p0;
+reg   [63:0] grp_fu_160_p1;
+wire    ap_CS_fsm_state10;
+wire    ap_CS_fsm_state16;
+reg   [63:0] grp_fu_164_p1;
+wire    ap_CS_fsm_state4;
+reg   [22:0] ap_NS_fsm;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 24'd2;
+#0 ap_CS_fsm = 23'd2;
+#0 x1_assign_reg_126 = 32'd0;
+#0 y1_assign_reg_137 = 32'd0;
 end
 
 filtre1_fptrunc_6eOg #(
@@ -170,9 +137,9 @@ filtre1_fptrunc_6eOg #(
     .NUM_STAGE( 1 ),
     .din0_WIDTH( 64 ),
     .dout_WIDTH( 32 ))
-filtre1_fptrunc_6eOg_U55(
-    .din0(reg_229),
-    .dout(y_fu_191_p1)
+filtre1_fptrunc_6eOg_U47(
+    .din0(reg_186),
+    .dout(y_fu_148_p1)
 );
 
 filtre1_fpext_32nfYi #(
@@ -180,9 +147,9 @@ filtre1_fpext_32nfYi #(
     .NUM_STAGE( 1 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-filtre1_fpext_32nfYi_U56(
-    .din0(grp_fu_195_p0),
-    .dout(grp_fu_195_p1)
+filtre1_fpext_32nfYi_U48(
+    .din0(grp_fu_152_p0),
+    .dout(grp_fu_152_p1)
 );
 
 filtre1_fpext_32nfYi #(
@@ -190,9 +157,9 @@ filtre1_fpext_32nfYi #(
     .NUM_STAGE( 1 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-filtre1_fpext_32nfYi_U57(
-    .din0(filtre2_mem_x_q0),
-    .dout(tmp_5_fu_198_p1)
+filtre1_fpext_32nfYi_U49(
+    .din0(x1_assign_reg_126),
+    .dout(tmp_2_fu_155_p1)
 );
 
 filtre2_dadd_64nskbM #(
@@ -201,13 +168,13 @@ filtre2_dadd_64nskbM #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-filtre2_dadd_64nskbM_U58(
+filtre2_dadd_64nskbM_U50(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_203_p0),
-    .din1(grp_fu_203_p1),
+    .din0(grp_fu_160_p0),
+    .din1(grp_fu_160_p1),
     .ce(1'b1),
-    .dout(grp_fu_203_p2)
+    .dout(grp_fu_160_p2)
 );
 
 filtre1_dmul_64nshbi #(
@@ -216,13 +183,13 @@ filtre1_dmul_64nshbi #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-filtre1_dmul_64nshbi_U59(
+filtre1_dmul_64nshbi_U51(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(reg_218),
-    .din1(grp_fu_207_p1),
+    .din0(reg_175),
+    .din1(grp_fu_164_p1),
     .ce(1'b1),
-    .dout(grp_fu_207_p2)
+    .dout(grp_fu_164_p2)
 );
 
 filtre1_dmul_64nshbi #(
@@ -231,13 +198,13 @@ filtre1_dmul_64nshbi #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-filtre1_dmul_64nshbi_U60(
+filtre1_dmul_64nshbi_U52(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(tmp_5_reg_280),
+    .din0(tmp_2_reg_209),
     .din1(64'd4521614025879977984),
     .ce(1'b1),
-    .dout(grp_fu_212_p2)
+    .dout(grp_fu_169_p2)
 );
 
 always @ (posedge ap_clk) begin
@@ -249,65 +216,73 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state24))) begin
-        i1_reg_180 <= i_reg_256;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        i1_reg_180 <= 2'd0;
+    if (ap_rst == 1'b1) begin
+        x1_assign_reg_126 <= 32'd0;
+    end else begin
+        if (~(1'b1 == 1'b1)) begin
+            x1_assign_reg_126 <= 32'd0;
+        end else if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state23))) begin
+            x1_assign_reg_126 <= val_reg_202;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((~((exitcond_fu_235_p2 == 1'd0) & (1'b0 == e_empty_n)) & (exitcond_fu_235_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        filtre2_mem_x_addr_1_reg_274 <= tmp_s_fu_247_p1;
-        filtre2_mem_y_addr_1_reg_268 <= tmp_s_fu_247_p1;
-        val_reg_261 <= e_dout;
+    if (ap_rst == 1'b1) begin
+        y1_assign_reg_137 <= 32'd0;
+    end else begin
+        if (~(1'b1 == 1'b1)) begin
+            y1_assign_reg_137 <= 32'd0;
+        end else if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state23))) begin
+            y1_assign_reg_137 <= y_reg_219;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((~((exitcond_fu_235_p2 == 1'd0) & (1'b0 == e_empty_n)) & (1'b1 == ap_CS_fsm_state3))) begin
-        i_reg_256 <= i_fu_241_p2;
+    if (((1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state3))) begin
+        reg_175 <= grp_fu_152_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state4))) begin
-        reg_218 <= grp_fu_195_p1;
+    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state9))) begin
+        reg_180 <= grp_fu_164_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state16))) begin
-        reg_223 <= grp_fu_207_p2;
+    if (((1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state15))) begin
+        reg_186 <= grp_fu_160_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state16))) begin
-        reg_229 <= grp_fu_203_p2;
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        tmp_2_reg_209 <= tmp_2_fu_155_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        tmp_5_reg_280 <= tmp_5_fu_198_p1;
+    if ((1'b1 == ap_CS_fsm_state9)) begin
+        tmp_3_reg_214 <= grp_fu_169_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
-        tmp_6_reg_285 <= grp_fu_212_p2;
+    if (((e_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+        val_reg_202 <= e_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        y_reg_290 <= y_fu_191_p1;
+    if ((1'b1 == ap_CS_fsm_state22)) begin
+        y_reg_219 <= y_fu_148_p1;
     end
 end
 
 always @ (*) begin
-    if (((exitcond_fu_235_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
         e_blk_n = e_empty_n;
     end else begin
         e_blk_n = 1'b1;
@@ -315,7 +290,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~((exitcond_fu_235_p2 == 1'd0) & (1'b0 == e_empty_n)) & (exitcond_fu_235_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((e_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
         e_read = 1'b1;
     end else begin
         e_read = 1'b0;
@@ -323,8 +298,8 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        filtre2_mem_x_address0 = tmp_s_fu_247_p1;
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        filtre2_mem_x_address0 = filtre2_mem_x_addr_reg_192;
     end else if (~(1'b1 == 1'b1)) begin
         filtre2_mem_x_address0 = 64'd0;
     end else begin
@@ -334,18 +309,7 @@ end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        filtre2_mem_x_address1 = filtre2_mem_x_addr_1_reg_274;
-    end else if (~(1'b1 == 1'b1)) begin
-        filtre2_mem_x_address1 = 64'd1;
-    end else begin
-        filtre2_mem_x_address1 = 'bx;
-    end
-end
-end
-
-always @ (*) begin
-    if ((~((exitcond_fu_235_p2 == 1'd0) & (1'b0 == e_empty_n)) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((e_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
         filtre2_mem_x_ce0 = 1'b1;
     end else begin
         filtre2_mem_x_ce0 = 1'b0;
@@ -354,27 +318,18 @@ end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        filtre2_mem_x_ce1 = 1'b1;
-    end else begin
-        filtre2_mem_x_ce1 = 1'b0;
-    end
-end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        filtre2_mem_x_d1 = val_reg_261;
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        filtre2_mem_x_d0 = e_dout;
     end else if (~(1'b1 == 1'b1)) begin
-        filtre2_mem_x_d1 = 32'd0;
+        filtre2_mem_x_d0 = 32'd0;
     end else begin
-        filtre2_mem_x_d1 = 'bx;
+        filtre2_mem_x_d0 = 'bx;
     end
 end
 end
 
 always @ (*) begin
-    if (~(1'b1 == 1'b1)) begin
+    if (((e_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
         filtre2_mem_x_we0 = 1'b1;
     end else begin
         filtre2_mem_x_we0 = 1'b0;
@@ -383,17 +338,8 @@ end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        filtre2_mem_x_we1 = 1'b1;
-    end else begin
-        filtre2_mem_x_we1 = 1'b0;
-    end
-end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state9)) begin
-        filtre2_mem_y_address0 = filtre2_mem_y_addr_1_reg_268;
+    if ((1'b1 == ap_CS_fsm_state22)) begin
+        filtre2_mem_y_address0 = filtre2_mem_y_addr_reg_197;
     end else if (~(1'b1 == 1'b1)) begin
         filtre2_mem_y_address0 = 64'd0;
     end else begin
@@ -403,18 +349,7 @@ end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        filtre2_mem_y_address1 = filtre2_mem_y_addr_1_reg_268;
-    end else if (~(1'b1 == 1'b1)) begin
-        filtre2_mem_y_address1 = 64'd1;
-    end else begin
-        filtre2_mem_y_address1 = 'bx;
-    end
-end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state9)) begin
+    if ((1'b1 == ap_CS_fsm_state22)) begin
         filtre2_mem_y_ce0 = 1'b1;
     end else begin
         filtre2_mem_y_ce0 = 1'b0;
@@ -423,27 +358,18 @@ end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        filtre2_mem_y_ce1 = 1'b1;
-    end else begin
-        filtre2_mem_y_ce1 = 1'b0;
-    end
-end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        filtre2_mem_y_d1 = y_fu_191_p1;
+    if ((1'b1 == ap_CS_fsm_state22)) begin
+        filtre2_mem_y_d0 = y_fu_148_p1;
     end else if (~(1'b1 == 1'b1)) begin
-        filtre2_mem_y_d1 = 32'd0;
+        filtre2_mem_y_d0 = 32'd0;
     end else begin
-        filtre2_mem_y_d1 = 'bx;
+        filtre2_mem_y_d0 = 'bx;
     end
 end
 end
 
 always @ (*) begin
-    if (~(1'b1 == 1'b1)) begin
+    if ((1'b1 == ap_CS_fsm_state22)) begin
         filtre2_mem_y_we0 = 1'b1;
     end else begin
         filtre2_mem_y_we0 = 1'b0;
@@ -452,16 +378,7 @@ end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state23)) begin
-        filtre2_mem_y_we1 = 1'b1;
-    end else begin
-        filtre2_mem_y_we1 = 1'b0;
-    end
-end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
         filtre2_x0_ap_vld = 1'b1;
     end else begin
         filtre2_x0_ap_vld = 1'b0;
@@ -469,7 +386,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state24))) begin
+    if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state23))) begin
         filtre2_y0_ap_vld = 1'b1;
     end else begin
         filtre2_y0_ap_vld = 1'b0;
@@ -477,47 +394,47 @@ always @ (*) begin
 end
 
 always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
+        grp_fu_152_p0 = y1_assign_reg_137;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        grp_fu_152_p0 = val_reg_202;
+    end else begin
+        grp_fu_152_p0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state16)) begin
+        grp_fu_160_p0 = reg_186;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
+        grp_fu_160_p0 = reg_180;
+    end else begin
+        grp_fu_160_p0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state16)) begin
+        grp_fu_160_p1 = reg_180;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
+        grp_fu_160_p1 = tmp_3_reg_214;
+    end else begin
+        grp_fu_160_p1 = 'bx;
+    end
+end
+
+always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state10)) begin
-        grp_fu_195_p0 = filtre2_mem_y_q0;
+        grp_fu_164_p1 = 64'd4607178020753506304;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_fu_195_p0 = val_reg_261;
+        grp_fu_164_p1 = 64'd4521614025879977984;
     end else begin
-        grp_fu_195_p0 = 'bx;
+        grp_fu_164_p1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state17)) begin
-        grp_fu_203_p0 = reg_229;
-    end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        grp_fu_203_p0 = reg_223;
-    end else begin
-        grp_fu_203_p0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state17)) begin
-        grp_fu_203_p1 = reg_223;
-    end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        grp_fu_203_p1 = tmp_6_reg_285;
-    end else begin
-        grp_fu_203_p1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state11)) begin
-        grp_fu_207_p1 = 64'd4607178020753506304;
-    end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        grp_fu_207_p1 = 64'd4521614025879977984;
-    end else begin
-        grp_fu_207_p1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state24)) begin
+    if ((1'b1 == ap_CS_fsm_state23)) begin
         s_blk_n = s_full_n;
     end else begin
         s_blk_n = 1'b1;
@@ -525,7 +442,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state24))) begin
+    if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state23))) begin
         s_write = 1'b1;
     end else begin
         s_write = 1'b0;
@@ -535,16 +452,14 @@ end
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state2 : begin
-            ap_NS_fsm = ap_ST_fsm_state3;
+            if (((e_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+                ap_NS_fsm = ap_ST_fsm_state3;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state2;
+            end
         end
         ap_ST_fsm_state3 : begin
-            if ((~((exitcond_fu_235_p2 == 1'd0) & (1'b0 == e_empty_n)) & (exitcond_fu_235_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end else if ((~((exitcond_fu_235_p2 == 1'd0) & (1'b0 == e_empty_n)) & (exitcond_fu_235_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-                ap_NS_fsm = ap_ST_fsm_state4;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state3;
-            end
+            ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
             ap_NS_fsm = ap_ST_fsm_state5;
@@ -604,13 +519,10 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state23;
         end
         ap_ST_fsm_state23 : begin
-            ap_NS_fsm = ap_ST_fsm_state24;
-        end
-        ap_ST_fsm_state24 : begin
-            if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state24))) begin
-                ap_NS_fsm = ap_ST_fsm_state3;
+            if (((s_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state23))) begin
+                ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state24;
+                ap_NS_fsm = ap_ST_fsm_state23;
             end
         end
         default : begin
@@ -621,54 +533,37 @@ end
 
 assign ap_CS_fsm_state10 = ap_CS_fsm[32'd9];
 
-assign ap_CS_fsm_state11 = ap_CS_fsm[32'd10];
+assign ap_CS_fsm_state15 = ap_CS_fsm[32'd14];
 
 assign ap_CS_fsm_state16 = ap_CS_fsm[32'd15];
 
-assign ap_CS_fsm_state17 = ap_CS_fsm[32'd16];
-
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
+
+assign ap_CS_fsm_state21 = ap_CS_fsm[32'd20];
 
 assign ap_CS_fsm_state22 = ap_CS_fsm[32'd21];
 
 assign ap_CS_fsm_state23 = ap_CS_fsm[32'd22];
 
-assign ap_CS_fsm_state24 = ap_CS_fsm[32'd23];
-
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
 assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
-assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
-
 assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
-always @ (*) begin
-    ap_block_state3 = ((exitcond_fu_235_p2 == 1'd0) & (1'b0 == e_empty_n));
+assign filtre2_mem_x_addr_gep_fu_97_p3 = 64'd0;
+
+assign filtre2_mem_y_addr_gep_fu_111_p3 = 64'd0;
+
+assign filtre2_x0 = val_reg_202;
+
+assign filtre2_y0 = y_reg_219;
+
+assign s_din = y_reg_219;
+
+always @ (posedge ap_clk) begin
+    filtre2_mem_x_addr_reg_192 <= 1'b0;
+    filtre2_mem_y_addr_reg_197 <= 1'b0;
 end
-
-assign exitcond_fu_235_p2 = ((i1_reg_180 == 2'd2) ? 1'b1 : 1'b0);
-
-assign filtre2_mem_x_addr_2_gep_fu_139_p3 = 64'd1;
-
-assign filtre2_mem_x_addr_gep_fu_111_p3 = 64'd0;
-
-assign filtre2_mem_x_d0 = 32'd0;
-
-assign filtre2_mem_y_addr_2_gep_fu_152_p3 = 64'd1;
-
-assign filtre2_mem_y_addr_gep_fu_125_p3 = 64'd0;
-
-assign filtre2_mem_y_d0 = 32'd0;
-
-assign filtre2_x0 = val_reg_261;
-
-assign filtre2_y0 = y_reg_290;
-
-assign i_fu_241_p2 = (i1_reg_180 + 2'd1);
-
-assign s_din = y_reg_290;
-
-assign tmp_s_fu_247_p1 = i1_reg_180;
 
 endmodule //filtre2_do_filtre

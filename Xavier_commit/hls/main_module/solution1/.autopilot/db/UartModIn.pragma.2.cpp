@@ -28091,4 +28091,4 @@ CharFloat tmp; _ssdm_op_SpecStateEnd(_ssdm_reset_v); _ssdm_RegionEnd("__ssdm_res
 
 
 
-UartModIn ssdm_ins_UartModIn_0_0("ssdm_dut");
+UartModIn ssdm_ins_UartModIn_11_0("ssdm_dut");

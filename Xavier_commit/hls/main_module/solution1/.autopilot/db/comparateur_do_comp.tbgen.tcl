@@ -88,8 +88,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "s_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.comparateur_sitofcud_U16", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.comparateur_fcmp_dEe_U17", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.comparateur_sitofcud_U8", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.comparateur_fcmp_dEe_U9", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

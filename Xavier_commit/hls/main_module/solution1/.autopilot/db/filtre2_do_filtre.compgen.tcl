@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 58
+set id 50
 set name filtre2_dadd_64nskbM
 set corename simcore_dadd
 set op dadd
@@ -84,14 +84,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 64 \
+    id 56 \
     name filtre2_mem_x \
     reset_level 1 \
     sync_rst true \
-    dir IO \
+    dir O \
     corename filtre2_mem_x \
     op interface \
-    ports { filtre2_mem_x_address0 { O 1 vector } filtre2_mem_x_ce0 { O 1 bit } filtre2_mem_x_we0 { O 1 bit } filtre2_mem_x_d0 { O 32 vector } filtre2_mem_x_q0 { I 32 vector } filtre2_mem_x_address1 { O 1 vector } filtre2_mem_x_ce1 { O 1 bit } filtre2_mem_x_we1 { O 1 bit } filtre2_mem_x_d1 { O 32 vector } } \
+    ports { filtre2_mem_x_address0 { O 1 vector } filtre2_mem_x_ce0 { O 1 bit } filtre2_mem_x_we0 { O 1 bit } filtre2_mem_x_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'filtre2_mem_x'"
@@ -103,14 +103,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 65 \
+    id 57 \
     name filtre2_mem_y \
     reset_level 1 \
     sync_rst true \
-    dir IO \
+    dir O \
     corename filtre2_mem_y \
     op interface \
-    ports { filtre2_mem_y_address0 { O 1 vector } filtre2_mem_y_ce0 { O 1 bit } filtre2_mem_y_we0 { O 1 bit } filtre2_mem_y_d0 { O 32 vector } filtre2_mem_y_q0 { I 32 vector } filtre2_mem_y_address1 { O 1 vector } filtre2_mem_y_ce1 { O 1 bit } filtre2_mem_y_we1 { O 1 bit } filtre2_mem_y_d1 { O 32 vector } } \
+    ports { filtre2_mem_y_address0 { O 1 vector } filtre2_mem_y_ce0 { O 1 bit } filtre2_mem_y_we0 { O 1 bit } filtre2_mem_y_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'filtre2_mem_y'"
@@ -121,7 +121,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 62 \
+    id 54 \
     name filtre2_y0 \
     type other \
     dir O \
@@ -136,7 +136,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 63 \
+    id 55 \
     name filtre2_x0 \
     type other \
     dir O \
@@ -151,7 +151,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 66 \
+    id 58 \
     name e \
     type fifo \
     dir I \
@@ -166,7 +166,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 67 \
+    id 59 \
     name s \
     type fifo \
     dir O \

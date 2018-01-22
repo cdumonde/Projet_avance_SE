@@ -33,13 +33,13 @@ architecture behav of doubleur is
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_boolean_1 : BOOLEAN := true;
 
-    signal grp_doubleur_do_split_fu_70_doubleur_to_split : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_doubleur_do_split_fu_70_doubleur_to_split_ap_vld : STD_LOGIC;
-    signal grp_doubleur_do_split_fu_70_e_read : STD_LOGIC;
-    signal grp_doubleur_do_split_fu_70_s1_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_doubleur_do_split_fu_70_s1_write : STD_LOGIC;
-    signal grp_doubleur_do_split_fu_70_s2_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_doubleur_do_split_fu_70_s2_write : STD_LOGIC;
+    signal grp_doubleur_do_split_fu_62_doubleur_to_split : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_doubleur_do_split_fu_62_doubleur_to_split_ap_vld : STD_LOGIC;
+    signal grp_doubleur_do_split_fu_62_e_read : STD_LOGIC;
+    signal grp_doubleur_do_split_fu_62_s1_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_doubleur_do_split_fu_62_s1_write : STD_LOGIC;
+    signal grp_doubleur_do_split_fu_62_s2_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_doubleur_do_split_fu_62_s2_write : STD_LOGIC;
 
     component doubleur_do_split IS
     port (
@@ -61,28 +61,28 @@ architecture behav of doubleur is
 
 
 begin
-    grp_doubleur_do_split_fu_70 : component doubleur_do_split
+    grp_doubleur_do_split_fu_62 : component doubleur_do_split
     port map (
         ap_clk => clk,
         ap_rst => reset,
-        doubleur_to_split => grp_doubleur_do_split_fu_70_doubleur_to_split,
-        doubleur_to_split_ap_vld => grp_doubleur_do_split_fu_70_doubleur_to_split_ap_vld,
+        doubleur_to_split => grp_doubleur_do_split_fu_62_doubleur_to_split,
+        doubleur_to_split_ap_vld => grp_doubleur_do_split_fu_62_doubleur_to_split_ap_vld,
         e_dout => e_dout,
         e_empty_n => e_empty_n,
-        e_read => grp_doubleur_do_split_fu_70_e_read,
-        s1_din => grp_doubleur_do_split_fu_70_s1_din,
+        e_read => grp_doubleur_do_split_fu_62_e_read,
+        s1_din => grp_doubleur_do_split_fu_62_s1_din,
         s1_full_n => s1_full_n,
-        s1_write => grp_doubleur_do_split_fu_70_s1_write,
-        s2_din => grp_doubleur_do_split_fu_70_s2_din,
+        s1_write => grp_doubleur_do_split_fu_62_s1_write,
+        s2_din => grp_doubleur_do_split_fu_62_s2_din,
         s2_full_n => s2_full_n,
-        s2_write => grp_doubleur_do_split_fu_70_s2_write);
+        s2_write => grp_doubleur_do_split_fu_62_s2_write);
 
 
 
 
-    e_read <= grp_doubleur_do_split_fu_70_e_read;
-    s1_din <= grp_doubleur_do_split_fu_70_s1_din;
-    s1_write <= grp_doubleur_do_split_fu_70_s1_write;
-    s2_din <= grp_doubleur_do_split_fu_70_s2_din;
-    s2_write <= grp_doubleur_do_split_fu_70_s2_write;
+    e_read <= grp_doubleur_do_split_fu_62_e_read;
+    s1_din <= grp_doubleur_do_split_fu_62_s1_din;
+    s1_write <= grp_doubleur_do_split_fu_62_s1_write;
+    s2_din <= grp_doubleur_do_split_fu_62_s2_din;
+    s2_write <= grp_doubleur_do_split_fu_62_s2_write;
 end behav;

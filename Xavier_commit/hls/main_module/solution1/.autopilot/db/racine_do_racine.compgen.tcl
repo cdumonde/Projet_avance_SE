@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 73
+set id 65
 set name racine_fsqrt_32nsncg
 set corename simcore_fsqrt
 set op fsqrt
@@ -80,7 +80,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 75 \
+    id 67 \
     name racine_x \
     type other \
     dir O \
@@ -95,7 +95,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 76 \
+    id 68 \
     name e \
     type fifo \
     dir I \
@@ -110,7 +110,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 77 \
+    id 69 \
     name s \
     type fifo \
     dir O \

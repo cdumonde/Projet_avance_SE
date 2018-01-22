@@ -29981,4 +29981,4 @@ _ssdm_op_SpecExt("member_name", "to_split", &to_split);;
 
 
 
-doubleur ssdm_ins_doubleur_4_0("ssdm_dut");
+doubleur ssdm_ins_doubleur_7_0("ssdm_dut");

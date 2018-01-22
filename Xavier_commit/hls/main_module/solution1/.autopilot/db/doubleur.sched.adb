@@ -529,13 +529,13 @@
 				<sink_obj>37</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_26">
-				<id>274</id>
+				<id>270</id>
 				<edge_type>2</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>39</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_27">
-				<id>275</id>
+				<id>271</id>
 				<edge_type>2</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>36</sink_obj>

@@ -35,12 +35,12 @@ struct racine : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    racine_do_racine* grp_racine_do_racine_fu_66;
-    sc_signal< sc_lv<32> > grp_racine_do_racine_fu_66_racine_x;
-    sc_signal< sc_logic > grp_racine_do_racine_fu_66_racine_x_ap_vld;
-    sc_signal< sc_logic > grp_racine_do_racine_fu_66_e_read;
-    sc_signal< sc_lv<32> > grp_racine_do_racine_fu_66_s_din;
-    sc_signal< sc_logic > grp_racine_do_racine_fu_66_s_write;
+    racine_do_racine* grp_racine_do_racine_fu_58;
+    sc_signal< sc_lv<32> > grp_racine_do_racine_fu_58_racine_x;
+    sc_signal< sc_logic > grp_racine_do_racine_fu_58_racine_x_ap_vld;
+    sc_signal< sc_logic > grp_racine_do_racine_fu_58_e_read;
+    sc_signal< sc_lv<32> > grp_racine_do_racine_fu_58_s_din;
+    sc_signal< sc_logic > grp_racine_do_racine_fu_58_s_write;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const bool ap_const_boolean_1;

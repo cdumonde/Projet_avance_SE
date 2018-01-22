@@ -64,24 +64,24 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "doubleur_to_split", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_70", "Port" : "doubleur_to_split"}]},
+					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_62", "Port" : "doubleur_to_split"}]},
 			{"Name" : "clk", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_70", "Port" : "clk"}]},
+					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_62", "Port" : "clk"}]},
 			{"Name" : "reset", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_70", "Port" : "reset"}]},
+					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_62", "Port" : "reset"}]},
 			{"Name" : "e", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_70", "Port" : "e"}]},
+					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_62", "Port" : "e"}]},
 			{"Name" : "s1", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_70", "Port" : "s1"}]},
+					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_62", "Port" : "s1"}]},
 			{"Name" : "s2", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_70", "Port" : "s2"}]},
+					{"ID" : "1", "SubInstance" : "grp_doubleur_do_split_fu_62", "Port" : "s2"}]},
 			{"Name" : "doubleur_ssdm_thread_M_do_split", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_doubleur_do_split_fu_70", "Parent" : "0",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_doubleur_do_split_fu_62", "Parent" : "0",
 		"CDFG" : "doubleur_do_split",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"FunctionPipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",

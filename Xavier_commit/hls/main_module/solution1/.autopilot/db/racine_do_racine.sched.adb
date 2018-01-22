@@ -501,7 +501,7 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>tmp_4</name>
+						<name>tmp_1</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>282</lineNumber>
@@ -574,7 +574,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>tmp_4_cast2</name>
+						<name>tmp_1_cast2</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>282</lineNumber>
@@ -644,7 +644,7 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>tmp_5_cast1</name>
+						<name>tmp_2_cast1</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>340</lineNumber>
@@ -871,7 +871,7 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>tmp_7</name>
+						<name>tmp_3</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>285</lineNumber>
@@ -942,7 +942,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>tmp_7_cast</name>
+						<name>tmp_3_cast</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>285</lineNumber>
@@ -1224,7 +1224,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>tmp_9</name>
+						<name>tmp_4</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>285</lineNumber>
@@ -1436,7 +1436,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>tmp_12</name>
+						<name>tmp_15</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>288</lineNumber>
@@ -1508,7 +1508,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>tmp_6</name>
+						<name>tmp_s</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>288</lineNumber>
@@ -1578,7 +1578,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>tmp_5</name>
+						<name>tmp_2</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>288</lineNumber>
@@ -1936,7 +1936,7 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>tmp_13</name>
+						<name>tmp_16</name>
 						<fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
 						<fileDirectory>r:\builds\2017.3\nightly\2017_10_04_2018833\src\products</fileDirectory>
 						<lineNumber>317</lineNumber>
@@ -2290,7 +2290,7 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>tmp_s</name>
+						<name>tmp_6</name>
 						<fileName>src/modules/racine.cpp</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
 						<lineNumber>6</lineNumber>
@@ -2332,7 +2332,7 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>tmp_1</name>
+						<name>tmp_7</name>
 						<fileName>src/modules/racine.cpp</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
 						<lineNumber>7</lineNumber>
@@ -2419,7 +2419,7 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>tmp_2</name>
+						<name>tmp_8</name>
 						<fileName>src/modules/racine.cpp</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
 						<lineNumber>8</lineNumber>

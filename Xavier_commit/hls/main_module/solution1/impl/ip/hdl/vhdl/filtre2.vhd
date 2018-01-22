@@ -27,36 +27,26 @@ end;
 architecture behav of filtre2 is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "filtre2,hls_ip_2017_3,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100tcsg324-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.608000,HLS_SYN_LAT=24,HLS_SYN_TPT=none,HLS_SYN_MEM=4,HLS_SYN_DSP=25,HLS_SYN_FF=1885,HLS_SYN_LUT=1753}";
+    "filtre2,hls_ip_2017_3,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100tcsg324-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.608000,HLS_SYN_LAT=12,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=25,HLS_SYN_FF=2070,HLS_SYN_LUT=1703}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_boolean_1 : BOOLEAN := true;
 
-    signal filtre2_mem_x_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal filtre2_mem_y_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_y0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_y0_ap_vld : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_x0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_x0_ap_vld : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_x_address0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_x_ce0 : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_x_we0 : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_x_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_x_address1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_x_ce1 : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_x_we1 : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_x_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_y_address0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_y_ce0 : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_y_we0 : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_y_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_y_address1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_y_ce1 : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_y_we1 : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_filtre2_mem_y_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_e_read : STD_LOGIC;
-    signal grp_filtre2_do_filtre_fu_72_s_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_filtre2_do_filtre_fu_72_s_write : STD_LOGIC;
+    signal grp_filtre2_do_filtre_fu_64_filtre2_y0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_filtre2_do_filtre_fu_64_filtre2_y0_ap_vld : STD_LOGIC;
+    signal grp_filtre2_do_filtre_fu_64_filtre2_x0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_filtre2_do_filtre_fu_64_filtre2_x0_ap_vld : STD_LOGIC;
+    signal grp_filtre2_do_filtre_fu_64_filtre2_mem_x_address0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_filtre2_do_filtre_fu_64_filtre2_mem_x_ce0 : STD_LOGIC;
+    signal grp_filtre2_do_filtre_fu_64_filtre2_mem_x_we0 : STD_LOGIC;
+    signal grp_filtre2_do_filtre_fu_64_filtre2_mem_x_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_filtre2_do_filtre_fu_64_filtre2_mem_y_address0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_filtre2_do_filtre_fu_64_filtre2_mem_y_ce0 : STD_LOGIC;
+    signal grp_filtre2_do_filtre_fu_64_filtre2_mem_y_we0 : STD_LOGIC;
+    signal grp_filtre2_do_filtre_fu_64_filtre2_mem_y_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_filtre2_do_filtre_fu_64_e_read : STD_LOGIC;
+    signal grp_filtre2_do_filtre_fu_64_s_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_filtre2_do_filtre_fu_64_s_write : STD_LOGIC;
 
     component filtre2_do_filtre IS
     port (
@@ -70,20 +60,10 @@ architecture behav of filtre2 is
         filtre2_mem_x_ce0 : OUT STD_LOGIC;
         filtre2_mem_x_we0 : OUT STD_LOGIC;
         filtre2_mem_x_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        filtre2_mem_x_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        filtre2_mem_x_address1 : OUT STD_LOGIC_VECTOR (0 downto 0);
-        filtre2_mem_x_ce1 : OUT STD_LOGIC;
-        filtre2_mem_x_we1 : OUT STD_LOGIC;
-        filtre2_mem_x_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
         filtre2_mem_y_address0 : OUT STD_LOGIC_VECTOR (0 downto 0);
         filtre2_mem_y_ce0 : OUT STD_LOGIC;
         filtre2_mem_y_we0 : OUT STD_LOGIC;
         filtre2_mem_y_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        filtre2_mem_y_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        filtre2_mem_y_address1 : OUT STD_LOGIC_VECTOR (0 downto 0);
-        filtre2_mem_y_ce1 : OUT STD_LOGIC;
-        filtre2_mem_y_we1 : OUT STD_LOGIC;
-        filtre2_mem_y_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
         e_dout : IN STD_LOGIC_VECTOR (31 downto 0);
         e_empty_n : IN STD_LOGIC;
         e_read : OUT STD_LOGIC;
@@ -104,12 +84,7 @@ architecture behav of filtre2 is
         address0 : IN STD_LOGIC_VECTOR (0 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        address1 : IN STD_LOGIC_VECTOR (0 downto 0);
-        ce1 : IN STD_LOGIC;
-        we1 : IN STD_LOGIC;
-        d1 : IN STD_LOGIC_VECTOR (31 downto 0) );
+        d0 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
@@ -118,76 +93,56 @@ begin
     filtre2_mem_x_U : component filtre2_filtre2_mlbW
     generic map (
         DataWidth => 32,
-        AddressRange => 2,
+        AddressRange => 1,
         AddressWidth => 1)
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        address0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_address0,
-        ce0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_ce0,
-        we0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_we0,
-        d0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_d0,
-        q0 => filtre2_mem_x_q0,
-        address1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_address1,
-        ce1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_ce1,
-        we1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_we1,
-        d1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_d1);
+        address0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_x_address0,
+        ce0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_x_ce0,
+        we0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_x_we0,
+        d0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_x_d0);
 
     filtre2_mem_y_U : component filtre2_filtre2_mlbW
     generic map (
         DataWidth => 32,
-        AddressRange => 2,
+        AddressRange => 1,
         AddressWidth => 1)
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        address0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_address0,
-        ce0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_ce0,
-        we0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_we0,
-        d0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_d0,
-        q0 => filtre2_mem_y_q0,
-        address1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_address1,
-        ce1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_ce1,
-        we1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_we1,
-        d1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_d1);
+        address0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_y_address0,
+        ce0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_y_ce0,
+        we0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_y_we0,
+        d0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_y_d0);
 
-    grp_filtre2_do_filtre_fu_72 : component filtre2_do_filtre
+    grp_filtre2_do_filtre_fu_64 : component filtre2_do_filtre
     port map (
         ap_clk => clk,
         ap_rst => reset,
-        filtre2_y0 => grp_filtre2_do_filtre_fu_72_filtre2_y0,
-        filtre2_y0_ap_vld => grp_filtre2_do_filtre_fu_72_filtre2_y0_ap_vld,
-        filtre2_x0 => grp_filtre2_do_filtre_fu_72_filtre2_x0,
-        filtre2_x0_ap_vld => grp_filtre2_do_filtre_fu_72_filtre2_x0_ap_vld,
-        filtre2_mem_x_address0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_address0,
-        filtre2_mem_x_ce0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_ce0,
-        filtre2_mem_x_we0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_we0,
-        filtre2_mem_x_d0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_d0,
-        filtre2_mem_x_q0 => filtre2_mem_x_q0,
-        filtre2_mem_x_address1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_address1,
-        filtre2_mem_x_ce1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_ce1,
-        filtre2_mem_x_we1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_we1,
-        filtre2_mem_x_d1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_x_d1,
-        filtre2_mem_y_address0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_address0,
-        filtre2_mem_y_ce0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_ce0,
-        filtre2_mem_y_we0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_we0,
-        filtre2_mem_y_d0 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_d0,
-        filtre2_mem_y_q0 => filtre2_mem_y_q0,
-        filtre2_mem_y_address1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_address1,
-        filtre2_mem_y_ce1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_ce1,
-        filtre2_mem_y_we1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_we1,
-        filtre2_mem_y_d1 => grp_filtre2_do_filtre_fu_72_filtre2_mem_y_d1,
+        filtre2_y0 => grp_filtre2_do_filtre_fu_64_filtre2_y0,
+        filtre2_y0_ap_vld => grp_filtre2_do_filtre_fu_64_filtre2_y0_ap_vld,
+        filtre2_x0 => grp_filtre2_do_filtre_fu_64_filtre2_x0,
+        filtre2_x0_ap_vld => grp_filtre2_do_filtre_fu_64_filtre2_x0_ap_vld,
+        filtre2_mem_x_address0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_x_address0,
+        filtre2_mem_x_ce0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_x_ce0,
+        filtre2_mem_x_we0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_x_we0,
+        filtre2_mem_x_d0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_x_d0,
+        filtre2_mem_y_address0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_y_address0,
+        filtre2_mem_y_ce0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_y_ce0,
+        filtre2_mem_y_we0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_y_we0,
+        filtre2_mem_y_d0 => grp_filtre2_do_filtre_fu_64_filtre2_mem_y_d0,
         e_dout => e_dout,
         e_empty_n => e_empty_n,
-        e_read => grp_filtre2_do_filtre_fu_72_e_read,
-        s_din => grp_filtre2_do_filtre_fu_72_s_din,
+        e_read => grp_filtre2_do_filtre_fu_64_e_read,
+        s_din => grp_filtre2_do_filtre_fu_64_s_din,
         s_full_n => s_full_n,
-        s_write => grp_filtre2_do_filtre_fu_72_s_write);
+        s_write => grp_filtre2_do_filtre_fu_64_s_write);
 
 
 
 
-    e_read <= grp_filtre2_do_filtre_fu_72_e_read;
-    s_din <= grp_filtre2_do_filtre_fu_72_s_din;
-    s_write <= grp_filtre2_do_filtre_fu_72_s_write;
+    e_read <= grp_filtre2_do_filtre_fu_64_e_read;
+    s_din <= grp_filtre2_do_filtre_fu_64_s_din;
+    s_write <= grp_filtre2_do_filtre_fu_64_s_write;
 end behav;

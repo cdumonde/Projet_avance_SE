@@ -35,12 +35,12 @@ struct carre : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    carre_do_carre* grp_carre_do_carre_fu_66;
-    sc_signal< sc_lv<32> > grp_carre_do_carre_fu_66_carre_x;
-    sc_signal< sc_logic > grp_carre_do_carre_fu_66_carre_x_ap_vld;
-    sc_signal< sc_logic > grp_carre_do_carre_fu_66_e_read;
-    sc_signal< sc_lv<32> > grp_carre_do_carre_fu_66_s_din;
-    sc_signal< sc_logic > grp_carre_do_carre_fu_66_s_write;
+    carre_do_carre* grp_carre_do_carre_fu_58;
+    sc_signal< sc_lv<32> > grp_carre_do_carre_fu_58_carre_x;
+    sc_signal< sc_logic > grp_carre_do_carre_fu_58_carre_x_ap_vld;
+    sc_signal< sc_logic > grp_carre_do_carre_fu_58_e_read;
+    sc_signal< sc_lv<32> > grp_carre_do_carre_fu_58_s_din;
+    sc_signal< sc_logic > grp_carre_do_carre_fu_58_s_write;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const bool ap_const_boolean_1;

@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity filtre1_dadddsub_g8j is
     generic (
-        ID         : integer := 39;
+        ID         : integer := 31;
         NUM_STAGE  : integer := 6;
         din0_WIDTH : integer := 64;
         din1_WIDTH : integer := 64;
@@ -29,7 +29,7 @@ end entity;
 
 architecture arch of filtre1_dadddsub_g8j is
     --------------------- Component ---------------------
-    component top_level_ap_dadddsub_4_full_dsp_64 is
+    component uart_wrapper_ap_dadddsub_4_full_dsp_64 is
         port (
             aclk                    : in  std_logic;
             aclken                  : in  std_logic;
@@ -62,7 +62,7 @@ architecture arch of filtre1_dadddsub_g8j is
     signal dout_r    : std_logic_vector(dout_WIDTH-1 downto 0);
 begin
     --------------------- Instantiation -----------------
-    top_level_ap_dadddsub_4_full_dsp_64_u : component top_level_ap_dadddsub_4_full_dsp_64
+    uart_wrapper_ap_dadddsub_4_full_dsp_64_u : component uart_wrapper_ap_dadddsub_4_full_dsp_64
     port map (
         aclk                    => aclk,
         aclken                  => aclken,

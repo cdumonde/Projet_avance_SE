@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'racine'
 ================================================================
-* Date:           Thu Dec 21 14:59:28 2017
+* Date:           Wed Jan 17 14:58:11 2018
 
 * Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
 * Project:        main_module
@@ -38,7 +38,7 @@
         |                            |                  |  Latency  |  Interval | Pipeline|
         |          Instance          |      Module      | min | max | min | max |   Type  |
         +----------------------------+------------------+-----+-----+-----+-----+---------+
-        |grp_racine_do_racine_fu_66  |racine_do_racine  |   27|   27|   27|   27|   none  |
+        |grp_racine_do_racine_fu_58  |racine_do_racine  |   27|   27|   27|   27|   none  |
         +----------------------------+------------------+-----+-----+-----+-----+---------+
 
         * Loop: 
@@ -82,27 +82,27 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1> : 0.00ns
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %racine_x), !map !765"
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !769"
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !773"
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !777"
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !781"
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str112, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112) nounwind" [src/modules/racine.h:19]
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str112, i32 4, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, float* %e) nounwind" [src/modules/racine.h:19]
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [src/modules/racine.h:19]
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str1, i32 5, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, float* %s) nounwind" [src/modules/racine.h:19]
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @p_str136, [7 x i8]* @p_str136) nounwind" [src/modules/racine.h:20]
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %racine_x), !map !1933"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !1937"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !1941"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !1945"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !1949"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/racine.h:19]
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 4, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %e) nounwind" [src/modules/racine.h:19]
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/racine.h:19]
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 5, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %s) nounwind" [src/modules/racine.h:19]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @p_str33, [7 x i8]* @p_str33) nounwind" [src/modules/racine.h:20]
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%racine_ssdm_threa = load i1* @racine_ssdm_thread_M_do_racine, align 1" [src/modules/racine.h:21]
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "br i1 %racine_ssdm_threa, label %1, label %2" [src/modules/racine.h:21]
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([7 x i8]* @p_str136, i32 2, [10 x i8]* @p_str6142) nounwind" [src/modules/racine.h:21]
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([10 x i8]* @p_str6142, [4 x i8]* @p_str2138, i1* %clk, i32 1) nounwind" [src/modules/racine.h:22]
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([10 x i8]* @p_str6142, [6 x i8]* @p_str3139, i1* %reset, i32 3) nounwind" [src/modules/racine.h:23]
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str136, i32 0, [7 x i8]* @p_str1137, [4 x i8]* @p_str2138, i32 0, i32 0, i1* %clk) nounwind" [src/modules/racine.h:24]
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str136, i32 0, [7 x i8]* @p_str1137, [6 x i8]* @p_str3139, i32 0, i32 0, i1* %reset) nounwind" [src/modules/racine.h:25]
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str4140, i32 0, i32 0, [1 x i8]* @p_str5141, i32 0, i32 0, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141) nounwind" [src/modules/racine.h:26]
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str136, i32 4, [8 x i8]* @p_str14149, [2 x i8]* @p_str9145, i32 0, i32 0, float* %e) nounwind" [src/modules/racine.h:27]
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str4140, i32 0, i32 0, [1 x i8]* @p_str5141, i32 0, i32 0, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141) nounwind" [src/modules/racine.h:28]
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str136, i32 5, [8 x i8]* @p_str14149, [2 x i8]* @p_str10146, i32 0, i32 0, float* %s) nounwind" [src/modules/racine.h:29]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([7 x i8]* @p_str33, i32 2, [10 x i8]* @p_str52) nounwind" [src/modules/racine.h:21]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([10 x i8]* @p_str52, [4 x i8]* @p_str14, i1* %clk, i32 1) nounwind" [src/modules/racine.h:22]
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([10 x i8]* @p_str52, [6 x i8]* @p_str15, i1* %reset, i32 3) nounwind" [src/modules/racine.h:23]
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str33, i32 0, [7 x i8]* @p_str17, [4 x i8]* @p_str14, i32 0, i32 0, i1* %clk) nounwind" [src/modules/racine.h:24]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str33, i32 0, [7 x i8]* @p_str17, [6 x i8]* @p_str15, i32 0, i32 0, i1* %reset) nounwind" [src/modules/racine.h:25]
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/racine.h:26]
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str33, i32 4, [8 x i8]* @p_str41, [2 x i8]* @p_str21, i32 0, i32 0, float* %e) nounwind" [src/modules/racine.h:27]
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/racine.h:28]
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str33, i32 5, [8 x i8]* @p_str41, [2 x i8]* @p_str22, i32 0, i32 0, float* %s) nounwind" [src/modules/racine.h:29]
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "ret void" [src/modules/racine.h:22]
 ST_1 : Operation 25 [2/2] (0.00ns)   --->   "call void @"racine::do_racine"(float* %racine_x, i1* %clk, i1* %reset, float* %e, float* %s)" [src/modules/racine.h:21]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
@@ -240,7 +240,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str11"/></StgValue>
+<StgValue><ssdm name="p_str18"/></StgValue>
 </bind>
 </comp>
 
@@ -258,7 +258,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str112"/></StgValue>
+<StgValue><ssdm name="p_str19"/></StgValue>
 </bind>
 </comp>
 
@@ -285,7 +285,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -294,7 +294,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
 </bind>
 </comp>
 
@@ -303,7 +303,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="p_str33"/></StgValue>
 </bind>
 </comp>
 
@@ -312,7 +312,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecProcessDecl"/></StgValue>
 </bind>
 </comp>
 
@@ -321,7 +321,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str136"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -330,7 +330,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecProcessDecl"/></StgValue>
+<StgValue><ssdm name="p_str52"/></StgValue>
 </bind>
 </comp>
 
@@ -339,7 +339,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecSensitive"/></StgValue>
 </bind>
 </comp>
 
@@ -348,7 +348,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str6142"/></StgValue>
+<StgValue><ssdm name="p_str14"/></StgValue>
 </bind>
 </comp>
 
@@ -357,7 +357,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecSensitive"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -366,7 +366,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str2138"/></StgValue>
+<StgValue><ssdm name="p_str15"/></StgValue>
 </bind>
 </comp>
 
@@ -384,7 +384,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str3139"/></StgValue>
+<StgValue><ssdm name="p_str17"/></StgValue>
 </bind>
 </comp>
 
@@ -393,7 +393,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="p_str41"/></StgValue>
 </bind>
 </comp>
 
@@ -402,7 +402,7 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1137"/></StgValue>
+<StgValue><ssdm name="p_str21"/></StgValue>
 </bind>
 </comp>
 
@@ -411,64 +411,28 @@ StgValue_27       (unreachable    ) [ 000]
 <pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str4140"/></StgValue>
+<StgValue><ssdm name="p_str22"/></StgValue>
 </bind>
 </comp>
 
 <comp id="56" class="1001" name="const_56">
 <pin_list>
-<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str5141"/></StgValue>
-</bind>
-</comp>
-
-<comp id="58" class="1001" name="const_58">
-<pin_list>
-<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str14149"/></StgValue>
-</bind>
-</comp>
-
-<comp id="60" class="1001" name="const_60">
-<pin_list>
-<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str9145"/></StgValue>
-</bind>
-</comp>
-
-<comp id="62" class="1001" name="const_62">
-<pin_list>
-<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="p_str10146"/></StgValue>
-</bind>
-</comp>
-
-<comp id="64" class="1001" name="const_64">
-<pin_list>
-<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="racine::do_racine"/></StgValue>
 </bind>
 </comp>
 
-<comp id="66" class="1004" name="grp_racine_do_racine_fu_66">
+<comp id="58" class="1004" name="grp_racine_do_racine_fu_58">
 <pin_list>
-<pin id="67" dir="0" index="0" bw="0" slack="0"/>
-<pin id="68" dir="0" index="1" bw="32" slack="0"/>
-<pin id="69" dir="0" index="2" bw="1" slack="0"/>
-<pin id="70" dir="0" index="3" bw="1" slack="0"/>
-<pin id="71" dir="0" index="4" bw="32" slack="0"/>
-<pin id="72" dir="0" index="5" bw="32" slack="0"/>
-<pin id="73" dir="1" index="6" bw="0" slack="2147483647"/>
+<pin id="59" dir="0" index="0" bw="0" slack="0"/>
+<pin id="60" dir="0" index="1" bw="32" slack="0"/>
+<pin id="61" dir="0" index="2" bw="1" slack="0"/>
+<pin id="62" dir="0" index="3" bw="1" slack="0"/>
+<pin id="63" dir="0" index="4" bw="32" slack="0"/>
+<pin id="64" dir="0" index="5" bw="32" slack="0"/>
+<pin id="65" dir="1" index="6" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -476,10 +440,10 @@ StgValue_27       (unreachable    ) [ 000]
 </bind>
 </comp>
 
-<comp id="80" class="1004" name="racine_ssdm_threa_load_fu_80">
+<comp id="72" class="1004" name="racine_ssdm_threa_load_fu_72">
 <pin_list>
-<pin id="81" dir="0" index="0" bw="1" slack="0"/>
-<pin id="82" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="73" dir="0" index="0" bw="1" slack="0"/>
+<pin id="74" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -490,19 +454,19 @@ StgValue_27       (unreachable    ) [ 000]
 </comp_list>
 
 <net_list>
-<net id="74"><net_src comp="64" pin="0"/><net_sink comp="66" pin=0"/></net>
+<net id="66"><net_src comp="56" pin="0"/><net_sink comp="58" pin=0"/></net>
 
-<net id="75"><net_src comp="0" pin="0"/><net_sink comp="66" pin=1"/></net>
+<net id="67"><net_src comp="0" pin="0"/><net_sink comp="58" pin=1"/></net>
 
-<net id="76"><net_src comp="2" pin="0"/><net_sink comp="66" pin=2"/></net>
+<net id="68"><net_src comp="2" pin="0"/><net_sink comp="58" pin=2"/></net>
 
-<net id="77"><net_src comp="4" pin="0"/><net_sink comp="66" pin=3"/></net>
+<net id="69"><net_src comp="4" pin="0"/><net_sink comp="58" pin=3"/></net>
 
-<net id="78"><net_src comp="6" pin="0"/><net_sink comp="66" pin=4"/></net>
+<net id="70"><net_src comp="6" pin="0"/><net_sink comp="58" pin=4"/></net>
 
-<net id="79"><net_src comp="8" pin="0"/><net_sink comp="66" pin=5"/></net>
+<net id="71"><net_src comp="8" pin="0"/><net_sink comp="58" pin=5"/></net>
 
-<net id="83"><net_src comp="10" pin="0"/><net_sink comp="80" pin=0"/></net>
+<net id="75"><net_src comp="10" pin="0"/><net_sink comp="72" pin=0"/></net>
 
 </net_list>
 
@@ -530,7 +494,7 @@ StgValue_27       (unreachable    ) [ 000]
 |----------|----------------------------|---------|---------|---------|---------|
 | Operation|       Functional Unit      |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|----------------------------|---------|---------|---------|---------|
-|   call   | grp_racine_do_racine_fu_66 |    3    |  1.664  |   1111  |   1441  |
+|   call   | grp_racine_do_racine_fu_58 |    3    |  1.664  |   1111  |   1441  |
 |----------|----------------------------|---------|---------|---------|---------|
 |   Total  |                            |    3    |  1.664  |   1111  |   1441  |
 |----------|----------------------------|---------|---------|---------|---------|

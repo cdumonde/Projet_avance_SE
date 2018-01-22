@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -26,7 +27,7 @@ set_property webtalk.parent_dir Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3
 set_property parent.project_path Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_repo_paths y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/impl/ip [current_project]
+set_property ip_repo_paths y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/test_module [current_project]
 set_property ip_output_repo y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
@@ -34,8 +35,8 @@ read_vhdl -library xil_defaultlib {
   Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/uart_recv.vhd
   Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/rtl_uart_nexys_4/src/turbo_uart.vhd
 }
-read_ip -quiet y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/sources_1/ip/top_level_0_1/top_level_0.xci
-set_property used_in_implementation false [get_files -all y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/sources_1/ip/top_level_0_1/constraints/top_level_ooc.xdc]
+read_ip -quiet y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/sources_1/ip/uart_wrapper_0_4/uart_wrapper_0.xci
+set_property used_in_implementation false [get_files -all y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/sources_1/ip/uart_wrapper_0_4/constraints/uart_wrapper_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,6 +49,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/constrs_1/new/Nexys4_Master.xdc
 set_property used_in_implementation false [get_files Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/vivado/full_chain/full_chain.srcs/constrs_1/new/Nexys4_Master.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top turbo_uart -part xc7a100tcsg324-1
 

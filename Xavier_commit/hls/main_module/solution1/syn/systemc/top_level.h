@@ -11,8 +11,6 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "UartModIn.h"
-#include "UartModOut.h"
 #include "doubleur.h"
 #include "comparateur.h"
 #include "filtre1.h"
@@ -27,10 +25,10 @@ struct top_level : public sc_module {
     // Port declarations 8
     sc_in_clk clk;
     sc_in< sc_logic > reset;
-    sc_in< sc_lv<8> > e_dout;
+    sc_in< sc_lv<32> > e_dout;
     sc_in< sc_logic > e_empty_n;
     sc_out< sc_logic > e_read;
-    sc_out< sc_lv<8> > s_din;
+    sc_out< sc_lv<32> > s_din;
     sc_in< sc_logic > s_full_n;
     sc_out< sc_logic > s_write;
     sc_signal< sc_logic > ap_var_for_const0;
@@ -44,70 +42,57 @@ struct top_level : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    ofstream mHdltvinHandle;
-    ofstream mHdltvoutHandle;
-    UartModIn* grp_UartModIn_fu_236;
-    UartModOut* grp_UartModOut_fu_250;
-    doubleur* grp_doubleur_fu_264;
-    comparateur* grp_comparateur_fu_282;
-    carre* grp_carre_fu_326;
-    filtre2* grp_filtre2_fu_342;
-    racine* grp_racine_fu_364;
+    doubleur* grp_doubleur_fu_176;
+    comparateur* grp_comparateur_fu_194;
+    filtre1* grp_filtre1_fu_216;
+    carre* grp_carre_fu_238;
+    filtre2* grp_filtre2_fu_254;
+    racine* grp_racine_fu_276;
+    fifo_w32_d8192_A* fifo1_1_fifo_U;
     fifo_w32_d8192_A* fifo2_1_fifo_U;
-    fifo_w32_d8192_A* fifo1_12_fifo_U;
-    fifo_w32_d8192_A* fifo2_13_fifo_U;
     fifo_w32_d8192_A* fifo3_1_fifo_U;
     fifo_w32_d8192_A* fifo4_1_fifo_U;
     fifo_w32_d8192_A* doub1_1_fifo_U;
     fifo_w32_d8192_A* doub2_1_fifo_U;
-    sc_signal< sc_logic > grp_UartModIn_fu_236_e_read;
-    sc_signal< sc_lv<32> > grp_UartModIn_fu_236_s_din;
-    sc_signal< sc_logic > grp_UartModIn_fu_236_s_write;
-    sc_signal< sc_logic > grp_UartModOut_fu_250_e_read;
-    sc_signal< sc_lv<8> > grp_UartModOut_fu_250_s_din;
-    sc_signal< sc_logic > grp_UartModOut_fu_250_s_write;
-    sc_signal< sc_logic > grp_doubleur_fu_264_e_read;
-    sc_signal< sc_lv<32> > grp_doubleur_fu_264_s1_din;
-    sc_signal< sc_logic > grp_doubleur_fu_264_s1_write;
-    sc_signal< sc_lv<32> > grp_doubleur_fu_264_s2_din;
-    sc_signal< sc_logic > grp_doubleur_fu_264_s2_write;
-    sc_signal< sc_logic > grp_comparateur_fu_282_e1_read;
-    sc_signal< sc_logic > grp_comparateur_fu_282_e2_read;
-    sc_signal< sc_lv<32> > grp_comparateur_fu_282_s_din;
-    sc_signal< sc_logic > grp_comparateur_fu_282_s_write;
-    sc_signal< sc_logic > grp_filtre1_fu_304_e_read;
-    sc_signal< sc_lv<32> > grp_filtre1_fu_304_s_din;
-    sc_signal< sc_logic > grp_filtre1_fu_304_s_write;
-    sc_signal< sc_logic > grp_carre_fu_326_e_read;
-    sc_signal< sc_lv<32> > grp_carre_fu_326_s_din;
-    sc_signal< sc_logic > grp_carre_fu_326_s_write;
-    sc_signal< sc_logic > grp_filtre2_fu_342_e_read;
-    sc_signal< sc_lv<32> > grp_filtre2_fu_342_s_din;
-    sc_signal< sc_logic > grp_filtre2_fu_342_s_write;
-    sc_signal< sc_logic > grp_racine_fu_364_e_read;
-    sc_signal< sc_lv<32> > grp_racine_fu_364_s_din;
-    sc_signal< sc_logic > grp_racine_fu_364_s_write;
-    sc_signal< sc_logic > fifo1_12_full_n;
-    sc_signal< sc_lv<32> > fifo1_12_dout;
-    sc_signal< sc_logic > fifo1_12_empty_n;
+    sc_signal< sc_logic > grp_doubleur_fu_176_e_read;
+    sc_signal< sc_lv<32> > grp_doubleur_fu_176_s1_din;
+    sc_signal< sc_logic > grp_doubleur_fu_176_s1_write;
+    sc_signal< sc_lv<32> > grp_doubleur_fu_176_s2_din;
+    sc_signal< sc_logic > grp_doubleur_fu_176_s2_write;
+    sc_signal< sc_logic > grp_comparateur_fu_194_e1_read;
+    sc_signal< sc_logic > grp_comparateur_fu_194_e2_read;
+    sc_signal< sc_lv<32> > grp_comparateur_fu_194_s_din;
+    sc_signal< sc_logic > grp_comparateur_fu_194_s_write;
+    sc_signal< sc_logic > grp_filtre1_fu_216_e_read;
+    sc_signal< sc_lv<32> > grp_filtre1_fu_216_s_din;
+    sc_signal< sc_logic > grp_filtre1_fu_216_s_write;
+    sc_signal< sc_logic > grp_carre_fu_238_e_read;
+    sc_signal< sc_lv<32> > grp_carre_fu_238_s_din;
+    sc_signal< sc_logic > grp_carre_fu_238_s_write;
+    sc_signal< sc_logic > grp_filtre2_fu_254_e_read;
+    sc_signal< sc_lv<32> > grp_filtre2_fu_254_s_din;
+    sc_signal< sc_logic > grp_filtre2_fu_254_s_write;
+    sc_signal< sc_logic > grp_racine_fu_276_e_read;
+    sc_signal< sc_lv<32> > grp_racine_fu_276_s_din;
+    sc_signal< sc_logic > grp_racine_fu_276_s_write;
+    sc_signal< sc_logic > fifo1_1_full_n;
+    sc_signal< sc_lv<32> > fifo1_1_dout;
+    sc_signal< sc_logic > fifo1_1_empty_n;
     sc_signal< sc_logic > doub1_1_full_n;
     sc_signal< sc_lv<32> > doub1_1_dout;
     sc_signal< sc_logic > doub1_1_empty_n;
     sc_signal< sc_logic > doub2_1_full_n;
     sc_signal< sc_lv<32> > doub2_1_dout;
     sc_signal< sc_logic > doub2_1_empty_n;
-    sc_signal< sc_logic > fifo2_13_full_n;
-    sc_signal< sc_lv<32> > fifo2_13_dout;
-    sc_signal< sc_logic > fifo2_13_empty_n;
+    sc_signal< sc_logic > fifo2_1_full_n;
+    sc_signal< sc_lv<32> > fifo2_1_dout;
+    sc_signal< sc_logic > fifo2_1_empty_n;
     sc_signal< sc_logic > fifo3_1_full_n;
     sc_signal< sc_lv<32> > fifo3_1_dout;
     sc_signal< sc_logic > fifo3_1_empty_n;
     sc_signal< sc_logic > fifo4_1_full_n;
     sc_signal< sc_lv<32> > fifo4_1_dout;
     sc_signal< sc_logic > fifo4_1_empty_n;
-    sc_signal< sc_logic > fifo2_1_full_n;
-    sc_signal< sc_lv<32> > fifo2_1_dout;
-    sc_signal< sc_logic > fifo2_1_empty_n;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     // Thread declarations
@@ -115,7 +100,6 @@ struct top_level : public sc_module {
     void thread_e_read();
     void thread_s_din();
     void thread_s_write();
-    void thread_hdltv_gen();
 };
 
 }

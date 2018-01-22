@@ -30,29 +30,29 @@ output  [31:0] s_din;
 input   s_full_n;
 output   s_write;
 
-wire   [31:0] grp_racine_do_racine_fu_66_racine_x;
-wire    grp_racine_do_racine_fu_66_racine_x_ap_vld;
-wire    grp_racine_do_racine_fu_66_e_read;
-wire   [31:0] grp_racine_do_racine_fu_66_s_din;
-wire    grp_racine_do_racine_fu_66_s_write;
+wire   [31:0] grp_racine_do_racine_fu_58_racine_x;
+wire    grp_racine_do_racine_fu_58_racine_x_ap_vld;
+wire    grp_racine_do_racine_fu_58_e_read;
+wire   [31:0] grp_racine_do_racine_fu_58_s_din;
+wire    grp_racine_do_racine_fu_58_s_write;
 
-racine_do_racine grp_racine_do_racine_fu_66(
+racine_do_racine grp_racine_do_racine_fu_58(
     .ap_clk(clk),
     .ap_rst(reset),
-    .racine_x(grp_racine_do_racine_fu_66_racine_x),
-    .racine_x_ap_vld(grp_racine_do_racine_fu_66_racine_x_ap_vld),
+    .racine_x(grp_racine_do_racine_fu_58_racine_x),
+    .racine_x_ap_vld(grp_racine_do_racine_fu_58_racine_x_ap_vld),
     .e_dout(e_dout),
     .e_empty_n(e_empty_n),
-    .e_read(grp_racine_do_racine_fu_66_e_read),
-    .s_din(grp_racine_do_racine_fu_66_s_din),
+    .e_read(grp_racine_do_racine_fu_58_e_read),
+    .s_din(grp_racine_do_racine_fu_58_s_din),
     .s_full_n(s_full_n),
-    .s_write(grp_racine_do_racine_fu_66_s_write)
+    .s_write(grp_racine_do_racine_fu_58_s_write)
 );
 
-assign e_read = grp_racine_do_racine_fu_66_e_read;
+assign e_read = grp_racine_do_racine_fu_58_e_read;
 
-assign s_din = grp_racine_do_racine_fu_66_s_din;
+assign s_din = grp_racine_do_racine_fu_58_s_din;
 
-assign s_write = grp_racine_do_racine_fu_66_s_write;
+assign s_write = grp_racine_do_racine_fu_58_s_write;
 
 endmodule //racine

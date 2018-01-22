@@ -29931,8 +29931,8 @@ static bool __ssdm_thread_M_do_filtre;;
   private:
   float y0;
   float x0;
-  float mem_x[ 2 ];
-  float mem_y[ 2 ];
+  float mem_x[ 1 ];
+  float mem_y[ 1 ];
   public:
   sc_in < bool > clk;
   sc_in < bool > reset;
@@ -29990,7 +29990,7 @@ _ssdm_op_SpecExt("member_name", "mem_x", &mem_x);;
 _ssdm_op_SpecExt("member_name", "mem_y", &mem_y);;
                                           ;
 # 21 "src/modules/filtre2.cpp"
-for( int i = 0; i < 2; i++ ){
+for( int i = 0; i < 1; i++ ){
 
   mem_x[i] = 0;
   mem_y[i] = 0;
@@ -29999,7 +29999,7 @@ for( int i = 0; i < 2; i++ ){
 # 28 "src/modules/filtre2.cpp"
 {
 
-  for( int i = 0; i < 2; i++ ){
+  for( int i = 0; i < 1; i++ ){
 
    x0 = e.read();
 
@@ -30016,4 +30016,4 @@ for( int i = 0; i < 2; i++ ){
 
 
 
-filtre2 ssdm_ins_filtre2_6_0("ssdm_dut");
+filtre2 ssdm_ins_filtre2_5_0("ssdm_dut");

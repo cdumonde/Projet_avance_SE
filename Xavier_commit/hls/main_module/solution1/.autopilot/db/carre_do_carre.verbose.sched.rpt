@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'carre_do_carre'
 ================================================================
-* Date:           Thu Dec 21 14:59:05 2017
+* Date:           Wed Jan 17 14:57:43 2018
 
 * Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
 * Project:        main_module
@@ -93,41 +93,41 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1> : 0.00ns
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %carre_x), !map !765"
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !769"
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !773"
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !777"
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !781"
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([6 x i8]* @p_str31, i32 0, [7 x i8]* @p_str132, [4 x i8]* @p_str233, i32 0, i32 0, i1* %clk) nounwind" [src/modules/carre.cpp:4]
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([6 x i8]* @p_str31, i32 0, [7 x i8]* @p_str132, [6 x i8]* @p_str334, i32 0, i32 0, i1* %reset) nounwind" [src/modules/carre.cpp:5]
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str435, i32 0, i32 0, [1 x i8]* @p_str536, i32 0, i32 0, [1 x i8]* @p_str536, [1 x i8]* @p_str536, [1 x i8]* @p_str536, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str536, [1 x i8]* @p_str536) nounwind" [src/modules/carre.cpp:6]
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str435, i32 0, i32 0, [1 x i8]* @p_str536, i32 0, i32 0, [1 x i8]* @p_str536, [1 x i8]* @p_str536, [1 x i8]* @p_str536, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str536, [1 x i8]* @p_str536) nounwind" [src/modules/carre.cpp:7]
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([6 x i8]* @p_str31, i32 2, [9 x i8]* @p_str637) nounwind" [src/modules/carre.cpp:8]
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str738)" [src/modules/carre.cpp:8]
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str536) nounwind" [src/modules/carre.cpp:8]
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %carre_x), !map !1933"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !1937"
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !1941"
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !1945"
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !1949"
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([6 x i8]* @p_str281, i32 0, [7 x i8]* @p_str1282, [4 x i8]* @p_str2283, i32 0, i32 0, i1* %clk) nounwind" [src/modules/carre.cpp:4]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([6 x i8]* @p_str281, i32 0, [7 x i8]* @p_str1282, [6 x i8]* @p_str3284, i32 0, i32 0, i1* %reset) nounwind" [src/modules/carre.cpp:5]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str4285, i32 0, i32 0, [1 x i8]* @p_str5286, i32 0, i32 0, [1 x i8]* @p_str5286, [1 x i8]* @p_str5286, [1 x i8]* @p_str5286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5286, [1 x i8]* @p_str5286) nounwind" [src/modules/carre.cpp:6]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str4285, i32 0, i32 0, [1 x i8]* @p_str5286, i32 0, i32 0, [1 x i8]* @p_str5286, [1 x i8]* @p_str5286, [1 x i8]* @p_str5286, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5286, [1 x i8]* @p_str5286) nounwind" [src/modules/carre.cpp:7]
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([6 x i8]* @p_str281, i32 2, [9 x i8]* @p_str6287) nounwind" [src/modules/carre.cpp:8]
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str7288)" [src/modules/carre.cpp:8]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str5286) nounwind" [src/modules/carre.cpp:8]
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_ssdm_reset_v = call i32 (...)* @_ssdm_op_SpecStateBegin(i32 0, i32 0, i32 1) nounwind" [src/modules/carre.cpp:8]
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind" [src/modules/carre.cpp:14]
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str738, i32 %tmp_s)" [src/modules/carre.cpp:14]
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%empty_17 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str7288, i32 %tmp_s)" [src/modules/carre.cpp:14]
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "br label %1" [src/modules/carre.cpp:14]
 
  <State 2> : 3.91ns
 ST_2 : Operation 24 [1/1] (3.90ns)   --->   "%val = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %e)" [src/modules/carre.cpp:6]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
 
  <State 3> : 5.78ns
-ST_3 : Operation 25 [4/4] (5.78ns)   --->   "%tmp_6 = fmul float %val, %val" [src/modules/carre.cpp:7]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 25 [4/4] (5.78ns)   --->   "%tmp_11 = fmul float %val, %val" [src/modules/carre.cpp:7]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
  <State 4> : 5.78ns
-ST_4 : Operation 26 [3/4] (5.78ns)   --->   "%tmp_6 = fmul float %val, %val" [src/modules/carre.cpp:7]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 26 [3/4] (5.78ns)   --->   "%tmp_11 = fmul float %val, %val" [src/modules/carre.cpp:7]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
  <State 5> : 5.78ns
-ST_5 : Operation 27 [2/4] (5.78ns)   --->   "%tmp_6 = fmul float %val, %val" [src/modules/carre.cpp:7]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 27 [2/4] (5.78ns)   --->   "%tmp_11 = fmul float %val, %val" [src/modules/carre.cpp:7]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
  <State 6> : 5.78ns
-ST_6 : Operation 28 [1/4] (5.78ns)   --->   "%tmp_6 = fmul float %val, %val" [src/modules/carre.cpp:7]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 28 [1/4] (5.78ns)   --->   "%tmp_11 = fmul float %val, %val" [src/modules/carre.cpp:7]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
  <State 7> : 3.91ns
-ST_7 : Operation 29 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %carre_x, float %tmp_6)" [src/modules/carre.cpp:7]
-ST_7 : Operation 30 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* %s, float %tmp_6)" [src/modules/carre.cpp:8]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_7 : Operation 29 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %carre_x, float %tmp_11)" [src/modules/carre.cpp:7]
+ST_7 : Operation 30 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* %s, float %tmp_11)" [src/modules/carre.cpp:8]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
 ST_7 : Operation 31 [1/1] (0.00ns)   --->   "br label %1" [src/modules/carre.cpp:9]
 
 

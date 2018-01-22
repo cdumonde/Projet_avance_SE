@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'doubleur'
 ================================================================
-* Date:           Thu Dec 21 14:59:15 2017
+* Date:           Wed Jan 17 14:57:54 2018
 
 * Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
 * Project:        main_module
@@ -77,32 +77,32 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1> : 0.00ns
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %doubleur_to_split), !map !765"
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !769"
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !773"
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !777"
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s1), !map !781"
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s2), !map !785"
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str11, i32 0, i32 0, [1 x i8]* @p_str112, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str112) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str112, i32 4, [1 x i8]* @p_str112, [1 x i8]* @p_str112, i32 0, i32 0, float* %e) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str1, i32 5, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, float* %s1) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str1, i32 5, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, float* %s2) nounwind" [src/modules/doubleur.h:17]
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @p_str70, [9 x i8]* @p_str70) nounwind" [src/modules/doubleur.h:18]
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %doubleur_to_split), !map !1933"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !1937"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !1941"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !1945"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s1), !map !1949"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s2), !map !1953"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 4, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %e) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 5, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %s1) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([1 x i8]* @p_str19, i32 5, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, float* %s2) nounwind" [src/modules/doubleur.h:17]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @p_str62, [9 x i8]* @p_str62) nounwind" [src/modules/doubleur.h:18]
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%doubleur_ssdm_thr = load i1* @doubleur_ssdm_thread_M_do_split, align 1" [src/modules/doubleur.h:19]
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "br i1 %doubleur_ssdm_thr, label %1, label %2" [src/modules/doubleur.h:19]
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([9 x i8]* @p_str70, i32 2, [9 x i8]* @p_str676) nounwind" [src/modules/doubleur.h:19]
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([9 x i8]* @p_str676, [4 x i8]* @p_str272, i1* %clk, i32 1) nounwind" [src/modules/doubleur.h:20]
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([9 x i8]* @p_str676, [6 x i8]* @p_str373, i1* %reset, i32 3) nounwind" [src/modules/doubleur.h:21]
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 0, [7 x i8]* @p_str171, [4 x i8]* @p_str272, i32 0, i32 0, i1* %clk) nounwind" [src/modules/doubleur.h:22]
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 0, [7 x i8]* @p_str171, [6 x i8]* @p_str373, i32 0, i32 0, i1* %reset) nounwind" [src/modules/doubleur.h:23]
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.h:24]
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 4, [8 x i8]* @p_str15, [2 x i8]* @p_str979, i32 0, i32 0, float* %e) nounwind" [src/modules/doubleur.h:25]
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.h:26]
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 5, [8 x i8]* @p_str15, [3 x i8]* @p_str1080, i32 0, i32 0, float* %s1) nounwind" [src/modules/doubleur.h:27]
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.h:28]
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 5, [8 x i8]* @p_str15, [3 x i8]* @p_str1181, i32 0, i32 0, float* %s2) nounwind" [src/modules/doubleur.h:29]
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDecl([9 x i8]* @p_str62, i32 2, [9 x i8]* @p_str63) nounwind" [src/modules/doubleur.h:19]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([9 x i8]* @p_str63, [4 x i8]* @p_str14, i1* %clk, i32 1) nounwind" [src/modules/doubleur.h:20]
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecSensitive([9 x i8]* @p_str63, [6 x i8]* @p_str15, i1* %reset, i32 3) nounwind" [src/modules/doubleur.h:21]
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 0, [7 x i8]* @p_str17, [4 x i8]* @p_str14, i32 0, i32 0, i1* %clk) nounwind" [src/modules/doubleur.h:22]
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 0, [7 x i8]* @p_str17, [6 x i8]* @p_str15, i32 0, i32 0, i1* %reset) nounwind" [src/modules/doubleur.h:23]
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:24]
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 4, [8 x i8]* @p_str41, [2 x i8]* @p_str21, i32 0, i32 0, float* %e) nounwind" [src/modules/doubleur.h:25]
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:26]
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 5, [8 x i8]* @p_str41, [3 x i8]* @p_str64, i32 0, i32 0, float* %s1) nounwind" [src/modules/doubleur.h:27]
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str18, i32 0, i32 0, [1 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19, [1 x i8]* @p_str19, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str19, [1 x i8]* @p_str19) nounwind" [src/modules/doubleur.h:28]
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str62, i32 5, [8 x i8]* @p_str41, [3 x i8]* @p_str65, i32 0, i32 0, float* %s2) nounwind" [src/modules/doubleur.h:29]
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "ret void" [src/modules/doubleur.h:22]
 ST_1 : Operation 30 [2/2] (0.00ns)   --->   "call void @"doubleur::do_split"(float* %doubleur_to_split, i1* %clk, i1* %reset, float* %e, float* %s1, float* %s2)" [src/modules/doubleur.h:19]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 

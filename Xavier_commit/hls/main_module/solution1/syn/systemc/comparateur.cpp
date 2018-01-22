@@ -17,37 +17,37 @@ const sc_logic comparateur::ap_const_logic_0 = sc_dt::Log_0;
 const bool comparateur::ap_const_boolean_1 = true;
 
 comparateur::comparateur(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    grp_comparateur_do_comp_fu_74 = new comparateur_do_comp("grp_comparateur_do_comp_fu_74");
-    grp_comparateur_do_comp_fu_74->ap_clk(clk);
-    grp_comparateur_do_comp_fu_74->ap_rst(reset);
-    grp_comparateur_do_comp_fu_74->comparateur_in1(grp_comparateur_do_comp_fu_74_comparateur_in1);
-    grp_comparateur_do_comp_fu_74->comparateur_in1_ap_vld(grp_comparateur_do_comp_fu_74_comparateur_in1_ap_vld);
-    grp_comparateur_do_comp_fu_74->comparateur_seuil(grp_comparateur_do_comp_fu_74_comparateur_seuil);
-    grp_comparateur_do_comp_fu_74->comparateur_seuil_ap_vld(grp_comparateur_do_comp_fu_74_comparateur_seuil_ap_vld);
-    grp_comparateur_do_comp_fu_74->comparateur_result(grp_comparateur_do_comp_fu_74_comparateur_result);
-    grp_comparateur_do_comp_fu_74->comparateur_result_ap_vld(grp_comparateur_do_comp_fu_74_comparateur_result_ap_vld);
-    grp_comparateur_do_comp_fu_74->e1_dout(e1_dout);
-    grp_comparateur_do_comp_fu_74->e1_empty_n(e1_empty_n);
-    grp_comparateur_do_comp_fu_74->e1_read(grp_comparateur_do_comp_fu_74_e1_read);
-    grp_comparateur_do_comp_fu_74->e2_dout(e2_dout);
-    grp_comparateur_do_comp_fu_74->e2_empty_n(e2_empty_n);
-    grp_comparateur_do_comp_fu_74->e2_read(grp_comparateur_do_comp_fu_74_e2_read);
-    grp_comparateur_do_comp_fu_74->s_din(grp_comparateur_do_comp_fu_74_s_din);
-    grp_comparateur_do_comp_fu_74->s_full_n(s_full_n);
-    grp_comparateur_do_comp_fu_74->s_write(grp_comparateur_do_comp_fu_74_s_write);
+    grp_comparateur_do_comp_fu_66 = new comparateur_do_comp("grp_comparateur_do_comp_fu_66");
+    grp_comparateur_do_comp_fu_66->ap_clk(clk);
+    grp_comparateur_do_comp_fu_66->ap_rst(reset);
+    grp_comparateur_do_comp_fu_66->comparateur_in1(grp_comparateur_do_comp_fu_66_comparateur_in1);
+    grp_comparateur_do_comp_fu_66->comparateur_in1_ap_vld(grp_comparateur_do_comp_fu_66_comparateur_in1_ap_vld);
+    grp_comparateur_do_comp_fu_66->comparateur_seuil(grp_comparateur_do_comp_fu_66_comparateur_seuil);
+    grp_comparateur_do_comp_fu_66->comparateur_seuil_ap_vld(grp_comparateur_do_comp_fu_66_comparateur_seuil_ap_vld);
+    grp_comparateur_do_comp_fu_66->comparateur_result(grp_comparateur_do_comp_fu_66_comparateur_result);
+    grp_comparateur_do_comp_fu_66->comparateur_result_ap_vld(grp_comparateur_do_comp_fu_66_comparateur_result_ap_vld);
+    grp_comparateur_do_comp_fu_66->e1_dout(e1_dout);
+    grp_comparateur_do_comp_fu_66->e1_empty_n(e1_empty_n);
+    grp_comparateur_do_comp_fu_66->e1_read(grp_comparateur_do_comp_fu_66_e1_read);
+    grp_comparateur_do_comp_fu_66->e2_dout(e2_dout);
+    grp_comparateur_do_comp_fu_66->e2_empty_n(e2_empty_n);
+    grp_comparateur_do_comp_fu_66->e2_read(grp_comparateur_do_comp_fu_66_e2_read);
+    grp_comparateur_do_comp_fu_66->s_din(grp_comparateur_do_comp_fu_66_s_din);
+    grp_comparateur_do_comp_fu_66->s_full_n(s_full_n);
+    grp_comparateur_do_comp_fu_66->s_write(grp_comparateur_do_comp_fu_66_s_write);
 
     SC_METHOD(thread_e1_read);
-    sensitive << ( grp_comparateur_do_comp_fu_74_e1_read );
+    sensitive << ( grp_comparateur_do_comp_fu_66_e1_read );
 
     SC_METHOD(thread_e2_read);
-    sensitive << ( grp_comparateur_do_comp_fu_74_e2_read );
+    sensitive << ( grp_comparateur_do_comp_fu_66_e2_read );
 
     SC_METHOD(thread_s_din);
-    sensitive << ( grp_comparateur_do_comp_fu_74_s_din );
-    sensitive << ( grp_comparateur_do_comp_fu_74_s_write );
+    sensitive << ( grp_comparateur_do_comp_fu_66_s_din );
+    sensitive << ( grp_comparateur_do_comp_fu_66_s_write );
 
     SC_METHOD(thread_s_write);
-    sensitive << ( grp_comparateur_do_comp_fu_74_s_write );
+    sensitive << ( grp_comparateur_do_comp_fu_66_s_write );
 
     static int apTFileNum = 0;
     stringstream apTFilenSS;
@@ -70,16 +70,16 @@ comparateur::comparateur(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, s_write, "(port)s_write");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_comparateur_in1, "grp_comparateur_do_comp_fu_74_comparateur_in1");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_comparateur_in1_ap_vld, "grp_comparateur_do_comp_fu_74_comparateur_in1_ap_vld");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_comparateur_seuil, "grp_comparateur_do_comp_fu_74_comparateur_seuil");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_comparateur_seuil_ap_vld, "grp_comparateur_do_comp_fu_74_comparateur_seuil_ap_vld");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_comparateur_result, "grp_comparateur_do_comp_fu_74_comparateur_result");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_comparateur_result_ap_vld, "grp_comparateur_do_comp_fu_74_comparateur_result_ap_vld");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_e1_read, "grp_comparateur_do_comp_fu_74_e1_read");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_e2_read, "grp_comparateur_do_comp_fu_74_e2_read");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_s_din, "grp_comparateur_do_comp_fu_74_s_din");
-    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_74_s_write, "grp_comparateur_do_comp_fu_74_s_write");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_comparateur_in1, "grp_comparateur_do_comp_fu_66_comparateur_in1");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_comparateur_in1_ap_vld, "grp_comparateur_do_comp_fu_66_comparateur_in1_ap_vld");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_comparateur_seuil, "grp_comparateur_do_comp_fu_66_comparateur_seuil");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_comparateur_seuil_ap_vld, "grp_comparateur_do_comp_fu_66_comparateur_seuil_ap_vld");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_comparateur_result, "grp_comparateur_do_comp_fu_66_comparateur_result");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_comparateur_result_ap_vld, "grp_comparateur_do_comp_fu_66_comparateur_result_ap_vld");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_e1_read, "grp_comparateur_do_comp_fu_66_e1_read");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_e2_read, "grp_comparateur_do_comp_fu_66_e2_read");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_s_din, "grp_comparateur_do_comp_fu_66_s_din");
+    sc_trace(mVcdFile, grp_comparateur_do_comp_fu_66_s_write, "grp_comparateur_do_comp_fu_66_s_write");
 #endif
 
     }
@@ -89,23 +89,23 @@ comparateur::~comparateur() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete grp_comparateur_do_comp_fu_74;
+    delete grp_comparateur_do_comp_fu_66;
 }
 
 void comparateur::thread_e1_read() {
-    e1_read = grp_comparateur_do_comp_fu_74_e1_read.read();
+    e1_read = grp_comparateur_do_comp_fu_66_e1_read.read();
 }
 
 void comparateur::thread_e2_read() {
-    e2_read = grp_comparateur_do_comp_fu_74_e2_read.read();
+    e2_read = grp_comparateur_do_comp_fu_66_e2_read.read();
 }
 
 void comparateur::thread_s_din() {
-    s_din = grp_comparateur_do_comp_fu_74_s_din.read();
+    s_din = grp_comparateur_do_comp_fu_66_s_din.read();
 }
 
 void comparateur::thread_s_write() {
-    s_write = grp_comparateur_do_comp_fu_74_s_write.read();
+    s_write = grp_comparateur_do_comp_fu_66_s_write.read();
 }
 
 }

@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../ipstatic/hdl/vhdl/carre.vhd" \
+"../../../ipstatic/hdl/vhdl/carre_do_carre.vhd" \
+"../../../ipstatic/hdl/vhdl/carre_fmul_32ns_3bkb.vhd" \
+"../../../ipstatic/hdl/vhdl/fifo_w32_d192_A.vhd" \
+"../../../ipstatic/hdl/vhdl/uart_wrapper_do_action1.vhd" \
+"../../../ipstatic/hdl/vhdl/uart_wrapper_do_action2.vhd" \
+"../../../ipstatic/hdl/vhdl/uart_wrapper.vhd" \
+"../../../ipstatic/hdl/ip/uart_wrapper_ap_fmul_2_max_dsp_32.vhd" \
+"../../../../full_chain.srcs/sources_1/ip/uart_wrapper_0_2/sim/uart_wrapper_0.vhd" \
+
+nosort

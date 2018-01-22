@@ -30,11 +30,11 @@ architecture behav of racine is
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_boolean_1 : BOOLEAN := true;
 
-    signal grp_racine_do_racine_fu_66_racine_x : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_racine_do_racine_fu_66_racine_x_ap_vld : STD_LOGIC;
-    signal grp_racine_do_racine_fu_66_e_read : STD_LOGIC;
-    signal grp_racine_do_racine_fu_66_s_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_racine_do_racine_fu_66_s_write : STD_LOGIC;
+    signal grp_racine_do_racine_fu_58_racine_x : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_racine_do_racine_fu_58_racine_x_ap_vld : STD_LOGIC;
+    signal grp_racine_do_racine_fu_58_e_read : STD_LOGIC;
+    signal grp_racine_do_racine_fu_58_s_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_racine_do_racine_fu_58_s_write : STD_LOGIC;
 
     component racine_do_racine IS
     port (
@@ -53,23 +53,23 @@ architecture behav of racine is
 
 
 begin
-    grp_racine_do_racine_fu_66 : component racine_do_racine
+    grp_racine_do_racine_fu_58 : component racine_do_racine
     port map (
         ap_clk => clk,
         ap_rst => reset,
-        racine_x => grp_racine_do_racine_fu_66_racine_x,
-        racine_x_ap_vld => grp_racine_do_racine_fu_66_racine_x_ap_vld,
+        racine_x => grp_racine_do_racine_fu_58_racine_x,
+        racine_x_ap_vld => grp_racine_do_racine_fu_58_racine_x_ap_vld,
         e_dout => e_dout,
         e_empty_n => e_empty_n,
-        e_read => grp_racine_do_racine_fu_66_e_read,
-        s_din => grp_racine_do_racine_fu_66_s_din,
+        e_read => grp_racine_do_racine_fu_58_e_read,
+        s_din => grp_racine_do_racine_fu_58_s_din,
         s_full_n => s_full_n,
-        s_write => grp_racine_do_racine_fu_66_s_write);
+        s_write => grp_racine_do_racine_fu_58_s_write);
 
 
 
 
-    e_read <= grp_racine_do_racine_fu_66_e_read;
-    s_din <= grp_racine_do_racine_fu_66_s_din;
-    s_write <= grp_racine_do_racine_fu_66_s_write;
+    e_read <= grp_racine_do_racine_fu_58_e_read;
+    s_din <= grp_racine_do_racine_fu_58_s_din;
+    s_write <= grp_racine_do_racine_fu_58_s_write;
 end behav;

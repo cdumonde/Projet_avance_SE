@@ -10,7 +10,7 @@
 
 module carre_fmul_32ns_3bkb
 #(parameter
-    ID         = 9,
+    ID         = 1,
     NUM_STAGE  = 4,
     din0_WIDTH = 32,
     din1_WIDTH = 32,
@@ -38,7 +38,7 @@ reg                   ce_r;
 wire [dout_WIDTH-1:0] dout_i;
 reg  [dout_WIDTH-1:0] dout_r;
 //------------------------Instantiation------------------
-top_level_ap_fmul_2_max_dsp_32 top_level_ap_fmul_2_max_dsp_32_u (
+uart_wrapper_ap_fmul_2_max_dsp_32 uart_wrapper_ap_fmul_2_max_dsp_32_u (
     .aclk                 ( aclk ),
     .aclken               ( aclken ),
     .s_axis_a_tvalid      ( a_tvalid ),

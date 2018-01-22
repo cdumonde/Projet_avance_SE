@@ -38,7 +38,7 @@ struct carre_do_carre : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    carre_fmul_32ns_3bkb<1,4,32,32,32>* carre_fmul_32ns_3bkb_U9;
+    carre_fmul_32ns_3bkb<1,4,32,32,32>* carre_fmul_32ns_3bkb_U1;
     sc_signal< sc_logic > e_blk_n;
     sc_signal< sc_lv<7> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state2;
@@ -46,7 +46,7 @@ struct carre_do_carre : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state7;
     sc_signal< sc_lv<32> > val_reg_80;
     sc_signal< sc_lv<32> > grp_fu_76_p2;
-    sc_signal< sc_lv<32> > tmp_6_reg_86;
+    sc_signal< sc_lv<32> > tmp_11_reg_86;
     sc_signal< sc_logic > ap_CS_fsm_state6;
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<7> > ap_NS_fsm;

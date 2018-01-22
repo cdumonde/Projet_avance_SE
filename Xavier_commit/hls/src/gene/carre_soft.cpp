@@ -9,7 +9,7 @@ void carre_soft::do_carre(){
 
 	HANDLE hComm;
 
-	    hComm = CreateFile("COM4",
+	    hComm = CreateFile("COM5",
 	    				GENERIC_READ | GENERIC_WRITE, // Read/Write
 	                    0,                            // No Sharing
 	                    NULL,                         // No Security
@@ -41,20 +41,22 @@ void carre_soft::do_carre(){
 	        buffer0 = e.read();
 	        cout << buffer0 << endl;
 	        int wBytes = WriteFile( hComm, &buffer0, sizeof(float), &dNoOfBytesWritten, NULL);
+	        cout << "avant assert" << endl;
 	        assert( dNoOfBytesWritten == (sizeof(float)) );
-	        buffer0 = e.read();
-	        cout << buffer0 << endl;
-	        wBytes = WriteFile( hComm, &buffer0, sizeof(float), &dNoOfBytesWritten, NULL);
-			assert( dNoOfBytesWritten == (sizeof(float)) );
+	        cout << "apres assert" << endl;
+	  //       buffer0 = e.read();
+	  //       cout << buffer0 << endl;
+	  //       wBytes = WriteFile( hComm, &buffer0, sizeof(float), &dNoOfBytesWritten, NULL);
+			// assert( dNoOfBytesWritten == (sizeof(float)) );
 
 	        SetCommMask(hComm, EV_RXCHAR);
 	        DWORD dwEventMask;
 	        WaitCommEvent(hComm, &dwEventMask, NULL);
 	        ReadFile( hComm, &buffer1, sizeof(float), &NoBytesRead, NULL);
 	        s.write( buffer1 );
-	        WaitCommEvent(hComm, &dwEventMask, NULL);
-			ReadFile( hComm, &buffer1, sizeof(float), &NoBytesRead, NULL);
-			s.write( buffer1 );
+	  //       WaitCommEvent(hComm, &dwEventMask, NULL);
+			// ReadFile( hComm, &buffer1, sizeof(float), &NoBytesRead, NULL);
+			// s.write( buffer1 );
 	    }
 
 }

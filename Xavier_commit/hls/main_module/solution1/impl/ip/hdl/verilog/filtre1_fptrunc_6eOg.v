@@ -10,7 +10,7 @@
 
 module filtre1_fptrunc_6eOg
 #(parameter
-    ID         = 36,
+    ID         = 28,
     NUM_STAGE  = 1,
     din0_WIDTH = 64,
     dout_WIDTH = 32
@@ -24,7 +24,7 @@ wire [63:0] a_tdata;
 wire        r_tvalid;
 wire [31:0] r_tdata;
 //------------------------Instantiation------------------
-top_level_ap_fptrunc_0_no_dsp_64 top_level_ap_fptrunc_0_no_dsp_64_u (
+uart_wrapper_ap_fptrunc_0_no_dsp_64 uart_wrapper_ap_fptrunc_0_no_dsp_64_u (
     .s_axis_a_tvalid      ( a_tvalid ),
     .s_axis_a_tdata       ( a_tdata ),
     .m_axis_result_tvalid ( r_tvalid ),

@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity comparateur_fcmp_dEe is
     generic (
-        ID         : integer := 17;
+        ID         : integer := 9;
         NUM_STAGE  : integer := 1;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;
@@ -26,7 +26,7 @@ end entity;
 
 architecture arch of comparateur_fcmp_dEe is
     --------------------- Component ---------------------
-    component top_level_ap_fcmp_0_no_dsp_32 is
+    component uart_wrapper_ap_fcmp_0_no_dsp_32 is
         port (
             s_axis_a_tvalid         : in  std_logic;
             s_axis_a_tdata          : in  std_logic_vector(31 downto 0);
@@ -66,7 +66,7 @@ architecture arch of comparateur_fcmp_dEe is
     signal r_tdata   : std_logic_vector(7 downto 0);
 begin
     --------------------- Instantiation -----------------
-    top_level_ap_fcmp_0_no_dsp_32_u : component top_level_ap_fcmp_0_no_dsp_32
+    uart_wrapper_ap_fcmp_0_no_dsp_32_u : component uart_wrapper_ap_fcmp_0_no_dsp_32
     port map (
         s_axis_a_tvalid         => a_tvalid,
         s_axis_a_tdata          => a_tdata,

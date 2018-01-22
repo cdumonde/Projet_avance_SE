@@ -36,38 +36,38 @@ output  [31:0] s2_din;
 input   s2_full_n;
 output   s2_write;
 
-wire   [31:0] grp_doubleur_do_split_fu_70_doubleur_to_split;
-wire    grp_doubleur_do_split_fu_70_doubleur_to_split_ap_vld;
-wire    grp_doubleur_do_split_fu_70_e_read;
-wire   [31:0] grp_doubleur_do_split_fu_70_s1_din;
-wire    grp_doubleur_do_split_fu_70_s1_write;
-wire   [31:0] grp_doubleur_do_split_fu_70_s2_din;
-wire    grp_doubleur_do_split_fu_70_s2_write;
+wire   [31:0] grp_doubleur_do_split_fu_62_doubleur_to_split;
+wire    grp_doubleur_do_split_fu_62_doubleur_to_split_ap_vld;
+wire    grp_doubleur_do_split_fu_62_e_read;
+wire   [31:0] grp_doubleur_do_split_fu_62_s1_din;
+wire    grp_doubleur_do_split_fu_62_s1_write;
+wire   [31:0] grp_doubleur_do_split_fu_62_s2_din;
+wire    grp_doubleur_do_split_fu_62_s2_write;
 
-doubleur_do_split grp_doubleur_do_split_fu_70(
+doubleur_do_split grp_doubleur_do_split_fu_62(
     .ap_clk(clk),
     .ap_rst(reset),
-    .doubleur_to_split(grp_doubleur_do_split_fu_70_doubleur_to_split),
-    .doubleur_to_split_ap_vld(grp_doubleur_do_split_fu_70_doubleur_to_split_ap_vld),
+    .doubleur_to_split(grp_doubleur_do_split_fu_62_doubleur_to_split),
+    .doubleur_to_split_ap_vld(grp_doubleur_do_split_fu_62_doubleur_to_split_ap_vld),
     .e_dout(e_dout),
     .e_empty_n(e_empty_n),
-    .e_read(grp_doubleur_do_split_fu_70_e_read),
-    .s1_din(grp_doubleur_do_split_fu_70_s1_din),
+    .e_read(grp_doubleur_do_split_fu_62_e_read),
+    .s1_din(grp_doubleur_do_split_fu_62_s1_din),
     .s1_full_n(s1_full_n),
-    .s1_write(grp_doubleur_do_split_fu_70_s1_write),
-    .s2_din(grp_doubleur_do_split_fu_70_s2_din),
+    .s1_write(grp_doubleur_do_split_fu_62_s1_write),
+    .s2_din(grp_doubleur_do_split_fu_62_s2_din),
     .s2_full_n(s2_full_n),
-    .s2_write(grp_doubleur_do_split_fu_70_s2_write)
+    .s2_write(grp_doubleur_do_split_fu_62_s2_write)
 );
 
-assign e_read = grp_doubleur_do_split_fu_70_e_read;
+assign e_read = grp_doubleur_do_split_fu_62_e_read;
 
-assign s1_din = grp_doubleur_do_split_fu_70_s1_din;
+assign s1_din = grp_doubleur_do_split_fu_62_s1_din;
 
-assign s1_write = grp_doubleur_do_split_fu_70_s1_write;
+assign s1_write = grp_doubleur_do_split_fu_62_s1_write;
 
-assign s2_din = grp_doubleur_do_split_fu_70_s2_din;
+assign s2_din = grp_doubleur_do_split_fu_62_s2_din;
 
-assign s2_write = grp_doubleur_do_split_fu_70_s2_write;
+assign s2_write = grp_doubleur_do_split_fu_62_s2_write;
 
 endmodule //doubleur

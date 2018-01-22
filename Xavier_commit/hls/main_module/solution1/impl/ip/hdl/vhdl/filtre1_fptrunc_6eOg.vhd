@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity filtre1_fptrunc_6eOg is
     generic (
-        ID         : integer := 36;
+        ID         : integer := 28;
         NUM_STAGE  : integer := 1;
         din0_WIDTH : integer := 64;
         dout_WIDTH : integer := 32
@@ -23,7 +23,7 @@ end entity;
 
 architecture arch of filtre1_fptrunc_6eOg is
     --------------------- Component ---------------------
-    component top_level_ap_fptrunc_0_no_dsp_64 is
+    component uart_wrapper_ap_fptrunc_0_no_dsp_64 is
         port (
             s_axis_a_tvalid      : in  std_logic;
             s_axis_a_tdata       : in  std_logic_vector(63 downto 0);
@@ -38,7 +38,7 @@ architecture arch of filtre1_fptrunc_6eOg is
     signal r_tdata  : std_logic_vector(31 downto 0);
 begin
     --------------------- Instantiation -----------------
-    top_level_ap_fptrunc_0_no_dsp_64_u : component top_level_ap_fptrunc_0_no_dsp_64
+    uart_wrapper_ap_fptrunc_0_no_dsp_64_u : component uart_wrapper_ap_fptrunc_0_no_dsp_64
     port map (
         s_axis_a_tvalid      => a_tvalid,
         s_axis_a_tdata       => a_tdata,

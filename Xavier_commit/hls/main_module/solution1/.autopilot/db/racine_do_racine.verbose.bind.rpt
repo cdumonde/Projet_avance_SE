@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'racine_do_racine'
 ================================================================
-* Date:           Thu Dec 21 14:59:27 2017
+* Date:           Wed Jan 17 14:58:09 2018
 
 * Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
 * Project:        main_module
@@ -133,21 +133,21 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1> : 0.00ns
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %racine_x), !map !765"
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !769"
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !773"
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !777"
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !781"
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str136, i32 0, [7 x i8]* @p_str1137, [4 x i8]* @p_str2138, i32 0, i32 0, i1* %clk) nounwind" [src/modules/racine.cpp:4]
-ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str136, i32 0, [7 x i8]* @p_str1137, [6 x i8]* @p_str3139, i32 0, i32 0, i1* %reset) nounwind" [src/modules/racine.cpp:5]
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str4140, i32 0, i32 0, [1 x i8]* @p_str5141, i32 0, i32 0, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141) nounwind" [src/modules/racine.cpp:6]
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str4140, i32 0, i32 0, [1 x i8]* @p_str5141, i32 0, i32 0, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5141, [1 x i8]* @p_str5141) nounwind" [src/modules/racine.cpp:7]
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([7 x i8]* @p_str136, i32 2, [10 x i8]* @p_str6142) nounwind" [src/modules/racine.cpp:8]
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str7143)" [src/modules/racine.cpp:8]
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str5141) nounwind" [src/modules/racine.cpp:8]
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %racine_x), !map !1933"
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !1937"
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !1941"
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !1945"
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s), !map !1949"
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str147, i32 0, [7 x i8]* @p_str1, [4 x i8]* @p_str2148, i32 0, i32 0, i1* %clk) nounwind" [src/modules/racine.cpp:4]
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([7 x i8]* @p_str147, i32 0, [7 x i8]* @p_str1, [6 x i8]* @p_str3, i32 0, i32 0, i1* %reset) nounwind" [src/modules/racine.cpp:5]
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5) nounwind" [src/modules/racine.cpp:6]
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s, [8 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5, [1 x i8]* @p_str5, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5, [1 x i8]* @p_str5) nounwind" [src/modules/racine.cpp:7]
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([7 x i8]* @p_str147, i32 2, [10 x i8]* @p_str6) nounwind" [src/modules/racine.cpp:8]
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str7)" [src/modules/racine.cpp:8]
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str5) nounwind" [src/modules/racine.cpp:8]
 ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%p_ssdm_reset_v = call i32 (...)* @_ssdm_op_SpecStateBegin(i32 0, i32 0, i32 1) nounwind" [src/modules/racine.cpp:8]
 ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind" [src/modules/racine.cpp:14]
-ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str7143, i32 %tmp)" [src/modules/racine.cpp:14]
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str7, i32 %tmp)" [src/modules/racine.cpp:14]
 ST_1 : Operation 43 [1/1] (0.00ns)   --->   "br label %"operator<<.exit.i"" [src/modules/racine.cpp:14]
 
  <State 2> : 3.91ns
@@ -158,103 +158,103 @@ ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%p_Val2_s = bitcast float %val to i
 ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %p_Val2_s, i32 31)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:320->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:280->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
 ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%loc_V = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_s, i32 23, i32 30)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:318->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:320->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:280->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
 ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%loc_V_1 = trunc i32 %p_Val2_s to i23" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:319->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:320->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:280->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_4 = call i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1(i1 true, i23 %loc_V_1, i1 false)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:282->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_4_cast2 = zext i25 %tmp_4 to i79" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:282->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_5_cast1 = zext i8 %loc_V to i9" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:340->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 52 [1/1] (2.11ns)   --->   "%sh_assign = add i9 -127, %tmp_5_cast1" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:340->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_1 = call i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1(i1 true, i23 %loc_V_1, i1 false)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:282->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_3 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_1_cast2 = zext i25 %tmp_1 to i79" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:282->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_2_cast1 = zext i8 %loc_V to i9" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:340->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_3 : Operation 52 [1/1] (2.11ns)   --->   "%sh_assign = add i9 -127, %tmp_2_cast1" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h:340->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%isNeg = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign, i32 8)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 54 [1/1] (2.11ns)   --->   "%tmp_7 = sub i8 127, %loc_V" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_7_cast = sext i8 %tmp_7 to i9" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 56 [1/1] (1.37ns)   --->   "%sh_assign_1 = select i1 %isNeg, i9 %tmp_7_cast, i9 %sh_assign" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 54 [1/1] (2.11ns)   --->   "%tmp_3 = sub i8 127, %loc_V" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_3_cast = sext i8 %tmp_3 to i9" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_3 : Operation 56 [1/1] (1.37ns)   --->   "%sh_assign_1 = select i1 %isNeg, i9 %tmp_3_cast, i9 %sh_assign" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_3 : Operation 57 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%sh_assign_1_cast = sext i9 %sh_assign_1 to i32" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
 ST_3 : Operation 58 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%sh_assign_1_cast_cas = sext i9 %sh_assign_1 to i25" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_9 = zext i32 %sh_assign_1_cast to i79" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%r_V = lshr i25 %tmp_4, %sh_assign_1_cast_cas" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.08> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%r_V_1 = shl i79 %tmp_4_cast2, %tmp_9" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.08> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_12 = call i1 @_ssdm_op_BitSelect.i1.i25.i32(i25 %r_V, i32 24)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:288->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 63 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_6 = zext i1 %tmp_12 to i31" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:288->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_5 = call i31 @_ssdm_op_PartSelect.i31.i79.i32.i32(i79 %r_V_1, i32 24, i32 54)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:288->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_3 : Operation 65 [1/1] (4.08ns) (out node of the LUT)   --->   "%p_Val2_2 = select i1 %isNeg, i31 %tmp_6, i31 %tmp_5" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_4 = zext i32 %sh_assign_1_cast to i79" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_3 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%r_V = lshr i25 %tmp_1, %sh_assign_1_cast_cas" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.08> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%r_V_1 = shl i79 %tmp_1_cast2, %tmp_4" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.08> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_15 = call i1 @_ssdm_op_BitSelect.i1.i25.i32(i25 %r_V, i32 24)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:288->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_3 : Operation 63 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_s = zext i1 %tmp_15 to i31" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:288->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_3 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_2)   --->   "%tmp_2 = call i31 @_ssdm_op_PartSelect.i31.i79.i32.i32(i79 %r_V_1, i32 24, i32 54)" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:288->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_3 : Operation 65 [1/1] (4.08ns) (out node of the LUT)   --->   "%p_Val2_2 = select i1 %isNeg, i31 %tmp_s, i31 %tmp_2" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:285->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
  <State 4> : 8.07ns
 ST_4 : Operation 66 [1/1] (0.00ns)   --->   "%result_V = zext i31 %p_Val2_2 to i32" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:316->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
 ST_4 : Operation 67 [1/1] (2.66ns)   --->   "%result_V_1 = sub nsw i32 0, %result_V" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 68 [1/1] (1.37ns)   --->   "%result_V_3 = select i1 %p_Result_s, i32 %result_V_1, i32 %result_V" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_13 = trunc i32 %result_V_3 to i31" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_4 : Operation 70 [1/1] (2.66ns)   --->   "%neg_cast = sub i31 0, %tmp_13" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_16 = trunc i32 %result_V_3 to i31" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
+ST_4 : Operation 70 [1/1] (2.66ns)   --->   "%neg_cast = sub i31 0, %tmp_16" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 71 [1/1] (2.43ns)   --->   "%abscond = icmp sgt i32 %result_V_3, 0" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 72 [1/1] (1.37ns)   --->   "%abs = select i1 %abscond, i31 %tmp_13, i31 %neg_cast" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 72 [1/1] (1.37ns)   --->   "%abs = select i1 %abscond, i31 %tmp_16, i31 %neg_cast" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
  <State 5> : 6.18ns
 ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%abs_cast = zext i31 %abs to i32" [r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:317->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h:367->r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:49->src/modules/racine.cpp:6]
-ST_5 : Operation 74 [6/6] (6.18ns)   --->   "%tmp_s = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_5 : Operation 74 [6/6] (6.18ns)   --->   "%tmp_6 = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
 
  <State 6> : 6.18ns
-ST_6 : Operation 75 [5/6] (6.18ns)   --->   "%tmp_s = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_6 : Operation 75 [5/6] (6.18ns)   --->   "%tmp_6 = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
 
  <State 7> : 6.18ns
-ST_7 : Operation 76 [4/6] (6.18ns)   --->   "%tmp_s = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 76 [4/6] (6.18ns)   --->   "%tmp_6 = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
 
  <State 8> : 6.18ns
-ST_8 : Operation 77 [3/6] (6.18ns)   --->   "%tmp_s = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 77 [3/6] (6.18ns)   --->   "%tmp_6 = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
 
  <State 9> : 6.18ns
-ST_9 : Operation 78 [2/6] (6.18ns)   --->   "%tmp_s = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 78 [2/6] (6.18ns)   --->   "%tmp_6 = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
 
  <State 10> : 6.18ns
-ST_10 : Operation 79 [1/6] (6.18ns)   --->   "%tmp_s = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 79 [1/6] (6.18ns)   --->   "%tmp_6 = sitofp i32 %abs_cast to float" [src/modules/racine.cpp:6]   --->   Core 104 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
 
  <State 11> : 8.01ns
-ST_11 : Operation 80 [12/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 80 [12/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 12> : 8.01ns
-ST_12 : Operation 81 [11/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 81 [11/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 13> : 8.01ns
-ST_13 : Operation 82 [10/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_13 : Operation 82 [10/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 14> : 8.01ns
-ST_14 : Operation 83 [9/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_14 : Operation 83 [9/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 15> : 8.01ns
-ST_15 : Operation 84 [8/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_15 : Operation 84 [8/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 16> : 8.01ns
-ST_16 : Operation 85 [7/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_16 : Operation 85 [7/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 17> : 8.01ns
-ST_17 : Operation 86 [6/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_17 : Operation 86 [6/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 18> : 8.01ns
-ST_18 : Operation 87 [5/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_18 : Operation 87 [5/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 19> : 8.01ns
-ST_19 : Operation 88 [4/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_19 : Operation 88 [4/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 20> : 8.01ns
-ST_20 : Operation 89 [3/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_20 : Operation 89 [3/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 21> : 8.01ns
-ST_21 : Operation 90 [2/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_21 : Operation 90 [2/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 22> : 8.01ns
-ST_22 : Operation 91 [1/12] (8.00ns)   --->   "%tmp_1 = call float @llvm.sqrt.f32(float %tmp_s)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+ST_22 : Operation 91 [1/12] (8.00ns)   --->   "%tmp_7 = call float @llvm.sqrt.f32(float %tmp_6)" [src/modules/racine.cpp:7]   --->   Core 100 'FSqrt' <Latency = 11> <II = 1> <Delay = 8.00> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
 
  <State 23> : 5.78ns
-ST_23 : Operation 92 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %racine_x, float %tmp_1)" [src/modules/racine.cpp:7]
-ST_23 : Operation 93 [4/4] (5.78ns)   --->   "%tmp_2 = fmul float %tmp_1, 8.700000e+01" [src/modules/racine.cpp:8]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 92 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %racine_x, float %tmp_7)" [src/modules/racine.cpp:7]
+ST_23 : Operation 93 [4/4] (5.78ns)   --->   "%tmp_8 = fmul float %tmp_7, 8.700000e+01" [src/modules/racine.cpp:8]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
  <State 24> : 5.78ns
-ST_24 : Operation 94 [3/4] (5.78ns)   --->   "%tmp_2 = fmul float %tmp_1, 8.700000e+01" [src/modules/racine.cpp:8]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 94 [3/4] (5.78ns)   --->   "%tmp_8 = fmul float %tmp_7, 8.700000e+01" [src/modules/racine.cpp:8]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
  <State 25> : 5.78ns
-ST_25 : Operation 95 [2/4] (5.78ns)   --->   "%tmp_2 = fmul float %tmp_1, 8.700000e+01" [src/modules/racine.cpp:8]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 95 [2/4] (5.78ns)   --->   "%tmp_8 = fmul float %tmp_7, 8.700000e+01" [src/modules/racine.cpp:8]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
  <State 26> : 5.78ns
-ST_26 : Operation 96 [1/4] (5.78ns)   --->   "%tmp_2 = fmul float %tmp_1, 8.700000e+01" [src/modules/racine.cpp:8]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 96 [1/4] (5.78ns)   --->   "%tmp_8 = fmul float %tmp_7, 8.700000e+01" [src/modules/racine.cpp:8]   --->   Core 98 'FMul' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
  <State 27> : 3.91ns
-ST_27 : Operation 97 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* %s, float %tmp_2)" [src/modules/racine.cpp:8]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_27 : Operation 97 [1/1] (3.90ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* %s, float %tmp_8)" [src/modules/racine.cpp:8]   --->   Core 36 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
 ST_27 : Operation 98 [1/1] (0.00ns)   --->   "br label %"operator<<.exit.i"" [src/modules/racine.cpp:9]
 
 
@@ -294,42 +294,42 @@ tmp                  (specregionbegin) [ 0000000000000000000000000000]
 StgValue_39          (specprotocol   ) [ 0000000000000000000000000000]
 p_ssdm_reset_v       (specstatebegin ) [ 0000000000000000000000000000]
 empty                (specstateend   ) [ 0000000000000000000000000000]
-empty_8              (specregionend  ) [ 0000000000000000000000000000]
+empty_10             (specregionend  ) [ 0000000000000000000000000000]
 StgValue_43          (br             ) [ 0000000000000000000000000000]
 val                  (read           ) [ 0001000000000000000000000000]
 p_Val2_s             (bitcast        ) [ 0000000000000000000000000000]
 p_Result_s           (bitselect      ) [ 0000100000000000000000000000]
 loc_V                (partselect     ) [ 0000000000000000000000000000]
 loc_V_1              (trunc          ) [ 0000000000000000000000000000]
-tmp_4                (bitconcatenate ) [ 0000000000000000000000000000]
-tmp_4_cast2          (zext           ) [ 0000000000000000000000000000]
-tmp_5_cast1          (zext           ) [ 0000000000000000000000000000]
+tmp_1                (bitconcatenate ) [ 0000000000000000000000000000]
+tmp_1_cast2          (zext           ) [ 0000000000000000000000000000]
+tmp_2_cast1          (zext           ) [ 0000000000000000000000000000]
 sh_assign            (add            ) [ 0000000000000000000000000000]
 isNeg                (bitselect      ) [ 0000000000000000000000000000]
-tmp_7                (sub            ) [ 0000000000000000000000000000]
-tmp_7_cast           (sext           ) [ 0000000000000000000000000000]
+tmp_3                (sub            ) [ 0000000000000000000000000000]
+tmp_3_cast           (sext           ) [ 0000000000000000000000000000]
 sh_assign_1          (select         ) [ 0000000000000000000000000000]
 sh_assign_1_cast     (sext           ) [ 0000000000000000000000000000]
 sh_assign_1_cast_cas (sext           ) [ 0000000000000000000000000000]
-tmp_9                (zext           ) [ 0000000000000000000000000000]
+tmp_4                (zext           ) [ 0000000000000000000000000000]
 r_V                  (lshr           ) [ 0000000000000000000000000000]
 r_V_1                (shl            ) [ 0000000000000000000000000000]
-tmp_12               (bitselect      ) [ 0000000000000000000000000000]
-tmp_6                (zext           ) [ 0000000000000000000000000000]
-tmp_5                (partselect     ) [ 0000000000000000000000000000]
+tmp_15               (bitselect      ) [ 0000000000000000000000000000]
+tmp_s                (zext           ) [ 0000000000000000000000000000]
+tmp_2                (partselect     ) [ 0000000000000000000000000000]
 p_Val2_2             (select         ) [ 0000100000000000000000000000]
 result_V             (zext           ) [ 0000000000000000000000000000]
 result_V_1           (sub            ) [ 0000000000000000000000000000]
 result_V_3           (select         ) [ 0000000000000000000000000000]
-tmp_13               (trunc          ) [ 0000000000000000000000000000]
+tmp_16               (trunc          ) [ 0000000000000000000000000000]
 neg_cast             (sub            ) [ 0000000000000000000000000000]
 abscond              (icmp           ) [ 0000000000000000000000000000]
 abs                  (select         ) [ 0000010000000000000000000000]
 abs_cast             (zext           ) [ 0000001111100000000000000000]
-tmp_s                (sitofp         ) [ 0000000000011111111111100000]
-tmp_1                (fsqrt          ) [ 0000000000000000000000011110]
+tmp_6                (sitofp         ) [ 0000000000011111111111100000]
+tmp_7                (fsqrt          ) [ 0000000000000000000000011110]
 StgValue_92          (write          ) [ 0000000000000000000000000000]
-tmp_2                (fmul           ) [ 0000000000000000000000000001]
+tmp_8                (fmul           ) [ 0000000000000000000000000001]
 StgValue_97          (write          ) [ 0000000000000000000000000000]
 StgValue_98          (br             ) [ 0000000000000000000000000000]
 </LifeTime>
@@ -405,7 +405,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str136"/></StgValue>
+<StgValue><ssdm name="p_str147"/></StgValue>
 </bind>
 </comp>
 
@@ -423,7 +423,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1137"/></StgValue>
+<StgValue><ssdm name="p_str1"/></StgValue>
 </bind>
 </comp>
 
@@ -432,7 +432,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 <pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str2138"/></StgValue>
+<StgValue><ssdm name="p_str2148"/></StgValue>
 </bind>
 </comp>
 
@@ -441,7 +441,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str3139"/></StgValue>
+<StgValue><ssdm name="p_str3"/></StgValue>
 </bind>
 </comp>
 
@@ -459,7 +459,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str4140"/></StgValue>
+<StgValue><ssdm name="p_str4"/></StgValue>
 </bind>
 </comp>
 
@@ -468,7 +468,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str5141"/></StgValue>
+<StgValue><ssdm name="p_str5"/></StgValue>
 </bind>
 </comp>
 
@@ -495,7 +495,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str6142"/></StgValue>
+<StgValue><ssdm name="p_str6"/></StgValue>
 </bind>
 </comp>
 
@@ -513,7 +513,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str7143"/></StgValue>
+<StgValue><ssdm name="p_str7"/></StgValue>
 </bind>
 </comp>
 
@@ -806,7 +806,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="fmul(13) " fcode="fmul"/>
-<opset="tmp_2/23 "/>
+<opset="tmp_8/23 "/>
 </bind>
 </comp>
 
@@ -817,7 +817,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="sitofp(39) " fcode="sitofp"/>
-<opset="tmp_s/5 "/>
+<opset="tmp_6/5 "/>
 </bind>
 </comp>
 
@@ -829,7 +829,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="fsqrt(503) " fcode="fsqrt"/>
-<opset="tmp_1/11 "/>
+<opset="tmp_7/11 "/>
 </bind>
 </comp>
 
@@ -882,7 +882,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="152" class="1004" name="tmp_4_fu_152">
+<comp id="152" class="1004" name="tmp_1_fu_152">
 <pin_list>
 <pin id="153" dir="0" index="0" bw="25" slack="0"/>
 <pin id="154" dir="0" index="1" bw="1" slack="0"/>
@@ -892,29 +892,29 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_4/3 "/>
+<opset="tmp_1/3 "/>
 </bind>
 </comp>
 
-<comp id="162" class="1004" name="tmp_4_cast2_fu_162">
+<comp id="162" class="1004" name="tmp_1_cast2_fu_162">
 <pin_list>
 <pin id="163" dir="0" index="0" bw="25" slack="0"/>
 <pin id="164" dir="1" index="1" bw="79" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_4_cast2/3 "/>
+<opset="tmp_1_cast2/3 "/>
 </bind>
 </comp>
 
-<comp id="166" class="1004" name="tmp_5_cast1_fu_166">
+<comp id="166" class="1004" name="tmp_2_cast1_fu_166">
 <pin_list>
 <pin id="167" dir="0" index="0" bw="8" slack="0"/>
 <pin id="168" dir="1" index="1" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_5_cast1/3 "/>
+<opset="tmp_2_cast1/3 "/>
 </bind>
 </comp>
 
@@ -943,7 +943,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="184" class="1004" name="tmp_7_fu_184">
+<comp id="184" class="1004" name="tmp_3_fu_184">
 <pin_list>
 <pin id="185" dir="0" index="0" bw="8" slack="0"/>
 <pin id="186" dir="0" index="1" bw="8" slack="0"/>
@@ -951,18 +951,18 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="sub(10) " fcode="sub"/>
-<opset="tmp_7/3 "/>
+<opset="tmp_3/3 "/>
 </bind>
 </comp>
 
-<comp id="190" class="1004" name="tmp_7_cast_fu_190">
+<comp id="190" class="1004" name="tmp_3_cast_fu_190">
 <pin_list>
 <pin id="191" dir="0" index="0" bw="8" slack="0"/>
 <pin id="192" dir="1" index="1" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="tmp_7_cast/3 "/>
+<opset="tmp_3_cast/3 "/>
 </bind>
 </comp>
 
@@ -1001,14 +1001,14 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="210" class="1004" name="tmp_9_fu_210">
+<comp id="210" class="1004" name="tmp_4_fu_210">
 <pin_list>
 <pin id="211" dir="0" index="0" bw="9" slack="0"/>
 <pin id="212" dir="1" index="1" bw="79" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_9/3 "/>
+<opset="tmp_4/3 "/>
 </bind>
 </comp>
 
@@ -1036,7 +1036,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="226" class="1004" name="tmp_12_fu_226">
+<comp id="226" class="1004" name="tmp_15_fu_226">
 <pin_list>
 <pin id="227" dir="0" index="0" bw="1" slack="0"/>
 <pin id="228" dir="0" index="1" bw="25" slack="0"/>
@@ -1045,22 +1045,22 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_12/3 "/>
+<opset="tmp_15/3 "/>
 </bind>
 </comp>
 
-<comp id="234" class="1004" name="tmp_6_fu_234">
+<comp id="234" class="1004" name="tmp_s_fu_234">
 <pin_list>
 <pin id="235" dir="0" index="0" bw="1" slack="0"/>
 <pin id="236" dir="1" index="1" bw="31" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_6/3 "/>
+<opset="tmp_s/3 "/>
 </bind>
 </comp>
 
-<comp id="238" class="1004" name="tmp_5_fu_238">
+<comp id="238" class="1004" name="tmp_2_fu_238">
 <pin_list>
 <pin id="239" dir="0" index="0" bw="31" slack="0"/>
 <pin id="240" dir="0" index="1" bw="79" slack="0"/>
@@ -1070,7 +1070,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_5/3 "/>
+<opset="tmp_2/3 "/>
 </bind>
 </comp>
 
@@ -1123,14 +1123,14 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="272" class="1004" name="tmp_13_fu_272">
+<comp id="272" class="1004" name="tmp_16_fu_272">
 <pin_list>
 <pin id="273" dir="0" index="0" bw="32" slack="0"/>
 <pin id="274" dir="1" index="1" bw="31" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="tmp_13/4 "/>
+<opset="tmp_16/4 "/>
 </bind>
 </comp>
 
@@ -1232,33 +1232,33 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="325" class="1005" name="tmp_s_reg_325">
+<comp id="325" class="1005" name="tmp_6_reg_325">
 <pin_list>
 <pin id="326" dir="0" index="0" bw="32" slack="1"/>
 <pin id="327" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_s "/>
+<opset="tmp_6 "/>
 </bind>
 </comp>
 
-<comp id="330" class="1005" name="tmp_1_reg_330">
+<comp id="330" class="1005" name="tmp_7_reg_330">
 <pin_list>
 <pin id="331" dir="0" index="0" bw="32" slack="1"/>
 <pin id="332" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_1 "/>
+<opset="tmp_7 "/>
 </bind>
 </comp>
 
-<comp id="336" class="1005" name="tmp_2_reg_336">
+<comp id="336" class="1005" name="tmp_8_reg_336">
 <pin_list>
 <pin id="337" dir="0" index="0" bw="32" slack="1"/>
 <pin id="338" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_2 "/>
+<opset="tmp_8 "/>
 </bind>
 </comp>
 
@@ -1441,38 +1441,38 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
   - Chain level:
 	State 1
 		empty : 1
-		empty_8 : 1
+		empty_10 : 1
 	State 2
 	State 3
 		p_Result_s : 1
 		loc_V : 1
 		loc_V_1 : 1
-		tmp_4 : 2
-		tmp_4_cast2 : 3
-		tmp_5_cast1 : 2
+		tmp_1 : 2
+		tmp_1_cast2 : 3
+		tmp_2_cast1 : 2
 		sh_assign : 3
 		isNeg : 4
-		tmp_7 : 2
-		tmp_7_cast : 3
+		tmp_3 : 2
+		tmp_3_cast : 3
 		sh_assign_1 : 5
 		sh_assign_1_cast : 6
 		sh_assign_1_cast_cas : 6
-		tmp_9 : 7
+		tmp_4 : 7
 		r_V : 7
 		r_V_1 : 8
-		tmp_12 : 8
-		tmp_6 : 9
-		tmp_5 : 9
+		tmp_15 : 8
+		tmp_s : 9
+		tmp_2 : 9
 		p_Val2_2 : 10
 	State 4
 		result_V_1 : 1
 		result_V_3 : 2
-		tmp_13 : 3
+		tmp_16 : 3
 		neg_cast : 4
 		abscond : 3
 		abs : 5
 	State 5
-		tmp_s : 1
+		tmp_6 : 1
 	State 6
 	State 7
 	State 8
@@ -1518,7 +1518,7 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 |----------|-----------------------------|---------|---------|---------|
 |    shl   |         r_V_1_fu_220        |    0    |    0    |   101   |
 |----------|-----------------------------|---------|---------|---------|
-|          |         tmp_7_fu_184        |    0    |    0    |    15   |
+|          |         tmp_3_fu_184        |    0    |    0    |    15   |
 |    sub   |      result_V_1_fu_259      |    0    |    0    |    38   |
 |          |       neg_cast_fu_276       |    0    |    0    |    38   |
 |----------|-----------------------------|---------|---------|---------|
@@ -1535,24 +1535,24 @@ StgValue_98          (br             ) [ 0000000000000000000000000000]
 |----------|-----------------------------|---------|---------|---------|
 |          |      p_Result_s_fu_130      |    0    |    0    |    0    |
 | bitselect|         isNeg_fu_176        |    0    |    0    |    0    |
-|          |        tmp_12_fu_226        |    0    |    0    |    0    |
+|          |        tmp_15_fu_226        |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
 |partselect|         loc_V_fu_138        |    0    |    0    |    0    |
-|          |         tmp_5_fu_238        |    0    |    0    |    0    |
+|          |         tmp_2_fu_238        |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
 |   trunc  |        loc_V_1_fu_148       |    0    |    0    |    0    |
-|          |        tmp_13_fu_272        |    0    |    0    |    0    |
+|          |        tmp_16_fu_272        |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
-|bitconcatenate|         tmp_4_fu_152        |    0    |    0    |    0    |
+|bitconcatenate|         tmp_1_fu_152        |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
-|          |      tmp_4_cast2_fu_162     |    0    |    0    |    0    |
-|          |      tmp_5_cast1_fu_166     |    0    |    0    |    0    |
-|   zext   |         tmp_9_fu_210        |    0    |    0    |    0    |
-|          |         tmp_6_fu_234        |    0    |    0    |    0    |
+|          |      tmp_1_cast2_fu_162     |    0    |    0    |    0    |
+|          |      tmp_2_cast1_fu_166     |    0    |    0    |    0    |
+|   zext   |         tmp_4_fu_210        |    0    |    0    |    0    |
+|          |         tmp_s_fu_234        |    0    |    0    |    0    |
 |          |       result_V_fu_256       |    0    |    0    |    0    |
 |          |       abs_cast_fu_296       |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
-|          |      tmp_7_cast_fu_190      |    0    |    0    |    0    |
+|          |      tmp_3_cast_fu_190      |    0    |    0    |    0    |
 |   sext   |   sh_assign_1_cast_fu_202   |    0    |    0    |    0    |
 |          | sh_assign_1_cast_cas_fu_206 |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
@@ -1570,9 +1570,9 @@ N/A
 |    abs_reg_315   |   31   |
 |p_Result_s_reg_305|    1   |
 | p_Val2_2_reg_310 |   31   |
-|   tmp_1_reg_330  |   32   |
-|   tmp_2_reg_336  |   32   |
-|   tmp_s_reg_325  |   32   |
+|   tmp_6_reg_325  |   32   |
+|   tmp_7_reg_330  |   32   |
+|   tmp_8_reg_336  |   32   |
 |    val_reg_300   |   32   |
 +------------------+--------+
 |       Total      |   223  |

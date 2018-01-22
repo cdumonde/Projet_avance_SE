@@ -64,30 +64,30 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "comparateur_in1", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_74", "Port" : "comparateur_in1"}]},
+					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_66", "Port" : "comparateur_in1"}]},
 			{"Name" : "comparateur_seuil", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_74", "Port" : "comparateur_seuil"}]},
+					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_66", "Port" : "comparateur_seuil"}]},
 			{"Name" : "comparateur_result", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_74", "Port" : "comparateur_result"}]},
+					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_66", "Port" : "comparateur_result"}]},
 			{"Name" : "clk", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_74", "Port" : "clk"}]},
+					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_66", "Port" : "clk"}]},
 			{"Name" : "reset", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_74", "Port" : "reset"}]},
+					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_66", "Port" : "reset"}]},
 			{"Name" : "e1", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_74", "Port" : "e1"}]},
+					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_66", "Port" : "e1"}]},
 			{"Name" : "e2", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_74", "Port" : "e2"}]},
+					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_66", "Port" : "e2"}]},
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_74", "Port" : "s"}]},
+					{"ID" : "1", "SubInstance" : "grp_comparateur_do_comp_fu_66", "Port" : "s"}]},
 			{"Name" : "comparateur_ssdm_thread_M_do_comp", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_comparateur_do_comp_fu_74", "Parent" : "0", "Child" : ["2", "3"],
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_comparateur_do_comp_fu_66", "Parent" : "0", "Child" : ["2", "3"],
 		"CDFG" : "comparateur_do_comp",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"FunctionPipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -110,8 +110,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "s_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_comparateur_do_comp_fu_74.comparateur_sitofcud_U16", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_comparateur_do_comp_fu_74.comparateur_fcmp_dEe_U17", "Parent" : "1"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_comparateur_do_comp_fu_66.comparateur_sitofcud_U8", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_comparateur_do_comp_fu_66.comparateur_fcmp_dEe_U9", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {

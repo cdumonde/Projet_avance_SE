@@ -8,7 +8,7 @@
 #
 # Settings for Vivado implementation flow
 #
-set top_module top_level
+set top_module uart_wrapper
 set language vhdl
 set family artix7
 set device xc7a100t

@@ -10,7 +10,7 @@
 
 module racine_fsqrt_32nsncg
 #(parameter
-    ID         = 73,
+    ID         = 65,
     NUM_STAGE  = 12,
     din0_WIDTH = 32,
     din1_WIDTH = 32,
@@ -35,7 +35,7 @@ reg                   ce_r;
 wire [dout_WIDTH-1:0] dout_i;
 reg  [dout_WIDTH-1:0] dout_r;
 //------------------------Instantiation------------------
-top_level_ap_fsqrt_10_no_dsp_32 top_level_ap_fsqrt_10_no_dsp_32_u (
+uart_wrapper_ap_fsqrt_10_no_dsp_32 uart_wrapper_ap_fsqrt_10_no_dsp_32_u (
     .aclk                 ( aclk ),
     .aclken               ( aclken ),
     .s_axis_a_tvalid      ( a_tvalid ),

@@ -188,7 +188,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>tmp_6</name>
+						<name>tmp_11</name>
 						<fileName>src/modules/carre.cpp</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
 						<lineNumber>7</lineNumber>
@@ -1049,7 +1049,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>tmp_6_reg_86</first>
+			<first>tmp_11_reg_86</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

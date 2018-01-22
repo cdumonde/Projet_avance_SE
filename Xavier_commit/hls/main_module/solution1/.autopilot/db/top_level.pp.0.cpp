@@ -26930,8 +26930,8 @@ private:
 
  float y0;
  float x0;
- float mem_x[ 2 ];
- float mem_y[ 2 ];
+ float mem_x[ 1 ];
+ float mem_y[ 1 ];
 public:
     sc_in < bool > clk;
     sc_in < bool > reset;
@@ -26969,8 +26969,8 @@ private:
 
  float y0;
  float x0;
- float mem_x[ 2 ];
- float mem_y[ 2 ];
+ float mem_x[ 1 ];
+ float mem_y[ 1 ];
 public:
     sc_in < bool > clk;
     sc_in < bool > reset;
@@ -27052,68 +27052,8 @@ public:
 };
 # 12 "src/modules/top_level.h" 2
 
-# 1 "src/modules/UartModIn.h" 1
 
 
-
-# 1 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc\\systemc.h" 1
-# 1 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc/ap_systemc.h" 1
-#pragma AUTOESL_INC systemc.h begin
-# 2 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc\\systemc.h" 2
-# 5 "src/modules/UartModIn.h" 2
-
-
-
-typedef union _CharFloat{
- char c[4];
- float f;
-}CharFloat;
-
-
-struct UartModIn : ::sc_core::sc_module{
-
-private:
-
-public:
- sc_fifo_in <unsigned char> e;
- sc_fifo_out <float> s;
- sc_in <bool> clk, rst;
-
- typedef UartModIn SC_CURRENT_USER_MODULE; UartModIn( ::sc_core::sc_module_name ){
-  { ::sc_core::sc_cthread_process* do_recv_handle = simcontext()->register_cthread_process("do_recv", (void (::sc_core::sc_process_host::*)())(&SC_CURRENT_USER_MODULE::do_recv), this ); sensitive.operator() ( do_recv_handle, clk.pos() ); };
-  watching(rst.delayed() == true);
- }
-
- void do_recv();
-};
-# 14 "src/modules/top_level.h" 2
-# 1 "src/modules/UartModOut.h" 1
-
-
-
-# 1 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc\\systemc.h" 1
-# 1 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc/ap_systemc.h" 1
-#pragma AUTOESL_INC systemc.h begin
-# 2 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc\\systemc.h" 2
-# 5 "src/modules/UartModOut.h" 2
-# 14 "src/modules/UartModOut.h"
-struct UartModOut : ::sc_core::sc_module{
-
-private:
-
-public :
- sc_fifo_in <float> e;
- sc_fifo_out <unsigned char> s;
- sc_in <bool> clk, rst;
-
- typedef UartModOut SC_CURRENT_USER_MODULE; UartModOut( ::sc_core::sc_module_name ){
-  { ::sc_core::sc_cthread_process* do_send_handle = simcontext()->register_cthread_process("do_send", (void (::sc_core::sc_process_host::*)())(&SC_CURRENT_USER_MODULE::do_send), this ); sensitive.operator() ( do_send_handle, clk.pos() ); };
-  watching(rst.delayed() == true);
- }
-
- void do_send();
-};
-# 15 "src/modules/top_level.h" 2
 
 
 
@@ -27123,12 +27063,14 @@ public:
     sc_in < bool > clk;
     sc_in < bool > reset;
 
-    sc_fifo_in < unsigned char > e;
-    sc_fifo_out < unsigned char > s;
+
+
+    sc_fifo_in <float> e;
+    sc_fifo_out <float> s;
 
  typedef top_level SC_CURRENT_USER_MODULE; top_level( ::sc_core::sc_module_name ):
-  uart_in ("uart_in" ),
-  uart_out ("uart_out" ),
+
+
   doub ("dedoubleur" ),
   comp ("comparaison" ),
   f1 ("filtrage1" ),
@@ -27136,8 +27078,8 @@ public:
   f2 ("filtrage2" ),
   rac ("racine" ),
 
-  sig_in ("fifo1", 8192 ),
-  sig_out ("fifo2", 8192 ),
+
+
   sig1 ("fifo1", 8192 ),
   sig2 ("fifo2", 8192 ),
   sig3 ("fifo3", 8192 ),
@@ -27145,8 +27087,8 @@ public:
   doub1 ("doub1", 8192 ),
   doub2 ("doub2", 8192 )
  {
-  uart_in.clk(clk); uart_in.rst(reset);
-  uart_out.clk(clk); uart_out.rst(reset);
+
+
   doub.clk(clk); doub.reset(reset);
   comp.clk(clk); comp.reset(reset);
   f1.clk(clk); f1.reset(reset);
@@ -27154,21 +27096,24 @@ public:
   f2.clk(clk); f2.reset(reset);
   comp.clk(clk); comp.reset(reset);
 
-  uart_in.e(e);
-  uart_in.s(sig1); doub.e(sig1);
+
+
+  f1.e(e);
+  f1.s(sig1); doub.e(sig1);
   doub.s1(doub1); comp.e1(doub1);
   doub.s2(doub2); car.e(doub2);
   car.s(sig2); f2.e(sig2);
   f2.s(sig3); rac.e(sig3);
   rac.s(sig4); comp.e2(sig4);
-  comp.s(sig_out); uart_out.e(sig_out);
-  uart_out.s(s);
+  comp.s(s);
+
+
  }
 
 private:
 
- UartModIn uart_in;
- UartModOut uart_out;
+
+
  doubleur doub;
  comparateur comp;
  filtre1 f1;
@@ -27176,8 +27121,8 @@ private:
  filtre2 f2;
  racine rac;
 
- sc_fifo < float > sig_in;
- sc_fifo < float > sig_out;
+
+
  sc_fifo < float > sig1;
  sc_fifo < float > sig2;
  sc_fifo < float > sig3;

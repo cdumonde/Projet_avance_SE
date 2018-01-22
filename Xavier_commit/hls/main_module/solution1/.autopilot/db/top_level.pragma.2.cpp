@@ -30034,8 +30034,8 @@ static bool __ssdm_thread_M_do_filtre;;
   private:
   float y0;
   float x0;
-  float mem_x[ 2 ];
-  float mem_y[ 2 ];
+  float mem_x[ 1 ];
+  float mem_y[ 1 ];
   public:
   sc_in < bool > clk;
   sc_in < bool > reset;
@@ -30085,8 +30085,8 @@ static bool __ssdm_thread_M_do_filtre;;
   private:
   float y0;
   float x0;
-  float mem_x[ 2 ];
-  float mem_y[ 2 ];
+  float mem_x[ 1 ];
+  float mem_y[ 1 ];
   public:
   sc_in < bool > clk;
   sc_in < bool > reset;
@@ -30208,109 +30208,20 @@ _ssdm_op_SpecExt("member_name", "x", &x);;
 
 };
 # 12 "src/modules/top_level.h" 2
-
-# 1 "src/modules/UartModIn.h" 1
-
-
-
-# 1 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc\\systemc.h" 1
-# 1 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc/ap_systemc.h" 1
-#pragma AUTOESL_INC systemc.h begin
-# 2 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc\\systemc.h" 2
-# 5 "src/modules/UartModIn.h" 2
-# 8 "src/modules/UartModIn.h"
-typedef union _CharFloat{
- char c[4];
- float f;
-}CharFloat;
-# 14 "src/modules/UartModIn.h"
-struct UartModIn {
-static bool __ssdm_thread_M_do_recv;;
-  private:
-  public:
-  sc_fifo_in <unsigned char> e;
-  sc_fifo_out <float> s;
-  sc_in <bool> clk, rst;
-  UartModIn(::sc_core::sc_module_name )
- {
-    _ssdm_op_SpecTopModule("UartModIn", "UartModIn"); _ssdm_InlineAll(1); _ssdm_InlineSelf(2);;
-    if (__ssdm_thread_M_do_recv) do_recv(); _ssdm_op_SpecProcessDecl("UartModIn", _ssdm_cthread, "do_recv");;
-    _ssdm_op_SpecSensitive("do_recv", "clk", &clk, _ssdm_sensitive_pos);
-    _ssdm_op_SpecSensitive("do_recv", "rst", &rst, _ssdm_sensitive_reset0);;
-    _ssdm_op_SpecInterface(&e, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-    _ssdm_op_SpecPort("UartModIn", _ssdm_sc_fifo_in, "\"unsigned char\"", "e", 0, 0, &e);
-    _ssdm_op_SpecInterface(&s, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-    _ssdm_op_SpecPort("UartModIn", _ssdm_sc_fifo_out, "\"float\"", "s", 0, 0, &s);
-    _ssdm_op_SpecPort("UartModIn", _ssdm_sc_in, "\"bool\"", "clk", 0, 0, &clk);
-    _ssdm_op_SpecPort("UartModIn", _ssdm_sc_in, "\"bool\"", "rst", 0, 0, &rst);
-_ssdm_op_SpecExt("member_name", "e", &e);;
-_ssdm_op_SpecExt("member_name", "s", &s);;
-_ssdm_op_SpecExt("member_name", "clk", &clk);;
-_ssdm_op_SpecExt("member_name", "rst", &rst);;
-# 26 "src/modules/UartModIn.h"
-}
-  __attribute__((noinline)) void do_recv();
-
-};
-# 14 "src/modules/top_level.h" 2
-# 1 "src/modules/UartModOut.h" 1
-
-
-
-# 1 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc\\systemc.h" 1
-# 1 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc/ap_systemc.h" 1
-#pragma AUTOESL_INC systemc.h begin
-# 2 "C:/Xilinx/Vivado/2017.3/common/technology/autopilot/ap_sysc\\systemc.h" 2
-# 5 "src/modules/UartModOut.h" 2
-# 14 "src/modules/UartModOut.h"
-# 14 "src/modules/UartModOut.h"
-struct UartModOut {
-static bool __ssdm_thread_M_do_send;;
-  private:
-  public :
-  sc_fifo_in <float> e;
-  sc_fifo_out <unsigned char> s;
-  sc_in <bool> clk, rst;
-  UartModOut(::sc_core::sc_module_name )
- {
-    _ssdm_op_SpecTopModule("UartModOut", "UartModOut"); _ssdm_InlineAll(1); _ssdm_InlineSelf(2);;
-    if (__ssdm_thread_M_do_send) do_send(); _ssdm_op_SpecProcessDecl("UartModOut", _ssdm_cthread, "do_send");;
-    _ssdm_op_SpecSensitive("do_send", "clk", &clk, _ssdm_sensitive_pos);
-    _ssdm_op_SpecSensitive("do_send", "rst", &rst, _ssdm_sensitive_reset0);;
-    _ssdm_op_SpecInterface(&e, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-    _ssdm_op_SpecPort("UartModOut", _ssdm_sc_fifo_in, "\"float\"", "e", 0, 0, &e);
-    _ssdm_op_SpecInterface(&s, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-    _ssdm_op_SpecPort("UartModOut", _ssdm_sc_fifo_out, "\"unsigned char\"", "s", 0, 0, &s);
-    _ssdm_op_SpecPort("UartModOut", _ssdm_sc_in, "\"bool\"", "clk", 0, 0, &clk);
-    _ssdm_op_SpecPort("UartModOut", _ssdm_sc_in, "\"bool\"", "rst", 0, 0, &rst);
-_ssdm_op_SpecExt("member_name", "e", &e);;
-_ssdm_op_SpecExt("member_name", "s", &s);;
-_ssdm_op_SpecExt("member_name", "clk", &clk);;
-_ssdm_op_SpecExt("member_name", "rst", &rst);;
-# 26 "src/modules/UartModOut.h"
-}
-  __attribute__((noinline)) void do_send();
-
-};
-# 15 "src/modules/top_level.h" 2
 # 18 "src/modules/top_level.h"
 struct top_level {
   public:
   sc_in < bool > clk;
   sc_in < bool > reset;
-  sc_fifo_in < unsigned char > e;
-  sc_fifo_out < unsigned char > s;
+  sc_fifo_in <float> e;
+  sc_fifo_out <float> s;
   top_level(::sc_core::sc_module_name )
-: uart_in("uart_in")
-, uart_out("uart_out")
-, doub("dedoubleur")
+: doub("dedoubleur")
 , comp("comparaison")
 , f1("filtrage1")
 , car("carre")
 , f2("filtrage2")
 , rac("racine")
-, sig_in("fifo1", 8192)
-, sig_out("fifo2", 8192)
 , sig1("fifo1", 8192)
 , sig2("fifo2", 8192)
 , sig3("fifo3", 8192)
@@ -30322,13 +30233,9 @@ struct top_level {
     _ssdm_op_SpecPort("top_level", _ssdm_sc_in, "\"bool\"", "clk", 0, 0, &clk);
     _ssdm_op_SpecPort("top_level", _ssdm_sc_in, "\"bool\"", "reset", 0, 0, &reset);
     _ssdm_op_SpecInterface(&e, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-    _ssdm_op_SpecPort("top_level", _ssdm_sc_fifo_in, "\"unsigned char\"", "e", 0, 0, &e);
+    _ssdm_op_SpecPort("top_level", _ssdm_sc_fifo_in, "\"float\"", "e", 0, 0, &e);
     _ssdm_op_SpecInterface(&s, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-    _ssdm_op_SpecPort("top_level", _ssdm_sc_fifo_out, "\"unsigned char\"", "s", 0, 0, &s);
-  uart_in.clk(clk);
-  uart_in.rst(reset);
-  uart_out.clk(clk);
-  uart_out.rst(reset);
+    _ssdm_op_SpecPort("top_level", _ssdm_sc_fifo_out, "\"float\"", "s", 0, 0, &s);
   doub.clk(clk);
   doub.reset(reset);
   comp.clk(clk);
@@ -30341,8 +30248,8 @@ struct top_level {
   f2.reset(reset);
   comp.clk(clk);
   comp.reset(reset);
-  uart_in.e(e);
-  uart_in.s(sig1);
+  f1.e(e);
+  f1.s(sig1);
   doub.e(sig1);
   doub.s1(doub1);
   comp.e1(doub1);
@@ -30354,42 +30261,32 @@ struct top_level {
   rac.e(sig3);
   rac.s(sig4);
   comp.e2(sig4);
-  comp.s(sig_out);
-  uart_out.e(sig_out);
-  uart_out.s(s);
+  comp.s(s);
 _ssdm_op_SpecExt("member_name", "clk", &clk);;
 _ssdm_op_SpecExt("member_name", "reset", &reset);;
 _ssdm_op_SpecExt("member_name", "e", &e);;
 _ssdm_op_SpecExt("member_name", "s", &s);;
-_ssdm_op_SpecExt("member_name", "uart_in", &uart_in);;
-_ssdm_op_SpecExt("member_name", "uart_out", &uart_out);;
 _ssdm_op_SpecExt("member_name", "doub", &doub);;
 _ssdm_op_SpecExt("member_name", "comp", &comp);;
 _ssdm_op_SpecExt("member_name", "f1", &f1);;
 _ssdm_op_SpecExt("member_name", "car", &car);;
 _ssdm_op_SpecExt("member_name", "f2", &f2);;
 _ssdm_op_SpecExt("member_name", "rac", &rac);;
-_ssdm_op_SpecExt("member_name", "sig_in", &sig_in);;
-_ssdm_op_SpecExt("member_name", "sig_out", &sig_out);;
 _ssdm_op_SpecExt("member_name", "sig1", &sig1);;
 _ssdm_op_SpecExt("member_name", "sig2", &sig2);;
 _ssdm_op_SpecExt("member_name", "sig3", &sig3);;
 _ssdm_op_SpecExt("member_name", "sig4", &sig4);;
 _ssdm_op_SpecExt("member_name", "doub1", &doub1);;
 _ssdm_op_SpecExt("member_name", "doub2", &doub2);;
-# 64 "src/modules/top_level.h"
+# 69 "src/modules/top_level.h"
 }
   private:
-  UartModIn uart_in;
-  UartModOut uart_out;
   doubleur doub;
   comparateur comp;
   filtre1 f1;
   carre car;
   filtre2 f2;
   racine rac;
-  sc_fifo < float > sig_in;
-  sc_fifo < float > sig_out;
   sc_fifo < float > sig1;
   sc_fifo < float > sig2;
   sc_fifo < float > sig3;
@@ -30401,28 +30298,22 @@ _ssdm_op_SpecExt("member_name", "doub2", &doub2);;
 # 1 "src/modules/top_level.cpp" 2
 
 
-comparateur ssdm_ins_comparateur_8_0("ssdm_dut");
+comparateur ssdm_ins_comparateur_2_0("ssdm_dut");
 
 
-doubleur ssdm_ins_doubleur_8_0("ssdm_dut");
+doubleur ssdm_ins_doubleur_2_0("ssdm_dut");
 
 
-filtre1 ssdm_ins_filtre1_8_0("ssdm_dut");
+filtre1 ssdm_ins_filtre1_2_0("ssdm_dut");
 
 
-filtre2 ssdm_ins_filtre2_8_0("ssdm_dut");
+filtre2 ssdm_ins_filtre2_2_0("ssdm_dut");
 
 
-carre ssdm_ins_carre_8_0("ssdm_dut");
+carre ssdm_ins_carre_2_0("ssdm_dut");
 
 
-racine ssdm_ins_racine_8_0("ssdm_dut");
+racine ssdm_ins_racine_2_0("ssdm_dut");
 
 
-UartModIn ssdm_ins_UartModIn_8_0("ssdm_dut");
-
-
-UartModOut ssdm_ins_UartModOut_8_0("ssdm_dut");
-
-
-top_level ssdm_ins_top_level_8_0("ssdm_dut");
+top_level ssdm_ins_top_level_2_0("ssdm_dut");

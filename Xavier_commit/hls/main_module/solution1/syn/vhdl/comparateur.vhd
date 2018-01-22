@@ -33,16 +33,16 @@ architecture behav of comparateur is
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_boolean_1 : BOOLEAN := true;
 
-    signal grp_comparateur_do_comp_fu_74_comparateur_in1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_comparateur_do_comp_fu_74_comparateur_in1_ap_vld : STD_LOGIC;
-    signal grp_comparateur_do_comp_fu_74_comparateur_seuil : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_comparateur_do_comp_fu_74_comparateur_seuil_ap_vld : STD_LOGIC;
-    signal grp_comparateur_do_comp_fu_74_comparateur_result : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_comparateur_do_comp_fu_74_comparateur_result_ap_vld : STD_LOGIC;
-    signal grp_comparateur_do_comp_fu_74_e1_read : STD_LOGIC;
-    signal grp_comparateur_do_comp_fu_74_e2_read : STD_LOGIC;
-    signal grp_comparateur_do_comp_fu_74_s_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_comparateur_do_comp_fu_74_s_write : STD_LOGIC;
+    signal grp_comparateur_do_comp_fu_66_comparateur_in1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_comparateur_do_comp_fu_66_comparateur_in1_ap_vld : STD_LOGIC;
+    signal grp_comparateur_do_comp_fu_66_comparateur_seuil : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_comparateur_do_comp_fu_66_comparateur_seuil_ap_vld : STD_LOGIC;
+    signal grp_comparateur_do_comp_fu_66_comparateur_result : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_comparateur_do_comp_fu_66_comparateur_result_ap_vld : STD_LOGIC;
+    signal grp_comparateur_do_comp_fu_66_e1_read : STD_LOGIC;
+    signal grp_comparateur_do_comp_fu_66_e2_read : STD_LOGIC;
+    signal grp_comparateur_do_comp_fu_66_s_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_comparateur_do_comp_fu_66_s_write : STD_LOGIC;
 
     component comparateur_do_comp IS
     port (
@@ -68,31 +68,31 @@ architecture behav of comparateur is
 
 
 begin
-    grp_comparateur_do_comp_fu_74 : component comparateur_do_comp
+    grp_comparateur_do_comp_fu_66 : component comparateur_do_comp
     port map (
         ap_clk => clk,
         ap_rst => reset,
-        comparateur_in1 => grp_comparateur_do_comp_fu_74_comparateur_in1,
-        comparateur_in1_ap_vld => grp_comparateur_do_comp_fu_74_comparateur_in1_ap_vld,
-        comparateur_seuil => grp_comparateur_do_comp_fu_74_comparateur_seuil,
-        comparateur_seuil_ap_vld => grp_comparateur_do_comp_fu_74_comparateur_seuil_ap_vld,
-        comparateur_result => grp_comparateur_do_comp_fu_74_comparateur_result,
-        comparateur_result_ap_vld => grp_comparateur_do_comp_fu_74_comparateur_result_ap_vld,
+        comparateur_in1 => grp_comparateur_do_comp_fu_66_comparateur_in1,
+        comparateur_in1_ap_vld => grp_comparateur_do_comp_fu_66_comparateur_in1_ap_vld,
+        comparateur_seuil => grp_comparateur_do_comp_fu_66_comparateur_seuil,
+        comparateur_seuil_ap_vld => grp_comparateur_do_comp_fu_66_comparateur_seuil_ap_vld,
+        comparateur_result => grp_comparateur_do_comp_fu_66_comparateur_result,
+        comparateur_result_ap_vld => grp_comparateur_do_comp_fu_66_comparateur_result_ap_vld,
         e1_dout => e1_dout,
         e1_empty_n => e1_empty_n,
-        e1_read => grp_comparateur_do_comp_fu_74_e1_read,
+        e1_read => grp_comparateur_do_comp_fu_66_e1_read,
         e2_dout => e2_dout,
         e2_empty_n => e2_empty_n,
-        e2_read => grp_comparateur_do_comp_fu_74_e2_read,
-        s_din => grp_comparateur_do_comp_fu_74_s_din,
+        e2_read => grp_comparateur_do_comp_fu_66_e2_read,
+        s_din => grp_comparateur_do_comp_fu_66_s_din,
         s_full_n => s_full_n,
-        s_write => grp_comparateur_do_comp_fu_74_s_write);
+        s_write => grp_comparateur_do_comp_fu_66_s_write);
 
 
 
 
-    e1_read <= grp_comparateur_do_comp_fu_74_e1_read;
-    e2_read <= grp_comparateur_do_comp_fu_74_e2_read;
-    s_din <= grp_comparateur_do_comp_fu_74_s_din;
-    s_write <= grp_comparateur_do_comp_fu_74_s_write;
+    e1_read <= grp_comparateur_do_comp_fu_66_e1_read;
+    e2_read <= grp_comparateur_do_comp_fu_66_e2_read;
+    s_din <= grp_comparateur_do_comp_fu_66_s_din;
+    s_write <= grp_comparateur_do_comp_fu_66_s_write;
 end behav;

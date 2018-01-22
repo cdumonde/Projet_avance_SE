@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 16
+set id 8
 set name comparateur_sitofcud
 set corename simcore_sitofp
 set op sitofp
@@ -64,7 +64,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 17
+set id 9
 set name comparateur_fcmp_dEe
 set corename simcore_fcmp
 set op fcmp
@@ -144,7 +144,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 20 \
+    id 12 \
     name comparateur_in1 \
     type other \
     dir O \
@@ -159,7 +159,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 21 \
+    id 13 \
     name comparateur_seuil \
     type other \
     dir O \
@@ -174,7 +174,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 22 \
+    id 14 \
     name comparateur_result \
     type other \
     dir O \
@@ -189,7 +189,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 23 \
+    id 15 \
     name e1 \
     type fifo \
     dir I \
@@ -204,7 +204,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 24 \
+    id 16 \
     name e2 \
     type fifo \
     dir I \
@@ -219,7 +219,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 25 \
+    id 17 \
     name s \
     type fifo \
     dir O \

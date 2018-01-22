@@ -1,0 +1,150 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{eurosym}
+\usepackage{bbm}
+\usepackage[french]{babel}
+\usepackage{lastpage}
+\usepackage{float}
+\usepackage{upgreek}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage[nottoc]{tocbibind}
+\usepackage{hyperref}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+
+\usepackage{etoolbox}
+
+\definecolor{color_caption}{rgb}{0.3,0.3,0.3}
+\definecolor{color_section}{rgb}{0.9,0,0}
+\definecolor{em_orange}{rgb}{0.9686,0.5765,0.1137}
+\definecolor{em_pink}{rgb}{0.9294,0.0078,0.5490}
+\definecolor{em_blue}{rgb}{0.1412,0.6667,0.8824}
+\definecolor{em_green}{rgb}{0.5451,0.7765,0.2431}
+
+\usepackage{caption}
+\usepackage[font={color=color_caption},figurename=Figure,labelfont={it}]{caption}
+
+\lstset{
+language=C,basicstyle=\normalsize,upquote=true,aboveskip={1.5\baselineskip},columns=fullflexible,showstringspaces=false,extendedchars=true,breaklines=true,showtabs=false,showspaces=false,showstringspaces=false,identifierstyle=\ttfamily,keywordstyle=\color[rgb]{0,0,1},commentstyle=\color[rgb]{0.133,0.545,0.133},stringstyle=\color[rgb]{0.627,0.126,0.941},}
+
+\DeclareMathOperator{\G}{G}
+
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\baselinestretch}{1.5}
+
+\textheight 255mm
+\headheight 15mm
+\oddsidemargin -10mm
+\evensidemargin -10mm
+\marginparwidth 5mm
+\topmargin -20mm
+\textwidth 185mm
+\headsep 5mm
+\footskip 10mm
+
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{em_orange}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{ENSEIRB MATMECA}
+\fancyhead[C]{Projet avancé SE}
+\fancyhead[R]{E3}
+
+\renewcommand{\footrulewidth}{2pt}
+\patchcmd{\footrule}{\hrule}{\color{em_orange}\hrule}{}{}
+\fancyfoot[C]{\thepage}
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[scale=0.6,%
+keepaspectratio]{background}%
+\vfill
+}}}
+
+
+\begin{document}
+\parindent=1cm
+\everymath{\displaystyle}
+%
+\AddToShipoutPicture*{\BackgroundPic}
+%
+\thispagestyle{empty}
+%
+%
+\noindent
+Cédric DUMONDELLE\hfill{E3}\\
+Lucas FILLION\\
+Xavier MARINO\\
+Pierre OLIVIER\\
+%
+\\
+%
+\vspace{5.5cm}
+{\color{white}t}\\
+%
+{\color{em_orange}\rule{\linewidth}{2pt}}
+%
+\textbf{{
+\begin{center}
+\Huge Projet avancé SE\\
+%\vspace{0.6cm}
+\end{center}
+}}
+%
+{\color{white}t}\\
+{\color{em_orange}\rule{\linewidth}{2pt}}\\
+
+\vspace{9.5cm}
+
+%
+Yannick BORNAT \& Bertrand LEGAL
+% \begin{tabular}{rcl}
+% Dominique Dallet\hspace{4cm}\vphantom{e}&
+% Professor Izzet Kale\hspace{4cm}\vphantom{e}&
+% Saumya Reni
+% \end{tabular}
+% %
+\ClearShipoutPicture
+%
+\newpage
+%
+\thispagestyle{empty}
+\tableofcontents
+%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{section}{-1}
+\section{Introduction}
+\subsection{Contexte}
+\subsection{Problématique}
+\section{Présentation du projet ciblé}
+\subsection{Introduction}
+\subsection{Fonctionnement des différents blocs}
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.4, keepaspectratio]{DHCP.png}
+%\caption{\textit{Fenêtre wireshark}}
+%\end{figure}
+
+\end{document}
+
+

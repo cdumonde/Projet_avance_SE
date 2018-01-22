@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'filtre1'" level="0">
-<item name = "Date">Thu Dec 21 14:59:20 2017
+<item name = "Date">Wed Jan 17 14:58:01 2018
 </item>
 <item name = "Version">2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)</item>
 <item name = "Project">main_module</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">0, 48, 1, 49, none</column>
+<column name="">0, 24, 1, 25, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_filtre1_do_filtre_fu_72">filtre1_do_filtre, 47, 47, 47, 47, none</column>
+<column name="grp_filtre1_do_filtre_fu_64">filtre1_do_filtre, 23, 23, 23, 23, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

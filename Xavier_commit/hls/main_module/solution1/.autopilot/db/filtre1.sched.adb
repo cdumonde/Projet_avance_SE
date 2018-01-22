@@ -515,13 +515,13 @@
 				<sink_obj>37</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_27">
-				<id>229</id>
+				<id>225</id>
 				<edge_type>2</edge_type>
 				<source_obj>25</source_obj>
 				<sink_obj>39</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_28">
-				<id>230</id>
+				<id>226</id>
 				<edge_type>2</edge_type>
 				<source_obj>25</source_obj>
 				<sink_obj>36</sink_obj>
@@ -550,7 +550,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>48</mMinLatency>
+			<mMinLatency>24</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>

@@ -515,13 +515,13 @@
 				<sink_obj>37</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_27">
-				<id>229</id>
+				<id>225</id>
 				<edge_type>2</edge_type>
 				<source_obj>25</source_obj>
 				<sink_obj>39</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_28">
-				<id>230</id>
+				<id>226</id>
 				<edge_type>2</edge_type>
 				<source_obj>25</source_obj>
 				<sink_obj>36</sink_obj>
@@ -550,7 +550,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>48</mMinLatency>
+			<mMinLatency>24</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -815,7 +815,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="45" tracking_level="0" version="0">
-			<first>72</first>
+			<first>64</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -824,7 +824,7 @@
 			</second>
 		</item>
 		<item>
-			<first>92</first>
+			<first>84</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -840,7 +840,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>grp_filtre2_do_filtre_fu_72</first>
+			<first>grp_filtre2_do_filtre_fu_64</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -853,7 +853,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>filtre2_ssdm_thre_load_fu_92</first>
+			<first>filtre2_ssdm_thre_load_fu_84</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

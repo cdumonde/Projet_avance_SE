@@ -63,7 +63,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "s_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.carre_fmul_32ns_3bkb_U9", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.carre_fmul_32ns_3bkb_U1", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

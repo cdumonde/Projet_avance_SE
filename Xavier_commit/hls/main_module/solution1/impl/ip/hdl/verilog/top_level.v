@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="top_level,hls_ip_2017_3,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100tcsg324-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.608000,HLS_SYN_LAT=25,HLS_SYN_TPT=none,HLS_SYN_MEM=116,HLS_SYN_DSP=31,HLS_SYN_FF=4896,HLS_SYN_LUT=8450}" *)
+(* CORE_GENERATION_INFO="top_level,hls_ip_2017_3,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a100tcsg324-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.608000,HLS_SYN_LAT=15,HLS_SYN_TPT=none,HLS_SYN_MEM=96,HLS_SYN_DSP=56,HLS_SYN_FF=6943,HLS_SYN_LUT=9498}" *)
 
 module top_level (
         clk,
@@ -23,141 +23,134 @@ module top_level (
 
 input   clk;
 input   reset;
-input  [7:0] e_dout;
+input  [31:0] e_dout;
 input   e_empty_n;
 output   e_read;
-output  [7:0] s_din;
+output  [31:0] s_din;
 input   s_full_n;
 output   s_write;
 
-wire    grp_UartModIn_fu_236_e_read;
-wire   [31:0] grp_UartModIn_fu_236_s_din;
-wire    grp_UartModIn_fu_236_s_write;
-wire    grp_UartModOut_fu_250_e_read;
-wire   [7:0] grp_UartModOut_fu_250_s_din;
-wire    grp_UartModOut_fu_250_s_write;
-wire    grp_doubleur_fu_264_e_read;
-wire   [31:0] grp_doubleur_fu_264_s1_din;
-wire    grp_doubleur_fu_264_s1_write;
-wire   [31:0] grp_doubleur_fu_264_s2_din;
-wire    grp_doubleur_fu_264_s2_write;
-wire    grp_comparateur_fu_282_e1_read;
-wire    grp_comparateur_fu_282_e2_read;
-wire   [31:0] grp_comparateur_fu_282_s_din;
-wire    grp_comparateur_fu_282_s_write;
-wire    grp_filtre1_fu_304_e_read;
-wire   [31:0] grp_filtre1_fu_304_s_din;
-wire    grp_filtre1_fu_304_s_write;
-wire    grp_carre_fu_326_e_read;
-wire   [31:0] grp_carre_fu_326_s_din;
-wire    grp_carre_fu_326_s_write;
-wire    grp_filtre2_fu_342_e_read;
-wire   [31:0] grp_filtre2_fu_342_s_din;
-wire    grp_filtre2_fu_342_s_write;
-wire    grp_racine_fu_364_e_read;
-wire   [31:0] grp_racine_fu_364_s_din;
-wire    grp_racine_fu_364_s_write;
-wire    fifo1_12_full_n;
-wire   [31:0] fifo1_12_dout;
-wire    fifo1_12_empty_n;
+wire    grp_doubleur_fu_176_e_read;
+wire   [31:0] grp_doubleur_fu_176_s1_din;
+wire    grp_doubleur_fu_176_s1_write;
+wire   [31:0] grp_doubleur_fu_176_s2_din;
+wire    grp_doubleur_fu_176_s2_write;
+wire    grp_comparateur_fu_194_e1_read;
+wire    grp_comparateur_fu_194_e2_read;
+wire   [31:0] grp_comparateur_fu_194_s_din;
+wire    grp_comparateur_fu_194_s_write;
+wire    grp_filtre1_fu_216_e_read;
+wire   [31:0] grp_filtre1_fu_216_s_din;
+wire    grp_filtre1_fu_216_s_write;
+wire    grp_carre_fu_238_e_read;
+wire   [31:0] grp_carre_fu_238_s_din;
+wire    grp_carre_fu_238_s_write;
+wire    grp_filtre2_fu_254_e_read;
+wire   [31:0] grp_filtre2_fu_254_s_din;
+wire    grp_filtre2_fu_254_s_write;
+wire    grp_racine_fu_276_e_read;
+wire   [31:0] grp_racine_fu_276_s_din;
+wire    grp_racine_fu_276_s_write;
+wire    fifo1_1_full_n;
+wire   [31:0] fifo1_1_dout;
+wire    fifo1_1_empty_n;
 wire    doub1_1_full_n;
 wire   [31:0] doub1_1_dout;
 wire    doub1_1_empty_n;
 wire    doub2_1_full_n;
 wire   [31:0] doub2_1_dout;
 wire    doub2_1_empty_n;
-wire    fifo2_13_full_n;
-wire   [31:0] fifo2_13_dout;
-wire    fifo2_13_empty_n;
+wire    fifo2_1_full_n;
+wire   [31:0] fifo2_1_dout;
+wire    fifo2_1_empty_n;
 wire    fifo3_1_full_n;
 wire   [31:0] fifo3_1_dout;
 wire    fifo3_1_empty_n;
 wire    fifo4_1_full_n;
 wire   [31:0] fifo4_1_dout;
 wire    fifo4_1_empty_n;
-wire    fifo2_1_full_n;
-wire   [31:0] fifo2_1_dout;
-wire    fifo2_1_empty_n;
 
-UartModIn grp_UartModIn_fu_236(
-    .e_dout(e_dout),
-    .e_empty_n(e_empty_n),
-    .e_read(grp_UartModIn_fu_236_e_read),
-    .s_din(grp_UartModIn_fu_236_s_din),
-    .s_full_n(fifo1_12_full_n),
-    .s_write(grp_UartModIn_fu_236_s_write),
-    .clk(clk),
-    .rst(reset)
-);
-
-UartModOut grp_UartModOut_fu_250(
-    .e_dout(fifo2_1_dout),
-    .e_empty_n(fifo2_1_empty_n),
-    .e_read(grp_UartModOut_fu_250_e_read),
-    .s_din(grp_UartModOut_fu_250_s_din),
-    .s_full_n(s_full_n),
-    .s_write(grp_UartModOut_fu_250_s_write),
-    .clk(clk),
-    .rst(reset)
-);
-
-doubleur grp_doubleur_fu_264(
-    .e_dout(fifo1_12_dout),
-    .e_empty_n(fifo1_12_empty_n),
-    .e_read(grp_doubleur_fu_264_e_read),
-    .s1_din(grp_doubleur_fu_264_s1_din),
+doubleur grp_doubleur_fu_176(
+    .e_dout(fifo1_1_dout),
+    .e_empty_n(fifo1_1_empty_n),
+    .e_read(grp_doubleur_fu_176_e_read),
+    .s1_din(grp_doubleur_fu_176_s1_din),
     .s1_full_n(doub1_1_full_n),
-    .s1_write(grp_doubleur_fu_264_s1_write),
-    .s2_din(grp_doubleur_fu_264_s2_din),
+    .s1_write(grp_doubleur_fu_176_s1_write),
+    .s2_din(grp_doubleur_fu_176_s2_din),
     .s2_full_n(doub2_1_full_n),
-    .s2_write(grp_doubleur_fu_264_s2_write),
+    .s2_write(grp_doubleur_fu_176_s2_write),
     .clk(clk),
     .reset(reset)
 );
 
-comparateur grp_comparateur_fu_282(
+comparateur grp_comparateur_fu_194(
     .e1_dout(doub1_1_dout),
     .e1_empty_n(doub1_1_empty_n),
-    .e1_read(grp_comparateur_fu_282_e1_read),
+    .e1_read(grp_comparateur_fu_194_e1_read),
     .e2_dout(fifo4_1_dout),
     .e2_empty_n(fifo4_1_empty_n),
-    .e2_read(grp_comparateur_fu_282_e2_read),
-    .s_din(grp_comparateur_fu_282_s_din),
-    .s_full_n(fifo2_1_full_n),
-    .s_write(grp_comparateur_fu_282_s_write),
+    .e2_read(grp_comparateur_fu_194_e2_read),
+    .s_din(grp_comparateur_fu_194_s_din),
+    .s_full_n(s_full_n),
+    .s_write(grp_comparateur_fu_194_s_write),
     .clk(clk),
     .reset(reset)
 );
 
-carre grp_carre_fu_326(
+filtre1 grp_filtre1_fu_216(
+    .e_dout(e_dout),
+    .e_empty_n(e_empty_n),
+    .e_read(grp_filtre1_fu_216_e_read),
+    .s_din(grp_filtre1_fu_216_s_din),
+    .s_full_n(fifo1_1_full_n),
+    .s_write(grp_filtre1_fu_216_s_write),
+    .clk(clk),
+    .reset(reset)
+);
+
+carre grp_carre_fu_238(
     .e_dout(doub2_1_dout),
     .e_empty_n(doub2_1_empty_n),
-    .e_read(grp_carre_fu_326_e_read),
-    .s_din(grp_carre_fu_326_s_din),
-    .s_full_n(fifo2_13_full_n),
-    .s_write(grp_carre_fu_326_s_write),
+    .e_read(grp_carre_fu_238_e_read),
+    .s_din(grp_carre_fu_238_s_din),
+    .s_full_n(fifo2_1_full_n),
+    .s_write(grp_carre_fu_238_s_write),
     .clk(clk),
     .reset(reset)
 );
 
-filtre2 grp_filtre2_fu_342(
-    .e_dout(fifo2_13_dout),
-    .e_empty_n(fifo2_13_empty_n),
-    .e_read(grp_filtre2_fu_342_e_read),
-    .s_din(grp_filtre2_fu_342_s_din),
+filtre2 grp_filtre2_fu_254(
+    .e_dout(fifo2_1_dout),
+    .e_empty_n(fifo2_1_empty_n),
+    .e_read(grp_filtre2_fu_254_e_read),
+    .s_din(grp_filtre2_fu_254_s_din),
     .s_full_n(fifo3_1_full_n),
-    .s_write(grp_filtre2_fu_342_s_write),
+    .s_write(grp_filtre2_fu_254_s_write),
     .clk(clk),
     .reset(reset)
 );
 
-racine grp_racine_fu_364(
+racine grp_racine_fu_276(
     .e_dout(fifo3_1_dout),
     .e_empty_n(fifo3_1_empty_n),
-    .e_read(grp_racine_fu_364_e_read),
-    .s_din(grp_racine_fu_364_s_din),
+    .e_read(grp_racine_fu_276_e_read),
+    .s_din(grp_racine_fu_276_s_din),
     .s_full_n(fifo4_1_full_n),
-    .s_write(grp_racine_fu_364_s_write)
+    .s_write(grp_racine_fu_276_s_write)
+);
+
+fifo_w32_d8192_A fifo1_1_fifo_U(
+    .clk(clk),
+    .reset(reset),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(grp_filtre1_fu_216_s_din),
+    .if_full_n(fifo1_1_full_n),
+    .if_write(grp_filtre1_fu_216_s_write),
+    .if_dout(fifo1_1_dout),
+    .if_empty_n(fifo1_1_empty_n),
+    .if_read(grp_doubleur_fu_176_e_read)
 );
 
 fifo_w32_d8192_A fifo2_1_fifo_U(
@@ -165,38 +158,12 @@ fifo_w32_d8192_A fifo2_1_fifo_U(
     .reset(reset),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_comparateur_fu_282_s_din),
+    .if_din(grp_carre_fu_238_s_din),
     .if_full_n(fifo2_1_full_n),
-    .if_write(grp_comparateur_fu_282_s_write),
+    .if_write(grp_carre_fu_238_s_write),
     .if_dout(fifo2_1_dout),
     .if_empty_n(fifo2_1_empty_n),
-    .if_read(grp_UartModOut_fu_250_e_read)
-);
-
-fifo_w32_d8192_A fifo1_12_fifo_U(
-    .clk(clk),
-    .reset(reset),
-    .if_read_ce(1'b1),
-    .if_write_ce(1'b1),
-    .if_din(grp_UartModIn_fu_236_s_din),
-    .if_full_n(fifo1_12_full_n),
-    .if_write(grp_UartModIn_fu_236_s_write),
-    .if_dout(fifo1_12_dout),
-    .if_empty_n(fifo1_12_empty_n),
-    .if_read(grp_doubleur_fu_264_e_read)
-);
-
-fifo_w32_d8192_A fifo2_13_fifo_U(
-    .clk(clk),
-    .reset(reset),
-    .if_read_ce(1'b1),
-    .if_write_ce(1'b1),
-    .if_din(grp_carre_fu_326_s_din),
-    .if_full_n(fifo2_13_full_n),
-    .if_write(grp_carre_fu_326_s_write),
-    .if_dout(fifo2_13_dout),
-    .if_empty_n(fifo2_13_empty_n),
-    .if_read(grp_filtre2_fu_342_e_read)
+    .if_read(grp_filtre2_fu_254_e_read)
 );
 
 fifo_w32_d8192_A fifo3_1_fifo_U(
@@ -204,12 +171,12 @@ fifo_w32_d8192_A fifo3_1_fifo_U(
     .reset(reset),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_filtre2_fu_342_s_din),
+    .if_din(grp_filtre2_fu_254_s_din),
     .if_full_n(fifo3_1_full_n),
-    .if_write(grp_filtre2_fu_342_s_write),
+    .if_write(grp_filtre2_fu_254_s_write),
     .if_dout(fifo3_1_dout),
     .if_empty_n(fifo3_1_empty_n),
-    .if_read(grp_racine_fu_364_e_read)
+    .if_read(grp_racine_fu_276_e_read)
 );
 
 fifo_w32_d8192_A fifo4_1_fifo_U(
@@ -217,12 +184,12 @@ fifo_w32_d8192_A fifo4_1_fifo_U(
     .reset(reset),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_racine_fu_364_s_din),
+    .if_din(grp_racine_fu_276_s_din),
     .if_full_n(fifo4_1_full_n),
-    .if_write(grp_racine_fu_364_s_write),
+    .if_write(grp_racine_fu_276_s_write),
     .if_dout(fifo4_1_dout),
     .if_empty_n(fifo4_1_empty_n),
-    .if_read(grp_comparateur_fu_282_e2_read)
+    .if_read(grp_comparateur_fu_194_e2_read)
 );
 
 fifo_w32_d8192_A doub1_1_fifo_U(
@@ -230,12 +197,12 @@ fifo_w32_d8192_A doub1_1_fifo_U(
     .reset(reset),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_doubleur_fu_264_s1_din),
+    .if_din(grp_doubleur_fu_176_s1_din),
     .if_full_n(doub1_1_full_n),
-    .if_write(grp_doubleur_fu_264_s1_write),
+    .if_write(grp_doubleur_fu_176_s1_write),
     .if_dout(doub1_1_dout),
     .if_empty_n(doub1_1_empty_n),
-    .if_read(grp_comparateur_fu_282_e1_read)
+    .if_read(grp_comparateur_fu_194_e1_read)
 );
 
 fifo_w32_d8192_A doub2_1_fifo_U(
@@ -243,18 +210,18 @@ fifo_w32_d8192_A doub2_1_fifo_U(
     .reset(reset),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(grp_doubleur_fu_264_s2_din),
+    .if_din(grp_doubleur_fu_176_s2_din),
     .if_full_n(doub2_1_full_n),
-    .if_write(grp_doubleur_fu_264_s2_write),
+    .if_write(grp_doubleur_fu_176_s2_write),
     .if_dout(doub2_1_dout),
     .if_empty_n(doub2_1_empty_n),
-    .if_read(grp_carre_fu_326_e_read)
+    .if_read(grp_carre_fu_238_e_read)
 );
 
-assign e_read = grp_UartModIn_fu_236_e_read;
+assign e_read = grp_filtre1_fu_216_e_read;
 
-assign s_din = grp_UartModOut_fu_250_s_din;
+assign s_din = grp_comparateur_fu_194_s_din;
 
-assign s_write = grp_UartModOut_fu_250_s_write;
+assign s_write = grp_comparateur_fu_194_s_write;
 
 endmodule //top_level

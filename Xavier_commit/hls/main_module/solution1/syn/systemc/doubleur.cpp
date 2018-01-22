@@ -17,37 +17,37 @@ const sc_logic doubleur::ap_const_logic_0 = sc_dt::Log_0;
 const bool doubleur::ap_const_boolean_1 = true;
 
 doubleur::doubleur(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    grp_doubleur_do_split_fu_70 = new doubleur_do_split("grp_doubleur_do_split_fu_70");
-    grp_doubleur_do_split_fu_70->ap_clk(clk);
-    grp_doubleur_do_split_fu_70->ap_rst(reset);
-    grp_doubleur_do_split_fu_70->doubleur_to_split(grp_doubleur_do_split_fu_70_doubleur_to_split);
-    grp_doubleur_do_split_fu_70->doubleur_to_split_ap_vld(grp_doubleur_do_split_fu_70_doubleur_to_split_ap_vld);
-    grp_doubleur_do_split_fu_70->e_dout(e_dout);
-    grp_doubleur_do_split_fu_70->e_empty_n(e_empty_n);
-    grp_doubleur_do_split_fu_70->e_read(grp_doubleur_do_split_fu_70_e_read);
-    grp_doubleur_do_split_fu_70->s1_din(grp_doubleur_do_split_fu_70_s1_din);
-    grp_doubleur_do_split_fu_70->s1_full_n(s1_full_n);
-    grp_doubleur_do_split_fu_70->s1_write(grp_doubleur_do_split_fu_70_s1_write);
-    grp_doubleur_do_split_fu_70->s2_din(grp_doubleur_do_split_fu_70_s2_din);
-    grp_doubleur_do_split_fu_70->s2_full_n(s2_full_n);
-    grp_doubleur_do_split_fu_70->s2_write(grp_doubleur_do_split_fu_70_s2_write);
+    grp_doubleur_do_split_fu_62 = new doubleur_do_split("grp_doubleur_do_split_fu_62");
+    grp_doubleur_do_split_fu_62->ap_clk(clk);
+    grp_doubleur_do_split_fu_62->ap_rst(reset);
+    grp_doubleur_do_split_fu_62->doubleur_to_split(grp_doubleur_do_split_fu_62_doubleur_to_split);
+    grp_doubleur_do_split_fu_62->doubleur_to_split_ap_vld(grp_doubleur_do_split_fu_62_doubleur_to_split_ap_vld);
+    grp_doubleur_do_split_fu_62->e_dout(e_dout);
+    grp_doubleur_do_split_fu_62->e_empty_n(e_empty_n);
+    grp_doubleur_do_split_fu_62->e_read(grp_doubleur_do_split_fu_62_e_read);
+    grp_doubleur_do_split_fu_62->s1_din(grp_doubleur_do_split_fu_62_s1_din);
+    grp_doubleur_do_split_fu_62->s1_full_n(s1_full_n);
+    grp_doubleur_do_split_fu_62->s1_write(grp_doubleur_do_split_fu_62_s1_write);
+    grp_doubleur_do_split_fu_62->s2_din(grp_doubleur_do_split_fu_62_s2_din);
+    grp_doubleur_do_split_fu_62->s2_full_n(s2_full_n);
+    grp_doubleur_do_split_fu_62->s2_write(grp_doubleur_do_split_fu_62_s2_write);
 
     SC_METHOD(thread_e_read);
-    sensitive << ( grp_doubleur_do_split_fu_70_e_read );
+    sensitive << ( grp_doubleur_do_split_fu_62_e_read );
 
     SC_METHOD(thread_s1_din);
-    sensitive << ( grp_doubleur_do_split_fu_70_s1_din );
-    sensitive << ( grp_doubleur_do_split_fu_70_s1_write );
+    sensitive << ( grp_doubleur_do_split_fu_62_s1_din );
+    sensitive << ( grp_doubleur_do_split_fu_62_s1_write );
 
     SC_METHOD(thread_s1_write);
-    sensitive << ( grp_doubleur_do_split_fu_70_s1_write );
+    sensitive << ( grp_doubleur_do_split_fu_62_s1_write );
 
     SC_METHOD(thread_s2_din);
-    sensitive << ( grp_doubleur_do_split_fu_70_s2_din );
-    sensitive << ( grp_doubleur_do_split_fu_70_s2_write );
+    sensitive << ( grp_doubleur_do_split_fu_62_s2_din );
+    sensitive << ( grp_doubleur_do_split_fu_62_s2_write );
 
     SC_METHOD(thread_s2_write);
-    sensitive << ( grp_doubleur_do_split_fu_70_s2_write );
+    sensitive << ( grp_doubleur_do_split_fu_62_s2_write );
 
     static int apTFileNum = 0;
     stringstream apTFilenSS;
@@ -70,13 +70,13 @@ doubleur::doubleur(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, s2_write, "(port)s2_write");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, grp_doubleur_do_split_fu_70_doubleur_to_split, "grp_doubleur_do_split_fu_70_doubleur_to_split");
-    sc_trace(mVcdFile, grp_doubleur_do_split_fu_70_doubleur_to_split_ap_vld, "grp_doubleur_do_split_fu_70_doubleur_to_split_ap_vld");
-    sc_trace(mVcdFile, grp_doubleur_do_split_fu_70_e_read, "grp_doubleur_do_split_fu_70_e_read");
-    sc_trace(mVcdFile, grp_doubleur_do_split_fu_70_s1_din, "grp_doubleur_do_split_fu_70_s1_din");
-    sc_trace(mVcdFile, grp_doubleur_do_split_fu_70_s1_write, "grp_doubleur_do_split_fu_70_s1_write");
-    sc_trace(mVcdFile, grp_doubleur_do_split_fu_70_s2_din, "grp_doubleur_do_split_fu_70_s2_din");
-    sc_trace(mVcdFile, grp_doubleur_do_split_fu_70_s2_write, "grp_doubleur_do_split_fu_70_s2_write");
+    sc_trace(mVcdFile, grp_doubleur_do_split_fu_62_doubleur_to_split, "grp_doubleur_do_split_fu_62_doubleur_to_split");
+    sc_trace(mVcdFile, grp_doubleur_do_split_fu_62_doubleur_to_split_ap_vld, "grp_doubleur_do_split_fu_62_doubleur_to_split_ap_vld");
+    sc_trace(mVcdFile, grp_doubleur_do_split_fu_62_e_read, "grp_doubleur_do_split_fu_62_e_read");
+    sc_trace(mVcdFile, grp_doubleur_do_split_fu_62_s1_din, "grp_doubleur_do_split_fu_62_s1_din");
+    sc_trace(mVcdFile, grp_doubleur_do_split_fu_62_s1_write, "grp_doubleur_do_split_fu_62_s1_write");
+    sc_trace(mVcdFile, grp_doubleur_do_split_fu_62_s2_din, "grp_doubleur_do_split_fu_62_s2_din");
+    sc_trace(mVcdFile, grp_doubleur_do_split_fu_62_s2_write, "grp_doubleur_do_split_fu_62_s2_write");
 #endif
 
     }
@@ -86,27 +86,27 @@ doubleur::~doubleur() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete grp_doubleur_do_split_fu_70;
+    delete grp_doubleur_do_split_fu_62;
 }
 
 void doubleur::thread_e_read() {
-    e_read = grp_doubleur_do_split_fu_70_e_read.read();
+    e_read = grp_doubleur_do_split_fu_62_e_read.read();
 }
 
 void doubleur::thread_s1_din() {
-    s1_din = grp_doubleur_do_split_fu_70_s1_din.read();
+    s1_din = grp_doubleur_do_split_fu_62_s1_din.read();
 }
 
 void doubleur::thread_s1_write() {
-    s1_write = grp_doubleur_do_split_fu_70_s1_write.read();
+    s1_write = grp_doubleur_do_split_fu_62_s1_write.read();
 }
 
 void doubleur::thread_s2_din() {
-    s2_din = grp_doubleur_do_split_fu_70_s2_din.read();
+    s2_din = grp_doubleur_do_split_fu_62_s2_din.read();
 }
 
 void doubleur::thread_s2_write() {
-    s2_write = grp_doubleur_do_split_fu_70_s2_write.read();
+    s2_write = grp_doubleur_do_split_fu_62_s2_write.read();
 }
 
 }

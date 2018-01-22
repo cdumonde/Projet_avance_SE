@@ -1,12 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 52
+set ID 44
 set MemName filtre1_filtre1_mibs
 set CoreName ap_simcore_mem
-set PortList { 2 0 }
+set PortList { 0 3 }
 set DataWd 32
-set AddrRange 2
+set AddrRange 1
 set AddrWd 1
 set impl_style block
 set TrueReset 0
@@ -93,7 +93,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 53 \
+    id 45 \
     name e \
     type fifo \
     dir I \
@@ -108,7 +108,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 54 \
+    id 46 \
     name s \
     type fifo \
     dir O \

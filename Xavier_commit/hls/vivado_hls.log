@@ -1,19 +1,9383 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Xavier' on host 'xaviermarinb4d2' (Windows NT_amd64 version 6.1) on Fri Dec 22 09:08:41 +0100 2017
+INFO: [HLS 200-10] For user 'Xavier' on host 'xaviermarinb4d2' (Windows NT_amd64 version 6.1) on Fri Jan 19 19:31:18 +0100 2018
 INFO: [HLS 200-10] In directory 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls'
-INFO: [HLS 200-10] Opening project 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module'.
-INFO: [HLS 200-10] Opening solution 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1'.
+INFO: [HLS 200-10] Opening project 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/test_module'.
+INFO: [HLS 200-10] Opening solution 'Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/test_module/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7a100tcsg324-1'
-INFO: [COSIM 212-2] Generating simulation wrapper in SystemC ...
-INFO: [COSIM 212-47] Using Modelsim for RTL simulation.
-ERROR: [COSIM 212-104] Cannot find Mentor Graphics ModelSim. Make sure it is accessible through the PATH variable.
-ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
-command 'ap_source' returned error code
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/tb/tb_carre.cpp in debug mode
+   Compiling ../../../../src/modules/oled_process.cpp in debug mode
+   Compiling ../../../../src/modules/uart_wrapper_oled.cpp in debug mode
+   Generating csim.exe
+
+             SystemC 2.3.0-ASI --- Jul  4 2013 11:46:47
+        Copyright (c) 1996-2012 by all Contributors,
+        ALL RIGHTS RESERVED
+
+Initialisation des composants...
+Creation du signal d'horloge...
+Creation des signaux d'interconnexion...
+Mapping des composants...
+Lancement de la simulation du circuit...
+Opening serial port successful...
+1
+avant assert
+apres assert
+
+Info: (I804) /IEEE_Std_1666/deprecated: all waits except wait() and wait(N)
+             are deprecated for SC_CTHREAD, use an SC_THREAD instead
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+1
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+0
+avant assert
+apres assert
+Assertion failed: dNoOfBytesWritten == (sizeof(float)), file ../../../../src/gene/carre_soft.cpp, line 45
+0
+avant assert
+
+This application has requested the Runtime to terminate it in an unusual way.
+Please contact the application's support team for more information.
+@E Simulation failed: Function 'main' returns nonzero value '3'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+4
     while executing
-"source Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/cosim.tcl"
+"source Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/test_module/solution1/csim.tcl"
     invoked from within
-"hls::main Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/main_module/solution1/cosim.tcl"
+"hls::main Y:/Documents/MesDocuments/Cours_nsave/Enseirb-E3_nsave/pr310/git/Xavier_commit/hls/test_module/solution1/csim.tcl"
     ("uplevel" body line 1)
     invoked from within
 "uplevel 1 hls::main {*}$args"

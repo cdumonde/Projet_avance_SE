@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity carre_fmul_32ns_3bkb is
     generic (
-        ID         : integer := 9;
+        ID         : integer := 1;
         NUM_STAGE  : integer := 4;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;
@@ -28,7 +28,7 @@ end entity;
 
 architecture arch of carre_fmul_32ns_3bkb is
     --------------------- Component ---------------------
-    component top_level_ap_fmul_2_max_dsp_32 is
+    component uart_wrapper_ap_fmul_2_max_dsp_32 is
         port (
             aclk                 : in  std_logic;
             aclken               : in  std_logic;
@@ -56,7 +56,7 @@ architecture arch of carre_fmul_32ns_3bkb is
     signal dout_r    : std_logic_vector(dout_WIDTH-1 downto 0);
 begin
     --------------------- Instantiation -----------------
-    top_level_ap_fmul_2_max_dsp_32_u : component top_level_ap_fmul_2_max_dsp_32
+    uart_wrapper_ap_fmul_2_max_dsp_32_u : component uart_wrapper_ap_fmul_2_max_dsp_32
     port map (
         aclk                 => aclk,
         aclken               => aclken,

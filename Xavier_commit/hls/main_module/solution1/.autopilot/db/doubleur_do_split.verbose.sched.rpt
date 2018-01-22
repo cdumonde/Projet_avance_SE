@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'doubleur_do_split'
 ================================================================
-* Date:           Thu Dec 21 14:59:13 2017
+* Date:           Wed Jan 17 14:57:52 2018
 
 * Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
 * Project:        main_module
@@ -83,23 +83,23 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1> : 0.00ns
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %doubleur_to_split), !map !765"
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !769"
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !773"
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !777"
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s1), !map !781"
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s2), !map !785"
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 0, [7 x i8]* @p_str171, [4 x i8]* @p_str272, i32 0, i32 0, i1* %clk) nounwind" [src/modules/doubleur.cpp:4]
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str70, i32 0, [7 x i8]* @p_str171, [6 x i8]* @p_str373, i32 0, i32 0, i1* %reset) nounwind" [src/modules/doubleur.cpp:5]
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.cpp:6]
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.cpp:7]
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str474, i32 0, i32 0, [1 x i8]* @p_str575, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575, [1 x i8]* @p_str575, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str575, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.cpp:8]
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([9 x i8]* @p_str70, i32 2, [9 x i8]* @p_str676) nounwind" [src/modules/doubleur.cpp:9]
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str777)" [src/modules/doubleur.cpp:9]
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str575) nounwind" [src/modules/doubleur.cpp:9]
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %doubleur_to_split), !map !1933"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !1937"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !1941"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %e), !map !1945"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s1), !map !1949"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %s2), !map !1953"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str234, i32 0, [7 x i8]* @p_str1235, [4 x i8]* @p_str2236, i32 0, i32 0, i1* %clk) nounwind" [src/modules/doubleur.cpp:4]
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([9 x i8]* @p_str234, i32 0, [7 x i8]* @p_str1235, [6 x i8]* @p_str3237, i32 0, i32 0, i1* %reset) nounwind" [src/modules/doubleur.cpp:5]
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %e, [8 x i8]* @p_str4238, i32 0, i32 0, [1 x i8]* @p_str5239, i32 0, i32 0, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239) nounwind" [src/modules/doubleur.cpp:6]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s1, [8 x i8]* @p_str4238, i32 0, i32 0, [1 x i8]* @p_str5239, i32 0, i32 0, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239) nounwind" [src/modules/doubleur.cpp:7]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %s2, [8 x i8]* @p_str4238, i32 0, i32 0, [1 x i8]* @p_str5239, i32 0, i32 0, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str5239, [1 x i8]* @p_str5239) nounwind" [src/modules/doubleur.cpp:8]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([9 x i8]* @p_str234, i32 2, [9 x i8]* @p_str6240) nounwind" [src/modules/doubleur.cpp:9]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str7241)" [src/modules/doubleur.cpp:9]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str5239) nounwind" [src/modules/doubleur.cpp:9]
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_ssdm_reset_v = call i32 (...)* @_ssdm_op_SpecStateBegin(i32 0, i32 0, i32 1) nounwind" [src/modules/doubleur.cpp:9]
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind" [src/modules/doubleur.cpp:16]
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str777, i32 %tmp_s)" [src/modules/doubleur.cpp:16]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str7241, i32 %tmp_s)" [src/modules/doubleur.cpp:16]
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "br label %1" [src/modules/doubleur.cpp:16]
 
  <State 2> : 7.82ns

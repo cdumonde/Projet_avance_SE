@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity racine_fsqrt_32nsncg is
     generic (
-        ID         : integer := 73;
+        ID         : integer := 65;
         NUM_STAGE  : integer := 12;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;
@@ -28,7 +28,7 @@ end entity;
 
 architecture arch of racine_fsqrt_32nsncg is
     --------------------- Component ---------------------
-    component top_level_ap_fsqrt_10_no_dsp_32 is
+    component uart_wrapper_ap_fsqrt_10_no_dsp_32 is
         port (
             aclk                 : in  std_logic;
             aclken               : in  std_logic;
@@ -51,7 +51,7 @@ architecture arch of racine_fsqrt_32nsncg is
     signal dout_r    : std_logic_vector(dout_WIDTH-1 downto 0);
 begin
     --------------------- Instantiation -----------------
-    top_level_ap_fsqrt_10_no_dsp_32_u : component top_level_ap_fsqrt_10_no_dsp_32
+    uart_wrapper_ap_fsqrt_10_no_dsp_32_u : component uart_wrapper_ap_fsqrt_10_no_dsp_32
     port map (
         aclk                 => aclk,
         aclken               => aclken,

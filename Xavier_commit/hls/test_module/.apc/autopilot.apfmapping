@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="carre.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\carre.cpp"/>
+    <originFiles name="carre.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\carre.h"/>
+    <originFiles name="constant.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\constant.h"/>
+    <originFiles name="filtre1.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\filtre1.cpp"/>
+    <originFiles name="filtre1.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\filtre1.h"/>
+    <originFiles name="filtre2.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\filtre2.cpp"/>
+    <originFiles name="filtre2.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\filtre2.h"/>
+    <originFiles name="uart_wrapper.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper.cpp"/>
+    <originFiles name="uart_wrapper.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper.h"/>
+    <originFiles name="oled_process.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\oled_process.cpp"/>
+    <originFiles name="oled_process.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\oled_process.h"/>
+    <originFiles name="uart_wrapper_oled.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper_oled.cpp"/>
+    <originFiles name="uart_wrapper_oled.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper_oled.h"/>
+  </source>
+  <testbench>
+    <originFiles name="analyseur.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\analyseur\analyseur.cpp"/>
+    <originFiles name="analyseur.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\analyseur\analyseur.h"/>
+    <originFiles name="carre_soft.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\gene\carre_soft.cpp"/>
+    <originFiles name="carre_soft.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\gene\carre_soft.h"/>
+    <originFiles name="gene.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\gene\gene.cpp"/>
+    <originFiles name="gene.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\gene\gene.h"/>
+    <originFiles name="sc_store.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\analyseur\sc_store.cpp"/>
+    <originFiles name="sc_store.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\analyseur\sc_store.h"/>
+    <originFiles name="tb_carre.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\tb\tb_carre.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

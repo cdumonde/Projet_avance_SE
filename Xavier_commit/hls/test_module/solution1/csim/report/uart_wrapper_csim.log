@@ -1,0 +1,8426 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/modules/filtre2.cpp in debug mode
+   Compiling ../../../../src/modules/uart_wrapper.cpp in debug mode
+   Generating csim.exe
+Initialisation des composants...
+Creation du signal d'horloge...
+Creation des signaux d'interconnexion...
+Mapping des composants...
+Lancement de la simulation du circuit...
+
+Info: (I804) /IEEE_Std_1666/deprecated: all waits except wait() and wait(N)
+             are deprecated for SC_CTHREAD, use an SC_THREAD instead
+1.69511e-008
+avant assert
+apres assert
+1.59083e-008
+avant assert
+apres assert
+1.49295e-008
+avant assert
+apres assert
+1.4011e-008
+avant assert
+apres assert
+1.3149e-008
+avant assert
+apres assert
+1.234e-008
+avant assert
+apres assert
+1.15808e-008
+avant assert
+apres assert
+1.08683e-008
+avant assert
+apres assert
+1.01997e-008
+avant assert
+apres assert
+9.57216e-009
+avant assert
+apres assert
+8.98325e-009
+avant assert
+apres assert
+8.43057e-009
+avant assert
+apres assert
+7.91189e-009
+avant assert
+apres assert
+7.42512e-009
+avant assert
+apres assert
+6.9683e-009
+avant assert
+apres assert
+6.53959e-009
+avant assert
+apres assert
+6.13725e-009
+avant assert
+apres assert
+5.75967e-009
+avant assert
+apres assert
+5.40531e-009
+avant assert
+apres assert
+5.07276e-009
+avant assert
+apres assert
+4.76066e-009
+avant assert
+apres assert
+4.46777e-009
+avant assert
+apres assert
+4.1929e-009
+avant assert
+apres assert
+3.93494e-009
+avant assert
+apres assert
+3.69285e-009
+avant assert
+apres assert
+3.46565e-009
+avant assert
+apres assert
+3.25243e-009
+avant assert
+apres assert
+3.05233e-009
+avant assert
+apres assert
+2.86454e-009
+avant assert
+apres assert
+2.6883e-009
+avant assert
+apres assert
+2.52291e-009
+avant assert
+apres assert
+2.36769e-009
+avant assert
+apres assert
+2.22202e-009
+avant assert
+apres assert
+2.08532e-009
+avant assert
+apres assert
+1.95702e-009
+avant assert
+apres assert
+1.83662e-009
+avant assert
+apres assert
+1.72362e-009
+avant assert
+apres assert
+1.61758e-009
+avant assert
+apres assert
+1.51806e-009
+avant assert
+apres assert
+1.42467e-009
+avant assert
+apres assert
+1.33702e-009
+avant assert
+apres assert
+1.25476e-009
+avant assert
+apres assert
+1.17756e-009
+avant assert
+apres assert
+1.10511e-009
+avant assert
+apres assert
+1.03712e-009
+avant assert
+apres assert
+9.73315e-010
+avant assert
+apres assert
+9.13433e-010
+avant assert
+apres assert
+8.57236e-010
+avant assert
+apres assert
+8.04496e-010
+avant assert
+apres assert
+7.55e-010
+avant assert
+apres assert
+7.0855e-010
+avant assert
+apres assert
+6.64958e-010
+avant assert
+apres assert
+6.24047e-010
+avant assert
+apres assert
+5.85654e-010
+avant assert
+apres assert
+5.49622e-010
+avant assert
+apres assert
+5.15808e-010
+avant assert
+apres assert
+4.84073e-010
+avant assert
+apres assert
+4.54291e-010
+avant assert
+apres assert
+4.26342e-010
+avant assert
+apres assert
+4.00112e-010
+avant assert
+apres assert
+3.75496e-010
+avant assert
+apres assert
+3.52394e-010
+avant assert
+apres assert
+3.30713e-010
+avant assert
+apres assert
+3.10367e-010
+avant assert
+apres assert
+2.91272e-010
+avant assert
+apres assert
+2.73352e-010
+avant assert
+apres assert
+2.56534e-010
+avant assert
+apres assert
+2.40751e-010
+avant assert
+apres assert
+2.2594e-010
+avant assert
+apres assert
+2.12039e-010
+avant assert
+apres assert
+1.98994e-010
+avant assert
+apres assert
+1.86751e-010
+avant assert
+apres assert
+1.75261e-010
+avant assert
+apres assert
+1.64479e-010
+avant assert
+apres assert
+1.54359e-010
+avant assert
+apres assert
+1.44863e-010
+avant assert
+apres assert
+1.3595e-010
+avant assert
+apres assert
+1.27586e-010
+avant assert
+apres assert
+1.19736e-010
+avant assert
+apres assert
+1.1237e-010
+avant assert
+apres assert
+1.05457e-010
+avant assert
+apres assert
+9.89685e-011
+avant assert
+apres assert
+9.28796e-011
+avant assert
+apres assert
+8.71653e-011
+avant assert
+apres assert
+8.18026e-011
+avant assert
+apres assert
+7.67698e-011
+avant assert
+apres assert
+7.20467e-011
+avant assert
+apres assert
+6.76141e-011
+avant assert
+apres assert
+6.34542e-011
+avant assert
+apres assert
+5.95503e-011
+avant assert
+apres assert
+5.58866e-011
+avant assert
+apres assert
+5.24483e-011
+avant assert
+apres assert
+4.92215e-011
+avant assert
+apres assert
+4.61932e-011
+avant assert
+apres assert
+4.33512e-011
+avant assert
+apres assert
+4.06841e-011
+avant assert
+apres assert
+3.81811e-011
+avant assert
+apres assert
+3.58321e-011
+avant assert
+apres assert
+3.36275e-011
+avant assert
+apres assert
+3.15587e-011
+avant assert
+apres assert
+2.96171e-011
+avant assert
+apres assert
+2.77949e-011
+avant assert
+apres assert
+2.60849e-011
+avant assert
+apres assert
+2.44801e-011
+avant assert
+apres assert
+2.2974e-011
+avant assert
+apres assert
+2.15605e-011
+avant assert
+apres assert
+2.0234e-011
+avant assert
+apres assert
+1.89892e-011
+avant assert
+apres assert
+1.78209e-011
+avant assert
+apres assert
+1.67245e-011
+avant assert
+apres assert
+1.56955e-011
+avant assert
+apres assert
+1.47299e-011
+avant assert
+apres assert
+1.38237e-011
+avant assert
+apres assert
+1.29732e-011
+avant assert
+apres assert
+1.2175e-011
+avant assert
+apres assert
+1.1426e-011
+avant assert
+apres assert
+1.0723e-011
+avant assert
+apres assert
+1.00633e-011
+avant assert
+apres assert
+9.44417e-012
+avant assert
+apres assert
+8.86313e-012
+avant assert
+apres assert
+8.31784e-012
+avant assert
+apres assert
+7.8061e-012
+avant assert
+apres assert
+7.32584e-012
+avant assert
+apres assert
+6.87513e-012
+avant assert
+apres assert
+6.45215e-012
+avant assert
+apres assert
+6.05519e-012
+avant assert
+apres assert
+5.68265e-012
+avant assert
+apres assert
+5.33304e-012
+avant assert
+apres assert
+5.00493e-012
+avant assert
+apres assert
+4.69701e-012
+avant assert
+apres assert
+4.40803e-012
+avant assert
+apres assert
+4.13684e-012
+avant assert
+apres assert
+3.88233e-012
+avant assert
+apres assert
+3.64347e-012
+avant assert
+apres assert
+3.41931e-012
+avant assert
+apres assert
+3.20894e-012
+avant assert
+apres assert
+3.01152e-012
+avant assert
+apres assert
+2.82624e-012
+avant assert
+apres assert
+2.65236e-012
+avant assert
+apres assert
+2.48918e-012
+avant assert
+apres assert
+2.33604e-012
+avant assert
+apres assert
+2.19231e-012
+avant assert
+apres assert
+2.05744e-012
+avant assert
+apres assert
+1.93086e-012
+avant assert
+apres assert
+1.81206e-012
+avant assert
+apres assert
+1.70058e-012
+avant assert
+apres assert
+1.59595e-012
+avant assert
+apres assert
+1.49776e-012
+avant assert
+apres assert
+1.40562e-012
+avant assert
+apres assert
+1.31914e-012
+avant assert
+apres assert
+1.23798e-012
+avant assert
+apres assert
+1.16182e-012
+avant assert
+apres assert
+1.09034e-012
+avant assert
+apres assert
+1.02326e-012
+avant assert
+apres assert
+9.60301e-013
+avant assert
+apres assert
+9.0122e-013
+avant assert
+apres assert
+8.45774e-013
+avant assert
+apres assert
+7.93739e-013
+avant assert
+apres assert
+7.44905e-013
+avant assert
+apres assert
+6.99076e-013
+avant assert
+apres assert
+6.56067e-013
+avant assert
+apres assert
+6.15703e-013
+avant assert
+apres assert
+5.77823e-013
+avant assert
+apres assert
+5.42273e-013
+avant assert
+apres assert
+5.08911e-013
+avant assert
+apres assert
+4.77601e-013
+avant assert
+apres assert
+4.48217e-013
+avant assert
+apres assert
+4.20641e-013
+avant assert
+apres assert
+3.94762e-013
+avant assert
+apres assert
+3.70475e-013
+avant assert
+apres assert
+3.47682e-013
+avant assert
+apres assert
+3.26291e-013
+avant assert
+apres assert
+3.06217e-013
+avant assert
+apres assert
+2.87377e-013
+avant assert
+apres assert
+2.69697e-013
+avant assert
+apres assert
+2.53104e-013
+avant assert
+apres assert
+2.37532e-013
+avant assert
+apres assert
+2.22919e-013
+avant assert
+apres assert
+2.09204e-013
+avant assert
+apres assert
+1.96333e-013
+avant assert
+apres assert
+1.84254e-013
+avant assert
+apres assert
+1.72918e-013
+avant assert
+apres assert
+1.62279e-013
+avant assert
+apres assert
+1.52295e-013
+avant assert
+apres assert
+1.42926e-013
+avant assert
+apres assert
+1.34132e-013
+avant assert
+apres assert
+1.2588e-013
+avant assert
+apres assert
+1.18136e-013
+avant assert
+apres assert
+1.10867e-013
+avant assert
+apres assert
+1.04046e-013
+avant assert
+apres assert
+9.76452e-014
+avant assert
+apres assert
+9.16377e-014
+avant assert
+apres assert
+8.59998e-014
+avant assert
+apres assert
+8.07088e-014
+avant assert
+apres assert
+7.57433e-014
+avant assert
+apres assert
+7.10834e-014
+avant assert
+apres assert
+6.67101e-014
+avant assert
+apres assert
+6.26058e-014
+avant assert
+apres assert
+5.87541e-014
+avant assert
+apres assert
+5.51393e-014
+avant assert
+apres assert
+5.1747e-014
+avant assert
+apres assert
+4.85633e-014
+avant assert
+apres assert
+4.55755e-014
+avant assert
+apres assert
+4.27716e-014
+avant assert
+apres assert
+4.01401e-014
+avant assert
+apres assert
+3.76706e-014
+avant assert
+apres assert
+3.53529e-014
+avant assert
+apres assert
+3.31779e-014
+avant assert
+apres assert
+3.11367e-014
+avant assert
+apres assert
+2.92211e-014
+avant assert
+apres assert
+2.74233e-014
+avant assert
+apres assert
+2.57361e-014
+avant assert
+apres assert
+2.41527e-014
+avant assert
+apres assert
+2.26668e-014
+avant assert
+apres assert
+2.12722e-014
+avant assert
+apres assert
+1.99635e-014
+avant assert
+apres assert
+1.87353e-014
+avant assert
+apres assert
+1.75826e-014
+avant assert
+apres assert
+1.65009e-014
+avant assert
+apres assert
+1.54857e-014
+avant assert
+apres assert
+1.45329e-014
+avant assert
+apres assert
+1.36388e-014
+avant assert
+apres assert
+1.27997e-014
+avant assert
+apres assert
+1.20122e-014
+avant assert
+apres assert
+1.12732e-014
+avant assert
+apres assert
+1.05796e-014
+avant assert
+apres assert
+9.92874e-015
+avant assert
+apres assert
+9.31789e-015
+avant assert
+apres assert
+8.74462e-015
+avant assert
+apres assert
+8.20662e-015
+avant assert
+apres assert
+7.70172e-015
+avant assert
+apres assert
+7.22788e-015
+avant assert
+apres assert
+6.7832e-015
+avant assert
+apres assert
+6.36587e-015
+avant assert
+apres assert
+5.97422e-015
+avant assert
+apres assert
+5.60667e-015
+avant assert
+apres assert
+5.26173e-015
+avant assert
+apres assert
+4.93801e-015
+avant assert
+apres assert
+4.6342e-015
+avant assert
+apres assert
+4.34909e-015
+avant assert
+apres assert
+4.08152e-015
+avant assert
+apres assert
+3.83041e-015
+avant assert
+apres assert
+3.59475e-015
+avant assert
+apres assert
+3.37359e-015
+avant assert
+apres assert
+3.16604e-015
+avant assert
+apres assert
+2.97125e-015
+avant assert
+apres assert
+2.78845e-015
+avant assert
+apres assert
+2.61689e-015
+avant assert
+apres assert
+2.45589e-015
+avant assert
+apres assert
+2.3048e-015
+avant assert
+apres assert
+2.163e-015
+avant assert
+apres assert
+2.02992e-015
+avant assert
+apres assert
+1.90504e-015
+avant assert
+apres assert
+1.78783e-015
+avant assert
+apres assert
+1.67784e-015
+avant assert
+apres assert
+1.57461e-015
+avant assert
+apres assert
+1.47774e-015
+avant assert
+apres assert
+1.38682e-015
+avant assert
+apres assert
+1.3015e-015
+avant assert
+apres assert
+1.22143e-015
+avant assert
+apres assert
+1.14628e-015
+avant assert
+apres assert
+1.07576e-015
+avant assert
+apres assert
+1.00957e-015
+avant assert
+apres assert
+9.4746e-016
+avant assert
+apres assert
+8.89169e-016
+avant assert
+apres assert
+8.34465e-016
+avant assert
+apres assert
+7.83125e-016
+avant assert
+apres assert
+7.34945e-016
+avant assert
+apres assert
+6.89729e-016
+avant assert
+apres assert
+6.47294e-016
+avant assert
+apres assert
+6.0747e-016
+avant assert
+apres assert
+5.70097e-016
+avant assert
+apres assert
+5.35022e-016
+avant assert
+apres assert
+5.02106e-016
+avant assert
+apres assert
+4.71215e-016
+avant assert
+apres assert
+4.42224e-016
+avant assert
+apres assert
+4.15017e-016
+avant assert
+apres assert
+3.89484e-016
+avant assert
+apres assert
+3.65521e-016
+avant assert
+apres assert
+3.43033e-016
+avant assert
+apres assert
+3.21929e-016
+avant assert
+apres assert
+3.02122e-016
+avant assert
+apres assert
+2.83535e-016
+avant assert
+apres assert
+2.66091e-016
+avant assert
+apres assert
+2.4972e-016
+avant assert
+apres assert
+2.34356e-016
+avant assert
+apres assert
+2.19938e-016
+avant assert
+apres assert
+2.06407e-016
+avant assert
+apres assert
+1.93708e-016
+avant assert
+apres assert
+1.8179e-016
+avant assert
+apres assert
+1.70606e-016
+avant assert
+apres assert
+1.6011e-016
+avant assert
+apres assert
+1.50259e-016
+avant assert
+apres assert
+1.41015e-016
+avant assert
+apres assert
+1.32339e-016
+avant assert
+apres assert
+1.24197e-016
+avant assert
+apres assert
+1.16556e-016
+avant assert
+apres assert
+1.09385e-016
+avant assert
+apres assert
+1.02655e-016
+avant assert
+apres assert
+9.63395e-017
+avant assert
+apres assert
+9.04124e-017
+avant assert
+apres assert
+8.48499e-017
+avant assert
+apres assert
+7.96297e-017
+avant assert
+apres assert
+7.47306e-017
+avant assert
+apres assert
+7.01329e-017
+avant assert
+apres assert
+6.58181e-017
+avant assert
+apres assert
+6.17687e-017
+avant assert
+apres assert
+5.79685e-017
+avant assert
+apres assert
+5.44021e-017
+avant assert
+apres assert
+5.10551e-017
+avant assert
+apres assert
+4.7914e-017
+avant assert
+apres assert
+4.49662e-017
+avant assert
+apres assert
+4.21997e-017
+avant assert
+apres assert
+3.96034e-017
+avant assert
+apres assert
+3.71669e-017
+avant assert
+apres assert
+3.48802e-017
+avant assert
+apres assert
+3.27343e-017
+avant assert
+apres assert
+3.07204e-017
+avant assert
+apres assert
+2.88303e-017
+avant assert
+apres assert
+2.70566e-017
+avant assert
+apres assert
+2.5392e-017
+avant assert
+apres assert
+2.38298e-017
+avant assert
+apres assert
+2.23637e-017
+avant assert
+apres assert
+2.09878e-017
+avant assert
+apres assert
+1.96966e-017
+avant assert
+apres assert
+1.84848e-017
+avant assert
+apres assert
+1.73475e-017
+avant assert
+apres assert
+1.62802e-017
+avant assert
+apres assert
+1.52786e-017
+avant assert
+apres assert
+1.43386e-017
+avant assert
+apres assert
+1.34565e-017
+avant assert
+apres assert
+1.26286e-017
+avant assert
+apres assert
+1.18516e-017
+avant assert
+apres assert
+1.11225e-017
+avant assert
+apres assert
+1.04382e-017
+avant assert
+apres assert
+9.79599e-018
+avant assert
+apres assert
+9.19331e-018
+avant assert
+apres assert
+8.6277e-018
+avant assert
+apres assert
+8.09689e-018
+avant assert
+apres assert
+7.59875e-018
+avant assert
+apres assert
+7.13125e-018
+avant assert
+apres assert
+6.69251e-018
+avant assert
+apres assert
+6.28076e-018
+avant assert
+apres assert
+5.89435e-018
+avant assert
+apres assert
+5.53171e-018
+avant assert
+apres assert
+5.19138e-018
+avant assert
+apres assert
+4.87199e-018
+avant assert
+apres assert
+4.57224e-018
+avant assert
+apres assert
+4.29094e-018
+avant assert
+apres assert
+4.02695e-018
+avant assert
+apres assert
+3.7792e-018
+avant assert
+apres assert
+3.54669e-018
+avant assert
+apres assert
+3.32848e-018
+avant assert
+apres assert
+3.1237e-018
+avant assert
+apres assert
+2.93152e-018
+avant assert
+apres assert
+2.75117e-018
+avant assert
+apres assert
+2.58191e-018
+avant assert
+apres assert
+2.42306e-018
+avant assert
+apres assert
+2.27398e-018
+avant assert
+apres assert
+2.13408e-018
+avant assert
+apres assert
+2.00278e-018
+avant assert
+apres assert
+1.87957e-018
+avant assert
+apres assert
+1.76393e-018
+avant assert
+apres assert
+1.65541e-018
+avant assert
+apres assert
+1.55356e-018
+avant assert
+apres assert
+1.45798e-018
+avant assert
+apres assert
+1.36828e-018
+avant assert
+apres assert
+1.2841e-018
+avant assert
+apres assert
+1.2051e-018
+avant assert
+apres assert
+1.13095e-018
+avant assert
+apres assert
+1.06137e-018
+avant assert
+apres assert
+9.96074e-019
+avant assert
+apres assert
+9.34792e-019
+avant assert
+apres assert
+8.77281e-019
+avant assert
+apres assert
+8.23307e-019
+avant assert
+apres assert
+7.72655e-019
+avant assert
+apres assert
+7.25118e-019
+avant assert
+apres assert
+6.80507e-019
+avant assert
+apres assert
+6.3864e-019
+avant assert
+apres assert
+5.99348e-019
+avant assert
+apres assert
+5.62474e-019
+avant assert
+apres assert
+5.27869e-019
+avant assert
+apres assert
+4.95393e-019
+avant assert
+apres assert
+4.64914e-019
+avant assert
+apres assert
+4.36311e-019
+avant assert
+apres assert
+4.09468e-019
+avant assert
+apres assert
+3.84276e-019
+avant assert
+apres assert
+3.60634e-019
+avant assert
+apres assert
+3.38447e-019
+avant assert
+apres assert
+3.17624e-019
+avant assert
+apres assert
+2.98083e-019
+avant assert
+apres assert
+2.79744e-019
+avant assert
+apres assert
+2.62533e-019
+avant assert
+apres assert
+2.46381e-019
+avant assert
+apres assert
+2.31223e-019
+avant assert
+apres assert
+2.16997e-019
+avant assert
+apres assert
+2.03647e-019
+avant assert
+apres assert
+1.91118e-019
+avant assert
+apres assert
+1.79359e-019
+avant assert
+apres assert
+1.68325e-019
+avant assert
+apres assert
+1.57969e-019
+avant assert
+apres assert
+1.4825e-019
+avant assert
+apres assert
+1.39129e-019
+avant assert
+apres assert
+1.30569e-019
+avant assert
+apres assert
+1.22536e-019
+avant assert
+apres assert
+1.14998e-019
+avant assert
+apres assert
+1.07922e-019
+avant assert
+apres assert
+1.01283e-019
+avant assert
+apres assert
+9.50515e-020
+avant assert
+apres assert
+8.92036e-020
+avant assert
+apres assert
+8.37154e-020
+avant assert
+apres assert
+7.8565e-020
+avant assert
+apres assert
+7.37314e-020
+avant assert
+apres assert
+6.91952e-020
+avant assert
+apres assert
+6.4938e-020
+avant assert
+apres assert
+6.09428e-020
+avant assert
+apres assert
+5.71934e-020
+avant assert
+apres assert
+5.36747e-020
+avant assert
+apres assert
+5.03724e-020
+avant assert
+apres assert
+4.72734e-020
+avant assert
+apres assert
+4.43649e-020
+avant assert
+apres assert
+4.16355e-020
+avant assert
+apres assert
+3.90739e-020
+avant assert
+apres assert
+3.66699e-020
+avant assert
+apres assert
+3.44139e-020
+avant assert
+apres assert
+3.22966e-020
+avant assert
+apres assert
+3.03096e-020
+avant assert
+apres assert
+2.84449e-020
+avant assert
+apres assert
+2.66948e-020
+avant assert
+apres assert
+2.50525e-020
+avant assert
+apres assert
+2.35112e-020
+avant assert
+apres assert
+2.20647e-020
+avant assert
+apres assert
+2.07072e-020
+avant assert
+apres assert
+1.94332e-020
+avant assert
+apres assert
+1.82376e-020
+avant assert
+apres assert
+1.71156e-020
+avant assert
+apres assert
+1.60626e-020
+avant assert
+apres assert
+1.50743e-020
+avant assert
+apres assert
+1.41469e-020
+avant assert
+apres assert
+1.32765e-020
+avant assert
+apres assert
+1.24597e-020
+avant assert
+apres assert
+1.16932e-020
+avant assert
+apres assert
+1.09738e-020
+avant assert
+apres assert
+1.02986e-020
+avant assert
+apres assert
+9.665e-021
+avant assert
+apres assert
+9.07038e-021
+avant assert
+apres assert
+8.51234e-021
+avant assert
+apres assert
+7.98863e-021
+avant assert
+apres assert
+7.49714e-021
+avant assert
+apres assert
+7.03589e-021
+avant assert
+apres assert
+6.60302e-021
+avant assert
+apres assert
+6.19678e-021
+avant assert
+apres assert
+5.81553e-021
+avant assert
+apres assert
+5.45774e-021
+avant assert
+apres assert
+5.12196e-021
+avant assert
+apres assert
+4.80684e-021
+avant assert
+apres assert
+4.51111e-021
+avant assert
+apres assert
+4.23357e-021
+avant assert
+apres assert
+3.97311e-021
+avant assert
+apres assert
+3.72867e-021
+avant assert
+apres assert
+3.49927e-021
+avant assert
+apres assert
+3.28398e-021
+avant assert
+apres assert
+3.08194e-021
+avant assert
+apres assert
+2.89233e-021
+avant assert
+apres assert
+2.71438e-021
+avant assert
+apres assert
+2.54738e-021
+avant assert
+apres assert
+2.39066e-021
+avant assert
+apres assert
+2.24358e-021
+avant assert
+apres assert
+2.10554e-021
+avant assert
+apres assert
+1.976e-021
+avant assert
+apres assert
+1.85443e-021
+avant assert
+apres assert
+1.74034e-021
+avant assert
+apres assert
+1.63327e-021
+avant assert
+apres assert
+1.53279e-021
+avant assert
+apres assert
+1.43848e-021
+avant assert
+apres assert
+1.34998e-021
+avant assert
+apres assert
+1.26693e-021
+avant assert
+apres assert
+1.18898e-021
+avant assert
+apres assert
+1.11583e-021
+avant assert
+apres assert
+1.04718e-021
+avant assert
+apres assert
+9.82756e-022
+avant assert
+apres assert
+9.22293e-022
+avant assert
+apres assert
+8.65551e-022
+avant assert
+apres assert
+8.12299e-022
+avant assert
+apres assert
+7.62324e-022
+avant assert
+apres assert
+7.15423e-022
+avant assert
+apres assert
+6.71408e-022
+avant assert
+apres assert
+6.301e-022
+avant assert
+apres assert
+5.91334e-022
+avant assert
+apres assert
+5.54953e-022
+avant assert
+apres assert
+5.20811e-022
+avant assert
+apres assert
+4.88769e-022
+avant assert
+apres assert
+4.58698e-022
+avant assert
+apres assert
+4.30477e-022
+avant assert
+apres assert
+4.03993e-022
+avant assert
+apres assert
+3.79138e-022
+avant assert
+apres assert
+3.55812e-022
+avant assert
+apres assert
+3.33921e-022
+avant assert
+apres assert
+3.13377e-022
+avant assert
+apres assert
+2.94097e-022
+avant assert
+apres assert
+2.76003e-022
+avant assert
+apres assert
+2.59023e-022
+avant assert
+apres assert
+2.43087e-022
+avant assert
+apres assert
+2.28131e-022
+avant assert
+apres assert
+2.14096e-022
+avant assert
+apres assert
+2.00924e-022
+avant assert
+apres assert
+1.88562e-022
+avant assert
+apres assert
+1.76961e-022
+avant assert
+apres assert
+1.66074e-022
+avant assert
+apres assert
+1.55857e-022
+avant assert
+apres assert
+1.46268e-022
+avant assert
+apres assert
+1.37269e-022
+avant assert
+apres assert
+1.28824e-022
+avant assert
+apres assert
+1.20898e-022
+avant assert
+apres assert
+1.1346e-022
+avant assert
+apres assert
+1.06479e-022
+avant assert
+apres assert
+9.99284e-023
+avant assert
+apres assert
+9.37805e-023
+avant assert
+apres assert
+8.80108e-023
+avant assert
+apres assert
+8.2596e-023
+avant assert
+apres assert
+7.75145e-023
+avant assert
+apres assert
+7.27455e-023
+avant assert
+apres assert
+6.82699e-023
+avant assert
+apres assert
+6.40697e-023
+avant assert
+apres assert
+6.0128e-023
+avant assert
+apres assert
+5.64287e-023
+avant assert
+apres assert
+5.2957e-023
+avant assert
+apres assert
+4.96989e-023
+avant assert
+apres assert
+4.66412e-023
+avant assert
+apres assert
+4.37717e-023
+avant assert
+apres assert
+4.10787e-023
+avant assert
+apres assert
+3.85514e-023
+avant assert
+apres assert
+3.61796e-023
+avant assert
+apres assert
+3.39537e-023
+avant assert
+apres assert
+3.18648e-023
+avant assert
+apres assert
+2.99043e-023
+avant assert
+apres assert
+2.80645e-023
+avant assert
+apres assert
+2.63379e-023
+avant assert
+apres assert
+2.47175e-023
+avant assert
+apres assert
+2.31968e-023
+avant assert
+apres assert
+2.17696e-023
+avant assert
+apres assert
+2.04303e-023
+avant assert
+apres assert
+1.91734e-023
+avant assert
+apres assert
+1.79937e-023
+avant assert
+apres assert
+1.68867e-023
+avant assert
+apres assert
+1.58478e-023
+avant assert
+apres assert
+1.48728e-023
+avant assert
+apres assert
+1.39577e-023
+avant assert
+apres assert
+1.3099e-023
+avant assert
+apres assert
+1.22931e-023
+avant assert
+apres assert
+1.15368e-023
+avant assert
+apres assert
+1.0827e-023
+avant assert
+apres assert
+1.01609e-023
+avant assert
+apres assert
+9.53578e-024
+avant assert
+apres assert
+8.9491e-024
+avant assert
+apres assert
+8.39852e-024
+avant assert
+apres assert
+7.88182e-024
+avant assert
+apres assert
+7.3969e-024
+avant assert
+apres assert
+6.94182e-024
+avant assert
+apres assert
+6.51473e-024
+avant assert
+apres assert
+6.11392e-024
+avant assert
+apres assert
+5.73778e-024
+avant assert
+apres assert
+5.38477e-024
+avant assert
+apres assert
+5.05348e-024
+avant assert
+apres assert
+4.74257e-024
+avant assert
+apres assert
+4.45079e-024
+avant assert
+apres assert
+4.17696e-024
+avant assert
+apres assert
+3.91998e-024
+avant assert
+apres assert
+3.67881e-024
+avant assert
+apres assert
+3.45248e-024
+avant assert
+apres assert
+3.24007e-024
+avant assert
+apres assert
+3.04073e-024
+avant assert
+apres assert
+2.85365e-024
+avant assert
+apres assert
+2.67809e-024
+avant assert
+apres assert
+2.51332e-024
+avant assert
+apres assert
+2.35869e-024
+avant assert
+apres assert
+2.21358e-024
+avant assert
+apres assert
+2.07739e-024
+avant assert
+apres assert
+1.94958e-024
+avant assert
+apres assert
+1.82964e-024
+avant assert
+apres assert
+1.71707e-024
+avant assert
+apres assert
+1.61143e-024
+avant assert
+apres assert
+1.51229e-024
+avant assert
+apres assert
+1.41925e-024
+avant assert
+apres assert
+1.33193e-024
+avant assert
+apres assert
+1.24999e-024
+avant assert
+apres assert
+1.17308e-024
+avant assert
+apres assert
+1.10091e-024
+avant assert
+apres assert
+1.03318e-024
+avant assert
+apres assert
+9.69616e-025
+avant assert
+apres assert
+9.09962e-025
+avant assert
+apres assert
+8.53978e-025
+avant assert
+apres assert
+8.01438e-025
+avant assert
+apres assert
+7.52131e-025
+avant assert
+apres assert
+7.05857e-025
+avant assert
+apres assert
+6.6243e-025
+avant assert
+apres assert
+6.21675e-025
+avant assert
+apres assert
+5.83428e-025
+avant assert
+apres assert
+5.47533e-025
+avant assert
+apres assert
+5.13847e-025
+avant assert
+apres assert
+4.82234e-025
+avant assert
+apres assert
+4.52565e-025
+avant assert
+apres assert
+4.24721e-025
+avant assert
+apres assert
+3.98591e-025
+avant assert
+apres assert
+3.74068e-025
+avant assert
+apres assert
+3.51055e-025
+avant assert
+apres assert
+3.29456e-025
+avant assert
+apres assert
+3.09187e-025
+avant assert
+apres assert
+2.90165e-025
+avant assert
+apres assert
+2.72313e-025
+avant assert
+apres assert
+2.55559e-025
+avant assert
+apres assert
+2.39836e-025
+avant assert
+apres assert
+2.25081e-025
+avant assert
+apres assert
+2.11233e-025
+avant assert
+apres assert
+1.98237e-025
+avant assert
+apres assert
+1.86041e-025
+avant assert
+apres assert
+1.74595e-025
+avant assert
+apres assert
+1.63853e-025
+avant assert
+apres assert
+1.53773e-025
+avant assert
+apres assert
+1.44312e-025
+avant assert
+apres assert
+1.35433e-025
+avant assert
+apres assert
+1.27101e-025
+avant assert
+apres assert
+1.19281e-025
+avant assert
+apres assert
+1.11943e-025
+avant assert
+apres assert
+1.05056e-025
+avant assert
+apres assert
+9.85923e-026
+avant assert
+apres assert
+9.25266e-026
+avant assert
+apres assert
+8.6834e-026
+avant assert
+apres assert
+8.14917e-026
+avant assert
+apres assert
+7.64781e-026
+avant assert
+apres assert
+7.17729e-026
+avant assert
+apres assert
+6.73571e-026
+avant assert
+apres assert
+6.32131e-026
+avant assert
+apres assert
+5.9324e-026
+avant assert
+apres assert
+5.56742e-026
+avant assert
+apres assert
+5.22489e-026
+avant assert
+apres assert
+4.90344e-026
+avant assert
+apres assert
+4.60176e-026
+avant assert
+apres assert
+4.31865e-026
+avant assert
+apres assert
+4.05295e-026
+avant assert
+apres assert
+3.8036e-026
+avant assert
+apres assert
+3.56959e-026
+avant assert
+apres assert
+3.34997e-026
+avant assert
+apres assert
+3.14387e-026
+avant assert
+apres assert
+2.95045e-026
+avant assert
+apres assert
+2.76893e-026
+avant assert
+apres assert
+2.59857e-026
+avant assert
+apres assert
+2.4387e-026
+avant assert
+apres assert
+2.28866e-026
+avant assert
+apres assert
+2.14786e-026
+avant assert
+apres assert
+2.01571e-026
+avant assert
+apres assert
+1.8917e-026
+avant assert
+apres assert
+1.77532e-026
+avant assert
+apres assert
+1.66609e-026
+avant assert
+apres assert
+1.56359e-026
+avant assert
+apres assert
+1.46739e-026
+avant assert
+apres assert
+1.37711e-026
+avant assert
+apres assert
+1.29239e-026
+avant assert
+apres assert
+1.21288e-026
+avant assert
+apres assert
+1.13826e-026
+avant assert
+apres assert
+1.06823e-026
+avant assert
+apres assert
+1.00251e-026
+avant assert
+apres assert
+9.40828e-027
+avant assert
+apres assert
+8.82945e-027
+avant assert
+apres assert
+8.28623e-027
+avant assert
+apres assert
+7.77643e-027
+avant assert
+apres assert
+7.298e-027
+avant assert
+apres assert
+6.849e-027
+avant assert
+apres assert
+6.42763e-027
+avant assert
+apres assert
+6.03218e-027
+avant assert
+apres assert
+5.66106e-027
+avant assert
+apres assert
+5.31277e-027
+avant assert
+apres assert
+4.98591e-027
+avant assert
+apres assert
+4.67916e-027
+avant assert
+apres assert
+4.39128e-027
+avant assert
+apres assert
+4.12111e-027
+avant assert
+apres assert
+3.86757e-027
+avant assert
+apres assert
+3.62962e-027
+avant assert
+apres assert
+3.40632e-027
+avant assert
+apres assert
+3.19675e-027
+avant assert
+apres assert
+3.00007e-027
+avant assert
+apres assert
+2.8155e-027
+avant assert
+apres assert
+2.64228e-027
+avant assert
+apres assert
+2.47972e-027
+avant assert
+apres assert
+2.32716e-027
+avant assert
+apres assert
+2.18398e-027
+avant assert
+apres assert
+2.04962e-027
+avant assert
+apres assert
+1.92352e-027
+avant assert
+apres assert
+1.80517e-027
+avant assert
+apres assert
+1.69411e-027
+avant assert
+apres assert
+1.58989e-027
+avant assert
+apres assert
+1.49207e-027
+avant assert
+apres assert
+1.40027e-027
+avant assert
+apres assert
+1.31412e-027
+avant assert
+apres assert
+1.23327e-027
+avant assert
+apres assert
+1.1574e-027
+avant assert
+apres assert
+1.08619e-027
+avant assert
+apres assert
+1.01937e-027
+avant assert
+apres assert
+9.56651e-028
+avant assert
+apres assert
+8.97795e-028
+avant assert
+apres assert
+8.42559e-028
+avant assert
+apres assert
+7.90722e-028
+avant assert
+apres assert
+7.42074e-028
+avant assert
+apres assert
+6.96419e-028
+avant assert
+apres assert
+6.53573e-028
+avant assert
+apres assert
+6.13363e-028
+avant assert
+apres assert
+5.75627e-028
+avant assert
+apres assert
+5.40213e-028
+avant assert
+apres assert
+5.06977e-028
+avant assert
+apres assert
+4.75786e-028
+avant assert
+apres assert
+4.46514e-028
+avant assert
+apres assert
+4.19043e-028
+avant assert
+apres assert
+3.93262e-028
+avant assert
+apres assert
+3.69067e-028
+avant assert
+apres assert
+3.46361e-028
+avant assert
+apres assert
+3.25051e-028
+avant assert
+apres assert
+3.05053e-028
+avant assert
+apres assert
+2.86285e-028
+avant assert
+apres assert
+2.68672e-028
+avant assert
+apres assert
+2.52142e-028
+avant assert
+apres assert
+2.3663e-028
+avant assert
+apres assert
+2.22071e-028
+avant assert
+apres assert
+2.08409e-028
+avant assert
+apres assert
+1.95587e-028
+avant assert
+apres assert
+1.83554e-028
+avant assert
+apres assert
+1.72261e-028
+avant assert
+apres assert
+1.61663e-028
+avant assert
+apres assert
+1.51717e-028
+avant assert
+apres assert
+1.42382e-028
+avant assert
+apres assert
+1.33623e-028
+avant assert
+apres assert
+1.25402e-028
+avant assert
+apres assert
+1.17687e-028
+avant assert
+apres assert
+1.10446e-028
+avant assert
+apres assert
+1.03651e-028
+avant assert
+apres assert
+9.72741e-029
+avant assert
+apres assert
+9.12894e-029
+avant assert
+apres assert
+8.5673e-029
+avant assert
+apres assert
+8.04021e-029
+avant assert
+apres assert
+7.54555e-029
+avant assert
+apres assert
+7.08132e-029
+avant assert
+apres assert
+6.64565e-029
+avant assert
+apres assert
+6.23679e-029
+avant assert
+apres assert
+5.85308e-029
+avant assert
+apres assert
+5.49298e-029
+avant assert
+apres assert
+5.15503e-029
+avant assert
+apres assert
+4.83788e-029
+avant assert
+apres assert
+4.54023e-029
+avant assert
+apres assert
+4.2609e-029
+avant assert
+apres assert
+3.99876e-029
+avant assert
+apres assert
+3.75274e-029
+avant assert
+apres assert
+3.52186e-029
+avant assert
+apres assert
+3.30518e-029
+avant assert
+apres assert
+3.10184e-029
+avant assert
+apres assert
+2.911e-029
+avant assert
+apres assert
+2.73191e-029
+avant assert
+apres assert
+2.56383e-029
+avant assert
+apres assert
+2.40609e-029
+avant assert
+apres assert
+2.25806e-029
+avant assert
+apres assert
+2.11914e-029
+avant assert
+apres assert
+1.98876e-029
+avant assert
+apres assert
+1.86641e-029
+avant assert
+apres assert
+1.75158e-029
+avant assert
+apres assert
+1.64382e-029
+avant assert
+apres assert
+1.54268e-029
+avant assert
+apres assert
+1.44777e-029
+avant assert
+apres assert
+1.3587e-029
+avant assert
+apres assert
+1.27511e-029
+avant assert
+apres assert
+1.19666e-029
+avant assert
+apres assert
+1.12304e-029
+avant assert
+apres assert
+1.05394e-029
+avant assert
+apres assert
+9.89101e-030
+avant assert
+apres assert
+9.28248e-030
+avant assert
+apres assert
+8.71139e-030
+avant assert
+apres assert
+8.17543e-030
+avant assert
+apres assert
+7.67245e-030
+avant assert
+apres assert
+7.20042e-030
+avant assert
+apres assert
+6.75742e-030
+avant assert
+apres assert
+6.34168e-030
+avant assert
+apres assert
+5.95152e-030
+avant assert
+apres assert
+5.58536e-030
+avant assert
+apres assert
+5.24173e-030
+avant assert
+apres assert
+4.91924e-030
+avant assert
+apres assert
+4.61659e-030
+avant assert
+apres assert
+4.33256e-030
+avant assert
+apres assert
+4.06601e-030
+avant assert
+apres assert
+3.81586e-030
+avant assert
+apres assert
+3.58109e-030
+avant assert
+apres assert
+3.36077e-030
+avant assert
+apres assert
+3.154e-030
+avant assert
+apres assert
+2.95996e-030
+avant assert
+apres assert
+2.77785e-030
+avant assert
+apres assert
+2.60695e-030
+avant assert
+apres assert
+2.44656e-030
+avant assert
+apres assert
+2.29604e-030
+avant assert
+apres assert
+2.15478e-030
+avant assert
+apres assert
+2.02221e-030
+avant assert
+apres assert
+1.8978e-030
+avant assert
+apres assert
+1.78104e-030
+avant assert
+apres assert
+1.67146e-030
+avant assert
+apres assert
+1.56863e-030
+avant assert
+apres assert
+1.47212e-030
+avant assert
+apres assert
+1.38155e-030
+avant assert
+apres assert
+1.29655e-030
+avant assert
+apres assert
+1.21679e-030
+avant assert
+apres assert
+1.14192e-030
+avant assert
+apres assert
+1.07167e-030
+avant assert
+apres assert
+1.00574e-030
+avant assert
+apres assert
+9.4386e-031
+avant assert
+apres assert
+8.85791e-031
+avant assert
+apres assert
+8.31294e-031
+avant assert
+apres assert
+7.8015e-031
+avant assert
+apres assert
+7.32152e-031
+avant assert
+apres assert
+6.87108e-031
+avant assert
+apres assert
+6.44834e-031
+avant assert
+apres assert
+6.05162e-031
+avant assert
+apres assert
+5.6793e-031
+avant assert
+apres assert
+5.32989e-031
+avant assert
+apres assert
+5.00198e-031
+avant assert
+apres assert
+4.69424e-031
+avant assert
+apres assert
+4.40543e-031
+avant assert
+apres assert
+4.1344e-031
+avant assert
+apres assert
+3.88003e-031
+avant assert
+apres assert
+3.64132e-031
+avant assert
+apres assert
+3.41729e-031
+avant assert
+apres assert
+3.20705e-031
+avant assert
+apres assert
+3.00974e-031
+avant assert
+apres assert
+2.82457e-031
+avant assert
+apres assert
+2.65079e-031
+avant assert
+apres assert
+2.48771e-031
+avant assert
+apres assert
+2.33466e-031
+avant assert
+apres assert
+2.19102e-031
+avant assert
+apres assert
+2.05622e-031
+avant assert
+apres assert
+1.92972e-031
+avant assert
+apres assert
+1.81099e-031
+avant assert
+apres assert
+1.69957e-031
+avant assert
+apres assert
+1.59501e-031
+avant assert
+apres assert
+1.49688e-031
+avant assert
+apres assert
+1.40479e-031
+avant assert
+apres assert
+1.31836e-031
+avant assert
+apres assert
+1.23725e-031
+avant assert
+apres assert
+1.16113e-031
+avant assert
+apres assert
+1.08969e-031
+avant assert
+apres assert
+1.02265e-031
+avant assert
+apres assert
+9.59734e-032
+avant assert
+apres assert
+9.00688e-032
+avant assert
+apres assert
+8.45275e-032
+avant assert
+apres assert
+7.9327e-032
+avant assert
+apres assert
+7.44466e-032
+avant assert
+apres assert
+6.98664e-032
+avant assert
+apres assert
+6.5568e-032
+avant assert
+apres assert
+6.1534e-032
+avant assert
+apres assert
+5.77482e-032
+avant assert
+apres assert
+5.41953e-032
+avant assert
+apres assert
+5.08611e-032
+avant assert
+apres assert
+4.77319e-032
+avant assert
+apres assert
+4.47953e-032
+avant assert
+apres assert
+4.20393e-032
+avant assert
+apres assert
+3.94529e-032
+avant assert
+apres assert
+3.70256e-032
+avant assert
+apres assert
+3.47477e-032
+avant assert
+apres assert
+3.26099e-032
+avant assert
+apres assert
+3.06036e-032
+avant assert
+apres assert
+2.87208e-032
+avant assert
+apres assert
+2.69538e-032
+avant assert
+apres assert
+2.52955e-032
+avant assert
+apres assert
+2.37392e-032
+avant assert
+apres assert
+2.22787e-032
+avant assert
+apres assert
+2.0908e-032
+avant assert
+apres assert
+1.96217e-032
+avant assert
+apres assert
+1.84145e-032
+avant assert
+apres assert
+1.72816e-032
+avant assert
+apres assert
+1.62184e-032
+avant assert
+apres assert
+1.52206e-032
+avant assert
+apres assert
+1.42841e-032
+avant assert
+apres assert
+1.34053e-032
+avant assert
+apres assert
+1.25806e-032
+avant assert
+apres assert
+1.18066e-032
+avant assert
+apres assert
+1.10802e-032
+avant assert
+apres assert
+1.03985e-032
+avant assert
+apres assert
+9.75876e-033
+avant assert
+apres assert
+9.15837e-033
+avant assert
+apres assert
+8.59491e-033
+avant assert
+apres assert
+8.06612e-033
+avant assert
+apres assert
+7.56987e-033
+avant assert
+apres assert
+7.10414e-033
+avant assert
+apres assert
+6.66707e-033
+avant assert
+apres assert
+6.25689e-033
+avant assert
+apres assert
+5.87195e-033
+avant assert
+apres assert
+5.51068e-033
+avant assert
+apres assert
+5.17165e-033
+avant assert
+apres assert
+4.85347e-033
+avant assert
+apres assert
+4.55487e-033
+avant assert
+apres assert
+4.27464e-033
+avant assert
+apres assert
+4.01165e-033
+avant assert
+apres assert
+3.76484e-033
+avant assert
+apres assert
+3.53321e-033
+avant assert
+apres assert
+3.31584e-033
+avant assert
+apres assert
+3.11183e-033
+avant assert
+apres assert
+2.92038e-033
+avant assert
+apres assert
+2.74071e-033
+avant assert
+apres assert
+2.57209e-033
+avant assert
+apres assert
+2.41385e-033
+avant assert
+apres assert
+2.26534e-033
+avant assert
+apres assert
+2.12597e-033
+avant assert
+apres assert
+1.99517e-033
+avant assert
+apres assert
+1.87242e-033
+avant assert
+apres assert
+1.75723e-033
+avant assert
+apres assert
+1.64911e-033
+avant assert
+apres assert
+1.54766e-033
+avant assert
+apres assert
+1.45244e-033
+avant assert
+apres assert
+1.36308e-033
+avant assert
+apres assert
+1.27922e-033
+avant assert
+apres assert
+1.20052e-033
+avant assert
+apres assert
+1.12666e-033
+avant assert
+apres assert
+1.05734e-033
+avant assert
+apres assert
+9.92289e-034
+avant assert
+apres assert
+9.3124e-034
+avant assert
+apres assert
+8.73947e-034
+avant assert
+apres assert
+8.20179e-034
+avant assert
+apres assert
+7.69719e-034
+avant assert
+apres assert
+7.22363e-034
+avant assert
+apres assert
+6.7792e-034
+avant assert
+apres assert
+6.36212e-034
+avant assert
+apres assert
+5.9707e-034
+avant assert
+apres assert
+5.60337e-034
+avant assert
+apres assert
+5.25863e-034
+avant assert
+apres assert
+4.9351e-034
+avant assert
+apres assert
+4.63147e-034
+avant assert
+apres assert
+4.34653e-034
+avant assert
+apres assert
+4.07912e-034
+avant assert
+apres assert
+3.82816e-034
+avant assert
+apres assert
+3.59263e-034
+avant assert
+apres assert
+3.3716e-034
+avant assert
+apres assert
+3.16417e-034
+avant assert
+apres assert
+2.9695e-034
+avant assert
+apres assert
+2.78681e-034
+avant assert
+apres assert
+2.61535e-034
+avant assert
+apres assert
+2.45445e-034
+avant assert
+apres assert
+2.30344e-034
+avant assert
+apres assert
+2.16172e-034
+avant assert
+apres assert
+2.02873e-034
+avant assert
+apres assert
+1.90391e-034
+avant assert
+apres assert
+1.78678e-034
+avant assert
+apres assert
+1.67685e-034
+avant assert
+apres assert
+1.57368e-034
+avant assert
+apres assert
+1.47687e-034
+avant assert
+apres assert
+1.386e-034
+avant assert
+apres assert
+1.30073e-034
+avant assert
+apres assert
+1.22071e-034
+avant assert
+apres assert
+1.1456e-034
+avant assert
+apres assert
+1.07512e-034
+avant assert
+apres assert
+1.00898e-034
+avant assert
+apres assert
+9.46902e-035
+avant assert
+apres assert
+8.88645e-035
+avant assert
+apres assert
+8.33973e-035
+avant assert
+apres assert
+7.82664e-035
+avant assert
+apres assert
+7.34511e-035
+avant assert
+apres assert
+6.89322e-035
+avant assert
+apres assert
+6.46912e-035
+avant assert
+apres assert
+6.07112e-035
+avant assert
+apres assert
+5.69761e-035
+avant assert
+apres assert
+5.34707e-035
+avant assert
+apres assert
+5.0181e-035
+avant assert
+apres assert
+4.70937e-035
+avant assert
+apres assert
+4.41963e-035
+avant assert
+apres assert
+4.14772e-035
+avant assert
+apres assert
+3.89254e-035
+avant assert
+apres assert
+3.65306e-035
+avant assert
+apres assert
+3.42831e-035
+avant assert
+apres assert
+3.21739e-035
+avant assert
+apres assert
+3.01944e-035
+avant assert
+apres assert
+2.83368e-035
+avant assert
+apres assert
+2.65934e-035
+avant assert
+apres assert
+2.49573e-035
+avant assert
+apres assert
+2.34218e-035
+avant assert
+apres assert
+2.19808e-035
+avant assert
+apres assert
+2.06285e-035
+avant assert
+apres assert
+1.93593e-035
+avant assert
+apres assert
+1.81683e-035
+avant assert
+apres assert
+1.70505e-035
+avant assert
+apres assert
+1.60015e-035
+avant assert
+apres assert
+1.5017e-035
+avant assert
+apres assert
+1.40931e-035
+avant assert
+apres assert
+1.32261e-035
+avant assert
+apres assert
+1.24124e-035
+avant assert
+apres assert
+1.16487e-035
+avant assert
+apres assert
+1.0932e-035
+avant assert
+apres assert
+1.02595e-035
+avant assert
+apres assert
+9.62827e-036
+avant assert
+apres assert
+9.03591e-036
+avant assert
+apres assert
+0.00106108
+avant assert
+apres assert
+0.000958239
+avant assert
+apres assert
+0.000991627
+avant assert
+apres assert
+0.00106988
+avant assert
+apres assert
+0.00130993
+avant assert
+apres assert
+0.00149513
+avant assert
+apres assert
+0.0010991
+avant assert
+apres assert
+0.00124757
+avant assert
+apres assert
+0.00138915
+avant assert
+apres assert
+0.000911956
+avant assert
+apres assert
+0.000806774
+avant assert
+apres assert
+0.000901172
+avant assert
+apres assert
+0.000799778
+avant assert
+apres assert
+0.000599889
+avant assert
+apres assert
+0.00082277
+avant assert
+apres assert
+0.00112866
+avant assert
+apres assert
+0.000893533
+avant assert
+apres assert
+0.000723885
+avant assert
+apres assert
+0.00101265
+avant assert
+apres assert
+0.000922767
+avant assert
+apres assert
+0.000738466
+avant assert
+apres assert
+0.000628697
+avant assert
+apres assert
+0.000401381
+avant assert
+apres assert
+0.000449901
+avant assert
+apres assert
+0.000389942
+avant assert
+apres assert
+0.000352665
+avant assert
+apres assert
+0.000395804
+avant assert
+apres assert
+0.000379213
+avant assert
+apres assert
+0.000211965
+avant assert
+apres assert
+0.000231208
+avant assert
+apres assert
+0.000274991
+avant assert
+apres assert
+0.00018938
+avant assert
+apres assert
+0.000244441
+avant assert
+apres assert
+0.000315047
+avant assert
+apres assert
+0.000287117
+avant assert
+apres assert
+0.000197735
+avant assert
+apres assert
+0.000159291
+avant assert
+apres assert
+0.000155675
+avant assert
+apres assert
+0.000140108
+avant assert
+apres assert
+6.74438e-005
+avant assert
+apres assert
+3.08875e-007
+avant assert
+apres assert
+3.47772e-006
+avant assert
+apres assert
+3.67522e-005
+avant assert
+apres assert
+0.00022306
+avant assert
+apres assert
+0.000123519
+avant assert
+apres assert
+7.87261e-006
+avant assert
+apres assert
+2.15044e-006
+avant assert
+apres assert
+8.54188e-006
+avant assert
+apres assert
+4.27237e-005
+avant assert
+apres assert
+9.87433e-005
+avant assert
+apres assert
+5.07378e-005
+avant assert
+apres assert
+3.90571e-005
+avant assert
+apres assert
+3.66541e-005
+avant assert
+apres assert
+8.47431e-006
+avant assert
+apres assert
+1.34781e-005
+avant assert
+apres assert
+3.43355e-005
+avant assert
+apres assert
+3.69308e-005
+avant assert
+apres assert
+1.54804e-005
+avant assert
+apres assert
+7.68828e-005
+avant assert
+apres assert
+0.000109138
+avant assert
+apres assert
+6.26864e-005
+avant assert
+apres assert
+0.000115008
+avant assert
+apres assert
+0.000159823
+avant assert
+apres assert
+7.38241e-005
+avant assert
+apres assert
+9.95172e-005
+avant assert
+apres assert
+0.000111626
+avant assert
+apres assert
+5.3015e-005
+avant assert
+apres assert
+1.05524e-005
+avant assert
+apres assert
+1.67954e-005
+avant assert
+apres assert
+7.44159e-005
+avant assert
+apres assert
+7.32249e-005
+avant assert
+apres assert
+8.63246e-005
+avant assert
+apres assert
+8.19174e-005
+avant assert
+apres assert
+7.68776e-005
+avant assert
+apres assert
+7.82246e-005
+avant assert
+apres assert
+1.58297e-006
+avant assert
+apres assert
+5.15082e-005
+avant assert
+apres assert
+5.70548e-005
+avant assert
+apres assert
+2.98651e-005
+avant assert
+apres assert
+5.25157e-005
+avant assert
+apres assert
+5.80815e-005
+avant assert
+apres assert
+7.19861e-005
+avant assert
+apres assert
+0.00014219
+avant assert
+apres assert
+0.000181018
+avant assert
+apres assert
+8.24188e-005
+avant assert
+apres assert
+2.34199e-005
+avant assert
+apres assert
+8.63864e-005
+avant assert
+apres assert
+6.81113e-005
+avant assert
+apres assert
+4.28119e-005
+avant assert
+apres assert
+5.38752e-005
+avant assert
+apres assert
+0.000112686
+avant assert
+apres assert
+6.05319e-005
+avant assert
+apres assert
+2.53381e-005
+avant assert
+apres assert
+1.95876e-005
+avant assert
+apres assert
+4.88761e-005
+avant assert
+apres assert
+0.000108735
+avant assert
+apres assert
+0.000135813
+avant assert
+apres assert
+0.00017936
+avant assert
+apres assert
+0.00013046
+avant assert
+apres assert
+0.000203614
+avant assert
+apres assert
+0.000274802
+avant assert
+apres assert
+0.000357701
+avant assert
+apres assert
+0.000352409
+avant assert
+apres assert
+0.000247514
+avant assert
+apres assert
+0.000176579
+avant assert
+apres assert
+0.000227287
+avant assert
+apres assert
+0.000235804
+avant assert
+apres assert
+4.78207e-005
+avant assert
+apres assert
+5.82357e-006
+avant assert
+apres assert
+2.21011e-006
+avant assert
+apres assert
+8.21198e-006
+avant assert
+apres assert
+9.77279e-005
+avant assert
+apres assert
+5.88939e-005
+avant assert
+apres assert
+7.54486e-005
+avant assert
+apres assert
+0.000177458
+avant assert
+apres assert
+7.6552e-005
+avant assert
+apres assert
+1.95407e-005
+avant assert
+apres assert
+3.3459e-005
+avant assert
+apres assert
+8.7026e-006
+avant assert
+apres assert
+5.9994e-006
+avant assert
+apres assert
+2.05158e-006
+avant assert
+apres assert
+0.000113425
+avant assert
+apres assert
+0.000105416
+avant assert
+apres assert
+7.04642e-005
+avant assert
+apres assert
+3.63503e-005
+avant assert
+apres assert
+4.27933e-005
+avant assert
+apres assert
+7.29354e-005
+avant assert
+apres assert
+8.50938e-005
+avant assert
+apres assert
+8.90577e-005
+avant assert
+apres assert
+0.000136787
+avant assert
+apres assert
+0.000258777
+avant assert
+apres assert
+0.00017505
+avant assert
+apres assert
+0.000195126
+avant assert
+apres assert
+0.000224526
+avant assert
+apres assert
+0.000263032
+avant assert
+apres assert
+0.000123325
+avant assert
+apres assert
+6.01258e-005
+avant assert
+apres assert
+4.70717e-005
+avant assert
+apres assert
+7.3945e-005
+avant assert
+apres assert
+0.000107811
+avant assert
+apres assert
+4.49459e-005
+avant assert
+apres assert
+3.18491e-005
+avant assert
+apres assert
+1.13185e-005
+avant assert
+apres assert
+3.79432e-006
+avant assert
+apres assert
+4.92191e-006
+avant assert
+apres assert
+2.8919e-009
+avant assert
+apres assert
+7.84994e-006
+avant assert
+apres assert
+2.3689e-005
+avant assert
+apres assert
+2.43598e-006
+avant assert
+apres assert
+1.19146e-006
+avant assert
+apres assert
+2.44012e-008
+avant assert
+apres assert
+3.42764e-006
+avant assert
+apres assert
+1.30565e-006
+avant assert
+apres assert
+1.95008e-006
+avant assert
+apres assert
+6.26208e-006
+avant assert
+apres assert
+5.95943e-007
+avant assert
+apres assert
+2.35232e-008
+avant assert
+apres assert
+0.0001127
+avant assert
+apres assert
+0.000214335
+avant assert
+apres assert
+9.75517e-005
+avant assert
+apres assert
+0.000111715
+avant assert
+apres assert
+0.000232441
+avant assert
+apres assert
+6.99046e-005
+avant assert
+apres assert
+5.07415e-007
+avant assert
+apres assert
+3.18863e-005
+avant assert
+apres assert
+1.45778e-005
+avant assert
+apres assert
+4.60818e-006
+avant assert
+apres assert
+1.79141e-005
+avant assert
+apres assert
+7.28102e-006
+avant assert
+apres assert
+1.75999e-005
+avant assert
+apres assert
+9.84474e-005
+avant assert
+apres assert
+0.000149219
+avant assert
+apres assert
+0.000130719
+avant assert
+apres assert
+8.59981e-005
+avant assert
+apres assert
+5.15707e-005
+avant assert
+apres assert
+0.000125723
+avant assert
+apres assert
+0.000136033
+avant assert
+apres assert
+7.38772e-005
+avant assert
+apres assert
+4.25644e-005
+avant assert
+apres assert
+6.92718e-005
+avant assert
+apres assert
+2.31213e-005
+avant assert
+apres assert
+2.52575e-007
+avant assert
+apres assert
+2.37208e-005
+avant assert
+apres assert
+1.57386e-005
+avant assert
+apres assert
+3.18734e-005
+avant assert
+apres assert
+4.05826e-005
+avant assert
+apres assert
+3.44682e-005
+avant assert
+apres assert
+3.40788e-005
+avant assert
+apres assert
+4.23336e-005
+avant assert
+apres assert
+0.000202033
+avant assert
+apres assert
+0.000268081
+avant assert
+apres assert
+0.000240593
+avant assert
+apres assert
+0.000233376
+avant assert
+apres assert
+0.000179489
+avant assert
+apres assert
+0.000260273
+avant assert
+apres assert
+0.000187038
+avant assert
+apres assert
+0.000195995
+avant assert
+apres assert
+7.14936e-005
+avant assert
+apres assert
+4.34147e-005
+avant assert
+apres assert
+9.77693e-005
+avant assert
+apres assert
+4.7959e-005
+avant assert
+apres assert
+1.32672e-006
+avant assert
+apres assert
+2.45376e-006
+avant assert
+apres assert
+2.51765e-006
+avant assert
+apres assert
+9.72934e-006
+avant assert
+apres assert
+6.13792e-007
+avant assert
+apres assert
+1.86087e-005
+avant assert
+apres assert
+2.48011e-005
+avant assert
+apres assert
+2.83569e-005
+avant assert
+apres assert
+5.76741e-006
+avant assert
+apres assert
+2.28467e-005
+avant assert
+apres assert
+3.71252e-006
+avant assert
+apres assert
+3.95474e-006
+avant assert
+apres assert
+1.39051e-005
+avant assert
+apres assert
+8.18763e-006
+avant assert
+apres assert
+4.49908e-006
+avant assert
+apres assert
+3.07796e-006
+avant assert
+apres assert
+2.92098e-005
+avant assert
+apres assert
+2.53557e-005
+avant assert
+apres assert
+1.62103e-006
+avant assert
+apres assert
+2.96046e-006
+avant assert
+apres assert
+3.65255e-005
+avant assert
+apres assert
+1.64213e-005
+avant assert
+apres assert
+7.02534e-005
+avant assert
+apres assert
+7.00592e-005
+avant assert
+apres assert
+2.21272e-005
+avant assert
+apres assert
+5.41808e-005
+avant assert
+apres assert
+3.0565e-005
+avant assert
+apres assert
+1.68436e-005
+avant assert
+apres assert
+1.4548e-008
+avant assert
+apres assert
+1.63118e-005
+avant assert
+apres assert
+8.87373e-005
+avant assert
+apres assert
+7.96627e-005
+avant assert
+apres assert
+3.42259e-008
+avant assert
+apres assert
+6.75905e-007
+avant assert
+apres assert
+1.09576e-006
+avant assert
+apres assert
+8.35276e-007
+avant assert
+apres assert
+3.59077e-005
+avant assert
+apres assert
+7.93748e-005
+avant assert
+apres assert
+4.45982e-005
+avant assert
+apres assert
+7.5212e-005
+avant assert
+apres assert
+7.31311e-005
+avant assert
+apres assert
+7.98398e-005
+avant assert
+apres assert
+0.00016414
+avant assert
+apres assert
+0.000237636
+avant assert
+apres assert
+0.000143513
+avant assert
+apres assert
+0.000135848
+avant assert
+apres assert
+7.72249e-005
+avant assert
+apres assert
+2.26095e-006
+avant assert
+apres assert
+5.57013e-007
+avant assert
+apres assert
+8.30522e-006
+avant assert
+apres assert
+5.24933e-006
+avant assert
+apres assert
+1.4044e-006
+avant assert
+apres assert
+9.95679e-007
+avant assert
+apres assert
+6.19029e-006
+avant assert
+apres assert
+2.36547e-005
+avant assert
+apres assert
+5.72367e-005
+avant assert
+apres assert
+2.186e-005
+avant assert
+apres assert
+6.63945e-006
+avant assert
+apres assert
+5.04384e-006
+avant assert
+apres assert
+7.70885e-006
+avant assert
+apres assert
+1.84203e-005
+avant assert
+apres assert
+1.06051e-005
+avant assert
+apres assert
+1.33624e-005
+avant assert
+apres assert
+2.54345e-005
+avant assert
+apres assert
+6.95613e-005
+avant assert
+apres assert
+1.87023e-005
+avant assert
+apres assert
+1.91156e-005
+avant assert
+apres assert
+5.24116e-005
+avant assert
+apres assert
+1.02924e-005
+avant assert
+apres assert
+4.02578e-006
+avant assert
+apres assert
+1.59722e-005
+avant assert
+apres assert
+2.18098e-007
+avant assert
+apres assert
+4.88806e-007
+avant assert
+apres assert
+3.1641e-006
+avant assert
+apres assert
+4.89148e-008
+avant assert
+apres assert
+4.79174e-006
+avant assert
+apres assert
+2.72986e-005
+avant assert
+apres assert
+3.14977e-005
+avant assert
+apres assert
+1.7484e-006
+avant assert
+apres assert
+7.35255e-008
+avant assert
+apres assert
+1.23699e-005
+avant assert
+apres assert
+0.000155488
+avant assert
+apres assert
+0.000165917
+avant assert
+apres assert
+0.000221463
+avant assert
+apres assert
+0.000166785
+avant assert
+apres assert
+8.38398e-005
+avant assert
+apres assert
+0.000321577
+avant assert
+apres assert
+0.000108425
+avant assert
+apres assert
+2.05435e-005
+avant assert
+apres assert
+0.000102995
+avant assert
+apres assert
+5.29701e-005
+avant assert
+apres assert
+2.15979e-005
+avant assert
+apres assert
+1.56134e-005
+avant assert
+apres assert
+2.94857e-005
+avant assert
+apres assert
+8.493e-005
+avant assert
+apres assert
+0.000142369
+avant assert
+apres assert
+3.54186e-005
+avant assert
+apres assert
+3.98934e-005
+avant assert
+apres assert
+4.25011e-005
+avant assert
+apres assert
+0.000116027
+avant assert
+apres assert
+0.000167402
+avant assert
+apres assert
+4.86719e-005
+avant assert
+apres assert
+4.56774e-005
+avant assert
+apres assert
+6.56004e-005
+avant assert
+apres assert
+3.53278e-005
+avant assert
+apres assert
+2.31043e-005
+avant assert
+apres assert
+1.85417e-005
+avant assert
+apres assert
+5.73966e-005
+avant assert
+apres assert
+1.47038e-005
+avant assert
+apres assert
+4.04982e-006
+avant assert
+apres assert
+2.99893e-007
+avant assert
+apres assert
+4.14546e-005
+avant assert
+apres assert
+1.28431e-005
+avant assert
+apres assert
+1.87383e-006
+avant assert
+apres assert
+3.91399e-006
+avant assert
+apres assert
+3.12e-006
+avant assert
+apres assert
+1.90511e-005
+avant assert
+apres assert
+6.89682e-006
+avant assert
+apres assert
+2.36773e-005
+avant assert
+apres assert
+6.05563e-006
+avant assert
+apres assert
+5.33611e-008
+avant assert
+apres assert
+4.52142e-006
+avant assert
+apres assert
+2.95522e-007
+avant assert
+apres assert
+2.2395e-005
+avant assert
+apres assert
+5.53286e-005
+avant assert
+apres assert
+8.47981e-005
+avant assert
+apres assert
+2.82591e-005
+avant assert
+apres assert
+9.59154e-006
+avant assert
+apres assert
+1.57379e-007
+avant assert
+apres assert
+9.12225e-006
+avant assert
+apres assert
+8.52303e-007
+avant assert
+apres assert
+4.14756e-007
+avant assert
+apres assert
+7.73245e-006
+avant assert
+apres assert
+3.78042e-005
+avant assert
+apres assert
+1.37146e-005
+avant assert
+apres assert
+8.62426e-006
+avant assert
+apres assert
+1.40337e-005
+avant assert
+apres assert
+2.28546e-005
+avant assert
+apres assert
+2.76348e-007
+avant assert
+apres assert
+1.81847e-005
+avant assert
+apres assert
+1.01111e-005
+avant assert
+apres assert
+1.42799e-005
+avant assert
+apres assert
+1.9464e-005
+avant assert
+apres assert
+3.68923e-006
+avant assert
+apres assert
+7.35423e-006
+avant assert
+apres assert
+2.73597e-005
+avant assert
+apres assert
+7.09258e-005
+avant assert
+apres assert
+8.66785e-005
+avant assert
+apres assert
+1.34097e-005
+avant assert
+apres assert
+5.78054e-005
+avant assert
+apres assert
+1.99046e-005
+avant assert
+apres assert
+2.67158e-007
+avant assert
+apres assert
+2.4089e-006
+avant assert
+apres assert
+1.98699e-005
+avant assert
+apres assert
+6.8453e-005
+avant assert
+apres assert
+8.3112e-005
+avant assert
+apres assert
+2.37785e-005
+avant assert
+apres assert
+1.14271e-006
+avant assert
+apres assert
+1.32431e-005
+avant assert
+apres assert
+4.62838e-007
+avant assert
+apres assert
+7.90725e-006
+avant assert
+apres assert
+9.45306e-006
+avant assert
+apres assert
+4.26843e-005
+avant assert
+apres assert
+1.78617e-005
+avant assert
+apres assert
+1.23839e-006
+avant assert
+apres assert
+6.70383e-005
+avant assert
+apres assert
+1.38068e-007
+avant assert
+apres assert
+1.54309e-006
+avant assert
+apres assert
+8.15463e-006
+avant assert
+apres assert
+5.36285e-006
+avant assert
+apres assert
+4.36295e-007
+avant assert
+apres assert
+2.59868e-008
+avant assert
+apres assert
+2.91819e-006
+avant assert
+apres assert
+2.41725e-006
+avant assert
+apres assert
+9.12826e-007
+avant assert
+apres assert
+8.56666e-007
+avant assert
+apres assert
+8.99694e-006
+avant assert
+apres assert
+4.0036e-006
+avant assert
+apres assert
+2.06289e-005
+avant assert
+apres assert
+2.42771e-006
+avant assert
+apres assert
+2.5813e-007
+avant assert
+apres assert
+2.43546e-006
+avant assert
+apres assert
+2.13675e-006
+avant assert
+apres assert
+6.99704e-008
+avant assert
+apres assert
+1.58159e-006
+avant assert
+apres assert
+2.84134e-006
+avant assert
+apres assert
+1.28204e-006
+avant assert
+apres assert
+1.56768e-007
+avant assert
+apres assert
+1.00733e-007
+avant assert
+apres assert
+8.76792e-006
+avant assert
+apres assert
+2.6746e-005
+avant assert
+apres assert
+4.22728e-006
+avant assert
+apres assert
+1.36463e-005
+avant assert
+apres assert
+9.18278e-006
+avant assert
+apres assert
+1.18081e-005
+avant assert
+apres assert
+1.35379e-005
+avant assert
+apres assert
+7.63592e-006
+avant assert
+apres assert
+7.11454e-005
+avant assert
+apres assert
+0.000113947
+avant assert
+apres assert
+0.000190321
+avant assert
+apres assert
+0.000113655
+avant assert
+apres assert
+3.0484e-005
+avant assert
+apres assert
+7.66204e-005
+avant assert
+apres assert
+2.27982e-005
+avant assert
+apres assert
+1.77568e-006
+avant assert
+apres assert
+1.75967e-005
+avant assert
+apres assert
+3.68705e-008
+avant assert
+apres assert
+1.59295e-005
+avant assert
+apres assert
+1.59497e-006
+avant assert
+apres assert
+3.1478e-006
+avant assert
+apres assert
+1.14036e-006
+avant assert
+apres assert
+1.14765e-005
+avant assert
+apres assert
+2.28854e-005
+avant assert
+apres assert
+5.45841e-005
+avant assert
+apres assert
+2.07362e-005
+avant assert
+apres assert
+4.23619e-006
+avant assert
+apres assert
+1.40345e-005
+avant assert
+apres assert
+9.17105e-006
+avant assert
+apres assert
+1.5485e-005
+avant assert
+apres assert
+2.58932e-006
+avant assert
+apres assert
+6.05196e-006
+avant assert
+apres assert
+2.05763e-005
+avant assert
+apres assert
+2.11107e-005
+avant assert
+apres assert
+5.51405e-006
+avant assert
+apres assert
+4.52452e-007
+avant assert
+apres assert
+4.41886e-006
+avant assert
+apres assert
+2.24684e-005
+avant assert
+apres assert
+8.06322e-006
+avant assert
+apres assert
+3.3765e-005
+avant assert
+apres assert
+4.666e-005
+avant assert
+apres assert
+1.67222e-007
+avant assert
+apres assert
+2.463e-007
+avant assert
+apres assert
+8.54885e-006
+avant assert
+apres assert
+2.58626e-005
+avant assert
+apres assert
+4.06862e-005
+avant assert
+apres assert
+7.81289e-008
+avant assert
+apres assert
+4.94364e-006
+avant assert
+apres assert
+7.26217e-007
+avant assert
+apres assert
+1.01116e-005
+avant assert
+apres assert
+1.28249e-005
+avant assert
+apres assert
+3.6879e-005
+avant assert
+apres assert
+6.70131e-005
+avant assert
+apres assert
+0.000188739
+avant assert
+apres assert
+0.000133553
+avant assert
+apres assert
+1.32141e-005
+avant assert
+apres assert
+1.32364e-005
+avant assert
+apres assert
+5.37238e-005
+avant assert
+apres assert
+6.00855e-005
+avant assert
+apres assert
+3.37205e-005
+avant assert
+apres assert
+2.29312e-005
+avant assert
+apres assert
+2.24595e-005
+avant assert
+apres assert
+4.34777e-005
+avant assert
+apres assert
+3.12103e-005
+avant assert
+apres assert
+2.92901e-005
+avant assert
+apres assert
+1.92875e-005
+avant assert
+apres assert
+6.26068e-006
+avant assert
+apres assert
+4.529e-005
+avant assert
+apres assert
+4.05365e-006
+avant assert
+apres assert
+8.16168e-007
+avant assert
+apres assert
+1.40258e-007
+avant assert
+apres assert
+1.42412e-009
+avant assert
+apres assert
+2.24955e-005
+avant assert
+apres assert
+2.59631e-005
+avant assert
+apres assert
+3.17771e-005
+avant assert
+apres assert
+2.92778e-005
+avant assert
+apres assert
+3.59139e-005
+avant assert
+apres assert
+1.26202e-005
+avant assert
+apres assert
+5.36539e-006
+avant assert
+apres assert
+1.12473e-006
+avant assert
+apres assert
+2.48279e-005
+avant assert
+apres assert
+2.57799e-005
+avant assert
+apres assert
+1.09995e-005
+avant assert
+apres assert
+2.08344e-006
+avant assert
+apres assert
+1.31782e-006
+avant assert
+apres assert
+2.37624e-006
+avant assert
+apres assert
+2.70121e-006
+avant assert
+apres assert
+2.17744e-005
+avant assert
+apres assert
+0.000168531
+avant assert
+apres assert
+0.000178954
+avant assert
+apres assert
+0.000264511
+avant assert
+apres assert
+0.000220651
+avant assert
+apres assert
+9.44673e-007
+avant assert
+apres assert
+0.000136318
+avant assert
+apres assert
+0.000263002
+avant assert
+apres assert
+0.000355881
+avant assert
+apres assert
+0.000289803
+avant assert
+apres assert
+0.000347619
+avant assert
+apres assert
+0.000400582
+avant assert
+apres assert
+0.000221503
+avant assert
+apres assert
+6.90494e-005
+avant assert
+apres assert
+3.18848e-005
+avant assert
+apres assert
+9.0739e-005
+avant assert
+apres assert
+1.53729e-005
+avant assert
+apres assert
+4.24212e-006
+avant assert
+apres assert
+1.48055e-005
+avant assert
+apres assert
+7.02891e-005
+avant assert
+apres assert
+0.000163282
+avant assert
+apres assert
+0.00020396
+avant assert
+apres assert
+0.000209845
+avant assert
+apres assert
+0.00017642
+avant assert
+apres assert
+0.000213734
+avant assert
+apres assert
+0.000361736
+avant assert
+apres assert
+0.000391123
+avant assert
+apres assert
+0.000326066
+avant assert
+apres assert
+9.9657e-005
+avant assert
+apres assert
+7.08825e-005
+avant assert
+apres assert
+4.56188e-005
+avant assert
+apres assert
+4.02315e-005
+avant assert
+apres assert
+8.64522e-006
+avant assert
+apres assert
+3.59899e-006
+avant assert
+apres assert
+4.15381e-006
+avant assert
+apres assert
+1.20856e-005
+avant assert
+apres assert
+2.22749e-005
+avant assert
+apres assert
+4.72693e-005
+avant assert
+apres assert
+3.61145e-005
+avant assert
+apres assert
+9.95478e-005
+avant assert
+apres assert
+7.32317e-006
+avant assert
+apres assert
+2.35336e-006
+avant assert
+apres assert
+1.49857e-005
+avant assert
+apres assert
+3.19536e-005
+avant assert
+apres assert
+4.77112e-006
+avant assert
+apres assert
+8.8042e-006
+avant assert
+apres assert
+4.76286e-006
+avant assert
+apres assert
+2.22569e-005
+avant assert
+apres assert
+4.69606e-006
+avant assert
+apres assert
+3.7268e-005
+avant assert
+apres assert
+0.000154326
+avant assert
+apres assert
+0.000197046
+avant assert
+apres assert
+0.000109085
+avant assert
+apres assert
+0.000125877
+avant assert
+apres assert
+0.000221245
+avant assert
+apres assert
+0.00021491
+avant assert
+apres assert
+0.000133359
+avant assert
+apres assert
+7.98192e-005
+avant assert
+apres assert
+3.42362e-005
+avant assert
+apres assert
+4.71962e-005
+avant assert
+apres assert
+1.12277e-005
+avant assert
+apres assert
+2.02299e-005
+avant assert
+apres assert
+4.5704e-005
+avant assert
+apres assert
+2.70127e-005
+avant assert
+apres assert
+2.74076e-005
+avant assert
+apres assert
+1.36032e-006
+avant assert
+apres assert
+1.82966e-005
+avant assert
+apres assert
+5.25334e-005
+avant assert
+apres assert
+0.000403576
+avant assert
+apres assert
+0.00085701
+avant assert
+apres assert
+0.000894728
+avant assert
+apres assert
+0.00115151
+avant assert
+apres assert
+0.00101903
+avant assert
+apres assert
+0.00109744
+avant assert
+apres assert
+0.00131029
+avant assert
+apres assert
+0.00136304
+avant assert
+apres assert
+0.00136658
+avant assert
+apres assert
+0.000964447
+avant assert
+apres assert
+0.000794252
+avant assert
+apres assert
+0.00044493
+avant assert
+apres assert
+0.000298595
+avant assert
+apres assert
+0.000206978
+avant assert
+apres assert
+5.74339e-005
+avant assert
+apres assert
+4.66017e-007
+avant assert
+apres assert
+2.12568e-007
+avant assert
+apres assert
+3.37776e-005
+avant assert
+apres assert
+2.38067e-005
+avant assert
+apres assert
+0.000117398
+avant assert
+apres assert
+0.00029603
+avant assert
+apres assert
+0.000359898
+avant assert
+apres assert
+0.000330435
+avant assert
+apres assert
+0.000406557
+avant assert
+apres assert
+0.000407396
+avant assert
+apres assert
+0.000410234
+avant assert
+apres assert
+0.000489502
+avant assert
+apres assert
+0.000654794
+avant assert
+apres assert
+0.000998466
+avant assert
+apres assert
+0.00132269
+avant assert
+apres assert
+0.00143914
+avant assert
+apres assert
+0.00112199
+avant assert
+apres assert
+0.0011904
+avant assert
+apres assert
+0.00113396
+avant assert
+apres assert
+0.00148842
+avant assert
+apres assert
+0.00118821
+avant assert
+apres assert
+0.00109183
+avant assert
+apres assert
+0.00131886
+avant assert
+apres assert
+0.00166781
+avant assert
+apres assert
+0.00189818
+avant assert
+apres assert
+0.00191921
+avant assert
+apres assert
+0.0019002
+avant assert
+apres assert
+0.00174544
+avant assert
+apres assert
+0.00179992
+avant assert
+apres assert
+0.0016605
+avant assert
+apres assert
+0.00138553
+avant assert
+apres assert
+0.00115646
+avant assert
+apres assert
+0.000823018
+avant assert
+apres assert
+0.000720412
+avant assert
+apres assert
+0.000657986
+avant assert
+apres assert
+0.000870602
+avant assert
+apres assert
+0.000791482
+avant assert
+apres assert
+0.000773111
+avant assert
+apres assert
+0.000701474
+avant assert
+apres assert
+0.000430605
+avant assert
+apres assert
+0.000447491
+avant assert
+apres assert
+0.000468484
+avant assert
+apres assert
+0.000478267
+avant assert
+apres assert
+0.00054704
+avant assert
+apres assert
+0.000479915
+avant assert
+apres assert
+0.000594221
+avant assert
+apres assert
+0.000550591
+avant assert
+apres assert
+0.000599456
+avant assert
+apres assert
+0.000543735
+avant assert
+apres assert
+0.00038555
+avant assert
+apres assert
+0.000343033
+avant assert
+apres assert
+0.000334628
+avant assert
+apres assert
+0.000774782
+avant assert
+apres assert
+0.00105772
+avant assert
+apres assert
+0.000806677
+avant assert
+apres assert
+0.000650851
+avant assert
+apres assert
+0.00059117
+avant assert
+apres assert
+0.000778973
+avant assert
+apres assert
+0.000929797
+avant assert
+apres assert
+0.00107545
+avant assert
+apres assert
+0.000807397
+avant assert
+apres assert
+0.000608752
+avant assert
+apres assert
+0.000829931
+avant assert
+apres assert
+0.000726678
+avant assert
+apres assert
+0.000499946
+avant assert
+apres assert
+0.000262548
+avant assert
+apres assert
+0.000152336
+avant assert
+apres assert
+0.000167912
+avant assert
+apres assert
+0.000186449
+avant assert
+apres assert
+0.000241214
+avant assert
+apres assert
+0.000475453
+avant assert
+apres assert
+0.000385001
+avant assert
+apres assert
+0.000357518
+avant assert
+apres assert
+0.0003392
+avant assert
+apres assert
+0.000497196
+avant assert
+apres assert
+0.000524541
+avant assert
+apres assert
+0.00026501
+avant assert
+apres assert
+0.000109479
+avant assert
+apres assert
+0.000103761
+avant assert
+apres assert
+8.22085e-005
+avant assert
+apres assert
+5.08556e-005
+avant assert
+apres assert
+9.62831e-005
+avant assert
+apres assert
+7.49021e-005
+avant assert
+apres assert
+3.11402e-005
+avant assert
+apres assert
+2.81517e-005
+avant assert
+apres assert
+9.30477e-005
+avant assert
+apres assert
+0.000119834
+avant assert
+apres assert
+7.92538e-005
+avant assert
+apres assert
+2.63434e-007
+avant assert
+apres assert
+1.57674e-007
+avant assert
+apres assert
+9.84961e-006
+avant assert
+apres assert
+4.21853e-005
+avant assert
+apres assert
+0.000119867
+avant assert
+apres assert
+0.000123363
+avant assert
+apres assert
+0.000231522
+avant assert
+apres assert
+0.000260573
+avant assert
+apres assert
+0.000142392
+avant assert
+apres assert
+8.94356e-005
+avant assert
+apres assert
+0.000114782
+avant assert
+apres assert
+7.10003e-005
+avant assert
+apres assert
+3.25986e-005
+avant assert
+apres assert
+3.57809e-005
+avant assert
+apres assert
+0.000107142
+avant assert
+apres assert
+0.00016081
+avant assert
+apres assert
+0.000199864
+avant assert
+apres assert
+0.00011863
+avant assert
+apres assert
+6.15863e-005
+avant assert
+apres assert
+1.76218e-005
+avant assert
+apres assert
+1.6133e-005
+avant assert
+apres assert
+1.32549e-005
+avant assert
+apres assert
+1.14025e-005
+avant assert
+apres assert
+8.04245e-008
+avant assert
+apres assert
+9.54467e-007
+avant assert
+apres assert
+4.76724e-005
+avant assert
+apres assert
+3.23464e-005
+avant assert
+apres assert
+6.10396e-005
+avant assert
+apres assert
+3.46293e-006
+avant assert
+apres assert
+2.53672e-009
+avant assert
+apres assert
+1.2161e-006
+avant assert
+apres assert
+5.61725e-006
+avant assert
+apres assert
+1.67612e-006
+avant assert
+apres assert
+3.42256e-006
+avant assert
+apres assert
+7.80398e-006
+avant assert
+apres assert
+2.66214e-005
+avant assert
+apres assert
+8.0965e-006
+avant assert
+apres assert
+5.68209e-007
+avant assert
+apres assert
+1.49428e-006
+avant assert
+apres assert
+2.34175e-005
+avant assert
+apres assert
+4.21251e-005
+avant assert
+apres assert
+6.9306e-006
+avant assert
+apres assert
+5.79071e-006
+avant assert
+apres assert
+3.95207e-005
+avant assert
+apres assert
+6.54936e-005
+avant assert
+apres assert
+6.22518e-005
+avant assert
+apres assert
+7.48988e-006
+avant assert
+apres assert
+2.00931e-007
+avant assert
+apres assert
+1.1822e-005
+avant assert
+apres assert
+3.23086e-005
+avant assert
+apres assert
+1.69191e-006
+avant assert
+apres assert
+1.22246e-005
+avant assert
+apres assert
+2.20381e-006
+avant assert
+apres assert
+2.15712e-007
+avant assert
+apres assert
+1.85344e-005
+avant assert
+apres assert
+1.13538e-005
+avant assert
+apres assert
+2.43964e-006
+avant assert
+apres assert
+3.74467e-005
+avant assert
+apres assert
+1.13884e-005
+avant assert
+apres assert
+1.23873e-005
+avant assert
+apres assert
+1.64427e-007
+avant assert
+apres assert
+7.35161e-006
+avant assert
+apres assert
+8.56769e-006
+avant assert
+apres assert
+2.20154e-006
+avant assert
+apres assert
+6.70267e-006
+avant assert
+apres assert
+5.79804e-006
+avant assert
+apres assert
+3.17523e-006
+avant assert
+apres assert
+4.73864e-006
+avant assert
+apres assert
+2.316e-005
+avant assert
+apres assert
+4.03405e-006
+avant assert
+apres assert
+3.97106e-005
+avant assert
+apres assert
+6.73641e-005
+avant assert
+apres assert
+1.97698e-005
+avant assert
+apres assert
+1.68683e-005
+avant assert
+apres assert
+5.64815e-006
+avant assert
+apres assert
+1.69249e-006
+avant assert
+apres assert
+1.84662e-005
+avant assert
+apres assert
+8.91096e-007
+avant assert
+apres assert
+4.06009e-005
+avant assert
+apres assert
+8.79301e-005
+avant assert
+apres assert
+0.000116346
+avant assert
+apres assert
+5.99949e-005
+avant assert
+apres assert
+7.40474e-005
+avant assert
+apres assert
+1.42884e-005
+avant assert
+apres assert
+1.16385e-005
+avant assert
+apres assert
+9.93944e-009
+avant assert
+apres assert
+7.88125e-006
+avant assert
+apres assert
+4.38896e-005
+avant assert
+apres assert
+9.35535e-005
+avant assert
+apres assert
+1.99219e-005
+avant assert
+apres assert
+5.86285e-006
+avant assert
+apres assert
+3.13609e-005
+avant assert
+apres assert
+3.63114e-005
+avant assert
+apres assert
+6.30505e-005
+avant assert
+apres assert
+6.79478e-005
+avant assert
+apres assert
+4.40048e-005
+avant assert
+apres assert
+4.93111e-006
+avant assert
+apres assert
+1.03711e-008
+avant assert
+apres assert
+2.07722e-005
+avant assert
+apres assert
+3.3259e-005
+avant assert
+apres assert
+6.38417e-005
+avant assert
+apres assert
+4.88516e-005
+avant assert
+apres assert
+7.35035e-005
+avant assert
+apres assert
+1.02309e-005
+avant assert
+apres assert
+1.18962e-005
+avant assert
+apres assert
+4.61855e-005
+avant assert
+apres assert
+0.000100768
+avant assert
+apres assert
+8.05253e-005
+avant assert
+apres assert
+3.95629e-005
+avant assert
+apres assert
+1.82967e-008
+avant assert
+apres assert
+2.52602e-005
+avant assert
+apres assert
+3.38746e-005
+avant assert
+apres assert
+0.000154941
+avant assert
+apres assert
+0.000206258
+avant assert
+apres assert
+0.000174555
+avant assert
+apres assert
+5.84011e-005
+avant assert
+apres assert
+2.0885e-006
+avant assert
+apres assert
+4.04563e-005
+avant assert
+apres assert
+0.000171378
+avant assert
+apres assert
+0.000271168
+avant assert
+apres assert
+6.62921e-005
+avant assert
+apres assert
+6.65827e-006
+avant assert
+apres assert
+3.36888e-005
+avant assert
+apres assert
+7.27057e-005
+avant assert
+apres assert
+8.85832e-005
+avant assert
+apres assert
+8.58948e-005
+avant assert
+apres assert
+4.59052e-005
+avant assert
+apres assert
+5.35037e-005
+avant assert
+apres assert
+7.46176e-005
+avant assert
+apres assert
+2.82393e-005
+avant assert
+apres assert
+9.84784e-007
+avant assert
+apres assert
+1.964e-008
+avant assert
+apres assert
+3.02042e-006
+avant assert
+apres assert
+7.56618e-007
+avant assert
+apres assert
+4.12656e-007
+avant assert
+apres assert
+1.2611e-006
+avant assert
+apres assert
+4.47937e-006
+avant assert
+apres assert
+2.55468e-005
+avant assert
+apres assert
+6.97412e-005
+avant assert
+apres assert
+7.20919e-005
+avant assert
+apres assert
+0.000130638
+avant assert
+apres assert
+9.25551e-005
+avant assert
+apres assert
+9.06339e-005
+avant assert
+apres assert
+0.000198226
+avant assert
+apres assert
+0.000104748
+avant assert
+apres assert
+9.8304e-005
+avant assert
+apres assert
+7.66298e-005
+avant assert
+apres assert
+4.79997e-005
+avant assert
+apres assert
+3.37614e-005
+avant assert
+apres assert
+6.62927e-006
+avant assert
+apres assert
+8.28362e-009
+avant assert
+apres assert
+2.07361e-006
+avant assert
+apres assert
+7.00503e-006
+avant assert
+apres assert
+7.64116e-006
+avant assert
+apres assert
+8.28376e-006
+avant assert
+apres assert
+4.15015e-006
+avant assert
+apres assert
+1.62781e-005
+avant assert
+apres assert
+6.42259e-005
+avant assert
+apres assert
+1.70278e-006
+avant assert
+apres assert
+4.52419e-008
+avant assert
+apres assert
+5.8593e-005
+avant assert
+apres assert
+5.35131e-005
+avant assert
+apres assert
+2.73963e-005
+avant assert
+apres assert
+3.68685e-005
+avant assert
+apres assert
+6.4563e-005
+avant assert
+apres assert
+6.13729e-005
+avant assert
+apres assert
+5.38599e-005
+avant assert
+apres assert
+0.000102286
+avant assert
+apres assert
+0.00012431
+avant assert
+apres assert
+5.92409e-005
+avant assert
+apres assert
+5.26498e-005
+avant assert
+apres assert
+5.67001e-005
+avant assert
+apres assert
+5.99888e-005
+avant assert
+apres assert
+9.71485e-005
+avant assert
+apres assert
+9.69987e-005
+avant assert
+apres assert
+9.39198e-005
+avant assert
+apres assert
+5.45479e-005
+avant assert
+apres assert
+5.33638e-005
+avant assert
+apres assert
+4.12921e-005
+avant assert
+apres assert
+0.000117318
+avant assert
+apres assert
+8.63267e-005
+avant assert
+apres assert
+8.74476e-005
+avant assert
+apres assert
+0.000276203
+avant assert
+apres assert
+0.00045186
+avant assert
+apres assert
+0.00045984
+avant assert
+apres assert
+0.00024545
+avant assert
+apres assert
+0.00019672
+avant assert
+apres assert
+0.000343884
+avant assert
+apres assert
+0.000245282
+avant assert
+apres assert
+0.000156712
+avant assert
+apres assert
+0.000115033
+avant assert
+apres assert
+9.38812e-005
+avant assert
+apres assert
+3.82184e-005
+avant assert
+apres assert
+3.52698e-005
+avant assert
+apres assert
+4.76764e-005
+avant assert
+apres assert
+3.69654e-006
+avant assert
+apres assert
+2.17749e-005
+avant assert
+apres assert
+1.86666e-006
+avant assert
+apres assert
+6.13711e-009
+avant assert
+apres assert
+7.45011e-006
+avant assert
+apres assert
+3.5841e-006
+avant assert
+apres assert
+5.17145e-005
+avant assert
+apres assert
+5.57595e-005
+avant assert
+apres assert
+1.58361e-005
+avant assert
+apres assert
+2.40741e-005
+avant assert
+apres assert
+2.11876e-005
+avant assert
+apres assert
+2.36167e-005
+avant assert
+apres assert
+2.25176e-006
+avant assert
+apres assert
+5.64288e-005
+avant assert
+apres assert
+3.7523e-005
+avant assert
+apres assert
+6.14787e-006
+avant assert
+apres assert
+1.12614e-005
+avant assert
+apres assert
+6.24957e-006
+avant assert
+apres assert
+2.32811e-005
+avant assert
+apres assert
+2.47474e-005
+avant assert
+apres assert
+7.93269e-006
+avant assert
+apres assert
+1.05304e-006
+avant assert
+apres assert
+8.39082e-006
+avant assert
+apres assert
+5.54865e-006
+avant assert
+apres assert
+2.22584e-007
+avant assert
+apres assert
+2.45351e-008
+avant assert
+apres assert
+1.15809e-005
+avant assert
+apres assert
+3.02469e-005
+avant assert
+apres assert
+6.69406e-005
+avant assert
+apres assert
+7.10097e-005
+avant assert
+apres assert
+2.12389e-005
+avant assert
+apres assert
+8.48234e-006
+avant assert
+apres assert
+3.33583e-008
+avant assert
+apres assert
+5.00012e-008
+avant assert
+apres assert
+3.56938e-005
+avant assert
+apres assert
+3.17658e-006
+avant assert
+apres assert
+6.90545e-006
+avant assert
+apres assert
+1.63842e-005
+avant assert
+apres assert
+2.0449e-005
+avant assert
+apres assert
+3.91199e-006
+avant assert
+apres assert
+4.91276e-006
+avant assert
+apres assert
+1.20074e-006
+avant assert
+apres assert
+1.3029e-006
+avant assert
+apres assert
+2.82118e-005
+avant assert
+apres assert
+3.13164e-005
+avant assert
+apres assert
+2.77837e-005
+avant assert
+apres assert
+6.42732e-007
+avant assert
+apres assert
+1.24636e-005
+avant assert
+apres assert
+3.27549e-005
+avant assert
+apres assert
+3.0187e-005
+avant assert
+apres assert
+2.83298e-005
+avant assert
+apres assert
+1.29898e-005
+avant assert
+apres assert
+3.35778e-005
+avant assert
+apres assert
+9.98702e-006
+avant assert
+apres assert
+3.04129e-005
+avant assert
+apres assert
+5.46803e-006
+avant assert
+apres assert
+6.22261e-007
+avant assert
+apres assert
+1.73288e-010
+avant assert
+apres assert
+1.50381e-007
+avant assert
+apres assert
+1.46716e-005
+avant assert
+apres assert
+6.54898e-006
+avant assert
+apres assert
+2.65029e-006
+avant assert
+apres assert
+4.31715e-006
+avant assert
+apres assert
+7.41806e-007
+avant assert
+apres assert
+5.45879e-006
+avant assert
+apres assert
+1.53322e-005
+avant assert
+apres assert
+7.24566e-006
+avant assert
+apres assert
+8.77824e-008
+avant assert
+apres assert
+2.85246e-006
+avant assert
+apres assert
+5.37878e-006
+avant assert
+apres assert
+5.73549e-007
+avant assert
+apres assert
+5.42814e-008
+avant assert
+apres assert
+2.48862e-006
+avant assert
+apres assert
+4.58444e-007
+avant assert
+apres assert
+8.95386e-007
+avant assert
+apres assert
+2.44161e-005
+avant assert
+apres assert
+2.01282e-005
+avant assert
+apres assert
+3.63313e-008
+avant assert
+apres assert
+1.79789e-005
+avant assert
+apres assert
+2.48602e-007
+avant assert
+apres assert
+2.51068e-006
+avant assert
+apres assert
+1.4995e-005
+avant assert
+apres assert
+7.8402e-006
+avant assert
+apres assert
+4.37394e-008
+avant assert
+apres assert
+4.64511e-006
+avant assert
+apres assert
+1.89801e-007
+avant assert
+apres assert
+1.6622e-005
+avant assert
+apres assert
+9.91201e-007
+avant assert
+apres assert
+1.01835e-005
+avant assert
+apres assert
+2.29466e-006
+avant assert
+apres assert
+6.17136e-007
+avant assert
+apres assert
+2.34893e-005
+avant assert
+apres assert
+1.67633e-005
+avant assert
+apres assert
+7.10005e-006
+avant assert
+apres assert
+2.05569e-005
+avant assert
+apres assert
+3.38126e-006
+avant assert
+apres assert
+1.64014e-006
+avant assert
+apres assert
+2.07628e-006
+avant assert
+apres assert
+1.18934e-005
+avant assert
+apres assert
+3.95644e-006
+avant assert
+apres assert
+2.0525e-005
+avant assert
+apres assert
+2.90546e-005
+avant assert
+apres assert
+5.51273e-005
+avant assert
+apres assert
+2.64193e-005
+avant assert
+apres assert
+2.97538e-006
+avant assert
+apres assert
+1.54966e-005
+avant assert
+apres assert
+1.98895e-006
+avant assert
+apres assert
+5.54387e-005
+avant assert
+apres assert
+0.000143269
+avant assert
+apres assert
+4.81515e-005
+avant assert
+apres assert
+2.62155e-005
+avant assert
+apres assert
+0.000125857
+avant assert
+apres assert
+0.000168243
+avant assert
+apres assert
+9.92413e-005
+avant assert
+apres assert
+5.03705e-005
+avant assert
+apres assert
+5.29398e-005
+avant assert
+apres assert
+6.72135e-006
+avant assert
+apres assert
+3.84471e-006
+avant assert
+apres assert
+3.0601e-006
+avant assert
+apres assert
+2.58409e-007
+avant assert
+apres assert
+3.97799e-006
+avant assert
+apres assert
+3.97402e-007
+avant assert
+apres assert
+2.40879e-007
+avant assert
+apres assert
+9.52846e-007
+avant assert
+apres assert
+2.02541e-005
+avant assert
+apres assert
+1.41301e-005
+avant assert
+apres assert
+5.3664e-006
+avant assert
+apres assert
+6.56441e-005
+avant assert
+apres assert
+9.90376e-005
+avant assert
+apres assert
+3.1757e-005
+avant assert
+apres assert
+4.01821e-006
+avant assert
+apres assert
+5.25502e-006
+avant assert
+apres assert
+7.55008e-007
+avant assert
+apres assert
+3.72356e-007
+avant assert
+apres assert
+1.18681e-005
+avant assert
+apres assert
+6.95063e-006
+avant assert
+apres assert
+1.29912e-005
+avant assert
+apres assert
+7.58338e-009
+avant assert
+apres assert
+5.13696e-007
+avant assert
+apres assert
+3.53063e-007
+avant assert
+apres assert
+1.62434e-005
+avant assert
+apres assert
+3.37206e-005
+avant assert
+apres assert
+5.22389e-005
+avant assert
+apres assert
+6.48079e-006
+avant assert
+apres assert
+2.29491e-006
+avant assert
+apres assert
+8.40538e-007
+avant assert
+apres assert
+1.15026e-005
+avant assert
+apres assert
+9.65194e-007
+avant assert
+apres assert
+2.73139e-006
+avant assert
+apres assert
+1.82441e-006
+avant assert
+apres assert
+4.37674e-005
+avant assert
+apres assert
+7.24509e-005
+avant assert
+apres assert
+2.74758e-005
+avant assert
+apres assert
+4.80311e-005
+avant assert
+apres assert
+0.00011065
+avant assert
+apres assert
+7.28986e-005
+avant assert
+apres assert
+3.99248e-005
+avant assert
+apres assert
+4.93137e-005
+avant assert
+apres assert
+1.25919e-005
+avant assert
+apres assert
+3.58931e-005
+avant assert
+apres assert
+5.33762e-005
+avant assert
+apres assert
+4.93285e-006
+avant assert
+apres assert
+3.4367e-006
+avant assert
+apres assert
+5.73898e-007
+avant assert
+apres assert
+7.15414e-008
+avant assert
+apres assert
+3.46255e-009
+avant assert
+apres assert
+2.46379e-005
+avant assert
+apres assert
+7.33359e-005
+avant assert
+apres assert
+3.01762e-006
+avant assert
+apres assert
+2.87884e-008
+avant assert
+apres assert
+6.19249e-007
+avant assert
+apres assert
+2.29023e-006
+avant assert
+apres assert
+8.64313e-006
+avant assert
+apres assert
+1.33162e-005
+avant assert
+apres assert
+1.43295e-005
+avant assert
+apres assert
+3.16892e-007
+avant assert
+apres assert
+2.30507e-005
+avant assert
+apres assert
+9.91644e-006
+avant assert
+apres assert
+0.000102216
+avant assert
+apres assert
+0.000103934
+avant assert
+apres assert
+4.86127e-005
+avant assert
+apres assert
+6.81687e-005
+avant assert
+apres assert
+2.54461e-005
+avant assert
+apres assert
+7.64226e-005
+avant assert
+apres assert
+4.8536e-005
+avant assert
+apres assert
+6.97432e-005
+avant assert
+apres assert
+7.12461e-005
+avant assert
+apres assert
+0.000121679
+avant assert
+apres assert
+0.000129665
+avant assert
+apres assert
+0.00011515
+avant assert
+apres assert
+9.20524e-005
+avant assert
+apres assert
+6.22943e-005
+avant assert
+apres assert
+6.7187e-005
+avant assert
+apres assert
+3.06624e-005
+avant assert
+apres assert
+1.69137e-005
+avant assert
+apres assert
+9.60456e-007
+avant assert
+apres assert
+4.41406e-006
+avant assert
+apres assert
+4.41103e-005
+avant assert
+apres assert
+9.48381e-005
+avant assert
+apres assert
+0.000141312
+avant assert
+apres assert
+0.000120237
+avant assert
+apres assert
+0.000119312
+avant assert
+apres assert
+6.85341e-005
+avant assert
+apres assert
+7.69278e-005
+avant assert
+apres assert
+3.71307e-005
+avant assert
+apres assert
+4.23006e-005
+avant assert
+apres assert
+4.16135e-005
+avant assert
+apres assert
+9.89134e-006
+avant assert
+apres assert
+7.66414e-005
+avant assert
+apres assert
+0.000157162
+avant assert
+apres assert
+1.87842e-005
+avant assert
+apres assert
+4.3923e-006
+avant assert
+apres assert
+1.74992e-005
+avant assert
+apres assert
+1.08997e-005
+avant assert
+apres assert
+1.29516e-005
+avant assert
+apres assert
+1.2841e-006
+avant assert
+apres assert
+1.11334e-006
+avant assert
+apres assert
+7.35269e-008
+avant assert
+apres assert
+1.40082e-005
+avant assert
+apres assert
+1.62113e-005
+avant assert
+apres assert
+1.26213e-007
+avant assert
+apres assert
+1.55098e-006
+avant assert
+apres assert
+2.55149e-006
+avant assert
+apres assert
+2.91383e-006
+avant assert
+apres assert
+3.59286e-007
+avant assert
+apres assert
+3.85587e-007
+avant assert
+apres assert
+1.40952e-005
+avant assert
+apres assert
+3.41059e-005
+avant assert
+apres assert
+3.67001e-005
+avant assert
+apres assert
+2.51763e-005
+avant assert
+apres assert
+1.45404e-006
+avant assert
+apres assert
+6.10051e-006
+avant assert
+apres assert
+3.77185e-006
+avant assert
+apres assert
+1.54781e-005
+avant assert
+apres assert
+1.99108e-005
+avant assert
+apres assert
+4.49323e-006
+avant assert
+apres assert
+1.05958e-005
+avant assert
+apres assert
+7.30501e-006
+avant assert
+apres assert
+9.93478e-008
+avant assert
+apres assert
+1.84978e-005
+avant assert
+apres assert
+2.93569e-005
+avant assert
+apres assert
+3.90655e-005
+avant assert
+apres assert
+3.31144e-005
+avant assert
+apres assert
+1.11111e-007
+avant assert
+apres assert
+2.53447e-005
+avant assert
+apres assert
+0.000103718
+avant assert
+apres assert
+0.000115932
+avant assert
+apres assert
+3.45102e-005
+avant assert
+apres assert
+1.21659e-005
+avant assert
+apres assert
+4.87743e-005
+avant assert
+apres assert
+6.59388e-008
+avant assert
+apres assert
+3.43765e-006
+avant assert
+apres assert
+1.55433e-007
+avant assert
+apres assert
+1.45871e-007
+avant assert
+apres assert
+4.93953e-006
+avant assert
+apres assert
+2.16825e-005
+avant assert
+apres assert
+1.56595e-007
+avant assert
+apres assert
+2.4399e-005
+avant assert
+apres assert
+3.52448e-005
+avant assert
+apres assert
+2.35224e-005
+avant assert
+apres assert
+1.9877e-006
+avant assert
+apres assert
+1.24425e-006
+avant assert
+apres assert
+7.42322e-006
+avant assert
+apres assert
+0.000111306
+avant assert
+apres assert
+0.000165741
+avant assert
+apres assert
+8.04068e-005
+avant assert
+apres assert
+3.70058e-005
+avant assert
+apres assert
+5.10486e-005
+avant assert
+apres assert
+9.16836e-005
+avant assert
+apres assert
+0.000177727
+avant assert
+apres assert
+0.000144327
+avant assert
+apres assert
+8.07226e-005
+avant assert
+apres assert
+9.6144e-005
+avant assert
+apres assert
+0.000175668
+avant assert
+apres assert
+0.000161026
+avant assert
+apres assert
+4.9504e-005
+avant assert
+apres assert
+2.66648e-005
+avant assert
+apres assert
+3.08377e-005
+avant assert
+apres assert
+1.88845e-006
+avant assert
+apres assert
+3.86119e-007
+avant assert
+apres assert
+4.05723e-008
+avant assert
+apres assert
+1.33796e-006
+avant assert
+apres assert
+2.23298e-005
+avant assert
+apres assert
+1.31514e-005
+avant assert
+apres assert
+0.000114981
+avant assert
+apres assert
+0.000176671
+avant assert
+apres assert
+0.000260204
+avant assert
+apres assert
+0.000236434
+avant assert
+apres assert
+0.000116431
+avant assert
+apres assert
+8.28335e-005
+avant assert
+apres assert
+7.08346e-005
+avant assert
+apres assert
+0.000104165
+avant assert
+apres assert
+0.000120751
+avant assert
+apres assert
+3.01211e-005
+avant assert
+apres assert
+7.09127e-005
+avant assert
+apres assert
+0.000117972
+avant assert
+apres assert
+0.000130491
+avant assert
+apres assert
+8.58191e-005
+avant assert
+apres assert
+8.97764e-005
+avant assert
+apres assert
+2.67653e-005
+avant assert
+apres assert
+7.61091e-006
+avant assert
+apres assert
+4.80695e-008
+avant assert
+apres assert
+1.53654e-006
+avant assert
+apres assert
+4.63165e-006
+avant assert
+apres assert
+2.48882e-005
+avant assert
+apres assert
+1.17718e-005
+avant assert
+apres assert
+1.45341e-007
+avant assert
+apres assert
+5.44471e-005
+avant assert
+apres assert
+8.19173e-005
+avant assert
+apres assert
+9.25277e-005
+avant assert
+apres assert
+7.86401e-005
+avant assert
+apres assert
+5.83621e-005
+avant assert
+apres assert
+0.000121125
+avant assert
+apres assert
+8.29854e-005
+avant assert
+apres assert
+0.000105615
+avant assert
+apres assert
+8.47275e-005
+avant assert
+apres assert
+6.75052e-005
+avant assert
+apres assert
+0.00012575
+avant assert
+apres assert
+0.000115847
+avant assert
+apres assert
+0.000177711
+avant assert
+apres assert
+0.000154097
+avant assert
+apres assert
+8.13887e-005
+avant assert
+apres assert
+9.19834e-005
+avant assert
+apres assert
+0.000211651
+avant assert
+apres assert
+0.00017272
+avant assert
+apres assert
+1.61587e-005
+avant assert
+apres assert
+2.3746e-006
+avant assert
+apres assert
+3.24731e-005
+avant assert
+apres assert
+4.72282e-005
+avant assert
+apres assert
+4.23451e-005
+avant assert
+apres assert
+2.60338e-005
+avant assert
+apres assert
+3.24205e-005
+avant assert
+apres assert
+2.31844e-005
+avant assert
+apres assert
+2.94321e-007
+avant assert
+apres assert
+8.57798e-006
+avant assert
+apres assert
+1.36455e-006
+avant assert
+apres assert
+8.63543e-005
+avant assert
+apres assert
+1.7187e-005
+avant assert
+apres assert
+1.95073e-005
+avant assert
+apres assert
+4.20121e-005
+avant assert
+apres assert
+9.76464e-006
+avant assert
+apres assert
+3.51798e-006
+avant assert
+apres assert
+3.44864e-005
+avant assert
+apres assert
+3.17976e-005
+avant assert
+apres assert
+1.41407e-005
+avant assert
+apres assert
+3.46628e-007
+avant assert
+apres assert
+2.66549e-006
+avant assert
+apres assert
+3.86104e-007
+avant assert
+apres assert
+2.04079e-007
+avant assert
+apres assert
+2.66281e-008
+avant assert
+apres assert
+8.26463e-007
+avant assert
+apres assert
+2.99929e-006
+avant assert
+apres assert
+7.60781e-008
+avant assert
+apres assert
+3.87898e-006
+avant assert
+apres assert
+4.9891e-007
+avant assert
+apres assert
+1.3648e-008
+avant assert
+apres assert
+1.37121e-009
+avant assert
+apres assert
+5.94936e-006
+avant assert
+apres assert
+2.60506e-007
+avant assert
+apres assert
+2.27487e-006
+avant assert
+apres assert
+1.86193e-005
+avant assert
+apres assert
+2.19103e-005
+avant assert
+apres assert
+5.31193e-005
+avant assert
+apres assert
+2.60438e-009
+avant assert
+apres assert
+2.66011e-005
+avant assert
+apres assert
+3.7798e-005
+avant assert
+apres assert
+4.56566e-005
+avant assert
+apres assert
+1.51493e-005
+avant assert
+apres assert
+9.42266e-006
+avant assert
+apres assert
+6.36601e-006
+avant assert
+apres assert
+1.29299e-005
+avant assert
+apres assert
+6.92895e-006
+avant assert
+apres assert
+3.97546e-005
+avant assert
+apres assert
+4.91304e-005
+avant assert
+apres assert
+7.90876e-005
+avant assert
+apres assert
+4.50594e-005
+avant assert
+apres assert
+8.56846e-005
+avant assert
+apres assert
+6.34566e-005
+avant assert
+apres assert
+2.36503e-005
+avant assert
+apres assert
+1.68211e-006
+avant assert
+apres assert
+1.98807e-007
+avant assert
+apres assert
+1.20642e-005
+avant assert
+apres assert
+1.95031e-005
+avant assert
+apres assert
+9.15989e-006
+avant assert
+apres assert
+3.35057e-006
+avant assert
+apres assert
+8.02584e-006
+avant assert
+apres assert
+3.65519e-006
+avant assert
+apres assert
+9.04876e-005
+avant assert
+apres assert
+5.79587e-005
+avant assert
+apres assert
+0.000123882
+avant assert
+apres assert
+0.000190068
+avant assert
+apres assert
+8.46406e-005
+avant assert
+apres assert
+5.79238e-005
+avant assert
+apres assert
+3.8085e-005
+avant assert
+apres assert
+0.000123998
+avant assert
+apres assert
+9.47904e-005
+avant assert
+apres assert
+7.27705e-005
+avant assert
+apres assert
+8.30857e-005
+avant assert
+apres assert
+0.000126193
+avant assert
+apres assert
+3.27814e-005
+avant assert
+apres assert
+7.48362e-005
+avant assert
+apres assert
+0.000116288
+avant assert
+apres assert
+0.000231137
+avant assert
+apres assert
+0.000155626
+avant assert
+apres assert
+4.79997e-005
+avant assert
+apres assert
+0.000144453
+avant assert
+apres assert
+4.81206e-005
+avant assert
+apres assert
+3.44448e-005
+avant assert
+apres assert
+1.79233e-005
+avant assert
+apres assert
+3.19609e-005
+avant assert
+apres assert
+2.89078e-005
+avant assert
+apres assert
+5.56759e-005
+avant assert
+apres assert
+6.69082e-005
+avant assert
+apres assert
+3.21611e-005
+avant assert
+apres assert
+1.14989e-005
+avant assert
+apres assert
+1.83731e-005
+avant assert
+apres assert
+3.48669e-005
+avant assert
+apres assert
+0.000104579
+avant assert
+apres assert
+0.000131307
+avant assert
+apres assert
+7.05125e-005
+avant assert
+apres assert
+5.67603e-005
+avant assert
+apres assert
+0.000128914
+avant assert
+apres assert
+0.000186399
+avant assert
+apres assert
+0.000271609
+avant assert
+apres assert
+0.000439839
+avant assert
+apres assert
+0.000534569
+avant assert
+apres assert
+0.000585673
+avant assert
+apres assert
+0.000457601
+avant assert
+apres assert
+0.000286218
+avant assert
+apres assert
+0.000171212
+avant assert
+apres assert
+8.41099e-005
+avant assert
+apres assert
+9.87236e-005
+avant assert
+apres assert
+0.000120501
+avant assert
+apres assert
+7.80011e-005
+avant assert
+apres assert
+7.93222e-005
+avant assert
+apres assert
+0.000290341
+avant assert
+apres assert
+0.000297836
+avant assert
+apres assert
+0.00034303
+avant assert
+apres assert
+0.000368409
+avant assert
+apres assert
+0.000370372
+avant assert
+apres assert
+0.000542888
+avant assert
+apres assert
+0.000717036
+avant assert
+apres assert
+0.000485561
+avant assert
+apres assert
+0.000297261
+avant assert
+apres assert
+0.000370791
+avant assert
+apres assert
+0.000270642
+avant assert
+apres assert
+0.000206928
+avant assert
+apres assert
+0.000198406
+avant assert
+apres assert
+0.000361105
+avant assert
+apres assert
+0.000303023
+avant assert
+apres assert
+0.00028438
+avant assert
+apres assert
+0.000180436
+avant assert
+apres assert
+0.000159071
+avant assert
+apres assert
+0.000121365
+avant assert
+apres assert
+0.000101435
+avant assert
+apres assert
+3.13726e-005
+avant assert
+apres assert
+6.87638e-006
+avant assert
+apres assert
+4.21942e-005
+avant assert
+apres assert
+2.20012e-005
+avant assert
+apres assert
+5.24825e-006
+avant assert
+apres assert
+7.52523e-007
+avant assert
+apres assert
+1.66664e-006
+avant assert
+apres assert
+1.29876e-005
+avant assert
+apres assert
+2.96356e-005
+avant assert
+apres assert
+9.56455e-005
+avant assert
+apres assert
+4.92931e-005
+avant assert
+apres assert
+3.24901e-005
+avant assert
+apres assert
+1.53641e-005
+avant assert
+apres assert
+1.36684e-005
+avant assert
+apres assert
+2.32678e-006
+avant assert
+apres assert
+2.81563e-006
+avant assert
+apres assert
+5.24645e-007
+avant assert
+apres assert
+2.72746e-006
+avant assert
+apres assert
+6.00763e-006
+avant assert
+apres assert
+7.74254e-006
+avant assert
+apres assert
+6.52853e-011
+avant assert
+apres assert
+1.99261e-005
+avant assert
+apres assert
+7.10639e-005
+avant assert
+apres assert
+0.000241072
+avant assert
+apres assert
+0.000513095
+avant assert
+apres assert
+0.000750823
+avant assert
+apres assert
+0.000612187
+avant assert
+apres assert
+0.000576926
+avant assert
+apres assert
+0.00038078
+avant assert
+apres assert
+0.000306316
+avant assert
+apres assert
+0.000502314
+avant assert
+apres assert
+0.000525033
+avant assert
+apres assert
+0.000519765
+avant assert
+apres assert
+0.000427828
+avant assert
+apres assert
+0.000470451
+avant assert
+apres assert
+0.000462798
+avant assert
+apres assert
+0.000655203
+avant assert
+apres assert
+0.000639974
+avant assert
+apres assert
+0.000605518
+avant assert
+apres assert
+0.000535337
+avant assert
+apres assert
+0.000310035
+avant assert
+apres assert
+0.000322518
+avant assert
+apres assert
+0.000267196
+avant assert
+apres assert
+0.000307568
+avant assert
+apres assert
+0.000227618
+avant assert
+apres assert
+0.000165461
+avant assert
+apres assert
+5.11795e-005
+avant assert
+apres assert
+9.57324e-005
+avant assert
+apres assert
+0.000159588
+avant assert
+apres assert
+0.000212904
+avant assert
+apres assert
+0.000208388
+avant assert
+apres assert
+0.000224577
+avant assert
+apres assert
+0.000209309
+avant assert
+apres assert
+0.000109424
+avant assert
+apres assert
+9.76808e-005
+avant assert
+apres assert
+3.68419e-005
+avant assert
+apres assert
+3.34878e-007
+avant assert
+apres assert
+4.46353e-006
+avant assert
+apres assert
+2.3044e-005
+avant assert
+apres assert
+2.91801e-006
+avant assert
+apres assert
+5.31633e-006
+avant assert
+apres assert
+1.17095e-006
+avant assert
+apres assert
+1.40772e-005
+avant assert
+apres assert
+0.000127579
+avant assert
+apres assert
+8.81725e-005
+avant assert
+apres assert
+6.96484e-005
+avant assert
+apres assert
+2.58134e-005
+avant assert
+apres assert
+1.33764e-007
+avant assert
+apres assert
+5.55962e-005
+avant assert
+apres assert
+1.13437e-005
+avant assert
+apres assert
+5.03856e-006
+avant assert
+apres assert
+9.15475e-006
+avant assert
+apres assert
+1.16341e-006
+avant assert
+apres assert
+1.55934e-005
+avant assert
+apres assert
+1.14857e-006
+avant assert
+apres assert
+1.59998e-006
+avant assert
+apres assert
+1.05613e-006
+avant assert
+apres assert
+6.65085e-005
+avant assert
+apres assert
+6.2155e-006
+avant assert
+apres assert
+3.11275e-006
+avant assert
+apres assert
+3.10921e-007
+avant assert
+apres assert
+4.44536e-008
+avant assert
+apres assert
+1.60754e-005
+avant assert
+apres assert
+3.64458e-005
+avant assert
+apres assert
+1.08565e-005
+avant assert
+apres assert
+1.71664e-005
+avant assert
+apres assert
+7.51703e-005
+avant assert
+apres assert
+4.41795e-005
+avant assert
+apres assert
+2.33954e-005
+avant assert
+apres assert
+8.66082e-007
+avant assert
+apres assert
+1.60171e-007
+avant assert
+apres assert
+2.44904e-006
+avant assert
+apres assert
+1.07625e-006
+avant assert
+apres assert
+3.82709e-006
+avant assert
+apres assert
+2.54324e-006
+avant assert
+apres assert
+3.04569e-006
+avant assert
+apres assert
+1.08112e-006
+avant assert
+apres assert
+1.9775e-007
+avant assert
+apres assert
+2.05107e-006
+avant assert
+apres assert
+1.00412e-005
+avant assert
+apres assert
+3.7521e-006
+avant assert
+apres assert
+1.91835e-005
+avant assert
+apres assert
+2.42005e-005
+avant assert
+apres assert
+0.000156906
+avant assert
+apres assert
+0.000115194
+avant assert
+apres assert
+0.000119863
+avant assert
+apres assert
+3.02405e-005
+avant assert
+apres assert
+1.3506e-005
+avant assert
+apres assert
+2.27232e-006
+avant assert
+apres assert
+3.0979e-005
+avant assert
+apres assert
+7.38963e-005
+avant assert
+apres assert
+2.52323e-005
+avant assert
+apres assert
+8.50473e-005
+avant assert
+apres assert
+3.39855e-005
+avant assert
+apres assert
+5.47586e-005
+avant assert
+apres assert
+6.31188e-006
+avant assert
+apres assert
+2.82231e-007
+avant assert
+apres assert
+7.48448e-007
+avant assert
+apres assert
+1.47623e-005
+avant assert
+apres assert
+4.01712e-007
+avant assert
+apres assert
+1.06772e-005
+avant assert
+apres assert
+2.0861e-005
+avant assert
+apres assert
+8.83688e-006
+avant assert
+apres assert
+1.40341e-007
+avant assert
+apres assert
+1.91994e-007
+avant assert
+apres assert
+6.00555e-007
+avant assert
+apres assert
+3.99964e-008
+avant assert
+apres assert
+4.88198e-006
+avant assert
+apres assert
+4.07599e-007
+avant assert
+apres assert
+1.49993e-005
+avant assert
+apres assert
+9.61611e-006
+avant assert
+apres assert
+1.00273e-006
+avant assert
+apres assert
+4.99198e-006
+avant assert
+apres assert
+6.6035e-007
+avant assert
+apres assert
+8.51355e-006
+avant assert
+apres assert
+3.00814e-005
+avant assert
+apres assert
+0.000101399
+avant assert
+apres assert
+7.06137e-005
+avant assert
+apres assert
+1.24916e-005
+avant assert
+apres assert
+9.96562e-005
+avant assert
+apres assert
+1.90413e-005
+avant assert
+apres assert
+1.0086e-005
+avant assert
+apres assert
+3.22639e-005
+avant assert
+apres assert
+3.66434e-005
+avant assert
+apres assert
+9.06145e-005
+avant assert
+apres assert
+3.32584e-005
+avant assert
+apres assert
+2.19545e-005
+avant assert
+apres assert
+0.000132217
+avant assert
+apres assert
+3.05991e-005
+avant assert
+apres assert
+6.78626e-006
+avant assert
+apres assert
+3.97707e-007
+avant assert
+apres assert
+4.25556e-006
+avant assert
+apres assert
+1.29644e-005
+avant assert
+apres assert
+2.20634e-006
+avant assert
+apres assert
+2.3688e-006
+avant assert
+apres assert
+3.76983e-006
+avant assert
+apres assert
+1.51302e-006
+avant assert
+apres assert
+3.39477e-006
+avant assert
+apres assert
+1.48635e-006
+avant assert
+apres assert
+1.03025e-007
+avant assert
+apres assert
+2.41788e-005
+avant assert
+apres assert
+7.51486e-005
+avant assert
+apres assert
+0.000109217
+avant assert
+apres assert
+0.000174989
+avant assert
+apres assert
+0.000157869
+avant assert
+apres assert
+0.000113847
+avant assert
+apres assert
+0.000104783
+avant assert
+apres assert
+0.000170845
+avant assert
+apres assert
+0.000245435
+avant assert
+apres assert
+0.000192516
+avant assert
+apres assert
+0.000142549
+avant assert
+apres assert
+7.50363e-005
+avant assert
+apres assert
+8.17674e-005
+avant assert
+apres assert
+3.42465e-006
+avant assert
+apres assert
+1.63015e-009
+avant assert
+apres assert
+2.53197e-006
+avant assert
+apres assert
+2.91745e-007
+avant assert
+apres assert
+1.0413e-005
+avant assert
+apres assert
+1.35191e-005
+avant assert
+apres assert
+8.47418e-006
+avant assert
+apres assert
+5.00321e-006
+avant assert
+apres assert
+1.30961e-005
+avant assert
+apres assert
+1.89827e-005
+avant assert
+apres assert
+6.52217e-005
+avant assert
+apres assert
+3.38829e-005
+avant assert
+apres assert
+0.000119819
+avant assert
+apres assert
+8.10352e-005
+avant assert
+apres assert
+2.56612e-005
+avant assert
+apres assert
+1.22884e-005
+avant assert
+apres assert
+1.02123e-005
+avant assert
+apres assert
+1.58787e-006
+avant assert
+apres assert
+1.61968e-005
+avant assert
+apres assert
+3.92505e-005
+avant assert
+apres assert
+0.00015947
+avant assert
+apres assert
+0.000118411
+avant assert
+apres assert
+5.1654e-005
+avant assert
+apres assert
+3.73482e-005
+avant assert
+apres assert
+0.000105601
+avant assert
+apres assert
+0.000346588
+avant assert
+apres assert
+0.000570877
+avant assert
+apres assert
+0.00029889
+avant assert
+apres assert
+0.000200071
+avant assert
+apres assert
+0.000101964
+avant assert
+apres assert
+0.000169953
+avant assert
+apres assert
+0.000113989
+avant assert
+apres assert
+6.95587e-005
+avant assert
+apres assert
+6.28746e-005
+avant assert
+apres assert
+8.85167e-006
+avant assert
+apres assert
+1.43143e-005
+avant assert
+apres assert
+2.61033e-007
+avant assert
+apres assert
+1.45229e-005
+avant assert
+apres assert
+1.75769e-005
+avant assert
+apres assert
+1.85917e-005
+avant assert
+apres assert
+1.75083e-006
+avant assert
+apres assert
+2.83041e-006
+avant assert
+apres assert
+1.51109e-006
+avant assert
+apres assert
+2.22385e-006
+avant assert
+apres assert
+1.1204e-005
+avant assert
+apres assert
+5.25027e-006
+avant assert
+apres assert
+8.92409e-006
+avant assert
+apres assert
+4.82951e-005
+avant assert
+apres assert
+1.87406e-005
+avant assert
+apres assert
+1.25632e-008
+avant assert
+apres assert
+3.04253e-005
+avant assert
+apres assert
+4.15385e-005
+avant assert
+apres assert
+1.55276e-005
+avant assert
+apres assert
+1.73709e-005
+avant assert
+apres assert
+1.92552e-005
+avant assert
+apres assert
+0.000115773
+avant assert
+apres assert
+0.000169704
+avant assert
+apres assert
+0.000105407
+avant assert
+apres assert
+2.48922e-005
+avant assert
+apres assert
+1.89096e-006
+avant assert
+apres assert
+5.3201e-008
+avant assert
+apres assert
+4.75159e-006
+avant assert
+apres assert
+6.56541e-006
+avant assert
+apres assert
+3.89042e-005
+avant assert
+apres assert
+4.2812e-005
+avant assert
+apres assert
+5.38752e-005
+avant assert
+apres assert
+2.41201e-006
+avant assert
+apres assert
+7.28713e-007
+avant assert
+apres assert
+8.58386e-006
+avant assert
+apres assert
+2.8001e-005
+avant assert
+apres assert
+1.71345e-008
+avant assert
+apres assert
+2.64247e-006
+avant assert
+apres assert
+1.46522e-005
+avant assert
+apres assert
+2.5604e-005
+avant assert
+apres assert
+8.66368e-005
+avant assert
+apres assert
+2.46166e-005
+avant assert
+apres assert
+1.60394e-007
+avant assert
+apres assert
+1.31799e-007
+avant assert
+apres assert
+3.72962e-005
+avant assert
+apres assert
+4.88937e-006
+avant assert
+apres assert
+1.17226e-010
+avant assert
+apres assert
+1.10013e-010
+avant assert
+apres assert
+1.19101e-006
+avant assert
+apres assert
+5.56486e-006
+avant assert
+apres assert
+4.6125e-009
+avant assert
+apres assert
+6.95838e-006
+avant assert
+apres assert
+5.08517e-006
+avant assert
+apres assert
+1.284e-006
+avant assert
+apres assert
+2.60422e-005
+avant assert
+apres assert
+6.5577e-005
+avant assert
+apres assert
+3.29711e-005
+avant assert
+apres assert
+8.72228e-008
+avant assert
+apres assert
+2.65206e-007
+avant assert
+apres assert
+8.08975e-007
+avant assert
+apres assert
+1.61765e-006
+avant assert
+apres assert
+0.000102905
+avant assert
+apres assert
+0.000202583
+avant assert
+apres assert
+6.36886e-005
+avant assert
+apres assert
+6.77626e-005
+avant assert
+apres assert
+4.45262e-005
+avant assert
+apres assert
+5.27853e-005
+avant assert
+apres assert
+1.79311e-005
+avant assert
+apres assert
+7.18709e-007
+avant assert
+apres assert
+1.20748e-005
+avant assert
+apres assert
+3.44531e-005
+avant assert
+apres assert
+3.40642e-005
+avant assert
+apres assert
+4.19913e-006
+avant assert
+apres assert
+4.21363e-005
+avant assert
+apres assert
+4.60916e-005
+avant assert
+apres assert
+3.39411e-005
+avant assert
+apres assert
+1.53232e-006
+avant assert
+apres assert
+1.48439e-005
+avant assert
+apres assert
+5.9079e-006
+avant assert
+apres assert
+4.21995e-006
+avant assert
+apres assert
+3.59459e-005
+avant assert
+apres assert
+6.49827e-005
+avant assert
+apres assert
+3.5483e-005
+avant assert
+apres assert
+0.000126068
+avant assert
+apres assert
+0.000126059
+avant assert
+apres assert
+0.000159495
+avant assert
+apres assert
+0.000120621
+avant assert
+apres assert
+8.07719e-005
+avant assert
+apres assert
+1.36876e-005
+avant assert
+apres assert
+1.96711e-005
+avant assert
+apres assert
+0.000100087
+avant assert
+apres assert
+0.000103885
+avant assert
+apres assert
+0.00013517
+avant assert
+apres assert
+9.33304e-005
+avant assert
+apres assert
+2.40377e-005
+avant assert
+apres assert
+8.38248e-005
+avant assert
+apres assert
+8.22603e-005
+avant assert
+apres assert
+1.58388e-005
+avant assert
+apres assert
+3.43179e-005
+avant assert
+apres assert
+5.81822e-005
+avant assert
+apres assert
+6.06826e-005
+avant assert
+apres assert
+4.34964e-005
+avant assert
+apres assert
+1.6695e-005
+avant assert
+apres assert
+1.33279e-006
+avant assert
+apres assert
+8.42944e-007
+avant assert
+apres assert
+1.29103e-005
+avant assert
+apres assert
+3.28772e-005
+avant assert
+apres assert
+5.41273e-005
+avant assert
+apres assert
+3.8142e-005
+avant assert
+apres assert
+9.19262e-005
+avant assert
+apres assert
+8.90834e-005
+avant assert
+apres assert
+5.61182e-005
+avant assert
+apres assert
+0.00012572
+avant assert
+apres assert
+0.000255009
+avant assert
+apres assert
+0.000314106
+avant assert
+apres assert
+0.000123454
+avant assert
+apres assert
+5.0535e-005
+avant assert
+apres assert
+9.2937e-005
+avant assert
+apres assert
+4.95053e-005
+avant assert
+apres assert
+2.41429e-005
+avant assert
+apres assert
+2.54241e-007
+avant assert
+apres assert
+1.49129e-010
+avant assert
+apres assert
+6.97893e-006
+avant assert
+apres assert
+3.55673e-005
+avant assert
+apres assert
+0.000230743
+avant assert
+apres assert
+0.000551189
+avant assert
+apres assert
+0.000789667
+avant assert
+apres assert
+0.000972081
+avant assert
+apres assert
+0.000915303
+avant assert
+apres assert
+0.000977261
+avant assert
+apres assert
+0.000586901
+avant assert
+apres assert
+0.000553146
+avant assert
+apres assert
+0.00054218
+avant assert
+apres assert
+0.000388218
+avant assert
+apres assert
+0.0003253
+avant assert
+apres assert
+0.000371522
+avant assert
+apres assert
+0.000110492
+avant assert
+apres assert
+2.67933e-005
+avant assert
+apres assert
+7.00404e-005
+avant assert
+apres assert
+0.000123467
+avant assert
+apres assert
+0.00016045
+avant assert
+apres assert
+6.02945e-005
+avant assert
+apres assert
+2.17942e-005
+avant assert
+apres assert
+2.04533e-005
+avant assert
+apres assert
+1.83276e-005
+avant assert
+apres assert
+5.18606e-005
+avant assert
+apres assert
+1.74104e-005
+avant assert
+apres assert
+0.000100005
+avant assert
+apres assert
+3.63947e-005
+avant assert
+apres assert
+1.86427e-008
+avant assert
+apres assert
+9.3939e-007
+avant assert
+apres assert
+9.78121e-007
+avant assert
+apres assert
+1.67998e-005
+avant assert
+apres assert
+2.83291e-005
+avant assert
+apres assert
+0.000199327
+avant assert
+apres assert
+0.000395436
+avant assert
+apres assert
+0.00034832
+avant assert
+apres assert
+0.000144525
+avant assert
+apres assert
+5.76186e-005
+avant assert
+apres assert
+3.60198e-005
+avant assert
+apres assert
+9.98874e-006
+avant assert
+apres assert
+2.75504e-006
+avant assert
+apres assert
+1.40573e-005
+avant assert
+apres assert
+1.51015e-006
+avant assert
+apres assert
+7.9176e-009
+avant assert
+apres assert
+3.44789e-005
+avant assert
+apres assert
+4.67848e-005
+avant assert
+apres assert
+4.08019e-006
+avant assert
+apres assert
+5.79575e-006
+avant assert
+apres assert
+4.20921e-005
+avant assert
+apres assert
+0.000213054
+avant assert
+apres assert
+0.00204597
+avant assert
+apres assert
+0.00667002
+avant assert
+apres assert
+0.0121463
+avant assert
+apres assert
+0.0112817
+avant assert
+apres assert
+0.00659616
+avant assert
+apres assert
+0.00213765
+avant assert
+apres assert
+0.000210215
+avant assert
+apres assert
+0.000412125
+avant assert
+apres assert
+0.00126651
+avant assert
+apres assert
+0.00183074
+avant assert
+apres assert
+0.0021258
+avant assert
+apres assert
+0.00195054
+avant assert
+apres assert
+0.00161051
+avant assert
+apres assert
+0.00119517
+avant assert
+apres assert
+0.00110826
+avant assert
+apres assert
+0.000582704
+avant assert
+apres assert
+0.000463644
+avant assert
+apres assert
+0.000441408
+avant assert
+apres assert
+0.000254313
+avant assert
+apres assert
+0.000167584
+avant assert
+apres assert
+6.94754e-005
+avant assert
+apres assert
+1.57542e-005
+avant assert
+apres assert
+1.30024e-007
+avant assert
+apres assert
+2.02012e-007
+avant assert
+apres assert
+5.70283e-006
+avant assert
+apres assert
+7.93723e-007
+avant assert
+apres assert
+6.32679e-006
+avant assert
+apres assert
+1.88294e-005
+avant assert
+apres assert
+9.04569e-005
+avant assert
+apres assert
+0.000102311
+avant assert
+apres assert
+4.21762e-005
+avant assert
+apres assert
+2.30803e-006
+avant assert
+apres assert
+3.63359e-005
+avant assert
+apres assert
+2.15103e-005
+avant assert
+apres assert
+6.96927e-005
+avant assert
+apres assert
+8.72175e-005
+avant assert
+apres assert
+0.000178303
+avant assert
+apres assert
+2.13858e-005
+avant assert
+apres assert
+2.5308e-005
+avant assert
+apres assert
+1.65845e-005
+avant assert
+apres assert
+8.66589e-006
+avant assert
+apres assert
+6.38416e-007
+avant assert
+apres assert
+1.42521e-007
+avant assert
+apres assert
+3.42889e-007
+avant assert
+apres assert
+6.68485e-007
+avant assert
+apres assert
+1.71818e-006
+avant assert
+apres assert
+3.0076e-006
+avant assert
+apres assert
+1.5078e-005
+avant assert
+apres assert
+7.07664e-006
+avant assert
+apres assert
+2.19284e-005
+avant assert
+apres assert
+5.92237e-006
+avant assert
+apres assert
+1.37595e-005
+avant assert
+apres assert
+1.36426e-005
+avant assert
+apres assert
+5.60022e-005
+avant assert
+apres assert
+0.000328129
+avant assert
+apres assert
+0.000238561
+avant assert
+apres assert
+0.00014784
+avant assert
+apres assert
+0.000229024
+avant assert
+apres assert
+0.000103114
+avant assert
+apres assert
+0.000128577
+avant assert
+apres assert
+5.44638e-005
+avant assert
+apres assert
+2.5467e-005
+avant assert
+apres assert
+1.14701e-005
+avant assert
+apres assert
+6.8686e-005
+avant assert
+apres assert
+0.000110925
+avant assert
+apres assert
+4.82825e-005
+avant assert
+apres assert
+5.44984e-005
+avant assert
+apres assert
+2.75523e-005
+avant assert
+apres assert
+5.09479e-005
+avant assert
+apres assert
+1.90206e-005
+avant assert
+apres assert
+4.93841e-006
+avant assert
+apres assert
+5.86799e-005
+avant assert
+apres assert
+5.28629e-005
+avant assert
+apres assert
+0.000129946
+avant assert
+apres assert
+0.000187601
+avant assert
+apres assert
+6.58003e-005
+avant assert
+apres assert
+9.04493e-005
+avant assert
+apres assert
+0.000189598
+avant assert
+apres assert
+0.000299101
+avant assert
+apres assert
+0.000203082
+avant assert
+apres assert
+0.000122138
+avant assert
+apres assert
+0.000169244
+avant assert
+apres assert
+0.000243575
+avant assert
+apres assert
+0.00038319
+avant assert
+apres assert
+0.000335352
+avant assert
+apres assert
+0.000150871
+avant assert
+apres assert
+7.82335e-005
+avant assert
+apres assert
+0.000121482
+avant assert
+apres assert
+0.000230541
+avant assert
+apres assert
+0.000394661
+avant assert
+apres assert
+0.000481756
+avant assert
+apres assert
+0.000390497
+avant assert
+apres assert
+0.00034383
+avant assert
+apres assert
+0.000226781
+avant assert
+apres assert
+6.52835e-005
+avant assert
+apres assert
+3.87525e-005
+avant assert
+apres assert
+3.0029e-005
+avant assert
+apres assert
+1.00557e-006
+avant assert
+apres assert
+1.58048e-005
+avant assert
+apres assert
+6.81823e-005
+avant assert
+apres assert
+0.000174406
+avant assert
+apres assert
+0.000251151
+avant assert
+apres assert
+0.000265813
+avant assert
+apres assert
+0.000147363
+avant assert
+apres assert
+1.3315e-005
+avant assert
+apres assert
+3.93165e-006
+avant assert
+apres assert
+0.000108835
+avant assert
+apres assert
+0.000229925
+avant assert
+apres assert
+0.000143658
+avant assert
+apres assert
+9.13631e-005
+avant assert
+apres assert
+0.000127972
+avant assert
+apres assert
+0.000246975
+avant assert
+apres assert
+0.000276431
+avant assert
+apres assert
+0.000363309
+avant assert
+apres assert
+0.000320921
+avant assert
+apres assert
+0.000441395
+avant assert
+apres assert
+0.000295791
+avant assert
+apres assert
+0.000340903
+avant assert
+apres assert
+0.000260313
+avant assert
+apres assert
+0.000164512
+avant assert
+apres assert
+0.00015068
+avant assert
+apres assert
+0.000235508
+avant assert
+apres assert
+0.000184007
+avant assert
+apres assert
+8.34592e-005
+avant assert
+apres assert
+1.93078e-005
+avant assert
+apres assert
+3.4327e-005
+avant assert
+apres assert
+1.9573e-005
+avant assert
+apres assert
+4.67766e-005
+avant assert
+apres assert
+0.000109848
+avant assert
+apres assert
+0.000135847
+avant assert
+apres assert
+7.28871e-005
+avant assert
+apres assert
+3.32606e-005
+avant assert
+apres assert
+1.04574e-005
+avant assert
+apres assert
+8.1735e-005
+avant assert
+apres assert
+1.07742e-008
+avant assert
+apres assert
+
+Info: (I804) /IEEE_Std_1666/deprecated: You can turn off warnings about
+             IEEE 1666 deprecated features by placing this method call as the
+             first statement in your sc_main() function:
+
+  sc_report_handler::set_actions("/IEEE_Std_1666/deprecated", SC_DO_NOTHING);
+
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

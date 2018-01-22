@@ -26855,8 +26855,8 @@ private:
 
  float y0;
  float x0;
- float mem_x[ 2 ];
- float mem_y[ 2 ];
+ float mem_x[ 1 ];
+ float mem_y[ 1 ];
 public:
     sc_in < bool > clk;
     sc_in < bool > reset;
@@ -26892,7 +26892,7 @@ float Filtre2IIR( float y1, float x1, float x0){
 void filtre2::do_filtre(){
 
 
- for( int i = 0; i < 2; i++ ){
+ for( int i = 0; i < 1; i++ ){
 
   mem_x[i] = 0;
   mem_y[i] = 0;
@@ -26901,7 +26901,7 @@ void filtre2::do_filtre(){
 
  while( true ){
 
-  for( int i = 0; i < 2; i++ ){
+  for( int i = 0; i < 1; i++ ){
 
    x0 = e.read();
 

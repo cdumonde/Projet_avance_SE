@@ -84,7 +84,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>8</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -112,7 +112,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>8</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -124,18 +124,18 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>9</count>
+			<count>7</count>
 			<item_version>0</item_version>
 			<item class_id="9" tracking_level="1" version="0" object_id="_5">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>151</id>
+						<id>125</id>
 						<name></name>
-						<fileName>src/modules/UartModIn.h</fileName>
+						<fileName>src/modules/doubleur.h</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
-						<lineNumber>26</lineNumber>
-						<contextFuncName>UartModIn</contextFuncName>
+						<lineNumber>22</lineNumber>
+						<contextFuncName>doubleur</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -146,114 +146,6 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>src/modules/UartModIn.h</first>
-											<second>UartModIn</second>
-										</first>
-										<second>26</second>
-									</item>
-									<item>
-										<first>
-											<first>src/modules/top_level.h</first>
-											<second>top_level</second>
-										</first>
-										<second>41</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>6</count>
-					<item_version>0</item_version>
-					<item>217</item>
-					<item>218</item>
-					<item>219</item>
-					<item>220</item>
-					<item>221</item>
-					<item>280</item>
-				</oprand_edges>
-				<opcode>call</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_6">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>152</id>
-						<name></name>
-						<fileName>src/modules/UartModOut.h</fileName>
-						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
-						<lineNumber>26</lineNumber>
-						<contextFuncName>UartModOut</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/modules/UartModOut.h</first>
-											<second>UartModOut</second>
-										</first>
-										<second>26</second>
-									</item>
-									<item>
-										<first>
-											<first>src/modules/top_level.h</first>
-											<second>top_level</second>
-										</first>
-										<second>41</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>6</count>
-					<item_version>0</item_version>
-					<item>223</item>
-					<item>224</item>
-					<item>225</item>
-					<item>226</item>
-					<item>227</item>
-					<item>281</item>
-				</oprand_edges>
-				<opcode>call</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_7">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>153</id>
-						<name></name>
-						<fileName>src/modules/doubleur.h</fileName>
-						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
-						<lineNumber>22</lineNumber>
-						<contextFuncName>doubleur</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
 											<first>src/modules/doubleur.h</first>
 											<second>doubleur</second>
 										</first>
@@ -264,7 +156,7 @@
 											<first>src/modules/top_level.h</first>
 											<second>top_level</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -278,23 +170,23 @@
 				<oprand_edges>
 					<count>8</count>
 					<item_version>0</item_version>
-					<item>229</item>
+					<item>179</item>
+					<item>180</item>
+					<item>181</item>
+					<item>182</item>
+					<item>183</item>
+					<item>184</item>
+					<item>185</item>
 					<item>230</item>
-					<item>231</item>
-					<item>232</item>
-					<item>233</item>
-					<item>234</item>
-					<item>235</item>
-					<item>282</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_8">
+			<item class_id_reference="9" object_id="_6">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>154</id>
+						<id>126</id>
 						<name></name>
 						<fileName>src/modules/comparateur.h</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
@@ -320,7 +212,7 @@
 											<first>src/modules/top_level.h</first>
 											<second>top_level</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -334,25 +226,25 @@
 				<oprand_edges>
 					<count>10</count>
 					<item_version>0</item_version>
-					<item>237</item>
-					<item>238</item>
-					<item>239</item>
-					<item>240</item>
-					<item>241</item>
-					<item>242</item>
-					<item>243</item>
-					<item>244</item>
-					<item>245</item>
-					<item>283</item>
+					<item>187</item>
+					<item>188</item>
+					<item>189</item>
+					<item>190</item>
+					<item>191</item>
+					<item>192</item>
+					<item>193</item>
+					<item>194</item>
+					<item>195</item>
+					<item>231</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_9">
+			<item class_id_reference="9" object_id="_7">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>155</id>
+						<id>127</id>
 						<name></name>
 						<fileName>src/modules/filtre1.h</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
@@ -378,7 +270,7 @@
 											<first>src/modules/top_level.h</first>
 											<second>top_level</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -392,25 +284,25 @@
 				<oprand_edges>
 					<count>10</count>
 					<item_version>0</item_version>
-					<item>247</item>
-					<item>248</item>
-					<item>249</item>
-					<item>250</item>
-					<item>251</item>
-					<item>252</item>
-					<item>253</item>
-					<item>254</item>
-					<item>255</item>
-					<item>284</item>
+					<item>197</item>
+					<item>198</item>
+					<item>199</item>
+					<item>200</item>
+					<item>201</item>
+					<item>202</item>
+					<item>203</item>
+					<item>204</item>
+					<item>205</item>
+					<item>232</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_10">
+			<item class_id_reference="9" object_id="_8">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>156</id>
+						<id>128</id>
 						<name></name>
 						<fileName>src/modules/carre.h</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
@@ -436,7 +328,7 @@
 											<first>src/modules/top_level.h</first>
 											<second>top_level</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -450,22 +342,22 @@
 				<oprand_edges>
 					<count>7</count>
 					<item_version>0</item_version>
-					<item>257</item>
-					<item>258</item>
-					<item>259</item>
-					<item>260</item>
-					<item>261</item>
-					<item>262</item>
-					<item>285</item>
+					<item>207</item>
+					<item>208</item>
+					<item>209</item>
+					<item>210</item>
+					<item>211</item>
+					<item>212</item>
+					<item>233</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_11">
+			<item class_id_reference="9" object_id="_9">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>157</id>
+						<id>129</id>
 						<name></name>
 						<fileName>src/modules/filtre2.h</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
@@ -491,7 +383,7 @@
 											<first>src/modules/top_level.h</first>
 											<second>top_level</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -505,25 +397,25 @@
 				<oprand_edges>
 					<count>10</count>
 					<item_version>0</item_version>
-					<item>264</item>
-					<item>265</item>
-					<item>266</item>
-					<item>267</item>
-					<item>268</item>
-					<item>269</item>
-					<item>270</item>
-					<item>271</item>
-					<item>272</item>
-					<item>286</item>
+					<item>214</item>
+					<item>215</item>
+					<item>216</item>
+					<item>217</item>
+					<item>218</item>
+					<item>219</item>
+					<item>220</item>
+					<item>221</item>
+					<item>222</item>
+					<item>234</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_12">
+			<item class_id_reference="9" object_id="_10">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>158</id>
+						<id>130</id>
 						<name></name>
 						<fileName>src/modules/racine.h</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
@@ -549,7 +441,7 @@
 											<first>src/modules/top_level.h</first>
 											<second>top_level</second>
 										</first>
-										<second>41</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -563,26 +455,26 @@
 				<oprand_edges>
 					<count>7</count>
 					<item_version>0</item_version>
-					<item>274</item>
-					<item>275</item>
-					<item>276</item>
-					<item>277</item>
-					<item>278</item>
-					<item>279</item>
-					<item>287</item>
+					<item>224</item>
+					<item>225</item>
+					<item>226</item>
+					<item>227</item>
+					<item>228</item>
+					<item>229</item>
+					<item>235</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_13">
+			<item class_id_reference="9" object_id="_11">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>214</id>
+						<id>176</id>
 						<name></name>
 						<fileName>src/modules/top_level.h</fileName>
 						<fileDirectory>Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>top_level</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -597,7 +489,7 @@
 											<first>src/modules/top_level.h</first>
 											<second>top_level</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -617,59 +509,13 @@
 			</item>
 		</nodes>
 		<consts class_id="15" tracking_level="0" version="0">
-			<count>8</count>
+			<count>6</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_14">
+			<item class_id="16" tracking_level="1" version="0" object_id="_12">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>216</id>
-						<name>UartModIn</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<const_type>6</const_type>
-				<content>&lt;constant:UartModIn::UartModIn.1&gt;</content>
-			</item>
-			<item class_id_reference="16" object_id="_15">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>222</id>
-						<name>UartModOut</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<const_type>6</const_type>
-				<content>&lt;constant:UartModOut::UartModOut.1&gt;</content>
-			</item>
-			<item class_id_reference="16" object_id="_16">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>228</id>
+						<id>178</id>
 						<name>doubleur</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -688,11 +534,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:doubleur::doubleur.1&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_17">
+			<item class_id_reference="16" object_id="_13">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>236</id>
+						<id>186</id>
 						<name>comparateur</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -711,11 +557,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:comparateur::comparateur.1&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_18">
+			<item class_id_reference="16" object_id="_14">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>246</id>
+						<id>196</id>
 						<name>filtre1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -734,11 +580,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:filtre1::filtre1.1&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_19">
+			<item class_id_reference="16" object_id="_15">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>256</id>
+						<id>206</id>
 						<name>carre</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -757,11 +603,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:carre::carre.1&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_20">
+			<item class_id_reference="16" object_id="_16">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>263</id>
+						<id>213</id>
 						<name>filtre2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -780,11 +626,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:filtre2::filtre2.1&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_21">
+			<item class_id_reference="16" object_id="_17">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>273</id>
+						<id>223</id>
 						<name>racine</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -807,11 +653,11 @@
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_22">
+			<item class_id="18" tracking_level="1" version="0" object_id="_18">
 				<Obj>
 					<type>3</type>
-					<id>215</id>
-					<name>top_level::top_level</name>
+					<id>177</id>
+					<name>top_level::top_level.1</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -825,415 +671,341 @@
 					<coreName></coreName>
 				</Obj>
 				<node_objs>
-					<count>9</count>
+					<count>7</count>
 					<item_version>0</item_version>
-					<item>151</item>
-					<item>152</item>
-					<item>153</item>
-					<item>154</item>
-					<item>155</item>
-					<item>156</item>
-					<item>157</item>
-					<item>158</item>
-					<item>214</item>
+					<item>125</item>
+					<item>126</item>
+					<item>127</item>
+					<item>128</item>
+					<item>129</item>
+					<item>130</item>
+					<item>176</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>64</count>
+			<count>52</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_23">
-				<id>217</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_19">
+				<id>179</id>
 				<edge_type>1</edge_type>
-				<source_obj>216</source_obj>
-				<sink_obj>151</sink_obj>
+				<source_obj>178</source_obj>
+				<sink_obj>125</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_24">
-				<id>218</id>
+			<item class_id_reference="20" object_id="_20">
+				<id>180</id>
 				<edge_type>1</edge_type>
 				<source_obj>5</source_obj>
-				<sink_obj>151</sink_obj>
+				<sink_obj>125</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_25">
-				<id>219</id>
+			<item class_id_reference="20" object_id="_21">
+				<id>181</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
-				<sink_obj>151</sink_obj>
+				<sink_obj>125</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_26">
-				<id>220</id>
+			<item class_id_reference="20" object_id="_22">
+				<id>182</id>
 				<edge_type>1</edge_type>
 				<source_obj>7</source_obj>
-				<sink_obj>151</sink_obj>
+				<sink_obj>125</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_27">
-				<id>221</id>
+			<item class_id_reference="20" object_id="_23">
+				<id>183</id>
 				<edge_type>1</edge_type>
 				<source_obj>8</source_obj>
-				<sink_obj>151</sink_obj>
+				<sink_obj>125</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_28">
-				<id>223</id>
-				<edge_type>1</edge_type>
-				<source_obj>222</source_obj>
-				<sink_obj>152</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_29">
-				<id>224</id>
+			<item class_id_reference="20" object_id="_24">
+				<id>184</id>
 				<edge_type>1</edge_type>
 				<source_obj>9</source_obj>
-				<sink_obj>152</sink_obj>
+				<sink_obj>125</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_30">
-				<id>225</id>
+			<item class_id_reference="20" object_id="_25">
+				<id>185</id>
 				<edge_type>1</edge_type>
 				<source_obj>10</source_obj>
-				<sink_obj>152</sink_obj>
+				<sink_obj>125</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_31">
-				<id>226</id>
+			<item class_id_reference="20" object_id="_26">
+				<id>187</id>
+				<edge_type>1</edge_type>
+				<source_obj>186</source_obj>
+				<sink_obj>126</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_27">
+				<id>188</id>
 				<edge_type>1</edge_type>
 				<source_obj>11</source_obj>
-				<sink_obj>152</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_32">
-				<id>227</id>
+			<item class_id_reference="20" object_id="_28">
+				<id>189</id>
 				<edge_type>1</edge_type>
 				<source_obj>12</source_obj>
-				<sink_obj>152</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_33">
-				<id>229</id>
-				<edge_type>1</edge_type>
-				<source_obj>228</source_obj>
-				<sink_obj>153</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_34">
-				<id>230</id>
+			<item class_id_reference="20" object_id="_29">
+				<id>190</id>
 				<edge_type>1</edge_type>
 				<source_obj>13</source_obj>
-				<sink_obj>153</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_35">
-				<id>231</id>
+			<item class_id_reference="20" object_id="_30">
+				<id>191</id>
 				<edge_type>1</edge_type>
 				<source_obj>14</source_obj>
-				<sink_obj>153</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_36">
-				<id>232</id>
+			<item class_id_reference="20" object_id="_31">
+				<id>192</id>
 				<edge_type>1</edge_type>
 				<source_obj>15</source_obj>
-				<sink_obj>153</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_37">
-				<id>233</id>
+			<item class_id_reference="20" object_id="_32">
+				<id>193</id>
 				<edge_type>1</edge_type>
 				<source_obj>16</source_obj>
-				<sink_obj>153</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_38">
-				<id>234</id>
+			<item class_id_reference="20" object_id="_33">
+				<id>194</id>
 				<edge_type>1</edge_type>
 				<source_obj>17</source_obj>
-				<sink_obj>153</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_39">
-				<id>235</id>
+			<item class_id_reference="20" object_id="_34">
+				<id>195</id>
 				<edge_type>1</edge_type>
 				<source_obj>18</source_obj>
-				<sink_obj>153</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_40">
-				<id>237</id>
+			<item class_id_reference="20" object_id="_35">
+				<id>197</id>
 				<edge_type>1</edge_type>
-				<source_obj>236</source_obj>
-				<sink_obj>154</sink_obj>
+				<source_obj>196</source_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_41">
-				<id>238</id>
+			<item class_id_reference="20" object_id="_36">
+				<id>198</id>
 				<edge_type>1</edge_type>
 				<source_obj>19</source_obj>
-				<sink_obj>154</sink_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_42">
-				<id>239</id>
+			<item class_id_reference="20" object_id="_37">
+				<id>199</id>
 				<edge_type>1</edge_type>
 				<source_obj>20</source_obj>
-				<sink_obj>154</sink_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_43">
-				<id>240</id>
+			<item class_id_reference="20" object_id="_38">
+				<id>200</id>
 				<edge_type>1</edge_type>
 				<source_obj>21</source_obj>
-				<sink_obj>154</sink_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_44">
-				<id>241</id>
+			<item class_id_reference="20" object_id="_39">
+				<id>201</id>
 				<edge_type>1</edge_type>
 				<source_obj>22</source_obj>
-				<sink_obj>154</sink_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_45">
-				<id>242</id>
+			<item class_id_reference="20" object_id="_40">
+				<id>202</id>
 				<edge_type>1</edge_type>
 				<source_obj>23</source_obj>
-				<sink_obj>154</sink_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_46">
-				<id>243</id>
+			<item class_id_reference="20" object_id="_41">
+				<id>203</id>
 				<edge_type>1</edge_type>
 				<source_obj>24</source_obj>
-				<sink_obj>154</sink_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_47">
-				<id>244</id>
+			<item class_id_reference="20" object_id="_42">
+				<id>204</id>
 				<edge_type>1</edge_type>
 				<source_obj>25</source_obj>
-				<sink_obj>154</sink_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_48">
-				<id>245</id>
+			<item class_id_reference="20" object_id="_43">
+				<id>205</id>
 				<edge_type>1</edge_type>
 				<source_obj>26</source_obj>
-				<sink_obj>154</sink_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_49">
-				<id>247</id>
+			<item class_id_reference="20" object_id="_44">
+				<id>207</id>
 				<edge_type>1</edge_type>
-				<source_obj>246</source_obj>
-				<sink_obj>155</sink_obj>
+				<source_obj>206</source_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_50">
-				<id>248</id>
+			<item class_id_reference="20" object_id="_45">
+				<id>208</id>
 				<edge_type>1</edge_type>
 				<source_obj>27</source_obj>
-				<sink_obj>155</sink_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_51">
-				<id>249</id>
+			<item class_id_reference="20" object_id="_46">
+				<id>209</id>
 				<edge_type>1</edge_type>
 				<source_obj>28</source_obj>
-				<sink_obj>155</sink_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_52">
-				<id>250</id>
+			<item class_id_reference="20" object_id="_47">
+				<id>210</id>
 				<edge_type>1</edge_type>
 				<source_obj>29</source_obj>
-				<sink_obj>155</sink_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_53">
-				<id>251</id>
+			<item class_id_reference="20" object_id="_48">
+				<id>211</id>
 				<edge_type>1</edge_type>
 				<source_obj>30</source_obj>
-				<sink_obj>155</sink_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_54">
-				<id>252</id>
+			<item class_id_reference="20" object_id="_49">
+				<id>212</id>
 				<edge_type>1</edge_type>
 				<source_obj>31</source_obj>
-				<sink_obj>155</sink_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_55">
-				<id>253</id>
+			<item class_id_reference="20" object_id="_50">
+				<id>214</id>
+				<edge_type>1</edge_type>
+				<source_obj>213</source_obj>
+				<sink_obj>129</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_51">
+				<id>215</id>
 				<edge_type>1</edge_type>
 				<source_obj>32</source_obj>
-				<sink_obj>155</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_56">
-				<id>254</id>
+			<item class_id_reference="20" object_id="_52">
+				<id>216</id>
 				<edge_type>1</edge_type>
 				<source_obj>33</source_obj>
-				<sink_obj>155</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_57">
-				<id>255</id>
+			<item class_id_reference="20" object_id="_53">
+				<id>217</id>
 				<edge_type>1</edge_type>
 				<source_obj>34</source_obj>
-				<sink_obj>155</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_58">
-				<id>257</id>
-				<edge_type>1</edge_type>
-				<source_obj>256</source_obj>
-				<sink_obj>156</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_59">
-				<id>258</id>
+			<item class_id_reference="20" object_id="_54">
+				<id>218</id>
 				<edge_type>1</edge_type>
 				<source_obj>35</source_obj>
-				<sink_obj>156</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_60">
-				<id>259</id>
+			<item class_id_reference="20" object_id="_55">
+				<id>219</id>
 				<edge_type>1</edge_type>
 				<source_obj>36</source_obj>
-				<sink_obj>156</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_61">
-				<id>260</id>
+			<item class_id_reference="20" object_id="_56">
+				<id>220</id>
 				<edge_type>1</edge_type>
 				<source_obj>37</source_obj>
-				<sink_obj>156</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_62">
-				<id>261</id>
+			<item class_id_reference="20" object_id="_57">
+				<id>221</id>
 				<edge_type>1</edge_type>
 				<source_obj>38</source_obj>
-				<sink_obj>156</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_63">
-				<id>262</id>
+			<item class_id_reference="20" object_id="_58">
+				<id>222</id>
 				<edge_type>1</edge_type>
 				<source_obj>39</source_obj>
-				<sink_obj>156</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_64">
-				<id>264</id>
+			<item class_id_reference="20" object_id="_59">
+				<id>224</id>
 				<edge_type>1</edge_type>
-				<source_obj>263</source_obj>
-				<sink_obj>157</sink_obj>
+				<source_obj>223</source_obj>
+				<sink_obj>130</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_65">
-				<id>265</id>
+			<item class_id_reference="20" object_id="_60">
+				<id>225</id>
 				<edge_type>1</edge_type>
 				<source_obj>40</source_obj>
-				<sink_obj>157</sink_obj>
+				<sink_obj>130</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_66">
-				<id>266</id>
+			<item class_id_reference="20" object_id="_61">
+				<id>226</id>
 				<edge_type>1</edge_type>
 				<source_obj>41</source_obj>
-				<sink_obj>157</sink_obj>
+				<sink_obj>130</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_67">
-				<id>267</id>
+			<item class_id_reference="20" object_id="_62">
+				<id>227</id>
 				<edge_type>1</edge_type>
 				<source_obj>42</source_obj>
-				<sink_obj>157</sink_obj>
+				<sink_obj>130</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_68">
-				<id>268</id>
+			<item class_id_reference="20" object_id="_63">
+				<id>228</id>
 				<edge_type>1</edge_type>
 				<source_obj>43</source_obj>
-				<sink_obj>157</sink_obj>
+				<sink_obj>130</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_69">
-				<id>269</id>
+			<item class_id_reference="20" object_id="_64">
+				<id>229</id>
 				<edge_type>1</edge_type>
 				<source_obj>44</source_obj>
-				<sink_obj>157</sink_obj>
+				<sink_obj>130</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_70">
-				<id>270</id>
-				<edge_type>1</edge_type>
-				<source_obj>45</source_obj>
-				<sink_obj>157</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_71">
-				<id>271</id>
-				<edge_type>1</edge_type>
-				<source_obj>46</source_obj>
-				<sink_obj>157</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_72">
-				<id>272</id>
-				<edge_type>1</edge_type>
-				<source_obj>47</source_obj>
-				<sink_obj>157</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_73">
-				<id>274</id>
-				<edge_type>1</edge_type>
-				<source_obj>273</source_obj>
-				<sink_obj>158</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_74">
-				<id>275</id>
-				<edge_type>1</edge_type>
-				<source_obj>48</source_obj>
-				<sink_obj>158</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_75">
-				<id>276</id>
-				<edge_type>1</edge_type>
-				<source_obj>49</source_obj>
-				<sink_obj>158</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_76">
-				<id>277</id>
-				<edge_type>1</edge_type>
-				<source_obj>50</source_obj>
-				<sink_obj>158</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_77">
-				<id>278</id>
+			<item class_id_reference="20" object_id="_65">
+				<id>230</id>
 				<edge_type>1</edge_type>
 				<source_obj>51</source_obj>
-				<sink_obj>158</sink_obj>
+				<sink_obj>125</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_78">
-				<id>279</id>
+			<item class_id_reference="20" object_id="_66">
+				<id>231</id>
 				<edge_type>1</edge_type>
 				<source_obj>52</source_obj>
-				<sink_obj>158</sink_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_79">
-				<id>280</id>
+			<item class_id_reference="20" object_id="_67">
+				<id>232</id>
 				<edge_type>1</edge_type>
-				<source_obj>61</source_obj>
-				<sink_obj>151</sink_obj>
+				<source_obj>53</source_obj>
+				<sink_obj>127</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_80">
-				<id>281</id>
+			<item class_id_reference="20" object_id="_68">
+				<id>233</id>
 				<edge_type>1</edge_type>
-				<source_obj>62</source_obj>
-				<sink_obj>152</sink_obj>
+				<source_obj>54</source_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_81">
-				<id>282</id>
+			<item class_id_reference="20" object_id="_69">
+				<id>234</id>
 				<edge_type>1</edge_type>
-				<source_obj>63</source_obj>
-				<sink_obj>153</sink_obj>
+				<source_obj>55</source_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_82">
-				<id>283</id>
+			<item class_id_reference="20" object_id="_70">
+				<id>235</id>
 				<edge_type>1</edge_type>
-				<source_obj>64</source_obj>
-				<sink_obj>154</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_83">
-				<id>284</id>
-				<edge_type>1</edge_type>
-				<source_obj>65</source_obj>
-				<sink_obj>155</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_84">
-				<id>285</id>
-				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>156</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_85">
-				<id>286</id>
-				<edge_type>1</edge_type>
-				<source_obj>67</source_obj>
-				<sink_obj>157</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_86">
-				<id>287</id>
-				<edge_type>1</edge_type>
-				<source_obj>68</source_obj>
-				<sink_obj>158</sink_obj>
+				<source_obj>56</source_obj>
+				<sink_obj>130</sink_obj>
 			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_87">
+		<item class_id="22" tracking_level="1" version="0" object_id="_71">
 			<mId>1</mId>
-			<mTag>top_level::top_level</mTag>
+			<mTag>top_level::top_level.1</mTag>
 			<mType>0</mType>
 			<sub_regions>
 				<count>0</count>
@@ -1242,13 +1014,13 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>215</item>
+				<item>177</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>49</mMinLatency>
+			<mMinLatency>29</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -1257,66 +1029,52 @@
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="26" tracking_level="0" version="0">
-		<count>9</count>
+		<count>7</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
-			<first>151</first>
+			<first>125</first>
 			<second class_id="28" tracking_level="0" version="0">
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>152</first>
+			<first>126</first>
 			<second>
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>153</first>
+			<first>127</first>
 			<second>
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>154</first>
+			<first>128</first>
 			<second>
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>155</first>
+			<first>129</first>
 			<second>
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>156</first>
+			<first>130</first>
 			<second>
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>157</first>
-			<second>
-				<first>0</first>
-				<second>1</second>
-			</second>
-		</item>
-		<item>
-			<first>158</first>
-			<second>
-				<first>0</first>
-				<second>1</second>
-			</second>
-		</item>
-		<item>
-			<first>214</first>
+			<first>176</first>
 			<second>
 				<first>1</first>
 				<second>0</second>
@@ -1327,7 +1085,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>215</first>
+			<first>177</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
 				<second>1</second>

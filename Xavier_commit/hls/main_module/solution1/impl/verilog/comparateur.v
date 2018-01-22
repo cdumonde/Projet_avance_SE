@@ -36,43 +36,43 @@ output  [31:0] s_din;
 input   s_full_n;
 output   s_write;
 
-wire   [31:0] grp_comparateur_do_comp_fu_74_comparateur_in1;
-wire    grp_comparateur_do_comp_fu_74_comparateur_in1_ap_vld;
-wire   [31:0] grp_comparateur_do_comp_fu_74_comparateur_seuil;
-wire    grp_comparateur_do_comp_fu_74_comparateur_seuil_ap_vld;
-wire   [31:0] grp_comparateur_do_comp_fu_74_comparateur_result;
-wire    grp_comparateur_do_comp_fu_74_comparateur_result_ap_vld;
-wire    grp_comparateur_do_comp_fu_74_e1_read;
-wire    grp_comparateur_do_comp_fu_74_e2_read;
-wire   [31:0] grp_comparateur_do_comp_fu_74_s_din;
-wire    grp_comparateur_do_comp_fu_74_s_write;
+wire   [31:0] grp_comparateur_do_comp_fu_66_comparateur_in1;
+wire    grp_comparateur_do_comp_fu_66_comparateur_in1_ap_vld;
+wire   [31:0] grp_comparateur_do_comp_fu_66_comparateur_seuil;
+wire    grp_comparateur_do_comp_fu_66_comparateur_seuil_ap_vld;
+wire   [31:0] grp_comparateur_do_comp_fu_66_comparateur_result;
+wire    grp_comparateur_do_comp_fu_66_comparateur_result_ap_vld;
+wire    grp_comparateur_do_comp_fu_66_e1_read;
+wire    grp_comparateur_do_comp_fu_66_e2_read;
+wire   [31:0] grp_comparateur_do_comp_fu_66_s_din;
+wire    grp_comparateur_do_comp_fu_66_s_write;
 
-comparateur_do_comp grp_comparateur_do_comp_fu_74(
+comparateur_do_comp grp_comparateur_do_comp_fu_66(
     .ap_clk(clk),
     .ap_rst(reset),
-    .comparateur_in1(grp_comparateur_do_comp_fu_74_comparateur_in1),
-    .comparateur_in1_ap_vld(grp_comparateur_do_comp_fu_74_comparateur_in1_ap_vld),
-    .comparateur_seuil(grp_comparateur_do_comp_fu_74_comparateur_seuil),
-    .comparateur_seuil_ap_vld(grp_comparateur_do_comp_fu_74_comparateur_seuil_ap_vld),
-    .comparateur_result(grp_comparateur_do_comp_fu_74_comparateur_result),
-    .comparateur_result_ap_vld(grp_comparateur_do_comp_fu_74_comparateur_result_ap_vld),
+    .comparateur_in1(grp_comparateur_do_comp_fu_66_comparateur_in1),
+    .comparateur_in1_ap_vld(grp_comparateur_do_comp_fu_66_comparateur_in1_ap_vld),
+    .comparateur_seuil(grp_comparateur_do_comp_fu_66_comparateur_seuil),
+    .comparateur_seuil_ap_vld(grp_comparateur_do_comp_fu_66_comparateur_seuil_ap_vld),
+    .comparateur_result(grp_comparateur_do_comp_fu_66_comparateur_result),
+    .comparateur_result_ap_vld(grp_comparateur_do_comp_fu_66_comparateur_result_ap_vld),
     .e1_dout(e1_dout),
     .e1_empty_n(e1_empty_n),
-    .e1_read(grp_comparateur_do_comp_fu_74_e1_read),
+    .e1_read(grp_comparateur_do_comp_fu_66_e1_read),
     .e2_dout(e2_dout),
     .e2_empty_n(e2_empty_n),
-    .e2_read(grp_comparateur_do_comp_fu_74_e2_read),
-    .s_din(grp_comparateur_do_comp_fu_74_s_din),
+    .e2_read(grp_comparateur_do_comp_fu_66_e2_read),
+    .s_din(grp_comparateur_do_comp_fu_66_s_din),
     .s_full_n(s_full_n),
-    .s_write(grp_comparateur_do_comp_fu_74_s_write)
+    .s_write(grp_comparateur_do_comp_fu_66_s_write)
 );
 
-assign e1_read = grp_comparateur_do_comp_fu_74_e1_read;
+assign e1_read = grp_comparateur_do_comp_fu_66_e1_read;
 
-assign e2_read = grp_comparateur_do_comp_fu_74_e2_read;
+assign e2_read = grp_comparateur_do_comp_fu_66_e2_read;
 
-assign s_din = grp_comparateur_do_comp_fu_74_s_din;
+assign s_din = grp_comparateur_do_comp_fu_66_s_din;
 
-assign s_write = grp_comparateur_do_comp_fu_74_s_write;
+assign s_write = grp_comparateur_do_comp_fu_66_s_write;
 
 endmodule //comparateur

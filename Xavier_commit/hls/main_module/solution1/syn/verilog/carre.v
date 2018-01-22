@@ -30,29 +30,29 @@ output  [31:0] s_din;
 input   s_full_n;
 output   s_write;
 
-wire   [31:0] grp_carre_do_carre_fu_66_carre_x;
-wire    grp_carre_do_carre_fu_66_carre_x_ap_vld;
-wire    grp_carre_do_carre_fu_66_e_read;
-wire   [31:0] grp_carre_do_carre_fu_66_s_din;
-wire    grp_carre_do_carre_fu_66_s_write;
+wire   [31:0] grp_carre_do_carre_fu_58_carre_x;
+wire    grp_carre_do_carre_fu_58_carre_x_ap_vld;
+wire    grp_carre_do_carre_fu_58_e_read;
+wire   [31:0] grp_carre_do_carre_fu_58_s_din;
+wire    grp_carre_do_carre_fu_58_s_write;
 
-carre_do_carre grp_carre_do_carre_fu_66(
+carre_do_carre grp_carre_do_carre_fu_58(
     .ap_clk(clk),
     .ap_rst(reset),
-    .carre_x(grp_carre_do_carre_fu_66_carre_x),
-    .carre_x_ap_vld(grp_carre_do_carre_fu_66_carre_x_ap_vld),
+    .carre_x(grp_carre_do_carre_fu_58_carre_x),
+    .carre_x_ap_vld(grp_carre_do_carre_fu_58_carre_x_ap_vld),
     .e_dout(e_dout),
     .e_empty_n(e_empty_n),
-    .e_read(grp_carre_do_carre_fu_66_e_read),
-    .s_din(grp_carre_do_carre_fu_66_s_din),
+    .e_read(grp_carre_do_carre_fu_58_e_read),
+    .s_din(grp_carre_do_carre_fu_58_s_din),
     .s_full_n(s_full_n),
-    .s_write(grp_carre_do_carre_fu_66_s_write)
+    .s_write(grp_carre_do_carre_fu_58_s_write)
 );
 
-assign e_read = grp_carre_do_carre_fu_66_e_read;
+assign e_read = grp_carre_do_carre_fu_58_e_read;
 
-assign s_din = grp_carre_do_carre_fu_66_s_din;
+assign s_din = grp_carre_do_carre_fu_58_s_din;
 
-assign s_write = grp_carre_do_carre_fu_66_s_write;
+assign s_write = grp_carre_do_carre_fu_58_s_write;
 
 endmodule //carre

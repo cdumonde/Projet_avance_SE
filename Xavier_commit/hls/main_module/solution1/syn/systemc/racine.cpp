@@ -17,27 +17,27 @@ const sc_logic racine::ap_const_logic_0 = sc_dt::Log_0;
 const bool racine::ap_const_boolean_1 = true;
 
 racine::racine(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    grp_racine_do_racine_fu_66 = new racine_do_racine("grp_racine_do_racine_fu_66");
-    grp_racine_do_racine_fu_66->ap_clk(clk);
-    grp_racine_do_racine_fu_66->ap_rst(reset);
-    grp_racine_do_racine_fu_66->racine_x(grp_racine_do_racine_fu_66_racine_x);
-    grp_racine_do_racine_fu_66->racine_x_ap_vld(grp_racine_do_racine_fu_66_racine_x_ap_vld);
-    grp_racine_do_racine_fu_66->e_dout(e_dout);
-    grp_racine_do_racine_fu_66->e_empty_n(e_empty_n);
-    grp_racine_do_racine_fu_66->e_read(grp_racine_do_racine_fu_66_e_read);
-    grp_racine_do_racine_fu_66->s_din(grp_racine_do_racine_fu_66_s_din);
-    grp_racine_do_racine_fu_66->s_full_n(s_full_n);
-    grp_racine_do_racine_fu_66->s_write(grp_racine_do_racine_fu_66_s_write);
+    grp_racine_do_racine_fu_58 = new racine_do_racine("grp_racine_do_racine_fu_58");
+    grp_racine_do_racine_fu_58->ap_clk(clk);
+    grp_racine_do_racine_fu_58->ap_rst(reset);
+    grp_racine_do_racine_fu_58->racine_x(grp_racine_do_racine_fu_58_racine_x);
+    grp_racine_do_racine_fu_58->racine_x_ap_vld(grp_racine_do_racine_fu_58_racine_x_ap_vld);
+    grp_racine_do_racine_fu_58->e_dout(e_dout);
+    grp_racine_do_racine_fu_58->e_empty_n(e_empty_n);
+    grp_racine_do_racine_fu_58->e_read(grp_racine_do_racine_fu_58_e_read);
+    grp_racine_do_racine_fu_58->s_din(grp_racine_do_racine_fu_58_s_din);
+    grp_racine_do_racine_fu_58->s_full_n(s_full_n);
+    grp_racine_do_racine_fu_58->s_write(grp_racine_do_racine_fu_58_s_write);
 
     SC_METHOD(thread_e_read);
-    sensitive << ( grp_racine_do_racine_fu_66_e_read );
+    sensitive << ( grp_racine_do_racine_fu_58_e_read );
 
     SC_METHOD(thread_s_din);
-    sensitive << ( grp_racine_do_racine_fu_66_s_din );
-    sensitive << ( grp_racine_do_racine_fu_66_s_write );
+    sensitive << ( grp_racine_do_racine_fu_58_s_din );
+    sensitive << ( grp_racine_do_racine_fu_58_s_write );
 
     SC_METHOD(thread_s_write);
-    sensitive << ( grp_racine_do_racine_fu_66_s_write );
+    sensitive << ( grp_racine_do_racine_fu_58_s_write );
 
     static int apTFileNum = 0;
     stringstream apTFilenSS;
@@ -57,11 +57,11 @@ racine::racine(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, s_write, "(port)s_write");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, grp_racine_do_racine_fu_66_racine_x, "grp_racine_do_racine_fu_66_racine_x");
-    sc_trace(mVcdFile, grp_racine_do_racine_fu_66_racine_x_ap_vld, "grp_racine_do_racine_fu_66_racine_x_ap_vld");
-    sc_trace(mVcdFile, grp_racine_do_racine_fu_66_e_read, "grp_racine_do_racine_fu_66_e_read");
-    sc_trace(mVcdFile, grp_racine_do_racine_fu_66_s_din, "grp_racine_do_racine_fu_66_s_din");
-    sc_trace(mVcdFile, grp_racine_do_racine_fu_66_s_write, "grp_racine_do_racine_fu_66_s_write");
+    sc_trace(mVcdFile, grp_racine_do_racine_fu_58_racine_x, "grp_racine_do_racine_fu_58_racine_x");
+    sc_trace(mVcdFile, grp_racine_do_racine_fu_58_racine_x_ap_vld, "grp_racine_do_racine_fu_58_racine_x_ap_vld");
+    sc_trace(mVcdFile, grp_racine_do_racine_fu_58_e_read, "grp_racine_do_racine_fu_58_e_read");
+    sc_trace(mVcdFile, grp_racine_do_racine_fu_58_s_din, "grp_racine_do_racine_fu_58_s_din");
+    sc_trace(mVcdFile, grp_racine_do_racine_fu_58_s_write, "grp_racine_do_racine_fu_58_s_write");
 #endif
 
     }
@@ -71,19 +71,19 @@ racine::~racine() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete grp_racine_do_racine_fu_66;
+    delete grp_racine_do_racine_fu_58;
 }
 
 void racine::thread_e_read() {
-    e_read = grp_racine_do_racine_fu_66_e_read.read();
+    e_read = grp_racine_do_racine_fu_58_e_read.read();
 }
 
 void racine::thread_s_din() {
-    s_din = grp_racine_do_racine_fu_66_s_din.read();
+    s_din = grp_racine_do_racine_fu_58_s_din.read();
 }
 
 void racine::thread_s_write() {
-    s_write = grp_racine_do_racine_fu_66_s_write.read();
+    s_write = grp_racine_do_racine_fu_58_s_write.read();
 }
 
 }

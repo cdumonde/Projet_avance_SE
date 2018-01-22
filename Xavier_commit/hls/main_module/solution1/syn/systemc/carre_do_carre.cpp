@@ -27,13 +27,13 @@ const sc_lv<32> carre_do_carre::ap_const_lv32_2 = "10";
 const bool carre_do_carre::ap_const_boolean_1 = true;
 
 carre_do_carre::carre_do_carre(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    carre_fmul_32ns_3bkb_U9 = new carre_fmul_32ns_3bkb<1,4,32,32,32>("carre_fmul_32ns_3bkb_U9");
-    carre_fmul_32ns_3bkb_U9->clk(ap_clk);
-    carre_fmul_32ns_3bkb_U9->reset(ap_rst);
-    carre_fmul_32ns_3bkb_U9->din0(val_reg_80);
-    carre_fmul_32ns_3bkb_U9->din1(val_reg_80);
-    carre_fmul_32ns_3bkb_U9->ce(ap_var_for_const0);
-    carre_fmul_32ns_3bkb_U9->dout(grp_fu_76_p2);
+    carre_fmul_32ns_3bkb_U1 = new carre_fmul_32ns_3bkb<1,4,32,32,32>("carre_fmul_32ns_3bkb_U1");
+    carre_fmul_32ns_3bkb_U1->clk(ap_clk);
+    carre_fmul_32ns_3bkb_U1->reset(ap_rst);
+    carre_fmul_32ns_3bkb_U1->din0(val_reg_80);
+    carre_fmul_32ns_3bkb_U1->din1(val_reg_80);
+    carre_fmul_32ns_3bkb_U1->ce(ap_var_for_const0);
+    carre_fmul_32ns_3bkb_U1->dout(grp_fu_76_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -54,7 +54,7 @@ carre_do_carre::carre_do_carre(sc_module_name name) : sc_module(name), mVcdFile(
     SC_METHOD(thread_carre_x);
     sensitive << ( s_full_n );
     sensitive << ( ap_CS_fsm_state7 );
-    sensitive << ( tmp_6_reg_86 );
+    sensitive << ( tmp_11_reg_86 );
 
     SC_METHOD(thread_carre_x_ap_vld);
     sensitive << ( s_full_n );
@@ -75,7 +75,7 @@ carre_do_carre::carre_do_carre(sc_module_name name) : sc_module(name), mVcdFile(
     SC_METHOD(thread_s_din);
     sensitive << ( s_full_n );
     sensitive << ( ap_CS_fsm_state7 );
-    sensitive << ( tmp_6_reg_86 );
+    sensitive << ( tmp_11_reg_86 );
 
     SC_METHOD(thread_s_write);
     sensitive << ( s_full_n );
@@ -118,7 +118,7 @@ carre_do_carre::carre_do_carre(sc_module_name name) : sc_module(name), mVcdFile(
     sc_trace(mVcdFile, ap_CS_fsm_state7, "ap_CS_fsm_state7");
     sc_trace(mVcdFile, val_reg_80, "val_reg_80");
     sc_trace(mVcdFile, grp_fu_76_p2, "grp_fu_76_p2");
-    sc_trace(mVcdFile, tmp_6_reg_86, "tmp_6_reg_86");
+    sc_trace(mVcdFile, tmp_11_reg_86, "tmp_11_reg_86");
     sc_trace(mVcdFile, ap_CS_fsm_state6, "ap_CS_fsm_state6");
     sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
@@ -131,7 +131,7 @@ carre_do_carre::~carre_do_carre() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete carre_fmul_32ns_3bkb_U9;
+    delete carre_fmul_32ns_3bkb_U1;
 }
 
 void carre_do_carre::thread_ap_var_for_const0() {
@@ -145,7 +145,7 @@ void carre_do_carre::thread_ap_clk_no_reset_() {
         ap_CS_fsm = ap_NS_fsm.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state6.read())) {
-        tmp_6_reg_86 = grp_fu_76_p2.read();
+        tmp_11_reg_86 = grp_fu_76_p2.read();
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(e_empty_n.read(), ap_const_logic_1))) {
         val_reg_80 = e_dout.read();
@@ -169,7 +169,7 @@ void carre_do_carre::thread_ap_CS_fsm_state7() {
 }
 
 void carre_do_carre::thread_carre_x() {
-    carre_x = tmp_6_reg_86.read();
+    carre_x = tmp_11_reg_86.read();
 }
 
 void carre_do_carre::thread_carre_x_ap_vld() {
@@ -207,7 +207,7 @@ void carre_do_carre::thread_s_blk_n() {
 }
 
 void carre_do_carre::thread_s_din() {
-    s_din = tmp_6_reg_86.read();
+    s_din = tmp_11_reg_86.read();
 }
 
 void carre_do_carre::thread_s_write() {

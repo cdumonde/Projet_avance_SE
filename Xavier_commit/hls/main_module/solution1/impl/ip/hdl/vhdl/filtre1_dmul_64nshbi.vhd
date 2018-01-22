@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity filtre1_dmul_64nshbi is
     generic (
-        ID         : integer := 40;
+        ID         : integer := 32;
         NUM_STAGE  : integer := 6;
         din0_WIDTH : integer := 64;
         din1_WIDTH : integer := 64;
@@ -28,7 +28,7 @@ end entity;
 
 architecture arch of filtre1_dmul_64nshbi is
     --------------------- Component ---------------------
-    component top_level_ap_dmul_4_max_dsp_64 is
+    component uart_wrapper_ap_dmul_4_max_dsp_64 is
         port (
             aclk                 : in  std_logic;
             aclken               : in  std_logic;
@@ -56,7 +56,7 @@ architecture arch of filtre1_dmul_64nshbi is
     signal dout_r    : std_logic_vector(dout_WIDTH-1 downto 0);
 begin
     --------------------- Instantiation -----------------
-    top_level_ap_dmul_4_max_dsp_64_u : component top_level_ap_dmul_4_max_dsp_64
+    uart_wrapper_ap_dmul_4_max_dsp_64_u : component uart_wrapper_ap_dmul_4_max_dsp_64
     port map (
         aclk                 => aclk,
         aclken               => aclken,

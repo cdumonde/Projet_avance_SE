@@ -501,7 +501,7 @@
             <Obj>
               <type>0</type>
               <id>28</id>
-              <name>tmp_4</name>
+              <name>tmp_1</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>282</lineNumber>
@@ -553,7 +553,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_4_fu_152_p4</rtlName>
+              <rtlName>tmp_1_fu_152_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>25</bitwidth>
@@ -574,7 +574,7 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>tmp_4_cast2</name>
+              <name>tmp_1_cast2</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>282</lineNumber>
@@ -626,7 +626,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_4_cast2_fu_162_p1</rtlName>
+              <rtlName>tmp_1_cast2_fu_162_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>79</bitwidth>
@@ -644,7 +644,7 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>tmp_5_cast1</name>
+              <name>tmp_2_cast1</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/src/technology/autopilot/header_files\utils/x_hls_utils.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>340</lineNumber>
@@ -703,7 +703,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_5_cast1_fu_166_p1</rtlName>
+              <rtlName>tmp_2_cast1_fu_166_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -871,7 +871,7 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>tmp_7</name>
+              <name>tmp_3</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>285</lineNumber>
@@ -923,7 +923,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_7_fu_184_p2</rtlName>
+              <rtlName>tmp_3_fu_184_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -942,7 +942,7 @@
             <Obj>
               <type>0</type>
               <id>34</id>
-              <name>tmp_7_cast</name>
+              <name>tmp_3_cast</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>285</lineNumber>
@@ -994,7 +994,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_7_cast_fu_190_p1</rtlName>
+              <rtlName>tmp_3_cast_fu_190_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -1224,7 +1224,7 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>tmp_9</name>
+              <name>tmp_4</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>285</lineNumber>
@@ -1276,7 +1276,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_9_fu_210_p1</rtlName>
+              <rtlName>tmp_4_fu_210_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>79</bitwidth>
@@ -1436,7 +1436,7 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>tmp_12</name>
+              <name>tmp_15</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>288</lineNumber>
@@ -1488,7 +1488,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_12_fu_226_p3</rtlName>
+              <rtlName>tmp_15_fu_226_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1508,7 +1508,7 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>tmp_6</name>
+              <name>tmp_s</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>288</lineNumber>
@@ -1560,7 +1560,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_6_fu_234_p1</rtlName>
+              <rtlName>tmp_s_fu_234_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>31</bitwidth>
@@ -1578,7 +1578,7 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>tmp_5</name>
+              <name>tmp_2</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>288</lineNumber>
@@ -1630,7 +1630,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_5_fu_238_p4</rtlName>
+              <rtlName>tmp_2_fu_238_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>31</bitwidth>
@@ -1936,7 +1936,7 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>tmp_13</name>
+              <name>tmp_16</name>
               <fileName>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products/hls/hls_lib/hlsmath/src/../include/internal/hls_round.h</fileName>
               <fileDirectory>r:/builds/2017.3/nightly/2017_10_04_2018833/src/products</fileDirectory>
               <lineNumber>317</lineNumber>
@@ -1988,7 +1988,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_13_fu_272_p1</rtlName>
+              <rtlName>tmp_16_fu_272_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>31</bitwidth>
@@ -2290,7 +2290,7 @@
             <Obj>
               <type>0</type>
               <id>53</id>
-              <name>tmp_s</name>
+              <name>tmp_6</name>
               <fileName>src/modules/racine.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>6</lineNumber>
@@ -2314,7 +2314,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>comparateur_sitofcud_U72</rtlName>
+              <rtlName>comparateur_sitofcud_U64</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2332,7 +2332,7 @@
             <Obj>
               <type>0</type>
               <id>54</id>
-              <name>tmp_1</name>
+              <name>tmp_7</name>
               <fileName>src/modules/racine.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>7</lineNumber>
@@ -2356,7 +2356,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>racine_fsqrt_32nsncg_U73</rtlName>
+              <rtlName>racine_fsqrt_32nsncg_U65</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2419,7 +2419,7 @@
             <Obj>
               <type>0</type>
               <id>56</id>
-              <name>tmp_2</name>
+              <name>tmp_8</name>
               <fileName>src/modules/racine.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>8</lineNumber>
@@ -2443,7 +2443,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>tmp</originalName>
-              <rtlName>carre_fmul_32ns_3bkb_U71</rtlName>
+              <rtlName>carre_fmul_32ns_3bkb_U63</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -4368,7 +4368,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>carre_fmul_32ns_3bkb_U71 (carre_fmul_32ns_3bkb)</first>
+          <first>carre_fmul_32ns_3bkb_U63 (carre_fmul_32ns_3bkb)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -4387,7 +4387,7 @@
           </second>
         </item>
         <item>
-          <first>comparateur_sitofcud_U72 (comparateur_sitofcud)</first>
+          <first>comparateur_sitofcud_U64 (comparateur_sitofcud)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4406,7 +4406,7 @@
           </second>
         </item>
         <item>
-          <first>racine_fsqrt_32nsncg_U73 (racine_fsqrt_32nsncg)</first>
+          <first>racine_fsqrt_32nsncg_U65 (racine_fsqrt_32nsncg)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4675,7 +4675,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_7_fu_184_p2 ( - ) </first>
+          <first>tmp_3_fu_184_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4859,7 +4859,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_1_reg_330</first>
+          <first>tmp_6_reg_325</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4878,7 +4878,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_2_reg_336</first>
+          <first>tmp_7_reg_330</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4897,7 +4897,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_s_reg_325</first>
+          <first>tmp_8_reg_336</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4939,21 +4939,21 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>carre_fmul_32ns_3bkb_U71</first>
+          <first>carre_fmul_32ns_3bkb_U63</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>comparateur_sitofcud_U72</first>
+          <first>comparateur_sitofcud_U64</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>racine_fsqrt_32nsncg_U73</first>
+          <first>racine_fsqrt_32nsncg_U65</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -4964,7 +4964,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>carre_fmul_32ns_3bkb_U71 (carre_fmul_32ns_3bkb)</first>
+          <first>carre_fmul_32ns_3bkb_U63 (carre_fmul_32ns_3bkb)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4972,7 +4972,7 @@
           </second>
         </item>
         <item>
-          <first>comparateur_sitofcud_U72 (comparateur_sitofcud)</first>
+          <first>comparateur_sitofcud_U64 (comparateur_sitofcud)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4980,7 +4980,7 @@
           </second>
         </item>
         <item>
-          <first>racine_fsqrt_32nsncg_U73 (racine_fsqrt_32nsncg)</first>
+          <first>racine_fsqrt_32nsncg_U65 (racine_fsqrt_32nsncg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5072,7 +5072,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_7_fu_184_p2 ( - ) </first>
+          <first>tmp_3_fu_184_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5854,7 +5854,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_12_fu_226</first>
+        <first>tmp_15_fu_226</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5862,7 +5862,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_13_fu_272</first>
+        <first>tmp_16_fu_272</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5870,7 +5870,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_4_cast2_fu_162</first>
+        <first>tmp_1_cast2_fu_162</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5878,7 +5878,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_4_fu_152</first>
+        <first>tmp_1_fu_152</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5886,7 +5886,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_5_cast1_fu_166</first>
+        <first>tmp_2_cast1_fu_166</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5894,7 +5894,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_5_fu_238</first>
+        <first>tmp_2_fu_238</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5902,15 +5902,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_6_fu_234</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>42</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_7_cast_fu_190</first>
+        <first>tmp_3_cast_fu_190</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5918,7 +5910,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_7_fu_184</first>
+        <first>tmp_3_fu_184</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5926,11 +5918,19 @@
         </second>
       </item>
       <item>
-        <first>tmp_9_fu_210</first>
+        <first>tmp_4_fu_210</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>38</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_s_fu_234</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>42</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -6121,7 +6121,15 @@
         </second>
       </item>
       <item>
-        <first>tmp_1_reg_330</first>
+        <first>tmp_6_reg_325</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>53</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_7_reg_330</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6129,19 +6137,11 @@
         </second>
       </item>
       <item>
-        <first>tmp_2_reg_336</first>
+        <first>tmp_8_reg_336</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>56</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_s_reg_325</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>53</item>
         </second>
       </item>
       <item>

@@ -60,32 +60,32 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "filtre2_y0", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_72", "Port" : "filtre2_y0"}]},
+					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_64", "Port" : "filtre2_y0"}]},
 			{"Name" : "filtre2_x0", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_72", "Port" : "filtre2_x0"}]},
-			{"Name" : "filtre2_mem_x", "Type" : "Memory", "Direction" : "IO",
+					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_64", "Port" : "filtre2_x0"}]},
+			{"Name" : "filtre2_mem_x", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_72", "Port" : "filtre2_mem_x"}]},
-			{"Name" : "filtre2_mem_y", "Type" : "Memory", "Direction" : "IO",
+					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_64", "Port" : "filtre2_mem_x"}]},
+			{"Name" : "filtre2_mem_y", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_72", "Port" : "filtre2_mem_y"}]},
+					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_64", "Port" : "filtre2_mem_y"}]},
 			{"Name" : "clk", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_72", "Port" : "clk"}]},
+					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_64", "Port" : "clk"}]},
 			{"Name" : "reset", "Type" : "None", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_72", "Port" : "reset"}]},
+					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_64", "Port" : "reset"}]},
 			{"Name" : "e", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_72", "Port" : "e"}]},
+					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_64", "Port" : "e"}]},
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_72", "Port" : "s"}]},
+					{"ID" : "3", "SubInstance" : "grp_filtre2_do_filtre_fu_64", "Port" : "s"}]},
 			{"Name" : "filtre2_ssdm_thread_M_do_filtre", "Type" : "None", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.filtre2_mem_x_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.filtre2_mem_y_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_72", "Parent" : "0", "Child" : ["4", "5", "6", "7", "8", "9"],
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_64", "Parent" : "0", "Child" : ["4", "5", "6", "7", "8", "9"],
 		"CDFG" : "filtre2_do_filtre",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"FunctionPipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -96,8 +96,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "filtre2_y0", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "filtre2_x0", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "filtre2_mem_x", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "filtre2_mem_y", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "filtre2_mem_x", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "filtre2_mem_y", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "clk", "Type" : "None", "Direction" : "I"},
 			{"Name" : "reset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "e", "Type" : "Fifo", "Direction" : "I",
@@ -106,40 +106,40 @@ set RtlHierarchyInfo {[
 			{"Name" : "s", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "s_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_72.filtre1_fptrunc_6eOg_U55", "Parent" : "3"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_72.filtre1_fpext_32nfYi_U56", "Parent" : "3"},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_72.filtre1_fpext_32nfYi_U57", "Parent" : "3"},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_72.filtre2_dadd_64nskbM_U58", "Parent" : "3"},
-	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_72.filtre1_dmul_64nshbi_U59", "Parent" : "3"},
-	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_72.filtre1_dmul_64nshbi_U60", "Parent" : "3"}]}
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_64.filtre1_fptrunc_6eOg_U47", "Parent" : "3"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_64.filtre1_fpext_32nfYi_U48", "Parent" : "3"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_64.filtre1_fpext_32nfYi_U49", "Parent" : "3"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_64.filtre2_dadd_64nskbM_U50", "Parent" : "3"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_64.filtre1_dmul_64nshbi_U51", "Parent" : "3"},
+	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_filtre2_do_filtre_fu_64.filtre1_dmul_64nshbi_U52", "Parent" : "3"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	filtre2 {
 		filtre2_y0 {Type O LastRead -1 FirstWrite -1}
 		filtre2_x0 {Type O LastRead -1 FirstWrite -1}
-		filtre2_mem_x {Type IO LastRead -1 FirstWrite -1}
-		filtre2_mem_y {Type IO LastRead -1 FirstWrite -1}
+		filtre2_mem_x {Type O LastRead -1 FirstWrite -1}
+		filtre2_mem_y {Type O LastRead -1 FirstWrite -1}
 		clk {Type I LastRead -1 FirstWrite -1}
 		reset {Type I LastRead -1 FirstWrite -1}
-		e {Type I LastRead 2 FirstWrite -1}
-		s {Type O LastRead -1 FirstWrite 23}
+		e {Type I LastRead 1 FirstWrite -1}
+		s {Type O LastRead -1 FirstWrite 22}
 		filtre2_ssdm_thread_M_do_filtre {Type I LastRead -1 FirstWrite -1}}
 	filtre2_do_filtre {
-		filtre2_y0 {Type O LastRead -1 FirstWrite 23}
-		filtre2_x0 {Type O LastRead -1 FirstWrite 3}
-		filtre2_mem_x {Type IO LastRead 2 FirstWrite 0}
-		filtre2_mem_y {Type IO LastRead 8 FirstWrite 0}
+		filtre2_y0 {Type O LastRead -1 FirstWrite 22}
+		filtre2_x0 {Type O LastRead -1 FirstWrite 2}
+		filtre2_mem_x {Type O LastRead -1 FirstWrite 0}
+		filtre2_mem_y {Type O LastRead -1 FirstWrite 0}
 		clk {Type I LastRead -1 FirstWrite -1}
 		reset {Type I LastRead -1 FirstWrite -1}
-		e {Type I LastRead 2 FirstWrite -1}
-		s {Type O LastRead -1 FirstWrite 23}}}
+		e {Type I LastRead 1 FirstWrite -1}
+		s {Type O LastRead -1 FirstWrite 22}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "0", "Max" : "48"}
-	, {"Name" : "Interval", "Min" : "1", "Max" : "49"}
+	{"Name" : "Latency", "Min" : "0", "Max" : "24"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "25"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -100,15 +100,15 @@ architecture behav of racine_do_racine is
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal grp_fu_119_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_s_reg_325 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_6_reg_325 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state10 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
     signal grp_fu_122_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_1_reg_330 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_7_reg_330 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state22 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state22 : signal is "none";
     signal grp_fu_114_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_2_reg_336 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_8_reg_336 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state26 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state26 : signal is "none";
     signal ap_CS_fsm_state23 : STD_LOGIC;
@@ -118,27 +118,27 @@ architecture behav of racine_do_racine is
     attribute fsm_encoding of ap_CS_fsm_state11 : signal is "none";
     signal p_Val2_s_fu_127_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal loc_V_1_fu_148_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal tmp_4_fu_152_p4 : STD_LOGIC_VECTOR (24 downto 0);
+    signal tmp_1_fu_152_p4 : STD_LOGIC_VECTOR (24 downto 0);
     signal loc_V_fu_138_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_5_cast1_fu_166_p1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal tmp_2_cast1_fu_166_p1 : STD_LOGIC_VECTOR (8 downto 0);
     signal sh_assign_fu_170_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal tmp_7_fu_184_p2 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_3_fu_184_p2 : STD_LOGIC_VECTOR (7 downto 0);
     signal isNeg_fu_176_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_7_cast_fu_190_p1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal tmp_3_cast_fu_190_p1 : STD_LOGIC_VECTOR (8 downto 0);
     signal sh_assign_1_fu_194_p3 : STD_LOGIC_VECTOR (8 downto 0);
     signal sh_assign_1_cast_fu_202_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal sh_assign_1_cast_cas_fu_206_p1 : STD_LOGIC_VECTOR (24 downto 0);
-    signal tmp_4_cast2_fu_162_p1 : STD_LOGIC_VECTOR (78 downto 0);
-    signal tmp_9_fu_210_p1 : STD_LOGIC_VECTOR (78 downto 0);
+    signal tmp_1_cast2_fu_162_p1 : STD_LOGIC_VECTOR (78 downto 0);
+    signal tmp_4_fu_210_p1 : STD_LOGIC_VECTOR (78 downto 0);
     signal r_V_fu_214_p2 : STD_LOGIC_VECTOR (24 downto 0);
-    signal tmp_12_fu_226_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_15_fu_226_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal r_V_1_fu_220_p2 : STD_LOGIC_VECTOR (78 downto 0);
-    signal tmp_6_fu_234_p1 : STD_LOGIC_VECTOR (30 downto 0);
-    signal tmp_5_fu_238_p4 : STD_LOGIC_VECTOR (30 downto 0);
+    signal tmp_s_fu_234_p1 : STD_LOGIC_VECTOR (30 downto 0);
+    signal tmp_2_fu_238_p4 : STD_LOGIC_VECTOR (30 downto 0);
     signal result_V_fu_256_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal result_V_1_fu_259_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal result_V_3_fu_265_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_13_fu_272_p1 : STD_LOGIC_VECTOR (30 downto 0);
+    signal tmp_16_fu_272_p1 : STD_LOGIC_VECTOR (30 downto 0);
     signal abscond_fu_282_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal neg_cast_fu_276_p2 : STD_LOGIC_VECTOR (30 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (26 downto 0);
@@ -194,7 +194,7 @@ architecture behav of racine_do_racine is
 
 
 begin
-    carre_fmul_32ns_3bkb_U71 : component carre_fmul_32ns_3bkb
+    carre_fmul_32ns_3bkb_U63 : component carre_fmul_32ns_3bkb
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -204,12 +204,12 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => tmp_1_reg_330,
+        din0 => tmp_7_reg_330,
         din1 => ap_const_lv32_42AE0000,
         ce => ap_const_logic_1,
         dout => grp_fu_114_p2);
 
-    comparateur_sitofcud_U72 : component comparateur_sitofcud
+    comparateur_sitofcud_U64 : component comparateur_sitofcud
     generic map (
         ID => 1,
         NUM_STAGE => 6,
@@ -222,7 +222,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_119_p1);
 
-    racine_fsqrt_32nsncg_U73 : component racine_fsqrt_32nsncg
+    racine_fsqrt_32nsncg_U65 : component racine_fsqrt_32nsncg
     generic map (
         ID => 1,
         NUM_STAGE => 12,
@@ -233,7 +233,7 @@ begin
         clk => ap_clk,
         reset => ap_rst,
         din0 => ap_const_lv32_0,
-        din1 => tmp_s_reg_325,
+        din1 => tmp_6_reg_325,
         ce => ap_const_logic_1,
         dout => grp_fu_122_p2);
 
@@ -272,8 +272,16 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
+            if ((ap_const_logic_1 = ap_CS_fsm_state10)) then
+                tmp_6_reg_325 <= grp_fu_119_p1;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state22)) then
-                tmp_1_reg_330 <= grp_fu_122_p2;
+                tmp_7_reg_330 <= grp_fu_122_p2;
             end if;
         end if;
     end process;
@@ -281,15 +289,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state26)) then
-                tmp_2_reg_336 <= grp_fu_114_p2;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state10)) then
-                tmp_s_reg_325 <= grp_fu_119_p1;
+                tmp_8_reg_336 <= grp_fu_114_p2;
             end if;
         end if;
     end process;
@@ -370,7 +370,7 @@ begin
         end case;
     end process;
     abs_fu_288_p3 <= 
-        tmp_13_fu_272_p1 when (abscond_fu_282_p2(0) = '1') else 
+        tmp_16_fu_272_p1 when (abscond_fu_282_p2(0) = '1') else 
         neg_cast_fu_276_p2;
     abscond_fu_282_p2 <= "1" when (signed(result_V_3_fu_265_p3) > signed(ap_const_lv32_0)) else "0";
     ap_CS_fsm_state10 <= ap_CS_fsm(9);
@@ -407,14 +407,14 @@ begin
     isNeg_fu_176_p3 <= sh_assign_fu_170_p2(8 downto 8);
     loc_V_1_fu_148_p1 <= p_Val2_s_fu_127_p1(23 - 1 downto 0);
     loc_V_fu_138_p4 <= p_Val2_s_fu_127_p1(30 downto 23);
-    neg_cast_fu_276_p2 <= std_logic_vector(unsigned(ap_const_lv31_0) - unsigned(tmp_13_fu_272_p1));
+    neg_cast_fu_276_p2 <= std_logic_vector(unsigned(ap_const_lv31_0) - unsigned(tmp_16_fu_272_p1));
     p_Val2_2_fu_248_p3 <= 
-        tmp_6_fu_234_p1 when (isNeg_fu_176_p3(0) = '1') else 
-        tmp_5_fu_238_p4;
+        tmp_s_fu_234_p1 when (isNeg_fu_176_p3(0) = '1') else 
+        tmp_2_fu_238_p4;
     p_Val2_s_fu_127_p1 <= val_reg_300;
-    r_V_1_fu_220_p2 <= std_logic_vector(shift_left(unsigned(tmp_4_cast2_fu_162_p1),to_integer(unsigned('0' & tmp_9_fu_210_p1(31-1 downto 0)))));
-    r_V_fu_214_p2 <= std_logic_vector(shift_right(unsigned(tmp_4_fu_152_p4),to_integer(unsigned('0' & sh_assign_1_cast_cas_fu_206_p1(25-1 downto 0)))));
-    racine_x <= tmp_1_reg_330;
+    r_V_1_fu_220_p2 <= std_logic_vector(shift_left(unsigned(tmp_1_cast2_fu_162_p1),to_integer(unsigned('0' & tmp_4_fu_210_p1(31-1 downto 0)))));
+    r_V_fu_214_p2 <= std_logic_vector(shift_right(unsigned(tmp_1_fu_152_p4),to_integer(unsigned('0' & sh_assign_1_cast_cas_fu_206_p1(25-1 downto 0)))));
+    racine_x <= tmp_7_reg_330;
 
     racine_x_ap_vld_assign_proc : process(ap_CS_fsm_state23)
     begin
@@ -440,7 +440,7 @@ begin
         end if; 
     end process;
 
-    s_din <= tmp_2_reg_336;
+    s_din <= tmp_8_reg_336;
 
     s_write_assign_proc : process(s_full_n, ap_CS_fsm_state27)
     begin
@@ -456,18 +456,18 @@ begin
         sh_assign_1_cast_fu_202_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(sh_assign_1_fu_194_p3),32));
 
     sh_assign_1_fu_194_p3 <= 
-        tmp_7_cast_fu_190_p1 when (isNeg_fu_176_p3(0) = '1') else 
+        tmp_3_cast_fu_190_p1 when (isNeg_fu_176_p3(0) = '1') else 
         sh_assign_fu_170_p2;
-    sh_assign_fu_170_p2 <= std_logic_vector(signed(ap_const_lv9_181) + signed(tmp_5_cast1_fu_166_p1));
-    tmp_12_fu_226_p3 <= r_V_fu_214_p2(24 downto 24);
-    tmp_13_fu_272_p1 <= result_V_3_fu_265_p3(31 - 1 downto 0);
-    tmp_4_cast2_fu_162_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_4_fu_152_p4),79));
-    tmp_4_fu_152_p4 <= ((ap_const_lv1_1 & loc_V_1_fu_148_p1) & ap_const_lv1_0);
-    tmp_5_cast1_fu_166_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(loc_V_fu_138_p4),9));
-    tmp_5_fu_238_p4 <= r_V_1_fu_220_p2(54 downto 24);
-    tmp_6_fu_234_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_12_fu_226_p3),31));
-        tmp_7_cast_fu_190_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_7_fu_184_p2),9));
+    sh_assign_fu_170_p2 <= std_logic_vector(signed(ap_const_lv9_181) + signed(tmp_2_cast1_fu_166_p1));
+    tmp_15_fu_226_p3 <= r_V_fu_214_p2(24 downto 24);
+    tmp_16_fu_272_p1 <= result_V_3_fu_265_p3(31 - 1 downto 0);
+    tmp_1_cast2_fu_162_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_1_fu_152_p4),79));
+    tmp_1_fu_152_p4 <= ((ap_const_lv1_1 & loc_V_1_fu_148_p1) & ap_const_lv1_0);
+    tmp_2_cast1_fu_166_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(loc_V_fu_138_p4),9));
+    tmp_2_fu_238_p4 <= r_V_1_fu_220_p2(54 downto 24);
+        tmp_3_cast_fu_190_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_3_fu_184_p2),9));
 
-    tmp_7_fu_184_p2 <= std_logic_vector(unsigned(ap_const_lv8_7F) - unsigned(loc_V_fu_138_p4));
-    tmp_9_fu_210_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sh_assign_1_cast_fu_202_p1),79));
+    tmp_3_fu_184_p2 <= std_logic_vector(unsigned(ap_const_lv8_7F) - unsigned(loc_V_fu_138_p4));
+    tmp_4_fu_210_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sh_assign_1_cast_fu_202_p1),79));
+    tmp_s_fu_234_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_15_fu_226_p3),31));
 end behav;

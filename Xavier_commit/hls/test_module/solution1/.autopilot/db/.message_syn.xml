@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/uart_wrapper_oled.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/uart_wrapper.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/oled_process.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/filtre2.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/filtre1.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;src/modules/carre.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:11 ; elapsed = 00:06:53 . Memory (MB): peak = 104.879 ; gain = 49.285" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Linking Time (s): cpu = 00:00:11 ; elapsed = 00:07:06 . Memory (MB): peak = 104.879 ; gain = 49.285" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre2.cpp:21) in function &apos;filtre2::do_filtre()&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre2.cpp:30) in function &apos;filtre2::do_filtre()&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre1.cpp:21) in function &apos;filtre1::do_filtre()&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-501]" severity="info" keynum="891" content="Unrolling loop with tag &quot;__ssdm_reset__&quot;(src/modules/filtre1.cpp:30) in function &apos;filtre1::do_filtre()&apos; completely." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;Filtre2IIR&apos; into &apos;filtre2::do_filtre&apos; (src/modules/filtre2.cpp:34)." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;Filtre1IIR&apos; into &apos;filtre1::do_filtre&apos; (src/modules/filtre1.cpp:34)." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:00:12 ; elapsed = 00:07:09 . Memory (MB): peak = 132.320 ; gain = 76.727" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:00:13 ; elapsed = 00:07:11 . Memory (MB): peak = 150.445 ; gain = 94.852" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:00:15 ; elapsed = 00:07:14 . Memory (MB): peak = 196.121 ; gain = 140.527" tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/uart_wrapper_oled.h:79:3) in function &apos;uart_wrapper_oled::do_action2&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/uart_wrapper_oled.h:65:3) in function &apos;uart_wrapper_oled::do_action1&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/uart_wrapper.h:74:3) in function &apos;uart_wrapper::do_action2&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/uart_wrapper.h:60:3) in function &apos;uart_wrapper::do_action1&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/oled_process.cpp:10:17) in function &apos;oled_process::do_oled_process&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/filtre2.cpp:43:2) in function &apos;filtre2::do_filtre&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/filtre1.cpp:43:2) in function &apos;filtre1::do_filtre&apos; is an infinite loop." tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (src/modules/carre.cpp:9:2) in function &apos;carre::do_carre&apos; is an infinite loop." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:07:16 . Memory (MB): peak = 326.250 ; gain = 270.656" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;oled_process&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="299" content="Found the clock port of process &apos;oled_process::do_oled_process&apos;: &apos;clk&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;oled_process::do_oled_process&apos;: &apos;reset&apos;." tag=""/>
+	<Message prefix="[SCA 200-202]" severity="warn" keynum="295" content="Port &apos;en&apos; has no reset." tag=""/>
+	<Message prefix="[SCA 200-202]" severity="warn" keynum="295" content="Port &apos;s&apos; has no reset." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;uart_wrapper_oled&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="485" content="Analyzing the module hierarchy:" tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="315" content="Contains sub-module: &apos;oled_process&apos;" tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="299" content="Found the clock port of process &apos;uart_wrapper_oled::do_action1&apos;: &apos;clk&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;uart_wrapper_oled::do_action1&apos;: &apos;reset&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="299" content="Found the clock port of process &apos;uart_wrapper_oled::do_action2&apos;: &apos;clk&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;uart_wrapper_oled::do_action2&apos;: &apos;reset&apos;." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ oled_process ]" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;oled_process_do_oled_process&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;oled_process_do_oled_process&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;oled_process_do_oled_process&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 437.058 seconds; current allocated memory: 280.183 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.394 seconds; current allocated memory: 280.416 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;oled_process_do_oled_process&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;oled_process_fadd_32ns_32ns_32_5_full_dsp_1&apos; to &apos;oled_process_faddbkb&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;oled_process_fcmp_32ns_32ns_1_1_1&apos; to &apos;oled_process_fcmpcud&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;oled_process_faddbkb&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;oled_process_fcmpcud&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;oled_process_do_oled_process&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.372 seconds; current allocated memory: 280.702 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;oled_process&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;oled_process&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.25 seconds; current allocated memory: 280.959 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.524 seconds; current allocated memory: 281.064 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;oled_process&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;oled_process/clk&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;oled_process/reset&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;oled_process/en&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;oled_process/s&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;oled_process/e&apos; to &apos;ap_fifo&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;oled_process/s_f&apos; to &apos;ap_fifo&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;oled_process&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.624 seconds; current allocated memory: 281.150 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ uart_wrapper_oled ]" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;uart_wrapper_oled_do_action1&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;uart_wrapper_oled_do_action1&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;uart_wrapper_oled_do_action1&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 1.302 seconds; current allocated memory: 281.285 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.179 seconds; current allocated memory: 281.412 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;uart_wrapper_oled_do_action1&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;uart_wrapper_oled_do_action1&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.192 seconds; current allocated memory: 281.528 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;uart_wrapper_oled_do_action2&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;uart_wrapper_oled_do_action2&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;uart_wrapper_oled_do_action2&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.599 seconds; current allocated memory: 281.648 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.159 seconds; current allocated memory: 281.783 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;uart_wrapper_oled_do_action2&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;uart_wrapper_oled_do_action2&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.161 seconds; current allocated memory: 281.905 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;uart_wrapper_oled&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;uart_wrapper_oled&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.468 seconds; current allocated memory: 282.076 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.264 seconds; current allocated memory: 282.282 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;uart_wrapper_oled&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper_oled/clk&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper_oled/reset&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper_oled/e&apos; to &apos;ap_fifo&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper_oled/s&apos; to &apos;ap_fifo&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper_oled/en&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;uart_wrapper_oled/s_i&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="232" content="Reset signal &quot;reset&quot; was already created" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;uart_wrapper_oled&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.259 seconds; current allocated memory: 282.499 MB." tag=""/>
+	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d192_A&apos; using Block RAMs." tag=""/>
+	<Message prefix="[RTMG 210-285]" severity="info" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d192_A&apos; using Block RAMs." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:00:21 ; elapsed = 00:07:26 . Memory (MB): peak = 335.965 ; gain = 280.371" tag=""/>
+	<Message prefix="[SYSC 207-301]" severity="info" keynum="SYSC_301_1065" content="Generating SystemC RTL for uart_wrapper_oled." tag=""/>
+	<Message prefix="[VHDL 208-304]" severity="info" keynum="VHDL_304_1066" content="Generating VHDL RTL for uart_wrapper_oled." tag=""/>
+	<Message prefix="[VLOG 209-307]" severity="info" keynum="VLOG_307_1067" content="Generating Verilog RTL for uart_wrapper_oled." tag=""/>
+	<Message prefix="[HLS 200-112]" severity="info" keynum="472" content="Total elapsed time: 445.591 seconds; peak allocated memory: 282.499 MB." tag=""/>
+</Messages>

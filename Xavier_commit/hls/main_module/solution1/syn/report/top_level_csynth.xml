@@ -22,19 +22,19 @@
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>1</Best-caseLatency>
-<Average-caseLatency>25</Average-caseLatency>
-<Worst-caseLatency>49</Worst-caseLatency>
+<Average-caseLatency>15</Average-caseLatency>
+<Worst-caseLatency>29</Worst-caseLatency>
 <Interval-min>2</Interval-min>
-<Interval-max>50</Interval-max>
+<Interval-max>30</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>116</BRAM_18K>
-<DSP48E>31</DSP48E>
-<FF>4896</FF>
-<LUT>8450</LUT>
+<BRAM_18K>96</BRAM_18K>
+<DSP48E>56</DSP48E>
+<FF>6943</FF>
+<LUT>9498</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>270</BRAM_18K>
@@ -47,7 +47,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>clk</name>
-<Object>top_level::top_level</Object>
+<Object>top_level::top_level.1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -58,7 +58,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>reset</name>
-<Object>top_level::top_level</Object>
+<Object>top_level::top_level.1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -75,9 +75,9 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>8</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>e_empty_n</name>
@@ -89,7 +89,7 @@
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>e_read</name>
@@ -101,7 +101,7 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>s_din</name>
@@ -111,9 +111,9 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>s_full_n</name>
@@ -125,7 +125,7 @@
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>s_write</name>
@@ -137,7 +137,7 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 </InterfaceSummary>
 

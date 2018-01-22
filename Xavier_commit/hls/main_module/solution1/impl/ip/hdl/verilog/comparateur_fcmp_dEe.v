@@ -10,7 +10,7 @@
 
 module comparateur_fcmp_dEe
 #(parameter
-    ID         = 17,
+    ID         = 9,
     NUM_STAGE  = 1,
     din0_WIDTH = 32,
     din1_WIDTH = 32,
@@ -50,7 +50,7 @@ reg  [7:0]  op_tdata;
 wire        r_tvalid;
 wire [7:0]  r_tdata;
 //------------------------Instantiation------------------
-top_level_ap_fcmp_0_no_dsp_32 top_level_ap_fcmp_0_no_dsp_32_u (
+uart_wrapper_ap_fcmp_0_no_dsp_32 uart_wrapper_ap_fcmp_0_no_dsp_32_u (
     .s_axis_a_tvalid         ( a_tvalid ),
     .s_axis_a_tdata          ( a_tdata ),
     .s_axis_b_tvalid         ( b_tvalid ),

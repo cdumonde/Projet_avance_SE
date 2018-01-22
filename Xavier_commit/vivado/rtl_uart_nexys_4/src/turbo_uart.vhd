@@ -15,7 +15,7 @@ end turbo_uart;
 
 architecture Behavioral of turbo_uart is
     
-COMPONENT top_level_0 is 
+COMPONENT uart_wrapper_0 is 
   Port( 
   clk     :   in STD_LOGIC;
  reset     :   in STD_LOGIC;
@@ -89,8 +89,19 @@ rcv : ENTITY work.UART_recv
     rx  => RsRx,
     dat  => data_from_uart,
     dat_en  => data_from_uart_en);
+    
+--snd : ENTITY work.UART_fifoed_send
+--  PORT MAP(
+--    RESET   => RESET,
+--    clk_100MHz   => CLK,
+--    fifo_empty => uart_is_sending,
+--    fifo_afull => OPEN,
+--    fifo_full  => OPEN,
+--    tx     => RsTx,
+--    dat     => data_from_uart,
+--    dat_en     => data_from_uart_en);
        
-wrapper : top_level_0
+wrapper : uart_wrapper_0
  PORT MAP(
    reset => RESET,
    clk => CLK,
