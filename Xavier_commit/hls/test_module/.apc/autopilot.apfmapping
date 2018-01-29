@@ -8,10 +8,10 @@
     <originFiles name="filtre1.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\filtre1.h"/>
     <originFiles name="filtre2.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\filtre2.cpp"/>
     <originFiles name="filtre2.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\filtre2.h"/>
-    <originFiles name="uart_wrapper.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper.cpp"/>
-    <originFiles name="uart_wrapper.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper.h"/>
     <originFiles name="oled_process.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\oled_process.cpp"/>
     <originFiles name="oled_process.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\oled_process.h"/>
+    <originFiles name="uart_wrapper.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper.cpp"/>
+    <originFiles name="uart_wrapper.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper.h"/>
     <originFiles name="uart_wrapper_oled.cpp" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper_oled.cpp"/>
     <originFiles name="uart_wrapper_oled.h" path="Y:\Documents\MesDocuments\Cours_nsave\Enseirb-E3_nsave\pr310\git\Xavier_commit\hls\src\modules\uart_wrapper_oled.h"/>
   </source>

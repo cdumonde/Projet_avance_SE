@@ -5,3 +5,8 @@
 \contentsline {section}{\numberline {1}Pr\IeC {\'e}sentation du projet cibl\IeC {\'e}}{3}{section.1}
 \contentsline {subsection}{\numberline {1.1}Introduction}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Fonctionnement des diff\IeC {\'e}rents blocs}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}D\IeC {\'e}veloppement de la chaine}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Flot de conception}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Description SystemC}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{5}{section.3}
+\contentsline {section}{\numberline {4}Conclusion}{6}{section.4}
