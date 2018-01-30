@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.29)  30 JAN 2018 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.29)  30 JAN 2018 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -904,9 +904,21 @@ Package caption Info: listings package is loaded.
 \c@subfigure=\count137
 \c@subtable=\count138
 )
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box59
+\UL@hyphenbox=\box60
+\UL@skip=\skip56
+\UL@hook=\toks28
+\UL@height=\dimen141
+\UL@pe=\count139
+\UL@pixel=\dimen142
+\ULC@box=\box61
+Package: ulem 2012/05/18
+\ULdepth=\dimen143
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count139
+\etb@tempcnta=\count140
 )
 Package caption Info: We need package `newfloat' on input line 37.
 
@@ -920,15 +932,15 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip56
-\f@ncyO@elh=\skip57
-\f@ncyO@erh=\skip58
-\f@ncyO@olh=\skip59
-\f@ncyO@orh=\skip60
-\f@ncyO@elf=\skip61
-\f@ncyO@erf=\skip62
-\f@ncyO@olf=\skip63
-\f@ncyO@orf=\skip64
+\fancy@headwidth=\skip57
+\f@ncyO@elh=\skip58
+\f@ncyO@erh=\skip59
+\f@ncyO@olh=\skip60
+\f@ncyO@orh=\skip61
+\f@ncyO@elf=\skip62
+\f@ncyO@erf=\skip63
+\f@ncyO@olf=\skip64
+\f@ncyO@orf=\skip65
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
@@ -959,17 +971,17 @@ LaTeX Font Info:    ... okay on input line 83.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
-\scratchdimen=\dimen141
-\scratchbox=\box59
-\nofMPsegments=\count141
-\nofMParguments=\count142
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count143
-\MPscratchDim=\dimen142
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count141
+\scratchdimen=\dimen144
+\scratchbox=\box62
+\nofMPsegments=\count142
+\nofMParguments=\count143
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count144
+\MPscratchDim=\dimen145
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -991,8 +1003,8 @@ LaTeX Info: Redefining \up on input line 83.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 83.
-\c@lstlisting=\count146
-\AtBeginShipoutBox=\box60
+\c@lstlisting=\count147
+\AtBeginShipoutBox=\box63
 Package hyperref Info: Link coloring OFF on input line 83.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1001,7 +1013,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count147
+\c@section@level=\count148
 )
 LaTeX Info: Redefining \ref on input line 83.
 LaTeX Info: Redefining \pageref on input line 83.
@@ -1045,156 +1057,163 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
- [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
  []
 
-<toto3.png, id=86, 2697.07625pt x 444.66125pt>
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+<toto3.png, id=97, 2697.07625pt x 444.66125pt>
 File: toto3.png Graphic file (type png)
  <use toto3.png>
-Package pdftex.def Info: toto3.png used on input line 147.
+Package pdftex.def Info: toto3.png used on input line 183.
 (pdftex.def)             Requested size: 485.45279pt x 80.03557pt.
 
-<Dessin1.pdf, id=87, 636.81664pt x 431.17265pt>
+<Dessin1.pdf, id=98, 636.81664pt x 431.17265pt>
 File: Dessin1.pdf Graphic file (type pdf)
  <use Dessin1.pdf>
-Package pdftex.def Info: Dessin1.pdf used on input line 153.
+Package pdftex.def Info: Dessin1.pdf used on input line 189.
 (pdftex.def)             Requested size: 318.40753pt x 215.58578pt.
- [4 <./toto3.png> <./Dessin1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+ [6 <./toto3.png> <./Dessin1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-<toto2.png, id=129, 2715.14375pt x 1758.57pt>
+<toto2.png, id=140, 2715.14375pt x 1758.57pt>
 File: toto2.png Graphic file (type png)
  <use toto2.png>
-Package pdftex.def Info: toto2.png used on input line 163.
+Package pdftex.def Info: toto2.png used on input line 199.
 (pdftex.def)             Requested size: 488.70479pt x 316.52895pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-[5 <./toto2.png>] <chainCedric.pdf, id=144, 904.4092pt x 504.2521pt>
+[7 <./toto2.png>] <chainCedric.pdf, id=155, 904.4092pt x 504.2521pt>
 File: chainCedric.pdf Graphic file (type pdf)
 
 <use chainCedric.pdf>
-Package pdftex.def Info: chainCedric.pdf used on input line 180.
+Package pdftex.def Info: chainCedric.pdf used on input line 216.
 (pdftex.def)             Requested size: 526.37598pt x 293.48976pt.
- [6 <./chainCedric.pdf>]
-<chainXavier.pdf, id=169, 886.38354pt x 322.5122pt>
+ [8 <./chainCedric.pdf>]
+<chainXavier.pdf, id=180, 886.38354pt x 322.5122pt>
 File: chainXavier.pdf Graphic file (type pdf)
  <use chainXavier.pdf>
-Package pdftex.def Info: chainXavier.pdf used on input line 199.
+Package pdftex.def Info: chainXavier.pdf used on input line 235.
 (pdftex.def)             Requested size: 526.37598pt x 191.52068pt.
 
-[7 <./chainXavier.pdf>] <Dessin2.pdf, id=200, 519.8288pt x 582.4885pt>
+[9 <./chainXavier.pdf>] <Dessin2.pdf, id=210, 519.8288pt x 582.4885pt>
 File: Dessin2.pdf Graphic file (type pdf)
 
 <use Dessin2.pdf>
-Package pdftex.def Info: Dessin2.pdf used on input line 212.
+Package pdftex.def Info: Dessin2.pdf used on input line 248.
 (pdftex.def)             Requested size: 259.91376pt x 291.24353pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
-[8 <./Dessin2.pdf>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 218.
+[10 <./Dessin2.pdf>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 254.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
-<Dessin6.pdf, id=241, 808.08731pt x 443.65082pt>
+<Dessin6.pdf, id=251, 808.08731pt x 443.65082pt>
 File: Dessin6.pdf Graphic file (type pdf)
  <use Dessin6.pdf>
-Package pdftex.def Info: Dessin6.pdf used on input line 229.
+Package pdftex.def Info: Dessin6.pdf used on input line 270.
 (pdftex.def)             Requested size: 526.37598pt x 288.99242pt.
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<Dessin7.pdf, id=247, 809.18062pt x 186.36696pt>
+<Dessin7.pdf, id=257, 809.18062pt x 186.36696pt>
 File: Dessin7.pdf Graphic file (type pdf)
  <use Dessin7.pdf>
-Package pdftex.def Info: Dessin7.pdf used on input line 242.
+Package pdftex.def Info: Dessin7.pdf used on input line 283.
 (pdftex.def)             Requested size: 526.37598pt x 121.23946pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--244
+Underfull \hbox (badness 10000) in paragraph at lines 279--285
 
  []
 
-[10 <./Dessin6.pdf>] [11 <./Dessin7.pdf>] [12]
+[12 <./Dessin6.pdf>] [13 <./Dessin7.pdf>] [14]
 
 AED: lastpage setting LastPage
-[13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
+[15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: A8BBA3D4C596D456E3F031F1F8645A7A;797.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
  ) 
 Here is how much of TeX's memory you used:
- 11680 strings out of 493014
- 169373 string characters out of 6133350
- 287183 words of memory out of 5000000
- 14984 multiletter control sequences out of 15000+600000
- 15870 words of font info for 45 fonts, out of 8000000 for 9000
+ 11770 strings out of 493014
+ 170264 string characters out of 6133350
+ 290061 words of memory out of 5000000
+ 15065 multiletter control sequences out of 15000+600000
+ 17503 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,49p,1218b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,49p,1485b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -1208,13 +1227,15 @@ exlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on report.pdf (13 pages, 926823 bytes).
+016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on report.pdf (15 pages, 978274 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 295 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 500000)
  142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
