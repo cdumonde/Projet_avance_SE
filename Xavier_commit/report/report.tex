@@ -25,6 +25,9 @@
 \usepackage{ulem}
 \usepackage{etoolbox}
 
+\usepackage{colortbl}
+\usepackage{xcolor}
+
 \definecolor{color_caption}{rgb}{0.3,0.3,0.3}
 \definecolor{color_section}{rgb}{0.9,0,0}
 \definecolor{em_orange}{rgb}{0.9686,0.5765,0.1137}
@@ -134,43 +137,37 @@ Yannick BORNAT \& Bertrand LE GAL
 \setcounter{section}{-1}
 \section{Introduction}
 \subsection{Contexte}
-De nos jours, nous disposons de différents moyens de conception, tous proposant des avantages et des inconvénients. Certains sont plus simple à mettre en œuvre, d'autres sont plus complexe mais sont généralement la solution la plus efficace. Il faut toujours mesurer le besoin d'un projet pour choisir correctement la voie de développement à privilégier.
-On peut globalement résumé les différents moyens de conception à quatre grandes famille du plus souple au plus rigide, du plus généraliste au plus spécifique: CPU, GPU, FPGA, ASIC. Cependant ces quatre familles peuvent être répartis en deux sous-parties : les solutions software (CPU, GPU) et les solutions hardware (FPGA, ASIC).\newline
+De nos jours, nous disposons de différents moyens de conception, tous proposant des avantages et des inconvénients. Certains sont plus simple à mettre en œuvre, d'autres sont plus complexe mais sont généralement la solution la plus efficace. Il faut toujours mesurer le besoin d'un projet pour choisir correctement la voie de développement à privilégier.\\
 
-Dans un projet, il existe tout un tas de contraintes, qu'elles soient temporelles, financières, juridiques, humaines, etc. Ces contraintes ne sont pas négligeable, d'autant plus à échelle industrielle ou gouvernementale\footnotemark[1] où la taille de ces projets et les moyens investis sont considérables, par conséquent il est important de bien juger de la direction à prendre dans le projet pour éviter un gaspillage de ressource. 
-Par exemple pour le développement d'un lecteur multimédia à destination du grand public, on pourra se permettre l'utilisation d'un processeur qui intègre éventuellement un GPU léger. En effet pour ce type de produit on peut imaginer que le coût du produit final est une priorité. Des solutions rapides à mettre en place permettant de limiter les coûts de développement et l'utilisation de composants communs et bon marché seront alors des voies privilégié. Dans le cadre du lecteur multimédia, il est possible de négliger la latence des commandes de l'utilisateur, le nombre de fonctionnalités n'a pas besoin d'être important, l'environnement graphique n'as pas besoin d'être travaillé en profondeur, le nombre de format pouvant être lue doit être le plus important possible, etc. C'est parce que les contraintes sont souples que l'on peut se permettre de développer rapidement le produit pour le rendre disponible le plus rapidement possible à la vente. Dans cette dynamique une solution hardware type généraliste, comme un processeur éventuellement couplé à un petit GPU, est certainement suffisant car le développement de software est moins coûteux et moins chronophage que le développement de hardware, de plus il permet de rajouter facilement des fonctionnalités ou des formats utilisable à l'aide de mise à jour. 
-Cependant si l'on doit développer un système plus particulier tel qu'un satellite\footnotemark[2], il peut être préférable de développer soit même le hardware. En effet dans un cadre spécifique comme celui du spatial, le coût de développement et de production n'est pas la contrainte la plus forte. La fiabilité, l'efficacité, la consommation énergétique ou même la résistance au radiations ainsi que d'autres aspects techniques vont être privilégié. Comme le projet se place dans un cadre spécial, il est préférable de développer soit même les composants grâce à la solution ASIC, afin d'avoir le contrôle sur l'ensemble des fonctionnalités implémentées, sur la rapidité du système, sa fiabilité en ajoutant de la redondance, sa consommation énergétique ou la résistance aux conditions extrêmes. Bien sûr il existe d'autres milieux où les problématique sont similaire tel que l'aéronautique, la navale...\newline
+On peut globalement résumé les différents moyens de conception en quatre grandes familles, respectivement ordonnées du plus souple au plus rigide, du plus généraliste au plus spécifique: CPU, GPU, FPGA, ASIC. Cependant ces quatre familles peuvent être répartis en deux sous-parties : les solutions software (CPU, GPU) et les solutions hardware (FPGA, ASIC).
+Dans un projet, il existe de nombreuses contraintes, qu'elles soient temporelles, financières, juridiques, humaines, etc. Ces contraintes ne sont pas négligeable, d'autant plus à échelle industrielle ou gouvernementale où la taille des projets et les moyens investis peuvent être considérables, par conséquent il est important de bien juger de la direction à prendre dans le projet pour éviter un gaspillage de ressource.\\
+%\footnotemark[1]
+Les solutions softwares permettent un développement rapide, souple, peu coûteux et adaptable à de nombreuses situations cependant ils peuvent être insuffisamment efficace dans certains cas. En effet certains systèmes demanderont une réactivité bien plus grande, une consommation énergétique bien plus faible voir une consommation matérielle restreinte. Pour répondre à ces contraintes l'utilisation des solutions dites hardwares est préférable. Les FPGA et les ASIC permettent l'implémentation hardware de fonctions logiques spécifiques, ainsi leurs performances seront sensiblement meilleures pour la plupart des projets. En effet les solutions hardwares permettent généralement de diminuer le coût énergétique du projet en n'implémentant que les fonctions dont on as besoin, et pour la même raison d'augmenter l'efficacité du système pour une tâche donnée, il permet même de réduire le coût silicium dans le cadre de l'ASIC. Cependant l'implémentation hardware fige l'utilisation de ces solutions à un seul et unique usage et ces solutions sont souvent coûteuses en termes de temps et de frais de développement.\\
 
-Les deux précédents exemples montrent deux extrêmes et dans la réalité les contraintes s'appliquent avec des poids plus uniformisé, en effet le lecteur multimédia doit pouvoir offrir une expérience utilisateur agréable que le processeur bas de gamme n'est pas en mesure d'apporter dû à sa faible puissance de calcul et la complexité des algorithmes de compression ou d'encodage des formats multimédia, et le satellite doit tout de même respecter un budget et un temps de développement que l'ASIC ne permet pas d'honorer\footnotemark[3] à cause du coût de développement d'un masque et le temps qu'il est nécessaire pour le vérifier. Heureusement le FPGA est un entre-deux tout de même plus proche du développement hardware, il permet de s'abstraire de nombreuses problématiques onéreuse et chronophage de l'ASIC, et il permet également de fournir un soutient non négligeable à une solution généraliste en proposant un moyen d'effectuer des tâches très spécifiques plus rapidement que par le processeur ou le GPU cependant le développement et le débogage sera plus complexe.\newline
+La technologie FPGA pour Field Programmable Gate Array consiste en un large réseau de portes logiques, de petites mémoires appelées LUT, de bascules, etc, qui peuvent être connectées entre elles, comme on le souhaite, afin de réaliser des fonctions logiques plus ou moins complexe. La technologie FPGA est donc avantageuse car un FPGA est entièrement configurable, performant et peu coûteux lorsqu'on ne souhaite pas produire de grandes quantités. Le FPGA est plus intéressant pour effectuer des tâches complexes particulières et plus intéressant que l'ASIC d'un point de vue temps et coûts de développement.\\
 
-La technologie FPGA pour Field Programmable Gate Array consiste en un large réseau de porte logique, de petite mémoire, de bascule, etc, qui peuvent être connectées entre elles comme on le souhaite afin de réaliser des fonctions logique plus ou moins complexe. La technologie FPGA est donc avantageuse car un FPGA est entièrement configurable, performant et peu coûteux lorsque l'on ne souhaite pas produire en grandes quantités. Le FPGA est plus intéressant pour effectuer des tâches complexes particulières et plus intéressant que l'ASIC d'un point de vue temps et coûts de développement.\newline 
+Pour configurer un FPGA, différents langages ont étaient développés permettant de décrire les fonctions logiques que l'on souhaite implémenter dans le FPGA. Celui qui nous intéresse se nomme le VHDL mais le principe est similaire avec les autres langage de la même famille tel que le Verilog. Le VHDL est donc un langage de description, c'est à dire que l'outil de synthèse câblera le FPGA comme il l'a été décrit en VHDL. Le niveau d'abstraction est très faible, ce qui signifie qu'il est nécessaire de s'assurer de la synchronisation entre les différentes étapes d'un process, du bon dimensionnement des données, de gérer les cas particuliers d'une opération... Ce niveau d'abstraction permet une précision chirurgicale très intéressante pour des petits systèmes mais qui peut vite devenir complexe lorsque le projets devient important. Les principaux défauts de ce langage sont les suivants :\\ 
 
-Pour configurer un FPGA, différents langages ont étaient développés permettant de décrire les fonctions logiques que l'on souhaite implémenter dans le FPGA. Celui qui nous intéresse se nomme le VHDL mais le principe est similaire avec les autres langage de la même famille tel que le Verilog. Ce est donc un langage de description, c'est à dire que l'outil de synthèse câblera le FPGA comme il l'a été décrit en VHDL. Le niveau d'abstraction est très faible, ce qui signifie qu'il est nécessaire de s'assurer de la synchronisation entre les différentes étapes d'un process, du bon dimensionnement des données, de gérer les cas particuliers d'une opération... Ce niveau d'abstraction permet une précision chirurgicale très intéressante pour des petits systèmes mais qui peut vite devenir complexe lorsque le projets devient important. Les principaux défauts de ce langage sont les suivants :\newpage
 \begin{itemize}
 \item[•] Il est complexe à appréhender, notamment pour des programmeurs ;
 \item[•] Il est élitiste, peu de personnes connaissent et sont à l'aise avec ce langage ;
-\item[•] Il est exigeant, une erreur dans la description est la synthèse pour donner un résultat non fonctionnel difficile à corriger ;
+\item[•] Il est exigeant, une erreur dans la description et la synthèse peut donner un résultat non fonctionnel difficile à corriger ;
 \item[•] Une description fonctionnelle est difficile à modifier sans créer de nouvelles erreurs et sans perdre de temps.
 \end{itemize}
 
-Au début le VHDL était la seule solution pour développer sur FPGA, mais depuis une dizaine d'année un nouveau langage est apparu : le SystemC. La taille des FPGA est devenue vraiment importante alors logiquement les projets devinrent important eux aussi. Il devenu courant de parler d'implémentation sur FPGA de processeur, de décodeur vidéo multi-format, de récepteur ethernet, etc. Mais avec le VHDL il devient très vite fastidieux de développer de tel projet, c'est dans ce but que le SystemC à était créé. Le principe étant de réduire le temps de développement en proposant un niveau d'abstraction plus haut que le VHDL. Ainsi il est possible de décrire du hardware tout en faisant abstraction de notion très bas niveau. C'est un langage basé sur le C++ donc plus simple à appréhender pour des programmeurs et des informaticiens, cela rompe l'élitisme du VHDL. La nature haut niveau et orienté objet de ce langage le rend plus flexible et plus facile à corriger. Le SystemC apporte différents niveaux d'abstractions grâce, entre autres, à des types plus ou moins précis, cela permet de simuler rapidement un concept et de l'affiner par la suite. Évidemment on perd la maîtrise sur la synthèse et il est difficile de savoir comment l'outil à synthétisé notre système. On perd en contrôle sur l'optimisation également, le SystemC ne permet pas d'être aussi précis qu'en VHDL mais il est possible de s'y approcher. 
+Au début les langages HDL, Hardware Decription Language, tel que le VHDL était la seule solution pour développer sur FPGA, mais depuis une dizaine d'année un nouveau langage est apparu : le SystemC. La taille des FPGA est devenue vraiment importante alors logiquement les projets devinrent important eux aussi. Il devenu courant de parler d'implémentation sur FPGA de processeur softcore, de décodeur vidéo multi-format, de récepteur ethernet, etc. Mais avec le VHDL il devient très vite fastidieux de développer de tel projet, c'est dans ce but que le SystemC à était créé. Le principe étant de réduire le temps de développement en proposant un niveau d'abstraction plus haut que le VHDL. Ainsi il est possible de décrire du hardware tout en faisant abstraction de notions très bas niveau. C'est un langage basé sur le C++ donc plus simple à appréhender pour des programmeurs, des informaticiens ou des traiteurs du signal travaillant à haut niveau, permettant ainsi à ces derniers de travailler sur les mêmes sources que les électroniciens, ce qui rompe l'élitisme du VHDL. La nature haut niveau et orienté objet de ce langage le rend également plus flexible et plus facile à corriger. De plus les différents niveaux d'abstractions apportés par les nombreux types du SystemC permettent de simuler rapidement un concept puis de l'affiner par la suite. Évidemment on perd la maîtrise sur la synthèse et il est difficile de savoir comment l'outil à synthétisé notre système. On perd égameùent en contrôle sur l'optimisation, le SystemC ne permettant pas d'être aussi précis qu'en VHDL mais il est possible de s'y approcher. 
 
-%     fpga = pratique, configurable, performant et peu couteux
-% vhdl = compliqué, exigeant, peu modifiable, rigide, groupusculaire (élitiste). (éviter les comparaisons vhdl/SystemC dès cette partie)
-% systemC =  basé sur C++ donc accessible, mou (!= rigide), différent niveau d’abstraction pour prototypage rapide
-
-\footnotetext[1]{les projets type gouvernementaux ou mondiaux comme la conception d'un télescope, d'une fusée, d'une station spatiale, d'un rover martien, des projets massif mais presque unique qui sont pas a visé d'un industrialisé}
-\footnotetext[2]{j'ai hesité a rajouté low-cost :)}
-\footnotetext[3]{je suis pas sur de cette phrase}
+%\footnotetext[1]{les projets type gouvernementaux ou mondiaux comme la conception d'un télescope, d'une fusée, d'une station spatiale, d'un rover martien, des projets massif mais presque unique qui sont pas a visé d'un industrialisé}
 
 \subsection{Problématique}
 
-Dans le cadre de ce projet, nous allons chercher à comparer les possibilités du SystemC par rapport au VHDL. Nous allons développer une chaîne de traitement de signaux biologiques permettant de détecter l'activité de cellule du corps. Cette chaîne de traitement à déjà était implémenté en VHDL par monsieur Bornat. \newline
+Certaines différences entre le VHDL et le SystemC ont été mises en évidence dans la partie précédente mais ces différences sont théoriques. Les portraits dressés du SystemC et du VHDL semble montrer que ce dernier est obsolète pour les nouveaux projets qui se développe sur FPGA et que le SystemC est un outils plus approprié et puissant. Le but de ce projet est de confronter ces deux portraits à la réalité grâce à au développement d'un projet VHDL et en SystemC, puis d'étudier la finalité de ces deux projets.\newline
+
 Notre problématique sera donc la suivante : Quel sont les avantages du SystemC par rapport au VHDL dans le développement d'un système complexe ?  
-Que permet l’utilisation du systemC par rapport au VHDL dans le cadre du développement d’un système complexe ? 
-%     On a une chaîne de filtrage actuellement implémentée en vhdl, il faut tout refaire
-%     Que permet l’utilisation du systemC par rapport au VHDL dans le cadre du développement d’un système complexe ? 
-%     Abstraction de difficulté technique (taille de données, calcul flottant…), possibilités de tester plus rapidement différentes solutions, montrer la difficulté a débugger une implémentation
+Que permet l’utilisation du systemC par rapport au VHDL dans le cadre du développement d’un système complexe ? \newline
+
+Ainsi nous allons chercher à comparer les possibilités que le SystemC nous apporte par rapport au VHDL. Un projet a déjà été developpé et implémenté en VHDL par monsieur Bornat. Ce projet consiste en une chaîne de traitement de signaux biologiques permettant de détecter l'activité de cellule organique. Nous allons développer cette même chaîne de traitement grâce au SystemC mais nous allons également développer une variante de ce projet. En effet il existe deux méthodes pour calculer le seuil permettant de détecter l'activité des cellules. Ces deux méthodes seront présentées dans la partie suivante.\newline
+Dans la partie suivante, l'architecture de la chaine de traitement sera présentée en détail avec les étapes de process et la répartition des tâches sous forme de bloc. L'implémentation en SystemC fera l'objet de la troisième partie en commençant par décrire le flot de conception d'un projet utilisant le SystemC, puis la manière dont le projet a été décrit en SystemC et simulé afin de validé les sources, et enfin en finissant par l'implémentation sur le FPGA, les problèmes que l'implémentation peut poser et la manière dont elle a été validé. Dans la quatrième partie nous interpréterons les résultats d'un point de vue technique mais également humain.
 \newpage
 \section{Présentation du cas d'étude}
 \subsection{Introduction}
@@ -214,8 +211,14 @@ Le résultat issus de cette première étape de filtrage est illustré en figure
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth, keepaspectratio]{chainCedric.pdf}
-\caption{toto}
+\caption{Architecture du seuillage avec correcteur}
 \end{figure}
+Dans ce modèle, le but est de fixer le seuil de façon à ce qu'uniquement $15.9\%$ des échantillons soient supérieurs à celui-ci.
+Dans ce but, une boucle de contre-réaction est mise en place afin d'adapter la valeur de seuil afin de remplir cette condition.
+Dans un premier temps, l'échantillon est comparé avec la valeur de seuil actuelle. Le comparateur produira un niveau haut si celui-ci est supérieur au seuil et produira un niveau bas sinon. Le filtre passe-bas qui suit sert de moyenneur.
+En effet, celui-ci permet de calculer la valeur moyenne des sorties du comparateur sur un certain nombre d'echantillon.
+En d'autres termes, il donne en sortie le pourcentage d'echantillon au dessus de la valeur de seuil. Après soustraction de $0.159$, la valeur de sortie de ce moyenneur est envoyé en entrée du correcteur composé d'un proportionnel integrateur ce qui permet d'annuler l'erreur statique.
+Cette boucle de contre réaction permet la mise à jour perpetuelle de la valeur de seuil. Pour finir, les echantillons sont comparé à celle-ci multiplié par $10$ et le resultat de cette comparaison est envoyé en sortie. Ce résultat correspond à la présence (niveau haut) ou non (niveau bas) d'un pic.
 \item[\textbf{b)}] \textbf{Calcul du seuil par écart type} : dans cette méthode, le calcul de la valeur de seuil est assimilé au calcul de l'écart type du signal d'entré filtré. On a donc, pour une distribution uniforme des échantillons :
 \begin{eqnarray*}
 S = \sqrt{\frac{\sum^N_{i=1}\left(x_i-\overline{x}\right)^2}{N}},
@@ -239,13 +242,13 @@ La valeur de seuil ainsi obtenue est illustrée par la courbe rouge de la figure
 \end{itemize}
 \newpage
 \section{Implémentation depuis le SystemC}
-	Les schémas présentés en Figures X et X permettent de se représenter le fonctionnement de la chaîne globale. La modularité du SystemC nous permet alors de concevoir une paire de fichiers, un fichier source de description ainsi qu'un \textit{header}, pour chacun des blocs composant ces schémas. Il convient de détailler le cheminement suivi à partir de la création de ces fichiers jusqu'à leur implémentation sur la carte Nexys 4. Cette partie vient donc présenter le flot de conception/compilation lié au SystemC et sa mise en œuvre lors du projet.
+	Les schémas présentés en Figures X et X permettent de se représenter le fonctionnement de la chaîne globale. La modularité du SystemC nous permet alors de concevoir une paire de fichiers, un fichier source de description ainsi qu'un \textit{header}, pour chacun des blocs composant ces schémas. Il convient de détailler le cheminement suivi à partir de la création de ces fichiers jusqu'à leur implémentation sur la carte Nexys 4. Cette partie vient donc présenter le flot de conception/compilation lié au SystemC et sa mise en oeuvre lors du projet.
 
 \subsection{Flot de compilation}
 	L'apprentissage d'un nouveau langage de description ou de programmation passe nécessairement par la compréhension du flot de compilation qui lui est associé. Pour le SystemC, on peut découper ce flot en quatre étapes principales illustrées par la Figure X :
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.5, keepaspectratio]{Dessin2.pdf}
+		\includegraphics[scale=0.5, keepaspectratio]{Dessin2.png}
 		\caption{Flot de compilation}
 	\end{figure}
 	\begin{itemize}
@@ -258,35 +261,86 @@ La valeur de seuil ainsi obtenue est illustrée par la courbe rouge de la figure
 
 
 \subsection{Modélisation en SystemC et simulations}
-L'interêt d'utiliser le langage SystemC afin de décrire nos sources reposent sur la flexibilité apportée par l'utilisation d'un langage de haut niveau. En premier lieu, le SystemC possède de nombreux outils permettant la description de modules au même titre qu'un langage de bas niveau tel que le VHDL :
+En premier lieu, le SystemC possède de nombreux outils permettant la description de modules au même titre qu'un langage de bas niveau tel que le VHDL :
 \begin{itemize}
-\item[•] La classe \texttt{sc\_module} peut facilement être assimilé à une \texttt{entity} en VHDL, tandis que ça nature de classe lui permet d'utiliser des outils de C++ tel qu'un constructeur, \texttt{sc\_ctor}.
-\item[•] Les
+\item[•] La classe \texttt{sc\_module} peut facilement être assimilé à une \texttt{entity} en VHDL, tandis que sa nature de classe lui permet d'utiliser des outils de C++ tel qu'un constructeur, \texttt{sc\_ctor}.
+\item[•] Les processus séquentiel et combinatoire sont quant à eux modélisés respectivement par des méthodes \texttt{sc\_cthread}/\texttt{sc\_thread} et \texttt{sc\_method}.
+\item[•] Enfin le type de donnée \texttt{sc\_int} permet la modélisation des signaux logiques \texttt{std\_logic}.
+\end{itemize}
+Cependant, le réel interêt d'utiliser le langage SystemC afin de décrire nos sources repose sur la flexibilité apportée par l'utilisation d'un langage de haut niveau, comme par exemple l'utilisation de constructeur comme souligné pus tôt.
+\begin{itemize}
+\item[•] \textbf{La classe \texttt{sc\_fifo}} : \\
+En effet, l'une des tâches qui demande le plus rigueur lors de la description d'un système $hardware$, est la synchronisation de l'ensemble des modules. Celle-ci peut passer à travers la mise en place d'une machine d'états ou encore par la transmission de signaux de contrôle ou de validation entre chaque modules. La classe \texttt{sc\_fifo} est une classe synchrone qui instancie un tableau de donné, du type souhaité. L'utilisation de $fifo$ de taille infinie nous a permit de décrire nos modules indépendament les uns des autres, sans se soucier de la synchronisation et donc de l'idée d'horloge.
+\item[•] \textbf{Le type \textit{float}} :
 \end{itemize}
 \subsection{Implémentation sur FPGA et validation}
 	Une fois les fichiers SystemC écrits et les simulations en \textit{software} vérifiées, il convient de tester les blocs et chaînes entières en \textit{hardware}. Pour cela, un environnement de test a été mis en place et il est illustré en Figure X.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth, keepaspectratio]{Dessin6.pdf}
+		\includegraphics[width=\textwidth, keepaspectratio]{Dessin6.png}
 		\caption{Environnement de test}
 	\end{figure}
 	\noindent On distingue ici deux parties essentielles :\\
 	\begin{itemize}
 		\item[\textbullet] la partie \textit{software} : elle se déroule sur un ordinateur, sous \textit{Vivado HLS} par exemple, et permet de lancer une simulation,\\
 		\item[\textbullet] la partie \textit{hardware} : elle représente la carte Nexys 4 reliée en USB sur le port série de l'ordinateur, elle contient également l'implémentation du bloc IP à tester.\\
-	\end{itemize}
-
-	Avant de tester les chaînes globales développées en SystemC, les blocs réalisant la racine carrée ainsi que la puissance au carré ont notamment été implémentés sur FPGA. Pour ce faire, le bloc "\textit{Générateur}" permet de venir lire les données d'entrée stockées dans un fichier texte, que ce soit les valeurs extraites du signal biomédical ou bien des valeurs plus rudimentaires pour tester la racine carrée. Après passage dans une FIFO, les données sont envoyées sur le port série et traitées sur le FPGA. Ce dernier contient l'IP que l'on souhaite tester en \textit{hardware}, la racine carrée par exemple, et renvoie les données sortantes vers le bloc "\textit{Stockage données}". Ce bloc écrit alors les données calculées sur le FPGA dans un fichier texte. Comme expliqué en 2.2, les données contenues dans une FIFO doivent être consommées, c'est pourquoi le bloc "\textit{Analyseur}" se contente de venir lire dans la FIFO, pour fermer la chaîne de test.  \\ \\
-	\indent En ce qui concerne l'échange de données entre la partie \textit{software} et le FPGA, le module de communication utilisant l'UART et développé par Yannick Bornat a été utilisé. Cependant, les deux chaînes précédemment décrites manipulent des données de type \textit{float}, donc sur 32 bits, tandis que l'UART ne reçoit et renvoie que des données sur 8 bits. Pour palier à cette incompatibilité, des \textit{wrappers} ont été décrit en SystemC selon le modèle présenté en Figure X. Le \textit{wrapper IN} reçoit les données provenant de l'UART sur 8 bits et les reforme sur 32 bits, en attendant donc quatre paquets de 8 bits, et les envoie ensuite au bloc de test, tandis que le \textit{wrapper OUT} fait l'opération inverse et découpe la donnée en quatre paquets de 8 bits, chacun d'eux envoyé à l'UART. De plus, le bloc "\textit{Ouverture port série}" réalise également ce découpage des données sur 8 bits en entrée et la reformation de la donnée de sortie sur 32 bits car il communique directement avec l'UART et la partie \textit{software}. Ces deux wrappers ont alors été synthéthisés et exportés en tant qu'IP avec le bloc à tester.  
+	\end{itemize} 
+	
+	Avant de tester les chaînes globales développées en SystemC, les blocs réalisant la racine carrée ainsi que la puissance au carré ont notamment été implémentés sur FPGA. Pour ce faire, le bloc "\textit{Générateur}" permet de venir lire les données d'entrée stockées dans un fichier texte, que ce soit les valeurs extraites du signal biomédical ou bien des valeurs plus rudimentaires pour tester seulement un bloc. Après passage dans une FIFO, les données sont envoyées sur le port série et traitées sur le FPGA. Ce dernier contient l'IP que l'on souhaite tester en \textit{hardware}, la racine carrée par exemple, et renvoie les données sortantes vers le bloc "\textit{Stockage données}". Ce bloc écrit alors les données calculées sur le FPGA dans un fichier texte. Comme expliqué en 2.2, les données contenues dans une FIFO doivent être consommées, c'est pourquoi le bloc "\textit{Analyseur}" se contente de venir lire dans la FIFO, pour fermer la chaîne de test. Cet environnement de test peut ainsi s'adapter à tout bloc qui compose notre chaîne globale et dont on souhaite vérifier le bon fonctionnement. \\ \\
+	\indent En ce qui concerne l'échange de données entre la partie \textit{software} et le FPGA, le module de communication utilisant l'UART et développé par Yannick Bornat a été utilisé. Cependant, les deux chaînes précédemment décrites manipulent des données de type \textit{float}, donc sur 32 bits, tandis que l'UART ne reçoit et renvoie que des données sur 8 bits. Pour palier à cette incompatibilité, des \textit{wrappers} ont été décrit en SystemC selon le modèle présenté en Figure X. Le \textit{wrapper} IN reçoit les données provenant de l'UART sur 8 bits et les reforme sur 32 bits, en attendant donc quatre paquets de 8 bits, et les envoie ensuite au bloc de test, tandis que le \textit{wrapper} OUT fait l'opération inverse et découpe la donnée en quatre paquets de 8 bits, chacun d'eux envoyé à l'UART. De plus, le bloc "\textit{Ouverture port série}" réalise également ce découpage des données sur 8 bits en entrée et la reformation de la donnée de sortie sur 32 bits car il communique directement avec l'UART et la partie \textit{software}. Ces deux wrappers ont alors été synthéthisés et exportés en tant qu'IP avec le bloc à tester.  
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth]{Dessin7.pdf}
+		\includegraphics[width=\textwidth]{Dessin7.png}
 		\caption{UART Wrappers}
 	\end{figure}   
 
-	Lorsque les différents blocs ont été validés un à un sur cet environnement de test, les deux chaînes ont pu successivement être implémentées sur FPGA. Leur validation est, quant à elle, passée par une comparaison entre les données traitées et celles de référence obtenues après développement en VHDL de Yannick Bornat. La principale difficulté de cette démarche d'implémentation \textit{hardware} résidait dans l'envoi et la réception des données entre la chaîne de simulation et la carte Nexys 4. En effet, le goulot d'étranglement se trouve dans la communication avec l'UART qui attend de recevoir une donnée avant d'en transmettre une autre. Une fois cette notion appréhendée il a été possible de vérifier le fonctionnement de n'importe quels blocs.
+	Lorsque les différents blocs ont été validés un à un sur cet environnement de test, les deux chaînes ont pu successivement être implémentées sur FPGA. Leur validation est, quant à elle, passée par une comparaison entre les données traitées et celles de référence obtenues après développement en VHDL de Yannick Bornat. La principale difficulté de cette démarche d'implémentation \textit{hardware} résidait dans l'envoi et la réception des données entre la chaîne de simulation et la carte Nexys 4. En effet, le goulot d'étranglement se trouve dans la communication avec l'UART qui attend de recevoir une donnée avant d'en transmettre une autre. Cet aspect-là est notamment dû à la manière dont nous avons écrit nos sources mais une fois cette notion appréhendée il a été possible de vérifier le fonctionnement de n'importe quels blocs.
 \newpage
 \section{Résultats}
+	Après simulation et implémentation de l'ensemble des blocs et de la chaine de filtrage, il est necessaire de comparer les sorties afin de verifier la similitude des deux systèmes et en noter les différences.
+\subsection{Comparaison des sorties}
+A l'aide d'un code sous matlab, la sortie du système simulé est comparé aux données fournise par monsieur Bornat.
+L'idée ici est de mettre en avant le bon fonctionnement du système en montrant l'equivalence des résultats de sortie avec ceux du système de référence.
+Les indices des pics détéctés sont donc extrait d'un fichier texte contenant les sorties du système et comparé avec les indices contenus dans le fichier de référence.
+La différence entre les indices sources et références sont enregistrés et si celui-ci dépasse les 50 echantillons, la sortie source sera considéré comme une erreur. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3, keepaspectratio]{ResultatSim.png}
+	\caption{\textit{Représentation du décalage de détéction entre le système simulé et la référence}}
+\end{figure}
+La figure X montre les décalages retrouvés sur l'ensemble des pics fournit dans le fichier source. Le système montre 65 erreurs sur les 2990 pics ce qui correspond à un ratio de $98\%$ de similitude.
+Enfin, comme le montre la figure, les pics sont détécté entre 4 et 9 echantillons avant l'indice présent dans le fichier de référence. Ceci s'expliquer par une différence de moyen de détéction entre la source et le système de référence.
+En effet, le pic biologique étant plus large qu'un simple échantillon, l'abscence de système anti-rebond dans notre simulation explique parfaitement ce décalage.
+Nous avons donc considéré que les deux systèmes était équivalent en terme de comportement.
+\newpage
+\subsection{Ressources utilisées}
+Après avoir validé le comportement de notre chaine, l'important maintenant est de comparer l'utilisation des ressources à l'aide du rapport de synthèse fournit par HLS.
+Cette comparaison est faite sans utiliser de moyen d'optimisation afin de juger des performances du systemC. Néanmoins, il va de soit que les performances d'un système écrit par des etudiants seront nettement moins bonnes que celle obtenues sur un système ecrit par un utilisateur expérimenté du VHDL.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|
+	>{\columncolor[HTML]{F2B25C}}c |
+	>{\columncolor[HTML]{FFFFFF}}r |
+	>{\columncolor[HTML]{FFFFFF}}r |
+	>{\columncolor[HTML]{FFFFFF}}c |}
+	\hline
+	\cellcolor[HTML]{BD591C} & \multicolumn{1}{c|}{\cellcolor[HTML]{F2B25C}SystemC (64 channels)} & \multicolumn{1}{c|}{\cellcolor[HTML]{F2B25C}VHDL} & \cellcolor[HTML]{F2B25C}Difference \\ \hline
+	LUT                      & 5632                                                               & X                                                 & {\color[HTML]{CB0000} XXX}         \\ \hline
+	DSP                      & 26                                                                 & 1                                                 & {\color[HTML]{CB0000} +2500\%}     \\ \hline
+	FF                       & 2789                                                               & X                                                 & {\color[HTML]{CB0000} XXX}         \\ \hline
+	RAM (512*32bits)         & 5                                                                  & 2                                                 & {\color[HTML]{CB0000} +150\%}      \\ \hline
+	Development Time (hours) & 35                                                                 & 50                                                & {\color[HTML]{009901} -30\%}       \\ \hline
+	\end{tabular}
+	\caption{Utilisation des ressources des deux systèmes}
+	\end{table}
+	La table XX récapitule l'utilisation des ressources fournit pour notre système par HLS et par monsieur Bornat pour le sien. N'ayant pas sentit l'utilité de s'interesser aux LUT et aux bascules flip-flop, ces données ne nous ont pas été communiquées.
+Il y a trois points interessants dans ce tableau : 
+\begin{itemize}
+	\item[•] \textbf{Le nombre de DSP} utilisés est nettement plus élevé. Cette différence s'explique par l'utilisation de nombres flottants sur 32 bits contre des nombres à virgule fixe sur 16 bits dans le système de référence. De plus, l'utilisation d'un seul DSP dans le système de référence montre la volonté de monsieur Bornat de limiter le nombre de DSP utilisés ce qui n'a pas été notre cas.
+	\item[•] \textbf{Le nombre de RAM} utilisés qui découle de l'allocation par HLS d'un bloc RAM pour chaque tableau présent dans notre code. Une fois de plus, cette valeur se trouve être plus élevée que celle du système de référence.
+	\item[•] \textbf{Le temps de développement} quant à lui est $30\%$ inférieur dans le cadre d'un développement en systemC par rapport à une description en VHDL.
+\end{itemize}
+Ces données nous montre que l'utilisation du systemC via HLS pour la synthèse de système permet un gain de temps non négligeable. L'optimisation des ressources est quant à elle possible en ajoutant simplement quelques directives pour la synthèse et n'a pas été traité ici. 
 \newpage
 \section{Conclusion}
 
