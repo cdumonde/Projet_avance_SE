@@ -1,0 +1,19 @@
+\select@language {french}
+\contentsline {section}{\numberline {0}Introduction}{3}{section.0}
+\contentsline {subsection}{\numberline {0.1}Contexte}{3}{subsection.0.1}
+\contentsline {subsection}{\numberline {0.2}Probl\IeC {\'e}matique}{3}{subsection.0.2}
+\contentsline {section}{\numberline {1}Pr\IeC {\'e}sentation du cas d'\IeC {\'e}tude}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Introduction}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Fonctionnement des diff\IeC {\'e}rents blocs}{5}{subsection.1.2}
+\contentsline {section}{\numberline {2}Impl\IeC {\'e}mentation depuis le SystemC}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Flot de compilation}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Mod\IeC {\'e}lisation en SystemC et simulations}{9}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Impl\IeC {\'e}mentation sur FPGA et validation}{9}{subsection.2.3}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Comparaison des sorties}{12}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ressources utilis\IeC {\'e}es}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Diff\IeC {\'e}rences}{12}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}D\IeC {\'e}bit}{12}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Nombre d\IeC {\textquoteright }entr\IeC {\'e}es}{12}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Point sur la consomation}{12}{subsubsection.3.3.3}
+\contentsline {section}{\numberline {4}Conclusion}{13}{section.4}
