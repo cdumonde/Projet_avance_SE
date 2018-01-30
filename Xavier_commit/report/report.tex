@@ -150,15 +150,22 @@ Dans le cas de signaux provenant de cellules biologiques, l'activité cellulaire
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5, keepaspectratio]{Dessin1.png}
+\includegraphics[scale=0.5, keepaspectratio]{Dessin1.pdf}
 \caption{\textit{Principe de fonctionnement du module de détection d'activité cellulaire}}
 \end{figure}
 \newpage
 
 \subsection{Fonctionnement des différents blocs}
-Comme énoncé précédement, les signaux issus de capteurs biologiques sont très fortement bruité en basse fréquence, ceci se caractérise par une forte variation de l'amplitude du signal. Cette variation d'amplitude, illustrée en figure XX a) sur 5000 échantillons, est du même ordre, voir plus grand, que les que les pics attestants d'une activité celllulaire. Il convient donc de supprimer ce bruit afin de correctement détecter les pics d'activité.\\
+Comme énoncé précédement, les signaux issus de capteurs biologiques sont très fortement bruité en basse fréquence, ceci se caractérise par une forte variation de l'amplitude du signal. Cette variation d'amplitude, illustrée en figure XX a) sur 5000 échantillons, est du même ordre, voir plus grand, que les que les pics attestant d'une activité celllulaire. Il convient donc de supprimer ce bruit afin de correctement détecter les pics d'activité.\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.18, keepaspectratio]{toto2.png}
+\caption{\textit{Évolution du signal au cours des différentes étapes de filtrage, sur 5000 échantillons}}
+\end{figure}
+
 \begin{itemize}
-\item[•] \textbf{Suppression du bruit basse fréquence contenu dans le signal d'entré} : c'est un filtre à réponse impulsionnelle infinie (IIR) qui est utilisé pour s'affranchir des basses fréquence, suivant l'équation (1).
+\item[•] \textbf{Suppression du bruit basse fréquence contenu dans le signal d'entré} : c'est un filtre passe-haut à réponse impulsionnelle infinie (IIR) qui est utilisé pour s'affranchir des basses fréquence, suivant l'équation (1).
 \begin{eqnarray}
 y_n = \frac{63}{64}\left(x_n - x_{n-1}\right) + \frac{31}{32}y_{n-1}
 \end{eqnarray}
@@ -168,33 +175,41 @@ Le résultat issus de cette première étape de filtrage est illustré en figure
 
 \begin{itemize}
 \item[\textbf{a)}] \textbf{Calcul du seuil par boucle de correction} :
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.4, keepaspectratio]{chainCedric.pdf}
-		\caption{Flot de compilation}
-	\end{figure}
-\item[\textbf{b)}] \textbf{Calcul du seuil par écart type} :
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.4, keepaspectratio]{chainXavier.pdf}
-		\caption{Flot de compilation}
-	\end{figure}
-\end{itemize}
-\end{itemize}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.18, keepaspectratio]{toto2.png}
-\caption{\textit{toto}}
+\includegraphics[width=\textwidth, keepaspectratio]{chainCedric.pdf}
+\caption{toto}
 \end{figure}
+\item[\textbf{b)}] \textbf{Calcul du seuil par écart type} : dans cette méthode, le calcul de la valeur de seuil est assimilé au calcul de l'écart type du signal d'entré filtré. On a donc, pour une distribution uniforme des échantillons :
+\begin{eqnarray*}
+S = \sqrt{\frac{\sum^N_{i=1}\left(x_i-\overline{x}\right)^2}{N}},
+\end{eqnarray*}
+or dans notre, comme il a été souligné plus tôt, la valeur moyenne du signal a été ramenée à 0 grâce à la première étape de filtrage, on obtient donc :
+\begin{eqnarray*}
+S = \sqrt{\frac{\sum^N_{i=1}x_i^2}{N}}.
+\end{eqnarray*}
+Enfin, la fonction $x_n\mapsto\frac{\sum^N_{i=1}x_i}{N}$ a été réalisé à l'aide d'un filtre passe-bas à réponse impulsionnelle infinie, suivant l'équation (2). Les facteurs de ce filtre a on été dimensionné afin de ciblé le bruit en haute fréquence du signal.
+\begin{eqnarray}
+y_n = \frac{1}{524288}\left(x_n + x_{n-1}\right) + \frac{2047}{2048}y_{n-1}
+\end{eqnarray}
+La valeur de seuil ainsi obtenue est illustrée par la courbe rouge de la figure XX c). Une fois la valeur de seuil déterminée, celle-ci est utilisée comme référence afin de détecter les pics présents dans le signal d'entré filtré, comme
+ l'illustre la figure XX d). On peut retrouver le schéma du principe de la fonction de seuillage en figure XX.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth, keepaspectratio]{chainXavier.pdf}
+\caption{Schéma de principe du calcul de l'écart type}
+\end{figure}
+\end{itemize}
+\end{itemize}
 \newpage
 \section{Implémentation depuis le SystemC}
-	Les schémas présentés en Figures X et X permettent de se représenter le fonctionnement de la chaîne globale. La modularité du SystemC nous permet alors de concevoir une paire de fichiers, un fichier source de description ainsi qu'un \textit{header}, pour chacun des blocs composant ces schémas. Il convient de détailler le cheminement suivi à partir de la création de ces fichiers jusqu'à leur implémentation sur la carte Nexys 4. Cette partie vient donc présenter le flot de conception/compilation lié au SystemC et sa mise en oeuvre lors du projet.
+	Les schémas présentés en Figures X et X permettent de se représenter le fonctionnement de la chaîne globale. La modularité du SystemC nous permet alors de concevoir une paire de fichiers, un fichier source de description ainsi qu'un \textit{header}, pour chacun des blocs composant ces schémas. Il convient de détailler le cheminement suivi à partir de la création de ces fichiers jusqu'à leur implémentation sur la carte Nexys 4. Cette partie vient donc présenter le flot de conception/compilation lié au SystemC et sa mise en œuvre lors du projet.
 
 \subsection{Flot de compilation}
 	L'apprentissage d'un nouveau langage de description ou de programmation passe nécessairement par la compréhension du flot de compilation qui lui est associé. Pour le SystemC, on peut découper ce flot en quatre étapes principales illustrées par la Figure X :
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.5, keepaspectratio]{Dessin2.png}
+		\includegraphics[scale=0.5, keepaspectratio]{Dessin2.pdf}
 		\caption{Flot de compilation}
 	\end{figure}
 	\begin{itemize}
@@ -211,7 +226,7 @@ Le résultat issus de cette première étape de filtrage est illustré en figure
 	Une fois les fichiers SystemC écrits et les simulations en \textit{software} vérifiées, il convient de tester les blocs et chaînes entières en \textit{hardware}. Pour cela, un environnement de test a été mis en place et il est illustré en Figure X.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth, keepaspectratio]{Dessin6.png}
+		\includegraphics[width=\textwidth, keepaspectratio]{Dessin6.pdf}
 		\caption{Environnement de test}
 	\end{figure}
 	\noindent On distingue ici deux parties essentielles :\\
@@ -221,10 +236,10 @@ Le résultat issus de cette première étape de filtrage est illustré en figure
 	\end{itemize} \\
 
 	Avant de tester les chaînes globales développées en SystemC, les blocs réalisant la racine carrée ainsi que la puissance au carré ont notamment été implémentés sur FPGA. Pour ce faire, le bloc "\textit{Générateur}" permet de venir lire les données d'entrée stockées dans un fichier texte, que ce soit les valeurs extraites du signal biomédical ou bien des valeurs plus rudimentaires pour tester la racine carrée. Après passage dans une FIFO, les données sont envoyées sur le port série et traitées sur le FPGA. Ce dernier contient l'IP que l'on souhaite tester en \textit{hardware}, la racine carrée par exemple, et renvoie les données sortantes vers le bloc "\textit{Stockage données}". Ce bloc écrit alors les données calculées sur le FPGA dans un fichier texte. Comme expliqué en 2.2, les données contenues dans une FIFO doivent être consommées, c'est pourquoi le bloc "\textit{Analyseur}" se contente de venir lire dans la FIFO, pour fermer la chaîne de test.  \\ \\
-	\indent En ce qui concerne l'échange de données entre la partie \textit{software} et le FPGA, le module de communication utilisant l'UART et développé par Yannick Bornat a été utilisé. Cependant, les deux chaînes précédemment décrites manipulent des données de type \textit{float}, donc sur 32 bits, tandis que l'UART ne reçoit et renvoie que des données sur 8 bits. Pour palier à cette incompatibilité, des \textit{wrappers} ont été décrit en SystemC selon le modèle présenté en Figure X. Le \textit{wrapper} IN reçoit les données de la partie \textit{software} sur 32 bits et les envoie par parquets de 8 bits à l'UART, tandis que le \textit{wrapper} OUT fait l'opération inverse et attend de recevoir quatre paquets de 8 bits pour reformer et renvoyer la donnée voulue sur 32 bits au bloc "\textit{Stockage données}" présenté en Figure X. Ces deux wrappers ont alors été synthéthisés et exportés en tant qu'IP avec le bloc à tester.  
+	\indent En ce qui concerne l'échange de données entre la partie \textit{software} et le FPGA, le module de communication utilisant l'UART et développé par Yannick Bornat a été utilisé. Cependant, les deux chaînes précédemment décrites manipulent des données de type \textit{float}, donc sur 32 bits, tandis que l'UART ne reçoit et renvoie que des données sur 8 bits. Pour palier à cette incompatibilité, des \textit{wrappers} ont été décrit en SystemC selon le modèle présenté en Figure X. Le \textit{wrapper IN} reçoit les données provenant de l'UART sur 8 bits et les reforme sur 32 bits, en attendant donc quatre paquets de 8 bits, et les envoie ensuite au bloc de test, tandis que le \textit{wrapper OUT} fait l'opération inverse et découpe la donnée en quatre paquets de 8 bits, chacun d'eux envoyé à l'UART. De plus, le bloc "\textit{Ouverture port série}" réalise également ce découpage des données sur 8 bits en entrée et la reformation de la donnée de sortie sur 32 bits car il communique directement avec l'UART et la partie \textit{software}. Ces deux wrappers ont alors été synthéthisés et exportés en tant qu'IP avec le bloc à tester.  
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth]{Dessin7.png}
+		\includegraphics[width=\textwidth]{Dessin7.pdf}
 		\caption{UART Wrappers}
 	\end{figure}   
 
