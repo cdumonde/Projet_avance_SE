@@ -135,19 +135,75 @@ Yannick BORNAT \& Bertrand LE GAL
 \section{Introduction}
 \subsection{Contexte}
 \subsection{Problématique}
-\newoage
-\section{Présentation du projet ciblé}
+\newpage
+\section{Présentation du cas d'étude}
 \subsection{Introduction}
+Afin de mener à bien cette étude nous nou sommes basés sur les travaux de Monsieur Bornat. En effet, dans le cadre de l'analyse de signaux biomédicaux, ce dernier a mis au point un module de détection d'activité de cellules biologique, en VHDL.\\
+
+Dans le cas de signaux provenant de cellules biologiques, l'activité cellulaire peut être détectée par un pic d'amplitude, celui-ci est représenté en figure XX. Cependant ce type de signaux possède une composante en bruit basse fréquence très élevée, c'est pourquoi il doit être filtré en amont. C'est ce signal filtré qui est utilisé à la détermination d'une valeur de seuil nécessaire à la détection d'activité biologique. Ce principe de fonctionnement, qui sera à la base du développement de notre module, est illustré en figure XX.\\
+
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6, keepaspectratio]{Dessin1.png}
+\includegraphics[scale=0.18, keepaspectratio]{toto3.png}
+\caption{\textit{Pic d'activité dans un signal biologique}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5, keepaspectratio]{Dessin1.png}
+\caption{\textit{Principe de fonctionnement du module de détection d'activité cellulaire}}
+\end{figure}
+\newpage
+
+\subsection{Fonctionnement des différents blocs}
+Comme énoncé précédement, les signaux issus de capteurs biologiques sont très fortement bruité en basse fréquence, ceci se caractérise par une forte variation de l'amplitude du signal. Cette variation d'amplitude, illustrée en figure XX a) sur un, 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.18, keepaspectratio]{toto2.png}
 \caption{\textit{toto}}
 \end{figure}
-\subsection{Fonctionnement des différents blocs}
 \newpage
-\section{Développement de la chaine}
-\subsection{Flot de conception}
-\subsection{Description SystemC}
+\section{Implémentation depuis le SystemC}
+	Les schémas présentés en Figures X et X permettent de se représenter le fonctionnement de la chaîne globale. La modularité du SystemC nous permet alors de concevoir une paire de fichiers, un fichier source de description ainsi qu'un \textit{header}, pour chacun des blocs composant ces schémas. Il convient de détailler le cheminement suivi à partir de la création de ces fichiers jusqu'à leur implémentation sur la carte Nexys 4. Cette partie vient donc présenter le flot de conception/compilation lié au SystemC et sa mise en oeuvre lors du projet.
+
+\subsection{Flot de compilation}
+	L'apprentissage d'un nouveau langage de description ou de programmation passe nécessairement par la compréhension du flot de compilation qui lui est associé. Pour le SystemC, on peut découper ce flot en quatre étapes principales illustrées par la Figure X :
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5, keepaspectratio]{Dessin2.png}
+		\caption{Flot de compilation}
+	\end{figure}
+	\begin{itemize}
+		\item[\textbullet] \textbf{Modélisation SystemC} : dans un premier temps il convient de décrire en SystemC le système que l'on souhaite modéliser. Pour cela, on rédige des fichiers sources dans un IDE SystemC pour symboliser chacun des blocs décrits précédemment. \\
+		\item[\textbullet] \textbf{Synthèse et exportation IP} : une fois les fichiers SystemC écrits, on peut désormais les passer dans l'environnement \textit{Vivado HLS} afin de les synthéthiser et d'exporter un ou plusieurs blocs sous forme d'IP (\textit{Intellectual Property}). Ces blocs IP sont des blocs logiques, avec des entrées et des sorties, qui vont être implémentés sur FPGA par la suite. \\
+		\item[\textbullet] \textbf{Génération d'un Bitsream} : un bloc IP ne pouvant être envoyé directement sur FPGA, il convient de l'intégrer dans un \textit{top-level}, décrit en langage VHDL, pour pouvoir notamment interfacer ses entrées et sorties avec les entrées et sorties physiques de la carte Nexys 4. Pour ce faire, l'environnement \textit{Vivado} est requis et permet de générer un \textit{bitsream} d'extension \texttt{.bit}. \\
+		\item[\textbullet] \textbf{Implémentation sur Nexys 4} : finalement, le \textit{bitsream} peut être envoyé sur la carte cible, dans notre cas la carte Nexys 4, via le port série de notre ordinateur. A ce stade, les fichiers décrits en SystemC sont implémentés sur FPGA.\\
+	\end{itemize}
+	Le flot de compilation présenté ici allie le développement \textit{software} de sources SystemC, et l'implémentation \textit{hardware} des blocs ainsi créés. Il s'agit là du flot de compilation suivi lors du projet et les parties 2.2 et 2.3 suivantes viennent détailler sa mise en pratique.
+
+
+\subsection{Modélisation en SystemC et simulations}
+\subsection{Implémentation sur FPGA et validation}
+	Une fois les fichiers SystemC écrits et les simulations en \textit{software} vérifiées, il convient de tester les blocs et chaînes entières en \textit{hardware}. Pour cela, un environnement de test a été mis en place et il est illustré en Figure X.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth, keepaspectratio]{Dessin6.png}
+		\caption{Environnement de test}
+	\end{figure}
+	\noindent On distingue ici deux parties essentielles :\\
+	\begin{itemize}
+		\item[\textbullet] la partie \textit{software} : elle se déroule sur un ordinateur, sous \textit{Vivado HLS} par exemple, et permet de lancer une simulation,\\
+		\item[\textbullet] la partie \textit{hardware} : elle représente la carte Nexys 4 reliée en USB sur le port série de l'ordinateur, elle contient également l'implémentation du bloc IP à tester.\\
+	\end{itemize} 
+	Avant de tester les chaînes globales développées en SystemC, les blocs réalisant la racine carrée ainsi que la puissance au carré ont notamment été implémentés sur FPGA. Pour ce faire, le bloc "\textit{Générateur}" permet de venir lire les données d'entrée stockées dans un fichier texte, que ce soit les valeurs extraites du signal biomédical ou bien des valeurs plus rudimentaires pour tester la racine carrée. Après passage dans une FIFO, les données sont envoyées sur le port série et traitées sur le FPGA. Ce dernier contient l'IP que l'on souhaite tester en \textit{hardware}, la racine carrée par exemple, et renvoie les données sortantes vers le bloc "\textit{Stockage données}". Ce bloc écrit alors les données calculées sur le FPGA dans un fichier texte. Comme expliqué en 2.2, les données contenues dans une FIFO doivent être consommées, c'est pourquoi le bloc "\textit{Analyseur}" se contente de venir lire dans la FIFO, pour fermer la chaîne de test.  \\ \\
+	\indent En ce qui concerne l'échange de données entre la partie \textit{software} et le FPGA, le module de communication utilisant l'UART et développé par Yannick Bornat a été utilisé. Cependant, les deux chaînes précédemment décrites manipulent des données de type \textit{float}, donc sur 32 bits, tandis que l'UART ne reçoit et renvoie que des données sur 8 bits. Pour palier à cette incompatibilité, des \textit{wrappers} ont été décrit en SystemC selon le modèle présenté en Figure X. Le \textit{wrapper} IN reçoit les données de la partie \textit{software} sur 32 bits et les envoie par parquets de 8 bits à l'UART, tandis que le \textit{wrapper} OUT fait l'opération inverse et attend de recevoir quatre paquets de 8 bits pour reformer et renvoyer la donnée voulue sur 32 bits au bloc "\textit{Stockage données}" présenté en Figure X. Ces deux wrappers ont alors été synthéthisés et exportés en tant qu'IP avec le bloc à tester.  
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{Dessin7.png}
+		\caption{UART Wrappers}
+	\end{figure}   
+
+	Lorsque les différents blocs ont été validés un à un sur cet environnement de test, les deux chaînes ont pu successivement être implémentées sur FPGA. Leur validation est, quant à elle, passée par une comparaison entre les données traitées et celles de référence obtenues après développement en VHDL de Yannick Bornat. La principale difficulté de cette démarche d'implémentation \textit{hardware} résidait dans l'envoi et la réception des données entre la chaîne de simulation et la carte Nexys 4. En effet, le goulot d'étranglement se trouve dans la communication avec l'UART qui attend de recevoir une donnée avant d'en transmettre une autre. Une fois cette notion appréhendée il a été possible de vérifier le fonctionnement de n'importe quels blocs.
 \newpage
 \section{Résultats}
 \newpage

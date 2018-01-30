@@ -1,11 +1,12 @@
 \BOOKMARK [1][-]{section.0}{Introduction}{}% 1
 \BOOKMARK [2][-]{subsection.0.1}{Contexte}{section.0}% 2
 \BOOKMARK [2][-]{subsection.0.2}{Probl\351matique}{section.0}% 3
-\BOOKMARK [1][-]{section.1}{Pr\351sentation du projet cibl\351}{}% 4
+\BOOKMARK [1][-]{section.1}{Pr\351sentation du cas d'\351tude}{}% 4
 \BOOKMARK [2][-]{subsection.1.1}{Introduction}{section.1}% 5
 \BOOKMARK [2][-]{subsection.1.2}{Fonctionnement des diff\351rents blocs}{section.1}% 6
-\BOOKMARK [1][-]{section.2}{D\351veloppement de la chaine}{}% 7
-\BOOKMARK [2][-]{subsection.2.1}{Flot de conception}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.2}{Description SystemC}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{R\351sultats}{}% 10
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 11
+\BOOKMARK [1][-]{section.2}{Impl\351mentation depuis le SystemC}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Flot de compilation}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.2}{Mod\351lisation en SystemC et simulations}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Impl\351mentation sur FPGA et validation}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{R\351sultats}{}% 11
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 12

@@ -2,11 +2,12 @@
 \contentsline {section}{\numberline {0}Introduction}{3}{section.0}
 \contentsline {subsection}{\numberline {0.1}Contexte}{3}{subsection.0.1}
 \contentsline {subsection}{\numberline {0.2}Probl\IeC {\'e}matique}{3}{subsection.0.2}
-\contentsline {section}{\numberline {1}Pr\IeC {\'e}sentation du projet cibl\IeC {\'e}}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Introduction}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Fonctionnement des diff\IeC {\'e}rents blocs}{3}{subsection.1.2}
-\contentsline {section}{\numberline {2}D\IeC {\'e}veloppement de la chaine}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Flot de conception}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Description SystemC}{4}{subsection.2.2}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{5}{section.3}
-\contentsline {section}{\numberline {4}Conclusion}{6}{section.4}
+\contentsline {section}{\numberline {1}Pr\IeC {\'e}sentation du cas d'\IeC {\'e}tude}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Introduction}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Fonctionnement des diff\IeC {\'e}rents blocs}{5}{subsection.1.2}
+\contentsline {section}{\numberline {2}Impl\IeC {\'e}mentation depuis le SystemC}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Flot de compilation}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Mod\IeC {\'e}lisation en SystemC et simulations}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Impl\IeC {\'e}mentation sur FPGA et validation}{7}{subsection.2.3}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{10}{section.3}
+\contentsline {section}{\numberline {4}Conclusion}{11}{section.4}
