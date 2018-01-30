@@ -176,12 +176,7 @@ Le résultat issus de cette première étape de filtrage est illustré en figure
 		\includegraphics[scale=0.4, keepaspectratio]{chainCedric.pdf}
 		\caption{Architecture du seuillage avec correcteur}
 	\end{figure}
-	Dans ce modèle, le but est de fixer le seuil de façon à ce qu'uniquement $15.9\%$ des échantillons soient supérieurs à celui-ci.
-	Dans ce but, une boucle de contre-réaction est mise en place afin d'adapter la valeur de seuil afin de remplir cette condition.
-	Dans un premier temps, l'échantillon est comparé avec la valeur de seuil actuelle. Le comparateur produira un niveau haut si celui-ci est supérieur au seuil et produira un niveau bas sinon. Le filtre passe-bas qui suit sert de moyenneur.
-	En effet, celui-ci permet de calculer la valeur moyenne des sorties du comparateur sur un certain nombre d'echantillon.
-	En d'autres termes, il donne en sortie le pourcentage d'echantillon au dessus de la valeur de seuil. Après soustraction de $0.159$, la valeur de sortie de ce moyenneur est envoyé en entrée du correcteur composé d'un proportionnel integrateur ce qui permet d'annuler l'erreur statique.
-	Cette boucle de contre réaction permet la mise à jour perpetuelle de la valeur de seuil. Pour finir, les echantillons sont comparé à celle-ci multiplié par $10$ et le resultat de cette comparaison est envoyé en sortie. Ce résultat correspond à la présence (niveau haut) ou non (niveau bas) d'un pic.
+	Dans ce modèle dont l'architecture est représentée figure XX, le but est de fixer le seuil de façon à ce qu'uniquement $15.9 \%$ des échantillons soient supérieurs à celui-ci. Dans ce but, une boucle de contre-réaction est mise en place afin d'adapter la valeur de seuil afin de remplir cette condition. Dans un premier temps, l'échantillon est comparé avec la valeur de seuil actuelle. Le comparateur produira un niveau haut si celui-ci est supérieur au seuil et produira un niveau bas sinon. Le filtre passe-bas qui suit sert de moyenneur. En effet, celui-ci permet de calculer la valeur moyenne des sorties du comparateur sur un certain nombre d'échantillons. En d'autres termes, il donne en sortie le pourcentage d'échantillon au-dessus de la valeur de seuil. Après soustraction de $0.159$, la valeur de sortie de ce moyenneur est envoyé en entrée du correcteur composé d'un proportionnel intégrateur ce qui permet d'annuler l'erreur statique. Cette boucle de contre-réaction permet la mise à jour perpétuelle de la valeur de seuil. Pour finir, les échantillons sont comparés à celle-ci multiplié par $10$ et le résultat de cette comparaison est envoyé en sortie. Ce résultat correspond à la présence (niveau haut) ou non (niveau bas) d'un pic.
 	\newpage
 	\item[\textbf{b)}] \textbf{Calcul du seuil par écart type} :
 	\begin{figure}[H]
@@ -241,25 +236,18 @@ Le résultat issus de cette première étape de filtrage est illustré en figure
 	Lorsque les différents blocs ont été validés un à un sur cet environnement de test, les deux chaînes ont pu successivement être implémentées sur FPGA. Leur validation est, quant à elle, passée par une comparaison entre les données traitées et celles de référence obtenues après développement en VHDL de Yannick Bornat. La principale difficulté de cette démarche d'implémentation \textit{hardware} résidait dans l'envoi et la réception des données entre la chaîne de simulation et la carte Nexys 4. En effet, le goulot d'étranglement se trouve dans la communication avec l'UART qui attend de recevoir une donnée avant d'en transmettre une autre. Une fois cette notion appréhendée il a été possible de vérifier le fonctionnement de n'importe quels blocs.
 \newpage
 \section{Résultats}
-	Après simulation et implémentation de l'ensemble des blocs et de la chaine de filtrage, il est necessaire de comparer les sorties afin de verifier la similitude des deux systèmes et en noter les différences.
+Après simulation et implémentation de l'ensemble des blocs et de la chaine de filtrage, il est nécessaire de comparer les sorties afin de vérifier la similitude des deux systèmes et en noter les différences.
 \subsection{Comparaison des sorties}
-A l'aide d'un code sous matlab, la sortie du système simulé est comparé aux données fournise par monsieur Bornat.
-L'idée ici est de mettre en avant le bon fonctionnement du système en montrant l'equivalence des résultats de sortie avec ceux du système de référence.
-Les indices des pics détéctés sont donc extrait d'un fichier texte contenant les sorties du système et comparé avec les indices contenus dans le fichier de référence.
-La différence entre les indices sources et références sont enregistrés et si celui-ci dépasse les 50 echantillons, la sortie source sera considéré comme une erreur. 
+À l'aide d'un code sous Matlab, la sortie du système simulé est comparée aux données fournies par monsieur Bornat.L'idée ici est de mettre en avant le bon fonctionnement du système en montrant l'équivalence des résultats de sortie avec ceux du système de référence.Les indices des pics détectés sont donc extraits d'un fichier texte contenant les sorties du système et comparé avec les indices contenus dans le fichier de référence.La différence entre les indices sources et références est enregistrée et si celui-ci dépasse les 50 échantillons, la sortie source sera considérée comme une erreur. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3, keepaspectratio]{ResultatSim.png}
 	\caption{\textit{Représentation du décalage de détéction entre le système simulé et la référence}}
 \end{figure}
-La figure X montre les décalages retrouvés sur l'ensemble des pics fournit dans le fichier source. Le système montre 65 erreurs sur les 2990 pics ce qui correspond à un ratio de $98\%$ de similitude.
-Enfin, comme le montre la figure, les pics sont détécté entre 4 et 9 echantillons avant l'indice présent dans le fichier de référence. Ceci s'expliquer par une différence de moyen de détéction entre la source et le système de référence.
-En effet, le pic biologique étant plus large qu'un simple échantillon, l'abscence de système anti-rebond dans notre simulation explique parfaitement ce décalage.
-Nous avons donc considéré que les deux systèmes était équivalent en terme de comportement.
+La figure X montre les décalages retrouvés sur l'ensemble des pics fournis dans le fichier source. Le système montre 65 erreurs sur les 2990 pics ce qui correspond à un ratio $98 \%$ de similitude.Enfin, comme le montre la figure, les pics sont détectée entre 4 et 9 échantillons avant l'indice présent dans le fichier de référence. Ceci s'expliquait par une différence de moyen de détection entre la source et le système de référence.En effet, le pic biologique étant plus large qu'un simple échantillon, l'absence du système anti-rebond dans notre simulation explique parfaitement ce décalage.Nous avons donc considéré que les deux systèmes étaient équivalents en matière de comportement.
 \newpage
 \subsection{Ressources utilisées}
-Après avoir validé le comportement de notre chaine, l'important maintenant est de comparer l'utilisation des ressources à l'aide du rapport de synthèse fournit par HLS.
-Cette comparaison est faite sans utiliser de moyen d'optimisation afin de juger des performances du systemC. Néanmoins, il va de soit que les performances d'un système écrit par des etudiants seront nettement moins bonnes que celle obtenues sur un système ecrit par un utilisateur expérimenté du VHDL.
+Après avoir validé le comportement de notre chaine, l'important maintenant est de comparer l'utilisation des ressources à l'aide du rapport de synthèse fourni par HLS.Cette comparaison est faite sans utiliser de moyen d'optimisation afin de juger des performances du systemC. Néanmoins, il va de soi que les performances d'un système écrit par des étudiants seront nettement moins bonnes que celles obtenues sur un système écrit par un utilisateur expérimenté du VHDL.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|
@@ -277,14 +265,14 @@ Cette comparaison est faite sans utiliser de moyen d'optimisation afin de juger 
 	\end{tabular}
 	\caption{Utilisation des ressources des deux systèmes}
 	\end{table}
-	La table XX récapitule l'utilisation des ressources fournit pour notre système par HLS et par monsieur Bornat pour le sien. N'ayant pas sentit l'utilité de s'interesser aux LUT et aux bascules flip-flop, ces données ne nous ont pas été communiquées.
-Il y a trois points interessants dans ce tableau : 
+	La table XX récapitule l'utilisation des ressources fournies pour notre système par HLS et par monsieur Bornat pour le sien. N'ayant pas senti l'utilité de s'intéresser au LUT et aux bascules flip-flop, ces données ne nous ont pas été communiquées.
+	Il y a trois points intéressants dans ce tableau :
 \begin{itemize}
-	\item[•] \textbf{Le nombre de DSP} utilisés est nettement plus élevé. Cette différence s'explique par l'utilisation de nombres flottants sur 32 bits contre des nombres à virgule fixe sur 16 bits dans le système de référence. De plus, l'utilisation d'un seul DSP dans le système de référence montre la volonté de monsieur Bornat de limiter le nombre de DSP utilisés ce qui n'a pas été notre cas.
-	\item[•] \textbf{Le nombre de RAM} utilisés qui découle de l'allocation par HLS d'un bloc RAM pour chaque tableau présent dans notre code. Une fois de plus, cette valeur se trouve être plus élevée que celle du système de référence.
+	\item[•] \textbf{Le nombre de DSP} utilisés est nettement plus élevés. Cette différence s'explique par l'utilisation de nombres flottants sur 32 bits contre des nombres à virgule fixe sur 16 bits dans le système de référence. De plus, l'utilisation d'un seul DSP dans le système de référence montre la volonté de monsieur Bornat de limiter le nombre de DSP utilisés ce qui n'a pas été notre cas.
+	\item[•] \textbf{Le nombre de RAM} utilisées qui découlent de l'allocation par HLS d'un bloc RAM pour chaque tableau présent dans notre code. Une fois de plus, cette valeur se trouve être plus élevée que celle du système de référence.
 	\item[•] \textbf{Le temps de développement} quant à lui est $30\%$ inférieur dans le cadre d'un développement en systemC par rapport à une description en VHDL.
 \end{itemize}
-Ces données nous montre que l'utilisation du systemC via HLS pour la synthèse de système permet un gain de temps non négligeable. L'optimisation des ressources est quant à elle possible en ajoutant simplement quelques directives pour la synthèse et n'a pas été traité ici. 
+Ces données nous montrent que l'utilisation du systemC via HLS pour la synthèse de systèmes permet un gain de temps non négligeable. L'optimisation des ressources est quant à elle possible en ajoutant simplement quelques directives pour la synthèse et n'a pas été traité ici. 
 \newpage
 \section{Conclusion}
 
