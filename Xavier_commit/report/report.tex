@@ -244,7 +244,7 @@ Les schémas présentés en figures 4 et 5 permettent de se représenter le fonc
 L'apprentissage d'un nouveau langage de description ou de programmation passe nécessairement par la compréhension du flot de compilation qui lui est associé. Pour le SystemC, on peut découper ce flot en quatre étapes principales illustrées par la figure 6 :
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5, keepaspectratio]{Dessin2.png}
+\includegraphics[scale=0.5, keepaspectratio]{Dessin2.pdf}
 \caption{Flot de compilation}
 \end{figure}
 \begin{itemize}
@@ -288,7 +288,7 @@ La figure 7 illustre ce bon fonctionnment, en a) on peut voir les pics détecté
 Une fois les fichiers SystemC écrits et les simulations en \textit{software} vérifiées, il convient de tester les blocs et chaînes entières en \textit{hardware}. Pour cela, un environnement de test a été mis en place et il est illustré en figure 8.
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth, keepaspectratio]{Dessin6.png}
+\includegraphics[width=\textwidth, keepaspectratio]{Dessin6.pdf}
 \caption{Environnement de test}
 \end{figure}
 \noindent On distingue ici deux parties essentielles :\\
@@ -301,7 +301,7 @@ Avant de tester les chaînes globales développées en SystemC, les blocs réali
 \indent En ce qui concerne l'échange de données entre la partie \textit{software} et le FPGA, le module de communication utilisant l'UART et développé par Yannick Bornat a été utilisé. Cependant, les deux chaînes précédemment décrites manipulent des données de type \textit{float}, donc sur 32 bits, tandis que l'UART ne reçoit et renvoie que des données sur 8 bits. Pour palier à cette incompatibilité, des \textit{wrappers} ont été décrit en SystemC selon le modèle présenté en figure 9. Le \textit{wrapper IN} reçoit les données provenant de l'UART sur 8 bits et les reforme sur 32 bits, en attendant donc quatre paquets de 8 bits, et les envoie ensuite au bloc de test, tandis que le \textit{wrapper OUT} fait l'opération inverse et découpe la donnée en quatre paquets de 8 bits, chacun d'eux envoyé à l'UART. De plus, le bloc "\textit{Ouverture port série}" réalise également ce découpage des données sur 8 bits en entrée et la reformation de la donnée de sortie sur 32 bits car il communique directement avec l'UART et la partie \textit{software}. Ces deux \textit{wrappers} ont alors été synthéthisés et exportés en tant qu'IP avec le bloc à tester.  
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{Dessin7.png}
+\includegraphics[width=\textwidth]{Dessin7.pdf}
 \caption{UART Wrappers}
 \end{figure}   
 

@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {2.1}Flot de compilation}{10}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Mod\IeC {\'e}lisation en SystemC et simulations}{11}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Impl\IeC {\'e}mentation sur FPGA et validation}{13}{subsection.2.3}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}Comparaison des sorties}{15}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Ressources utilis\IeC {\'e}es}{16}{subsection.3.2}
-\contentsline {section}{\numberline {4}Conclusion}{17}{section.4}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{16}{section.3}
+\contentsline {subsection}{\numberline {3.1}Comparaison des sorties}{16}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ressources utilis\IeC {\'e}es}{17}{subsection.3.2}
+\contentsline {section}{\numberline {4}Conclusion}{18}{section.4}
