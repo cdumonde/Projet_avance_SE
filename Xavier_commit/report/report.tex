@@ -236,21 +236,22 @@ La valeur de seuil ainsi obtenue est illustrée par la courbe rouge de la figure
 \end{itemize}
 \newpage
 \section{Implémentation depuis le SystemC}
-Les schémas présentés en Figures X et X permettent de se représenter le fonctionnement de la chaîne globale. La modularité du SystemC nous permet alors de concevoir une paire de fichiers, un fichier source de description ainsi qu'un \textit{header}, pour chacun des blocs composant ces schémas. Il convient de détailler le cheminement suivi à partir de la création de ces fichiers jusqu'à leur implémentation sur la carte Nexys 4. Cette partie vient donc présenter le flot de conception/compilation lié au SystemC et sa mise en oeuvre lors du projet.
+Les schémas présentés en figures 4 et 5 permettent de se représenter le fonctionnement de la chaîne globale. La modularité du SystemC nous permet alors de concevoir une paire de fichiers, un fichier source de description ainsi qu'un \textit{header}, pour chacun des blocs composant ces schémas. Il convient de détailler le cheminement suivi à partir de la création de ces fichiers jusqu'à leur implémentation sur la carte Nexys 4. Cette partie vient donc présenter le flot de conception/compilation lié au SystemC et sa mise en œuvre lors du projet.
 
 \subsection{Flot de compilation}
-L'apprentissage d'un nouveau langage de description ou de programmation passe nécessairement par la compréhension du flot de compilation qui lui est associé. Pour le SystemC, on peut découper ce flot en quatre étapes principales illustrées par la Figure X :
+L'apprentissage d'un nouveau langage de description ou de programmation passe nécessairement par la compréhension du flot de compilation qui lui est associé. Pour le SystemC, on peut découper ce flot en quatre étapes principales illustrées par la figure 6 :
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5, keepaspectratio]{Dessin2.png}
 \caption{Flot de compilation}
 \end{figure}
 \begin{itemize}
-\item[\textbullet] \textbf{Modélisation SystemC} : dans un premier temps il convient de décrire en SystemC le système que l'on souhaite modéliser. Pour cela, on rédige des fichiers sources \sout{dans un IDE} SystemC pour symboliser chacun des blocs décrits précédemment. \\
+\item[\textbullet] \textbf{Modélisation SystemC} : dans un premier temps il convient de décrire en SystemC le système que l'on souhaite modéliser. Pour cela, on rédige des fichiers sources SystemC pour symboliser chacun des blocs décrits précédemment. \\
 \item[\textbullet] \textbf{Synthèse et exportation IP} : une fois les fichiers SystemC écrits, on peut désormais les passer dans l'environnement \textit{Vivado HLS} afin de les synthéthiser et d'exporter un ou plusieurs blocs sous forme d'IP (\textit{Intellectual Property}). Ces blocs IP sont des blocs logiques, avec des entrées et des sorties, qui vont être implémentés sur FPGA par la suite. \\
 \item[\textbullet] \textbf{Génération d'un Bitsream} : un bloc IP ne pouvant être envoyé directement sur FPGA, il convient de l'intégrer dans un \textit{top-level}, décrit en langage VHDL, pour pouvoir notamment interfacer ses entrées et sorties avec les entrées et sorties physiques de la carte Nexys 4. Pour ce faire, l'environnement \textit{Vivado} est requis et permet de générer un \textit{bitsream} d'extension \texttt{.bit}. \\
-\item[\textbullet] \textbf{Implémentation sur Nexys 4} : finalement, le \textit{bitsream} peut être envoyé sur la carte cible, dans notre cas la carte Nexys 4, via le port série de notre ordinateur. A ce stade, les fichiers décrits en SystemC sont implémentés sur FPGA.\\
+\item[\textbullet] \textbf{Implémentation sur Nexys 4} : finalement, le \textit{bitsream} peut être envoyé sur la carte cible, dans notre cas la carte Nexys 4, via le port série de notre ordinateur. À ce stade, les fichiers décrits en SystemC sont implémentés sur FPGA.\\
 \end{itemize}
+
 Le flot de compilation présenté ici allie le développement \textit{software} de sources SystemC, et l'implémentation \textit{hardware} des blocs ainsi créés. Il s'agit là du flot de compilation suivi lors du projet et les parties 2.2 et 2.3 suivantes viennent détailler sa mise en pratique.
 
 
@@ -267,22 +268,22 @@ Cependant, le réel interêt d'utiliser le langage SystemC afin de décrire nos 
 
 \begin{itemize}
 \item[•] \textbf{La classe \texttt{sc\_fifo}} :\\
-En effet, l'une des tâches qui demande le plus rigueur lors de la description d'un système \textit{hardware}, est la synchronisation de l'ensemble des modules. Celle-ci peut passer à travers la mise en place d'une machine d'états ou encore par la transmission de signaux de contrôle ou de validation entre chaque modules. La classe \texttt{sc\_fifo} est une classe synchrone qui instancie un tableau de donné, du type souhaité. L'utilisation de \textit{fifo} de taille infinie nous a permit de décrire nos modules indépendament les uns des autres, sans se soucier de la synchronisation et donc de l'idée d'horloge. En effet, les méthodes \texttt{read} et \texttt{write} de la classe \texttt{sc\_fifo} sont bloquantes, c'est à dire que les différents modules seront automatiquement en attente en cas d'absence de données par exemple.\\
+En effet, l'une des tâches qui demande le plus rigueur lors de la description d'un système \textit{hardware}, est la synchronisation de l'ensemble des modules. Celle-ci peut passer à travers la mise en place d'une machine d'états ou encore par la transmission de signaux de contrôle ou de validation entre chaque modules. La classe \texttt{sc\_fifo} est une classe synchrone qui instancie un tableau de donné, du type souhaité. L'utilisation de FIFO de taille infinie nous a permit de décrire nos modules indépendament les uns des autres, sans se soucier de la synchronisation et donc de l'idée d'horloge. En effet, les méthodes \texttt{read} et \texttt{write} de la classe \texttt{sc\_fifo} sont bloquantes, c'est à dire que les différents modules seront automatiquement en attente en cas d'absence de données par exemple.\\
 
 \item[•] \textbf{Le type \textit{float}} :\\
 Un autre avantage offert par l'utilisation d'un langage de haut niveau, est la possibilité de manipulé des \textit{float}. Malgré le fort coût matériel à l'implémentation, ce type données nous permet de mettre en place des calculs bien plus simplement en comparaison avec des calculs sur virgule fixe, bien souvent nécessaire lors d'une description VHDL.\\
 \end{itemize}
 
-Une fois les modules décris en SystemC, l'ensemble de la chaîne peut être instancié à l'image d'un \textit{top level} en VHDL. De nombreuses simulations on été effectuées afin de valider la bon fonctionnment de la chaîne. Pour ce faire, des modules de sauvegarde de données dans des fichiers textes ont été insérés entre chaque bloc du système. Ainsi ils nous a été possible de rapidement mettre à jour des erreurs de comportement. L'architecture des différents blocs décrits en SystemC étant très similaire, une \textit{fifo} \texttt{sc\_fifo<float>} en entrée et en sortie, l'étape de simulation s'en est trouvée facilité.
+Une fois les modules décris en SystemC, l'ensemble de la chaîne peut être instancié à l'image d'un \textit{top-level} en VHDL. De nombreuses simulations on été effectuées afin de valider la bon fonctionnment de la chaîne. Pour ce faire, des modules de sauvegarde de données dans des fichiers textes ont été insérés entre chaque bloc du système. Ainsi ils nous a été possible de rapidement mettre à jour des erreurs de comportement. L'architecture des différents blocs décrits en SystemC étant très similaire, une \textit{fifo} \texttt{sc\_fifo<float>} en entrée et en sortie, l'étape de simulation s'en est trouvée facilitée.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale =0.18, keepaspectratio]{results.png}
-\caption{Mise en parallèle avec les résultats de Yannick Bornat}
+\caption{Mise en parallèle des résultats de simulation avec les résultats de Yannick Bornat}
 \end{figure}
-La figure 7 illustre ce bon fonctionnment, en a) on peut voir les pics détecter par le module VHDL de Yannick Bornat et en b) les pics détecter à l'aide de notre module de seuillage.
+La figure 7 illustre ce bon fonctionnment, en a) on peut voir les pics détectés par le module VHDL de Yannick Bornat et en b) les pics détectés à l'aide de notre module de seuillage.
 \subsection{Implémentation sur FPGA et validation}
-Une fois les fichiers SystemC écrits et les simulations en \textit{software} vérifiées, il convient de tester les blocs et chaînes entières en \textit{hardware}. Pour cela, un environnement de test a été mis en place et il est illustré en Figure X.
+Une fois les fichiers SystemC écrits et les simulations en \textit{software} vérifiées, il convient de tester les blocs et chaînes entières en \textit{hardware}. Pour cela, un environnement de test a été mis en place et il est illustré en figure 8.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth, keepaspectratio]{Dessin6.png}
@@ -295,7 +296,7 @@ Une fois les fichiers SystemC écrits et les simulations en \textit{software} v�
 \end{itemize} 
 
 Avant de tester les chaînes globales développées en SystemC, les blocs réalisant la racine carrée ainsi que la puissance au carré ont notamment été implémentés sur FPGA. Pour ce faire, le bloc "\textit{Générateur}" permet de venir lire les données d'entrée stockées dans un fichier texte, que ce soit les valeurs extraites du signal biomédical ou bien des valeurs plus rudimentaires pour tester seulement un bloc. Après passage dans une FIFO, les données sont envoyées sur le port série et traitées sur le FPGA. Ce dernier contient l'IP que l'on souhaite tester en \textit{hardware}, la racine carrée par exemple, et renvoie les données sortantes vers le bloc "\textit{Stockage données}". Ce bloc écrit alors les données calculées sur le FPGA dans un fichier texte. Comme expliqué en 2.2, les données contenues dans une FIFO doivent être consommées, c'est pourquoi le bloc "\textit{Analyseur}" se contente de venir lire dans la FIFO, pour fermer la chaîne de test. Cet environnement de test peut ainsi s'adapter à tout bloc qui compose notre chaîne globale et dont on souhaite vérifier le bon fonctionnement. \\ \\
-\indent En ce qui concerne l'échange de données entre la partie \textit{software} et le FPGA, le module de communication utilisant l'UART et développé par Yannick Bornat a été utilisé. Cependant, les deux chaînes précédemment décrites manipulent des données de type \textit{float}, donc sur 32 bits, tandis que l'UART ne reçoit et renvoie que des données sur 8 bits. Pour palier à cette incompatibilité, des \textit{wrappers} ont été décrit en SystemC selon le modèle présenté en Figure X. Le \textit{wrapper} IN reçoit les données provenant de l'UART sur 8 bits et les reforme sur 32 bits, en attendant donc quatre paquets de 8 bits, et les envoie ensuite au bloc de test, tandis que le \textit{wrapper} OUT fait l'opération inverse et découpe la donnée en quatre paquets de 8 bits, chacun d'eux envoyé à l'UART. De plus, le bloc "\textit{Ouverture port série}" réalise également ce découpage des données sur 8 bits en entrée et la reformation de la donnée de sortie sur 32 bits car il communique directement avec l'UART et la partie \textit{software}. Ces deux wrappers ont alors été synthéthisés et exportés en tant qu'IP avec le bloc à tester.  
+\indent En ce qui concerne l'échange de données entre la partie \textit{software} et le FPGA, le module de communication utilisant l'UART et développé par Yannick Bornat a été utilisé. Cependant, les deux chaînes précédemment décrites manipulent des données de type \textit{float}, donc sur 32 bits, tandis que l'UART ne reçoit et renvoie que des données sur 8 bits. Pour palier à cette incompatibilité, des \textit{wrappers} ont été décrit en SystemC selon le modèle présenté en figure 9. Le \textit{wrapper IN} reçoit les données provenant de l'UART sur 8 bits et les reforme sur 32 bits, en attendant donc quatre paquets de 8 bits, et les envoie ensuite au bloc de test, tandis que le \textit{wrapper OUT} fait l'opération inverse et découpe la donnée en quatre paquets de 8 bits, chacun d'eux envoyé à l'UART. De plus, le bloc "\textit{Ouverture port série}" réalise également ce découpage des données sur 8 bits en entrée et la reformation de la donnée de sortie sur 32 bits car il communique directement avec l'UART et la partie \textit{software}. Ces deux \textit{wrappers} ont alors été synthéthisés et exportés en tant qu'IP avec le bloc à tester.  
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{Dessin7.png}
@@ -307,17 +308,17 @@ Lorsque les différents blocs ont été validés un à un sur cet environnement 
 \section{Résultats}
 Après simulation et implémentation de l'ensemble des blocs et de la chaine de filtrage, il est nécessaire de comparer les sorties afin de vérifier la similitude des deux systèmes et en noter les différences.
 \subsection{Comparaison des sorties}
-À l'aide d'un code sous Matlab, la sortie du système simulé est comparée aux données fournies par monsieur Bornat.L'idée ici est de mettre en avant le bon fonctionnement du système en montrant l'équivalence des résultats de sortie avec ceux du système de référence.Les indices des pics détectés sont donc extraits d'un fichier texte contenant les sorties du système et comparé avec les indices contenus dans le fichier de référence.La différence entre les indices sources et références est enregistrée et si celui-ci dépasse les 50 échantillons, la sortie source sera considérée comme une erreur. 
+À l'aide d'un code sous Matlab, la sortie du système simulé est comparée aux données fournies par Yannick Bornat. L'idée ici est de mettre en avant le bon fonctionnement du système en montrant l'équivalence des résultats de sortie avec ceux du système de référence. Les indices des pics détectés sont donc extraits d'un fichier texte contenant les sorties du système et comparés avec les indices contenus dans le fichier de référence.La différence entre les indices sources et références est enregistrée et si celle-ci dépasse les 50 échantillons, la sortie source sera considérée comme une erreur. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3, keepaspectratio]{ResultatSim.png}
+	\includegraphics[scale = 0.45, keepaspectratio]{ResultatSim.png}
 	\caption{\textit{Représentation du décalage de détéction entre le système simulé et la référence}}
 \end{figure}
-La figure X montre les décalages retrouvés sur l'ensemble des pics fournis dans le fichier source. Le système montre 65 erreurs sur les 2990 pics ce qui correspond à un ratio $98 \%$ de similitude.Enfin, comme le montre la figure, les pics sont détectée entre 4 et 9 échantillons avant l'indice présent dans le fichier de référence. Ceci s'expliquait par une différence de moyen de détection entre la source et le système de référence.En effet, le pic biologique étant plus large qu'un simple échantillon, l'absence du système anti-rebond dans notre simulation explique parfaitement ce décalage.Nous avons donc considéré que les deux systèmes étaient équivalents en matière de comportement.
+La figure 10 montre les décalages retrouvés sur l'ensemble des pics fournis dans le fichier source. Le système montre 65 erreurs sur les 2990 pics ce qui correspond à un ratio $98 \%$ de similitude. Enfin, comme le montre la figure, les pics sont détectée entre 4 et 9 échantillons avant l'indice présent dans le fichier de référence. Ceci s'expliquait par une différence de moyen de détection entre la source et le système de référence. En effet, le pic biologique étant plus large qu'un simple échantillon, l'absence du système anti-rebond dans notre simulation explique parfaitement ce décalage. Nous avons donc considéré que les deux systèmes étaient équivalents en matière de comportement.
 \newpage
 \subsection{Ressources utilisées}
-Après avoir validé le comportement de notre chaine, l'important maintenant est de comparer l'utilisation des ressources à l'aide du rapport de synthèse fourni par HLS.Cette comparaison est faite sans utiliser de moyen d'optimisation afin de juger des performances du systemC. Néanmoins, il va de soi que les performances d'un système écrit par des étudiants seront nettement moins bonnes que celles obtenues sur un système écrit par un utilisateur expérimenté du VHDL.
-\begin{table}[h]
+Après avoir validé le comportement de notre chaîne, il nous faut comparer l'utilisation des ressources matérielles à l'aide du rapport de synthèse fourni par \textit{Vivado HLS}. Cette comparaison est faite sans utiliser de moyen d'optimisation afin de juger des performances du SystemC. Néanmoins, il va de soi que les performances d'un système écrit par des étudiants seront nettement moins bonnes que celles obtenues sur un système écrit par un utilisateur expérimenté du VHDL.
+\begin{table}[H]
 	\centering
 	\begin{tabular}{|
 	>{\columncolor[HTML]{F2B25C}}c |
@@ -334,14 +335,15 @@ Après avoir validé le comportement de notre chaine, l'important maintenant est
 	\end{tabular}
 	\caption{Utilisation des ressources des deux systèmes}
 	\end{table}
-	La table XX récapitule l'utilisation des ressources fournies pour notre système par HLS et par monsieur Bornat pour le sien. N'ayant pas senti l'utilité de s'intéresser au LUT et aux bascules flip-flop, ces données ne nous ont pas été communiquées.
+	La table 1 récapitule l'utilisation des ressources fournies pour notre système par \textit{HLS} et par Yannick Bornat pour le sien. N'ayant pas senti l'utilité de s'intéresser au LUT et aux bascules flip-flop, ces données ne nous ont pas été communiquées.
 	Il y a trois points intéressants dans ce tableau :
 \begin{itemize}
-	\item[•] \textbf{Le nombre de DSP} utilisés est nettement plus élevés. Cette différence s'explique par l'utilisation de nombres flottants sur 32 bits contre des nombres à virgule fixe sur 16 bits dans le système de référence. De plus, l'utilisation d'un seul DSP dans le système de référence montre la volonté de monsieur Bornat de limiter le nombre de DSP utilisés ce qui n'a pas été notre cas.
-	\item[•] \textbf{Le nombre de RAM} utilisées qui découlent de l'allocation par HLS d'un bloc RAM pour chaque tableau présent dans notre code. Une fois de plus, cette valeur se trouve être plus élevée que celle du système de référence.
-	\item[•] \textbf{Le temps de développement} quant à lui est $30\%$ inférieur dans le cadre d'un développement en systemC par rapport à une description en VHDL.
+	\item[•] \textbf{Le nombre de DSP} utilisées est nettement plus élevé. Cette différence s'explique par l'utilisation de nombres flottants sur 32 bits contre des nombres à virgule fixe sur 16 bits dans le système de référence. De plus, l'utilisation d'un seul DSP dans le système de référence montre la volonté de Yannick Bornat de limiter le nombre de DSP utilisés ce qui n'a pas été notre cas.
+	\item[•] \textbf{Le nombre de RAM} utilisées qui découlent de l'allocation par \textit{HLS} d'un bloc RAM pour chaque tableau présent dans notre code. Une fois de plus, cette valeur se trouve être plus élevée que celle du système de référence.
+	\item[•] \textbf{Le temps de développement} quant à lui est $30\%$ inférieur dans le cadre d'un développement en SystemC par rapport à une description en VHDL.
 \end{itemize}
-Ces données nous montrent que l'utilisation du systemC via HLS pour la synthèse de systèmes permet un gain de temps non négligeable. L'optimisation des ressources est quant à elle possible en ajoutant simplement quelques directives pour la synthèse et n'a pas été traité ici. 
+
+Ces données nous montrent que l'utilisation du systemC via \textit{HLS} pour la synthèse de systèmes permet un gain de temps non négligeable. L'optimisation des ressources est quant à elle possible en ajoutant simplement quelques directives pour la synthèse et n'a pas été traité ici. 
 \newpage
 \section{Conclusion}
 
